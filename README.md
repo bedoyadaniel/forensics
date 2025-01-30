@@ -1,4 +1,4 @@
-# Forense Digital Consentida para Sociedad Civil
+# Documentación técnica para investigaciones forenses en beneficio de la Sociedad Civil
 
 # License
 
