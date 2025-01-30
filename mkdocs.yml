@@ -1,0 +1,51 @@
+site_name: SocialTic Forensics
+site_url: https://forensics.socialtic.org
+site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
+
+
+nav:
+  - Home: 'index.md'
+  - Explainers:
+    - Inicio: '1-explainers/inicio.md'
+  - Tutoriales: 
+    - Inicio: '2-tutoriales/inicio.md'
+  - Guías how-to:
+    - Inicio: '3-guias/inicio.md'
+  - Referencias:
+    - Inicio: '4-referencias/inicio.md'
+
+
+theme: 
+  name: material
+  language: es
+  logo: img/ST_logo-01.png
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - search.highlight
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+  plugins:
+  - search:
+      separator: '[\s\-\.\_]'
+  extra:
+    social:
+      - icon: fontawesome/brands/twitter
+        link: https://twitter.com/socialtic
+      - icon: fontawesome/brands/github
+        link: https://github.com/socialtic/qttd
+      - icon: material/web
+        link: https://socialtic.org
+
