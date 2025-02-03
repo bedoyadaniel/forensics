@@ -1,10 +1,8 @@
-
 ---
 title: Explainer - Introducción a la forense digital consentida para la defensa de los Derechos Humanos 
 summary: Documento introductorio a la forense digital consentida en beneficio de la sociedad civil para la defensa de los Derechos Humanos
 keywords: forense, consentimiento informado, introduccion, etapas, derechos humanos
-authors:
-    - Daniel Bedoya Arroyo
+authors: Daniel Bedoya Arroyo
 lang: es
 tagas: [explainer, intro]
 last_updated: 2025-02-03
