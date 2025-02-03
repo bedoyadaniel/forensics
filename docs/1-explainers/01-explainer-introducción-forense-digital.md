@@ -4,7 +4,7 @@ summary: Documento introductorio a la forense digital consentida en beneficio de
 keywords: forense, consentimiento informado, introduccion, etapas, derechos humanos
 authors: Daniel Bedoya Arroyo
 lang: es
-tagas: [explainer, intro]
+tags: [explainer, intro]
 last_updated: 2025-02-03
 some_url:
 ---
