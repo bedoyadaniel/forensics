@@ -51,9 +51,10 @@ Existen diferentes marcos de referencia que proponen una serie de etapas para co
 
 A través de este conjunto de etapas se **busca garantizar la integridad de la evidencia y la confianza en el proceso aplicado**. Por su naturaleza, la evidencia digital es frágil, ya que puede ser alterada o destruida durante el proceso de recolección o análisis.  Es por esto que, independientemente del marco de referencia que se utilice, se deben tomar en consideración los siguientes principios básicos durante todo el ciclo de una investigación:
 
-* En la medida de lo posible, se debe evitar **manipular y trabajar directamente sobre la evidencia recolectada**. En su lugar, es recomendable utilizar copias de trabajo que no pongan en riesgo la evidencia original.
-* **Documentar es un aspecto clave durante una investigación forense**. Cualquier acción que se tome sobre la evidencia, herramientas que se utilicen para el análisis, hallazgos e hipótesis deben ser documentadas. Es importante que un tercero pueda reproducir y verificar de forma independiente el análisis realizado.
-* Si se pretende utilizar la evidencia como parte de un proceso judicial, se debe **conocer la legislación y el marco jurídico** que haga la evidencia admisible en una corte.
+!!! success "Buenas Prácticas" 
+   * En la medida de lo posible, se debe evitar **manipular y trabajar directamente sobre la evidencia recolectada**. En su lugar, es recomendable utilizar copias de trabajo que no pongan en riesgo la evidencia original.
+   * **Documentar es un aspecto clave durante una investigación forense**. Cualquier acción que se tome sobre la evidencia, herramientas que se utilicen para el análisis, hallazgos e hipótesis deben ser documentadas. Es importante que un tercero pueda reproducir y verificar de forma independiente el análisis realizado.
+   * Si se pretende utilizar la evidencia como parte de un proceso judicial, se debe **conocer la legislación y el marco jurídico** que haga la evidencia admisible en una corte.
 
 La mayoría de marcos de referencia coinciden en las siguientes etapas: **identificación, recolección, preservación, análisis y presentación**. A continuación se detalla en qué consiste cada una de estas etapas:
 
@@ -93,7 +94,10 @@ Determinar exactamente qué recolectar depende de muchos factores, incluyendo la
 
 Por ejemplo, en algunas ocasiones no es conveniente simplemente apagar y enviar un dispositivo a un laboratorio de confianza para un análisis posterior. Al hacer esto, se podría perder la **evidencia volátil**, es decir aquella que se modifica o destruye al manipular o apagar un dispositivo. En estos casos, lo conveniente es utilizar herramientas forenses que permitan hacer una **recolección en vivo** que permita recopilar información como listas de procesos, archivos temporales, entre otros.
 
-Durante todo el proceso de atención es de suma importancia mantener una documentación cronológica de las acciones tomadas y las evidencias recopiladas, incluyendo hashes (identificadores únicos) que permitan una posterior verificación. En la mayoría de los casos, la evidencia no puede analizarse en sitio, y es necesario utilizar herramientas y procesos especializados para intentar establecer conclusiones sobre lo sucedido. Este **análisis en frío** suele realizarse en un laboratorio forense, por personas con conocimientos específicos. 
+!!! success "Buenas Prácticas" 
+    Durante todo el proceso de atención es de suma importancia mantener una documentación cronológica de las acciones tomadas y las evidencias recopiladas, incluyendo hashes (identificadores únicos) que permitan una posterior verificación.
+
+En la mayoría de los casos, la evidencia no puede analizarse en sitio, y es necesario utilizar herramientas y procesos especializados para intentar establecer conclusiones sobre lo sucedido. Este **análisis en frío** suele realizarse en un laboratorio forense, por personas con conocimientos específicos. 
 
 En algunas ocasiones, **es posible que el análisis forense no arroje ningún resultado inmediato**, en especial si se trata de una amenaza avanzada, donde el atacante ha realizado un esfuerzo por eliminar rastros como logs, archivos o metadatos. Es posible que los atacantes también utilicen técnicas que busquen obstaculizar los esfuerzos de análisis forense, a través de técnicas conocidas como [anti-forense.](https://en.wikipedia.org/wiki/Anti%E2%80%93computer_forensics)
 
@@ -114,6 +118,9 @@ Es posible que algunos de los artefactos forenses que se recolectan contengan in
 ### Cadena de custodia
 
 Al proceso de documentar con claridad quién y de qué forma se manipula  la evidencia se le conoce como **cadena de custodia**. La evidencia forense puede ser manipulada o destruída durante el proceso forense, por lo que la persona analista debe ser capaz de demostrar la [integridad de la evidencia](https://www.ibm.com/es-es/topics/data-integrity).  En caso de que esta demostración no sea posible o suficientemente robusta, es posible que las evidencia **no sea admisible en procesos judiciales**, o sea refutada y desestimada por otros especialistas.
+
+!!! abstract "Consideración Legal"
+    Si la intención es utilizar evidencia forense para procesos judiciales es recomendable asesorarse con personas especialistas en el marco legal local. 
 
 La mejor forma de demostrar y verificar la integridad de la evidencia es a través de **documentación** clara, que incluya hashes (identificadores únicos) o [firmas digitales](https://oneflow.com/es/blog/pki-de-firma-digita/) de los archivos recolectados, así como una cronología del proceso, que permita entender con claridad el manejo de la evidencia desde su identificación hasta la presentación. Existen algunas empresas que brindan servicios para registrar y verificar la integridad de pruebas en apego a marcos jurídicos, como por ejemplo [Verifact en Brasil](https://www.verifact.com.br/).
 
