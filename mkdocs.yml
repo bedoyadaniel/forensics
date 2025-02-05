@@ -49,3 +49,7 @@ theme:
       - icon: material/web
         link: https://socialtic.org
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
