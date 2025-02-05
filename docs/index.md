@@ -7,7 +7,7 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
 
 La forense digital permite **descubrir y examinar datos de dispositivos y medios electrónicos** con el objetivo de identificar, recuperar, documentar e interpretar la información digital y su conexión con ataques digitales. En este repositorio se describen procedimientos estándar, apegados a buenas prácticas, que permiten **generar evidencia** para impulsar acciones de rendición de cuentas, que **reduzcan y expongan** **la impunidad con la que se ejecutan ataques digitales**.
 
-## ¿A quién va dirigido este repositorio?
+## ¿A quién va dirigido este repositorio? 
 
 La información contenida en este repositorio es de utilidad para personas con diferentes perfiles, incluyendo: 
 
