@@ -80,17 +80,13 @@ Para la escritura de documentos en el presente repositorio se sugiere apegarse a
 Para resaltar elementos informativos, de advertencia, de error o de importancia legal se utilizarán bloques como los siguientes:
 
 !!! success "Buenas Prácticas" 
-
-  El bloque de confirmación (verde) sirve para distinguir las buenas prácticas.
+    El bloque de confirmación (verde) sirve para distinguir las buenas prácticas.
 
 !!! warning "Alternativa"
-  
-  El bloque de advertencia (amarillo) sirve para mencionar otra manera de hacer las cosas (esto es especialmente útil para los how-to).
+    El bloque de advertencia (amarillo) sirve para mencionar otra manera de hacer las cosas (esto es especialmente útil para los how-to).
 
 !!! failure "Error"
-
-  El bloque de error (rojo) sirve para explicar qué otro camino seguir si se encuentra un error, o cómo solucionar un posible error.
+    El bloque de error (rojo) sirve para explicar qué otro camino seguir si se encuentra un error, o cómo solucionar un posible error.
 
 !!! abstract "Consideración Legal"
-  
-  El bloque de información (azul) se utiliza para resaltar consideraciones legales
+    El bloque de información (azul) se utiliza para resaltar consideraciones legales
