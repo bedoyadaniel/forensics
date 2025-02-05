@@ -1,5 +1,5 @@
 
-# Repositorio de documentación sobre forense digital consentida en beneficio de la sociedad civil
+# Repositorio de documentación sobre forense digital consentida para la defensa de los Derechos Humanos
 
 ## ¿Qué es este repositorio de documentación?
 
