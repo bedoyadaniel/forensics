@@ -7,6 +7,7 @@ nav:
   - Home: 'index.md'
   - Explainers:
     - Inicio: '1-explainers/index.md'
+    - Explainer introductorio a forense digital: '1-explainers/01-explainer-introduccion-forense-digital'
   - Tutoriales: 
     - Inicio: '2-tutoriales/index.md'
   - Guías how-to:
