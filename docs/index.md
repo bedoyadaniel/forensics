@@ -77,12 +77,20 @@ Para la escritura de documentos en el presente repositorio se sugiere apegarse a
 * Utilizar el impersonal. En los casos que sea imposible, se puede utilizar la segunda persona del plural.   
 * Las páginas deben tener nombres de ruta en minúsculas y con guión medio. No se deben utilizar caracteres especiales como acentos u otros símbolos.
 
-Para resaltar elementos informativos, de advertencia, de error o de confirmación se utilizarán bloques como los siguientes:
+Para resaltar elementos informativos, de advertencia, de error o de importancia legal se utilizarán bloques como los siguientes:
 
-El bloque de confirmación (verde) sirve para distinguir las buenas prácticas.
+!!! success "Buenas Prácticas" 
 
-El bloque de advertencia (amarillo) sirve para mencionar otra manera de hacer las cosas (esto es especialmente útil para los how-to).
+  El bloque de confirmación (verde) sirve para distinguir las buenas prácticas.
 
-El bloque de error (rojo) sirve para explicar qué otro camino seguir si se encuentra un error, o cómo solucionar un posible error.
+!!! warning "Alternativa"
+  
+  El bloque de advertencia (amarillo) sirve para mencionar otra manera de hacer las cosas (esto es especialmente útil para los how-to).
 
-El bloque de información (azul) se utiliza para resaltar consideraciones legales
+!!! failure "Error"
+
+  El bloque de error (rojo) sirve para explicar qué otro camino seguir si se encuentra un error, o cómo solucionar un posible error.
+
+!!! abstract "Consideración Legal"
+  
+  El bloque de información (azul) se utiliza para resaltar consideraciones legales
