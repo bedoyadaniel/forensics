@@ -57,10 +57,7 @@ extra:
       link: https://socialtic.org
 
 plugins:
-  - search:
-    separator: '[\s\-\.\_]'
-          
-
+  - search     
 
 markdown_extensions:
   - admonition
