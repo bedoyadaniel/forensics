@@ -35,37 +35,31 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 
-  features:
-    - search.highlight
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.indexes
+features:
+  - search.highlight
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.indexes
 
-  extra:
-    social:
-      - icon: fontawesome/brands/twitter
-        link: https://twitter.com/socialtic
-      - icon: fontawesome/brands/github
-        link: https://github.com/socialtic/qttd
-      - icon: material/web
-        link: https://socialtic.org
-    alternate: 
-
-      # Switch to Spanish
-     - name: Español
-       link: /es/
-       lang: es
-
-      # Switch to English
-     - name: English
-       link: /en/
-       lang: en   
-
-  plugins:
-  - search:
-      separator: '[\s\-\.\_]'
+extra:
+  alternate: 
+    - name: Español
+      link: /es/
       lang: es
-          
+    - name: English
+      link: /en/
+      lang: en   
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/socialtic
+    - icon: fontawesome/brands/github
+      link: https://github.com/socialtic/qttd
+    - icon: material/web
+      link: https://socialtic.org
+
+plugins:
+  - search:
+    lang: en
 
 
 markdown_extensions:
