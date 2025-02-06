@@ -42,10 +42,16 @@ theme:
   - search:
       separator: '[\s\-\.\_]'
   - i18n:
-      default_language: es
+      docs_structure: suffix
       languages:
-        es: Spanish
-        en: English
+        - locale: es
+          default: true
+          name: Español
+          build: true
+        - locale: en
+          name: English
+          build: true
+          
   extra:
     social:
       - icon: fontawesome/brands/twitter
