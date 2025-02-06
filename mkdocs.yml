@@ -41,6 +41,11 @@ theme:
   plugins:
   - search:
       separator: '[\s\-\.\_]'
+  - i18n:
+      default_language: es
+      languages:
+        es: Spanish
+        en: English
   extra:
     social:
       - icon: fontawesome/brands/twitter
