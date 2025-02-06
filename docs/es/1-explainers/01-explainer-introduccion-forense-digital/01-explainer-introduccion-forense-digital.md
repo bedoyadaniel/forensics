@@ -124,7 +124,7 @@ Al proceso de documentar con claridad quién y de qué forma se manipula  la evi
 
 La mejor forma de demostrar y verificar la integridad de la evidencia es a través de **documentación** clara, que incluya hashes (identificadores únicos) o [firmas digitales](https://oneflow.com/es/blog/pki-de-firma-digita/) de los archivos recolectados, así como una cronología del proceso, que permita entender con claridad el manejo de la evidencia desde su identificación hasta la presentación. Existen algunas empresas que brindan servicios para registrar y verificar la integridad de pruebas en apego a marcos jurídicos, como por ejemplo [Verifact en Brasil](https://www.verifact.com.br/).
 
-### Riesgos durante una investigación forense {#riesgos-durante-una-investigación-forense}
+### Riesgos durante una investigación forense
 
 Las investigaciones forenses pueden exponer abusos de Derechos Humanos en perjuicio de personas en riesgo por parte de estados u otros actores, en ocasiones con la complicidad de empresas proveedoras de tecnologías de espionaje. Debido al **impacto** que estas investigaciones pueden tener, tanto para los **estados como para las empresas con capacidades avanzadas**, existe una oposición y recursos para obstaculizar, paralizar y hasta criminalizar los esfuerzos de laboratorios de amenazas de la sociedad civil.
 
