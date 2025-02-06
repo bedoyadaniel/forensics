@@ -15,11 +15,9 @@ nav:
   - Referencias:
     - Inicio: '4-referencias/index.md'
 
-
 theme: 
   name: material
   logo: img/ST_logo-01.png
-  language: es
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: default
@@ -33,14 +31,26 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+
   features:
     - search.highlight
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
+
   plugins:
   - search:
       separator: '[\s\-\.\_]'
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: es
+          default: true
+          name: Español
+          build: true
+        - locale: en
+          name: English
+          build: true
 
           
   extra:
@@ -52,16 +62,10 @@ theme:
       - icon: material/web
         link: https://socialtic.org
 
-    alternate: 
-      - name: Español
-        link: /es/
-        lang: es
-      - name: English
-        link: /en/
-        lang: en
-
-
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
