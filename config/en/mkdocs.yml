@@ -58,8 +58,7 @@ extra:
       link: https://socialtic.org
 
 plugins:
-  - search:
-    lang: en
+  - search
           
 
 
