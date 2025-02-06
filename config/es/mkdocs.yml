@@ -34,12 +34,11 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-
-features:
-  - search.highlight
-  - navigation.tabs
-  - navigation.tabs.sticky
-  - navigation.indexes
+  features:
+    - search.highlight
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
 
 extra:
   alternate: 

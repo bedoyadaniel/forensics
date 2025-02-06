@@ -8,13 +8,13 @@ site_dir: '../../generated/en'
 nav:
   - Home: 'index.md'
   - Explainers:
-    - Inicio: '1-explainers/index.md'
+    - Home: '1-explainers/index.md'
   - Tutorials: 
-    - Inicio: '2-tutorials/index.md'
+    - Home: '2-tutorials/index.md'
   - How-to's:
-    - Inicio: '3-how-tos/index.md'
+    - Home: '3-how-tos/index.md'
   - Reference:
-    - Inicio: '4-reference/index.md'
+    - Home: '4-reference/index.md'
 
 theme: 
   name: material
@@ -34,12 +34,11 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-
-features:
-  - search.highlight
-  - navigation.tabs
-  - navigation.tabs.sticky
-  - navigation.indexes
+  features:
+    - search.highlight
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
 
 extra:
   alternate: 
@@ -58,7 +57,8 @@ extra:
       link: https://socialtic.org
 
 plugins:
-  - search
+  - search:
+    separator: '[\s\-\.\_]'
           
 
 
@@ -66,3 +66,6 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
