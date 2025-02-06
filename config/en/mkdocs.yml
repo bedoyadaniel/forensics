@@ -1,23 +1,26 @@
 site_name: SocialTIC Forensics
 site_url: https://socialtic.github.io/forensics
-site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
+site_description: Documentation for consensual forensic investigations in civil society
+docs_dir: '../../docs/en'
+site_dir: '../../generated/en'
 
 
 nav:
   - Home: 'index.md'
   - Explainers:
     - Inicio: '1-explainers/index.md'
-    - Explainer introductorio a forense digital: '1-explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'
-  - Tutoriales: 
-    - Inicio: '2-tutoriales/index.md'
-  - Guías how-to:
-    - Inicio: '3-guias/index.md'
-  - Referencias:
-    - Inicio: '4-referencias/index.md'
+  - Tutorials: 
+    - Inicio: '2-tutorials/index.md'
+  - How-to's:
+    - Inicio: '3-how-tos/index.md'
+  - Reference:
+    - Inicio: '4-reference/index.md'
 
 theme: 
   name: material
-  logo: img/ST_logo-01.png
+  custom_dir: '../../overrides/'
+  logo: assets/img/ST_logo-01.png
+  language: en
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: default
@@ -38,21 +41,6 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
 
-  plugins:
-  - search:
-      separator: '[\s\-\.\_]'
-  - i18n:
-      docs_structure: folder
-      languages:
-        - locale: es
-          default: true
-          name: Español
-          build: true
-        - locale: en
-          name: English
-          build: true
-
-          
   extra:
     social:
       - icon: fontawesome/brands/twitter
@@ -61,6 +49,24 @@ theme:
         link: https://github.com/socialtic/qttd
       - icon: material/web
         link: https://socialtic.org
+    alternate: 
+
+      # Switch to Spanish
+     - name: Español
+       link: /es/
+       lang: es
+
+      # Switch to English
+     - name: English
+       link: /en/
+       lang: en   
+
+  plugins:
+  - search:
+      separator: '[\s\-\.\_]'
+      lang: en
+          
+
 
 markdown_extensions:
   - admonition
