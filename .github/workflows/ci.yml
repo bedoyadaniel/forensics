@@ -15,6 +15,6 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-static-i18n
-      - run: mkdocs build -f ../../config/es/mkdocs.yml
-      - run: mkdocs build -f ../../config/en/mkdocs.yml
+      - run: mkdocs build -f ../config/es/mkdocs.yml
+      - run: mkdocs build -f ../config/en/mkdocs.yml
       - run: mkdocs gh-deploy --force
