@@ -18,7 +18,6 @@ nav:
 
 theme: 
   name: material
-  language: es
   logo: img/ST_logo-01.png
   palette:
     - media: "(prefers-color-scheme: dark)"
@@ -42,15 +41,26 @@ theme:
   - search:
       separator: '[\s\-\.\_]'
   - i18n:
-      docs_structure: suffix
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
       languages:
         - locale: es
+          link: /es/
           default: true
           name: Español
           build: true
+          site_name: "Documentación en forense consentida para sociedad civil"
         - locale: en
+          link: /en/
           name: English
           build: true
+          site_name: "Documentation on consensual digital forensics for Civil Society"
+          nav_translations: 
+            Tutoriales: Tutorials
+            Referencias: References
+            Guías how-to: How-To's 
           
   extra:
     social:
