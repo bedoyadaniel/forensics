@@ -43,7 +43,7 @@ theme:
 extra:
   alternate: 
     - name: Español
-      link: /es/
+      link: /
       lang: es
     - name: English
       link: /en/
