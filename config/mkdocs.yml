@@ -7,7 +7,7 @@ site_dir: '../generated'
 nav:
   - Home: 'index.md'
   - Explainers:
-    - Inicio: '1-explainers/index.md'
+    - Inicio: 'explainers/index.md'
     - Explainer introductorio a forense digital: 'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'
   - Tutoriales: 
     - Inicio: 'tutorials/index.md'
