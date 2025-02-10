@@ -8,13 +8,13 @@ site_dir: '../../generated/en'
 nav:
   - Home: 'index.md'
   - Explainers:
-    - Home: '1-explainers/index.md'
+    - Home: 'explainers/index.md'
   - Tutorials: 
-    - Home: '2-tutorials/index.md'
+    - Home: 'tutorials/index.md'
   - How-to's:
-    - Home: '3-how-tos/index.md'
+    - Home: 'how-tos/index.md'
   - Reference:
-    - Home: '4-reference/index.md'
+    - Home: 'references/index.md'
 
 theme: 
   name: material
