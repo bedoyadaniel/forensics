@@ -9,6 +9,8 @@ nav:
   - Home: 'index.md'
   - Explainers:
     - Home: 'explainers/index.md'
+    - Explainer - Introduction to digital forensics: 'explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.md'
+
   - Tutorials: 
     - Home: 'tutorials/index.md'
   - How-to's:
