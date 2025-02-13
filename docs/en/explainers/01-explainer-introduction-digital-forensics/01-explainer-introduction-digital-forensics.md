@@ -55,10 +55,10 @@ There are several frameworks and norms that suggest a series of phases in order 
 
 !!! success "Best Practice" 
     Throughout these different phases, it is key to maintain and ensure the integrity of evidence, and to create confidence in the analysis process. Due to its nature, digital evidence is fragile, since it can be altered or destroyed during the collection or analysis stages. This is why, no matter what framework or best practices you follow, you should always the following basic principles during the investigation cycle: 
-
-* Whenever possible, **avoid directly manipulating or working on the collected evidence**. Instead, use local copies that do not endanger the original evidence.   
-* **Documenting is a key aspect of any forensic investigation**. Any action that you take, any discovery that you make, any tool that you use, any hypotheses or conclusions that you arrive at should be well documented. It is important that a peer can review and reproduce your findings independently, looking at the evidence and the documentation.   
-* While it is not always possible to know what will happen in a given case, if you believe it might be possible that the evidence is used as part of a legal proceeding, familiarize yourself with the relevant legislation in the jurisdiction, including by consulting with a peer expert in legal matters. 
+    
+    * Whenever possible, **avoid directly manipulating or working on the collected evidence**. Instead, use local copies that do not endanger the original evidence.   
+    * **Documenting is a key aspect of any forensic investigation**. Any action that you take, any discovery that you make, any tool that you use, any hypotheses or conclusions that you arrive at should be well documented. It is important that a peer can review and reproduce your findings independently, looking at the evidence and the documentation.   
+    * While it is not always possible to know what will happen in a given case, if you believe it might be possible that the evidence is used as part of a legal proceeding, familiarize yourself with the relevant legislation in the jurisdiction, including by consulting with a peer expert in legal matters. 
 
 Most of the frameworks coincide in the following phases: **identification, collection, preservation, analysis and presentation**. Below we detail what happens during each of these phases. 
 
