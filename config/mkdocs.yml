@@ -6,6 +6,7 @@ site_dir: '../generated'
 
 nav:
   - Home: 'index.md'
+    -Índice y ruta de aprendizaje: 'indice-contenidos.md'
   - Explainers:
     - Inicio: 'explainers/index.md'
     - Explainer introductorio a forense digital: 'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'
