@@ -24,7 +24,7 @@ Los contenidos se desarrollarán inicialmente en idioma **español**, y se impul
 
 Los explainers son materiales para el **aprendizaje de aspectos teóricos,** que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
 
-* [Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/)  
+* [Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)  
 * Manejo de la información durante una investigación forense *(estimado segunda mitad 2025\)*  
 * Vectores y tipos de ataques de malware en móviles observados en sociedad civil *(estimado segunda mitad 2025\)*
 
