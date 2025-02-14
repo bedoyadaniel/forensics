@@ -6,7 +6,7 @@ site_dir: '../generated'
 
 nav:
   - Home: 
-    - Inicio: index.md'
+    - Inicio: 'index.md'
     - Índice y ruta de aprendizaje: 'indice-contenidos.md'
   - Explainers:
     - Inicio: 'explainers/index.md'
