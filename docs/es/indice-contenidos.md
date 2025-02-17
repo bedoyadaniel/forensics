@@ -1,7 +1,7 @@
 ---
-title: Índice y ruta de aprendizaje
-summary: Índice de contenidos y ruta de aprendizaje
-keywords: índice, ruta de aprendizaje
+title: Índice de contenidos
+summary: Índice de contenidos 
+keywords: índice
 authors: Daniel Bedoya Arroyo
 lang: es
 tags: [indice, intro]
