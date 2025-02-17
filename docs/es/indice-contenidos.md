@@ -56,12 +56,12 @@ Durante los próximos meses, esperamos publicar contenidos sobre los siguientes 
 * Adquisición y extracción de un bugreport *(estimado primera mitad 2025\)*  
 * Adquisición y extracción mediante AndroidQF *(estimado primera mitad 2025\)*  
 * Adquisición y extracción mediante ADB *(estimado primera mitad 2025\)*  
+* Triaje de un dispositivo Android utilizando AndroidQF y MVT *(estimado primera mitad 2025\)*  
 * Manejo de la información durante una investigación forense *(estimado segunda mitad 2025\)*  
 * Vectores y tipos de ataques de malware en móviles observados en sociedad civil *(estimado segunda mitad 2025\)*  
 * Análisis de un bugreport mediante MVT *(estimado segunda mitad  2025\)*  
 * Análisis de una extracción con AndroidQF mediante MVT *(estimado segunda mitad 2025\)*  
 * Análisis de un dispositivo físico mediante MVT *(estimado segunda mitad 2025\)*  
-* Triaje de un dispositivo Android utilizando AndroidQF y MVT *(estimado primera mitad 2025\)*  
 * Artefactos de Android *(estimado segunda mitad 2025\)*  
 * ¿Cómo colaborar con otros laboratorios de amenazas? *(estimado segunda mitad 2025\)*  
 * Análisis de aplicaciones maliciosas para sistema operativo Android *(estimado segunda mitad 2025\)*  
