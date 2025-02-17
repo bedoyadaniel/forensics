@@ -14,11 +14,13 @@ some_url:
 
 ## Estrategia de contenidos
 
-En este apartado se incluye la lista de contenidos y recursos disponibles en este sitio, y se actualizará de forma periódica conforme se incluyan nuevos materiales. Durante la **primera mitad del 2025** el enfoque será en contenidos que permitan obtener una **base teórica de conocimiento así como guías prácticas para la adquisición y recolección de evidencia**. En la **segunda mitad del 2025**, el enfoque será en contenidos relacionados a las **etapas de análisis y la colaboración entre pares.** 
+Durante la **primera mitad del 2025** el enfoque será en contenidos que permitan obtener una **base teórica de conocimiento así como guías prácticas para la adquisición y recolección de evidencia**. En la **segunda mitad del 2025**, el enfoque será en contenidos relacionados a las **etapas de análisis y la colaboración entre pares.** 
 
 Los contenidos se desarrollarán inicialmente en idioma **español**, y se impulsará la traducción al inglés. De anteman**o agradecemos los esfuerzos para la revisión y traducción de contenidos a idiomas adicionales**. Para más información puedes escribirnos a [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
 
 ## Índice de contenidos publicados
+
+En este apartado se incluye la lista de contenidos y recursos disponibles en este sitio, y se actualizará de forma periódica conforme se incluyan nuevos materiales. 
 
 ### [Explainers](http://../../explainers/)
 
