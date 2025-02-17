@@ -10,7 +10,7 @@ some_url:
 ---
 
 
-# Índice de contenidos y ruta de aprendizaje
+# Índice de contenidos
 
 ## Estrategia de contenidos
 
