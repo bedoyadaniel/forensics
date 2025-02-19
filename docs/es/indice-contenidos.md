@@ -26,7 +26,7 @@ En este apartado se incluye la lista de contenidos y recursos disponibles en est
 
 Los explainers son materiales para el **aprendizaje de aspectos teóricos,** que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
 
-* [Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital/)
+* [Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
 
 ### [Tutoriales](../tutorials/)
 
