@@ -24,7 +24,7 @@ Contents will be developed in **Spanish first**, and we will pursue and support 
 
 Explainers deepen and broaden the reader’s **understanding of a subject**. It brings clarity, light and context. Explainers intention is to be theoric learning resources, to improve the understanding of a given subject. They focus on a defined scope of a larger topic, and usually help understand the “why”.
 
-* [Introduction to consensual forensics for the defense of Human Rights](http://../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital/)
+* [Introduction to consensual forensics for the defense of Human Rights](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital/)
 
 ### [Tutorials](../tutorials/)
 
