@@ -22,21 +22,21 @@ Los contenidos se desarrollarán inicialmente en idioma **español**, y se impul
 
 En este apartado se incluye la lista de contenidos y recursos disponibles en este sitio, y se actualizará de forma periódica conforme se incluyan nuevos materiales. 
 
-### [Explainers](../../explainers/)
+### [Explainers](../explainers/)
 
 Los explainers son materiales para el **aprendizaje de aspectos teóricos,** que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
 
 * [Introducción a la forense digital consentida para la defensa de los Derechos Humanos](http://../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital/)
 
-### [Tutoriales](../../tutorials/)
+### [Tutoriales](../tutorials/)
 
 Los tutoriales tienen como objetivo el **aprendizaje de conocimientos prácticos a través del desarrollo de una actividad**. En otros términos es un aprender haciendo. Los tutoriales son actividades guiadas que permiten adquirir habilidades y conocimientos, y cuyo enfoque es el aprendizaje y no el completar una tarea.
 
-### [Guías how-to](../../how-tos/)
+### [Guías how-to](../how-tos/)
 
 El objetivo de las guías how-to es poder **ejecutar una tarea a través de instrucciones paso a paso.** Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas.
 
-### [Referencias](../../references)
+### [Referencias](../references)
 
 Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea de forma confiable y sin errores**.
 

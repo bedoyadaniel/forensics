@@ -20,21 +20,21 @@ Contents will be developed in **Spanish first**, and we will pursue and support 
 
 ## Index of published contents
 
-### [Explainers](../../explainers/)
+### [Explainers](../explainers/)
 
 Explainers deepen and broaden the reader’s **understanding of a subject**. It brings clarity, light and context. Explainers intention is to be theoric learning resources, to improve the understanding of a given subject. They focus on a defined scope of a larger topic, and usually help understand the “why”.
 
 * [Introduction to consensual forensics for the defense of Human Rights](http://../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital/)
 
-### [Tutorials](../../tutorials/)
+### [Tutorials](../tutorials/)
 
 Tutorials are all about **learning through guided practical exercises**. In other words, it's learning by doing. Tutorials allow the reader to acquire skills and knowledge, and are focused on learning and not on completing a specific task.
 
-### [How-to guides](../../how-tos/)
+### [How-to guides](../how-tos/)
 
 How-to’s are all about **executing a task and achieving a goal through step-by-step instructions**. It assumes that the reader already has the baseline skills and knowledge necessary to complete the task, and hence, focuses on the steps necessary to achieve the desired outcome in a correct way and aligned to best practices.
 
-### [Referencias](../../references)
+### [Referencias](../references)
 
 Reference material describes the machinery. **One hardly reads reference material; one consults it.** There should be no doubt or ambiguity in reference; it should be wholly authoritative. Reference contains technical knowledge that can be helpful when executing a task.
 
