@@ -58,7 +58,7 @@ En apego al marco de referencia Diátaxis, debemos primero identificar la necesi
 * Si el objetivo es **aplicar conocimientos** para completar una tarea específica, revise la sección de **guías how-to**.
 * Si el objetivo es **obtener información descriptiva sobre conceptos o herramientas**, consulte la sección de **referencias**. 
 
-Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan a las personas lectoras adquirir los conocimientos necesarios para completar tareas en diferentes etapas del proceso de una investigación forense. En lo inmediato, se recomienda iniciar con una lectura al [explainer introductorio en forense digital](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital/). 
+Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan a las personas lectoras adquirir los conocimientos necesarios para completar tareas en diferentes etapas del proceso de una investigación forense. En lo inmediato, se recomienda iniciar con una lectura al [explainer introductorio en forense digital](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html). 
 
 ## ¿Cómo colaborar con este repositorio? 
 
