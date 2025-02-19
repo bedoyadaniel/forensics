@@ -23,25 +23,25 @@ The resources focused on the **analysis of evidence and presentation of results*
 
 To organize this repository we follow the [technical documentation framework Diataxis](https://diataxis.fr/reference/), that defines four different types of resources: tutorials, how-to’s, explainers and references. 
 
-### Tutorials
-
-Tutorials are all about learning through **guided practical exercises**. In other words, it's **learning by doing**. Tutorials allow the reader to acquire skills and knowledge, and are focused on learning and not on completing a specific task. 
-
-An example of a tutorial is a car driving lesson. Usually, in a good driving lesson students familiarize themselves with the vehicle, the controls, and learn as they go. The **objective is not getting from going A to point B, instead is the skills you learn in the way.** 
-
-### Explainers 
+### [Explainers](../explainers/)
 
 Explainers **deepen and broaden the reader’s understanding of a subject.** It brings clarity, light and context. Explainers intention is to be theoric learning resources, to improve the understanding of a given subject. They focus on a defined scope of a larger topic, and usually help understand the “why”. 
 
 For example, the first explainer included in this documentation repository presents information about the larger forensic science field, and how consensual digital forensics for civil society fit in the larger scheme of things while also touching on the importance as a mechanism for accountability. 
 
-### How-to’s
+### [Tutorials](../tutorials/)
+
+Tutorials are all about learning through **guided practical exercises**. In other words, it's **learning by doing**. Tutorials allow the reader to acquire skills and knowledge, and are focused on learning and not on completing a specific task. 
+
+An example of a tutorial is a car driving lesson. Usually, in a good driving lesson students familiarize themselves with the vehicle, the controls, and learn as they go. The **objective is not getting from going A to point B, instead is the skills you learn in the way.** 
+
+### [How-to guides](../how-tos/)
 
 **How-to’s are all about executing a task and achieving a goal** through step-by-step instructions. It assumes that the reader already has the baseline skills and knowledge necessary to complete the task, and hence, focuses on the steps necessary to achieve the desired outcome in a correct way and aligned to best practices. 
 
 A good example is a cooking recipe, where the focus is to achieve a result, in this case preparing a specific dish in a repeatable way. It assumes the person already has basic knowledge on aspects like cutting and measuring the ingredients, setting the oven temperature, etc. 
 
-### Reference 
+### [References](../references)
 
 Reference material describes the machinery. It should be austere. **One hardly reads reference material; one consults it**. There should be no doubt or ambiguity in reference; it should be wholly authoritative. Reference contains technical knowledge that can be helpful when executing a task. 
 

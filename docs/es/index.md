@@ -25,19 +25,19 @@ Los materiales enfocados en el **análisis y presentación de resultados son esp
 
 Para la organización de este repositorio de documentación se utiliza el [marco de referencia Diátaxis](https://diataxis.fr/reference/), que **sugiere cuatro tipos de recursos diferentes: tutoriales, guías how-to, explainers y referencias.**
 
-### Tutoriales
-
-El tutorial tiene como objetivo el **aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. En otros términos es un **aprender haciendo**. Los tutoriales son actividades guiadas que permiten adquirir habilidades y conocimientos, y cuyo enfoque es el aprendizaje y no el completar una tarea.
-
-Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B.
-
-### Explainers
+### [Explainers](../explainers/)
 
 Los explainers son materiales para el **aprendizaje de aspectos teóricos**, que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
 
 Por ejemplo, nuestro primer explainer sobre forense digital consentida en beneficio de la sociedad civil, presenta información sobre las ciencias forenses y cómo se utiliza en diferentes ámbitos, para luego enfocarse en su práctica dentro de la sociedad civil como una herramienta para la defensa de derechos fundamentales. 
 
-### Guías How-To
+### [Tutoriales](../tutorials/)
+
+El tutorial tiene como objetivo el **aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. En otros términos es un **aprender haciendo**. Los tutoriales son actividades guiadas que permiten adquirir habilidades y conocimientos, y cuyo enfoque es el aprendizaje y no el completar una tarea.
+
+Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B.
+
+### [Referencias](../references)
 
 **El objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas. 
 
