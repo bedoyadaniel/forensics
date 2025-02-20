@@ -58,7 +58,7 @@ More concretely:
 * If the objective is to apply skills to **achieve a specific task**, then check the **how-to** guides.   
 * If the objective is to **obtain descriptive information of concepts or tools** when trying to complete a task, check the **references**. 
 
-As we continue to include content in this repository, we will define learning pathways that allow readers to obtain the necessary knowledge and skills to complete tasks across the different phases of a forensic investigation. As a starting point, we recommend you have a look at the [indroductory explainer on digital forensics](../explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics/)
+As we continue to include content in this repository, we will define learning pathways that allow readers to obtain the necessary knowledge and skills to complete tasks across the different phases of a forensic investigation. As a starting point, we recommend you have a look at the [indroductory explainer on digital forensics](explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics/)
 
 ## ¿How to collaborate with this repository? 
 
