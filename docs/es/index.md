@@ -62,7 +62,7 @@ Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan 
 
 ## ¿Cómo colaborar con este repositorio? 
 
-Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. Agradecemos cualquier esfuerzo por personas y comunidades para participar, mejorar y contribuir al desarrollo de este recurso, incluyendo en acciones como **replicar, verificar, mejorar y extender los recursos y metodologías.** 
+Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. **Se publican bajo [licencia Creative Commons atribución-Sharealike](https://creativecommons.org/licenses/by-sa/4.0/deed.es)** Agradecemos cualquier esfuerzo por personas y comunidades para participar, mejorar y contribuir al desarrollo de este recurso, incluyendo en acciones como **replicar, verificar, mejorar y extender los recursos y metodologías.** 
 
 Los contenidos publicados en este sitio son parte de un [repositorio de Github](https://github.com/Socialtic/forensics), por lo que es posible **enviar comentarios y sugerencias** de forma directa a través de la [sección de problemas (issues)](https://github.com/Socialtic/forensics/issues). Para otro tipo de colaboraciones, dudas, comentarios o sugerencias se pone a disposición el correo electrónico [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
 
