@@ -4,4 +4,4 @@ En esta sección encontrarás materiales explicativos o explainers. Según [el m
 
 ## Índice de explainers
 
-​	[1- Explainer - Introducción a la forense digital consentida para la defensa de Derechos Humanos](01-explainer-introduccion-forense-digital/)
+​	[1- Explainer - Introducción a la forense digital consentida para la defensa de Derechos Humanos](01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
