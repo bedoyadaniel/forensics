@@ -4,4 +4,4 @@ In this section you will find **explainers**. According to [Diataxis documentati
 
 ## Index of explainers
 
-[1-Explainer - Introduction to consensual forensics for the defense of Human Rights](explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics/)
+[1-Explainer - Introduction to consensual forensics for the defense of Human Rights](01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics/)
