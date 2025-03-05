@@ -37,13 +37,13 @@ El tutorial tiene como objetivo el **aprendizaje de conocimientos prácticos** a
 
 Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B.
 
-### [Referencias](../references)
+### [Guías how-to](../how-tos/)
 
 **El objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas. 
 
 Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar una tarea, en este caso, preparar un platillo. Asume que la persona ya tiene conocimientos básicos como cortar los alimentos, mezclar con una batidora, etc. 
 
-### Referencias
+### [Referencias](../references/)
 
 Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea** de forma confiable y sin errores. 
 
