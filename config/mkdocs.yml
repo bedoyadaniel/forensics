@@ -15,6 +15,7 @@ nav:
     - Inicio: 'tutorials/index.md'
   - Guías how-to:
     - Inicio: 'how-tos/index.md'
+    - ¿Cómo obtener y documentar consentimiento informado?: 'how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.md'
   - Referencias:
     - Inicio: 'references/index.md'
 
