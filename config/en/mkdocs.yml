@@ -17,6 +17,7 @@ nav:
     - Home: 'tutorials/index.md'
   - How-to's:
     - Home: 'how-tos/index.md'
+    - How-to- Obtain and document informed consent: 'how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md'
   - Reference:
     - Home: 'references/index.md'
 
