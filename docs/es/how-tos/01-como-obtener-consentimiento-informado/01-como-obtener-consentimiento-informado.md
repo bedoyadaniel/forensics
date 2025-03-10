@@ -13,6 +13,9 @@ some_url:
 
 # ¿Cómo obtener un consentimiento informado para una investigación forense?
 
+!!! warning "" 
+    Este documento es un borrador público aún en revisión.
+
 Este documento forma parte de un repositorio de documentación técnica que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para impulsar el análisis forense consentido en beneficio de la sociedad civil. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/). 
 
 El presente documento se clasifica como una [guía how-to](https://diataxis.fr/how-to-guides/). Describe qué es el consentimiento informado en el contexto de investigaciones forenses, y presenta un borrador que puede ser utilizado por puntos de contacto, analistas y laboratorios forenses para obtener y registrar el consentimiento durante una investigación. Agradecemos las referencias y revisiones de la comunidad de práctica que permitieron la elaboración de este documento. 
