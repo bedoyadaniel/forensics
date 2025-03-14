@@ -5,8 +5,9 @@ keywords: consent, informed consent, consented forensics
 authors: Daniel Bedoya Arroyo
 lang: en
 tags: [how-to, intro]
-last_updated: 2025-03-10
+last_updated: 2025-03-14
 some_url:
+
 
 
 ---
@@ -14,14 +15,16 @@ some_url:
 # How to obtain and document informed consent during a forensic investigation?
 
 !!! warning "" 
-    Draft documentation still under active review.
-
-!!! warning "" 
     This document has been translated by a non-native English speaker. We appreciate any contribution from advanced or native speakers to review and improve the language. You can [contribute directly through the associated repository](https://github.com/Socialtic/forensics/issues) or get in touch with us at [seguridad@socialtic.org](mailto:seguridad@socialtic.org). Thanks!
 
 This document is part of a **technical documentation repository** whose main objective is to establish a baseline of proven, flexible and accessible knowledge to **boost consented forensic analysis in support of civil society across the globe**. To organize the contents, we use the [technical documentation framework Diátaxis](https://diataxis.fr/). 
 
-This resource fits within the [how-to guides](https://diataxis.fr/how-to-guides/) category. It describes what is informed consent and why it is important in the context of forensic investigations. It also includes a template that can be used by point of contacts, analysts and forensic labs to obtain and record consent during a forensic investigation. We appreciate references shared by Access Now and others in support of this documentation. 
+This resource fits within the [how-to guides](https://diataxis.fr/how-to-guides/) category. It **describes what is informed consent and why it is important** in the context of forensic investigations. It also includes a template that can be used by point of contacts, analysts and forensic labs to obtain and record consent during a forensic investigation. 
+
+!!! abstract "Consideración Legal"
+    This document **does not detail and is not sufficient to establish and maintain chain of custody.** These important procedures will be described in a separate piece of documentation in the future. 
+
+We appreciate references and reviews by the community of practice to support the development of this document. 
 
 ## What is informed consent and why is it important?
 
@@ -30,6 +33,9 @@ This resource fits within the [how-to guides](https://diataxis.fr/how-to-guides/
 A key aspect of a consent agreement is the capacity of the person who signs and accepts the risk **to take an informed decision** on the course of the investigation, or even reject the assistance. In the forensic field, this means providing enough information so that the beneficiary of support understands what actions, risks, rights and responsibilities are part of the investigation process. Informed consent is not just about signing a form, but a process led by the analyst or the forensic lab to **communicate in a clear and transparent way** with the beneficiary of support, and ensure their will is respected. 
 
 One of the reasons consent is necessary is related to the fact that **digital evidence might include personal information**, like contacts, files, pictures, applications, etc. This can carry risks, in case the information is exposed or not managed properly, and potentially could be subject to data protection regulation ([GDPR](https://es.wikipedia.org/wiki/Reglamento_General_de_Protecci%C3%B3n_de_Datos), for example). In addition to communicating transparently about what is collected, forensic labs should make their best effort to reduce the collection of personal data, and to protect sensitive information with [robust security policies.](https://protege.la/guias-contenido/diseno-politicas-protocolos-lineamientos/) 
+
+!!! abstract "Consideración Legal"
+    Any data that is collected will be subject to data protection legislation of the **local jurisdiction of residence of whoever is requesting the forensic analysis.** 
 
 Moreover, depending on the focus of the organization providing the support and the nature of the investigation, there might be different approaches to **presenting the results of the analysis**. Often, forensic research leads to reports, campaigns, litigation efforts and other interventions that seek greater accountability. **These actions and interventions can create risks,** both for the organization conducting the research and for the victims, including legal prosecution, harassment and retaliation from governments or private companies. Before naming or using someone’s evidence as part of an accountability action, it is important to ensure there is informed consent. 
 
@@ -66,7 +72,7 @@ In the following section we present **a draft of an informed consent agreement t
 
 In order to create an informed consent document, aside from engaging in direct conversations with the requester of assistance, follow these steps: 
 
-1- **Download** the informed consent agreement draft. This draft template is available in [.odt](https://en.wikipedia.org/wiki/OpenDocument), and we recommend using [LibreOffice](https://www.libreoffice.org/) to edit it. The document uses form fields, so that when exporting as a PDF  it can be completed and signed easily. This is an example of a PDF generated using the template. 
+1- **Download** the [informed consent agreement draft template](template-consent-agreement-for-forensic-analysis.odt). This draft template is available in [.odt](https://en.wikipedia.org/wiki/OpenDocument), and we recommend using [LibreOffice](https://www.libreoffice.org/) to edit it. The document uses form fields, so that when exporting as a PDF  it can be completed and signed easily. This is an [example of a PDF generated using the template](template-consent-agreement-for-forensic-analysis-example.pdf). 
 
 We are also sharing a [Google Docs version of the agreement](https://docs.google.com/document/d/1OXKMxV52RXJw_lOfFL6Fq9h9M_UzdvHfCMOvhNmKOX0/edit). You can create a copy and adjust it as necessary, but keep in mind that the exported PDF will not be a fillable form. 
 
