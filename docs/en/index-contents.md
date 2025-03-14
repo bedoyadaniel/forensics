@@ -34,7 +34,7 @@ Tutorials are all about **learning through guided practical exercises**. In othe
 
 How-to’s are all about **executing a task and achieving a goal through step-by-step instructions**. It assumes that the reader already has the baseline skills and knowledge necessary to complete the task, and hence, focuses on the steps necessary to achieve the desired outcome in a correct way and aligned to best practices.
 
-* [How to obtain and document informed consent for forensic analysis?](../how-tos/01-how-to-obtain-inforemd-consent/01-)
+* [How to obtain and document informed consent for forensic analysis?](../how-tos/01-how-to-obtain-informed-consent/01-)
 
 ### [References](../references)
 
