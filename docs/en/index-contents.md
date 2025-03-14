@@ -24,7 +24,7 @@ Contents will be developed in **Spanish first**, and we will pursue and support 
 
 Explainers deepen and broaden the reader’s **understanding of a subject**. It brings clarity, light and context. Explainers intention is to be theoric learning resources, to improve the understanding of a given subject. They focus on a defined scope of a larger topic, and usually help understand the “why”.
 
-* [Introduction to consensual forensics for the defense of Human Rights](../explainers/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent/)
+* [Introduction to consensual forensics for the defense of Human Rights](../explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics/)
 
 ### [Tutorials](../tutorials/)
 
@@ -34,7 +34,7 @@ Tutorials are all about **learning through guided practical exercises**. In othe
 
 How-to’s are all about **executing a task and achieving a goal through step-by-step instructions**. It assumes that the reader already has the baseline skills and knowledge necessary to complete the task, and hence, focuses on the steps necessary to achieve the desired outcome in a correct way and aligned to best practices.
 
-* [How to obtain and document informed consent for forensic analysis?](../how-tos/01-how-to-obtain-informed-consent/01-)
+* [How to obtain and document informed consent for forensic analysis?](../how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent/)
 
 ### [References](../references)
 
