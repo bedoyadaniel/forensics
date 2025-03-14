@@ -16,7 +16,12 @@ some_url:
 
 Este documento forma parte de un repositorio de documentación técnica que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para impulsar el análisis forense consentido en beneficio de la sociedad civil. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/). 
 
-El presente documento se clasifica como una [guía how-to](https://diataxis.fr/how-to-guides/). Describe qué es el **consentimiento informado en el contexto de investigaciones forenses para la defensa de los derechos humanos**, y presenta un borrador que puede ser utilizado por puntos de contacto, analistas y laboratorios forenses para obtener y registrar el consentimiento durante una investigación. En esta guía **no se abordará el procedimiento de cadena de custodia.** 
+El presente documento se clasifica como una [guía how-to](https://diataxis.fr/how-to-guides/). Describe qué es el **consentimiento informado en el contexto de investigaciones forenses para la defensa de los derechos humanos**, y presenta un borrador que puede ser utilizado por puntos de contacto, analistas y laboratorios forenses para obtener y registrar el consentimiento durante una investigación. 
+
+
+!!! abstract "Consideración Legal"
+    En esta guía **no detalla el procedimiento de cadena de custodia.** Este importante proceso se     describirá más adelante en un material diferente.  
+
 
 Agradecemos las referencias y revisiones de la comunidad de práctica que permitieron la elaboración de este documento. 
 
@@ -26,7 +31,10 @@ El [consentimiento](https://es.wikipedia.org/wiki/Consentimiento) es un principi
 
 Un aspecto clave en cualquier acuerdo de consentimiento es la capacidad de quién acepta el acuerdo de tomar una **decisión informada** sobre el curso de la investigación, e incluso poder rechazar la asistencia. En la práctica forense, esto significa brindar toda la información necesaria para que quién solicita el análisis comprenda las acciones, riesgos, derechos y obligaciones que conlleva el proceso de investigación. Es importante que la **persona analista se comunique de forma clara y transparente**, y respete la voluntad de quién solicita el apoyo. 
 
-Durante una investigación forense, la persona analista deberá recolectar y analizar la evidencia, y también presentar los resultados de su análisis. **Los [artefactos forenses](https://www.sec2crime.com/2021/11/01/los-artifacts-en-la-informatica-forense/) que se recolectan pueden contener información personal (contactos, archivos, fotografías, etc)**, que podría acarrear riesgos si se realiza un manejo inadecuado. Además, esta información podría estar sujeta a normas de protección de la información ([GDPR](https://es.wikipedia.org/wiki/Reglamento_General_de_Protecci%C3%B3n_de_Datos), por ejemplo) y, más allá de la regulación existente, requieren de un tratamiento responsable, idealmente **respaldado por [políticas de manejo, protección y retención de la información](https://protege.la/guias-contenido/diseno-politicas-protocolos-lineamientos/).** Vale resaltar que los datos recolectados estarán sujetos a legislación para la protección y manejo de la información de la  **jurisdicción local de residencia de la persona a quien se le hará el diagnostico forense.**
+Durante una investigación forense, la persona analista deberá recolectar y analizar la evidencia, y también presentar los resultados de su análisis. **Los [artefactos forenses](https://www.sec2crime.com/2021/11/01/los-artifacts-en-la-informatica-forense/) que se recolectan pueden contener información personal (contactos, archivos, fotografías, etc)**, que podría acarrear riesgos si se realiza un manejo inadecuado. Además, esta información podría estar sujeta a normas de protección de la información ([GDPR](https://es.wikipedia.org/wiki/Reglamento_General_de_Protecci%C3%B3n_de_Datos), por ejemplo) y, más allá de la regulación existente, requieren de un tratamiento responsable, idealmente **respaldado por [políticas de manejo, protección y retención de la información](https://protege.la/guias-contenido/diseno-politicas-protocolos-lineamientos/).** 
+
+!!! abstract "Consideración Legal"
+    Los datos que se recolecten estarán sujetos a legislación para la protección y manejo de la información de la  **jurisdicción local de residencia de la persona a quien se le hará el diagnostico forense.**
 
 Dependiendo del enfoque de la organización que brinda el apoyo y la naturaleza de la investigación, existen diferentes alternativas para la **presentación de los resultados del análisis**. En general, a través de la práctica forense, se pretende llegar a procesos de rendición de cuentas que implican **acciones de incidencia como reportes, campañas, litigación, entre otros**. Estas acciones pueden **acarrear consecuencias y riesgos**, tanto para la organización que realiza el análisis cómo para la persona víctima del ataque.  Algunos riesgos incluyen, por ejemplo, persecución legal, acoso y represalias adicionales por parte de gobiernos o de empresas desarrolladoras de tecnologías de vigilancia. 
 
