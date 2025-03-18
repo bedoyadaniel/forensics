@@ -70,9 +70,9 @@ En la siguiente sección presentamos un **borrador de consentimiento informado**
 
 Para generar un formulario de consentimiento a partir del borrador propuesto, siga los siguientes pasos: 
 
-1- **Descargue** el [borrador de consentimiento informado](borrador-consentimiento-para-analisis-forense.odt). Este borrador está en formato .odt, por lo que se recomienda utilizar [LibreOffice](https://www.libreoffice.org/) para su edición. El formato utiliza campos de formulario, de forma tal que al convertir en [PDF pueda ser completado de forma sencilla](https://drive.google.com/file/d/1UhHwynCwBOPan3Ya2KU6ei1xPVuslYjo/view?usp=sharing). Este documento PDF es un [ejemplo del resultado al convertir el borrador .odt a PDF](borrador-consentimiento-para-analisis-forense-ejemplo.pdf). 
+1- **Descargue** el [borrador de consentimiento informado](borrador-consentimiento-para-analisis-forense.odt). Este borrador está en formato .odt, por lo que se recomienda utilizar [LibreOffice](https://www.libreoffice.org/) para su edición. El formato utiliza campos de formulario, de forma tal que al convertir en PDF pueda ser completado de forma sencilla. Este documento PDF es un [ejemplo del resultado al convertir el borrador .odt a PDF](borrador-consentimiento-para-analisis-forense-ejemplo.pdf). 
 
-También se pone a disposición, una versión del [borrador de consentimiento en Google docs](https://docs.google.com/document/d/1jORXEo1ZRDHsDP4L1aCoWKy_sVBms9b1GfuAtAJIWls/edit?tab=t.0). Puede crear una copia y editar según sea necesario. Al utilizar esta versión y convertir el documento a PDF, no se generará un PDF editable. 
+También se pone a disposición, una versión del [borrador de consentimiento en Google docs](https://docs.google.com/document/d/1gx6lMyISBw35Plj2jvlf7Gz0YIG5YkbrTCLhk1uw8dY/edit?tab=t.0). Puede crear una copia y editar según sea necesario. Al utilizar esta versión y convertir el documento a PDF, no se generará un PDF editable. 
 
 2- **Complete y verifique** las secciones resaltadas resaltadas en amarillo: 
 
