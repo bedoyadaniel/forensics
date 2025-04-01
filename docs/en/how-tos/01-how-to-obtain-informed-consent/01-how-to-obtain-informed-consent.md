@@ -72,9 +72,9 @@ In the following section we present **a draft of an informed consent agreement t
 
 In order to create an informed consent document, aside from engaging in direct conversations with the requester of assistance, follow these steps: 
 
-1- **Download** the [informed consent agreement draft template](template-consent-agreement-for-forensic-analysis.odt). This draft template is available in [.odt](https://en.wikipedia.org/wiki/OpenDocument), and we recommend using [LibreOffice](https://www.libreoffice.org/) to edit it. The document uses form fields, so that when exporting as a PDF  it can be completed and signed easily. This is an [example of a PDF generated using the template](template-consent-agreement-for-forensic-analysis-example.pdf). 
+1- **Download** the [informed consent letter draft template](template-letter-of-consent-for-forensic-analysis-odt.odt). This draft template is available in [.odt](https://en.wikipedia.org/wiki/OpenDocument), and we recommend using [LibreOffice](https://www.libreoffice.org/) to edit it. The document uses form fields, so that when exporting as a PDF  it can be completed and signed easily. This is an [example of a PDF generated using the template](template-letter-of-consent-for-forensic-analysis-pdf.pdf). 
 
-We are also sharing a [Google Docs version of the agreement](https://docs.google.com/document/d/1OXKMxV52RXJw_lOfFL6Fq9h9M_UzdvHfCMOvhNmKOX0/edit). You can create a copy and adjust it as necessary, but keep in mind that the exported PDF will not be a fillable form. 
+We are also sharing a [Google Docs version of the agreement](https://docs.google.com/document/d/1bxN7EHrahztVVTKYqRbdEXaXiYhsRzBf6HsdoLjnAcs/edit). You can create a copy and adjust it as necessary, but keep in mind that the exported PDF will not be a fillable form. 
 
 2- **Adjust, complete and verify** the following fields highlighted in yellow in the templates:
 
@@ -117,6 +117,7 @@ When you request and document informed consent for forensic investigations, take
   * [Hiperderecho](https://hiperderecho.org/contacto/) (Perú, Latinoamérica) \-  [**hola@hiperderecho.org**](mailto:hola@hiperderecho.org)  
 
   * [Access Now Helpline](https://accessnow.org/help) - help@accessnow.org (Request to be connected with the Tech Legal Counsel or forensic lab)
+
 
       
 
