@@ -64,23 +64,24 @@ Se debe tomar en consideración que muchas de las personas que solicitan asisten
 
 Tome en consideración que presentar un documento con lenguaje legal y una descripción de riesgos adicionales **puede generar angustia y preocupación**. La prioridad durante un análisis forense consentido debe ser el **bienestar de la persona defensora**. Asegúrese de aclarar dudas e intente generar confianza y claridad en el procedimiento a seguir. 
 
-En la siguiente sección presentamos un **borrador de consentimiento informado** que puede ser **adaptado de acuerdo a las necesidades y particularidades de la investigación forense**. Se incluyen un detalle paso a paso de cómo adaptar el documento y algunas consideraciones para su aplicación. 
+En la siguiente sección presentamos un **borrador de una carta de consentimiento informado** que puede ser **adaptada de acuerdo a las necesidades y particularidades de la investigación forense**. Se incluyen un detalle paso a paso de cómo adaptar el documento y algunas consideraciones para su aplicación. 
 
 ## ¿Cómo generar un documento de consentimiento informado?
 
-Para generar un formulario de consentimiento a partir del borrador propuesto, siga los siguientes pasos: 
+Para generar una carta de consentimiento a partir del borrador propuesto, siga los siguientes pasos: 
 
-1- **Descargue** el [borrador de consentimiento informado](borrador-carta-de-consentimiento-para-analisis-forense-odt.odt). Este borrador está en formato .odt, por lo que se recomienda utilizar [LibreOffice](https://www.libreoffice.org/) para su edición. El formato utiliza campos de formulario, de forma tal que al convertir en PDF pueda ser completado de forma sencilla. Este documento PDF es un [ejemplo del resultado al convertir el borrador .odt a PDF](borrador-carta-de-consentimiento-para-analisis-forense-pdf.pdf). 
+1- **Descargue** el [borrador de carta de consentimiento informado](borrador-carta-de-consentimiento-para-analisis-forense-odt.odt). Este borrador está en formato .odt, por lo que se recomienda utilizar [LibreOffice](https://www.libreoffice.org/) para su edición. El formato utiliza campos de formulario, de forma tal que al convertir en PDF pueda ser completado de forma sencilla. Este documento PDF es un [ejemplo del resultado al convertir el borrador .odt a PDF](borrador-carta-de-consentimiento-para-analisis-forense-pdf.pdf). 
 
-También se pone a disposición, una versión del [borrador de consentimiento en Google docs](https://docs.google.com/document/d/1YPiMO7WuGwE7hMHLZ9VPQkTLALN_bhmL0DASaZn3r2A/edit). Puede crear una copia y editar según sea necesario. Al utilizar esta versión y convertir el documento a PDF, no se generará un PDF editable. 
+También se pone a disposición, una versión del [borrador de carta de consentimiento en Google docs](https://docs.google.com/document/d/1YPiMO7WuGwE7hMHLZ9VPQkTLALN_bhmL0DASaZn3r2A/edit). Puede crear una copia y editar según sea necesario. Al utilizar esta versión y convertir el documento a PDF, no se generará un PDF editable. 
 
-2- **Complete y verifique** las secciones resaltadas resaltadas en amarillo: 
+2- **Complete y verifique** las secciones resaltadas en amarillo: 
 
 * **Nombre de la organización**: Incluya el nombre de la organización que realiza el análisis forense  
 * **Objetivo de la investigación**: Ajuste el objetivo, según sea necesario, indicando claramente qué acciones se realizarán durante la investigación forense, y con qué objetivo.   
-* **Detalle de la información a recolectar**: Detalle la [información que se recolectará](#¿qué-información-sensible-se-recolecta-durante-un-análisis-forense?) para el análisis forense, dependiendo del tipo de dispositivo y proceso de adquisición.    
 * **Consentimiento para publicar:** Si el objetivo es publicar los resultados de la investigación, mantenga y ajuste el texto correspondiente para obtener el consentimiento necesario. Si no tiene intención en publicar resultados, elimine esta sección.   
+* **Detalle de la información a recolectar**: Detalle la [información que se recolectará](#¿qué-información-sensible-se-recolecta-durante-un-análisis-forense?) para el análisis forense, dependiendo del tipo de dispositivo y proceso de adquisición.    
 * **Enlace a la política de manejo de la información:** En caso de existir, incluya el enlace a la  política de manejo de la información. **Aclare si la información será compartida con terceras personas.** 
+* **Confidencialidad de la investigación**: Detalle si la participación en la investigación se debe manejar como información confidencial, de forma tal que quién solicita el análisis comprenda si se espera que no se compartan detalles sobre el análisis. 
 
 3- **Convierta el documento en formato PDF y compártalo** con la persona que solicita el análisis. Idealmente, el consentimiento se debe solicitar luego de una conversación de triaje inicial, donde se aclaran dudas y se determinan los alcances de la investigación. 
 
@@ -120,9 +121,10 @@ Al solicitar y obtener consentimiento para llevar a cabo investigaciones forense
 
   * [Access Now Helpline](https://accessnow.org/help) - help@accessnow.org (Request to be connected with the Tech Legal Counsel or forensic lab)
 
-    
+  * [Artículo 19](https://www.article19.org/regional-office/mexico-and-central-america/) - [info@article19.org](mailto:info@article19.org)
 
-* **Protección y manejo de datos personales**: Durante una investigación forense, es posible que la persona analista adquiera, almacene y analice información sensible, que puede incluir mensajes, contactos, listas de aplicaciones, entre otros. **Además de las responsabilidades legales sobre protección de la información, se deben implementar procesos y políticas que reduzcan y protejan esta información, y garanticen el cumplimiento de los acuerdos establecidos en el formulario de consentimiento**. En caso de no existir, es recomendable que los laboratorios forenses [desarrollen políticas sobre el manejo de la información](https://protege.la/guias-contenido/diseno-politicas-protocolos-lineamientos/) (por ejemplo, la [polìtica de manejo de la información de CiviCERT](https://www.civicert.org/civicert-information-management-policy/)), que guíen el accionar durante la investigación forense, y brinden claridad a quién solicita el análisis. 
+
+  * **Protección y manejo de datos personales**: Durante una investigación forense, es posible que la persona analista adquiera, almacene y analice información sensible, que puede incluir mensajes, contactos, listas de aplicaciones, entre otros. **Además de las responsabilidades legales sobre protección de la información, se deben implementar procesos y políticas que reduzcan y protejan esta información, y garanticen el cumplimiento de los acuerdos establecidos en el formulario de consentimiento**. En caso de no existir, es recomendable que los laboratorios forenses [desarrollen políticas sobre el manejo de la información](https://protege.la/guias-contenido/diseno-politicas-protocolos-lineamientos/) (por ejemplo, la [polìtica de manejo de la información de CiviCERT](https://www.civicert.org/civicert-information-management-policy/)), que guíen el accionar durante la investigación forense, y brinden claridad a quién solicita el análisis. 
 
 ## Conclusión
 
