@@ -66,7 +66,7 @@ You should also take into account that many of the individuals asking for suppor
 
 Please also keep in mind that **presenting a document full of legal language and description of risks can create stress and anxiety**, especially if it is not accompanied with additional context and explanation, or if trust has yet to be established. Consent is a key aspect of forensic research, and a step in conducting additional research that will lead to greater accountability, but the **priority should always be the wellbeing of the Human Rights Defender.** 
 
-In the following section we present **a draft of an informed consent agreement that can be adapted to the specific needs and particularities of each forensic investigation.** We also provide guidance on how to adapt it and what to keep in mind when applying it.
+In the following section we present **a draft of a letter of informed consent that can be adapted to the specific needs and particularities of each forensic investigation.** We also provide guidance on how to adapt it and what to keep in mind when applying it.
 
 ## Documenting informed consent
 
@@ -74,15 +74,16 @@ In order to create an informed consent document, aside from engaging in direct c
 
 1- **Download** the [informed consent letter draft template](template-letter-of-consent-for-forensic-analysis-odt.odt). This draft template is available in [.odt](https://en.wikipedia.org/wiki/OpenDocument), and we recommend using [LibreOffice](https://www.libreoffice.org/) to edit it. The document uses form fields, so that when exporting as a PDF  it can be completed and signed easily. This is an [example of a PDF generated using the template](template-letter-of-consent-for-forensic-analysis-pdf.pdf). 
 
-We are also sharing a [Google Docs version of the agreement](https://docs.google.com/document/d/1bxN7EHrahztVVTKYqRbdEXaXiYhsRzBf6HsdoLjnAcs/edit). You can create a copy and adjust it as necessary, but keep in mind that the exported PDF will not be a fillable form. 
+We are also sharing a [Google Docs version of the letter](https://docs.google.com/document/d/1bxN7EHrahztVVTKYqRbdEXaXiYhsRzBf6HsdoLjnAcs/edit). You can create a copy and adjust it as necessary, but keep in mind that the exported PDF will not be a fillable form. 
 
 2- **Adjust, complete and verify** the following fields highlighted in yellow in the templates:
 
 * **Name of the organization:** Include here the name of the organization conducting the forensic investigation  
+* **Consent to name publicly or anonymously:** If you intend to publish the results of the investigation, adjust the text as necessary. If you are not intending to publish results, delete this section.  
 * **Goal of the investigation:** Adjust the objective as necessary, indicating clearly what actions you expect to take place as part of the research, and what is the main objective.   
 * **Information to collect:** Detail the information that will be collected to enable the forensic analysis, ideally including specifics about the type of device and the contents that will be extracted.   
-* **Consent to name publicly or anonymously:** If you intend to publish the results of the investigation, adjust the text as necessary. If you are not intending to publish results, delete this section.   
 * **Privacy policy / terms of service link:** If you already have a privacy policy, data protection or similar resources published, include the relevant link. If you don't have a policy, we recommend you include information on whether the collected data will be shared with 3rd parties and for how long it will be stored. 
+* **Confidentiality of the investigation:** If you would like to request that the participation on the investigation is kept as confidential, you can adjust this section to underline what is expected from the beneficiary. 
 
 3- **Convert into a PDF and share** with the person requesting the forensic analysis. Ideally, the informed consent form should be presented after an initial conversation, where you do a basic triage and clarify questions about the steps and scope of the investigation. 
 
