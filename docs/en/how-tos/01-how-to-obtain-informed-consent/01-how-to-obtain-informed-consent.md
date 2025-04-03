@@ -113,16 +113,18 @@ The exact information to collect **will depend on each case, and will be determi
 
 When you request and document informed consent for forensic investigations, take the following into account: 
 
+* **Protection and handling of personal data**: During a forensic investigation, it is possible that the analyst obtains, stores and analyzes sensitive information including messages, contacts, lists of applications, among others. In addition to applicable data protection regulations, it is important to implement policies that can help reduce and protect sensitive records, and that align with any commitment established in the consent form. If you do not have an established policy, we recommend you create one. There are several [resources on how to create information security policies](https://protege.la/guias-contenido/diseno-politicas-protocolos-lineamientos/), and published policies that can serve as inspiration, like [CiviCERT’s information management policy](https://www.civicert.org/civicert-information-management-policy/).  
+
+
 * **Legal review:** The information included in this guide, as well as the proposed draft consent form, are intended to serve as **guidance for civil society organizations engaging in forensic research**. The language might not be sufficient or appropriate in all contexts. If you have access to legal counsel, **we recommend you engage them in the review and crafting of appropriate consent forms for your use case**. If you don’t have access to legal counsel, the following organizations might be able to assist you:   
 
-  * [Hiperderecho](https://hiperderecho.org/contacto/) (Perú, Latinoamérica) \-  [**hola@hiperderecho.org**](mailto:hola@hiperderecho.org)  
+    * [Hiperderecho](https://hiperderecho.org/contacto/) (Perú, Latinoamérica) \-  [**hola@hiperderecho.org**](mailto:hola@hiperderecho.org)  
 
-  * [Access Now Helpline](https://accessnow.org/help) - help@accessnow.org (Request to be connected with the Tech Legal Counsel or forensic lab)
+    * [Access Now Helpline](https://accessnow.org/help) - help@accessnow.org (Request to be connected with the Tech Legal Counsel or forensic lab)
+
+    * [Artículo 19](https://www.article19.org/regional-office/mexico-and-central-america/) - [info@article19.org](mailto:info@article19.org)
 
 
-      
-
-* **Protection and handling of personal data**: During a forensic investigation, it is possible that the analyst obtains, stores and analyzes sensitive information including messages, contacts, lists of applications, among others. In addition to applicable data protection regulations, it is important to implement policies that can help reduce and protect sensitive records, and that align with any commitment established in the consent form. If you do not have an established policy, we recommend you create one. There are several [resources on how to create information security policies](https://protege.la/guias-contenido/diseno-politicas-protocolos-lineamientos/), and published policies that can serve as inspiration, like [CiviCERT’s information management policy](https://www.civicert.org/civicert-information-management-policy/).  
 
 ## Conclusions
 
