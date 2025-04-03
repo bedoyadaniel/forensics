@@ -117,9 +117,9 @@ When you request and document informed consent for forensic investigations, take
 
 
 - **Legal review:** The information included in this guide, as well as the proposed draft consent form, are intended to serve as **guidance for civil society organizations engaging in forensic research**. The language might not be sufficient or appropriate in all contexts. If you have access to legal counsel, **we recommend you engage them in the review and crafting of appropriate consent forms for your use case**. If you don’t have access to legal counsel, the following organizations might be able to assist you:   
-    - [Hiperderecho](https://hiperderecho.org/contacto/) (Perú, Latinoamérica) \-  [**hola@hiperderecho.org**](mailto:hola@hiperderecho.org)  
-    - [Access Now Helpline](https://accessnow.org/help) - [help@accessnow.org](mailto:help@accessnow.org) (Request to be connected with the Tech Legal Counsel or forensic lab)
-    - [Artículo 19](https://www.article19.org/regional-office/mexico-and-central-america/) - [info@article19.org](mailto:info@article19.org)
+    - [Hiperderecho](https://hiperderecho.org/contacto/) (Perú, Latinoamérica) -  [**hola@hiperderecho.org**](mailto:hola@hiperderecho.org)  
+    - [Access Now Helpline](https://accessnow.org/help) (Global) - [help@accessnow.org](mailto:help@accessnow.org) (Request to be connected with the Tech Legal Counsel or forensic lab)
+    - [Artículo 19](https://www.article19.org/regional-office/mexico-and-central-america/) (Latin America) - [info@article19.org](mailto:info@article19.org)
 
 
 
