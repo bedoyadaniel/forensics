@@ -74,7 +74,7 @@ In order to create an informed consent document, aside from engaging in direct c
 
 1- **Download** the [informed consent letter draft template](template-letter-of-consent-for-forensic-analysis-odt.odt). This draft template is available in [.odt](https://en.wikipedia.org/wiki/OpenDocument), and we recommend using [LibreOffice](https://www.libreoffice.org/) to edit it. The document uses form fields, so that when exporting as a PDF  it can be completed and signed easily. This is an [example of a PDF generated using the template](template-letter-of-consent-for-forensic-analysis-pdf.pdf). 
 
-We are also sharing a [Google Docs version of the letter](https://docs.google.com/document/d/1bxN7EHrahztVVTKYqRbdEXaXiYhsRzBf6HsdoLjnAcs/edit). You can create a copy and adjust it as necessary, but keep in mind that the exported PDF will not be a fillable form. 
+We are also sharing a [Google Docs version of the letter](https://docs.google.com/document/d/1bxN7EHrahztVVTKYqRbdEXaXiYhsRzBf6HsdoLjnAcs/template/preview). You can create a copy and adjust it as necessary, but keep in mind that the exported PDF will not be a fillable form. 
 
 2- **Adjust, complete and verify** the following fields highlighted in yellow in the templates:
 

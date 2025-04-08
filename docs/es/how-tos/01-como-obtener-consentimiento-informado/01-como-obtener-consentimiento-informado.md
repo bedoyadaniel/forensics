@@ -72,7 +72,7 @@ Para generar una carta de consentimiento a partir del borrador propuesto, siga l
 
 1- **Descargue** el [borrador de carta de consentimiento informado](borrador-carta-de-consentimiento-para-analisis-forense-odt.odt). Este borrador está en formato .odt, por lo que se recomienda utilizar [LibreOffice](https://www.libreoffice.org/) para su edición. El formato utiliza campos de formulario, de forma tal que al convertir en PDF pueda ser completado de forma sencilla. Este documento PDF es un [ejemplo del resultado al convertir el borrador .odt a PDF](borrador-carta-de-consentimiento-para-analisis-forense-pdf.pdf). 
 
-También se pone a disposición, una versión del [borrador de carta de consentimiento en Google docs](https://docs.google.com/document/d/1YPiMO7WuGwE7hMHLZ9VPQkTLALN_bhmL0DASaZn3r2A/edit). Puede crear una copia y editar según sea necesario. Al utilizar esta versión y convertir el documento a PDF, no se generará un PDF editable. 
+También se pone a disposición, una versión del [borrador de carta de consentimiento en Google docs](https://docs.google.com/document/d/1YPiMO7WuGwE7hMHLZ9VPQkTLALN_bhmL0DASaZn3r2A/template/preview). Puede crear una copia y editar según sea necesario. Al utilizar esta versión y convertir el documento a PDF, no se generará un PDF editable. 
 
 2- **Complete y verifique** las secciones resaltadas en amarillo: 
 
