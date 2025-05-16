@@ -73,8 +73,6 @@ Los ataques legales pueden suceder cuando los estados utilizan leyes de segurida
   
 * **Citas judiciales y solicitudes de datos (subpoenas)**: En línea con los esfuerzos por criminalizar las investigaciones forenses, es posible que las autoridades utilicen recursos y procesos legales, como subpoenas y solicitudes de datos, para obtener información personal sobre analistas y laboratorios forenses. Por ejemplo, en 2019, el investigador argentino Javier Smaldone [hizo público una serie de solicitudes hechas por la policía](https://peoplesdispatch.org/2024/04/08/activist-ola-bini-sentenced-to-one-year-in-prison-after-ecuadorian-court-overturns-acquittal/) a proveedores de servicio, incluído WhatsApp.  
   
-  
-  
 * **Subpoenas and data requests:** In line with attempts to criminalize research, it is possible that authorities try to use legal processes, subpoenas and other mechanisms to obtain personal information of researchers or forensic labs. For example, in 2019, the Argentinian researcher Javier Smaldone made [public data requests made by the police to ISPs and service providers](https://blog.smaldone.com.ar/2020/01/25/allanado-y-detenido-por-tuitear/) (including WhatsApp). 
 
 ### Reputacionales
@@ -130,30 +128,30 @@ Los siguientes son algunos recursos para iniciar ejercicios de análisis de ries
 
 La siguiente es una lista de organizaciones que pueden apoyar en el análisis, la mitigación y el manejo de diferentes tipos de riesgos: 
 
-#### Digitales - Técnicos:  
+**Digitales o técnicos**
  * [Access Now Digital Security Helpline](http://accessnow.org/help) 
  * [Cyber hub](https://cyberhub.am/en/) 
  * [SocialTIC](https://socialtic.org/) 
       
-#### Soporte Legal:   
+**Legal**   
   * Media Legal Defense Initiative  
   * [Access Now](http://accessnow.org/help)  
   * [Article 19](https://www.article19.org/regional-office/mexico-and-central-america/)
 
-#### Psicosocial y bienestar:  
+**Psicosocial y bienestar**
   * [Línea de atención feminista de vita activa](https://vita-activa.org/)   
     * Entre sus recursos, se incluyen prácticas para [lidiar con el trauma indirecto](https://vita-activa.org/2021/02/08/trauma-indirecto/) y recursos sobre el síndrome de [desgaste laboral y cómo afecta más a mujeres](https://vita-activa.org/2022/03/15/el-burnout-por-que-afecta-mas-a-las-mujeres/).   
   * [Open briefing](https://openbriefing.org/)  
     * Entre sus recursos se incluye una [herramienta para análisis de riesgos](https://www.openbriefing.org/services/security/risk-assessments/) y un recurso sobre [la fatiga de compasión y trauma vicario en personas que apoyan a defensores de derechos humanos](https://openbriefing.org/resources/compassion-fatigue-vicarious-trauma-and-burnout-infosheet-for-those-supporting-human-rights-defenders/).   
       
-#### Seguridad física:   
+**Seguridad física**   
   * [Frontline Defenders](https://www.frontlinedefenders.org/)  
       
-#### Sostenibilidad:   
+**Sostenibilidad**   
   * [Engine Room](https://www.theengineroom.org/)  
     * Entre sus recursos se incluye una [material sobre compensación en un equipos remotos globales](https://www.theengineroom.org/library/rethinking-compensation-for-a-global-remote-team/) así como un reporte sobre [cómo identificar fuentes sostenibles de financiamiento](https://www.theengineroom.org/library/tipping-the-scales-what-it-takes-to-fund-an-equitable-tech-human-rights-ecosystem/). 
 
-#### Recursos para responder a incidentes:  
+**Recursos para responder a incidentes**  
   * [Feminist Helplines](https://feministhelplines.org/)  
   * [DFAK](https://digitalfirstaid.org/) \- Kit de primeros auxilios digitales
 
