@@ -136,11 +136,12 @@ La siguiente es una lista de organizaciones que pueden apoyar en el análisis, l
       
 **Legal**   
 
-* Media Legal Defense Initiative  
+* [Media Legal Defense Initiative](https://www.rcmediafreedom.eu/Tools/Support-centres/Media-Legal-Defence-Initiative-MLDI)  
 * [Access Now](http://accessnow.org/help)  
 * [Article 19](https://www.article19.org/regional-office/mexico-and-central-america/)
 
 **Psicosocial y bienestar**
+
 * [Línea de atención feminista de vita activa](https://vita-activa.org/)   
   * Entre sus recursos, se incluyen prácticas para [lidiar con el trauma indirecto](https://vita-activa.org/2021/02/08/trauma-indirecto/) y recursos sobre el síndrome de [desgaste laboral y cómo afecta más a mujeres](https://vita-activa.org/2022/03/15/el-burnout-por-que-afecta-mas-a-las-mujeres/).   
 * [Open briefing](https://openbriefing.org/)  
