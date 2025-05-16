@@ -13,6 +13,10 @@
         <link rel="canonical" href="https://socialtic.github.io/forensics/en/explainers/02-explainer-risks-threats/02-explainer-risks-threats/">
       
       
+        <link rel="prev" href="../../01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics/">
+      
+      
+        <link rel="next" href="../../../tutorials/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -246,10 +250,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -460,6 +466,8 @@
       
   
   
+    
+  
   
   
     
@@ -477,14 +485,17 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -501,13 +512,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Explainers
@@ -543,10 +554,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../02-risks-threats/02-explainer-risks-threats.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Explainer - Risks, threats and mitigatiosn fo forensic labs
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -557,6 +590,155 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#threats-vulnerabilities-and-risks-why-should-you-care" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threats, vulnerabilities and risks: why should you care?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-do-threats-come-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where do threats come from?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-threats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of threats
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples of threats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#digital-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital attacks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legal-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legal attacks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reputational" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reputational
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#physical" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#psychosocial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Psychosocial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operational
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prevention-and-risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prevention and risk management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prevention and risk management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resources-for-risk-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources for risk assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizations-resources-and-partners-in-the-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizations, resources and partners in the field
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
