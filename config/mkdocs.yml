@@ -11,6 +11,7 @@ nav:
   - Explainers:
     - Inicio: 'explainers/index.md'
     - Explainer introductorio a forense digital: 'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'
+    - Explainer de riesgos y amenazas: 'explainers/02-explainer-riesgos-amenazas.md'
   - Tutoriales: 
     - Inicio: 'tutorials/index.md'
   - Guías how-to:
