@@ -130,30 +130,30 @@ Los siguientes son algunos recursos para iniciar ejercicios de análisis de ries
 
 La siguiente es una lista de organizaciones que pueden apoyar en el análisis, la mitigación y el manejo de diferentes tipos de riesgos: 
 
-* Digitales / Técnicos:  
+#### Digitales - Técnicos:  
  * [Access Now Digital Security Helpline](http://accessnow.org/help) 
  * [Cyber hub](https://cyberhub.am/en/) 
  * [SocialTIC](https://socialtic.org/) 
       
-* Soporte Legal:   
+#### Soporte Legal:   
   * Media Legal Defense Initiative  
   * [Access Now](http://accessnow.org/help)  
   * [Article 19](https://www.article19.org/regional-office/mexico-and-central-america/)
 
-* Psicosocial y bienestar:  
+#### Psicosocial y bienestar:  
   * [Línea de atención feminista de vita activa](https://vita-activa.org/)   
     * Entre sus recursos, se incluyen prácticas para [lidiar con el trauma indirecto](https://vita-activa.org/2021/02/08/trauma-indirecto/) y recursos sobre el síndrome de [desgaste laboral y cómo afecta más a mujeres](https://vita-activa.org/2022/03/15/el-burnout-por-que-afecta-mas-a-las-mujeres/).   
   * [Open briefing](https://openbriefing.org/)  
     * Entre sus recursos se incluye una [herramienta para análisis de riesgos](https://www.openbriefing.org/services/security/risk-assessments/) y un recurso sobre [la fatiga de compasión y trauma vicario en personas que apoyan a defensores de derechos humanos](https://openbriefing.org/resources/compassion-fatigue-vicarious-trauma-and-burnout-infosheet-for-those-supporting-human-rights-defenders/).   
       
-* Seguridad física:   
+#### Seguridad física:   
   * [Frontline Defenders](https://www.frontlinedefenders.org/)  
       
-* Sostenibilidad:   
+#### Sostenibilidad:   
   * [Engine Room](https://www.theengineroom.org/)  
     * Entre sus recursos se incluye una [material sobre compensación en un equipos remotos globales](https://www.theengineroom.org/library/rethinking-compensation-for-a-global-remote-team/) así como un reporte sobre [cómo identificar fuentes sostenibles de financiamiento](https://www.theengineroom.org/library/tipping-the-scales-what-it-takes-to-fund-an-equitable-tech-human-rights-ecosystem/). 
 
-* Recursos para responder a incidentes:  
+#### Recursos para responder a incidentes:  
   * [Feminist Helplines](https://feministhelplines.org/)  
   * [DFAK](https://digitalfirstaid.org/) \- Kit de primeros auxilios digitales
 
