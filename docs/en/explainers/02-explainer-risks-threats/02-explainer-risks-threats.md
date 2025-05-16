@@ -124,32 +124,38 @@ The following are some available resources to initiate and engage in exercises t
 The following is a list of organizations that might be able to support in managing, preparing and preventing against different type of risks:
 
 **Technical**  
-  * [Access Now Digital Security Helpline](http://accessnow.org/help)  
-  * [Cyber hub](https://cyberhub.am/en/)  
-  * [SocialTIC](mailto:seguridad@socialtic.org)  
+
+* [Access Now Digital Security Helpline](http://accessnow.org/help)  
+* [Cyber hub](https://cyberhub.am/en/)  
+* [SocialTIC](mailto:seguridad@socialtic.org)  
       
 **Legal support**
-  * [Media Legal Defense Initiative](https://www.rcmediafreedom.eu/Tools/Support-centres/Media-Legal-Defence-Initiative-MLDI)  
-  * [Access Now](http://accessnow.org/help)  
-  * [Article 19](https://www.article19.org/regional-office/mexico-and-central-america/)
+
+* [Media Legal Defense Initiative](https://www.rcmediafreedom.eu/Tools/Support-centres/Media-Legal-Defence-Initiative-MLDI)  
+* [Access Now](http://accessnow.org/help)  
+* [Article 19](https://www.article19.org/regional-office/mexico-and-central-america/)
 
 **Psychosocial & well-being**  
-  * [Vita Activa Feminist Helpline](https://vita-activa.org/)  
-    * Resources include how to [deal with indirect trauma](https://vita-activa.org/2021/02/08/trauma-indirecto/) and [why burnout affects women more.](https://vita-activa.org/2022/03/15/el-burnout-por-que-afecta-mas-a-las-mujeres/)    
-  * [Open briefing](https://openbriefing.org/)  
-    * Resources include [risk assessment tools](https://www.openbriefing.org/services/security/risk-assessments/) and a resource on [compassion fatigue, vicarious trauma, and burnout: Infosheet for those supporting human rights defenders](https://openbriefing.org/resources/compassion-fatigue-vicarious-trauma-and-burnout-infosheet-for-those-supporting-human-rights-defenders/)
+
+* [Vita Activa Feminist Helpline](https://vita-activa.org/)  
+  * Resources include how to [deal with indirect trauma](https://vita-activa.org/2021/02/08/trauma-indirecto/) and [why burnout affects women more.](https://vita-activa.org/2022/03/15/el-burnout-por-que-afecta-mas-a-las-mujeres/)    
+* [Open briefing](https://openbriefing.org/)  
+  * Resources include [risk assessment tools](https://www.openbriefing.org/services/security/risk-assessments/) and a resource on [compassion fatigue, vicarious trauma, and burnout: Infosheet for those supporting human rights defenders](https://openbriefing.org/resources/compassion-fatigue-vicarious-trauma-and-burnout-infosheet-for-those-supporting-human-rights-defenders/)
 
 **Physical security**   
-  * [Frontline Defenders](https://www.frontlinedefenders.org/)  
+
+* [Frontline Defenders](https://www.frontlinedefenders.org/)  
       
 **Sustainability**
-  * [Engine Room](https://www.theengineroom.org/)  
-    * Resources include [how to think about compensation for a global remote team](https://www.theengineroom.org/library/rethinking-compensation-for-a-global-remote-team/) as well as a [report on funding for a sustainable ecosystem](https://www.theengineroom.org/library/tipping-the-scales-what-it-takes-to-fund-an-equitable-tech-human-rights-ecosystem/). 
+
+* [Engine Room](https://www.theengineroom.org/)  
+  * Resources include [how to think about compensation for a global remote team](https://www.theengineroom.org/library/rethinking-compensation-for-a-global-remote-team/) as well as a [report on funding for a sustainable ecosystem](https://www.theengineroom.org/library/tipping-the-scales-what-it-takes-to-fund-an-equitable-tech-human-rights-ecosystem/). 
 
 
 **Resources for incident response**  
-  * [Feminist Helplines](https://feministhelplines.org/)  
-  * [DFAK](https://digitalfirstaid.org/)
+
+* [Feminist Helplines](https://feministhelplines.org/)  
+* [DFAK](https://digitalfirstaid.org/)
 
 ## Conclusion
 
