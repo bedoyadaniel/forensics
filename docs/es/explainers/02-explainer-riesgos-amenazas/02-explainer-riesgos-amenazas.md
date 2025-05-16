@@ -1,5 +1,5 @@
 ---
-title: Explainer: Riesgos y amenazas para laboratorios forenses de la sociedad civil
+title: Explainer - Riesgos y amenazas para laboratorios forenses de la sociedad civil
 summary: Riesgos y amenazas que enfrentan analistas y laboratorios forenses de la sociedad civil, y recursos para hacer análisis.
 keywords: riesgo, amenaza, mitigación, analisis de riesgos
 authors: Daniel Bedoya Arroyo and Gurshabad Grover
