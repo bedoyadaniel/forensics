@@ -15,7 +15,7 @@ This document is part of a **technical documentation repository** which has the 
 
 This document describes **risks, threats and vulnerabilities for forensic analysts and threat laboratories supporting civil society**. It is an introductory material that includes examples and links to resources that can help these groups to **understand and mitigate risks** they might encounter as part of their analysis and accountability work. 
 
-This document was co-authored by the teams at [SocialTIC](http://socialtic.org) and the [Internet Research Lab](https://irl.works/). We appreciate the reviews and suggestions from Access Now, M … that improved the content. All errors remain the responsibility of the authors.   
+This document was co-authored by the teams at [SocialTIC](http://socialtic.org) and the [Internet Research Lab](https://irl.works/). We appreciate the reviews and suggestions from Access Now and Marianne Parrot that improved the content. All errors remain the responsibility of the authors.   
 
 ## Threats, vulnerabilities and risks: why should you care?
 
