@@ -5,7 +5,7 @@ keywords: riesgo, amenaza, mitigación, analisis de riesgos
 authors: Daniel Bedoya Arroyo and Gurshabad Grover
 lang: es
 tags: [explainer, intro]
-last_updated: 2025-05-16
+last_updated: 2025-05-27
 some_url:
 ---
 
@@ -46,7 +46,7 @@ Para conocer de forma precisa de dónde vienen las amenazas que una persona anal
 
 * **Troles y actores de desinformación:** Conforme nuevos reportes continúan exponiendo el mal uso de tecnologías de vigilancia, al menos desde el año 2022 han aparecido [actores persistentes, especialmente en redes sociales](https://www.cmu.edu/ideas-social-cybersecurity/events/syynimaa_attacking_ngo.pdf), que utilizan la desinformación y pseudociencia para desacreditar hallazgos e investigaciones. Estas campañas resultan en acoso a investigadores u organizaciones, y distraen a las personas investigadoras de sus labores. En algunos contextos, en especial donde existen [redes sólidas para la manipulación de algoritmos y discursos](https://cjp.org.in/india-among-nations-manipulating-social-media-oxford-study/), con frecuencia aparecen redes de troles en conexión con eventos como notificaciones de amenazas, para esparcir desinformación y desacreditar esfuerzos de investigación y rendición de cuentas. 
 
-* **Empresas de ciberseguridad con fines de lucro:** En los últimos años, han aparecido algunas empresas privadas de ciberseguridad que buscan lucrar a través de productos orientados a detectar y prevenir infecciones de Spyware. Estas empresas, en algunas ocasiones, se acercan a la sociedad civil en búsqueda de inteligencia de amenazas o indicadores de compromiso, que les permita avanzar sus investigaciones y productos. Debido a la diferencia en incentivos y recursos, en muchas ocasiones estas relaciones resultan en acuerdos extractivistas, que pueden terminar por dañar la reputación de laboratorios forenses, y potencialmente tener un impacto en las víctimas si su información no se maneja de forma responsable. Algunos ejemplos específicos han sido reportados en [CiviCERT](https://www.civicert.org/), e incluso [algunas críticas y discusiones públicas hacen hincapié en el oportunismo y las prácticas poco éticas de empresas como empresa iVerify](https://discuss.grapheneos.org/d/14993-debunking-fake-stock-pixel-os-vulnerability-from-an-edr-company). 
+* **Empresas de ciberseguridad con fines de lucro:** En los últimos años, han aparecido algunas empresas privadas de ciberseguridad que buscan lucrar a través de productos orientados a detectar y prevenir infecciones de Spyware. Estas empresas, en algunas ocasiones, se acercan a la sociedad civil en búsqueda de inteligencia de amenazas o indicadores de compromiso, que les permita avanzar sus investigaciones y productos. Debido a la diferencia en incentivos y recursos, en muchas ocasiones estas relaciones resultan en acuerdos extractivistas, que pueden terminar por dañar la reputación de laboratorios forenses, y potencialmente tener un impacto en las víctimas si su información no se maneja de forma responsable. Algunos ejemplos específicos han sido reportados de forma privada, e incluso [algunas críticas y discusiones públicas hacen hincapié en el oportunismo y las prácticas poco éticas de empresas como empresa iVerify](https://discuss.grapheneos.org/d/14993-debunking-fake-stock-pixel-os-vulnerability-from-an-edr-company). 
 
 ## Ejemplos de amenazas 
 
@@ -60,8 +60,9 @@ Por ataques digitales, nos referimos a acciones o comportamientos con una intenc
   
 * **Ataques de spyware**: Anteriormente se han documentado situaciones donde investigadores y activistas de la sociedad civil han sido víctimas de ataques de Spyware. Por ejemplo, en 2024 [Access Now reportó](https://www.accessnow.org/publication/between-a-hack-and-a-hard-place-how-pegasus-spyware-crushes-civic-space-in-jordan/#who-was-hacked) como miembros de Human Rights Watch (HRW) en Jordania fueron víctimas de Spyware. El ataque sucedió luego de que el equipo de HRW lanzara un reporte criticando la represión por parte del gobierno. 
 
-
 * **Doxxing (doxing o doxeo)**: El doxxing consiste en la recolección y publicación de información sensible y confidencial sobre una persona, como su dirección física o número telefónico, en especial utilizando fuentes abiertas de información disponible en Internet (OSINT, o [inteligencia de fuentes abiertas](https://es.wikipedia.org/wiki/Inteligencia_de_fuentes_abiertas)). Si bien hay pocos reportes públicos sobre doxing en perjuicio de analistas o laboratorios forenses, varios casos han sido reportados de forma privada.
+
+* **Compromisos o fugas de información**: Los adversarios pueden intentar obtener acceso a información sensible como por ejemplo la identidad de las víctimas que buscan apoyo, o información sobre infraestructura, vulnerabilidades o indicadores de compromiso que no es pública. Adicionalmente, los adversarios podrían buscar tener acceso a información sensible sobre el personal del laboratorio forense, en especial si las investigaciones se han llevado a cabo a través del uso de alias o pseudónimos. Es importante tener en cuenta que los ataques también pueden ser dirigidos a proveedores de servicios, como por ejemplo sistemas de manejo de casos o de almacenamiento de información en la nube. En el año 2022, se reportó un ataque en contra del Comité Internacional de la Cruz Roja (IRCC) que [comprometió registros sensibles luego de un compromiso en un proveedor de servicio utilizado por la organización](https://www.theregister.com/2022/01/20/red_cross_hit_by_cyberattack/).
 
 ### Legales
 
@@ -133,6 +134,9 @@ La siguiente es una lista de organizaciones que pueden apoyar en el análisis, l
 * [Access Now Digital Security Helpline](http://accessnow.org/help) 
 * [Cyber hub](https://cyberhub.am/en/) 
 * [SocialTIC](https://socialtic.org/) 
+* [Frontline Defenders](https://www.frontlinedefenders.org/)  
+* [Open briefing](https://openbriefing.org/)  
+
       
 **Legal**   
 
@@ -140,7 +144,7 @@ La siguiente es una lista de organizaciones que pueden apoyar en el análisis, l
 * [Access Now](http://accessnow.org/help)  
 * [Article 19](https://www.article19.org/regional-office/mexico-and-central-america/)
 
-**Psicosocial y bienestar**
+**Psicosocial y bienestar**comprometió registros sensibles luego de un compromiso en un proveedor de servicio utilizado por la organización.
 
 * [Línea de atención feminista de vita activa](https://vita-activa.org/)   
   * Entre sus recursos, se incluyen prácticas para [lidiar con el trauma indirecto](https://vita-activa.org/2021/02/08/trauma-indirecto/) y recursos sobre el síndrome de [desgaste laboral y cómo afecta más a mujeres](https://vita-activa.org/2022/03/15/el-burnout-por-que-afecta-mas-a-las-mujeres/).   
