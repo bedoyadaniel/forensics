@@ -15,7 +15,7 @@ Este documento forma **parte de un repositorio de documentación técnica** que 
 
 Este recurso en particular se enmarca dentro de la categoría de [explainers](https://diataxis.fr/explanation/), y **describe los riesgos, amenazas y vulnerabilidades** que analistas y laboratorios forenses de la sociedad civil enfrentan por causa de su trabajo. Es un material introductorio que incluye ejemplos y enlaces a recursos preventivos que pueden ayudar a entender y mitigar los riesgos a los que se enfrentan.
 
-La versión original de este documento fue co-elaborada en idioma inglés en conjunto con el equipo de Internet Research Lab. La traducción fue liderada por el equipo de SocialTIC. Agradecemos las revisiones y sugerencias de Access Now y Marianne Parrot para este mejorar el contenido en su versión original. Cualquier error o omisión es responsabilidad de los autores.
+La versión original de este documento fue co-elaborada en idioma inglés en conjunto con el equipo de Internet Research Lab. La traducción fue liderada por el equipo de SocialTIC. Agradecemos las revisiones y sugerencias de Access Now y Marianne Parrott para este mejorar el contenido en su versión original. Cualquier error o omisión es responsabilidad de los autores.
 
 ## Amenazas, vulnerabilidades y riesgos: ¿por qué debemos prestar atención?
 
