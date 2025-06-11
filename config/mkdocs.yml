@@ -4,7 +4,7 @@ site_description: Documentación para investigaciones forenses consentidas en So
 docs_dir: '../docs/es'
 site_dir: '../generated'
 repo_url: https://github.com/Socialtic/forensics
-edit_uri: edit/main/docs/
+edit_uri: edit/main/docs/es/
 
 nav:
   - Home: 
