@@ -43,6 +43,8 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
+    - content.action.view
+    - content.action.edit
 
 extra:
   alternate: 
