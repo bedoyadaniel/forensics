@@ -3,6 +3,8 @@ site_url: https://socialtic.github.io/forensics/
 site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
 docs_dir: '../docs/es'
 site_dir: '../generated'
+repo_url: https://github.com/Socialtic/forensics
+edit_uri: edit/main/docs/
 
 nav:
   - Home: 
@@ -45,6 +47,7 @@ theme:
     - navigation.indexes
     - content.action.view
     - content.action.edit
+
 
 extra:
   alternate: 
