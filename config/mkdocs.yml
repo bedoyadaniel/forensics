@@ -21,6 +21,7 @@ nav:
     - ¿Cómo obtener y documentar consentimiento informado?: 'how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.md'
   - Referencias:
     - Inicio: 'references/index.md'
+    - Diccionario AndroidQF: 'references/01-diccionario-androidqf/01-reference-androidqf.md'
 
 theme: 
   name: material
