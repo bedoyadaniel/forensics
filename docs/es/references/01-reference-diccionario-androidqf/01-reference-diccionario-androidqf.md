@@ -12,8 +12,6 @@ some_url:
 
 # Diccionario de archivos generados por la herramienta androidqf 
 
-# Introducción 
-
 Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/).
 
 Este recurso en particular se enmarca dentro de la categoría de [referencias](https://diataxis.fr/reference), y contiene información sobre los archivos generados por [androidqf](https://github.com/mvt-project/androidqf) al realizar una extracción forense de un dispositivo Android, esto con el objetivo de que una persona analista **conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.**
@@ -32,9 +30,9 @@ La información generada por androidqf se puede agrupar en 5 categorías princip
 * Procesos y aplicaciones  
 * Archivos respaldados
 
-# Adquisición y extracción
+## Adquisición y extracción
 
-## acquisition.json
+### acquisition.json
 
 La información de este archivo se genera mediante el módulo [acquisition.go](https://github.com/mvt-project/androidqf/blob/main/acquisition/acquisition.go)*.*
 
@@ -78,7 +76,7 @@ Esta información permite conocer información básica de la extracción y obten
 }
 ```
 
-## command.log
+### command.log
 
 La información de este archivo se genera mediante el módulo [logger.go](https://github.com/mvt-project/androidqf/blob/main/log/logger.go). Este módulo presenta los logs del proceso de captura y adquisición de la información. 
 
@@ -116,7 +114,7 @@ Permite generar un registro de las acciones realizadas por la aplicación durant
 2025-01-01T14:39:20-06:00 [INFO] Collecting SELinux status...
 ```
 
-## hashes.csv
+### hashes.csv
 
 La información de este archivo se genera mediante la función [*HashFiles*](https://github.com/mvt-project/androidqf/blob/main/acquisition/acquisition.go#L134) del módulo [acquisition.go](https://github.com/mvt-project/androidqf/blob/main/acquisition/acquisition.go)*.*
 
@@ -156,9 +154,9 @@ Los hashes permiten garantizar la integridad de la información y asegurar que n
 2ab44150-35d3-4b40-a820-c9152fe93a13\settings_system.txt,b0e7452110867ca3f5c15ea52b9b9a198433a836f97d6fd8b95fcd39fd30c714
 ```
 
-# Información y configuración del dispositivo 
+## Información y configuración del dispositivo 
 
-## getprop.txt 
+### getprop.txt 
 
 La información de este archivo se genera mediante el módulo [getprop.go](https://github.com/mvt-project/androidqf/blob/main/modules/getprop.go)*.*
 
@@ -225,7 +223,7 @@ Las propiedades brindan información importante sobre el hardware y el software 
 * [Agrega propiedades del sistema | Android Open Source Project](https://source.android.com/docs/core/architecture/configuration/add-system-properties?hl=es-419)  
 * [Compatibilidad de políticas | Android Open Source Project](https://source.android.com/docs/security/features/selinux/compatibility?hl=es-419#system-property-and-ownership) 
 
-## selinux.txt 
+### selinux.txt 
 
 La información de este archivo se genera mediante el módulo [selinux.go](https://github.com/mvt-project/androidqf/blob/main/modules/selinux.go)*.*
 
@@ -249,7 +247,7 @@ Enforcing
 * [SELinux Project](https://github.com/selinuxproject)  
 * [¿Qué es SElinux? SELinux (Security Enhanced Linux) le permite configurar el nivel de seguridad para sus sistemas Linux](https://www.redhat.com/es/topics/linux/what-is-selinux) 
 
-## settings\_global.txt 
+### settings\_global.txt 
 
 La información de este archivo se genera mediante el módulo [settings.go](https://github.com/mvt-project/androidqf/blob/main/modules/settings.go)*.*
 
@@ -290,7 +288,7 @@ zram_enabled=1
 * [Settings | Android Developers](https://developer.android.com/reference/android/provider/Settings?hl=es-419)   
 * [Settings.Global | Android Developers](https://developer.android.com/reference/android/provider/Settings.Global?hl=es-419)
 
-## settings\_secure.txt 
+### settings\_secure.txt 
 
 La información de este archivo se genera mediante el módulo [settings.go](https://github.com/mvt-project/androidqf/blob/main/modules/settings.go)*.*
 
@@ -335,7 +333,7 @@ wifi_saved_state=0
 * [Settings | Android Developers](https://developer.android.com/reference/android/provider/Settings?hl=es-419)   
 * [Settings.Secure | Android Developers](https://developer.android.com/reference/android/provider/Settings.Secure?hl=es-419) 
 
-## settings\_system.txt 
+### settings\_system.txt 
 
 La información de este archivo se genera mediante el módulo [settings.go](https://github.com/mvt-project/androidqf/blob/main/modules/settings.go)*.*
 
@@ -391,7 +389,7 @@ wireless_fast_charging=0
 * [Settings | Android Developers](https://developer.android.com/reference/android/provider/Settings?hl=es-419)   
 * [Settings.System | Android Developers](https://developer.android.com/reference/android/provider/Settings.System?hl=es-419) 
 
-## env.txt 
+### env.txt 
 
 La información de este archivo se genera mediante el módulo [env.go](https://github.com/mvt-project/androidqf/blob/main/modules/env.go)*.*
 
@@ -467,9 +465,9 @@ EXTERNAL_STORAGE=/sdcard
 * [Can I update the adb shell's environment variables? \- Android Enthusiasts Stack Exchange](https://android.stackexchange.com/questions/53389/can-i-update-the-adb-shells-environment-variables/64926#64926)   
 * [Update mksh to latest version \- Android Enthusiasts Stack Exchange](https://android.stackexchange.com/questions/217617/update-mksh-to-latest-version/217627#217627) 
 
-# Registros y eventos del sistema 
+## Registros y eventos del sistema 
 
-## logcat.txt y logcat\_old.txt 
+### logcat.txt y logcat\_old.txt 
 
 La información de estos archivos se genera mediante el módulo [logcat.go](https://github.com/mvt-project/androidqf/blob/main/modules/logcat.go) .
 
@@ -516,9 +514,7 @@ Esta información puede ser utilizada para analizar el comportamiento y ejecuci�
 
 * [Herramienta de linea de comandos Logcat](https://developer.android.com/tools/logcat?hl=es-419)
 
-## 
-
-## dumpsys.txt 
+### dumpsys.txt 
 
 La información de este archivo se genera mediante el módulo [dumpsys.go](https://github.com/mvt-project/androidqf/blob/main/modules/dumpsys.go) .
 
@@ -648,7 +644,7 @@ Current AppOps Service state:
 
 * [dumpsys en Android](https://developer.android.com/tools/dumpsys?hl=es-419)
 
-## bugreport.zip 
+### bugreport.zip 
 
 La información de este archivo se genera mediante el módulo [bugreport.go](https://github.com/mvt-project/androidqf/blob/main/modules/bugreport.go) .
 
@@ -708,7 +704,7 @@ Este comprimido es una fuente de información con mucho valor para el análisis 
 
 * [Cómo capturar y leer informes de errores](https://developer.android.com/studio/debug/bug-report?hl=es-419)
 
-## logs/
+### logs/
 
 La información de esta carpeta se genera mediante el módulo [logs.go](https://github.com/mvt-project/androidqf/blob/main/modules/logs.go). 
 
@@ -811,9 +807,9 @@ Los archivos y carpetas contenidas en este directorio son los siguiente:
 * fs  
   * pstore
 
-# Procesos y aplicaciones 
+## Procesos y aplicaciones 
 
-## packages.json
+### packages.json
 
 La información de esta carpeta se genera mediante el módulo [packages.go](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/adb/packages.py).  
 **Información contenida**
@@ -874,7 +870,7 @@ El contenido de este archivo incluye información que permite identificar aplica
 ]
 ```
 
-## apks/ 
+### apks/ 
 
 La información de esta carpeta se genera mediante el módulo [packages.go](https://github.com/mvt-project/androidqf/blob/main/modules/packages.go).
 
@@ -886,7 +882,7 @@ Este directorio almacena los archivos APK (paquetes de aplicaciones Android) ext
 
 El análisis de los APKs permite examinar las aplicaciones instaladas en el dispositivo, identificar posibles muestras de malware o aplicaciones maliciosas, así como validar las versiones instaladas y sus firmas.
 
-## processes.txt  
+### processes.txt  
 
 La información de este archivo se genera mediante el módulo [processes.go](https://github.com/mvt-project/androidqf/blob/main/modules/processes.go). 
 
@@ -967,7 +963,7 @@ Este archivo permite identificar procesos que son ejecutados de manera inusual o
 
 * [Descripción general de los procesos y subprocesos](https://developer.android.com/guide/components/processes-and-threads?hl=es-419)
 
-## services.txt 
+### services.txt 
 
 La información de este archivo se genera mediante el módulo [services.go](https://github.com/mvt-project/androidqf/blob/main/modules/services.go)
 
@@ -1047,7 +1043,7 @@ Found 368 services:
 
 * [¿Cómo funcionan los servicios en android?](https://developer.android.com/develop/background-work/services?hl=es-419)
 
-## root\_binaries.json 
+### root\_binaries.json 
 
 La información de este archivo se genera mediante el módulo [root\_binaries.go](https://github.com/mvt-project/androidqf/blob/main/modules/root_binaries.go). 
 
@@ -1104,9 +1100,9 @@ Cuando el módulo identifica binarios relacionados con el rooting en las rutas e
 
 ```
 
-# Información de archivos en el dispositivo 
+## Información de archivos en el dispositivo 
 
-## backup.ab 
+### backup.ab 
 
 La información de este archivo se genera mediante el módulo [backup.go](https://github.com/mvt-project/androidqf/blob/main/modules/backup.go).
 
@@ -1148,7 +1144,7 @@ En el caso forense este respaldo permite analizar los SMS en búsqueda de enlace
 * [Análisis de archivos de copias de seguridad en android](https://digitalforensicforest.com/2016/01/28/android-backup-file-ab-analysis/)  
 * [Check an Android Backup (SMS messages) \- Mobile Verification Toolkit](https://docs.mvt.re/en/latest/android/backup/) 
 
-## files.json 
+### files.json 
 
 La información de este archivo se genera mediante el módulo [files.go](https://github.com/mvt-project/androidqf/blob/main/modules/files.go)
 
