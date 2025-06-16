@@ -21,6 +21,7 @@ nav:
     - How-to- Obtain and document informed consent: 'how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md'
   - Reference:
     - Home: 'references/index.md'
+    - Reference - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.md'
 
 theme: 
   name: material

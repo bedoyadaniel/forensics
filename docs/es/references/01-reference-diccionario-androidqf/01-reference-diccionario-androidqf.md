@@ -1150,7 +1150,6 @@ El comando completo de *find* es `adb shell find '/' \-maxdepth 1 \-printf '%T@ 
 * /data/vendor/secradio/  
 * /data/log/  
 * /tmp/  
-* /  
 * /data/data/
 
 Cada archivo incluye metadatos como: la ruta completa del archivo, tamaño, marca de tiempo (indica última modificación del archivo y último acceso al archivo), permisos del archivo, identificador del propietario, mensajes de error y hashes sha1, sha256, sha512, md5 si es que están pre-calculados.
