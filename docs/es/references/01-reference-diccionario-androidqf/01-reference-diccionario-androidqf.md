@@ -702,99 +702,90 @@ El módulo accede a rutas específicas del sistema para extraer archivos que doc
 
 Los archivos y carpetas contenidas en este directorio son los siguiente:
 
-* `anr/anr_yyyy-mm-dd-hh-mm-ss**`  
-  * **anr_yyyy-mm-dd-hh-mm-ss**: Archivo que proporciona un diagnóstico detallado del estado del sistema y de la actividad de un proceso específico.  
+* `anr/anr_yyyy-mm-dd-hh-mm-ss`  
+    * **anr_yyyy-mm-dd-hh-mm-ss**: Archivo que proporciona un diagnóstico detallado del estado del sistema y de la actividad de un proceso específico.  
 
 * `log/acore/0_dump_all.zip`  
-  * **0_dump_all.zip**: Archivo que contiene un volcado del estado del sistema asociado al proceso acore.  
+    * **0_dump_all.zip**: Archivo que contiene un volcado del estado del sistema asociado al proceso acore.  
 
 * `log/batterystats/newbatterystats240905095247`  
-  * **newbatterystats240905095247**: Archivo que contiene métricas sobre el uso energético del dispositivo.  
+    * **newbatterystats240905095247**: Archivo que contiene métricas sobre el uso energético del dispositivo.  
 
 * `log/dropbox.txt`  
-  * **dropbox.txt**: Archivo que contiene registros de eventos del sistema gestionados por DropBoxManager.  
+    * **dropbox.txt**: Archivo que contiene registros de eventos del sistema gestionados por DropBoxManager.  
 
 * `log/dumpstate_debug_history.lst`  
-  * **dumpstate_debug_history.lst**: Archivo que contiene el historial de ejecuciones del proceso de recolección de logs del sistema.  
+    * **dumpstate_debug_history.lst**: Archivo que contiene el historial de ejecuciones del proceso de recolección de logs del sistema.  
 
 * `log/dumpstate_lastkmsg_20240423_152746_0_MP.log.gz`  
-  * **dumpstate_lastkmsg_20240423_152746_0_MP.log.gz**: Archivo que contiene el último mensaje del kernel tras un reinicio inesperado.  
+    * **dumpstate_lastkmsg_20240423_152746_0_MP.log.gz**: Archivo que contiene el último mensaje del kernel tras un reinicio inesperado.  
 
 * `log/dumpstate_latest_lastkmsg.log.gz`  
-  * **dumpstate_latest_lastkmsg.log.gz**: Archivo que contiene el log persistente más reciente del kernel después de un reinicio.  
+    * **dumpstate_latest_lastkmsg.log.gz**: Archivo que contiene el log persistente más reciente del kernel después de un reinicio.  
 
 * `log/dumpstate-stats.txt`  
-  * **dumpstate-stats.txt**: Archivo que contiene estadísticas generadas durante la recolección del estado del sistema.  
+    * **dumpstate-stats.txt**: Archivo que contiene estadísticas generadas durante la recolección del estado del sistema.  
 
 * `log/dumpstate_sys_error.zip`  
-  * **dumpstate_sys_error.zip**: Archivo comprimido que contiene información sobre errores críticos del sistema.  
+    * **dumpstate_sys_error.zip**: Archivo comprimido que contiene información sobre errores críticos del sistema.  
 
 * `log/lom_log.txt`  
-  * **lom_log.txt**: Archivo que contiene registros relacionados con almacenamiento o monitoreo del sistema.  
+    * **lom_log.txt**: Archivo que contiene registros relacionados con almacenamiento o monitoreo del sistema.  
 
 * `log/pm_debug_info.txt`  
-  * **pm_debug_info.txt**: Archivo que contiene información de depuración del gestor de paquetes del sistema.  
+    * **pm_debug_info.txt**: Archivo que contiene información de depuración del gestor de paquetes del sistema.  
 
 * `log/power_off_reset_reason.txt`  
-  * **power_off_reset_reason.txt**: Archivo que indica la causa del último apagado o reinicio del dispositivo.  
+    * **power_off_reset_reason.txt**: Archivo que indica la causa del último apagado o reinicio del dispositivo.  
 
 * `log/prev_dump.log`  
-  * **prev_dump.log**: Archivo que contiene una captura previa del estado del sistema antes de un evento crítico.  
+    * **prev_dump.log**: Archivo que contiene una captura previa del estado del sistema antes de un evento crítico.  
 
 * `log/radio_PRECONFG_SET.log`  
-  * **radio_PRECONFG_SET.log**: Archivo que documenta la configuración inicial del módulo de radio del dispositivo.  
-
+    * **radio_PRECONFG_SET.log**: Archivo que documenta la configuración inicial del módulo de radio del dispositivo.  
+ 
 * `log/shutdown_profile.1.txt`  
-  * **shutdown_profile.1.txt**: Archivo que contiene el perfil de apagado registrado por el sistema.  
+    * **shutdown_profile.1.txt**: Archivo que contiene el perfil de apagado registrado por el sistema.  
 
 * `log/shutdown_profile_latest.txt`  
-  * **shutdown_profile_latest.txt**: Archivo que contiene el perfil del apagado más reciente del sistema.  
+    * **shutdown_profile_latest.txt**: Archivo que contiene el perfil del apagado más reciente del sistema.  
 
 * `log/err/`  
-  * **mobiledata_dns.dat**: Archivo que contiene errores relacionados con resolución DNS en redes móviles.  
-  * **mobiledata_tp2.dat**: Archivo que contiene errores en la transferencia de paquetes móviles.  
-  * **mobiledata_tp.dat**: Archivo que contiene errores en la transferencia de paquetes móviles.  
+    * **mobiledata_dns.dat**: Archivo que contiene errores relacionados con resolución DNS en redes móviles.  
+    * **mobiledata_tp2.dat**: Archivo que contiene errores en la transferencia de paquetes móviles.  
+    * **mobiledata_tp.dat**: Archivo que contiene errores en la transferencia de paquetes móviles.  
 
 * `log/ewlogd/ewlog0_20240920_144426188369.log`  
-  * **ewlog0_20240920_144426188369.log**: Archivo que contiene registros de eventos del sistema generados por el servicio ewlogd.  
+    * **ewlog0_20240920_144426188369.log**: Archivo que contiene registros de eventos del sistema generados por el servicio ewlogd.  
 
 * `log/imscr/imscr.log.0`  
-  * **imscr.log.0**: Archivo que contiene registros del componente IMS para servicios de comunicación.  
+    * **imscr.log.0**: Archivo que contiene registros del componente IMS para servicios de comunicación.  
 
 * `log/omc/`  
-  * **cidmanager.log**: Archivo que contiene información del gestor de códigos de operador (CID).  
-  * **csc_update_log.txt**: Archivo que contiene el registro de actualizaciones del paquete de personalización CSC.  
-  * **home_fota_update_log.txt**: Archivo que contiene registros de actualizaciones FOTA en red doméstica.  
-  * **prev_csc_log.txt**: Archivo que contiene un historial previo de configuración del operador.  
+    * **cidmanager.log**: Archivo que contiene información del gestor de códigos de operador (CID).  
+    * **csc_update_log.txt**: Archivo que contiene el registro de actualizaciones del paquete de personalización CSC.  
+    * **home_fota_update_log.txt**: Archivo que contiene registros de actualizaciones FOTA en red doméstica.  
+    * **prev_csc_log.txt**: Archivo que contiene un historial previo de configuración del operador.  
 
 * `log/search/0_com.samsung.android.scs_index_encrypted.tar.gz`  
-  * **0_com.samsung.android.scs_index_encrypted.tar.gz**: Archivo comprimido cifrado que contiene datos del índice de búsqueda del sistema.  
+    * **0_com.samsung.android.scs_index_encrypted.tar.gz**: Archivo comprimido cifrado que contiene datos del índice de búsqueda del sistema.  
 
 * `log/sfslog/sfslog.0.gz`  
-  * **sfslog.0.gz**: Archivo comprimido que contiene registros del sistema de archivos seguro (Secure File System).  
+    * **sfslog.0.gz**: Archivo comprimido que contiene registros del sistema de archivos seguro (Secure File System).  
 
 * `log/smartswitch/1726696227738SmartSwitchSimpleLog.log`  
-  * **1726696227738SmartSwitchSimpleLog.log**: Archivo que contiene registros del proceso de transferencia de datos mediante Smart Switch.  
+    * **1726696227738SmartSwitchSimpleLog.log**: Archivo que contiene registros del proceso de transferencia de datos mediante Smart Switch.  
 
 * `log/update_engine_log/update_engine.20240603-222843`  
-  * **update_engine.20240603-222843**: Archivo que contiene registros del motor de actualización de software del sistema.  
+    * **update_engine.20240603-222843**: Archivo que contiene registros del motor de actualización de software del sistema.  
 
 * `log/wfd/wfdDumpSource.log`  
-  * **wfdDumpSource.log**: Archivo que contiene actividad registrada del componente Wifi direct Wireless Display (WFD).  
-
+    * **wfdDumpSource.log**: Archivo que contiene actividad registrada del componente Wifi direct (WFD).  
 * `log/wifi/`  
-
-* `system/`  
-* `proc/`  
-
-* `kmsg`  
-  * **kmsg**: Archivo que contiene el log actual del kernel con actividad del sistema a bajo nivel.  
-
-* `last_kmsg`  
+* `system/proc/`  
+    * **kmsg**: Archivo que contiene el log actual del kernel con actividad del sistema a bajo nivel.  
+   * `last_kmsg`  
   * **last_kmsg**: Archivo que contiene el último log persistente del kernel tras un reinicio.  
-
-* `sys/`  
-* `fs/pstore/`
 
 ## Procesos y aplicaciones 
 
