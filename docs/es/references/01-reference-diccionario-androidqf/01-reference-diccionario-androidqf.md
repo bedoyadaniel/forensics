@@ -5,7 +5,7 @@ keywords: android, androidqf, reference
 authors: Daniel Bedoya Arroyo
 lang: es
 tags: [explainer, intro]
-last_updated: 2025-06-13
+last_updated: 2025-06-16
 some_url:
 ---
 
@@ -16,7 +16,7 @@ Este documento forma **parte de un repositorio de documentación técnica** que 
 
 Este recurso en particular se enmarca dentro de la categoría de [referencias](https://diataxis.fr/reference), y contiene información sobre los archivos generados por [androidqf](https://github.com/mvt-project/androidqf) al realizar una extracción forense de un dispositivo Android, esto con el objetivo de que una persona analista **conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.**
 
-Este recurso se actualizó por última vez el DATE y para la recopilación de la información se tomó como base el *commit* bd84c2bc.
+Este recurso se actualizó por última vez el 16 de Junio del 2025 y para la recopilación de la información se tomó como base el *commit* bd84c2bc.
 
 [Androidqf](https://github.com/mvt-project/androidqf) es una herramienta de extracción forense que pertenece al [MVT Project](https://github.com/mvt-project/). Desarrollada inicialmente por [Claudio Guarnieri](https://nex.sx/) y mantenida actualmente por el [Laboratorio de Seguridad de Amnistía Internacional](https://securitylab.amnesty.org/es/).
 
@@ -484,13 +484,13 @@ El archivo contienen la  siguiente estructura:
 * Inicio del registro (contiene divisiones de registros).  
 * Marca de tiempo (timestamp).  
 * Identificador del proceso y del hilo (PID) y (TID).  
-* Nivel de prioridad:  
-  * E: Error.  
-  * W: Advertencia.  
-  * I: Información.  
-  * D: Depuración.  
-  * F: Fatal.  
-  * V: Verbose.  
+- Nivel de prioridad:
+    - E: Error 
+    - W: Advertencia
+    - I: Información
+    - D: Depuración
+    - F: Fatal
+    - V: Verbose
 * Etiqueta que indica el componente o proceso del sistema.  
 * Descripción y detalles de los mensajes o de los errores.
 
@@ -624,7 +624,7 @@ Current AppOps Service state:
   	#2: ModeCallback{f993e3b watchinguid=-1 flags=0x1 op=FINE_LOCATION from uid=u0a124 pid=3315}
 	Op READ_CONTACTS:
   	#0: ModeCallback{12983a3 watchinguid=-1 flags=0x0 op=READ_WRITE_HEALTH_DATA from uid=1000 pid=1807}
-	Op WRITE_CONTACTS:
+	Op WRIT E_CONTACTS:
   	#0: ModeCallback{12983a3 watchinguid=-1 flags=0x0 op=READ_WRITE_HEALTH_DATA from uid=1000 pid=1807}
 	Op READ_CALL_LOG:
   	#0: ModeCallback{12983a3 watchinguid=-1 flags=0x0 op=READ_WRITE_HEALTH_DATA from uid=1000 pid=1807}
@@ -656,45 +656,35 @@ Este archivo comprimido puede ser analizado por la MVT mediante el comando *mvt-
 
 Los archivos y carpetas contenidas en el comprimido incluye los siguiente:
 
-* dumpstate-yyyy-mm-dd-hh-mm-ss.txt  
-  * Archivo que proporciona un resumen de las características principales del dispositivo móvil y el estado actual del sistema.  
-* dumpstate\_board.txt  
-  * Archivo que proporciona logs de inicio del sistema con datos detallados sobre los eventos y servicios que se ejecutan durante el arranque del dispositivo.  
-* dumpstate\_log.txt  
-  * Archivo que presenta los logs del proceso de generación de informe. Contiene posibles errores o advertencias durante la recopilación de datos.  
-* main\_entry.txt  
-  * Este archivo sirve como un índice del contenido de los componentes recopilados en el bugreport.  
-* version.txt  
-  * Muestra la versión del formato de generación de los registros del bugreport.  
-* fs/  
-  * cache/recobery  
-    * last\_data\_partition\_info  
-      * Esta información proporciona las características del almacenamiento del dispositivo, el tamaño total, tamaño de sector y el número de bloques presentes. Así mismo, informa la capacidad de almacenamiento utilizada y la disponibilidad.  
-    * last\_dataresizing  
-      * Esta información registra el inicio y configuración de varios sensores del dispositivo. También, muestra mensajes de instancias creadas para sensores específicos (como auto rotation, smart alert, etc)  
-    * last\_postrecovery  
-      * Esta información describe actividades relacionadas con la comunicación entre componentes de software seguros.   
-  * data  
-    * anr  
-      * arn\_yyyy-mm-dd-hh-mm-ss   
-        * proporciona un diagnóstico detallado de aplicaciones que no responden. ARN se origina de *app not responding.*  
-    * log/bt  
-      * btsnooz\_hci.log  
-        * Registro generado por dispositivos Android que contiene información sobre la actividad de la interfaz HCI (*Host Controller Interface*) de Bluetooth.   
-      * btsnooz\_hci.log.last  
-        * Contiene un registro más detallado y extenso del historial de eventos de HCI Bluetooth.   
-    * misc  
-      * recovery  
-        * ro.buil.fingerprint  
-          * El archivo contiene el identificador único de la versión de software que está ejecutando el dispositivo.   
-        * ro.build.fingerprint.1  
-          * El archivo contiene una variante del identificador de compilación en el dispositivo  
-    * tombstones  
-      * tombstone\_xx  
-        * Estos archivos son registros de fallos (crash dumps) que el sistema genera automáticamente cuando un proceso de usuario o del sistema se bloquea inesperadamente.   
-  * proc  
-    * mountinfo  
-      * Este archivo proporciona información detallada sobre los puntos de montaje en un sistema operativo basado en linux. Básicamente, permite entender cómo están configurados los sistemas de archivos y las particiones montadas. 
+
+* **dumpstate-yyyy-mm-dd-hh-mm-ss.txt:** Archivo que proporciona un resumen de las características principales del dispositivo móvil y el estado actual del sistema.  
+* **dumpstate_board.txt:** Archivo que proporciona logs de inicio del sistema con datos detallados sobre los eventos y servicios que se ejecutan durante el arranque del dispositivo.  
+* **dumpstate_log.txt:** Archivo que presenta los logs del proceso de generación de informe. Contiene posibles errores o advertencias durante la recopilación de datos.  
+* **main_entry.txt:** Este archivo sirve como un índice del contenido de los componentes recopilados en el bugreport.  
+* **version.txt:** Muestra la versión del formato de generación de los registros del bugreport.  
+
+* `fs/`  
+  * `cache/recovery/`  
+    * **last_data_partition_info:** Esta información proporciona las características del almacenamiento del dispositivo, el tamaño total, tamaño de sector y el número de bloques presentes. Así mismo, informa la capacidad de almacenamiento utilizada y la disponibilidad.  
+    * **last_dataresizing:** Esta información registra el inicio y configuración de varios sensores del dispositivo. También muestra mensajes de instancias creadas para sensores específicos (como auto rotation, smart alert, etc).  
+  * **last_postrecovery:** Esta información describe actividades relacionadas con la comunicación entre componentes de software seguros.  
+
+* `data/`  
+  * `anr/`  
+    * **arn_yyyy-mm-dd-hh-mm-ss:** Proporciona un diagnóstico detallado de aplicaciones que no responden. ARN se origina de *App Not Responding*.  
+  * `log/bt/`  
+    * **btsnooz_hci.log:** Registro generado por dispositivos Android que contiene información sobre la actividad de la interfaz HCI (*Host Controller Interface*) de Bluetooth.  
+    * **btsnooz_hci.log.last:** Contiene un registro más detallado y extenso del historial de eventos de HCI Bluetooth.  
+  * `misc/`  
+    * `recovery/`  
+      * **ro.buil.fingerprint:** El archivo contiene el identificador único de la versión de software que está ejecutando el dispositivo.  
+    * **ro.build.fingerprint.1:** El archivo contiene una variante del identificador de compilación en el dispositivo.  
+  * `tombstones/`  
+    * **tombstone_xx:** Estos archivos son registros de fallos (*crash dumps*) que el sistema genera automáticamente cuando un proceso de usuario o del sistema se bloquea inesperadamente.  
+
+* `proc/`  
+  * **mountinfo:** Este archivo proporciona información detallada sobre los puntos de montaje en un sistema operativo basado en Linux. Básicamente, permite entender cómo están configurados los sistemas de archivos y las particiones montadas.  
+
 
 **¿Por qué es importante?**
 
@@ -720,52 +710,51 @@ El módulo accede a rutas específicas del sistema para extraer archivos que doc
 Los archivos y carpetas contenidas en este directorio son los siguiente:
 
 * anr  
-  * anr\_yyyy-mm-dd-hh-mm-ss\*\*  
-    * Archivo que proporciona un diagnóstico detallado del estado del sistema y de la actividad de un proceso específico.  
+  * anr_yyyy-mm-dd-hh-mm-ss**  
+    * Archivo que proporciona un diagnóstico detallado del estado del sistema y de la actividad de un proceso específico.
+
 * log  
   * acore  
-    * 0\_dump\_all.zip  
+    * 0_dump_all.zip  
       * Archivo que contiene un volcado del estado del sistema asociado al proceso acore.  
   * batterystats  
     * newbatterystats240905095247  
       * Archivo que contiene métricas sobre el uso energético del dispositivo.  
   * dropbox.txt  
     * Archivo que contiene registros de eventos del sistema gestionados por DropBoxManager.  
-  * dumpstate\_debug\_history.lst  
+  * dumpstate_debug_history.lst  
     * Archivo que contiene el historial de ejecuciones del proceso de recolección de logs del sistema.  
-  * dumpstate\_lastkmsg\_20240423\_152746\_0\_MP.log.gz  
+  * dumpstate_lastkmsg_20240423_152746_0_MP.log.gz  
     * Archivo que contiene el último mensaje del kernel tras un reinicio inesperado.  
-  * dumpstate\_latest\_lastkmsg.log.gz  
+  * dumpstate_latest_lastkmsg.log.gz  
     * Archivo que contiene el log persistente más reciente del kernel después de un reinicio.  
   * dumpstate-stats.txt  
     * Archivo que contiene estadísticas generadas durante la recolección del estado del sistema.  
-  * dumpstate\_sys\_error.zip  
+  * dumpstate_sys_error.zip  
     * Archivo comprimido que contiene información sobre errores críticos del sistema.  
-  * lom\_log.txt  
+  * lom_log.txt  
     * Archivo que contiene registros relacionados con almacenamiento o monitoreo del sistema.  
-  * pm\_debug\_info.txt
-
-    * Archivo que contiene información de depuración del gestor de paquetes del sistema.
-
-  * power\_off\_reset\_reason.txt  
+  * pm_debug_info.txt  
+    * Archivo que contiene información de depuración del gestor de paquetes del sistema.  
+  * power_off_reset_reason.txt  
     * Archivo que indica la causa del último apagado o reinicio del dispositivo.  
-  * prev\_dump.log  
+  * prev_dump.log  
     * Archivo que contiene una captura previa del estado del sistema antes de un evento crítico.  
-  * radio\_PRECONFG\_SET.log  
+  * radio_PRECONFG_SET.log  
     * Archivo que documenta la configuración inicial del módulo de radio del dispositivo.  
-  * shutdown\_profile.1.txt  
+  * shutdown_profile.1.txt  
     * Archivo que contiene el perfil de apagado registrado por el sistema.  
-  * shutdown\_profile\_latest.txt  
+  * shutdown_profile_latest.txt  
     * Archivo que contiene el perfil del apagado más reciente del sistema.  
   * err  
-    * mobiledata\_dns.dat  
+    * mobiledata_dns.dat  
       * Archivo que contiene errores relacionados con resolución DNS en redes móviles.  
-    * mobiledata\_tp2.dat  
+    * mobiledata_tp2.dat  
       * Archivo que contiene errores en la transferencia de paquetes móviles.  
-    * mobiledata\_tp.dat  
+    * mobiledata_tp.dat  
       * Archivo que contiene errores en la transferencia de paquetes móviles.  
   * ewlogd  
-    * ewlog0\_20240920\_144426188369.log  
+    * ewlog0_20240920_144426188369.log  
       * Archivo que contiene registros de eventos del sistema generados por el servicio ewlogd.  
   * imscr  
     * imscr.log.0  
@@ -773,15 +762,14 @@ Los archivos y carpetas contenidas en este directorio son los siguiente:
   * omc  
     * cidmanager.log  
       * Archivo que contiene información del gestor de códigos de operador (CID).  
-    * csc\_update\_log.txt  
+    * csc_update_log.txt  
       * Archivo que contiene el registro de actualizaciones del paquete de personalización CSC.  
-    * home\_fota\_update\_log.txt  
+    * home_fota_update_log.txt  
       * Archivo que contiene registros de actualizaciones FOTA en red doméstica.  
-    * prev\_csc\_log.txt  
+    * prev_csc_log.txt  
       * Archivo que contiene un historial previo de configuración del operador.  
   * search  
-    * 0\_com.samsung.android.scs\_index\_encrypted.tar.gz
-
+    * 0_com.samsung.android.scs_index_encrypted.tar.gz  
       * Archivo comprimido cifrado que contiene datos del índice de búsqueda del sistema.  
   * sfslog  
     * sfslog.0.gz  
@@ -789,19 +777,19 @@ Los archivos y carpetas contenidas en este directorio son los siguiente:
   * smartswitch  
     * 1726696227738SmartSwitchSimpleLog.log  
       * Archivo que contiene registros del proceso de transferencia de datos mediante Smart Switch.  
-  * update\_engine\_log  
-    * update\_engine.20240603-222843  
+  * update_engine_log  
+    * update_engine.20240603-222843  
       * Archivo que contiene registros del motor de actualización de software del sistema.  
   * wfd  
     * wfdDumpSource.log  
       * Archivo que contiene actividad registrada del componente Wifi directWireless Display (WFD).  
   * wifi  
+
 * system  
 * proc  
-* kmsg
-
+* kmsg  
   * Archivo que contiene el log actual del kernel con actividad del sistema a bajo nivel.  
-* last\_kmsg  
+* last_kmsg  
   * Archivo que contiene el último log persistente del kernel tras un reinicio.  
 * sys  
 * fs  
