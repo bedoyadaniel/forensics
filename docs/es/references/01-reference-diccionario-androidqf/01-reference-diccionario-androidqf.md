@@ -162,7 +162,7 @@ La información de este archivo se genera mediante el módulo [getprop.go](https
 
 **Información contenida**
 
-Este archivo se encuentra en formato *TXT* y contiene la salida del comando de *adb getprop*, el cual detalla las **propiedades del sistema**.
+Este archivo se encuentra en formato *TXT* y contiene la salida del comando de `adb getprop`, el cual detalla las **propiedades del sistema**.
 
 Las propiedades del sistema son pares clave-valor de cadenas que se almacenan en el diccionario global [*build.prop*](https://xdaforums.com/t/guide-build-prop-wiki.2056266/) o en archivos de descripción *.sysprop*, y proporcionan una forma conveniente de compartir configuraciones dentro del sistema. 
 
@@ -229,7 +229,7 @@ La información de este archivo se genera mediante el módulo [selinux.go](https
 
 **Información contenida**
 
-Este archivo se encuentra en formato *txt* y contiene la salida del comando de *adb shell getenforce*, e indica la política de seguridad *SELinux* aplicada en el dispositivo, indicando el modo en el que se encuentra (*enforcing*, *permissive*, o *disabled*).
+Este archivo se encuentra en formato *txt* y contiene la salida del comando de `adb shell getenforce` e indica la política de seguridad *SELinux* aplicada en el dispositivo, indicando el modo en el que se encuentra (*enforcing*, *permissive*, o *disabled*).
 
 **¿Por qué es importante?**
 
@@ -253,7 +253,7 @@ La información de este archivo se genera mediante el módulo [settings.go](http
 
 **Información contenida**
 
-Este archivo se encuentra en formato *txt* y contiene la salida del comando *adb shell cmd settings list global* , el cual muestra preferencias que siempre se aplican de forma idéntica a todos los usuarios definidos ([well-defined user](https://source.android.com/docs/devices/admin/multi-user#user_types)). Las aplicaciones pueden leerlas, pero no pueden escribirlas, se trata de preferencias que el usuario debe modificar explícitamente a través de la interfaz de usuario del sistema o API especializadas para esos valores.
+Este archivo se encuentra en formato *txt* y contiene la salida del comando `adb shell cmd settings list global` , el cual muestra preferencias que siempre se aplican de forma idéntica a todos los usuarios definidos ([well-defined user](https://source.android.com/docs/devices/admin/multi-user#user_types)). Las aplicaciones pueden leerlas, pero no pueden escribirlas, se trata de preferencias que el usuario debe modificar explícitamente a través de la interfaz de usuario del sistema o API especializadas para esos valores.
 
 Estas configuraciones incluyen opciones de desarrollador, arranque, y estado de la conexión de bluetooth, wifi y telefonía. Para ver la [lista completa de preferencias globales](https://developer.android.com/reference/android/provider/Settings.Global) se puede revisar la documentación correspondiente de Android.
 
@@ -294,7 +294,7 @@ La información de este archivo se genera mediante el módulo [settings.go](http
 
 **Información contenida**
 
-Este archivo se encuentra en formato *txt* y contiene la salida del comando *adb shell cmd settings list secure.*  Muestra preferencias de seguridad del sistema que las aplicaciones pueden leer pero no escribir. Son preferencias que el usuario debe modificar explícitamente a través de la interfaz de usuario de una aplicación del sistema. Las aplicaciones normales no pueden modificar la base de datos de configuraciones de seguridad.
+Este archivo se encuentra en formato *txt* y contiene la salida del comando `adb shell cmd settings list secure`  Muestra preferencias de seguridad del sistema que las aplicaciones pueden leer pero no escribir. Son preferencias que el usuario debe modificar explícitamente a través de la interfaz de usuario de una aplicación del sistema. Las aplicaciones normales no pueden modificar la base de datos de configuraciones de seguridad.
 
 Estas configuraciones incluyen opciones de desarrollador, accesibilidad, ubicación, entrada de datos, bloqueo de pantalla, control parental, text-to-speech, y conexión de bluetooth, wifi y telefonía.
 
@@ -339,7 +339,7 @@ La información de este archivo se genera mediante el módulo [settings.go](http
 
 **Información contenida**
 
-Este archivo se encuentra en formato *txt* y contiene la salida del comando *adb shell cmd settings list system* , el cual muestra diversas preferencias generales del dispositivo. Estas preferencias afectan la experiencia del usuario y el funcionamiento básico del dispositivo.
+Este archivo se encuentra en formato *txt* y contiene la salida del comando `adb shell cmd settings list system` , el cual muestra diversas preferencias generales del dispositivo. Estas preferencias afectan la experiencia del usuario y el funcionamiento básico del dispositivo.
 
 Estas configuraciones incluyen opciones de sensores como el acelerómetro o giroscopio, zona horaria, pantalla, alarmas, sonido, vibración, actualizaciones, y conexión de bluetooth, wifi y telefonía.
 
@@ -395,7 +395,7 @@ La información de este archivo se genera mediante el módulo [env.go](https://g
 
 **Información contenida**
 
-Este archivo se encuentra en formato *txt* y contiene la salida del comando *adb shell env ,* el cual muestra la configuración de las variables de entorno de la terminal (shell) [*mkshrc*](http://mirbsd.de/mksh) la cual es utilizada por Android.
+Este archivo se encuentra en formato *txt* y contiene la salida del comando `adb shell env` el cual muestra la configuración de las variables de entorno de la terminal (shell) [*mkshrc*](http://mirbsd.de/mksh) la cual es utilizada por Android.
 
 Por defecto las variables de *mkshrc* en Android se encuentran en el archivo *mkshrc* o *profile* que puede estar en alguno de los siguientes directorios.
 
@@ -473,7 +473,7 @@ La información de estos archivos se genera mediante el módulo [logcat.go](http
 
 **Información contenida**
 
-Estos archivos se encuentran en texto plano con extensión .*txt* y contienen la salida de los comandos *adb shell logcat \-d \-b all* y *adb shell logcat \-L \-b all* respectivamente, los cuales muestran el registro de mensajes del sistema. Algunos ejemplos de la información contenida son:
+Estos archivos se encuentran en texto plano con extensión .*txt* y contienen la salida de los comandos `adb shell logcat \-d \-b all` y `adb shell logcat \-L \-b all` respectivamente, los cuales muestran el registro de mensajes del sistema. Algunos ejemplos de la información contenida son:
 
 * Mensajes de error y advertencia (FATAL EXCEPTION).  
 * Mensajes de aplicaciones, procesos y servicios del sistema operativos.  
@@ -520,7 +520,7 @@ La información de este archivo se genera mediante el módulo [dumpsys.go](https
 
 **Información contenida**
 
-Este archivo se encuentra en formato *txt* y contiene la salida del comando *adb shell dumpsys ,* el cual muestra información detallada sobre los servicios en ejecución, incluyendo procesos y aplicaciones.
+Este archivo se encuentra en formato *txt* y contiene la salida del comando `adb shell dumpsys` el cual muestra información detallada sobre los servi`cios en ejecución, incluyendo procesos y aplicaciones.
 
 El archivo está dividido en secciones específicas para cada servicio siguiendo un orden:
 
@@ -528,7 +528,7 @@ El archivo está dividido en secciones específicas para cada servicio siguiendo
 * Detalles de cada servicios  
 * Logs detalladas 
 
-Para conocer el listado de servicios que se pueden encontrar en un *dumpsys* de un dispositivo se puede ejecutar el comando *adb shell service list.*
+Para conocer el listado de servicios que se pueden encontrar en un *dumpsys* de un dispositivo se puede ejecutar el comando `adb shell service list`
 
 **¿Por qué es importante?**
 
@@ -650,9 +650,9 @@ La información de este archivo se genera mediante el módulo [bugreport.go](htt
 
 **Información contenida**
 
-Este es un archivo comprimido en formato *zip* y contiene la salida del comando *adb shell bugreport ,* el cual es un informe completo sobre el estado actual del dispositivo que incluye datos del sistema, logs y configuraciones.
+Este es un archivo comprimido en formato *zip* y contiene la salida del comando `adb shell bugreport` el cual es un informe completo sobre el estado actual del dispositivo que incluye datos del sistema, logs y configuraciones.
 
-Este archivo comprimido puede ser analizado por la MVT mediante el comando *mvt-android check-bugreport bugreport.zip* 
+Este archivo comprimido puede ser analizado por la MVT mediante el comando `mvt-android check-bugreport bugreport.zip` 
 
 Los archivos y carpetas contenidas en el comprimido incluye los siguiente:
 
@@ -692,7 +692,7 @@ Este comprimido es una fuente de información con mucho valor para el análisis 
 La información de esta carpeta se genera mediante el módulo [logs.go](https://github.com/mvt-project/androidqf/blob/main/modules/logs.go). 
 
 **Información contenida**  
-Contiene archivos de registro recolectados directamente desde el dispositivo, utilizando el comando *adb pull* en varias carpetas. 
+Contiene archivos de registro recolectados directamente desde el dispositivo, utilizando el comando `adb pull` en varias carpetas. 
 
 El módulo accede a rutas específicas del sistema para extraer archivos que documentan el comportamiento, errores y eventos del sistema operativo, las cuales son:
 
@@ -797,7 +797,7 @@ Los archivos y carpetas contenidas en este directorio son los siguiente:
 La información de esta carpeta se genera mediante el módulo [packages.go](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/adb/packages.py).  
 **Información contenida**
 
-Este archivo se encuentra en formato *json* y contiene la salida del comando *adb shell pm list packages* , el cual muestra un listado de aplicaciones instaladas en el dispositivo.
+Este archivo se encuentra en formato *json* y contiene la salida del comando `adb shell pm list packages` , el cual muestra un listado de aplicaciones instaladas en el dispositivo.
 
 El archivo contiene:
 
@@ -871,7 +871,7 @@ La información de este archivo se genera mediante el módulo [processes.go](htt
 
 **Información contenida**
 
-Este archivo se encuentra en formato *json* y contiene la salida del comando *adb shell ps \-A* , el cual muestra información detallada sobre los procesos que se encuentran en ejecución. 
+Este archivo se encuentra en formato *json* y contiene la salida del comando `adb shell ps \-A` , el cual muestra información detallada sobre los procesos que se encuentran en ejecución. 
 
 Este archivo presenta la información en una forma estructurada teniendo como orden identificadores, detalles de la ejecución, consumo de recursos y estado del proceso.
 
@@ -952,7 +952,7 @@ La información de este archivo se genera mediante el módulo [services.go](http
 
 **Información contenida**
 
-Este archivo se encuentra en formato *txt* y contiene la salida del comando *adb shell service list ,* el cual muestra información detallada sobre los servicios en ejecución.
+Este archivo se encuentra en formato *txt* y contiene la salida del comando `adb shell service list` el cual muestra información detallada sobre los servicios en ejecución.
 
 La estructura del archivo es el nombre del servicio y el proceso o paquete que está en ejecución para ese servicio.
 
@@ -1034,7 +1034,7 @@ Este módulo hace una búsqueda específica de proceso de rooting.
 
 **Información contenida**
 
-Este archivo se encuentra en formato *json* y contiene la salida del comando *adb shell which \-a* aplicado a una lista de binarios para saber si están presentes en el sistema.
+Este archivo se encuentra en formato *json* y contiene la salida del comando `adb shell which \-a` aplicado a una lista de binarios para saber si están presentes en el sistema.
 
 Los binarios a los que se aplica son utilizados para obtener acceso de root o elevar privilegios en el dispositivo.
 
@@ -1097,7 +1097,7 @@ Este archivo se encuentra en formato binario y contiene datos relacionados con l
 
 Dependiendo de la opción seleccionada en androidqf el contenido del archivo puede ser solamente los SMS o puede ser una copia de datos de aquellas aplicaciones que tienen declarado en su manifiesto la posibilidad de realizar copias.
 
-Este archivo comprimido puede ser analizado por la MVT mediante el comando *mvt-android check-backup backup.ab*
+Este archivo comprimido puede ser analizado por la MVT mediante el comando `mvt-android check-backup backup.ab`
 
 **¿Por qué es importante?**
 
@@ -1135,7 +1135,7 @@ La información de este archivo se genera mediante el módulo [files.go](https:/
 
 Este archivo se encuentra en formato *json* y contiene el resultado de la busqueda de archivos mediante el comando *find.*
 
-El comando completo de *find* es *adb shell find '/' \-maxdepth 1 \-printf '%T@ %m %s %u %g %p\\n' 2\> /dev/null* y se aplica a las siguientes carpetas:
+El comando completo de *find* es `adb shell find '/' \-maxdepth 1 \-printf '%T@ %m %s %u %g %p\\n' 2\> /dev/null` y se aplica a las siguientes carpetas:
 
 * /sdcard/  
 * /system/  
