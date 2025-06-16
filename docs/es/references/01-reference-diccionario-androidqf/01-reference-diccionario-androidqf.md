@@ -781,11 +781,14 @@ Los archivos y carpetas contenidas en este directorio son los siguiente:
 
 * `log/wfd/wfdDumpSource.log`  
     * **wfdDumpSource.log**: Archivo que contiene actividad registrada del componente Wifi direct (WFD).  
+
 * `log/wifi/`  
+
 * `system/proc/`  
     * **kmsg**: Archivo que contiene el log actual del kernel con actividad del sistema a bajo nivel.  
-   * `last_kmsg`  
-  * **last_kmsg**: Archivo que contiene el último log persistente del kernel tras un reinicio.  
+    * **last_kmsg**: Archivo que contiene el último log persistente del kernel tras un reinicio.  
+
+* `sys/fs/pstore/`
 
 ## Procesos y aplicaciones 
 
