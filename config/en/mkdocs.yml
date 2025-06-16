@@ -12,16 +12,16 @@ nav:
     - Index of contents: 'index-contents.md'
   - Explainers:
     - Home: 'explainers/index.md'
-    - Explainer - Introduction to digital forensics: 'explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.md'
-    - Explainer - Risks, threats and mitigatiosn fo forensic labs: 'explainers/02-explainer-risks-threats/02-explainer-risks-threats.md'
+    - Introduction to digital forensics: 'explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.md'
+    - Risks, threats and mitigatiosn fo forensic labs: 'explainers/02-explainer-risks-threats/02-explainer-risks-threats.md'
   - Tutorials: 
     - Home: 'tutorials/index.md'
   - How-to's:
     - Home: 'how-tos/index.md'
-    - How-to- Obtain and document informed consent: 'how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md'
+    - Obtain and document informed consent: 'how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md'
   - Reference:
     - Home: 'references/index.md'
-    - Reference - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.md'
+    - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.md'
 
 theme: 
   name: material
