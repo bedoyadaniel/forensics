@@ -656,34 +656,27 @@ Este archivo comprimido puede ser analizado por la MVT mediante el comando *mvt-
 
 Los archivos y carpetas contenidas en el comprimido incluye los siguiente:
 
-
 * **dumpstate-yyyy-mm-dd-hh-mm-ss.txt:** Archivo que proporciona un resumen de las características principales del dispositivo móvil y el estado actual del sistema.  
 * **dumpstate_board.txt:** Archivo que proporciona logs de inicio del sistema con datos detallados sobre los eventos y servicios que se ejecutan durante el arranque del dispositivo.  
 * **dumpstate_log.txt:** Archivo que presenta los logs del proceso de generación de informe. Contiene posibles errores o advertencias durante la recopilación de datos.  
 * **main_entry.txt:** Este archivo sirve como un índice del contenido de los componentes recopilados en el bugreport.  
 * **version.txt:** Muestra la versión del formato de generación de los registros del bugreport.  
-
-* `fs/`  
-  * `cache/recovery/`  
+* `fs/cache/recovery/`  
     * **last_data_partition_info:** Esta información proporciona las características del almacenamiento del dispositivo, el tamaño total, tamaño de sector y el número de bloques presentes. Así mismo, informa la capacidad de almacenamiento utilizada y la disponibilidad.  
     * **last_dataresizing:** Esta información registra el inicio y configuración de varios sensores del dispositivo. También muestra mensajes de instancias creadas para sensores específicos (como auto rotation, smart alert, etc).  
     * **last_postrecovery:** Esta información describe actividades relacionadas con la comunicación entre componentes de software seguros.  
-
-* `data/`  
-    * `anr/`  
-      * **arn_yyyy-mm-dd-hh-mm-ss:** Proporciona un diagnóstico detallado de aplicaciones que no responden. ARN se origina de *App Not Responding*.  
-    * `log/bt/`  
-      * **btsnooz_hci.log:** Registro generado por dispositivos Android que contiene información sobre la actividad de la interfaz HCI (*Host Controller Interface*) de Bluetooth.  
-      * **btsnooz_hci.log.last:** Contiene un registro más detallado y extenso del historial de eventos de HCI Bluetooth.  
-    * `misc/`  
-      * `recovery/`  
-        * **ro.buil.fingerprint:** El archivo contiene el identificador único de la versión de software que está ejecutando el dispositivo.  
-      * **ro.build.fingerprint.1:** El archivo contiene una variante del identificador de compilación en el dispositivo.  
-    * `tombstones/`  
-      * **tombstone_xx:** Estos archivos son registros de fallos (*crash dumps*) que el sistema genera automáticamente cuando un proceso de usuario o del sistema se bloquea inesperadamente.  
-
-* `proc/`  
-  * **mountinfo:** Este archivo proporciona información detallada sobre los puntos de montaje en un sistema operativo basado en Linux. Básicamente, permite entender cómo están configurados los sistemas de archivos y las particiones montadas.  
+* `fs/data/anr/`  
+    * **arn_yyyy-mm-dd-hh-mm-ss:** Proporciona un diagnóstico detallado de aplicaciones que no responden. ARN se origina de *App Not Responding*.
+* `fs/data/log/bt/`  
+    * **btsnooz_hci.log:** Registro generado por dispositivos Android que contiene información sobre la actividad de la interfaz HCI (*Host Controller Interface*) de Bluetooth.  
+    * **btsnooz_hci.log.last:** Contiene un registro más detallado y extenso del historial de eventos de HCI Bluetooth.  
+* `fs/misc/recovery`  
+    * **ro.buil.fingerprint:** El archivo contiene el identificador único de la versión de software que está ejecutando el dispositivo.  
+    * **ro.build.fingerprint.1:** El archivo contiene una variante del identificador de compilación en el dispositivo.  
+* `fs/data/tombstones/`  
+    * **tombstone_xx:** Estos archivos son registros de fallos (*crash dumps*) que el sistema genera automáticamente cuando un proceso de usuario o del sistema se bloquea inesperadamente.  
+* `fs/proc/`  
+    * **mountinfo:** Este archivo proporciona información detallada sobre los puntos de montaje en un sistema operativo basado en Linux. Básicamente, permite entender cómo están configurados los sistemas de archivos y las particiones montadas.  
 
 
 **¿Por qué es importante?**
