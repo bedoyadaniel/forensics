@@ -1451,7 +1451,7 @@
 <h1 id="diccionario-de-archivos-generados-por-la-herramienta-androidqf">Diccionario de archivos generados por la herramienta androidqf</h1>
 <p>Este documento forma <strong>parte de un repositorio de documentación técnica</strong> que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para <strong>impulsar el análisis forense consentido en beneficio de la sociedad civil</strong>. Para organizar los contenidos, se utiliza el <a href="https://diataxis.fr/">marco de referencia de documentación técnica Diataxis</a>.</p>
 <p>Este recurso en particular se enmarca dentro de la categoría de <a href="https://diataxis.fr/reference">referencias</a>, y contiene información sobre los archivos generados por <a href="https://github.com/mvt-project/androidqf">androidqf</a> al realizar una extracción forense de un dispositivo Android, esto con el objetivo de que una persona analista <strong>conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.</strong></p>
-<p>Este recurso se actualizó por última vez el DATE y para la recopilación de la información se tomó como base el <em>commit</em> bd84c2bc.</p>
+<p>Este recurso se actualizó por última vez el 16 de Junio del 2025 y para la recopilación de la información se tomó como base el <em>commit</em> bd84c2bc.</p>
 <p><a href="https://github.com/mvt-project/androidqf">Androidqf</a> es una herramienta de extracción forense que pertenece al <a href="https://github.com/mvt-project/">MVT Project</a>. Desarrollada inicialmente por <a href="https://nex.sx/">Claudio Guarnieri</a> y mantenida actualmente por el <a href="https://securitylab.amnesty.org/es/">Laboratorio de Seguridad de Amnistía Internacional</a>.</p>
 <p>Su nombre viene de la frase en inglés <em>Android Quick Forensics</em>. Se caracteriza por ser una <strong>herramienta portable</strong>, es decir se puede ejecutar en Windows, GNU/Linux y Mac OS mediante un binario precompilado, lo que simplifica la <a href="https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#etapa-2-recoleccion-y-adquisicion">adquisición de información forense</a> de dispositivos Android. </p>
 <p>La información generada por androidqf se puede agrupar en 5 categorías principales:</p>
@@ -1815,13 +1815,15 @@ EXTERNAL_STORAGE=/sdcard
 <li>Inicio del registro (contiene divisiones de registros).  </li>
 <li>Marca de tiempo (timestamp).  </li>
 <li>Identificador del proceso y del hilo (PID) y (TID).  </li>
-<li>Nivel de prioridad:  </li>
-<li>E: Error.  </li>
-<li>W: Advertencia.  </li>
-<li>I: Información.  </li>
-<li>D: Depuración.  </li>
-<li>F: Fatal.  </li>
-<li>V: Verbose.  </li>
+<li>Nivel de prioridad:<ul>
+<li>E: Error </li>
+<li>W: Advertencia</li>
+<li>I: Información</li>
+<li>D: Depuración</li>
+<li>F: Fatal</li>
+<li>V: Verbose</li>
+</ul>
+</li>
 <li>Etiqueta que indica el componente o proceso del sistema.  </li>
 <li>Descripción y detalles de los mensajes o de los errores.</li>
 </ul>
@@ -1941,7 +1943,7 @@ Current AppOps Service state:
     #2: ModeCallback{f993e3b watchinguid=-1 flags=0x1 op=FINE_LOCATION from uid=u0a124 pid=3315}
     Op READ_CONTACTS:
     #0: ModeCallback{12983a3 watchinguid=-1 flags=0x0 op=READ_WRITE_HEALTH_DATA from uid=1000 pid=1807}
-    Op WRITE_CONTACTS:
+    Op WRIT E_CONTACTS:
     #0: ModeCallback{12983a3 watchinguid=-1 flags=0x0 op=READ_WRITE_HEALTH_DATA from uid=1000 pid=1807}
     Op READ_CALL_LOG:
     #0: ModeCallback{12983a3 watchinguid=-1 flags=0x0 op=READ_WRITE_HEALTH_DATA from uid=1000 pid=1807}
@@ -1965,61 +1967,52 @@ Current AppOps Service state:
 <p>Este archivo comprimido puede ser analizado por la MVT mediante el comando <em>mvt-android check-bugreport bugreport.zip</em> </p>
 <p>Los archivos y carpetas contenidas en el comprimido incluye los siguiente:</p>
 <ul>
-<li>dumpstate-yyyy-mm-dd-hh-mm-ss.txt  </li>
-<li>Archivo que proporciona un resumen de las características principales del dispositivo móvil y el estado actual del sistema.  </li>
-<li>dumpstate_board.txt  </li>
-<li>Archivo que proporciona logs de inicio del sistema con datos detallados sobre los eventos y servicios que se ejecutan durante el arranque del dispositivo.  </li>
-<li>dumpstate_log.txt  </li>
-<li>Archivo que presenta los logs del proceso de generación de informe. Contiene posibles errores o advertencias durante la recopilación de datos.  </li>
-<li>main_entry.txt  </li>
-<li>Este archivo sirve como un índice del contenido de los componentes recopilados en el bugreport.  </li>
-<li>version.txt  </li>
-<li>Muestra la versión del formato de generación de los registros del bugreport.  </li>
-<li>fs/  </li>
-<li>cache/recobery  <ul>
-<li>last_data_partition_info  </li>
-<li>Esta información proporciona las características del almacenamiento del dispositivo, el tamaño total, tamaño de sector y el número de bloques presentes. Así mismo, informa la capacidad de almacenamiento utilizada y la disponibilidad.  </li>
-<li>last_dataresizing  </li>
-<li>Esta información registra el inicio y configuración de varios sensores del dispositivo. También, muestra mensajes de instancias creadas para sensores específicos (como auto rotation, smart alert, etc)  </li>
-<li>last_postrecovery  </li>
-<li>Esta información describe actividades relacionadas con la comunicación entre componentes de software seguros.   </li>
+<li><strong>dumpstate-yyyy-mm-dd-hh-mm-ss.txt:</strong> Archivo que proporciona un resumen de las características principales del dispositivo móvil y el estado actual del sistema.  </li>
+<li><strong>dumpstate_board.txt:</strong> Archivo que proporciona logs de inicio del sistema con datos detallados sobre los eventos y servicios que se ejecutan durante el arranque del dispositivo.  </li>
+<li><strong>dumpstate_log.txt:</strong> Archivo que presenta los logs del proceso de generación de informe. Contiene posibles errores o advertencias durante la recopilación de datos.  </li>
+<li><strong>main_entry.txt:</strong> Este archivo sirve como un índice del contenido de los componentes recopilados en el bugreport.  </li>
+<li>
+<p><strong>version.txt:</strong> Muestra la versión del formato de generación de los registros del bugreport.  </p>
+</li>
+<li>
+<p><code>fs/</code>  </p>
+</li>
+<li><code>cache/recovery/</code>  <ul>
+<li><strong>last_data_partition_info:</strong> Esta información proporciona las características del almacenamiento del dispositivo, el tamaño total, tamaño de sector y el número de bloques presentes. Así mismo, informa la capacidad de almacenamiento utilizada y la disponibilidad.  </li>
+<li><strong>last_dataresizing:</strong> Esta información registra el inicio y configuración de varios sensores del dispositivo. También muestra mensajes de instancias creadas para sensores específicos (como auto rotation, smart alert, etc).  </li>
 </ul>
 </li>
-<li>data  <ul>
-<li>anr  </li>
-<li>arn_yyyy-mm-dd-hh-mm-ss   <ul>
-<li>proporciona un diagnóstico detallado de aplicaciones que no responden. ARN se origina de <em>app not responding.</em>  </li>
+<li>
+<p><strong>last_postrecovery:</strong> Esta información describe actividades relacionadas con la comunicación entre componentes de software seguros.  </p>
+</li>
+<li>
+<p><code>data/</code>  </p>
+</li>
+<li><code>anr/</code>  <ul>
+<li><strong>arn_yyyy-mm-dd-hh-mm-ss:</strong> Proporciona un diagnóstico detallado de aplicaciones que no responden. ARN se origina de <em>App Not Responding</em>.  </li>
 </ul>
 </li>
-<li>log/bt  </li>
-<li>btsnooz_hci.log  <ul>
-<li>Registro generado por dispositivos Android que contiene información sobre la actividad de la interfaz HCI (<em>Host Controller Interface</em>) de Bluetooth.   </li>
+<li><code>log/bt/</code>  <ul>
+<li><strong>btsnooz_hci.log:</strong> Registro generado por dispositivos Android que contiene información sobre la actividad de la interfaz HCI (<em>Host Controller Interface</em>) de Bluetooth.  </li>
+<li><strong>btsnooz_hci.log.last:</strong> Contiene un registro más detallado y extenso del historial de eventos de HCI Bluetooth.  </li>
 </ul>
 </li>
-<li>btsnooz_hci.log.last  <ul>
-<li>Contiene un registro más detallado y extenso del historial de eventos de HCI Bluetooth.   </li>
+<li><code>misc/</code>  <ul>
+<li><code>recovery/</code>  </li>
+<li><strong>ro.buil.fingerprint:</strong> El archivo contiene el identificador único de la versión de software que está ejecutando el dispositivo.  </li>
+<li><strong>ro.build.fingerprint.1:</strong> El archivo contiene una variante del identificador de compilación en el dispositivo.  </li>
 </ul>
 </li>
-<li>misc  </li>
-<li>recovery  <ul>
-<li>ro.buil.fingerprint  </li>
-<li>El archivo contiene el identificador único de la versión de software que está ejecutando el dispositivo.   </li>
-<li>ro.build.fingerprint.1  </li>
-<li>El archivo contiene una variante del identificador de compilación en el dispositivo  </li>
+<li>
+<p><code>tombstones/</code>  </p>
+<ul>
+<li><strong>tombstone_xx:</strong> Estos archivos son registros de fallos (<em>crash dumps</em>) que el sistema genera automáticamente cuando un proceso de usuario o del sistema se bloquea inesperadamente.  </li>
 </ul>
 </li>
-<li>tombstones  </li>
-<li>tombstone_xx  <ul>
-<li>Estos archivos son registros de fallos (crash dumps) que el sistema genera automáticamente cuando un proceso de usuario o del sistema se bloquea inesperadamente.   </li>
-</ul>
+<li>
+<p><code>proc/</code>  </p>
 </li>
-</ul>
-</li>
-<li>proc  <ul>
-<li>mountinfo  </li>
-<li>Este archivo proporciona información detallada sobre los puntos de montaje en un sistema operativo basado en linux. Básicamente, permite entender cómo están configurados los sistemas de archivos y las particiones montadas. </li>
-</ul>
-</li>
+<li><strong>mountinfo:</strong> Este archivo proporciona información detallada sobre los puntos de montaje en un sistema operativo basado en Linux. Básicamente, permite entender cómo están configurados los sistemas de archivos y las particiones montadas.  </li>
 </ul>
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Este comprimido es una fuente de información con mucho valor para el análisis forense para poder identificar el estado general del dispositivo y dar seguimiento a irregularidades o fallas de software o hardware que se presenten en contextos de explotación de vulnerabilidades.</p>
@@ -2040,11 +2033,15 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p>Los archivos y carpetas contenidas en este directorio son los siguiente:</p>
 <ul>
 <li>anr  </li>
-<li>anr_yyyy-mm-dd-hh-mm-ss**  <ul>
-<li>Archivo que proporciona un diagnóstico detallado del estado del sistema y de la actividad de un proceso específico.  </li>
+<li>
+<p>anr_yyyy-mm-dd-hh-mm-ss**  </p>
+<ul>
+<li>Archivo que proporciona un diagnóstico detallado del estado del sistema y de la actividad de un proceso específico.</li>
 </ul>
 </li>
-<li>log  </li>
+<li>
+<p>log  </p>
+</li>
 <li>acore  <ul>
 <li>0_dump_all.zip  </li>
 <li>Archivo que contiene un volcado del estado del sistema asociado al proceso acore.  </li>
@@ -2083,15 +2080,11 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <li>Archivo que contiene registros relacionados con almacenamiento o monitoreo del sistema.  </li>
 </ul>
 </li>
-<li>
-<p>pm_debug_info.txt</p>
-<ul>
-<li>Archivo que contiene información de depuración del gestor de paquetes del sistema.</li>
+<li>pm_debug_info.txt  <ul>
+<li>Archivo que contiene información de depuración del gestor de paquetes del sistema.  </li>
 </ul>
 </li>
-<li>
-<p>power_off_reset_reason.txt  </p>
-<ul>
+<li>power_off_reset_reason.txt  <ul>
 <li>Archivo que indica la causa del último apagado o reinicio del dispositivo.  </li>
 </ul>
 </li>
@@ -2141,36 +2134,40 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <li>Archivo que contiene un historial previo de configuración del operador.  </li>
 </ul>
 </li>
-<li>
-<p>search  </p>
-<ul>
-<li>
-<p>0_com.samsung.android.scs_index_encrypted.tar.gz</p>
+<li>search  <ul>
+<li>0_com.samsung.android.scs_index_encrypted.tar.gz  </li>
+<li>Archivo comprimido cifrado que contiene datos del índice de búsqueda del sistema.  </li>
+</ul>
 </li>
-<li>
-<p>Archivo comprimido cifrado que contiene datos del índice de búsqueda del sistema.  </p>
-</li>
-<li>sfslog  </li>
+<li>sfslog  <ul>
 <li>sfslog.0.gz  </li>
 <li>Archivo comprimido que contiene registros del sistema de archivos seguro (Secure File System).  </li>
-<li>smartswitch  </li>
+</ul>
+</li>
+<li>smartswitch  <ul>
 <li>1726696227738SmartSwitchSimpleLog.log  </li>
 <li>Archivo que contiene registros del proceso de transferencia de datos mediante Smart Switch.  </li>
-<li>update_engine_log  </li>
+</ul>
+</li>
+<li>update_engine_log  <ul>
 <li>update_engine.20240603-222843  </li>
 <li>Archivo que contiene registros del motor de actualización de software del sistema.  </li>
-<li>wfd  </li>
+</ul>
+</li>
+<li>wfd  <ul>
 <li>wfdDumpSource.log  </li>
 <li>Archivo que contiene actividad registrada del componente Wifi directWireless Display (WFD).  </li>
-<li>wifi  </li>
-<li>system  </li>
-<li>proc  </li>
-<li>kmsg</li>
 </ul>
 </li>
 <li>
-<p>Archivo que contiene el log actual del kernel con actividad del sistema a bajo nivel.  </p>
+<p>wifi  </p>
 </li>
+<li>
+<p>system  </p>
+</li>
+<li>proc  </li>
+<li>kmsg  </li>
+<li>Archivo que contiene el log actual del kernel con actividad del sistema a bajo nivel.  </li>
 <li>last_kmsg  </li>
 <li>Archivo que contiene el último log persistente del kernel tras un reinicio.  </li>
 <li>sys  </li>
