@@ -1565,7 +1565,7 @@
 <h3 id="getproptxt">getprop.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/getprop.go">getprop.go</a><em>.</em></p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>TXT</em> y contiene la salida del comando de <em>adb getprop</em>, el cual detalla las <strong>propiedades del sistema</strong>.</p>
+<p>Este archivo se encuentra en formato <em>TXT</em> y contiene la salida del comando de <code>adb getprop</code>, el cual detalla las <strong>propiedades del sistema</strong>.</p>
 <p>Las propiedades del sistema son pares clave-valor de cadenas que se almacenan en el diccionario global <a href="https://xdaforums.com/t/guide-build-prop-wiki.2056266/"><em>build.prop</em></a> o en archivos de descripción <em>.sysprop</em>, y proporcionan una forma conveniente de compartir configuraciones dentro del sistema. </p>
 <p>La información se puede encontrar utilizando el siguiente formato:</p>
 <div class="highlight"><pre><span></span><code>[{prefix}.]{group}[.{subgroup}]*.{name}[.{type}]
@@ -1617,7 +1617,7 @@
 <h3 id="selinuxtxt">selinux.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/selinux.go">selinux.go</a><em>.</em></p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando de <em>adb shell getenforce</em>, e indica la política de seguridad <em>SELinux</em> aplicada en el dispositivo, indicando el modo en el que se encuentra (<em>enforcing</em>, <em>permissive</em>, o <em>disabled</em>).</p>
+<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando de <code>adb shell getenforce</code> e indica la política de seguridad <em>SELinux</em> aplicada en el dispositivo, indicando el modo en el que se encuentra (<em>enforcing</em>, <em>permissive</em>, o <em>disabled</em>).</p>
 <p><strong>¿Por qué es importante?</strong></p>
 <p><a href="https://en.wikipedia.org/wiki/Security-Enhanced_Linux"><em>SELinux</em></a> es una capa de seguridad clave en Android. Cambios en su configuración pueden ser un indicativo de compromisos en la seguridad del dispositivo.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
@@ -1632,7 +1632,7 @@
 <h3 id="settings_globaltxt">settings_global.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/settings.go">settings.go</a><em>.</em></p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <em>adb shell cmd settings list global</em> , el cual muestra preferencias que siempre se aplican de forma idéntica a todos los usuarios definidos (<a href="https://source.android.com/docs/devices/admin/multi-user#user_types">well-defined user</a>). Las aplicaciones pueden leerlas, pero no pueden escribirlas, se trata de preferencias que el usuario debe modificar explícitamente a través de la interfaz de usuario del sistema o API especializadas para esos valores.</p>
+<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <code>adb shell cmd settings list global</code> , el cual muestra preferencias que siempre se aplican de forma idéntica a todos los usuarios definidos (<a href="https://source.android.com/docs/devices/admin/multi-user#user_types">well-defined user</a>). Las aplicaciones pueden leerlas, pero no pueden escribirlas, se trata de preferencias que el usuario debe modificar explícitamente a través de la interfaz de usuario del sistema o API especializadas para esos valores.</p>
 <p>Estas configuraciones incluyen opciones de desarrollador, arranque, y estado de la conexión de bluetooth, wifi y telefonía. Para ver la <a href="https://developer.android.com/reference/android/provider/Settings.Global">lista completa de preferencias globales</a> se puede revisar la documentación correspondiente de Android.</p>
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Permite identificar configuraciones anómalas que podrían comprometer la seguridad, privacidad  o funcionalidad del dispositivo. Configuraciones predeterminadas inusuales pueden señalar intentos de modificar el comportamiento del sistema, intencionados o accidentales.</p>
@@ -1663,7 +1663,7 @@ zram_enabled=1
 <h3 id="settings_securetxt">settings_secure.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/settings.go">settings.go</a><em>.</em></p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <em>adb shell cmd settings list secure.</em>  Muestra preferencias de seguridad del sistema que las aplicaciones pueden leer pero no escribir. Son preferencias que el usuario debe modificar explícitamente a través de la interfaz de usuario de una aplicación del sistema. Las aplicaciones normales no pueden modificar la base de datos de configuraciones de seguridad.</p>
+<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <code>adb shell cmd settings list secure</code>  Muestra preferencias de seguridad del sistema que las aplicaciones pueden leer pero no escribir. Son preferencias que el usuario debe modificar explícitamente a través de la interfaz de usuario de una aplicación del sistema. Las aplicaciones normales no pueden modificar la base de datos de configuraciones de seguridad.</p>
 <p>Estas configuraciones incluyen opciones de desarrollador, accesibilidad, ubicación, entrada de datos, bloqueo de pantalla, control parental, text-to-speech, y conexión de bluetooth, wifi y telefonía.</p>
 <p>Para ver la <a href="https://developer.android.com/reference/android/provider/Settings.Secure?hl=es-419">lista completa de preferencias de seguridad</a> se puede revisar la documentación correspondiente de Android.</p>
 <p><strong>¿Por qué es importante?</strong></p>
@@ -1697,7 +1697,7 @@ wifi_saved_state=0
 <h3 id="settings_systemtxt">settings_system.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/settings.go">settings.go</a><em>.</em></p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <em>adb shell cmd settings list system</em> , el cual muestra diversas preferencias generales del dispositivo. Estas preferencias afectan la experiencia del usuario y el funcionamiento básico del dispositivo.</p>
+<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <code>adb shell cmd settings list system</code> , el cual muestra diversas preferencias generales del dispositivo. Estas preferencias afectan la experiencia del usuario y el funcionamiento básico del dispositivo.</p>
 <p>Estas configuraciones incluyen opciones de sensores como el acelerómetro o giroscopio, zona horaria, pantalla, alarmas, sonido, vibración, actualizaciones, y conexión de bluetooth, wifi y telefonía.</p>
 <p>Para ver la <a href="https://developer.android.com/reference/android/provider/Settings.System?hl=es-419">lista completa de preferencias de sistema</a> se puede revisar la documentación correspondiente de Android.</p>
 <p><strong>¿Por qué es importante?</strong></p>
@@ -1742,7 +1742,7 @@ wireless_fast_charging=0
 <h3 id="envtxt">env.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/env.go">env.go</a><em>.</em></p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <em>adb shell env ,</em> el cual muestra la configuración de las variables de entorno de la terminal (shell) <a href="http://mirbsd.de/mksh"><em>mkshrc</em></a> la cual es utilizada por Android.</p>
+<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <code>adb shell env</code> el cual muestra la configuración de las variables de entorno de la terminal (shell) <a href="http://mirbsd.de/mksh"><em>mkshrc</em></a> la cual es utilizada por Android.</p>
 <p>Por defecto las variables de <em>mkshrc</em> en Android se encuentran en el archivo <em>mkshrc</em> o <em>profile</em> que puede estar en alguno de los siguientes directorios.</p>
 <div class="highlight"><pre><span></span><code>/system/etc
 /system/etc/profile
@@ -1804,7 +1804,7 @@ EXTERNAL_STORAGE=/sdcard
 <h3 id="logcattxt-y-logcat_oldtxt">logcat.txt y logcat_old.txt</h3>
 <p>La información de estos archivos se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/logcat.go">logcat.go</a> .</p>
 <p><strong>Información contenida</strong></p>
-<p>Estos archivos se encuentran en texto plano con extensión .<em>txt</em> y contienen la salida de los comandos <em>adb shell logcat -d -b all</em> y <em>adb shell logcat -L -b all</em> respectivamente, los cuales muestran el registro de mensajes del sistema. Algunos ejemplos de la información contenida son:</p>
+<p>Estos archivos se encuentran en texto plano con extensión .<em>txt</em> y contienen la salida de los comandos <code>adb shell logcat \-d \-b all</code> y <code>adb shell logcat \-L \-b all</code> respectivamente, los cuales muestran el registro de mensajes del sistema. Algunos ejemplos de la información contenida son:</p>
 <ul>
 <li>Mensajes de error y advertencia (FATAL EXCEPTION).  </li>
 <li>Mensajes de aplicaciones, procesos y servicios del sistema operativos.  </li>
@@ -1845,14 +1845,14 @@ EXTERNAL_STORAGE=/sdcard
 <h3 id="dumpsystxt">dumpsys.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/dumpsys.go">dumpsys.go</a> .</p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <em>adb shell dumpsys ,</em> el cual muestra información detallada sobre los servicios en ejecución, incluyendo procesos y aplicaciones.</p>
+<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <code>adb shell dumpsys</code> el cual muestra información detallada sobre los servi`cios en ejecución, incluyendo procesos y aplicaciones.</p>
 <p>El archivo está dividido en secciones específicas para cada servicio siguiendo un orden:</p>
 <ul>
 <li>Lista de servicios activos  </li>
 <li>Detalles de cada servicios  </li>
 <li>Logs detalladas </li>
 </ul>
-<p>Para conocer el listado de servicios que se pueden encontrar en un <em>dumpsys</em> de un dispositivo se puede ejecutar el comando <em>adb shell service list.</em></p>
+<p>Para conocer el listado de servicios que se pueden encontrar en un <em>dumpsys</em> de un dispositivo se puede ejecutar el comando <code>adb shell service list</code></p>
 <p><strong>¿Por qué es importante?</strong></p>
 <p>El archivo brinda una perspectiva completa del estado del sistema en el dispositivo, clave para poder conocer la actividad realizada por servicios, aplicaciones y procesos en el dispositivo. En términos forenses es uno de los archivos más relevantes por su contenido.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
@@ -1963,8 +1963,8 @@ Current AppOps Service state:
 <h3 id="bugreportzip">bugreport.zip</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/bugreport.go">bugreport.go</a> .</p>
 <p><strong>Información contenida</strong></p>
-<p>Este es un archivo comprimido en formato <em>zip</em> y contiene la salida del comando <em>adb shell bugreport ,</em> el cual es un informe completo sobre el estado actual del dispositivo que incluye datos del sistema, logs y configuraciones.</p>
-<p>Este archivo comprimido puede ser analizado por la MVT mediante el comando <em>mvt-android check-bugreport bugreport.zip</em> </p>
+<p>Este es un archivo comprimido en formato <em>zip</em> y contiene la salida del comando <code>adb shell bugreport</code> el cual es un informe completo sobre el estado actual del dispositivo que incluye datos del sistema, logs y configuraciones.</p>
+<p>Este archivo comprimido puede ser analizado por la MVT mediante el comando <code>mvt-android check-bugreport bugreport.zip</code> </p>
 <p>Los archivos y carpetas contenidas en el comprimido incluye los siguiente:</p>
 <ul>
 <li><strong>dumpstate-yyyy-mm-dd-hh-mm-ss.txt:</strong> Archivo que proporciona un resumen de las características principales del dispositivo móvil y el estado actual del sistema.  </li>
@@ -2010,7 +2010,7 @@ Current AppOps Service state:
 <h3 id="logs">logs/</h3>
 <p>La información de esta carpeta se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/logs.go">logs.go</a>. </p>
 <p><strong>Información contenida</strong><br />
-Contiene archivos de registro recolectados directamente desde el dispositivo, utilizando el comando <em>adb pull</em> en varias carpetas. </p>
+Contiene archivos de registro recolectados directamente desde el dispositivo, utilizando el comando <code>adb pull</code> en varias carpetas. </p>
 <p>El módulo accede a rutas específicas del sistema para extraer archivos que documentan el comportamiento, errores y eventos del sistema operativo, las cuales son:</p>
 <ul>
 <li>/data/anr/  </li>
@@ -2192,7 +2192,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <h3 id="packagesjson">packages.json</h3>
 <p>La información de esta carpeta se genera mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/adb/packages.py">packages.go</a>.<br />
 <strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <em>adb shell pm list packages</em> , el cual muestra un listado de aplicaciones instaladas en el dispositivo.</p>
+<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <code>adb shell pm list packages</code> , el cual muestra un listado de aplicaciones instaladas en el dispositivo.</p>
 <p>El archivo contiene:</p>
 <ul>
 <li>name: Nombre del paquete de la aplicación.  </li>
@@ -2251,7 +2251,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <h3 id="processestxt">processes.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/processes.go">processes.go</a>. </p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <em>adb shell ps -A</em> , el cual muestra información detallada sobre los procesos que se encuentran en ejecución. </p>
+<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <code>adb shell ps \-A</code> , el cual muestra información detallada sobre los procesos que se encuentran en ejecución. </p>
 <p>Este archivo presenta la información en una forma estructurada teniendo como orden identificadores, detalles de la ejecución, consumo de recursos y estado del proceso.</p>
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Este archivo permite identificar procesos que son ejecutados de manera inusual o que son ejecutados por usuarios no autorizados como resultado de una escalada de privilegios. Así mismo, podemos asegurar que los procesos y sus jerarquías coinciden con las configuraciones establecidas o normales.</p>
@@ -2322,7 +2322,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <h3 id="servicestxt">services.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/services.go">services.go</a></p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <em>adb shell service list ,</em> el cual muestra información detallada sobre los servicios en ejecución.</p>
+<p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <code>adb shell service list</code> el cual muestra información detallada sobre los servicios en ejecución.</p>
 <p>La estructura del archivo es el nombre del servicio y el proceso o paquete que está en ejecución para ese servicio.</p>
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Este archivo permite identificar los servicios en ejecución o en sentido contrario identificar si un servicio no se encontraba en ejecución. Esto es útil para identificar que todos los servicios necesarios estén en ejecución para mantener la integridad de la seguridad del dispositivo.</p>
@@ -2393,7 +2393,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/root_binaries.go">root_binaries.go</a>. </p>
 <p>Este módulo hace una búsqueda específica de proceso de rooting.</p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <em>adb shell which -a</em> aplicado a una lista de binarios para saber si están presentes en el sistema.</p>
+<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <code>adb shell which \-a</code> aplicado a una lista de binarios para saber si están presentes en el sistema.</p>
 <p>Los binarios a los que se aplica son utilizados para obtener acceso de root o elevar privilegios en el dispositivo.</p>
 <p>La lista de binarios y archivos es:</p>
 <ul>
@@ -2435,7 +2435,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p><strong>Información contenida</strong></p>
 <p>Este archivo se encuentra en formato binario y contiene datos relacionados con la copia de seguridad de aplicaciones y configuraciones del dispositivo. Los datos binarios presentes en este archivo se encuentran comprimidos e incluyen información confidencial del dispositivo.</p>
 <p>Dependiendo de la opción seleccionada en androidqf el contenido del archivo puede ser solamente los SMS o puede ser una copia de datos de aquellas aplicaciones que tienen declarado en su manifiesto la posibilidad de realizar copias.</p>
-<p>Este archivo comprimido puede ser analizado por la MVT mediante el comando <em>mvt-android check-backup backup.ab</em></p>
+<p>Este archivo comprimido puede ser analizado por la MVT mediante el comando <code>mvt-android check-backup backup.ab</code></p>
 <p><strong>¿Por qué es importante?</strong></p>
 <p>En el caso forense este respaldo permite analizar los SMS en búsqueda de enlaces sospechosos o maliciosos.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
@@ -2463,7 +2463,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/files.go">files.go</a></p>
 <p><strong>Información contenida</strong></p>
 <p>Este archivo se encuentra en formato <em>json</em> y contiene el resultado de la busqueda de archivos mediante el comando <em>find.</em></p>
-<p>El comando completo de <em>find</em> es <em>adb shell find '/' -maxdepth 1 -printf '%T@ %m %s %u %g %p\n' 2&gt; /dev/null</em> y se aplica a las siguientes carpetas:</p>
+<p>El comando completo de <em>find</em> es <code>adb shell find '/' \-maxdepth 1 \-printf '%T@ %m %s %u %g %p\\n' 2\&gt; /dev/null</code> y se aplica a las siguientes carpetas:</p>
 <ul>
 <li>/sdcard/  </li>
 <li>/system/  </li>
