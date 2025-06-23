@@ -2,42 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://socialtic.github.io/forensics/index.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/indice-contenidos.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/explainers/index.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
+    </url>
+    <url>
+         <loc>https://socialtic.github.io/forensics/explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html</loc>
+         <lastmod>2025-06-23</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/how-tos/index.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/references/index.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/tutorials/index.html</loc>
-         <lastmod>2025-06-16</lastmod>
+         <lastmod>2025-06-23</lastmod>
     </url>
 </urlset>
