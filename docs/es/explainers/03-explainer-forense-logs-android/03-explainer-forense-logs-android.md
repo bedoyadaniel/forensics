@@ -17,7 +17,6 @@ Este documento forma **parte de un repositorio de documentación técnica** que 
 
 Este recurso en particular se enmarca dentro de la categoría de materiales explicativos, y presenta los **fundamentos de la forense basada en logs para dispositivos Android**, incluyendo una definición de forense basada en logs y una comparación con otros tipos de análisis, así como casos de uso. Este es un **material introductorio que no requiere conocimientos previos**, y se complementa con otras [guías](https://forensics.socialtic.org/how-tos/index.html) de [extracción forense](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#etapa-2-recoleccion-y-adquisicion).
 
-Agradecemos las revisiones y sugerencias de … para mejorar este contenido en su versión original. Cualquier error u omisión es responsabilidad de los autores.
 
 ## ¿Qué es el análisis forense basado en logs y porqué es útil? 
 

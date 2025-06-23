@@ -18,8 +18,6 @@ This document is part of a **technical documentation repository** created to est
 
 This particular resource fits within [the explanation category in Diátaxis](https://diataxis.fr/explanation/), and presents an **introduction to log-based forensics for Android devices**, including a definition of log-based forensics, a comparison with other types of forensic analysis and some use cases. This is an introductory material that does not require previous knowledge, and is complemented with [how-to guides](http://../../../how-tos/) and  [tutorials](http://../../../tutorials/) for forensic acquisition. 
 
-We appreciate revisions and suggestions from … to improve this content. Errors and omissions remain the responsibility of the authors. 
-
 ## ¿What is log-based forensic analysis and why is it useful?
 
 Log-based forensic analysis refers to a type of investigation that **uses different records of the system, including bugreports, memory traces, configuration files, process lists, among others, to identify possible traces and indicators of [digital attacks](https://socialtic.org/wp-content/uploads/2020/11/Tipologia_AtaquesDigitales-2020-1.pdf)**. 
