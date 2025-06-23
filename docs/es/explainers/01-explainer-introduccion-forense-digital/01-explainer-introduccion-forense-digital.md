@@ -9,7 +9,7 @@ last_updated: 2025-02-03
 some_url:
 ---
 
-# Explainer - Introducción a la forense digital consentida para la defensa de los Derechos Humanos
+# Explainer: Introducción a la forense digital consentida para la defensa de los Derechos Humanos
 
 Este documento forma parte de un repositorio de documentación técnica que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para impulsar el análisis forense consentido en beneficio de la sociedad civil. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/).
 

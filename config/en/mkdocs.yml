@@ -14,8 +14,7 @@ nav:
     - Home: 'explainers/index.md'
     - Introduction to digital forensics: 'explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.md'
     - Risks, threats and mitigatiosn fo forensic labs: 'explainers/02-explainer-risks-threats/02-explainer-risks-threats.md'
-    - Intro to log-based forensics on Android: 'explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-andoird.md'
-
+    - Intro to log-based forensics on Android: 'explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.md'
   - Tutorials: 
     - Home: 'tutorials/index.md'
   - How-to's:
