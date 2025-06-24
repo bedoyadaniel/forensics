@@ -55,7 +55,6 @@ theme:
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.top
-    - header.autohide
     - announce.dismiss
     - navigation.instant.preview
 
@@ -77,6 +76,7 @@ extra:
 
 plugins:
   - search     
+  - offline
 
 markdown_extensions:
   - admonition
