@@ -47,8 +47,14 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
+    - navigation.path
     - content.action.edit
     - content.action.view
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.top
+    - header.autohide
+    - announce.dismiss
 
 extra:
   alternate: 
