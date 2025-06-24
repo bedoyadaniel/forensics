@@ -21,7 +21,7 @@ La forense digital es el proceso utilizado para la recolección, preservación, 
 
 La forense digital se utiliza para descubrir y examinar datos de dispositivos electrónicos con el objetivo de **identificar, recuperar, documentar e interpretar la información** digital y su conexión con [ataques digitales](https://protege.la/ataques/). La utilización de procedimientos estándar, en apego a mejores prácticas, **permite generar evidencia útil** que impulse acciones de **rendición de cuentas**, que pueda reducir la impunidad con la que se ejecutan ataques digitales.
 
-Por ejemplo, en Polonia, luego de [investigaciones forenses lideradas por el Citizen Lab, Amnesty Tech](https://www.amnesty.org/en/latest/news/2022/01/poland-use-of-pegasus-spyware-to-hack-politicians-highlights-threat-to-civil-society/) y otros grupos de Sociedad Civil, el gobierno de [Polonia inició una investigación sobre los posibles abusos de poder](https://cyberscoop.com/inside-polands-groundbreaking-effort-to-reckon-with-spyware-abuses/), aclarando el contexto en el cual se utilizó tecnologías de vigilancia en perjuicio de la sociedad civil y comprometiéndose a notificar a posibles víctimas.
+Por ejemplo, en Polonia, luego de [investigaciones forenses lideradas por el Citizen Lab, Amnesty Tech](https://www.amnesty.org/en/latest/news/2022/01/poland-use-of-pegasus-spyware-to-hack-politicians-highlights-threat-to-civil-society/) y otros grupos de Sociedad Civil, el gobierno de [Polonia inició una investigación sobre los posibles abusos de poder](https://cyberscoop.com/inside-polands-groundbreaking-effort-to-reckon-with-spyware-abuses/), aclarando el contexto en el cual se utilizó tecnologías de vigilancia en perjuicio de la sociedad civil y comprometiéndose a notificar a posibles personas afectadas.
 
 ## ¿En dónde se aplica la forense digital?
 
@@ -33,7 +33,7 @@ Las investigaciones forenses se pueden llevar a cabo con diferentes objetivos y 
 
 * **Investigaciones en el sector privado:** Son lideradas por equipos internos o consultores externos. Buscan esclarecer el **orígen y los alcances de intrusiones e incidentes** en perjuicio de empresas o instituciones.
 
-* **Protección de defensores de Derechos Humanos (DDHH)**: En el contexto de protección a personas defensoras de Derechos Humanos, las investigaciones forenses buscan generar, preservar y presentar evidencia de incidentes de seguridad digital en perjuicio de personas defensoras de Derechos Humanos. Se busca que las víctimas puedan acceder a mecanismos de justicia, que reduzcan la impunidad y permitan exponer los abusos de poder y las violaciones a sus derechos fundamentales.
+* **Protección de defensores de Derechos Humanos (DDHH)**: En el contexto de protección a personas defensoras de Derechos Humanos, las investigaciones forenses buscan generar, preservar y presentar evidencia de incidentes de seguridad digital en perjuicio de personas defensoras de Derechos Humanos. Se busca que las personas afectadas puedan acceder a mecanismos de justicia, que reduzcan la impunidad y permitan exponer los abusos de poder y las violaciones a sus derechos fundamentales.
 
 De forma frecuente, las investigaciones forenses inician cuando se detecta un posible incidente de seguridad. Si bien el **análisis forense y la respuesta a incidentes** persiguen objetivos distintos, consolidar ambos procesos permite fortalecer la forma en que se responde a los incidentes, al tiempo que se preserva evidencia. 
 
@@ -60,7 +60,7 @@ La mayoría de marcos de referencia coinciden en las siguientes etapas: **identi
 
 ### Etapa 1 - Identificación
 
-Durante la identificación, la persona analista determina **cuáles dispositivos, cuentas o sistemas podrían contener información relevante para la investigación**. Ejemplos de dispositivos incluyen teléfonos móviles, computadoras, cuentas en línea, medios de almacenamiento, entre otros. Idealmente, para determinar la evidencia a recolectar, la persona analista debe tener contacto con la víctima, para entender qué sucedió, qué acciones se han tomado hasta el momento y qué evidencia podría estar disponible.
+Durante la identificación, la persona analista determina **cuáles dispositivos, cuentas o sistemas podrían contener información relevante para la investigación**. Ejemplos de dispositivos incluyen teléfonos móviles, computadoras, cuentas en línea, medios de almacenamiento, entre otros. Idealmente, para determinar la evidencia a recolectar, la persona analista debe tener contacto con la persona impactada, para entender qué sucedió, qué acciones se han tomado hasta el momento y qué evidencia podría estar disponible.
 
 ### Etapa 2 - Recolección y adquisición
 
