@@ -57,6 +57,7 @@ theme:
     - navigation.top
     - header.autohide
     - announce.dismiss
+    - navigation.instant.preview
 
 extra:
   alternate: 

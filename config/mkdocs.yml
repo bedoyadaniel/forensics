@@ -56,6 +56,7 @@ theme:
     - navigation.top
     - header.autohide
     - announce.dismiss
+    - navigation.instant.preview
     
 
 
@@ -84,3 +85,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+  
