@@ -55,7 +55,6 @@ theme:
     - navigation.instant.prefetch
     - navigation.top
     - announce.dismiss
-    - navigation.instant.preview
     
 
 
@@ -84,5 +83,12 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
-
+  - material.extensions.preview:
+      configurations:
+        - targets:
+            include:
+              - references/*
+              - how-tos/*
+              - tutoriales/*
+              - explainers/*
   
