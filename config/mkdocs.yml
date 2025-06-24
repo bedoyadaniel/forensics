@@ -83,12 +83,4 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
-  - material.extensions.preview:
-      configurations:
-        - targets:
-            include:
-              - references/*
-              - how-tos/*
-              - tutoriales/*
-              - explainers/*
-  
+
