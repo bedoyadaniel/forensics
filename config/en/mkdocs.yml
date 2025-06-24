@@ -5,6 +5,8 @@ docs_dir: '../../docs/en'
 site_dir: '../../generated/en'
 repo_url: https://github.com/Socialtic/forensics
 edit_uri: edit/main/docs/es/
+copyright: Creative Commons CC BY-SA
+
 
 nav:
   - Home: 
