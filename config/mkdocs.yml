@@ -48,13 +48,17 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
-    - navigation.path
     - content.action.view
     - content.action.edit
     - navigation.instant
-    - navigation.instant.prefetch
     - navigation.top
     - announce.dismiss
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - toc.integrate
+
     
 
 
