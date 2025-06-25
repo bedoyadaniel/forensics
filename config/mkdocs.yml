@@ -55,7 +55,6 @@ theme:
     - announce.dismiss
     - navigation.tracking
     - navigation.sections
-    - navigation.expand
     - toc.follow
     - toc.integrate
 
