@@ -12,20 +12,16 @@ some_url:
 
 # Index of contents
 
-## Publication strategy 
-
-In the **first half of 2025** we will focus on contains that allow readers to attain a baseline **understanding of consensual digital forensics, as well as tutorials and guides to support evidence collection**. In the **second half of 2025**, we will focus on contents related to the **analysis phase, as well as resources to support peer collaboration**. 
-
-Contents will be developed in **Spanish first**, and we will pursue and support translation to English. In advance **we appreciate any and all efforts to revise, improve and translate contents into different languages**. For more information, you can get in touch with us at [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
-
-## Index of published contents
+## Published contents
 
 ### [Explainers](../explainers/)
 
 Explainers deepen and broaden the reader’s **understanding of a subject**. It brings clarity, light and context. Explainers intention is to be theoric learning resources, to improve the understanding of a given subject. They focus on a defined scope of a larger topic, and usually help understand the “why”.
 
-* [Introduction to consensual forensics for the defense of Human Rights](../explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics/)
-* [Risks, threats and mitigations for forensic labs supporting Human Rights Defenders](../explainers/02-explainer-risks-threats/02-explainer-risks-threats/)
+* [Introduction to consensual forensics for the defense of Human Rights](../en/explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.html)
+* [Risks, threats and mitigations for forensic labs supporting Human Rights Defenders](../en/explainers/02-explainer-risks-threats/02-explainer-risks-threats.html)
+* [Introduction to log-based forensics on Android devices](../en/explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.html)
+
 
 ### [Tutorials](../tutorials/)
 
@@ -35,12 +31,13 @@ Tutorials are all about **learning through guided practical exercises**. In othe
 
 How-to’s are all about **executing a task and achieving a goal through step-by-step instructions**. It assumes that the reader already has the baseline skills and knowledge necessary to complete the task, and hence, focuses on the steps necessary to achieve the desired outcome in a correct way and aligned to best practices.
 
-* [How to obtain and document informed consent for forensic analysis?](../how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent/)
+* [How to obtain and document informed consent for forensic analysis?](../en/how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)
 
 ### [References](../references)
 
 Reference material describes the machinery. **One hardly reads reference material; one consults it.** There should be no doubt or ambiguity in reference; it should be wholly authoritative. Reference contains technical knowledge that can be helpful when executing a task.
 
+[AdroidQF output file dictionary](../en/references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.html)
 
 ## Additional contents to be developed
 

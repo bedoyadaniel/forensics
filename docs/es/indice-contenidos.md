@@ -12,13 +12,8 @@ some_url:
 
 # Índice de contenidos
 
-## Estrategia de contenidos
 
-Durante la **primera mitad del 2025** el enfoque será en contenidos que permitan obtener una **base teórica de conocimiento así como guías prácticas para la adquisición y recolección de evidencia**. En la **segunda mitad del 2025**, el enfoque será en contenidos relacionados a las **etapas de análisis y la colaboración entre pares.** 
-
-Los contenidos se desarrollarán inicialmente en idioma **español**, y se impulsará la traducción al inglés. De anteman**o agradecemos los esfuerzos para la revisión y traducción de contenidos a idiomas adicionales**. Para más información puedes escribirnos a [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
-
-## Índice de contenidos publicados
+## Cntenidos publicados
 
 En este apartado se incluye la lista de contenidos y recursos disponibles en este sitio, y se actualizará de forma periódica conforme se incluyan nuevos materiales. 
 
@@ -28,6 +23,7 @@ Los explainers son materiales para el **aprendizaje de aspectos teóricos,** que
 
 * [Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
 * [Riesgos y amenazas para laboratorios forenses de la sociedad civil](../explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
+* [Principios para forense basada en logs en dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html)
 
 
 ### [Tutoriales](../tutorials/)
@@ -44,12 +40,14 @@ El objetivo de las guías how-to es poder **ejecutar una tarea a través de inst
 
 Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea de forma confiable y sin errores**.
 
+[Diccionario de archivos generados por la herramienta androidqf](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
+
 ## Contenidos adicionales por desarrollar
 
 Durante los próximos meses, esperamos publicar contenidos sobre los siguientes temas. Se indica entre paréntesis el momento aproximado del año en que esperamos liberar la información, sin embargo el orden y la línea del tiempo están sujetas a cambios, incluyendo en atención a necesidades internas y de nuestras contrapartes. 
 
 
-* ¿Cómo identificar aplicaciones sospechosas a través de la interfaz gráfica de un dispositivo Android? *(estimado Q1 2025\)*  
+* ¿Cómo identificar aplicaciones sospechosas a través de la interfaz gráfica de un dispositivo Android? *(estimado Q3 2025\)*  
 * Conceptos clave para el triaje y la adquisición *(estimado primera mitad 2025\)*  
 * ¿Cómo configurar un laboratorio forense para dispositivos móviles? *(estimado primera mitad 2025\)*  
 * Adquisición y extracción de un bugreport *(estimado primera mitad 2025\)*  

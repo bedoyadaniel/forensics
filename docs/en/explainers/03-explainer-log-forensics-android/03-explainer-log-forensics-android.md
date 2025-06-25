@@ -105,5 +105,5 @@ Before starting a log-based forensic analysis, it’s important to take into acc
 
 A large share of published reports by civil society organizations have relied on log-based forensics to support and document their findings. This is in part due to its ability to support remote investigations, its limited collection of personal information, and its capacity to produce high-confidence results.
 
-If you would like to contribute to the development, translation, or dissemination of this resource, please contact us at [**seguridad@socialtic.org**.](mailto:seguridad@socialtic.org)seguridad@socialtic.org.
+If you would like to contribute to the development, translation, or dissemination of this resource, please contact us at [**seguridad@socialtic.org**.](mailto:seguridad@socialtic.org).
 
