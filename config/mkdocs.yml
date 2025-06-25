@@ -10,6 +10,7 @@ copyright: Creative Commons CC BY-SA
 nav:
   - Home: 
     - Inicio: 'index.md'
+    - ¿Por dónde iniciar?: iniciar.md
     - Índice de contenidos: 'indice-contenidos.md'
   - Explainers:
     - Inicio: 'explainers/index.md'
