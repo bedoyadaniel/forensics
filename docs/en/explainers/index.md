@@ -8,5 +8,4 @@ In this section you will find **explainers**. According to [Diataxis documentati
 
 * [2- Risks, threats and mitigations for forensic labs supporting Human Rights Defenders](02-explainer-risks-threats/02-explainer-risks-threats/)
 
-
-
+* [3- Introduction to log-based forensics on Android devices](03-explainer-log-forensics-android/03-explainer-log-forensics-android/)
