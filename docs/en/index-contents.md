@@ -16,11 +16,9 @@ some_url:
 
 ### [Explainers](../explainers/)
 
-Explainers deepen and broaden the reader’s **understanding of a subject**. It brings clarity, light and context. Explainers intention is to be theoric learning resources, to improve the understanding of a given subject. They focus on a defined scope of a larger topic, and usually help understand the “why”.
-
-* [Introduction to consensual forensics for the defense of Human Rights](../en/explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.html)
-* [Risks, threats and mitigations for forensic labs supporting Human Rights Defenders](../en/explainers/02-explainer-risks-threats/02-explainer-risks-threats.html)
-* [Introduction to log-based forensics on Android devices](../en/explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.html)
+* [1- Explainer: Introduction to consensual forensics for the defense of Human Rights](../en/explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.html)
+* [2- Explainer: Risks, threats and mitigations for forensic labs supporting Human Rights Defenders](../en/explainers/02-explainer-risks-threats/02-explainer-risks-threats.html)
+* [3- Explainer: Introduction to log-based forensics on Android devices](../en/explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.html)
 
 
 ### [Tutorials](../tutorials/)
@@ -31,13 +29,13 @@ Tutorials are all about **learning through guided practical exercises**. In othe
 
 How-to’s are all about **executing a task and achieving a goal through step-by-step instructions**. It assumes that the reader already has the baseline skills and knowledge necessary to complete the task, and hence, focuses on the steps necessary to achieve the desired outcome in a correct way and aligned to best practices.
 
-* [How to obtain and document informed consent for forensic analysis?](../en/how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)
+* [1- How-to: How to obtain and document informed consent for forensic analysis?](../en/how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)
 
 ### [References](../references)
 
 Reference material describes the machinery. **One hardly reads reference material; one consults it.** There should be no doubt or ambiguity in reference; it should be wholly authoritative. Reference contains technical knowledge that can be helpful when executing a task.
 
-[AdroidQF output file dictionary](../en/references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.html)
+[1- Reference: AdroidQF output file dictionary](../en/references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.html)
 
 ## Additional contents to be developed
 

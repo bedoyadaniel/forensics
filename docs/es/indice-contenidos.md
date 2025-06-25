@@ -13,17 +13,14 @@ some_url:
 # Índice de contenidos
 
 
-## Cntenidos publicados
-
-En este apartado se incluye la lista de contenidos y recursos disponibles en este sitio, y se actualizará de forma periódica conforme se incluyan nuevos materiales. 
+## Contenidos publicados
 
 ### [Explainers](../explainers/)
 
-Los explainers son materiales para el **aprendizaje de aspectos teóricos,** que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
 
-* [Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
-* [Riesgos y amenazas para laboratorios forenses de la sociedad civil](../explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
-* [Principios para forense basada en logs en dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html)
+* [1- Explainer: Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
+* [2- Explainer: Riesgos y amenazas para laboratorios forenses de la sociedad civil](../explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
+* [3- Explainer: Principios para forense basada en logs en dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html)
 
 
 ### [Tutoriales](../tutorials/)
@@ -32,15 +29,12 @@ Los tutoriales tienen como objetivo el **aprendizaje de conocimientos prácticos
 
 ### [Guías how-to](../how-tos/)
 
-El objetivo de las guías how-to es poder **ejecutar una tarea a través de instrucciones paso a paso.** Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas.
-
-* [¿Cómo obtener y documentar consentimiento informado para una investigación forense?](../how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
+* [1- How-To?: ¿Cómo obtener y documentar consentimiento informado para una investigación forense?](../how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
 
 ### [Referencias](../references)
 
-Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea de forma confiable y sin errores**.
 
-[Diccionario de archivos generados por la herramienta androidqf](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
+[1- Referencia: Diccionario de archivos generados por la herramienta androidqf](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
 
 ## Contenidos adicionales por desarrollar
 
