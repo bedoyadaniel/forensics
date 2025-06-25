@@ -11,7 +11,7 @@ nav:
   - Home: 
     - Inicio: 'index.md'
     - ¿Por dónde iniciar?: iniciar.md
-    - Índice de contenidos: 'indice-contenidos.md'
+    - Hoja de ruta: 'hoja-de-ruta.md'
   - Explainers:
     - Inicio: 'explainers/index.md'
     - Explainer introductorio a forense digital: 'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'

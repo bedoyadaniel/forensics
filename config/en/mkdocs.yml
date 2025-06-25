@@ -12,7 +12,7 @@ nav:
   - Home: 
     - Inicio: 'index.md'
     - Getting started: 'getting-started.md'
-    - Index of contents: 'index-contents.md'
+    - Roadmap: 'roadmap.md'
   - Explainers:
     - Home: 'explainers/index.md'
     - Introduction to digital forensics: 'explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.md'

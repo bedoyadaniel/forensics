@@ -1,38 +1,23 @@
 ---
-title: Index of contents
-summary: Index of contents and publication strategy
-keywords: index, strategy, timeline
+title: Roadmap
+summary: Roadmap and publication strategy
+keywords: roadmap, strategy, timeline
 authors: Daniel Bedoya Arroyo
 lang: en
 tags: [index, intro]
-last_updated: 2025-03-14
+last_updated: 2025-06-25
 some_url:
 ---
 
 
-# Index of contents
+# Roadmap
 
-## Published contents
+## Publication strategy
 
-### [Explainers](../explainers/)
+In the first phase of this repository, we will focus on contains that allow readers to attain a baseline **understanding of consensual digital forensics, as well as tutorials and guides to support evidence collection**. Down the road, we will focus on contents related to the **analysis phase, as well as resources to support peer collaboration**. 
 
-* [1- Explainer: Introduction to consensual forensics for the defense of Human Rights](../en/explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.html)
-* [2- Explainer: Risks, threats and mitigations for forensic labs supporting Human Rights Defenders](../en/explainers/02-explainer-risks-threats/02-explainer-risks-threats.html)
-* [3- Explainer: Introduction to log-based forensics on Android devices](../en/explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.html)
+Contents will be developed in **Spanish first**, and we will pursue and support translation to English. In advance **we appreciate any and all efforts to revise, improve and translate contents into different languages**. For more information, you can get in touch with us at [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
 
-
-### [Tutorials](../tutorials/)
-
-Tutorials are all about **learning through guided practical exercises**. In other words, it's learning by doing. Tutorials allow the reader to acquire skills and knowledge, and are focused on learning and not on completing a specific task.
-
-### [How-to guides](../how-tos/)
-
-
-* [1- How-to: How to obtain and document informed consent for forensic analysis?](../en/how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)
-
-### [References](../references)
-
-* [1- Reference: AdroidQF output file dictionary](../en/references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.html)
 
 ## Additional contents to be developed
 
