@@ -1,5 +1,5 @@
 ---
-title: Índice de contenidos
+title: Ruta de p
 summary: Índice de contenidos 
 keywords: índice
 authors: Daniel Bedoya Arroyo
@@ -10,31 +10,13 @@ some_url:
 ---
 
 
-# Índice de contenidos
+# Hoja de ruta
 
+## Estrategia de publicación
 
-## Contenidos publicados
+Durante la primera etapa de este repositorio, el enfoque será en contenidos que permitan obtener **conocimientos teóricos y prácticos necesarios para la [adquisición y recolección de evidencia](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#etapa-2-recoleccion-y-adquisicion)**. De forma posterior, se planea desarrollar contenidos relacionados a las etapas de [análisis y la colaboración entre pares](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#etapa-4-analisis).
 
-### [Explainers](../explainers/)
-
-
-* [1- Explainer: Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
-* [2- Explainer: Riesgos y amenazas para laboratorios forenses de la sociedad civil](../explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
-* [3- Explainer: Principios para forense basada en logs en dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html)
-
-
-### [Tutoriales](../tutorials/)
-
-Los tutoriales tienen como objetivo el **aprendizaje de conocimientos prácticos a través del desarrollo de una actividad**. En otros términos es un aprender haciendo. Los tutoriales son actividades guiadas que permiten adquirir habilidades y conocimientos, y cuyo enfoque es el aprendizaje y no el completar una tarea.
-
-### [Guías how-to](../how-tos/)
-
-* [1- How-To?: ¿Cómo obtener y documentar consentimiento informado para una investigación forense?](../how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
-
-### [Referencias](../references)
-
-
-* [1- Referencia: Diccionario de archivos generados por la herramienta androidqf](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
+Los contenidos se desarrollarán inicialmente en idioma español, y se impulsará la traducción al inglés. De antemano agradecemos los esfuerzos para la revisión y traducción de contenidos a idiomas adicionales. Para más información puedes escribirnos a seguridad@socialtic.org.
 
 ## Contenidos adicionales por desarrollar
 

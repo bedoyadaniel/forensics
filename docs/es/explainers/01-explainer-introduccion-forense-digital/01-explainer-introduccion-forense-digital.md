@@ -78,7 +78,7 @@ Una vez que se realiza la extracción, es importante verificar la integridad de 
 
 Durante el análisis, la persona analista utiliza herramientas especializadas y análisis manual para estudiar y analizar la evidencia, a fin de **establecer hipótesis y conclusiones** sobre lo que sucedió. En muchas  ocasiones, la persona analista se enfrentará a grandes cantidades de información, por lo que un análisis manual puede ser poco efectivo y muy lento, en especial si no se tiene claridad en qué y dónde buscar. Algunas herramientas forenses pueden facilitar el proceso, en especial si se tiene acceso a [**indicadores de compromiso**](https://es.wikipedia.org/wiki/Indicador_de_compromiso). Durante esta etapa, es clave utilizar metodologías y procedimientos consistentes, que puedan ser replicables y verificables. En algunas ocasiones no será posible establecer una conclusión a partir de la información existente.
 
-### Etapa 5 - Presentación:
+### Etapa 5 - Presentación
 
 La última etapa de un análisis forense que implica preparar y presentar la información derivada del análisis. Se debe tomar en consideración el objetivo y la audiencia a la que se le estará presentando la información para determinar la mejor estructura de contenidos. Por ejemplo, si se debe preparar un informe como parte de un procedimiento judicial, el reporte debe ser detallado e incluir información que permita verificar y reproducir los hallazgos. Por el contrario, si el reporte es de uso interno de una organización y está dirigido al equipo de liderazgo, el reporte puede enfocarse en las conclusiones y recomendaciones de remediación.
 
