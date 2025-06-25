@@ -11,6 +11,7 @@ copyright: Creative Commons CC BY-SA
 nav:
   - Home: 
     - Inicio: 'index.md'
+    - Getting started: 'getting-started.md'
     - Index of contents: 'index-contents.md'
   - Explainers:
     - Home: 'explainers/index.md'
