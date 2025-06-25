@@ -34,7 +34,7 @@ Los tutoriales tienen como objetivo el **aprendizaje de conocimientos prácticos
 ### [Referencias](../references)
 
 
-[1- Referencia: Diccionario de archivos generados por la herramienta androidqf](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
+* [1- Referencia: Diccionario de archivos generados por la herramienta androidqf](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
 
 ## Contenidos adicionales por desarrollar
 

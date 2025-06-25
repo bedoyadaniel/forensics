@@ -27,15 +27,12 @@ Tutorials are all about **learning through guided practical exercises**. In othe
 
 ### [How-to guides](../how-tos/)
 
-How-to’s are all about **executing a task and achieving a goal through step-by-step instructions**. It assumes that the reader already has the baseline skills and knowledge necessary to complete the task, and hence, focuses on the steps necessary to achieve the desired outcome in a correct way and aligned to best practices.
 
 * [1- How-to: How to obtain and document informed consent for forensic analysis?](../en/how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)
 
 ### [References](../references)
 
-Reference material describes the machinery. **One hardly reads reference material; one consults it.** There should be no doubt or ambiguity in reference; it should be wholly authoritative. Reference contains technical knowledge that can be helpful when executing a task.
-
-[1- Reference: AdroidQF output file dictionary](../en/references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.html)
+* [1- Reference: AdroidQF output file dictionary](../en/references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.html)
 
 ## Additional contents to be developed
 
