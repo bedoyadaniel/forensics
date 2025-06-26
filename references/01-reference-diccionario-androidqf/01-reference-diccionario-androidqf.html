@@ -1585,7 +1585,7 @@ EXTERNAL_STORAGE=/sdcard
 <h3 id="logcattxt-y-logcat_oldtxt">logcat.txt y logcat_old.txt</h3>
 <p>La información de estos archivos se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/logcat.go">logcat.go</a> .</p>
 <p><strong>Información contenida</strong></p>
-<p>Estos archivos se encuentran en texto plano con extensión .<em>txt</em> y contienen la salida de los comandos <code>adb shell logcat \-d \-b all</code> y <code>adb shell logcat \-L \-b all</code> respectivamente, los cuales muestran el registro de mensajes del sistema. Algunos ejemplos de la información contenida son:</p>
+<p>Estos archivos se encuentran en texto plano con extensión .<em>txt</em> y contienen la salida de los comandos <code>adb shell logcat -d -b all</code> y <code>adb shell logcat -L -b all</code> respectivamente, los cuales muestran el registro de mensajes del sistema. Algunos ejemplos de la información contenida son:</p>
 <ul>
 <li>Mensajes de error y advertencia (FATAL EXCEPTION).  </li>
 <li>Mensajes de aplicaciones, procesos y servicios del sistema operativos.  </li>
@@ -2032,7 +2032,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <h3 id="processestxt">processes.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/processes.go">processes.go</a>. </p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <code>adb shell ps \-A</code> , el cual muestra información detallada sobre los procesos que se encuentran en ejecución. </p>
+<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <code>adb shell ps -A</code> , el cual muestra información detallada sobre los procesos que se encuentran en ejecución. </p>
 <p>Este archivo presenta la información en una forma estructurada teniendo como orden identificadores, detalles de la ejecución, consumo de recursos y estado del proceso.</p>
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Este archivo permite identificar procesos que son ejecutados de manera inusual o que son ejecutados por usuarios no autorizados como resultado de una escalada de privilegios. Así mismo, podemos asegurar que los procesos y sus jerarquías coinciden con las configuraciones establecidas o normales.</p>
@@ -2174,7 +2174,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/root_binaries.go">root_binaries.go</a>. </p>
 <p>Este módulo hace una búsqueda específica de proceso de rooting.</p>
 <p><strong>Información contenida</strong></p>
-<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <code>adb shell which \-a</code> aplicado a una lista de binarios para saber si están presentes en el sistema.</p>
+<p>Este archivo se encuentra en formato <em>json</em> y contiene la salida del comando <code>adb shell which -a</code> aplicado a una lista de binarios para saber si están presentes en el sistema.</p>
 <p>Los binarios a los que se aplica son utilizados para obtener acceso de root o elevar privilegios en el dispositivo.</p>
 <p>La lista de binarios y archivos es:</p>
 <ul>
@@ -2244,7 +2244,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/files.go">files.go</a></p>
 <p><strong>Información contenida</strong></p>
 <p>Este archivo se encuentra en formato <em>json</em> y contiene el resultado de la busqueda de archivos mediante el comando <em>find.</em></p>
-<p>El comando completo de <em>find</em> es <code>adb shell find '/' \-maxdepth 1 \-printf '%T@ %m %s %u %g %p\\n' 2\&gt; /dev/null</code> y se aplica a las siguientes carpetas:</p>
+<p>El comando completo de <em>find</em> es <code>adb shell find '/' -maxdepth 1 -printf '%T@ %m %s %u %g %p\n' 2\&gt; /dev/null</code> y se aplica a las siguientes carpetas:</p>
 <ul>
 <li>/sdcard/  </li>
 <li>/system/  </li>
