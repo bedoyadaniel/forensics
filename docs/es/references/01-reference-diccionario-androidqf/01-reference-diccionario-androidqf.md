@@ -473,7 +473,7 @@ La información de estos archivos se genera mediante el módulo [logcat.go](http
 
 **Información contenida**
 
-Estos archivos se encuentran en texto plano con extensión .*txt* y contienen la salida de los comandos `adb shell logcat \-d \-b all` y `adb shell logcat \-L \-b all` respectivamente, los cuales muestran el registro de mensajes del sistema. Algunos ejemplos de la información contenida son:
+Estos archivos se encuentran en texto plano con extensión .*txt* y contienen la salida de los comandos `adb shell logcat -d -b all` y `adb shell logcat -L -b all` respectivamente, los cuales muestran el registro de mensajes del sistema. Algunos ejemplos de la información contenida son:
 
 * Mensajes de error y advertencia (FATAL EXCEPTION).  
 * Mensajes de aplicaciones, procesos y servicios del sistema operativos.  
@@ -871,7 +871,7 @@ La información de este archivo se genera mediante el módulo [processes.go](htt
 
 **Información contenida**
 
-Este archivo se encuentra en formato *json* y contiene la salida del comando `adb shell ps \-A` , el cual muestra información detallada sobre los procesos que se encuentran en ejecución. 
+Este archivo se encuentra en formato *json* y contiene la salida del comando `adb shell ps -A` , el cual muestra información detallada sobre los procesos que se encuentran en ejecución. 
 
 Este archivo presenta la información en una forma estructurada teniendo como orden identificadores, detalles de la ejecución, consumo de recursos y estado del proceso.
 
@@ -1034,7 +1034,7 @@ Este módulo hace una búsqueda específica de proceso de rooting.
 
 **Información contenida**
 
-Este archivo se encuentra en formato *json* y contiene la salida del comando `adb shell which \-a` aplicado a una lista de binarios para saber si están presentes en el sistema.
+Este archivo se encuentra en formato *json* y contiene la salida del comando `adb shell which -a` aplicado a una lista de binarios para saber si están presentes en el sistema.
 
 Los binarios a los que se aplica son utilizados para obtener acceso de root o elevar privilegios en el dispositivo.
 
@@ -1135,7 +1135,7 @@ La información de este archivo se genera mediante el módulo [files.go](https:/
 
 Este archivo se encuentra en formato *json* y contiene el resultado de la busqueda de archivos mediante el comando *find.*
 
-El comando completo de *find* es `adb shell find '/' \-maxdepth 1 \-printf '%T@ %m %s %u %g %p\\n' 2\> /dev/null` y se aplica a las siguientes carpetas:
+El comando completo de *find* es `adb shell find '/' -maxdepth 1 -printf '%T@ %m %s %u %g %p\n' 2\> /dev/null` y se aplica a las siguientes carpetas:
 
 * /sdcard/  
 * /system/  
