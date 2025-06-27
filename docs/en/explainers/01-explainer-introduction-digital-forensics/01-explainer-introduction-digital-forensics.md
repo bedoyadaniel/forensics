@@ -18,7 +18,7 @@ This document is part of a **technical documentation repository** whose main obj
 
 This particular resource fits within [the explanation category in Diataxis](https://diataxis.fr/explanation/). It describes key concepts about digital forensics, including a definition, the different stages of an investigation and a description of how [forensic science](https://en.wikipedia.org/wiki/Forensic_science) can be applied for the defense of Human Rights. This is an introductory material that tries to set a baseline understanding of key concepts in relation to consensual digital forensics, and that is complementary to other resources in this repository including [how-to guides](../../../how-tos/), [tutorials](../../../tutorials/) and [references](../../../references/). 
 
-## ¿What is digital forensics and why is it important?
+## What is digital forensics and why is it important?
 
 [Digital forensics](https://csrc.nist.gov/glossary/term/digital_forensics) relates to the process used for the collection, preservation, analysis and presentation of digital evidence, derived from electronic media and devices, using **data management best-practices, investigation techniques** and the scientific method to arrive at sound and reproducible conclusions that can be **admitted as evidence in judicial proceedings**.  
 
@@ -26,7 +26,7 @@ Digital Forensics is used to discover and examine digital media with the objecti
 
 For example, in Poland, after [digital forensic investigations led by Amnesty Tech,](https://www.amnesty.org/en/latest/news/2022/01/poland-use-of-pegasus-spyware-to-hack-politicians-highlights-threat-to-civil-society/) Citizen Lab and other civil society groups, [Poland’s government launched an investigation](https://cyberscoop.com/inside-polands-groundbreaking-effort-to-reckon-with-spyware-abuses/) into the abuse of power, providing additional clarity in which contexts digital surveillance was used, and committing to notify potential targets. 
 
-## ¿Where is digital forensics applied?
+## Where is digital forensics applied?
 
 In general, beyond being used as an accountability tool in Civil Society, forensic investigations are carried out with different objectives and areas of focus, for example:
 
@@ -40,7 +40,7 @@ In general, beyond being used as an accountability tool in Civil Society, forens
 
 Frequently, forensic investigations start when there is a detection of a possible security incident. Although **forensic analysis and incident response** pursue different goals, consolidating both processes results in a stronger incident handling and containment that is also capable of collecting and preserving important evidence. 
 
-[**Incident response**](https://www.ibm.com/es-es/topics/incident-response) is focused in **detecting and responding to security events and incidents**. Through well defined response procedures, it is possible to minimize the impact and contain the consequences of incidents. For an effective response, it is also important to uncover the root cause of intrusions, so that the threat can be eradicated in a timely manner.  
+[**Incident response**](https://www.ibm.com/topics/incident-response) is focused in **detecting and responding to security events and incidents**. Through well defined response procedures, it is possible to minimize the impact and contain the consequences of incidents. For an effective response, it is also important to uncover the root cause of intrusions, so that the threat can be eradicated in a timely manner.  
 
 When incident response and forensic analysis are done separately, actions that are taken without adequate coordination can have an impact both and challenge both the response and the analysis. For example, **managing an incident without considering the need to document and preserve evidence, can result in damage or destruction of files and artifacts required of the forensic investigation**. In a similar way, focusing solely on the forensic analysis, might delay the contention of an incident, resulting in higher severity consequences and a longer resolution time. 
 
@@ -48,7 +48,7 @@ Therefore, **it is ideal to combine both processes in what is often referred to 
 
 This guide and repository are focused on the forensic aspects of an investigation. However, please **keep in mind the close relationship that forensic has with incident response processes**, so that you can integrate forensic best practices when responding to emergencies and handling requests for assistance. 
 
-## ¿What are the usual stages of a forensic investigation?
+## What are the usual stages of a forensic investigation?
 
 There are several frameworks and norms that suggest a series of phases in order to complete a forensic investigation, including [norm ISO 27037](https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf) or [NIST guide to integrate forensic analysis into incident response.](https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8428.pdf)
 
@@ -92,7 +92,7 @@ During the last step, an analyst **prepares and presents key conclusions derived
 
 Organizations and individuals that defend Human Rights, for the most part, do not have robust monitoring systems to generate timely alerts of potential threats against their devices or networks. Therefore, it is common that the **detection of an incident happens when consequences are evident**, for instance when a document is leaked or when they are locked out of their online accounts. Due to the limitation in resources, it is also uncommon for organizations to have digital security specialists among their team, which means many of the digital security tasks fall on internal technology or communication teams, assisted frequently by external specialized helplines or consultants. 
 
-When an individual or an organization detects a potential incident, either through a suspicious behavior or through an alert (for example, [apple threat notifications](https://support.apple.com/es-mx/102174#:~:text=Las%20notificaciones%20de%20amenazas%20de%20Apple%20est%C3%A1n%20dise%C3%B1adas%20para%20informar,spyware%20dirigidos%20de%20forma%20individual.)), the helpline or the digital security point of contact starts a process to investigate and [triage](https://tealtech.com/blog/what-is-triage-in-cybersecurity/) the situation, to understand what happened, when it happened and what actions have been taken so far. From these initial steps, **it is important that the incident handler, in addition to [considering and assessing the wellbeing of the affected Human Rights Defender](https://vita-activa.org/2025/01/22/psychological-first-aid-manual-in-english-and-arabic/), incorporates digital forensic best practices to protect and collect evidence** that could potentially be helpful for accountability purposes. 
+When an individual or an organization detects a potential incident, either through a suspicious behavior or through an alert (for example, [apple threat notifications](https://support.apple.com/102174), the helpline or the digital security point of contact starts a process to investigate and [triage](https://tealtech.com/blog/what-is-triage-in-cybersecurity/) the situation, to understand what happened, when it happened and what actions have been taken so far. From these initial steps, **it is important that the incident handler, in addition to [considering and assessing the wellbeing of the affected Human Rights Defender](https://vita-activa.org/2025/01/22/psychological-first-aid-manual-in-english-and-arabic/), incorporates digital forensic best practices to protect and collect evidence** that could potentially be helpful for accountability purposes. 
 
 As it was mentioned above, **incident response and digital forensic processes are closely intertwined**. It is during that initial response that the incident handler identifies which systems, devices or accounts might contain useful evidence for a forensic investigation. It’s worth highlighting that in our context, **forensic investigations should always be consensual**, which implies that before collecting any data we should provide clear information about what the process entails and what the goal is, ideally through a written form. 
 
