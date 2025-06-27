@@ -1,4 +1,5 @@
 ---
+title: AdroidQF output file dictionary
 summary: dictionary of androidqf resulting files 
 keywords: android, androidqf, reference
 authors: Daniel Bedoya Arroyo
