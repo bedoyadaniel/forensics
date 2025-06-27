@@ -10,7 +10,7 @@ copyright: Creative Commons CC BY-SA
 nav:
   - Home: 
     - Inicio: 'index.md'
-    - ¿Por dónde iniciar?: iniciar.md
+    - Primeros pasos: iniciar.md
     - Hoja de ruta: 'hoja-de-ruta.md'
   - Explainers:
     - Inicio: 'explainers/index.md'
