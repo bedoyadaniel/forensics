@@ -6,4 +6,4 @@ A good example is a cooking recipe, where the focus is to achieve a result, in t
 
 ## Published How-To's
 
-[1-How to obtain and document informed consent?](01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent/)
+[1-How to obtain and document informed consent?](01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)

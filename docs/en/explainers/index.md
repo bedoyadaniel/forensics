@@ -4,8 +4,8 @@ In this section you will find **explainers**. According to [Diataxis documentati
 
 ## Index of explainers
 
-* [1- Introduction to consensual forensics for the defense of Human Rights](01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics/)
+* [1- Introduction to consensual forensics for the defense of Human Rights](01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.html)
 
-* [2- Risks, threats and mitigations for forensic labs supporting Human Rights Defenders](02-explainer-risks-threats/02-explainer-risks-threats/)
+* [2- Risks, threats and mitigations for forensic labs supporting Human Rights Defenders](02-explainer-risks-threats/02-explainer-risks-threats.html)
 
-* [3- Introduction to log-based forensics on Android devices](03-explainer-log-forensics-android/03-explainer-log-forensics-android/)
+* [3- Introduction to log-based forensics on Android devices](03-explainer-log-forensics-android/03-explainer-log-forensics-android.html)
