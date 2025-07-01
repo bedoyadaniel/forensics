@@ -10,10 +10,6 @@ Esta plantilla tiene la finalidad de fomentar el uso del formato establecido a l
 * Checklist
 * Información adicional (opcional)
 
-## Descripción del cambio
-
-En esta sección debe describirse con claridad qué se modificó en el proyecto. Si el cambio es complejo, puede incluir un resumen técnico, enlaces a issues relacionados o capturas de pantalla relevantes.
-
 ## Tipo de cambio
 
 Se debe indicar el tipo de contribución que se está realizando. **Para este repositorio, la mayoría de los cambios serán cambios en la documentación**. Las opciones disponibles son:
@@ -24,6 +20,10 @@ Se debe indicar el tipo de contribución que se está realizando. **Para este re
 * **Documentación**: Mejora o corrección de la documentación existente
 * **Seguridad**: Mejora relacionada con el tratamiento de la información o protección de datos
 * **Otro**: Especificar el tipo de cambio si no encaja en las anteriores categorías
+
+## Descripción del cambio
+
+En esta sección debe describirse con claridad qué se modificó en el proyecto. Si el cambio es complejo, puede incluir un resumen técnico, enlaces a issues relacionados o capturas de pantalla relevantes.
 
 ## Método de prueba
 
