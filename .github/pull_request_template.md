@@ -1,4 +1,4 @@
-# Pull-rquest template
+# Pull-request template
 
 Esta plantilla tiene la finalidad de fomentar el uso del formato establecido a los contribuidores del proyecto **Forensics** parapoder dar seguimientos a la lógica de cambios y el flujo de trabajo colaborativo.
 

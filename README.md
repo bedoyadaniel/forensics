@@ -66,9 +66,9 @@ Los materiales publicados en este repositorio son parte de un esfuerzo colectivo
 
 Puede colaborar mediante:
 
-* Propuestas de mejora o correcciones a través de [issues](https://github.com/socialtic/datavoros/issues)  
-* Envío de pull requests siguiendo la [plantilla de contribución](#contributing.md)  
-* Propuesta de nuevos análisis forenses siguiendo la [plantilla de Issue Template](#issue_template.md)
+* Propuestas de mejora o correcciones a través de [plantilla de Issue Template](.github/ISSUE_TEMPLATE.md) (también disponible al crear un nuevo issue)
+* Propuesta de nuevos análisis forenses siguiendo el flujo de [Contribuciones](./contributing.md)
+* Envío de pull requests siguiendo la [plantilla de pull-request](.github/pull_request_template.md), que se carga automáticamente al iniciar un nuevo PR.  
 
 También puede escribirnos a: [**seguridad@socialtic.org**](mailto:seguridad@socialtic.org)
 
@@ -108,7 +108,7 @@ El bloque de información (azul) se utiliza para resaltar consideraciones legale
 ## Licencia
 
 Este proyecto está licenciado bajo la MVT License, v1.1.  
- Puedes consultar la licencia completa en el archivo [**LICENSE**](#license) o en el siguiente enlace:  
+ Puedes consultar la licencia completa en el archivo [**LICENSE**](./license) o en el siguiente enlace:  
  [https://license.mvt.re/1.1/](https://license.mvt.re/1.1/)
 
 Incluye cláusulas relacionadas con el consentimiento informado de uso, distribución de versiones modificadas y limitaciones de responsabilidad.
