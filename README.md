@@ -9,7 +9,7 @@ La forense digital permite **descubrir y examinar datos de dispositivos y medios
 
 ## ¿A quién va dirigido este repositorio?
 
-La información contenida en este repositorio es de utilidad para personas con diferentes perfiles, incluyendo: 
+La información contenida en este repositorio es de utilidad para personas con diferentes perfiles, incluyendo:
 
 * Puntos de contacto (personas con capacidad técnica básica)
 * Manejadores de incidentes de seguridad para sociedad civil
@@ -35,42 +35,60 @@ Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, do
 
 Los explainers son materiales para el **aprendizaje de aspectos teóricos**, que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
 
-Por ejemplo, nuestro primer explainer sobre forense digital consentida en beneficio de la sociedad civil, presenta información sobre las ciencias forenses y cómo se utiliza en diferentes ámbitos, para luego enfocarse en su práctica dentro de la sociedad civil como una herramienta para la defensa de derechos fundamentales. 
+Por ejemplo, nuestro primer explainer sobre forense digital consentida en beneficio de la sociedad civil, presenta información sobre las ciencias forenses y cómo se utiliza en diferentes ámbitos, para luego enfocarse en su práctica dentro de la sociedad civil como una herramienta para la defensa de derechos fundamentales.
 
 ### Guías How-To
 
-**El objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas. 
+**El objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas.
 
-Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar una tarea, en este caso, preparar un platillo. Asume que la persona ya tiene conocimientos básicos como cortar los alimentos, mezclar con una batidora, etc. 
+Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar una tarea, en este caso, preparar un platillo. Asume que la persona ya tiene conocimientos básicos como cortar los alimentos, mezclar con una batidora, etc.
 
 ### Referencias
 
-Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea** de forma confiable y sin errores. 
+Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea** de forma confiable y sin errores.
 
 Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y preciso, que sirve de apoyo al completar una tarea, en este caso, llegar de un punto A al Punto B.
 
-## ¿Cómo navegar el repositorio de documentación? 
+## ¿Cómo navegar el repositorio de documentación?
 
 En apego al marco de referencia Diátaxis, debemos primero identificar la necesidad por la cuál se consulta la documentación, para entender cuál sección y cuál recurso es el ideal para atender nuestra necesidad. En concreto:
 
-* Si el objetivo es **adquirir habilidades y conocimientos**, revise la sección de **tutoriales**. 
+* Si el objetivo es **adquirir habilidades y conocimientos**, revise la sección de **tutoriales**.
 * Si el objetivo es **mejorar la comprensión y el entendimiento** sobre un tema, consulte la sección de **explainers**.   
 * Si el objetivo es **aplicar conocimientos** para completar una tarea específica, revise la sección de **guías how-to**.
-* Si el objetivo es **obtener información descriptiva sobre conceptos o herramientas**, consulte la sección de **referencias**. 
+* Si el objetivo es **obtener información descriptiva sobre conceptos o herramientas**, consulte la sección de **referencias**.
 
-Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan a las personas lectoras adquirir los conocimientos necesarios para completar tareas en diferentes etapas del proceso de una investigación forense. En lo inmediato, se recomienda iniciar con una lectura al explainer introductorio en forense digital y la guía para obtener un consentimiento informado. 
+Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan a las personas lectoras adquirir los conocimientos necesarios para completar tareas en diferentes etapas del proceso de una investigación forense. En lo inmediato, se recomienda iniciar con una lectura al explainer introductorio en forense digital y la guía para obtener un consentimiento informado.
 
-## ¿Cómo colaborar con este repositorio? 
+## ¿Cómo colaborar con este repositorio?
 
-Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. Agradecemos cualquier esfuerzo por personas y comunidades para participar, mejorar y contribuir al desarrollo de este recurso, incluyendo en acciones como **replicar, verificar, mejorar y extender los recursos y metodologías.** 
+Los materiales publicados en este repositorio son parte de un esfuerzo colectivo en beneficio de la comunidad de práctica forense de la sociedad civil. Agradecemos cualquier esfuerzo por personas y comunidades para participar, mejorar y contribuir al desarrollo de este recurso.
 
-Los contenidos publicados en este sitio son parte de un [repositorio de Github](https://github.com/Socialtic/forensics), por lo que es posible **enviar comentarios y sugerencias** de forma directa a través de la [sección de problemas (issues)](https://github.com/Socialtic/forensics/issues). Para otro tipo de colaboraciones, dudas, comentarios o sugerencias se pone a disposición el correo electrónico [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
+Puede colaborar mediante:
 
-Agradecemos también cualquier recurso adicional que pueda fortalecer la práctica forense en la sociedad civil, aún cuando sigan formatos distintos a los presentados en el marco de referencia  Diátaxis. 
+* Propuestas de mejora o correcciones a través de [plantilla de Issue Template](.github/ISSUE_TEMPLATE.md) (también disponible al crear un nuevo issue)
+* Propuesta de nuevos análisis forenses siguiendo el flujo de [Contribuciones](./contributing.md)
+* Envío de pull requests siguiendo la [plantilla de pull-request](.github/pull_request_template.md), que se carga automáticamente al iniciar un nuevo PR.  
+
+También puede escribirnos a: [**seguridad@socialtic.org**](mailto:seguridad@socialtic.org)
+
+Agradecemos también cualquier recurso adicional que pueda fortalecer la práctica forense en la sociedad civil, aún cuando sigan formatos distintos a los presentados en el marco de referencia Diátaxis.
+
+## Estructura del repositorio
+
+* **docs/:** Documentación en formato Diátaxis  
+* **guides/:** Guías prácticas y procedimientos  
+* **explainers/**: Material teórico y de contexto  
+* **how-to/:** Instrucciones paso a paso  
+* **references/:** Repositorio de referencias técnicas  
+* **.github/:** Plantillas de issues y pull requests  
+* **LICENSE:** Licencia del proyecto  
+* **CONTRIBUTING.md:** Guía de contribución  
+* **CODE\_OF\_CONDUCT.md:** Código de conducta
 
 ## Guía de estilo para el idioma español
 
-Para la escritura de documentos en el presente repositorio se sugiere apegarse a los siguientes lineamientos de estilo: 
+Para la escritura de documentos en el presente repositorio se sugiere apegarse a los siguientes lineamientos de estilo:
 
 * Utilizar el lenguaje descriptivo markdown para la escritura de los documentos  
 * Evitar utilizar palabras en inglés que sí tienen traducción al español. Por ejemplo, no utilizar app sino aplicación. Por cuestiones de claridad, algunos términos pueden mantenerse en inglés.  
@@ -86,3 +104,13 @@ Para resaltar elementos informativos, de advertencia, de error o de confirmació
 * El bloque de error (rojo) sirve para explicar qué otro camino seguir si se encuentra un error, o cómo solucionar un posible error.
 
 El bloque de información (azul) se utiliza para resaltar consideraciones legales
+
+## Licencia
+
+Este proyecto está licenciado bajo la MVT License, v1.1.  
+ Puedes consultar la licencia completa en el archivo [**LICENSE**](./LICENSE) o en el siguiente enlace:  
+ [https://license.mvt.re/1.1/](https://license.mvt.re/1.1/)
+
+Incluye cláusulas relacionadas con el consentimiento informado de uso, distribución de versiones modificadas y limitaciones de responsabilidad.
+
+Este repositorio forma parte del esfuerzo de SocialTIC por fortalecer capacidades técnicas para la defensa de derechos humanos mediante prácticas forenses digitales accesibles, responsables y consentidas.
