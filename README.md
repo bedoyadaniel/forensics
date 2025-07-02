@@ -109,7 +109,7 @@ El bloque de información (azul) se utiliza para resaltar consideraciones legale
 
 Este proyecto está licenciado bajo la MVT License, v1.1.  
  Puedes consultar la licencia completa en el archivo [**LICENSE**](./LICENSE) o en el siguiente enlace:  
- [https://license.mvt.re/1.1/](https://license.mvt.re/1.1/)
+ [license mvt 1.1](https://docs.mvt.re/en/latest/license/)
 
 Incluye cláusulas relacionadas con el consentimiento informado de uso, distribución de versiones modificadas y limitaciones de responsabilidad.
 
