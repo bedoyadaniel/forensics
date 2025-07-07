@@ -9,7 +9,7 @@ last_updated: 2025-06-16
 some_url:
 ---
 
-# AdroidQF output file dictionary
+# AndroidQF output file dictionary
 
 This document is part of a **technical documentation repository** whose main objective is to establish a baseline of proven, flexible and accessible knowledge to **boost consensual forensic analysis in support of civil society across the globe**. To organize the contents, we use the [technical documentation framework Diátaxis](https://diataxis.fr/). 
 

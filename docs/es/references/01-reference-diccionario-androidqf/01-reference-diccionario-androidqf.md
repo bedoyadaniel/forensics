@@ -51,7 +51,7 @@ Este archivo se encuentra en formato *json* y registra información relacionada 
 
 **¿Por qué es importante?**
 
-Esta información permite conocer información básica de la extracción y obtener identificadores únicos del sistema que facilitan el proceso de custodia de la extracción  forense. 
+Esta información permite conocer información básica de la extracción y obtener identificadores únicos del sistema que facilitan el [proceso de custodia de la extracción  forense](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#cadena-de-custodia). 
 
 **Ejemplo:**
 
