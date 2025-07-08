@@ -1,6 +1,6 @@
 ---
 title: Principios para forense basada en logs en dispositivos Android 
-summary: Documento introductorio con principios para forense basada en logs en dispositivos Androidl
+summary: Documento introductorio con principios para forense basada en logs en dispositivos Android
 keywords: forense, logs, android, androidqf
 authors: Daniel Bedoya Arroyo
 lang: es
