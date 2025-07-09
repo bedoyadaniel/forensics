@@ -1,3 +1,11 @@
+---
+name: Issues Template
+about: Reporte errores, sugerir contenidos, dudas y comentarios o proponer mejoras en documentación
+title: "[ISSUE] "
+labels: enhancement
+assignees: ''
+---
+
 # ISSUE TEMPLATE
 
 Esta plantilla te ayudará a **reportar errores, sugerencias o nuevas aplicaciones** para analizar de forma clara y útil para la comunidad.
@@ -30,10 +38,10 @@ Marca con una X lo que aplica:
 
 Describe el problema detectado o la propuesta de forma clara. Incluye, si aplica:
 
-* Qué ocurre
-* Dónde ocurre (archivo, sección, ruta)
-* Cuál sería el comportamiento esperado
-* Por qué es importante atenderlo
+* ¿Qué ocurre?
+* ¿Dónde ocurre? (archivo, sección, ruta)
+* ¿Cuál sería el comportamiento esperado?
+* ¿Por qué es importante atenderlo?
 
 ## Pasos para reducir el error (si aplica)
 
