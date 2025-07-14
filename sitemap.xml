@@ -2,50 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://socialtic.github.io/forensics/index.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/hoja-de-ruta.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/iniciar.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
+    </url>
+    <url>
+         <loc>https://socialtic.github.io/forensics/comunidad/codigo-de-conducta.html</loc>
+         <lastmod>2025-07-14</lastmod>
+    </url>
+    <url>
+         <loc>https://socialtic.github.io/forensics/comunidad/como-colaborar.html</loc>
+         <lastmod>2025-07-14</lastmod>
+    </url>
+    <url>
+         <loc>https://socialtic.github.io/forensics/comunidad/como-localizar-l10n.html</loc>
+         <lastmod>2025-07-14</lastmod>
+    </url>
+    <url>
+         <loc>https://socialtic.github.io/forensics/comunidad/comunidad-forense.html</loc>
+         <lastmod>2025-07-14</lastmod>
+    </url>
+    <url>
+         <loc>https://socialtic.github.io/forensics/comunidad/guia-idioma-es.html</loc>
+         <lastmod>2025-07-14</lastmod>
+    </url>
+    <url>
+         <loc>https://socialtic.github.io/forensics/comunidad/licencia.html</loc>
+         <lastmod>2025-07-14</lastmod>
+    </url>
+    <url>
+         <loc>https://socialtic.github.io/forensics/comunidad/limitacion-responsabilidad.html</loc>
+         <lastmod>2025-07-14</lastmod>
+    </url>
+    <url>
+         <loc>https://socialtic.github.io/forensics/comunidad/por-que-contribuir.html</loc>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/explainers/index.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/how-tos/index.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/references/index.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
     <url>
          <loc>https://socialtic.github.io/forensics/tutorials/index.html</loc>
-         <lastmod>2025-07-10</lastmod>
+         <lastmod>2025-07-14</lastmod>
     </url>
 </urlset>
