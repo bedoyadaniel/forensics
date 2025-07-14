@@ -25,6 +25,15 @@ nav:
   - Referencias:
     - Inicio: 'references/index.md'
     - Diccionario AndroidQF: 'references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md'
+  - Comunidad:
+    - Comunidad de práctica: 'comunidad/comunidad-forense.md'
+    - ¿Por qué contribuir con este repositorio?: 'comunidad/por-que-contribuir.md'
+    - ¿Cómo colaborar con este repositorio?: 'comunidad/como-colaborar.md'
+    - Mejores prácticas para el idioma español: 'comunidad/guia-idioma-es.md'
+    - Traducciones y localizaciones: 'comunidad/como-localizar-l10n.md'
+    - Licencia de uso: 'comunidad/licencia.md'
+    - Código de conducta: 'comunidad/codigo-de-conducta.md'
+    - Limitación de responsabilidades: 'comunidad/limitacion-responsabilidad.md'
 
 theme: 
   name: material

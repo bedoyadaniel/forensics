@@ -66,27 +66,4 @@ Los materiales publicados en este repositorio son parte de un **esfuerzo colecti
 
 Los contenidos publicados en este sitio son parte de un [repositorio de Github](https://github.com/Socialtic/forensics), por lo que es posible **enviar comentarios y sugerencias** de forma directa a través de la [sección de problemas (issues)](https://github.com/Socialtic/forensics/issues). Para otro tipo de colaboraciones, dudas, comentarios o sugerencias se pone a disposición el correo electrónico [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
 
-Agradecemos también cualquier recurso adicional que pueda fortalecer la práctica forense en la sociedad civil, aún cuando sigan formatos distintos a los presentados en el marco de referencia  Diátaxis. 
-
-## Guía de estilo para el idioma español
-
-Para la escritura de documentos en el presente repositorio se sugiere apegarse a los siguientes lineamientos de estilo: 
-
-* Utilizar el lenguaje descriptivo markdown para la escritura de los documentos  
-* Evitar utilizar palabras en inglés que sí tienen traducción al español. Por ejemplo, no utilizar app sino aplicación. Por cuestiones de claridad, algunos términos pueden mantenerse en inglés.  
-* Utilizar el impersonal. En los casos que sea imposible, se puede utilizar la segunda persona del plural.   
-* Las páginas deben tener nombres de ruta en minúsculas y con guión medio. No se deben utilizar caracteres especiales como acentos u otros símbolos.
-
-Para resaltar elementos informativos, de advertencia, de error o de importancia legal se utilizarán bloques como los siguientes:
-
-!!! success "Buenas Prácticas" 
-    El bloque de confirmación (verde) sirve para distinguir las buenas prácticas.
-
-!!! warning "Alternativa"
-    El bloque de advertencia (amarillo) sirve para mencionar otra manera de hacer las cosas (esto es especialmente útil para los how-to).
-
-!!! failure "Error"
-    El bloque de error (rojo) sirve para explicar qué otro camino seguir si se encuentra un error, o cómo solucionar un posible error.
-
-!!! abstract "Consideración Legal"
-    El bloque de información (azul) se utiliza para resaltar consideraciones legales
+Agradecemos también cualquier recurso adicional que pueda fortalecer la práctica forense en la sociedad civil, aún cuando sigan formatos distintos a los presentados en el marco de referencia  Diátaxis. Puedes revisar más detalles en la [sección de comunidad](../comunidad/). 
