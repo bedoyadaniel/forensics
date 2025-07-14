@@ -66,4 +66,4 @@ Los materiales publicados en este repositorio son parte de un **esfuerzo colecti
 
 Los contenidos publicados en este sitio son parte de un [repositorio de Github](https://github.com/Socialtic/forensics), por lo que es posible **enviar comentarios y sugerencias** de forma directa a través de la [sección de problemas (issues)](https://github.com/Socialtic/forensics/issues). Para otro tipo de colaboraciones, dudas, comentarios o sugerencias se pone a disposición el correo electrónico [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
 
-Agradecemos también cualquier recurso adicional que pueda fortalecer la práctica forense en la sociedad civil, aún cuando sigan formatos distintos a los presentados en el marco de referencia  Diátaxis. Puedes revisar más detalles en la [sección de comunidad](../comunidad/). 
+Agradecemos también cualquier recurso adicional que pueda fortalecer la práctica forense en la sociedad civil, aún cuando sigan formatos distintos a los presentados en el marco de referencia  Diátaxis. Puedes revisar más detalles en la [sección de comunidad](/comunidad/). 

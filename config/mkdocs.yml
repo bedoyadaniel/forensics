@@ -12,6 +12,7 @@ nav:
     - Inicio: 'index.md'
     - Primeros pasos: iniciar.md
     - Hoja de ruta: 'hoja-de-ruta.md'
+    - Comunidad: 'comunidad/index.md'
   - Explainers:
     - Inicio: 'explainers/index.md'
     - Explainer introductorio a forense digital: 'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'
@@ -26,7 +27,7 @@ nav:
     - Inicio: 'references/index.md'
     - Diccionario AndroidQF: 'references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md'
   - Comunidad:
-    - Comunidad de práctica: 'comunidad/comunidad-forense.md'
+    - Comunidad de práctica: 'comunidad/index.md'
     - ¿Por qué contribuir con este repositorio?: 'comunidad/por-que-contribuir.md'
     - ¿Cómo colaborar con este repositorio?: 'comunidad/como-colaborar.md'
     - Mejores prácticas para el idioma español: 'comunidad/guia-idioma-es.md'
