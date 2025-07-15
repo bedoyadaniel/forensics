@@ -24,7 +24,10 @@ Si encuentras algún error, o tienes una propuesta de mejora **[puedes iniciar u
 
 A la hora de levantar un issue, te solicitamos utilizar el formato descrito en el documento [*issue template*](https://github.com/Socialtic/forensics/blob/main/.github/ISSUE_TEMPLATE/official_template.md), que se cargará de forma automática al intentar abrir un nuevo *issue* en el repositorio: 
 
-![Tab de issues del repositorio forensics, para generar un nuevo issue utilizar el botón de *new issue* que se encuentra en la parte superior derecha de la interfaz web de GitHub.](/comunidad/assets/img/community-new-issue.jpg "imagen 1. Tab de issues del repositorio forensics, para generar un nuevo issue utilizar el botón de *new issue* que se encuentra en la parte superior derecha de la interfaz web de GitHub.")   
+![Tab de issues del repositorio forensics, para generar un nuevo issue utilizar el botón de new issue que se encuentra en la parte superior derecha de la interfaz web de GitHub.](/comunidad/assets/img/community-new-issue.jpg "imagen 1"){ loading=lazy }
+/// caption
+imagen 1. Tab de issues del repositorio forensics, para generar un nuevo issue utilizar el botón de new issue que se encuentra en la parte superior derecha de la interfaz web de GitHub.
+///
 
 Al dar *click* en el botón, se presentará la opción para seleccionar un formato. Seleccionar la opción de *issue template.*  
 
