@@ -50,7 +50,9 @@ Al utilizar la opción de un formato predefinido como el *issue template* se abr
 Para **proponer una integración de cambios al repositorio** puedes seguir los siguientes pasos: 
 
 1. Utilizando **tu propia cuenta de Github (o una cuenta organizacional si es la preferencia),** haz [una bifurcación](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) o *fork* del repositorio  
-   * Puedes hacerlo desde el navegador web en [github.com](http://github.com), utilizando el **botón “Fork”** en la parte superior derecha del [repositorio principal](https://github.com/Socialtic/forensics), tal y como se muestra en la siguiente imagen.
+
+!!! tip "Recomendación"
+   Puedes hacerlo desde el navegador web en [github.com](http://github.com), utilizando el **botón “Fork”** en la parte superior derecha del [repositorio principal](https://github.com/Socialtic/forensics), tal y como se muestra en la imagen 4.
 
 ![Interfaz de GitHub para el repositorio forensics, donde se resalta la opción para bifurcar el repositorio](/comunidad/assets/img/community-fork-tab.jpg "imagen 4")
 /// caption
@@ -58,9 +60,11 @@ Para **proponer una integración de cambios al repositorio** puedes seguir los s
 ///
 
 
-2. Desde el *fork* del repositorio, crea una nueva rama o *branch* donde podrás hacer los cambios pertinentes.   
-   * Usa **nombres descriptivos** para tus ramas, como “fix-guia-acquisition”, “add-tutorial-analyzing-mvt-bugreport  
-   * ”Puedes hacerlo en github dando click a la sección de *“branches”* como se muestra en la siguiente imagen.   
+2. Desde el *fork* del repositorio, crea una nueva rama o *branch* donde podrás hacer los cambios pertinentes.
+
+!!! tip "Recomendación"
+   - Usa **nombres descriptivos** para tus ramas, como “fix-guia-acquisition”, “add-tutorial-analyzing-mvt-bugreport  
+   - Puedes hacerlo en github dando click a la sección de *“branches”* como se muestra en la imagen 5.   
      
 
 ![Interfaz de GitHub para el fork del repositorio forensics, donde se resalta la sección para consultar las ramas o branches.](/comunidad/assets/img/community-fork-branch-tab.jpg "imagen 5")  
@@ -68,17 +72,18 @@ Para **proponer una integración de cambios al repositorio** puedes seguir los s
 **imagen 5.** Interfaz de GitHub para el fork del repositorio forensics, donde se resalta la sección para consultar las ramas o branches.
 ///
 
-
-Desde la sección de *branches*, puedes hacer una nueva rama o *branch* **dentro de tu copia o *fork* del repositorio**. 
+Desde la sección de *branches*, puedes hacer una nueva rama o *branch* **dentro de tu copia o *fork* del repositorio**, tal y como se muestra en la imagen 6. 
 
 ![Interfaz de GitHub para el *fork* del repositorio forensics en la sección de branches, donde se resalta la opción para crear una nueva rama.](/comunidad/assets/img/community-fork-new-branch.jpg "imagen 6")  
 /// caption
 **imagen 6** Interfaz de GitHub para el *fork* del repositorio forensics en la sección de branches, donde se resalta la opción para crear una nueva rama.
 ///
 
-3. **Realiza tus cambios y haz *commits*** claros, especificando los cambios o ajustes realizados..  
-   * Sigue las recomendaciones oficiales de [Git Guides para hacer *commits*](https://github.com/git-guides/git-commit)  
-   * Cuando hagas cambios en algún documento a través de la interfaz web, GitHub confirmará la rama o *branch* a la cual se le deben aplicar los cambios. Utiliza la rama que creaste. 
+3. **Realiza tus cambios y haz *commits*** claros, especificando los cambios o ajustes realizados. La imaen 7 muestra un ejemplo de un *commit*.
+
+!!! tip "Recomendación"
+   - Sigue las recomendaciones oficiales de [Git Guides para hacer *commits*](https://github.com/git-guides/git-commit)  
+   - Cuando hagas cambios en algún documento a través de la interfaz web, GitHub confirmará la rama o *branch* a la cual se le deben aplicar los cambios. Utiliza la rama que creaste. 
 
 ![Interfaz de GitHub para el repositorio forensics, donde se muestra el formulario a completar cuando se realiza un cambio o commit.](/comunidad/assets/img/community-fork-commit.jpg "imagen 7")
 /// caption
@@ -87,13 +92,17 @@ Desde la sección de *branches*, puedes hacer una nueva rama o *branch* **dentro
 
 
 4. Abre un pull request   
-   * Sigue el formato establecido descrito en la [plantilla de  pull request](https://docs.google.com/document/d/1elOOTVjq389TSSrClmDtlTEiYsCHXQCadvZfFzHmfs4/edit?tab=t.0#heading=h.j3djtr277ooi), y envía tu solicitud de integración.   
-   * Puedes enviar la solicitud utilizando la interfaz web de Github, y dando click en la opción que se presenta para hacer una solicitud de integración luego de hacer cambios en una rama. 
+
+!!! tip "Recomendación"
+   - Sigue el formato establecido descrito en la [plantilla de  pull request](https://docs.google.com/document/d/1elOOTVjq389TSSrClmDtlTEiYsCHXQCadvZfFzHmfs4/edit?tab=t.0#heading=h.j3djtr277ooi), y envía tu solicitud de integración.   
+   - Puedes enviar la solicitud utilizando la interfaz web de Github, y dando click en la opción que se presenta para hacer una solicitud de integración luego de hacer cambios en una rama, tal y como se muestra en la **imagen 8.** 
 
 ![Interfaz de GitHub para un fork del repositorio forensics, donde se muestra la opción para comparar y enviar una solicitud de integración al repositorio principal.](/comunidad/assets/img/community-fork-compare-pull-request.jpg "imagen 8")
 /// caption
 **imagen 8.** Interfaz de GitHub para un fork del repositorio forensics, donde se muestra la opción para comparar y enviar una solicitud de integración al repositorio principal.
 ///
+
+La imagen 9 muestra los detalles de una solicitud de integración, utilizando el formato pre-establecido. 
 
 
 ![Interfaz de GitHub para un fork del repositorio forensics, donde se muestra el detalle de una solicitud de integración o pull request. ](/comunidad/assets/img/community-pull-request-template.jpg "imagen 9")
@@ -101,6 +110,7 @@ Desde la sección de *branches*, puedes hacer una nueva rama o *branch* **dentro
 **imagen 9.** Interfaz de GitHub para un fork del repositorio forensics, donde se muestra el detalle de una solicitud de integración o pull request. 
 ///
 
+Una vez que tu solicitud de integración sea revisada y aceptada, se ve verá como la que se muestra en la imagen 10. Esto también significa que tus cambios fueron aplicados directamente al repositorio. 
 
 ![Interfaz de GitHub para el repositorio forensics, donde se muestra la revisión e integración de un pull request.](/comunidad/assets/img/community-pull-request-example.jpg "imagen 10. ")
 /// caption
