@@ -49,7 +49,7 @@ Al utilizar la opción de un formato predefinido como el *issue template* se abr
 
 Para **proponer una integración de cambios al repositorio** puedes seguir los siguientes pasos: 
 
-1. Utilizando tu propia cuenta de Github (o una cuenta organizacional si es la preferencia), haz [una bifurcación](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) o *fork* del repositorio  
+1. Utilizando **tu propia cuenta de Github (o una cuenta organizacional si es la preferencia),** haz [una bifurcación](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) o *fork* del repositorio  
    * Puedes hacerlo desde el navegador web en [github.com](http://github.com), utilizando el **botón “Fork”** en la parte superior derecha del [repositorio principal](https://github.com/Socialtic/forensics), tal y como se muestra en la siguiente imagen.
 
 ![Interfaz de GitHub para el repositorio forensics, donde se resalta la opción para bifurcar el repositorio](/comunidad/assets/img/community-fork-tab.jpg "imagen 4")
