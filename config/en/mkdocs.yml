@@ -13,6 +13,7 @@ nav:
     - Inicio: 'index.md'
     - Getting started: 'getting-started.md'
     - Roadmap: 'roadmap.md'
+    - Community: 'community/index.md'
   - Explainers:
     - Home: 'explainers/index.md'
     - Introduction to digital forensics: 'explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.md'
@@ -26,6 +27,15 @@ nav:
   - Reference:
     - Home: 'references/index.md'
     - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.md'
+  - Community:
+    - Consensual forensics community: 'community/index.md'
+    - Supporting this effort: 'community/why-support.md'
+    - How can I collaborate?: 'community/how-to-collaborate.md'
+    - Best practices for English language: 'community/language-guide-en.md'
+    - Additional translation and localization efforts: 'community/translations-localization-l10n.md'
+    - License of contents: 'community/license.md'
+    - Code of conduct: 'community/code-of-conduct.md'
+    - Limitation of responsibilities: 'community/limitation-of-responsibility.md'
 
 theme: 
   name: material
