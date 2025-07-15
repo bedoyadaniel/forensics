@@ -91,6 +91,7 @@ extra:
 plugins:
   - search
   - offline
+  - privacy
 
 markdown_extensions:
   - admonition
@@ -98,6 +99,5 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - pymdownx.blocks.caption
-  - toc:
-      toc_depth: 3
+
 
