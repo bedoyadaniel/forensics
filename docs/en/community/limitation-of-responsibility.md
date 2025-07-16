@@ -9,8 +9,6 @@ last_updated: 2025-07-15
 some_url:
 ---
 
-## Limitation of reponsibilities
-
 This project is focused on strengthening consensual forensic analysis capabilities in high-risk civil society contexts. Consequently, contributions will **not** be accepted if they:
 
 * Include functionalities that **violate digital rights**  
