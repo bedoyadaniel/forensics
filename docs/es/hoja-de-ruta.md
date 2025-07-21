@@ -1,5 +1,5 @@
 ---
-title: Ruta de p
+title: Ruta de contenidos
 summary: Índice de contenidos 
 keywords: índice
 authors: Daniel Bedoya Arroyo
@@ -7,6 +7,8 @@ lang: es
 tags: [indice, intro]
 last_updated: 2025-03-14
 some_url:
+icon: :octicons-project-roadmap-16:
+
 ---
 
 

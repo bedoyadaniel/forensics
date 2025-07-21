@@ -1,3 +1,16 @@
+---
+title: Primeros pasos
+summary: Primeros pasos en el repositorio 
+keywords: índice
+authors: Daniel Bedoya Arroyo
+lang: es
+tags: [indice, intro]
+last_updated: 2025-03-14
+some_url:
+icon: :material-source-commit-start:
+
+---
+
 
 # ¿Por dónde iniciar?
 

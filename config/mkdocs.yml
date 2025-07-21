@@ -15,8 +15,8 @@ nav:
     - Comunidad: 'comunidad/index.md'
   - Explainers:
     - Inicio: 'explainers/index.md'
-    - Explainer introductorio a forense digital: 'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'
-    - Explainer de riesgos y amenazas: 'explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.md'
+    - Introducción a la forense digital consentida: 'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'
+    - Riesgos y amenazas para laboratorios forenses: 'explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.md'
     - Principios para forense basada en logs en Android: 'explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.md'
   - Tutoriales: 
     - Inicio: 'tutorials/index.md'
@@ -95,6 +95,8 @@ plugins:
   - search  #habilita barra de búsqueda
   - offline #facilita consulta y navegación del sitio offline
   - privacy #plug-in para cargar recursos localmente, reducir tracking
+  - typeset #permite colocar íconos como parte de headers
+
 
 markdown_extensions:
   - admonition #cuadros de texto
@@ -102,6 +104,9 @@ markdown_extensions:
   - pymdownx.superfences #cuadros de texto
   - attr_list #permite agregar html dentro del markdown
   - pymdownx.blocks.caption #caption para imágenes
+  - pymdownx.emoji: #permite agregar íconos y emojies con códigos cortos
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 
 

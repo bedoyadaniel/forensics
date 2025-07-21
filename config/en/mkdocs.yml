@@ -96,6 +96,7 @@ plugins:
   - search  #habilita barra de búsqueda
   - offline #facilita consulta y navegación del sitio offline
   - privacy #plug-in para cargar recursos localmente, reducir tracking
+  - typeset #permite colocar íconos como parte de headers
 
 markdown_extensions:
   - admonition #cuadros de texto
@@ -103,4 +104,6 @@ markdown_extensions:
   - pymdownx.superfences #cuadros de texto
   - attr_list #permite agregar html dentro del markdown
   - pymdownx.blocks.caption #caption para imágenes
-
+  - pymdownx.emoji: #permite agregar íconos y emojies con códigos cortos
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

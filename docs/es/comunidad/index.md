@@ -7,6 +7,9 @@ lang: es
 tags: [comunidad, intro]
 last_updated: 2025-07-14
 some_url:
+icon: :fontawesome-solid-people-group:
+
+
 ---
 
 # Comunidad de práctica forense para la defensa de los derechos humanos
