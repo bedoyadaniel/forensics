@@ -65,6 +65,7 @@ theme:
     - navigation.instant.prefetch
     - navigation.instant.preview
     - navigation.top
+    - navigation.path
     - announce.dismiss
     - navigation.tracking
     - navigation.sections
