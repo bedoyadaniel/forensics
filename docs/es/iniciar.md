@@ -7,7 +7,7 @@ lang: es
 tags: [indice, intro]
 last_updated: 2025-03-14
 some_url:
-icon: :material-source-commit-start:
+icon: material/source-commit-start
 
 ---
 

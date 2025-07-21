@@ -7,7 +7,7 @@ lang: es
 tags: [indice, intro]
 last_updated: 2025-03-14
 some_url:
-icon: :octicons-project-roadmap-16:
+icon: octicons/project-roadmap-16
 
 ---
 
