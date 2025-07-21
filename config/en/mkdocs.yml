@@ -1,10 +1,10 @@
 site_name: SocialTIC Forensics
-site_url: https://socialtic.github.io/forensics/en/
+site_url: https://forensics.socialtic.org/en/
 site_description: Documentation for consensual forensic investigations in civil society
 docs_dir: '../../docs/en'
 site_dir: '../../generated/en'
 repo_url: https://github.com/Socialtic/forensics
-edit_uri: edit/main/docs/es/
+edit_uri: edit/main/docs/en/
 copyright: Creative Commons CC BY-SA
 
 
