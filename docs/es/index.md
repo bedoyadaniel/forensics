@@ -8,7 +8,7 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
 
 ## Contenidos publicados
 
-### [Explainers](../explainers/)
+### [Explainers](../explainers/index.html)
 
 **Aprendizaje de aspectos teóricos** a través de contexto sobre un tema específico. Permite comprender el “porqué”.
 
@@ -16,19 +16,19 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
 * [Riesgos y amenazas para laboratorios forenses de la sociedad civil](../explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
 * [Principios para forense basada en logs en dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html)
 
-### [Tutoriales](../tutorials/)
+### [Tutoriales](../tutorials/index.html)
 
  **Aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad.
 
 * Aún no se ha publicado ningún tutorial.
 
-### [Guías how-to](../how-tos/)
+### [Guías how-to](../how-tos/index.html)
 
  Recetas para **ejecutar tareas a través de instrucciones paso a paso.**
 
 * [¿Cómo obtener y documentar consentimiento informado para una investigación forense?](../how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
 
-### [Referencias](../references)
+### [Referencias](../references/index.html)
 
 **Conocimiento teórico necesario para ejecutar una tarea de forma confiable y sin errores**.
 

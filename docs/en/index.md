@@ -7,7 +7,7 @@ Digital forensics makes possible the **discovery and examination of digital data
 
 ## Published contents
 
-### [Explainers](../explainers/)
+### [Explainers](../en/explainers/index.html)
 
 Explainers deepen and broaden the reader’s **understanding of a subject**. They brings clarity, light and context.
 
@@ -16,19 +16,19 @@ Explainers deepen and broaden the reader’s **understanding of a subject**. The
 * [Introduction to log-based forensics on Android devices](../en/explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.html)
 
 
-### [Tutorials](../tutorials/)
+### [Tutorials](../en/tutorials/index.html)
 
 Tutorials are all about **learning through guided practical exercises**. 
 
 * Coming soon
 
-### [How-to guides](../how-tos/)
+### [How-to guides](../en/how-tos/index.html)
 
 How-to’s are all about **executing a task and achieving a goal through step-by-step instructions**.
 
 * [How to obtain and document informed consent for forensic analysis?](../en/how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)
 
-### [References](../references)
+### [References](../en/references/index.html)
 
 Reference material describes the machinery. **One hardly reads reference material; one consults it.** 
 

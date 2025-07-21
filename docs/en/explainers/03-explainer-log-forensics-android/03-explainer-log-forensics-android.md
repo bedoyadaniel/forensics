@@ -12,8 +12,6 @@ some_url:
 
 # Explainer: Introduction to log-based forensics on Android devices
 
-## Introduction
-
 This document is part of a **technical documentation repository** created to establish a baseline of proven, flexible and accessible knowledge to **boost consensual forensic analysis in support of civil society across the globe**. To organize the contents, we use the [technical documentation framework Diátaxis](https://diataxis.fr/). 
 
 This particular resource fits within [the explanation category in Diátaxis](https://diataxis.fr/explanation/), and presents an **introduction to log-based forensics for Android devices**, including a definition of log-based forensics, a comparison with other types of forensic analysis and some use cases. This is an introductory material that does not require previous knowledge, and is complemented with [how-to guides](https://forensics.socialtic.org/en/how-tos/index.html) and  [tutorials](https://forensics.socialtic.org/en/tutorials/index.html) for forensic acquisition. 
