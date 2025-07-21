@@ -60,10 +60,13 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
-    - content.action.edit
     - content.action.view
+    - content.action.edit
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.preview
     - navigation.top
+    - navigation.path
     - announce.dismiss
     - navigation.tracking
     - navigation.sections
