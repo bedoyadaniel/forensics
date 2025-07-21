@@ -95,7 +95,7 @@ extra:
 plugins:
   - search  #habilita barra de búsqueda
   - offline #facilita consulta y navegación del sitio offline
-  - optimize #versión insiders, permite optimizar carga de recursos y archivos de medios del sitio
+  - privacy #plug-in para cargar recursos localmente, reducir tracking
 
 markdown_extensions:
   - admonition #cuadros de texto
