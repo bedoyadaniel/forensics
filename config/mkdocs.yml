@@ -62,6 +62,8 @@ theme:
     - content.action.view
     - content.action.edit
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.preview
     - navigation.top
     - announce.dismiss
     - navigation.tracking
