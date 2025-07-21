@@ -5,7 +5,7 @@ docs_dir: '../../docs/en'
 site_dir: '../../generated/en'
 repo_url: https://github.com/Socialtic/forensics
 edit_uri: edit/main/docs/en/
-copyright: Creative Commons CC BY-SA
+copyright: MVT License
 
 
 nav:
@@ -56,27 +56,28 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
   features:
-    - search.highlight
-    - navigation.path
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.indexes
-    - content.action.view
-    - content.action.edit
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.preview
-    - navigation.top
-    - navigation.tracking
-    - navigation.sections
-    - toc.follow
-    - toc.integrate
+    - search.highlight #Resalta las coincidencias en el recurso que se abre luego de una búsqueda
+    - search.suggest #Sugerencias de búsqueda
+    - search.share #agrega botón para compartir en la búsqueda
+    - navigation.path #Permite ver breadcrumbs, solo versión insider
+    - navigation.tabs #Permite visualizar seccions como tabs
+    - navigation.tabs.sticky #Tabs se mantienen fijos en parte alta de la página
+    - navigation.indexes #Navega directamente al index de cada carpeta
+    - navigation.instant #Carga recursos internos utilizando XHR, para mejorar eficiencia en carga de páginas
+    - navigation.instant.prefetch #Reduce tiempo de carga percibido al cargar páginas internas cuando la persona se posiciona sobre link
+    - navigation.instant.preview #Permite ver recursos internos como un cuadro con descripción base
+    - navigation.top #Agrega botón para regresar al inicio
+    - navigation.tracking #Sigue la navegación del usuario en la URL
+    - content.action.view #Agrega botón de ver fuente
+    - content.action.edit #Agrega botón de edición
+    - toc.follow #Sigue la navegación del usuario en la tabla de contenidos 
+    - toc.integrate #La tabla de contenidos está integrada a la barra de  la izquierda
    
 
 
 
 extra:
-  alternate: 
+  alternate: #configuración de idiomas
     - name: Español
       link: /
       lang: es
@@ -92,13 +93,14 @@ extra:
       link: https://socialtic.org
 
 plugins:
-  - search     
-  - offline
+  - search  #habilita barra de búsqueda
+  - offline #facilita consulta y navegación del sitio offline
+  - optimize #versión insiders, permite optimizar carga de recursos y archivos de medios del sitio
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - attr_list
-  - pymdownx.blocks.caption
+  - admonition #cuadros de texto
+  - pymdownx.details #cuadros de texto
+  - pymdownx.superfences #cuadros de texto
+  - attr_list #permite agregar html dentro del markdown
+  - pymdownx.blocks.caption #caption para imágenes
 

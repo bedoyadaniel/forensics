@@ -68,7 +68,6 @@ theme:
     - navigation.top
     - navigation.path
     - navigation.tracking
-    - navigation.sections
     - toc.follow
     - toc.integrate
 
