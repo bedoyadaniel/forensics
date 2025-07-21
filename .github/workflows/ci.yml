@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: 3.x
 
-      - run: pip install mkdocs-material 
+      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: mkdocs build -f config/mkdocs.yml
       - run: mkdocs build -f config/en/mkdocs.yml
 
