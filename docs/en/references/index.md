@@ -1,3 +1,15 @@
+---
+title: Index of references
+summary: Index of references
+keywords: reference, index
+authors: Daniel Bedoya Arroyo
+lang: en
+tags: [indice, reference]
+last_updated: 2025-07-22
+some_url:
+icon: material/ruler
+---
+
 # Reference
 
 In this section you will find references. According to [Diataxis documentation framework](https://diataxis.fr) reference material describes the machinery. It should be austere. **One hardly reads reference material; one consults it**. There should be no doubt or ambiguity in reference; it should be wholly authoritative. Reference contains technical knowledge that can be helpful when executing a task. 

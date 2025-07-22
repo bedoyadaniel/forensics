@@ -1,3 +1,17 @@
+---
+title: Getting started
+summary: First steps to navigate the repostitory 
+keywords: índice
+authors: Daniel Bedoya Arroyo
+lang: es
+tags: [indice, intro]
+last_updated: 2025-07-21
+some_url:
+icon: material/source-commit-start
+
+---
+
+
 # Getting started
 
 ## ¿What is this documentation repository?
@@ -23,25 +37,25 @@ The resources focused on the **analysis of evidence and presentation of results*
 
 To organize this repository we follow the [technical documentation framework Diataxis](https://diataxis.fr/reference/), that defines four different types of resources: tutorials, how-to’s, explainers and references. 
 
-### [Explainers](../explainers/)
+### [Explainers](../explainers/index.html)
 
 Explainers **deepen and broaden the reader’s understanding of a subject.** It brings clarity, light and context. Explainers intention is to be theoric learning resources, to improve the understanding of a given subject. They focus on a defined scope of a larger topic, and usually help understand the “why”. 
 
 For example, the first explainer included in this documentation repository presents information about the larger forensic science field, and how consensual digital forensics for civil society fit in the larger scheme of things while also touching on the importance as a mechanism for accountability. 
 
-### [Tutorials](../tutorials/)
+### [Tutorials](../tutorials/index.html)
 
 Tutorials are all about learning through **guided practical exercises**. In other words, it's **learning by doing**. Tutorials allow the reader to acquire skills and knowledge, and are focused on learning and not on completing a specific task. 
 
 An example of a tutorial is a car driving lesson. Usually, in a good driving lesson students familiarize themselves with the vehicle, the controls, and learn as they go. The **objective is not getting from going A to point B, instead is the skills you learn in the way.** 
 
-### [How-to guides](../how-tos/)
+### [How-to guides](../how-tos/index.html)
 
 **How-to’s are all about executing a task and achieving a goal** through step-by-step instructions. It assumes that the reader already has the baseline skills and knowledge necessary to complete the task, and hence, focuses on the steps necessary to achieve the desired outcome in a correct way and aligned to best practices. 
 
 A good example is a cooking recipe, where the focus is to achieve a result, in this case preparing a specific dish in a repeatable way. It assumes the person already has basic knowledge on aspects like cutting and measuring the ingredients, setting the oven temperature, etc. 
 
-### [References](../references)
+### [References](../references/index.html)
 
 Reference material describes the machinery. It should be austere. **One hardly reads reference material; one consults it**. There should be no doubt or ambiguity in reference; it should be wholly authoritative. Reference contains technical knowledge that can be helpful when executing a task. 
 
@@ -64,27 +78,5 @@ As we continue to include content in this repository, we will define learning pa
 
 All materials published in this repository are part of a **collective effort to support the civil society forensic analysis community**. As such, we are thankful for any effort from individuals or organizations to share, improve and contribute to the development of this resource, including through **actions like replicating, verifying and extending resources and methodologies.** 
 
-All contents are published under an [attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/deed.en) licence. Contents are also published on a [Github repository](https://github.com/Socialtic/forensics), and we appreciate any comment or suggestions as issues directly on [issue section of the repository](https://github.com/Socialtic/forensics/issues). For other type of collaborations, questions and comments we can be reached at  [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
+If you are interested in collaborating, or believe there are additional resources that can be added to this repository to strengthen the forensic practice of civil society, please let us know. You can find more information in the [community page of this repository](../community/index.html). 
 
-If you think there are additional resources that can be added to this repository to strengthen the forensic practice of civil society, please let us know. It doesn’t matter if it doesn’t follow the structure presented before, we are happy to adapt and be flexible as needed. 
-
-## Style guide for English
-
-Please follow the guidelines below when writing or adding resources to this repository: 
-
-* Use markdown descriptive language for document writing  
-* Page names should be set in low caps and with hyphen instead of spaces. Do not use special characters for file names.
-
-To highlight informative elements, warnings, errors or confirmation messages please use text blocks as follow: 
-
-!!! success "Best practice" 
-    Confirmation blocks in green should be used to highlight best practices. 
-
-!!! warning "Alternative"
-    Yellow warning blocks should be used to mention a different route to achieve a similar result (this is especially helpful for how-to guides)
-
-!!! failure "Error"
-    Error blocks in red should be used to explain troubleshooting hints or alternative paths to follow to overcome an error. 
-
-!!! abstract "Legal consideration"
-    Information blocks in blue are used to highlight blocks with legal considerations. 

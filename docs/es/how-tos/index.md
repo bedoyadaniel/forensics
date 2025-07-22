@@ -1,3 +1,15 @@
+---
+title: Índice de guías
+summary: Índice de guías
+keywords: guides, index
+authors: Daniel Bedoya Arroyo
+lang: en
+tags: [indice, guides]
+last_updated: 2025-07-22
+some_url:
+icon: material/wrench-cog
+---
+
 # Guías How-To
 
 En esta sección encontrarás materiales guías paso a paso. Segùn [el marco de referencia Diátaxis](https://diataxis.fr) **el objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas. 

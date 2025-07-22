@@ -7,6 +7,8 @@ lang: en
 tags: [index, intro]
 last_updated: 2025-06-25
 some_url:
+icon: material/flare
+
 ---
 
 

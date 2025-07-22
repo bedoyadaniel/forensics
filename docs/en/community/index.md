@@ -7,6 +7,8 @@ lang: en
 tags: [community, intro]
 last_updated: 2025-07-15
 some_url:
+icon: material/account-supervisor-outline
+
 ---
 
 

@@ -1,3 +1,15 @@
+---
+title: Index of explainers
+summary: Index of explainers
+keywords: explainers, index
+authors: Daniel Bedoya Arroyo
+lang: en
+tags: [index, explainer]
+last_updated: 2025-07-22
+some_url:
+icon: material/telescope
+---
+
 # Explainers 
 
 In this section you will find **explainers**. According to [Diataxis documentation framework](https://diataxis.fr) explainers **deepen and broaden the reader’s understanding of a subject.** It brings clarity, light and context. Explainers intention is to be theoric learning resources, to improve the understanding of a given subject. They focus on a defined scope of a larger topic, and usually help understand the “why”. 

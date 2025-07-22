@@ -1,3 +1,15 @@
+---
+title: Index of explainers
+summary: Index of explainers
+keywords: explainers, index
+authors: Daniel Bedoya Arroyo
+lang: es
+tags: [indice, explainer]
+last_updated: 2025-07-22
+some_url:
+icon: material/telescope
+---
+
 # Explainers 
 
 En esta sección encontrarás materiales explicativos o explainers. Según [el marco de referencia Diátaxis](https://diataxis.fr) los explainers son materiales para el **aprendizaje de aspectos teóricos**, que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
