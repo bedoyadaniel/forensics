@@ -31,7 +31,7 @@ Para organizar los contenidos, se utiliza el marco de referencia de documentaci�
 
     __Aprendizaje de aspectos teóricos__ a través de contexto sobre un tema específico. 
 
-    [:octicons-arrow-right-24: Índice de explainers](../explainers/)
+    [:octicons-arrow-right-24:   Índice de explainers](../explainers/)
 
 -   :material-wrench-cog:{ .lg .middle } __Guías How-To__
 
@@ -39,7 +39,7 @@ Para organizar los contenidos, se utiliza el marco de referencia de documentaci�
 
     Recetas para **ejecutar tareas** a través de instrucciones paso a paso.
 
-    [:octicons-arrow-right-24: Íncide de guías how-to](../how-tos/)
+    [:octicons-arrow-right-24:   Íncide de guías how-to](../how-tos/)
 
 -   :material-school:{ .lg .middle } __Tutoriales__
 
@@ -47,7 +47,7 @@ Para organizar los contenidos, se utiliza el marco de referencia de documentaci�
 
     **Aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. 
 
-    [:octicons-arrow-right-24: Índice de tutoriales](../tutoriales/)
+    [:octicons-arrow-right-24:   Índice de tutoriales](../tutoriales/)
 
 -   :material-telescope:{ .lg .middle } __Referencias__
 
@@ -55,6 +55,6 @@ Para organizar los contenidos, se utiliza el marco de referencia de documentaci�
 
     Conocimiento teórico que **facilita la ejecución de una tarea** de forma confiable y sin errores. 
 
-    [:octicons-arrow-right-24: Índice de Referencias](../references/)
+    [:octicons-arrow-right-24:   Índice de Referencias](../references/)
 
 </div>
