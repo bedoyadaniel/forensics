@@ -18,10 +18,10 @@ A good example is a cooking recipe, where the focus is to achieve a result, in t
 
 ## Published How-To's
 
-[1-
+
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-handshake-simple:{ .lg .middle }      __How to obtain and document informed consent?__
+-   :fontawesome-solid-book-atlas:{ .lg .middle }      __How to obtain and document informed consent?__
 
     ---
 

@@ -21,7 +21,7 @@ Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y prec
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-handshake-simple:{ .lg .middle }      __Diccionario de archivos generados por la herramienta androidqf__
+-   :fontawesome-solid-book-atlas:{ .lg .middle }      __Diccionario de archivos generados por la herramienta androidqf__
 
     ---
 
