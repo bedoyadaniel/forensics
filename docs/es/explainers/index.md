@@ -18,7 +18,7 @@ En esta sección encontrarás materiales explicativos o explainers. Según [el m
 
 <div class="grid cards" markdown>
 
--   :octicons-law-24:{ .lg .middle } __Introducción a la forense digital consentida__
+-   :octicons-law-24:{ .lg .middle }      __Introducción a la forense digital consentida__
 
     ---
 
@@ -26,7 +26,7 @@ En esta sección encontrarás materiales explicativos o explainers. Según [el m
 
     [:octicons-arrow-right-24: Introducción a la forense digital consentida para la defensa de Derechos Humanos](01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
 
--   :fontawesome-solid-skull:{ .lg .middle } __Riesgos y amenazas para laboratorios forenses__
+-   :fontawesome-solid-skull:{ .lg .middle }      __Riesgos y amenazas para laboratorios forenses__
 
     ---
 
@@ -34,7 +34,7 @@ En esta sección encontrarás materiales explicativos o explainers. Según [el m
 
     [:octicons-arrow-right-24: Riesgos y amenazas para laboratorios forenses de la sociedad civil](02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
 
--   :octicons-log-24:{ .lg .middle } __Principios para forense basada en logs en dispositivos Android]__
+-   :octicons-log-24:{ .lg .middle }      __Principios para forense basada en logs en dispositivos Android__
 
     ---
 
