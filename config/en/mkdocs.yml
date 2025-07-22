@@ -65,7 +65,6 @@ theme:
     - navigation.indexes #Navega directamente al index de cada carpeta
     - navigation.instant #Carga recursos internos utilizando XHR, para mejorar eficiencia en carga de páginas
     - navigation.instant.prefetch #Reduce tiempo de carga percibido al cargar páginas internas cuando la persona se posiciona sobre link
-    - navigation.instant.preview #Permite ver recursos internos como un cuadro con descripción base
     - navigation.sections #evita comprimir items del menú en grupos
     - navigation.top #Agrega botón para regresar al inicio
     - navigation.tracking #Sigue la navegación del usuario en la URL
@@ -109,3 +108,18 @@ markdown_extensions:
   - pymdownx.emoji: #permite agregar íconos y emojies con códigos cortos
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - material.extensions.preview: #configuration for instant previews
+      configurations:
+        - targets:
+            include:
+              - community/*
+              - explainers/*
+              - how-tos/*
+              - references/*
+              - tutorials/*
+            exclude:
+              - explainers/index.html
+              - how-tos/index.html
+              - references/index.html
+              - tutorials/index.html
+              - index.html
