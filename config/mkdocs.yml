@@ -5,7 +5,7 @@ docs_dir: '../docs/es'
 site_dir: '../generated'
 repo_url: https://github.com/Socialtic/forensics
 edit_uri: edit/main/docs/es/
-copyright: Creative Commons CC BY-SA
+copyright: MVT License
 
 nav:
   - Home: 

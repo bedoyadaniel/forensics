@@ -58,5 +58,3 @@ Para organizar los contenidos, se utiliza el marco de referencia de documentaci�
     [:octicons-arrow-right-24: Índice de Referencias](../references/)
 
 </div>
-
-[Aprende más sobre este repositorio](../iniciar.html){ .md-button .md-button--primary }
