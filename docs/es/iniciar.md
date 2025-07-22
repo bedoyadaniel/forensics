@@ -12,7 +12,7 @@ icon: material/source-commit-start
 ---
 
 
-# ¿Por dónde iniciar?
+# Primeros pasos
 
 ## ¿Qué es este repositorio de documentación?
 
