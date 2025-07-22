@@ -25,7 +25,7 @@ Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y prec
 
     ---
 
-    Describe **qué es el consentimiento informado** en el contexto de investigaciones forenses para la defensa de los derechos humanos, y **presenta un borrador que puede ser utilizado** por puntos de contacto, analistas y laboratorios forenses para obtener y registrar el consentimiento durante una investigación.
+    Contiene **información sobre los archivos generados por androidqf** al realizar una extracción forense de un dispositivo Android, esto con el objetivo de que una persona analista conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.
 
     [:octicons-arrow-right-24: Diccionario de archivos generados por la herramienta androidqf](01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
 
