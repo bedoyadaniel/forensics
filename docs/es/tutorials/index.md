@@ -7,7 +7,7 @@ lang: es
 tags: [indice, intro]
 last_updated: 2025-07-21
 some_url:
-icon: material/toolbox
+icon: material/school
 ---
 
 # Tutoriales

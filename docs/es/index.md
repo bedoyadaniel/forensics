@@ -21,30 +21,41 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
 
 ## Contenidos publicados
 
-### [Explainers](../explainers/index.html)
+En apego a la metodología diátaxis, hemos organizado nuestros contenidos en las siguientes categorías: 
 
-**Aprendizaje de aspectos teóricos** a través de contexto sobre un tema específico. Permite comprender el “porqué”.
+<div class="grid cards" markdown>
 
-* [Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
-* [Riesgos y amenazas para laboratorios forenses de la sociedad civil](../explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
-* [Principios para forense basada en logs en dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html)
+-   :material-telescope:{ .lg .middle } __Explainers__
 
-### [Tutoriales](../tutorials/index.html)
+    ---
 
- **Aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad.
+    __Aprendizaje de aspectos teóricos__ a través de contexto sobre un tema específico. 
 
-* Aún no se ha publicado ningún tutorial.
+    [:octicons-arrow-right-24: Índice de explainers](../explainers/)
 
-### [Guías how-to](../how-tos/index.html)
+-   :material-wrench-cog:{ .lg .middle } __Guías How-To__
 
- Recetas para **ejecutar tareas a través de instrucciones paso a paso.**
+    ---
 
-* [¿Cómo obtener y documentar consentimiento informado para una investigación forense?](../how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
+    Recetas para **ejecutar tareas a través de instrucciones paso a paso.**
 
-### [Referencias](../references/index.html)
+    [:octicons-arrow-right-24: Íncide de guías how-to](../how-tos/)
 
-**Conocimiento teórico necesario para ejecutar una tarea de forma confiable y sin errores**.
+-   :material-telescope:{ .lg .middle } __Tutoriales__
 
-* [Diccionario de archivos generados por la herramienta androidqf](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
+    ---
 
+    **Aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. 
+
+    [:octicons-arrow-right-24: Índice de tutoriales](../tutoriales/)
+
+-   :material-telescope:{ .lg .middle } __Referencias__
+
+    ---
+
+    Conocimiento teórico que facilita la ejecución de una tarea de forma confiable y sin errores. 
+
+    [:octicons-arrow-right-24: Índice de Referencias](../references/)
+
+</div>
 
