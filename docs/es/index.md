@@ -59,4 +59,4 @@ En apego a la metodología diátaxis, hemos organizado nuestros contenidos en la
 
 </div>
 
-[Aprende más sobre este repositorio](../iniciar.md){ .md-button .md-button--primary }
+[Aprende más sobre este repositorio](../iniciar.html){ .md-button .md-button--primary }
