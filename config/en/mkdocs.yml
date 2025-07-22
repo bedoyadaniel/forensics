@@ -61,7 +61,7 @@ theme:
     - search.share #agrega botón para compartir en la búsqueda
     - navigation.path #Permite ver breadcrumbs, solo versión insider
     - navigation.tabs #Permite visualizar seccions como tabs
-    #- navigation.tabs.sticky #Tabs se mantienen fijos en parte alta de la página
+    - navigation.tabs.sticky #Tabs se mantienen fijos en parte alta de la página
     - navigation.indexes #Navega directamente al index de cada carpeta
     - navigation.instant #Carga recursos internos utilizando XHR, para mejorar eficiencia en carga de páginas
     - navigation.instant.prefetch #Reduce tiempo de carga percibido al cargar páginas internas cuando la persona se posiciona sobre link
