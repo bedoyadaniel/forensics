@@ -16,8 +16,6 @@ En esta sección encontrarás materiales explicativos o explainers. Según [el m
 
 ## Explainers publicados
 
-* [1- Introducción a la forense digital consentida para la defensa de Derechos Humanos](01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
-
-* [2- Riesgos y amenazas para laboratorios forenses de la sociedad civil](02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
-
-* [3- Principios para forense basada en logs en dispositivos Android](03-explainer-forense-logs-android/03-explainer-forense-logs-android.html)
+1. [Introducción a la forense digital consentida para la defensa de Derechos Humanos](01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
+2. [Riesgos y amenazas para laboratorios forenses de la sociedad civil](02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
+3. [Principios para forense basada en logs en dispositivos Android](03-explainer-forense-logs-android/03-explainer-forense-logs-android.html)

@@ -11,8 +11,6 @@ some_url:
 
 # Explainer: Principios para forense basada en logs en dispositivos Android
 
-## Introducción
-
 Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/).
 
 Este recurso en particular se enmarca dentro de la categoría de materiales explicativos, y presenta los **fundamentos de la forense basada en logs para dispositivos Android**, incluyendo una definición de forense basada en logs y una comparación con otros tipos de análisis, así como casos de uso. Este es un **material introductorio que no requiere conocimientos previos**, y se complementa con otras [guías](https://forensics.socialtic.org/how-tos/index.html) de [extracción forense](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#etapa-2-recoleccion-y-adquisicion).
