@@ -39,7 +39,7 @@ Para organizar los contenidos, se utiliza el marco de referencia de documentaci�
 
     Recetas para **ejecutar tareas** a través de instrucciones paso a paso.
 
-    [:octicons-arrow-right-24:   Íncide de guías how-to](../how-tos/)
+    [:octicons-arrow-right-24:   Índice de guías how-to](../how-tos/)
 
 -   :material-school:{ .lg .middle } __Tutoriales__
 
