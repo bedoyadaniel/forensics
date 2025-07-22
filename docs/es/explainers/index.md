@@ -34,7 +34,7 @@ En esta sección encontrarás materiales explicativos o explainers. Según [el m
 
     [:octicons-arrow-right-24: Riesgos y amenazas para laboratorios forenses de la sociedad civil](02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
 
--   :octicons-log-24:{ .lg .middle }      __Principios para forense basada en logs en dispositivos Android__
+-   :octicons-log-24:{ .lg .middle }      __Forense basada en logs en dispositivos Android__
 
     ---
 

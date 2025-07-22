@@ -19,7 +19,7 @@ In this section you will find **explainers**. According to [Diataxis documentati
 
 <div class="grid cards" markdown>
 
--   :octicons-law-24:{ .lg .middle }      __Introduction to consensual forensics for the defense of Human Rights__
+-   :octicons-law-24:{ .lg .middle }      __Introduction to consensual forensics__
 
     ---
 

@@ -17,4 +17,18 @@ En esta sección encontrarás materiales guías paso a paso. Segùn [el marco de
 
 Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y preciso, que sirve de apoyo al completar una tarea, en este caso, llegar de un punto A al Punto B.
 
-[1- Diccionario de archivos generados por la herramienta androidqf](01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
+## Referencias publicadas
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-handshake-simple:{ .lg .middle }      __Diccionario de archivos generados por la herramienta androidqf__
+
+    ---
+
+    Describe **qué es el consentimiento informado** en el contexto de investigaciones forenses para la defensa de los derechos humanos, y **presenta un borrador que puede ser utilizado** por puntos de contacto, analistas y laboratorios forenses para obtener y registrar el consentimiento durante una investigación.
+
+    [:octicons-arrow-right-24: Diccionario de archivos generados por la herramienta androidqf](01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
+
+
+
+</div>

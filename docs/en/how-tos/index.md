@@ -18,4 +18,17 @@ A good example is a cooking recipe, where the focus is to achieve a result, in t
 
 ## Published How-To's
 
-[1-How to obtain and document informed consent?](01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)
+[1-
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-handshake-simple:{ .lg .middle }      __How to obtain and document informed consent?__
+
+    ---
+
+    Describes what is informed consent and **why it is important** in the context of forensic investigations. It also **includes a template that can be adapted** by point of contacts, analysts and forensic labs to obtain and record consent during a forensic investigation.
+
+    [:octicons-arrow-right-24: How to obtain and document informed consent?](01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)
+
+
+
+</div>

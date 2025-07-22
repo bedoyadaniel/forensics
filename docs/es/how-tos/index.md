@@ -18,4 +18,17 @@ Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar
 
 # Guías publicadas
 
-​	[1-¿Cómo obtener y documentar consentimiento informado?](01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-handshake-simple:{ .lg .middle }      __¿Cómo obtener y documentar consentimiento informado?__
+
+    ---
+
+    Describe **qué es el consentimiento informado** en el contexto de investigaciones forenses para la defensa de los derechos humanos, y **presenta un borrador que puede ser utilizado** por puntos de contacto, analistas y laboratorios forenses para obtener y registrar el consentimiento durante una investigación.
+
+    [:octicons-arrow-right-24: ¿Cómo obtener y documentar consentimiento informado?](01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
+
+
+
+</div>
