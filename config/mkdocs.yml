@@ -104,10 +104,12 @@ markdown_extensions:
   - pymdownx.details #cuadros de texto
   - pymdownx.superfences #cuadros de texto
   - attr_list #permite agregar html dentro del markdown
+  - md_in_html #permite desplegar grids
   - pymdownx.blocks.caption #caption para imágenes
   - pymdownx.emoji: #permite agregar íconos y emojies con códigos cortos
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 
 
 

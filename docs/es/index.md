@@ -41,7 +41,7 @@ En apego a la metodología diátaxis, hemos organizado nuestros contenidos en la
 
     [:octicons-arrow-right-24: Íncide de guías how-to](../how-tos/)
 
--   :material-telescope:{ .lg .middle } __Tutoriales__
+-   :material-school:{ .lg .middle } __Tutoriales__
 
     ---
 
