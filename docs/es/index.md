@@ -37,7 +37,7 @@ En apego a la metodología diátaxis, hemos organizado nuestros contenidos en la
 
     ---
 
-    Recetas para **ejecutar tareas a través de instrucciones paso a paso.**
+    Recetas para **ejecutar tareas** a través de instrucciones paso a paso.
 
     [:octicons-arrow-right-24: Íncide de guías how-to](../how-tos/)
 
@@ -53,9 +53,10 @@ En apego a la metodología diátaxis, hemos organizado nuestros contenidos en la
 
     ---
 
-    Conocimiento teórico que facilita la ejecución de una tarea de forma confiable y sin errores. 
+    Conocimiento teórico que **facilita la ejecución de una tarea** de forma confiable y sin errores. 
 
     [:octicons-arrow-right-24: Índice de Referencias](../references/)
 
 </div>
 
+[Aprende más sobre este repositorio](../iniciar.md){ .md-button .md-button--primary }
