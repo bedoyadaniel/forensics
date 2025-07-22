@@ -50,7 +50,7 @@ To organize the contents, we use [the technical documentation framework Diátaxi
 
     [:octicons-arrow-right-24:   Index of tutorials](../en/tutorials/)
 
--   :material-telescope:{ .lg .middle } __References__
+-   :material-ruler:{ .lg .middle } __References__
 
     ---
 

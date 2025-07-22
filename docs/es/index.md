@@ -49,7 +49,7 @@ Para organizar los contenidos, se utiliza el marco de referencia de documentaci√
 
     [:octicons-arrow-right-24:   √çndice de tutoriales](../tutorials/)
 
--   :material-telescope:{ .lg .middle } __Referencias__
+-   :material-ruler:{ .lg .middle } __Referencias__
 
     ---
 
