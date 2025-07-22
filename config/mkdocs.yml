@@ -119,11 +119,11 @@ markdown_extensions:
               - references/*
               - tutorials/*
             exclude:
-              - explainers/index.html
-              - how-tos/index.html
-              - references/index.html
-              - tutorials/index.html
-              - index.html
+              - explainers/index.md
+              - how-tos/index.md
+              - references/index.md
+              - tutorials/index.md
+              - index.md
 
 
 

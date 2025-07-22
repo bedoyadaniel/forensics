@@ -47,7 +47,7 @@ Para organizar los contenidos, se utiliza el marco de referencia de documentaci�
 
     **Aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. 
 
-    [:octicons-arrow-right-24:   Índice de tutoriales](../tutoriales/)
+    [:octicons-arrow-right-24:   Índice de tutoriales](../tutorials/)
 
 -   :material-telescope:{ .lg .middle } __Referencias__
 
