@@ -27,7 +27,7 @@ Digital forensics makes possible the **discovery and examination of digital data
 
     If you want to **learn more about this repository** check our getting started section.
 
-    [:octicons-arrow-right-24: Start here](../getting-started.html)
+    [:octicons-arrow-right-24: Start here](../en/getting-started.html)
 
 
 </div>
