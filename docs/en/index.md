@@ -19,6 +19,19 @@ This is a **technical documentation repository** whose main objective is to esta
 
 Digital forensics makes possible the **discovery and examination of digital data and media** with the goal of identifying, documenting and interpreting data to construct and present reproducible evidence of digital attacks. In this repository we describe standard procedures, aligned with industry best practices, to **generate evidence that can be used to to promote accountability actions**, in order to reduce and expose the impunity with which digital attacks are carried out. 
 
+<div class="grid cards" markdown>
+
+-   :material-robot-confused:{ .lg .middle } __Not sure where to start?__
+
+    ---
+
+    If you want to **learn more about this repository** check our getting started section.
+
+    [:octicons-arrow-right-24: Start here](../getting-started.html)
+
+
+</div>
+
 ## Published contents
 
 To organize the contents, we use [the technical documentation framework Diátaxis](https://diataxis.fr/). Accordingly, we have organized the contents in the following categories: 

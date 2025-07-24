@@ -97,40 +97,6 @@ En apego al marco de referencia Diátaxis, debemos primero identificar la necesi
 
 Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan a las personas lectoras adquirir los conocimientos necesarios para completar tareas en diferentes etapas del proceso de una investigación forense. 
 
-## Recursos destacados
-
-A continuación se listan algunos recursos destacados, y un breve detalle de porqué creemos pueden ser de interés: 
-
-
-<div class="grid cards" markdown>
-
--   :octicons-law-24:{ .lg .middle }      __Introducción a la forense digital consentida__
-
-    ---
-
-    Buen **recurso introductorio** que resume cómo se llevan a cabo las investigaciones forenses consentidas en la sociedad civil, cuáles son algunos de los retos y qué relación tiene con las ciencias forenses en otros contextos.  
-
-    [:octicons-arrow-right-24: Introducción a la forense digital consentida para la defensa de Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
-
--   :fontawesome-solid-handshake-simple:{ .lg .middle }      __¿Cómo obtener y documentar consentimiento informado?__
-
-    ---
-
-    Este recurso te puede ayudar a facilitar la **documentación de un consentimiento informado** antes de una investigación forense. 
-
-    [:octicons-arrow-right-24: ¿Cómo obtener y documentar consentimiento informado?](../how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
-
--   :fontawesome-solid-book-atlas:{ .lg .middle }      __Diccionario de archivos generados por la herramienta androidqf__
-
-    ---
-
-    Si realizas **investigaciones forenses en dispositivos móviles Android utilizando la herramienta androidqf**, te recomendamos agregar este recurso a tus favoritos. 
-
-    [:octicons-arrow-right-24: Diccionario de archivos generados por la herramienta androidqf](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
-
-</div>
-
-
 ## ¿Cómo colaborar con este repositorio? 
 
 Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. Se publican bajo [la licencia MVT](../comunidad/licencia.html), en aras de fortalecer el análisis forense consentido.
