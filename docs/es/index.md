@@ -19,26 +19,6 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
 
 **La forense digital permite descubrir y examinar datos de dispositivos y medios electrónicos** con el objetivo de identificar, recuperar, documentar e interpretar la información digital y su conexión con ataques digitales. En este repositorio se describen procedimientos estándar, apegados a buenas prácticas y enfocados en escenarios donde existe un **consentimiento informado**. Se pretende que a través de estas investigaciones se **genere evidencia forense de ataques digitales** que impulse acciones de **rendición de cuentas**.
 
-<div class="grid cards" markdown>
-
--   :material-robot-confused:{ .lg .middle } __¿No sabes por dónde iniciar?__
-
-    ---
-
-    Si quieres __familiarizarte con el repositorio__ visita la sección de **primeros pasos**. 
-
-    [Inicia aquí](../iniciar.html){ .md-button }
-
--   :material-human-greeting-variant:{ .lg .middle } __¿Te interesa contribuir con este repositorio?__
-
-    ---
-
-    En nuestra sección de comunidad encontrarás información sobre **cómo sumarte a este esfuerzo.** 
-
-    [Comunidad](../comunidad/){ .md-button }
-
-
-</div>
 
 ## Contenidos publicados
 
@@ -77,5 +57,28 @@ Para organizar los contenidos, se utiliza el marco de referencia de documentaci�
     Conocimiento teórico que **facilita la ejecución de una tarea** de forma confiable y sin errores. 
 
     [:octicons-arrow-right-24:   Índice de Referencias](../references/)
+
+</div>
+
+## 
+
+<div class="grid cards" markdown>
+
+-   :material-robot-confused:{ .lg .middle } __¿No sabes por dónde iniciar?__
+
+    ---
+
+    Si quieres __familiarizarte con el repositorio__ visita la sección de **primeros pasos**. 
+
+    [Inicia aquí](../iniciar.html){ .md-button }
+
+-   :material-human-greeting-variant:{ .lg .middle } __¿Te interesa contribuir con este repositorio?__
+
+    ---
+
+    En nuestra sección de comunidad encontrarás información sobre **cómo sumarte a este esfuerzo.** 
+
+    [Comunidad](../comunidad/){ .md-button }
+
 
 </div>
