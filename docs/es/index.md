@@ -19,6 +19,19 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
 
 **La forense digital permite descubrir y examinar datos de dispositivos y medios electrónicos** con el objetivo de identificar, recuperar, documentar e interpretar la información digital y su conexión con ataques digitales. En este repositorio se describen procedimientos estándar, apegados a buenas prácticas y enfocados en escenarios donde existe un **consentimiento informado**. Se pretende que a través de estas investigaciones se **genere evidencia forense de ataques digitales** que impulse acciones de **rendición de cuentas**.
 
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-rocket:{ .lg .middle } __¿Por dónde iniciar?__
+
+    ---
+
+    Si quieres __familiarizarte con el repositorio__ visita la sección de **primeros pasos**. 
+
+    [Inicia aquí](../iniciar.html){ .md-button }
+
+
+</div>
+
 ## Contenidos publicados
 
 Para organizar los contenidos, se utiliza el marco de referencia de documentación técnica [Diátaxis](https://diataxis.fr/). En apego a esta metodología hemos organizado los contenidos de este respositorio en las siguientes categorías: 
