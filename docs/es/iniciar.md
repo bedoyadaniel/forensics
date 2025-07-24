@@ -56,7 +56,7 @@ Para la organización de este repositorio de documentación se utiliza el [marco
     === "Ejemplo"
 
 
-        :octicons-arrow-right-24: Por ejemplo, nuestro primer [explainer sobre forense digital consentida en beneficio de la sociedad civil](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html), presenta información sobre las ciencias forenses y cómo se utiliza en diferentes ámbitos, para luego enfocarse en su práctica dentro de la sociedad civil como una herramienta para la defensa de derechos fundamentales. 
+        Por ejemplo, nuestro primer [explainer sobre forense digital consentida en beneficio de la sociedad civil](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html), presenta información sobre las ciencias forenses y cómo se utiliza en diferentes ámbitos, para luego enfocarse en su práctica dentro de la sociedad civil como una herramienta para la defensa de derechos fundamentales. 
 
 
 -   :material-wrench-cog:{ .lg .middle } __Guías How-To__
@@ -72,7 +72,7 @@ Para la organización de este repositorio de documentación se utiliza el [marco
 
     === "Ejemplo"
 
-        :octicons-arrow-right-24: Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar una tarea, en este caso, preparar un platillo. Asume que la persona ya tiene conocimientos básicos como cortar los alimentos, mezclar con una batidora, etc.
+        Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar una tarea, en este caso, preparar un platillo. Asume que la persona ya tiene conocimientos básicos como cortar los alimentos, mezclar con una batidora, etc.
 
 
 -   :material-school:{ .lg .middle } __Tutoriales__
@@ -88,7 +88,7 @@ Para la organización de este repositorio de documentación se utiliza el [marco
 
     === "Ejemplo"
 
-        :octicons-arrow-right-24: Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B. 
+        Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B. 
 
 
 -   :material-ruler:{ .lg .middle } __Referencias__
@@ -103,7 +103,7 @@ Para la organización de este repositorio de documentación se utiliza el [marco
 
     === "Ejemplo"
 
-        :octicons-arrow-right-24:Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y preciso, que sirve de apoyo al completar una tarea, en este caso, llegar de un punto A al Punto B.
+        Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y preciso, que sirve de apoyo al completar una tarea, en este caso, llegar de un punto A al Punto B.
     
 
 </div>
