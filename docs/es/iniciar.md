@@ -49,14 +49,14 @@ Para la organización de este repositorio de documentación se utiliza el [marco
 
     === "Definición"
 
-    Los explainers son materiales para el **aprendizaje de aspectos teóricos**, que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
+        Los explainers son materiales para el **aprendizaje de aspectos teóricos**, que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
 
-    [Índice de explainers](../explainers/){ .md-button }
+        [Índice de explainers](../explainers/){ .md-button }
 
     === "Ejemplo"
 
 
-    :octicons-arrow-right-24: Por ejemplo, nuestro primer [explainer sobre forense digital consentida en beneficio de la sociedad civil](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html), presenta información sobre las ciencias forenses y cómo se utiliza en diferentes ámbitos, para luego enfocarse en su práctica dentro de la sociedad civil como una herramienta para la defensa de derechos fundamentales. 
+        :octicons-arrow-right-24: Por ejemplo, nuestro primer [explainer sobre forense digital consentida en beneficio de la sociedad civil](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html), presenta información sobre las ciencias forenses y cómo se utiliza en diferentes ámbitos, para luego enfocarse en su práctica dentro de la sociedad civil como una herramienta para la defensa de derechos fundamentales. 
 
 
 -   :material-wrench-cog:{ .lg .middle } __Guías How-To__
@@ -66,13 +66,13 @@ Para la organización de este repositorio de documentación se utiliza el [marco
     === "Definición"
 
 
-    **El objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas. 
+        **El objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas. 
 
-    [Índice de guías how-to](../how-tos/){ .md-button }
+        [Índice de guías how-to](../how-tos/){ .md-button }
 
     === "Ejemplo"
 
-    :octicons-arrow-right-24: Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar una tarea, en este caso, preparar un platillo. Asume que la persona ya tiene conocimientos básicos como cortar los alimentos, mezclar con una batidora, etc.
+        :octicons-arrow-right-24: Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar una tarea, en este caso, preparar un platillo. Asume que la persona ya tiene conocimientos básicos como cortar los alimentos, mezclar con una batidora, etc.
 
 
 -   :material-school:{ .lg .middle } __Tutoriales__
@@ -82,13 +82,13 @@ Para la organización de este repositorio de documentación se utiliza el [marco
     === "Definición"
 
 
-    El tutorial tiene como objetivo el **aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. En otros términos es un **aprender haciendo**. Los tutoriales son actividades guiadas que permiten adquirir habilidades y conocimientos, y cuyo enfoque es el aprendizaje y no el completar una tarea.
+        El tutorial tiene como objetivo el **aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. En otros términos es un **aprender haciendo**. Los tutoriales son actividades guiadas que permiten adquirir habilidades y conocimientos, y cuyo enfoque es el aprendizaje y no el completar una tarea.
 
-    [Índice de tutoriales](../tutorials/){ .md-button }
+        [Índice de tutoriales](../tutorials/){ .md-button }
 
     === "Ejemplo"
 
-    :octicons-arrow-right-24: Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B. 
+        :octicons-arrow-right-24: Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B. 
 
 
 -   :material-ruler:{ .lg .middle } __Referencias__
@@ -97,13 +97,13 @@ Para la organización de este repositorio de documentación se utiliza el [marco
 
     === "Definición"
 
-    Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea** de forma confiable y sin errores. 
+        Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea** de forma confiable y sin errores. 
 
-    [Índice de referencias](../references/){ .md-button }
+        [Índice de referencias](../references/){ .md-button }
 
     === "Ejemplo"
 
-    :octicons-arrow-right-24:Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y preciso, que sirve de apoyo al completar una tarea, en este caso, llegar de un punto A al Punto B.
+        :octicons-arrow-right-24:Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y preciso, que sirve de apoyo al completar una tarea, en este caso, llegar de un punto A al Punto B.
     
 
 </div>
