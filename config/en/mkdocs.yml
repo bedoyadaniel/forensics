@@ -41,6 +41,7 @@ theme:
   name: material
   custom_dir: '../../overrides/'
   logo: assets/img/ST_logo-01.png
+  favicon: assets/img/ST_logo-01-bn.png
   language: en
   palette:
     - media: "(prefers-color-scheme: dark)"
@@ -68,6 +69,7 @@ theme:
     - navigation.sections #evita comprimir items del menú en grupos
     - navigation.top #Agrega botón para regresar al inicio
     - navigation.tracking #Sigue la navegación del usuario en la URL
+    - navigation.footer #Permite navegar al recurso siguiente y anterior desde el footer
     - content.action.view #Agrega botón de ver fuente
     - content.action.edit #Agrega botón de edición
     - toc.follow #Sigue la navegación del usuario en la tabla de contenidos 
@@ -79,10 +81,10 @@ theme:
 extra:
   alternate: #configuración de idiomas
     - name: Español
-      link: /
+      link: /index.html
       lang: es
     - name: English
-      link: /en/
+      link: /en/index.html
       lang: en   
   social:
     - icon: fontawesome/brands/twitter
