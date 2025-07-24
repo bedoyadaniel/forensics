@@ -21,13 +21,21 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-rocket:{ .lg .middle } __¿Por dónde iniciar?__
+-   :material-robot-confused:{ .lg .middle } __¿No sabes por dónde iniciar?__
 
     ---
 
     Si quieres __familiarizarte con el repositorio__ visita la sección de **primeros pasos**. 
 
     [Inicia aquí](../iniciar.html){ .md-button }
+
+-   :material-human-greeting-variant:{ .lg .middle } __¿Te interesa contribuir con este repositorio?__
+
+    ---
+
+    En nuestra sección de comunidad encontrarás información sobre **cómo sumarte a este esfuerzo.** 
+
+    [Comunidad](../comunidad/){ .md-button }
 
 
 </div>
