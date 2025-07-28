@@ -19,13 +19,13 @@ Este recurso en particular se enmarca dentro de la categoría de **guías how-to
 
 Agradecemos la **colaboración** del [laboratorio de seguridad de Reporteros Sin Fronteras](https://rsf.org/en/digital-security-lab), quienes brindaron los insumos iniciales necesarios para la producción de esta guía. 
 
-## ¿Qué son las opciones de desarrollador y porqué son útiles?
+## ¿Qué son y porqué son útiles?
 
 Las [**opciones de desarrollador**](https://developer.android.com/studio/debug/dev-options) hacen referencia a un **menú oculto** del sistema operativo **Android** que permite configurar algunas **funciones adicionales**, pensadas especialmente para apoyar el proceso de [depuración](https://es.wikipedia.org/wiki/Depuraci%C3%B3n_de_programas) durante la **creación de nuevas aplicaciones o cambios en el sistema**. Entre las opciones de desarrollador, también se suelen colocar algunas **configuraciones avanzadas** como por ejemplo, ajustar las preferencias del controlador gráfico o configuraciones avanzadas de redes e incluso **opciones experimentales** que aún están en prueba o desarrollo. 
 
 Desde el punto de vista de **forense digital**, y en particular al hacer [investigaciones basadas en logs](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html) utilizando herramientas como MVT y AndroidQF, las opciones de desarrollador nos **permiten habilitar funciones claves**, como el **[depurado USB](https://es.wikipedia.org/wiki/Depuraci%C3%B3n_de_programas)**, la consola de **ADB** o la **generación** de reportes de errores o ***bug report***. Es por esto que en muchas ocasiones, el **primer paso** será habilitar el menú de opciones de desarrollador. 
 
-## ¿Por qué se habilitan de forma diferente en distintos dispositivos?
+## ¿Por qué hay diferentes formas de habilitarlas?
 
 El sistema operativo Android basa su núcleo en el proyecto de código abierto [*Android Open Source Project*](https://source.android.com/)*.* Sin embargo, la [mayoría de fabricantes utilizan una versión propietaria de Google](https://www.makeuseof.com/tag/android-really-open-source-matter/), sobre la cuál se agregan capas de personalización adicionales, que en la mayoría de casos son también propietarias. Existen algunas alternativas, como por ejemplo [LineageOS](https://lineageos.org/), [Graphene OS](https://grapheneos.org/) o [CalyxOS](https://calyxos.org/), que se basan enteramente en principios de **código abierto** y buscan alejarse de los ecosistemas propietarios. 
 
@@ -42,7 +42,7 @@ El resultado de estos desarrollos adicionales sobre el proyecto base significa q
 * [Xperia UI](https://en.wikipedia.org/wiki/Sony_Xperia): Interfaz de usuario desarrollada por **Sony** para dispositivos [Xperia](https://en.wikipedia.org/wiki/Sony_Xperia).   
 * [Magic OS](https://en.wikipedia.org/wiki/Honor_\(brand\)#MagicOS): Sistema operativo desarrollado por el fabricante [**Honor**](https://en.wikipedia.org/wiki/Honor_\(brand\)), previamente una subsidiaria de **Huawei**. 
 
-## ¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos?
+## Lista de instrucciones paso a paso 
 
 A continuación se muestran los **pasos a seguir** para habilitar el menú de opciones de desarrollador en **diferentes dispositivos**, así como una captura de pantalla de los menús a seguir para poder visualizar este menú. 
 
@@ -57,14 +57,14 @@ Para habilitar las opciones de desarrollador en dispositivos del fabricante **Go
 3. Ubica la información sobre el **Número de compilación** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Google Pixel con Android 13](../assets/enable-dev-options-Google.gif "imagen 1"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Google Pixel con Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Google.gif "imagen 1"){ loading=lazy }
 /// caption
 **Imagen 1**. Pasos para habilitar las opciones de desarrollador en un dispositivo Google Pixel con Android 13.
 ///
 
 Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de **Sistema,** y se **mantendrán habilitadas** hasta que se deshabiliten (desde el menú de opciones de desarrollador).   
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13](../assets/enable-dev-options-Honor.gif "imagen 1"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Honor.gif "imagen 1"){ loading=lazy }
 /// caption
 **Imagen 1**. Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13\.
 ///
@@ -81,7 +81,7 @@ Para habilitar las opciones de desarrollador en dispositivos del fabricante **Ho
 
 Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de **Sistema,** y se **mantendrán habilitadas** hasta que se deshabiliten (desde el menú de opciones de desarrollador).   
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13](../assets/enable-dev-options-Honor.gif "imagen 2"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Honor.gif "imagen 2"){ loading=lazy }
 /// caption
 **Imagen 2**. Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13\.
 ///
@@ -95,7 +95,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Motorola** utiliz
 3. Ubica la información sobre el **Número de compilación* 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Motorola Edge Neo 40 utilizando Hi OS en Android 13](../assets/enable-dev-options-Motorola.gif "imagen 4"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Motorola Edge Neo 40 utilizando Hi OS en Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Motorola.gif "imagen 4"){ loading=lazy }
 /// caption
 **Imagen 3**. Pasos para habilitar las opciones de desarrollador en un dispositivo Motorola Edge Neo 40 utilizando Hi OS en Android 13\.
 ///
@@ -112,7 +112,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Nokia** utilizand
 
 Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de **Sistema,** y se **mantendrán habilitadas** hasta que se deshabiliten (desde el menú de opciones de desarrollador). 
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Nokia G42 5G utilizando Android 13](../assets/enable-dev-options-Nokia.gif "imagen 4"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Nokia G42 5G utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Nokia.gif "imagen 4"){ loading=lazy }
 /// caption
 **Imagen 4**. Pasos para habilitar las opciones de desarrollador en un dispositivo Nokia G42 5G utilizando Android 13\.
 ///
@@ -127,7 +127,7 @@ Para habilitar las opciones de desarrollador en dispositivos **OPPO** utilizando
 3. Ubica la información sobre el **Número de compilación** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo OPPO Reno 10 utilizando Android 13](../assets/enable-dev-options-Nokia.gif "imagen 5"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo OPPO Reno 10 utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Nokia.gif "imagen 5"){ loading=lazy }
 /// caption
 **Imagen 5**. Pasos para habilitar las opciones de desarrollador en un dispositivo OPPO Reno 10 utilizando Android 13\.
 ///
@@ -142,7 +142,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Realme** utilizan
 4. Ubica la información sobre el **Número de compilación** 🔢   
 5. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13](../assets/enable-dev-options-Realme.gif "imagen 7"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Realme.gif "imagen 7"){ loading=lazy }
 /// caption
 **Imagen 6**. Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13
 ///
@@ -157,7 +157,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Samsung** utiliza
 4. Ubica la información sobre el **Número de compilación** 🔢   
 5. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../assets/enable-dev-options-Samsung.gif "imagen 7"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Samsung.gif "imagen 7"){ loading=lazy }
 /// caption
 **Imagen 7**. Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13///
 
@@ -170,7 +170,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Xperia** utilizan
 3. Ubica la información sobre el **Número de compilación** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14](../assets/enable-dev-options-Xperia.gif "imagen 8"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xperia.gif "imagen 8"){ loading=lazy }
 /// caption
 **Imagen 8**. Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14\.
 ///
@@ -185,7 +185,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Tecno Spark** uti
 3. Ubica la información sobre el **Número de compilación** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13\.](../assets/enable-dev-options-Tecno.gif "imagen 9"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13\.](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Tecno.gif "imagen 9"){ loading=lazy }
 /// caption
 **Imagen 9**. Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13\.
 ///
@@ -199,7 +199,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Xiaomi** utilizan
 3. Ubica la información sobre el **Versión de Sistema Operativo** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![PPasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi.](../assets/enable-dev-options-Xiaomi.gif "imagen 10"){ loading=lazy }
+![PPasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi.](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xiaomi.gif "imagen 10"){ loading=lazy }
 /// caption
 **imagen 10**. Pasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi\.
 ///
