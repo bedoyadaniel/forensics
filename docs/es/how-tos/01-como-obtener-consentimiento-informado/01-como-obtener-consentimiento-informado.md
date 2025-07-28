@@ -20,7 +20,7 @@ El presente documento se clasifica como una [guía how-to](https://diataxis.fr/h
 
 
 !!! abstract "Consideración Legal"
-    En esta guía **no detalla el procedimiento de cadena de custodia.** Este importante proceso se     describirá más adelante en un material diferente.  
+    En esta guía **no detalla el procedimiento de cadena de custodia.** Este importante proceso se describirá en un material diferente.  
 
 
 Agradecemos las referencias y revisiones de la comunidad de práctica que permitieron la elaboración de este documento. 
