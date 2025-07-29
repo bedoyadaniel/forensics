@@ -64,12 +64,6 @@ Para habilitar las opciones de desarrollador en dispositivos del fabricante **Go
 
 Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de **Sistema,** y se **mantendrán habilitadas** hasta que se deshabiliten (desde el menú de opciones de desarrollador).   
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Honor.gif "imagen 1"){ loading=lazy }
-/// caption
-**Imagen 1**. Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13\.
-///
-
-
 ### Honor Magic 5 Lite (Magic OS) 
 
 Para habilitar las opciones de desarrollador en dispositivos del fabricante **Honor** utilizando la versión de Android **Magic OS** puedes seguir los siguientes pasos, ejemplificados también en la **imagen 2\.** 
@@ -118,23 +112,9 @@ Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apar
 ///
 
 
-### Oppo Reno 10 (Color OS)
-
-Para habilitar las opciones de desarrollador en dispositivos **OPPO** utilizando la versión de Android 13 o superior puedes seguir los siguientes pasos, ejemplificados también en la **imagen 5\.** 
-
-1. Abre el menú de **Ajustes**  ⚙️  
-2. Navega hasta la última opción **Acerca del teléfono**  📱 
-3. Ubica la información sobre el **Número de compilación** 🔢   
-4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
-
-![Pasos para habilitar las opciones de desarrollador en un dispositivo OPPO Reno 10 utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Nokia.gif "imagen 5"){ loading=lazy }
-/// caption
-**Imagen 5**. Pasos para habilitar las opciones de desarrollador en un dispositivo OPPO Reno 10 utilizando Android 13\.
-///
-
 ### Realme GT2 Pro (Realme UI)
 
-Para habilitar las opciones de desarrollador en dispositivos **Realme** utilizando la capa de personalización Realme UI puedes seguir los siguientes pasos, ejemplificados también en la **imagen 6\.** 
+Para habilitar las opciones de desarrollador en dispositivos **Realme** utilizando la capa de personalización Realme UI puedes seguir los siguientes pasos, ejemplificados también en la **imagen 5\.** 
 
 1. Abre el menú de **Ajustes** ⚙️  
 2. Navega hasta la última opción **Acerca del teléfono** 📱  
@@ -142,14 +122,14 @@ Para habilitar las opciones de desarrollador en dispositivos **Realme** utilizan
 4. Ubica la información sobre el **Número de compilación** 🔢   
 5. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Realme.gif "imagen 7"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Realme.gif "imagen 5"){ loading=lazy }
 /// caption
-**Imagen 6**. Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13
+**Imagen 5**. Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13
 ///
 
 ### Samsung Galaxy A54 5G (One UI)
 
-Para habilitar las opciones de desarrollador en dispositivos **Samsung** utilizando la capa de personalización One UI puedes seguir los siguientes pasos, ejemplificados también en la **imagen 7\.** 
+Para habilitar las opciones de desarrollador en dispositivos **Samsung** utilizando la capa de personalización One UI puedes seguir los siguientes pasos, ejemplificados también en la **imagen 6\.** 
 
 1. Abre el menú de **Ajustes ⚙️**  
 2. Navega hasta la última opción **Acerca del teléfono** 📱  
@@ -157,51 +137,51 @@ Para habilitar las opciones de desarrollador en dispositivos **Samsung** utiliza
 4. Ubica la información sobre el **Número de compilación** 🔢   
 5. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Samsung.gif "imagen 7"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Samsung.gif "imagen 6"){ loading=lazy }
 /// caption
-**Imagen 7**. Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13///
+**Imagen 6**. Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13///
 
 ### Sony Xperia 10 V (Xperia UI)
 
-Para habilitar las opciones de desarrollador en dispositivos **Xperia** utilizando la capa de personalización Xperia UI puedes seguir los siguientes pasos, ejemplificados también en la **imagen 8\.** 
+Para habilitar las opciones de desarrollador en dispositivos **Xperia** utilizando la capa de personalización Xperia UI puedes seguir los siguientes pasos, ejemplificados también en la **imagen 7\.** 
 
 1. Abre el menú de **Ajustes** ⚙️  
 2. Navega hasta la última opción **Acerca del teléfono** 📱  
 3. Ubica la información sobre el **Número de compilación** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xperia.gif "imagen 8"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xperia.gif "imagen 7"){ loading=lazy }
 /// caption
-**Imagen 8**. Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14\.
+**Imagen 7**. Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14\.
 ///
 
 
 ### Tecno Spark Go 2023 (Hi OS)
 
-Para habilitar las opciones de desarrollador en dispositivos **Tecno Spark** utilizando la capa de personalización Hi OS puedes seguir los siguientes pasos, ejemplificados también en la **imagen 9\.** 
+Para habilitar las opciones de desarrollador en dispositivos **Tecno Spark** utilizando la capa de personalización Hi OS puedes seguir los siguientes pasos, ejemplificados también en la **imagen 8\.** 
 
 1. Abre el menú de **Ajustes** ⚙️  
 2. Navega hasta la opción **Mi Teléfono** 📱  
 3. Ubica la información sobre el **Número de compilación** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13\.](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Tecno.gif "imagen 9"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13\.](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Tecno.gif "imagen 8"){ loading=lazy }
 /// caption
-**Imagen 9**. Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13\.
+**Imagen 8**. Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13\.
 ///
 
 ### Xiaomi 13T (Hyper OS)
 
-Para habilitar las opciones de desarrollador en dispositivos **Xiaomi** utilizando la capa de personalización Hyper OS puedes seguir los siguientes pasos, ejemplificados también en la **imagen 10\.** 
+Para habilitar las opciones de desarrollador en dispositivos **Xiaomi** utilizando la capa de personalización Hyper OS puedes seguir los siguientes pasos, ejemplificados también en la **imagen 9.** 
 
 1. Abre el menú de **Ajustes** ⚙️  
 2. Ingresa a la opción de **Acerca del teléfono** 📱  
 3. Ubica la información sobre el **Versión de Sistema Operativo** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![PPasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi.](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xiaomi.gif "imagen 10"){ loading=lazy }
+![PPasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi.](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xiaomi.gif "imagen 9"){ loading=lazy }
 /// caption
-**imagen 10**. Pasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi\.
+**imagen 9**. Pasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi\.
 ///
 
 Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de **Opciones avanzadas,** y se **mantendrán habilitadas** hasta que se deshabiliten (desde el menú de opciones de desarrollador). 
