@@ -137,7 +137,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Samsung** utiliza
 4. Ubica la información sobre el **Número de compilación** 🔢   
 5. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Samsung.gif "imagen 6"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnB4bTJ0dWpnaWVsY2s0aWVnYTZyejN3a3N1bnhwZnV2NW10cGN2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ctCvv5Is6UZ6CEhQ4D/giphy.gif "imagen 6"){ loading=lazy }
 /// caption
 **Imagen 6**. Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13
 ///
