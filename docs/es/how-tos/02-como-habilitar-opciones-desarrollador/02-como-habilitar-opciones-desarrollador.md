@@ -151,7 +151,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Xperia** utilizan
 3. Ubica la información sobre el **Número de compilación** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xperia.gif "imagen 7"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Sony.gif "imagen 7"){ loading=lazy }
 /// caption
 **Imagen 7**. Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14\.
 ///
