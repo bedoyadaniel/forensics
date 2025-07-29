@@ -139,7 +139,8 @@ Para habilitar las opciones de desarrollador en dispositivos **Samsung** utiliza
 
 ![Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Samsung.gif "imagen 6"){ loading=lazy }
 /// caption
-**Imagen 6**. Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13///
+**Imagen 6**. Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13
+///
 
 ### Sony Xperia 10 V (Xperia UI)
 
