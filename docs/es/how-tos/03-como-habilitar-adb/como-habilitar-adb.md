@@ -54,7 +54,7 @@ Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habil
 4. Habilita la primera opción **Depuración por USB 🖥️**    
 5. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
-![ Pasos para habilitar ADB en un dispositivo Google Pixel con Android 13](../03-como-habilitar-adb/assets/activating-adb-honor-magic-lite.gif "imagen 1"){: style="height:216px;width:480px"}
+![ Pasos para habilitar ADB en un dispositivo Google Pixel con Android 13](../03-como-habilitar-adb/assets/activating-adb-honor-magic-lite.gif "imagen 1"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 1**. Pasos para habilitar ADB en un dispositivo Google Pixel con Android 13.
 ///
@@ -71,7 +71,7 @@ Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habil
 4. Habilita la primera opción **Depuración por USB 🖥️**    
 5. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
-![Pasos para habilitar ADB en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13](../03-como-habilitar-adb/assets/activating-adb-honor-magic-lite.gif "imagen 2"){: style="height:216px;width:480px"}
+![Pasos para habilitar ADB en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13](../03-como-habilitar-adb/assets/activating-adb-honor-magic-lite.gif "imagen 2"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 2**.  Pasos para habilitar ADB en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13.
 ///
@@ -87,7 +87,7 @@ Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habil
 4. Habilita la primera opción **Depuración por USB 🖥️**    
 5. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
-![Pasos para habilitar ADB en un dispositivo Motorola Edge Neo 40 utilizando Hello UI en Android 13](../03-como-habilitar-adb/assets/activating-adb-motorola-edge-40-neo.gif "imagen 4"){: style="height:216px;width:480px"}
+![Pasos para habilitar ADB en un dispositivo Motorola Edge Neo 40 utilizando Hello UI en Android 13](../03-como-habilitar-adb/assets/activating-adb-motorola-edge-40-neo.gif "imagen 4"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 3**. Pasos para habilitar ADB en un dispositivo Motorola Edge Neo 40 utilizando Hello UI en Android 13\.
 ///
@@ -103,7 +103,7 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 4. Habilita la primera opción **Depuración por USB 🖥️**    
 5. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
-![Pasos para habilitar ADB en un dispositivo Nokia G42 5G utilizando Android 13\.](../03-como-habilitar-adb/assets/activating-adb-nokia-g42.gif "imagen 4"){: style="height:216px;width:480px"}
+![Pasos para habilitar ADB en un dispositivo Nokia G42 5G utilizando Android 13\.](../03-como-habilitar-adb/assets/activating-adb-nokia-g42.gif "imagen 4"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 4**. Pasos para habilitar ADB en un dispositivo Nokia G42 5G utilizando Android 13\.
 ///
@@ -118,7 +118,7 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 4. Habilita la tercera opción **Depuración por USB 🖥️**    
 5. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
-![Pasos para habilitar ADB en un dispositivo OPPO Reno 10 utilizando Android 13](../03-como-habilitar-adb/assets/activating-adb-oppo-reno10-5g.gif "imagen 5"){: style="height:216px;width:480px"}
+![Pasos para habilitar ADB en un dispositivo OPPO Reno 10 utilizando Android 13](../03-como-habilitar-adb/assets/activating-adb-oppo-reno10-5g.gif "imagen 5"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 5**. Pasos para habilitar ADB en un dispositivo OPPO Reno 10 utilizando Android 13
 ///
@@ -135,7 +135,7 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 5. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
 
-![Pasos para habilitar ADB en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13](../03-como-habilitar-adb/assets/activating-adb-realme-gt2-pro.gif "imagen 6"){: style="height:216px;width:480px"}
+![Pasos para habilitar ADB en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13](../03-como-habilitar-adb/assets/activating-adb-realme-gt2-pro.gif "imagen 6"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 6**. Pasos para habilitar ADB en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13
 ///
@@ -149,7 +149,7 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 3. Habilita la tercera opción **Depuración por USB 🖥️**    
 4. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
-![PPasos para habilitar ADB en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../03-como-habilitar-adb/assets/activating-adb-samsung-galaxy-a54-5g.gif "imagen 7"){: style="height:216px;width:480px"}
+![PPasos para habilitar ADB en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../03-como-habilitar-adb/assets/activating-adb-samsung-galaxy-a54-5g.gif "imagen 7"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 7**. Pasos para habilitar ADB en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13
 ///
@@ -164,7 +164,7 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 4. Habilita la tercera opción **Depuración por USB 🖥️**    
 5. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
-![Pasos para habilitar ADB en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14\.](../03-como-habilitar-adb/assets/activating-adb-sony-xperia-10-v.gif "imagen 8"){: style="height:216px;width:480px"}
+![Pasos para habilitar ADB en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14\.](../03-como-habilitar-adb/assets/activating-adb-sony-xperia-10-v.gif "imagen 8"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 8**. Pasos para habilitar ADB en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14\.
 ///
@@ -180,7 +180,7 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 4. Habilita la tercera opción **Depuración por USB 🖥️**    
 5. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
-![Pasos para habilitar ADB en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13](../03-como-habilitar-adb/assets/activating-adb-tecno-spark-go-2023.gif "imagen 9"){: style="height:216px;width:480px"}
+![Pasos para habilitar ADB en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13](../03-como-habilitar-adb/assets/activating-adb-tecno-spark-go-2023.gif "imagen 9"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 9**. Pasos para habilitar ADB en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13.
 ///
@@ -195,7 +195,7 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 4. Habilita la tercera opción **Depuración por USB 🖥️**    
 5. **Confirma** que deseas habilitar la depuración por USB en el menú emergente  ✅
 
-![Pasos para habilitar ADB en un dispositivo Xiaomi 13T.](../03-como-habilitar-adb/assets/activating-adb-xiaomi-13t.gif "imagen 10"){: style="height:216px;width:480px"}
+![Pasos para habilitar ADB en un dispositivo Xiaomi 13T.](../03-como-habilitar-adb/assets/activating-adb-xiaomi-13t.gif "imagen 10"){: style="height:480x;width:216px"}
 /// caption
 **imagen 10**. Pasos para habilitar ADB en un dispositivo Xiaomi 13T.
 ///
