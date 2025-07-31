@@ -25,7 +25,6 @@ nav:
     - ¿Cómo obtener y documentar consentimiento informado?: 'how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.md'
     - ¿Cómo habilitar las opciones de desarrollador en Android?: 'how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md'  
     - ¿Cómo habilitar ADB en Android?: 'how-tos/03-como-habilitar-adb/como-habilitar-adb.md'  
-
   - Referencias:
     - Inicio: 'references/index.md'
     - Diccionario AndroidQF: 'references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md'
@@ -72,6 +71,7 @@ theme:
     - navigation.sections #evita comprimir items del menú en grupos
     - navigation.top #Agrega botón para regresar al inicio
     - navigation.tracking #Sigue la navegación del usuario en la URL
+    - navigation.footer #Agrega botones de contenido actual y contenido siguiente
     - content.action.view #Agrega botón de ver fuente
     - content.action.edit #Agrega botón de edición
     - toc.follow #Sigue la navegación del usuario en la tabla de contenidos 

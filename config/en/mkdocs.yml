@@ -73,7 +73,8 @@ theme:
     - content.action.edit #Agrega botón de edición
     - toc.follow #Sigue la navegación del usuario en la tabla de contenidos 
     - toc.integrate #La tabla de contenidos está integrada a la barra de  la izquierda
-   
+    - navigation.footer #Agrega botones de contenido actual y contenido siguiente
+
 
 
 
