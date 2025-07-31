@@ -1683,19 +1683,10 @@
 
 
 <h1 id="guia-como-habilitar-adb-en-diferentes-dispositivos-android">Guía: ¿Cómo habilitar ADB en diferentes dispositivos Android?</h1>
-<div class="admonition tip">
+<div class="admonition info">
 <p class="admonition-title">Sobre este recurso</p>
-<p>Esta guía paso a paso presenta las instrucciones que permiten habilitar la ADB, también conocido como depuración USB, en diferentes marcas y modelos de dispositivos Android.   </p>
-</div>
-<div class="grid cards">
-<ul>
-<li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h180c-22.7-31.5-36-70.2-36-112 0-100.6 77.4-183.2 176-191.3v-38.1c0-17-6.7-33.3-18.7-45.3L290.7 18.7C278.7 6.7 262.5 0 245.5 0zm261.5 176H264c-13.3 0-24-10.7-24-24V58.5zM432 544a144 144 0 1 0 0-288 144 144 0 1 0 0 288m0-100a20 20 0 1 1 0 40 20 20 0 1 1 0-40m0-100c-11.6 0-21.3 8.2-23.5 19.2-1.8 8.7-10.2 14.3-18.9 12.5s-14.3-10.2-12.5-18.9c5.2-25.6 27.8-44.8 54.9-44.8 30.9 0 56 25.1 56 56 0 19.8-11.7 37.8-29.8 45.9l-10.4 4.6c-1.2 7.7-7.8 13.5-15.8 13.5-8.8 0-16-7.2-16-16 0-11.2 6.6-21.3 16.8-25.9l12.4-5.5c6.6-2.9 10.8-9.4 10.8-16.6 0-13.3-10.7-24-24-24"/></svg></span> <strong>Acerca de este recurso:</strong></p>
-<hr />
-<p>Esta guía paso a paso presenta las instrucciones que permiten habilitar la ADB, también conocido como depuración USB, en diferentes marcas y modelos de dispositivos Android.  </p>
-<p><a data-preview="" href="#guía-cómo-habilitar-adb-en-diferentes-dispositivos-android"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Llévame a las instrucciones</a></p>
-</li>
-</ul>
+<p>Esta guía paso a paso presenta las instrucciones que permiten habilitar la ADB, también conocido como depuración USB, en diferentes marcas y modelos de dispositivos Android.
+<a data-preview="" href="#guía-cómo-habilitar-adb-en-diferentes-dispositivos-android"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Llévame a las instrucciones</a>   </p>
 </div>
 <p>Este documento forma <strong>parte de un repositorio de documentación técnica</strong> que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para <strong>impulsar el análisis forense consentido en beneficio de la sociedad civil</strong>. Para organizar los contenidos, se utiliza el <a href="https://diataxis.fr/">marco de referencia de documentación técnica Diataxis</a>.</p>
 <p>Este recurso en particular se enmarca dentro de la categoría de <strong>guías how-to</strong>, y muestra los pasos a seguir para <strong>habilitar la depuración por USB o <em>Android Debug Bridge</em> en diferentes dispositivos Android</strong>, así como una breve explicación de <strong>qué es la depuración por USB,</strong> y <strong>porqué  es útil</strong> al hacer forense digital. Este es un <strong>material introductorio</strong>, complementario a otros recursos, como el <a href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html">explainer de forense basada en log para dispositivos Android</a> y la <a href="../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.html">guía para habilitar las opciones de desarrollador</a> ; y <strong>forma parte de los pasos a seguir para realizar un triaje inicial</strong>.   </p>
@@ -1708,7 +1699,8 @@
 <p>A continuación se muestran los <strong>pasos a seguir en diferentes modelos y versiones</strong> del sistema operativo Android. </p>
 <div class="admonition question">
 <p class="admonition-title">¿Por qué cambian las instrucciones entre diferentes dispositivos?</p>
-<p>El sistema operativo Android basa su núcleo en el proyecto de código abierto <a href="https://source.android.com/"><em>Android Open Source Project</em></a><em>.</em> Sin embargo, la <a href="https://www.makeuseof.com/tag/android-really-open-source-matter/">mayoría de fabricantes utilizan una versión propietaria de Google</a>, sobre la cuál se agregan capas de personalización adicionales, que en la mayoría de casos son también propietarias.  </p>
+<p>El sistema operativo Android basa su núcleo en el proyecto de código abierto <a href="https://source.android.com/"><em>Android Open Source Project</em></a><em>.</em> Sin embargo, la <a href="https://www.makeuseof.com/tag/android-really-open-source-matter/">mayoría de fabricantes utilizan una versión propietaria de Google</a>, sobre la cuál se agregan capas de personalización adicionales, que en la mayoría de casos son también propietarias. 
+<a data-preview="" href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.html#por-qué-hay-diferentes-formas-de-habilitarlas"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Lee más al respecto aquí</a>   </p>
 </div>
 <h3 id="google-pixel-os">Google (Pixel OS)</h3>
 <p>Para habilitar <strong>ADB</strong> es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos <strong>pasos para habilitar las opciones de desarrollador</strong>. <br />
