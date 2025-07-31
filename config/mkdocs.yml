@@ -130,6 +130,6 @@ markdown_extensions:
               - references/index.md
               - tutorials/index.md
               - index.md
-
-
-
+        - sources: 
+            include:
+              - how-tos/*

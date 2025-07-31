@@ -14,8 +14,8 @@ some_url:
 
 !!! info "Sobre este recurso"
 
-    Esta guía paso a paso presenta las instrucciones que permiten habilitar la ADB, también conocido como depuración USB, en diferentes marcas y modelos de dispositivos Android.
-    [:octicons-arrow-right-24: Llévame a las instrucciones](#guía-cómo-habilitar-adb-en-diferentes-dispositivos-android)   
+    Esta guía paso a paso presenta las **instrucciones que permiten habilitar la ADB (también conocida como depuración USB) en diferentes marcas** y modelos de dispositivos Android.
+    [:octicons-arrow-right-24: Llévame a las instrucciones](#cómo-habilitar-adb)   
 
 
 Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/).
@@ -42,6 +42,7 @@ A continuación se muestran los **pasos a seguir en diferentes modelos y version
 !!! question "¿Por qué cambian las instrucciones entre diferentes dispositivos?"
 
     El sistema operativo Android basa su núcleo en el proyecto de código abierto [*Android Open Source Project*](https://source.android.com/)*.* Sin embargo, la [mayoría de fabricantes utilizan una versión propietaria de Google](https://www.makeuseof.com/tag/android-really-open-source-matter/), sobre la cuál se agregan capas de personalización adicionales, que en la mayoría de casos son también propietarias. 
+
     [:octicons-arrow-right-24: Lee más al respecto aquí](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#por-qué-hay-diferentes-formas-de-habilitarlas)   
 
 
