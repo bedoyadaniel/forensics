@@ -48,7 +48,7 @@ A continuación se muestran los **pasos a seguir** para habilitar el menú de op
 
 
 
-### :material-google: Google (Pixel OS) 
+### Google (Pixel OS) 
 
 Para habilitar las opciones de desarrollador en dispositivos del fabricante **Google** utilizando **Pixel OS** puedes seguir los siguientes pasos, ejemplificados también en la **imagen 1\.** 
 
@@ -64,7 +64,7 @@ Para habilitar las opciones de desarrollador en dispositivos del fabricante **Go
 
 Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de **Sistema,** y se **mantendrán habilitadas** hasta que se deshabiliten (desde el menú de opciones de desarrollador).   
 
-### :simple-honor: Honor (Magic OS) 
+### Honor (Magic OS) 
 
 Para habilitar las opciones de desarrollador en dispositivos del fabricante **Honor** utilizando la versión de Android **Magic OS** puedes seguir los siguientes pasos, ejemplificados también en la **imagen 2\.** 
 
@@ -80,7 +80,7 @@ Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apar
 **Imagen 2**. Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13\.
 ///
 
-### :simple-motorola: Motorola (Hello UI)
+### Motorola (Hello UI)
 
 Para habilitar las opciones de desarrollador en dispositivos **Motorola** utilizando la versión 13 de Android puedes seguir los siguientes pasos, ejemplificados también en la **imagen 3\.** 
 
@@ -95,7 +95,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Motorola** utiliz
 ///
 
 
-### :simple-nokia: Nokia  
+### Nokia  
 
 Para habilitar las opciones de desarrollador en dispositivos **Nokia** utilizando la versión de Android 13 o superior puedes seguir los siguientes pasos, ejemplificados también en la **imagen 4\.** 
 
@@ -112,7 +112,7 @@ Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apar
 ///
 
 
-### :simple-android: Realme (Realme UI)
+### Realme (Realme UI)
 
 Para habilitar las opciones de desarrollador en dispositivos **Realme** utilizando la capa de personalización Realme UI puedes seguir los siguientes pasos, ejemplificados también en la **imagen 5\.** 
 
@@ -127,7 +127,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Realme** utilizan
 **Imagen 5**. Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13
 ///
 
-### :simple-samsung: Samsung (One UI)
+### Samsung (One UI)
 
 Para habilitar las opciones de desarrollador en dispositivos **Samsung** utilizando la capa de personalización One UI puedes seguir los siguientes pasos, ejemplificados también en la **imagen 6\.** 
 
@@ -142,7 +142,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Samsung** utiliza
 **Imagen 6**. Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13
 ///
 
-### :simple-sony: Sony (Xperia UI)
+### Sony (Xperia UI)
 
 Para habilitar las opciones de desarrollador en dispositivos **Xperia** utilizando la capa de personalización Xperia UI puedes seguir los siguientes pasos, ejemplificados también en la **imagen 7\.** 
 
@@ -157,7 +157,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Xperia** utilizan
 ///
 
 
-### :simple-android: Tecno (Hi OS)
+### Tecno (Hi OS)
 
 Para habilitar las opciones de desarrollador en dispositivos **Tecno Spark** utilizando la capa de personalización Hi OS puedes seguir los siguientes pasos, ejemplificados también en la **imagen 8\.** 
 
@@ -171,7 +171,7 @@ Para habilitar las opciones de desarrollador en dispositivos **Tecno Spark** uti
 **Imagen 8**. Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13\.
 ///
 
-### :simple-xiaomi: Xiaomi (Hyper OS)
+### Xiaomi (Hyper OS)
 
 Para habilitar las opciones de desarrollador en dispositivos **Xiaomi** utilizando la capa de personalización Hyper OS puedes seguir los siguientes pasos, ejemplificados también en la **imagen 9.** 
 
