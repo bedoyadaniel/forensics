@@ -112,16 +112,28 @@ markdown_extensions:
   - material.extensions.preview: #configuration for instant previews
       configurations:
         - sources: 
-            exclude:
-              - explainers/index.md
-              - how-tos/index.md
-              - references/index.md
-              - tutorials/index.md
-              - index.md
-        - targets: 
             include:
               - communidad/*
               - explainers/*
               - how-tos/*
               - references/*
               - tutorials/*
+            exclude:
+              - explainers/index.md
+              - how-tos/index.md
+              - references/index.md
+              - tutorials/index.md
+              - index.md
+          targets: 
+            include:
+              - communidad/*
+              - explainers/*
+              - how-tos/*
+              - references/*
+              - tutorials/*
+            exclude:
+              - explainers/index.md
+              - how-tos/index.md
+              - references/index.md
+              - tutorials/index.md
+              - index.md
