@@ -12,10 +12,22 @@ some_url:
 
 # Guía: ¿Cómo habilitar ADB en diferentes dispositivos Android?
 
-!!! tip "Sobre este recurso :fontawesome-solid-book-skull:"
+!!! tip "Sobre este recurso"
 
-    Esta **guía paso a paso** presenta los **pasos necesarios para habilitar la ADB o *Android Debug Bridge* ** en diferentes marcas y modelos de dispositivos Android.   
+    Esta guía paso a paso presenta las instrucciones que permiten habilitar la ADB, también conocido como depuración USB, en diferentes marcas y modelos de dispositivos Android.   
 
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-file-circle-question:{ .lg .middle } __Acerca de este recurso:__
+
+    ---
+
+    Esta guía paso a paso presenta las instrucciones que permiten habilitar la ADB, también conocido como depuración USB, en diferentes marcas y modelos de dispositivos Android.  
+
+    [:octicons-arrow-right-24: Llévame a las instrucciones](#guía-cómo-habilitar-adb-en-diferentes-dispositivos-android)
+
+
+</div>
 
 Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/).
 
