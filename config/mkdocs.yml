@@ -117,19 +117,17 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - material.extensions.preview: #configuration for instant previews
       configurations:
-        - targets:
-            include:
-              - communidad/*
-              - explainers/*
-              - how-tos/*
-              - references/*
-              - tutorials/*
+        - sources: 
             exclude:
               - explainers/index.md
               - how-tos/index.md
               - references/index.md
               - tutorials/index.md
               - index.md
-        - sources: 
+          targets: 
             include:
+              - communidad/*
+              - explainers/*
               - how-tos/*
+              - references/*
+              - tutorials/*
