@@ -124,7 +124,7 @@ markdown_extensions:
               - references/index.md
               - tutorials/index.md
               - index.md
-          targets: 
+        - targets: 
             include:
               - communidad/*
               - explainers/*
