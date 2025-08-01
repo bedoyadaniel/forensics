@@ -44,13 +44,13 @@ Para poder realizar una extracción con AndroidQF es **indispensable** considera
 
 A continuación se presentan los pasos detallados para realizar la extracción forense:
 
-### :material-numeric-1: Descargar el binario en AndroidQF
+### :material-numeric-1-box: Descargar el binario en AndroidQF
 
 * **Descarga la versión más reciente del binario**, y que corresponda a la arquitectura del equipo de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: [https://github.com/mvt-project/androidqf/releases/](https://github.com/mvt-project/androidqf/releases/) 
 
 *  **Crea una nueva carpeta** para almacenar la exrtacción del dispositivo. Mueve el binario recién descargado a esta carpeta.
 
-### :material-numeric-2: Asignar permisos de ejecución al binario descargado (**solo Linux y macOS**)
+### :material-numeric-2-box: Asignar permisos de ejecución al binario descargado (**solo Linux y macOS**)
 
 * Si estás utilizando un equipo con Linux o macOS para la extracción, **abre una terminal y navega a la carpeta donde se encuentra el binario**, luego ejecuta:
 
@@ -77,7 +77,7 @@ A continuación se presentan los pasos detallados para realizar la extracción f
         ```
 
 
-### :material-numeric-3: Ejecutar AndroidQF 
+### :material-numeric-3-box: Ejecutar AndroidQF 
 
 En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
@@ -122,7 +122,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 ///
 
 
-### :material-numeric-4: Confirmar y configurar la extracción 
+### :material-numeric-4-box: Confirmar y configurar la extracción 
 
 
 !!! note "Nota"
@@ -221,7 +221,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 ///
 
 
-### :material-numeric-5: Verificar la extracción
+### :material-numeric-5-box: Verificar la extracción
 
 Una vez finalizada la ejecución de AndroidQF, es importante **validar que la adquisición se completó correctamente**. Para ello, realiza los siguientes pasos:
 
