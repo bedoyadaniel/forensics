@@ -1695,18 +1695,20 @@
 <ul>
 <li>
 <p>Si estás utilizando un equipo con Linux o macOS para la extracción, <strong>abre una terminal y navega a la carpeta donde se encuentra el binario</strong>, luego ejecuta:</p>
+<div class="admonition warning">
+<p class="admonition-title">¡Atención!</p>
+<p>Al ejecutar el comando, <strong>asegúrate de completar el nombre</strong> <em>androidqf_</em> con el nombre completo del binario descargado en el paso 1. El comando resultante será algo como: </p>
+<p>```
+chmod +x ./androidqf_v1.7.1_linux_amd64</p>
+</div>
 <p><strong>En linux:</strong></p>
 <div class="highlight"><pre><span></span><code>chmod +x ./androidqf_
 </code></pre></div>
 <p><strong>En macOS:</strong></p>
 <div class="highlight"><pre><span></span><code>chmod +x ./androidqf_
 </code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">¡Atención!</p>
-<p>Al ejecutar el comando, <strong>asegúrate de completar el nombre</strong> <em>androidqf_</em> con el nombre completo del binario descargado en el paso 1. El comando resultante será algo como: </p>
-<div class="highlight"><pre><span></span><code>chmod +x ./androidqf_v1.7.1_linux_amd64
-</code></pre></div>
-</div>
+<pre><code>```
+</code></pre>
 </li>
 </ul>
 <h3 id="ejecutar-androidqf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 10.5a1.5 1.5 0 0 1-1.5 1.5c.84 0 1.5.67 1.5 1.5V15c0 1.11-.89 2-2 2H9v-2h4v-2h-2v-2h2V9H9V7h4c1.11 0 2 .89 2 2m4-6H5c-1.09 0-2 .9-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Ejecutar AndroidQF</h3>
@@ -1717,17 +1719,15 @@
 </li>
 <li>
 <p>Cuando se conecte el teléfono, aparecerá un nuevo mensaje. Selecciona <strong>permitir</strong> cuando el dispositivo Android <strong>solicite permiso de acceso a los datos del dispositivo</strong>, tal y como se muestra en la imagen 1.</p>
-</li>
-</ul>
 <figure>
 <p><img alt=" Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos." src="assets/01-captura-android-permisos-datos.jpg" title="imagen 1" /></p>
 <figcaption>
 <p><strong>Imagen 1</strong>. Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.</p>
 </figcaption>
 </figure>
-<ul>
-<li><strong>Ejecuta</strong> el binario </li>
-</ul>
+</li>
+<li>
+<p><strong>Ejecuta</strong> el binario </p>
 <p><strong>En linux y macOS:</strong></p>
 <div class="highlight"><pre><span></span><code>./androidqf-linux
 ./androidqf-macos
@@ -1738,43 +1738,53 @@
 <p><strong>Imagen 2</strong>. Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción</p>
 </figcaption>
 </figure>
+</li>
+</ul>
 <p><strong>En Windows:</strong></p>
 <ul>
-<li>En la carpeta donde se guardó el binario se puede ejecutar dando doble click primario. Aparecerá una ventana de protección de Windows, da click en <strong>“Más información”</strong> </li>
-</ul>
+<li>
+<p>En la carpeta donde se guardó el binario se puede ejecutar dando doble click primario. Aparecerá una ventana de protección de Windows, da click en <strong>“Más información”</strong> </p>
 <figure>
 <p><img alt="Captura de pantalla de ventana emergente de protección de Windows." src="assets/03-captura-terminal-windows-ejecucion.jpg" title="imagen 3" /></p>
 <figcaption>
 <p><strong>Imagen 3</strong>. Captura de pantalla de ventana emergente de protección de Windows.</p>
 </figcaption>
 </figure>
-<ul>
-<li>Selecciona <strong>“Ejecutar de todas formas”</strong></li>
-</ul>
+</li>
+<li>
+<p>Selecciona <strong>“Ejecutar de todas formas”</strong></p>
 <figure>
 <p><img alt="Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas.." src="assets/04-captura-pantalla-proteccion-windows.jpg" title="imagen 4" /></p>
 <figcaption>
 <p><strong>Imagen 4</strong>. Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas.</p>
 </figcaption>
 </figure>
+</li>
+</ul>
 <h3 id="confirmar-y-configurar-la-extraccion"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 17h-2v-4H9V7h2v4h2V7h2m4-4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Confirmar y configurar la extracción</h3>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>A partir de este momento, <strong>los próximos pasos se aplicarán de la misma manera en los 3 sistemas operativos</strong> considerados en este tutorial: Linux, Windows and macOS.</p>
+<p><strong>Los próximos pasos se aplicarán de la misma manera en los 3 sistemas operativos</strong> considerados en este tutorial: Linux, Windows and macOS.</p>
 </div>
 <ul>
-<li>Da clic en <strong><em>“Permitir siempre desde esta computadora”</em></strong>  y luego <strong><em>“Aceptar”</em></strong> o <strong><em>“Permitir”</em></strong> cuando aparezca el mensaje: <strong><em>¿Permitir depuración por USB?</em></strong></li>
-</ul>
+<li>
+<p>Da clic en <strong><em>“Permitir siempre desde esta computadora”</em></strong>  y luego <strong><em>“Aceptar”</em></strong> o <strong><em>“Permitir”</em></strong> cuando aparezca el mensaje: <strong><em>¿Permitir depuración por USB?</em></strong></p>
 <figure>
 <p><img alt="Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confiabilidad al equipo de cómputo para transferir archivos." src="assets/05-captura-android-permiso-depuracion.jpg" title="imagen 5" /></p>
 <figcaption>
 <p><strong>Imagen 5</strong>. Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confiabilidad al equipo de cómputo para transferir archivos.</p>
 </figcaption>
 </figure>
-<ul>
-<li>
-<p><strong>AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB</strong> y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. <span class="twemoji" title="El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"/></svg></span></p>
 </li>
+<li>
+<p><strong>AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB</strong> y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. </p>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo</p>
+<p>El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85.</p>
+</div>
+<ul>
 <li>
 <p>Posteriormente <strong>AndroidQF preguntará el tipo de respaldo</strong> que realizará la herramienta:</p>
 <ul>
@@ -1782,11 +1792,9 @@
 <li><strong>Everything</strong>: Ejecuta un respaldo completo del dispositivo mediante adb backup.</li>
 <li><strong>No</strong> <strong>Backup</strong>: Omite completamente la generación de respaldos; solo extrae otros artefactos vía ADB.</li>
 </ul>
-</li>
-</ul>
 <div class="admonition warning">
 <p class="admonition-title">Alternativa</p>
-<p>Para el ejemplo usamos la opción <strong>Only-SMS</strong> para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el <strong>contexto del caso se considera de alto riesgo</strong> o implica investigación más sofisticada se recomienda marcar la opción  <strong>Everything</strong>, aunque la opción <strong>Only-SMS</strong> en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.*</p>
+<p>Para el ejemplo usamos la opción <strong>Only-SMS</strong> para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el <strong>contexto del caso se considera de alto riesgo</strong> o implica investigación más sofisticada se recomienda marcar la opción  <strong>Everything</strong>, aunque la opción <strong>Only-SMS</strong> en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.</p>
 </div>
 <figure>
 <p><img alt="Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada." src="assets/06-captura-linux-only-sms.jpg" title="imagen 7" /></p>
@@ -1794,9 +1802,9 @@
 <p><strong>Imagen 6</strong>. Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.</p>
 </figcaption>
 </figure>
-<ul>
-<li>Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una <strong>contraseña temporal de cifrado</strong> para este. En nuestro ejemplo utilizamos <strong>la contraseña “sd”</strong> de seguridad digital en español, tal y como se muestra en la imagen 7. </li>
-</ul>
+</li>
+<li>
+<p>Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una <strong>contraseña temporal de cifrado</strong> para este. En nuestro ejemplo utilizamos <strong>la contraseña “sd”</strong> de seguridad digital en español, tal y como se muestra en la imagen 7. </p>
 <div class="admonition warning">
 <p class="admonition-title">Alternativa</p>
 <p>Esta contraseña permite cifrar la copia de seguridad que se genera al ejecutar androidqf. En caso de generar <strong>contraseñas aleatorias</strong>, asegúrate de utilizar un <strong>gestor con adecuadas prácticas de respaldo</strong>. De lo contrario, y sino representa un riesgo, establece una contraseá simple y equivalente para todas tus extracciones.</p>
@@ -1807,9 +1815,9 @@
 <p><strong>Imagen 7</strong>. Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup “sd”</p>
 </figcaption>
 </figure>
-<ul>
-<li>Selecciona: <strong>“Copia de seguridad de mis datos”.</strong></li>
-</ul>
+</li>
+<li>
+<p>Selecciona: <strong>“Copia de seguridad de mis datos”.</strong></p>
 <figure>
 <p><img alt="Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada" src="assets/08-captura-android-copia-seguridad.jpg" title="imagen 8" /></p>
 <figcaption>
@@ -1826,15 +1834,13 @@
 <p><strong>Imagen 9</strong>. Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.</p>
 </figcaption>
 </figure>
-<ul>
+</li>
 <li>
 <p>Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué <strong>tipo de copias de las aplicaciones se desea descargar, para ello hay 3 opciones</strong>:  </p>
 <ul>
 <li><strong>All</strong>: Descarga los APK de todas las aplicaciones, incluidas las del sistema.  </li>
 <li><strong>Only</strong> <strong>non-system</strong> <strong>packages</strong>: Descarga solo los APK de aplicaciones instaladas por el usuario.  </li>
 <li><strong>Do</strong> <strong>not</strong> <strong>download</strong> <strong>any</strong>: Omite completamente la descarga de APKs del dispositivo.</li>
-</ul>
-</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Alternativa</p>
@@ -1846,13 +1852,11 @@
 <p><strong>Imagen 10</strong>. Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.</p>
 </figcaption>
 </figure>
-<ul>
+</li>
 <li>
 <p>Una vez seleccionada la opción de descargas de copias de paquetes, <strong>AndroidQF preguntará acerca de eliminar los APKs</strong> firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.</p>
 <ul>
 <li>Responde <strong>“Yes”</strong> para que, al realizar la revisión de la información se pueda <strong>enfocar el análisis en los paquetes que sean potencialmente sospechosos</strong>, además de que ahorrará tiempo y espacio de almacenamiento.</li>
-</ul>
-</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Alternativa</p>
@@ -1864,9 +1868,9 @@
 <p><strong>Imagen 11</strong>. Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.</p>
 </figcaption>
 </figure>
-<ul>
-<li><strong>Espera</strong> a que todos los módulos de AndroidQF se ejecuten de acuerdo a su programación.</li>
-</ul>
+</li>
+<li>
+<p><strong>Espera</strong> a que todos los módulos de AndroidQF se ejecuten de acuerdo a su programación.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><strong>Esta etapa puede tomar varios minutos</strong>, dependiendo del modelo del teléfono y la cantidad de datos almacenados. El progreso se muestra línea por línea en la terminal y no requiere intervención adicional, salvo al final, donde se debe presionar Enter para completar.</p>
@@ -1877,14 +1881,14 @@
 <p><strong>Imagen 12</strong>. Captura de pantalla de terminal de linux con información de ejecución correcta de la extracción forense con AndroidQF y solicitando presionar enter para terminar.</p>
 </figcaption>
 </figure>
+</li>
+</ul>
 <h3 id="verificar-la-extraccion"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9h-4v2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H9v-2h4v-2H9V7h6m4-4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Verificar la extracción</h3>
 <p>Una vez finalizada la ejecución de AndroidQF, es importante <strong>validar que la adquisición se completó correctamente</strong>. Para ello, realiza los siguientes pasos:</p>
 <ul>
 <li>
 <p>Abre el archivo command.log con un editor de texto y <strong>busca las palabras warning o error</strong>. Si aparece revisa si corresponden a fallos críticos o eventos no relevantes.</p>
 <p><strong>En linux/macOS:</strong></p>
-</li>
-</ul>
 <p>Puedes usar el comando siguiente dentro de la carpeta de la adquisición:</p>
 <div class="highlight"><pre><span></span><code>grep -i &quot;WARNING\|ERROR&quot; command.log
 </code></pre></div>
@@ -1894,8 +1898,7 @@
 <p><strong>Imagen 13</strong>. Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.</p>
 </figcaption>
 </figure>
-<pre><code>**En Windows:**
-</code></pre>
+<p><strong>En Windows:</strong>  </p>
 <p>Abre el archivo con “<em>Bloc de notas”</em>, selecciona la combinación de teclas <strong>ctrl+b</strong> y escribe <strong><em>WARNING</em></strong> o <strong><em>ERROR</em></strong><strong>.</strong></p>
 <figure>
 <p><img alt="Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF." src="assets/14-captura-pantalla-windows-errores.jpg" title="imagen 14" /></p>
@@ -1903,18 +1906,18 @@
 <p><strong>Imagen 14</strong>. Captura de pantalla de Bloc de notas de Windows con la búsqueda de  errores en el archivo command.log generado por AndoridQF.</p>
 </figcaption>
 </figure>
-<ul>
-<li>Verifica la <strong>existencia del archivo <em>acquisition.json</em></strong> y que su contenido se vea adecuado.</li>
-</ul>
+</li>
+<li>
+<p>Verifica la <strong>existencia del archivo <em>acquisition.json</em></strong> y que su contenido se vea adecuado.</p>
 <figure>
 <p><img alt="Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF." src="assets/15-captura-pantalla-acquisition.jpg" title="imagen 15" /></p>
 <figcaption>
 <p><strong>Imagen 15</strong>. Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF.</p>
 </figcaption>
 </figure>
-<ul>
-<li>Comprueba la creación de archivos y carpetas de salida. <strong>Asegurate que se hayan generado los siguientes archivos y carpetas:</strong></li>
-</ul>
+</li>
+<li>
+<p>Comprueba la creación de archivos y carpetas de salida. <strong>Asegurate que se hayan generado los siguientes archivos y carpetas:</strong></p>
 <div class="highlight"><pre><span></span><code>├── apks/
 ├── logs/
 ├── tmp/
@@ -1943,6 +1946,8 @@
 <p><strong>Imagen 16</strong>. Captura de pantalla de la aplicación archivos en PopOS! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.</p>
 </figcaption>
 </figure>
+</li>
+</ul>
 <h2 id="conclusion">Conclusión</h2>
 <p>AndroidQF permite realizar adquirir y extraer evidencia forense de dispositivos Android. Es una <strong>herramienta ampliamente utilizada por laboratorios de la sociedad civil</strong>, debido a su practicidad, simplicidad y portabilidad. En esta guía detallamos el paso a paso a seguir para realizar extracciones utilizando Windows, MacOS o Linux. </p>
 <p>La extracción de potencial evidencia es una de las <strong><a href="../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#cuales-son-las-etapas-de-una-investigacion-forense">primeras etapas a seguir dentro de una investigación forense</a></strong>, y es clave para poder iniciar un triaje. A partir de esta información extraída, se puede iniciar una etapa de análisis, ya sea de forma manual (<a href="../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html">pudes consultar el diccionario de archivos aquí</a>) o utilizando una herramienta como <a href="https://docs.mvt.re/en/latest/">MVT</a>. </p>
