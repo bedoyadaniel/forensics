@@ -31,7 +31,7 @@
     
     
       
-        <title>¿Cómo realizar una extracción mediante AndroidQF? - SocialTIC Forensics</title>
+        <title>Adquisición y extracción de dispositivos Android mediante AndroidQF - SocialTIC Forensics</title>
       
     
     
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ¿Cómo realizar una extracción mediante AndroidQF?
+              Adquisición y extracción de dispositivos Android mediante AndroidQF
             
           </span>
         </div>
@@ -1660,15 +1660,6 @@
   
 
 
-<hr />
-<p>title: How-to: Adquisición y extracción de dispositivos Android mediante AndroidQF
-summary: Adquisición y extracción de dispositivos Android mediante AndroidQF 
-keywords: android, adquisicion, extraccion, androidqf
-authors: José Martínez
-tags: [androidqf, extraction, acquisition, adquisicion, extraccion]
-last_updated: 2025-08-01
-some_url:</p>
-<hr />
 <h1 id="guia-como-realizar-una-extraccion-mediante-androidqf">Guia: ¿Cómo realizar una extracción mediante AndroidQF?</h1>
 <div class="admonition info">
 <p class="admonition-title">Sobre este recurso</p>
@@ -1720,7 +1711,7 @@ some_url:</p>
 </li>
 </ol>
 <figure>
-<p><img alt=" Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos." src="../04-como-extraer-androidqf/assets/01-captura-android-permisos-datos.jpg" title="imagen 1" /></p>
+<p><img alt=" Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos." src="assets/01-captura-android-permisos-datos.jpg" title="imagen 1" /></p>
 <figcaption>
 <p><strong>Imagen 1</strong>. Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.</p>
 </figcaption>
@@ -1733,7 +1724,7 @@ some_url:</p>
 ./androidqf-macos
 </code></pre></div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción" src="../04-como-extraer-androidqf/assets/02-captura-terminal-linux-ejecucion.jpg" title="imagen 2" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción" src="assets/02-captura-terminal-linux-ejecucion.jpg" title="imagen 2" /></p>
 <figcaption>
 <p><strong>Imagen 2</strong>. Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción</p>
 </figcaption>
@@ -1743,7 +1734,7 @@ some_url:</p>
 <li>En la carpeta donde se guardó el binario se puede ejecutar dando doble click primario. Aparecerá una ventana de protección de Windows, da click en <strong>“Más información”</strong> </li>
 </ul>
 <figure>
-<p><img alt="Captura de pantalla de ventana emergente de protección de Windows." src="../04-como-extraer-androidqf/assets/03-captura-terminal-windows-ejecucion.jpg" title="imagen 3" /></p>
+<p><img alt="Captura de pantalla de ventana emergente de protección de Windows." src="assets/03-captura-terminal-windows-ejecucion.jpg" title="imagen 3" /></p>
 <figcaption>
 <p><strong>Imagen 3</strong>. Captura de pantalla de ventana emergente de protección de Windows.</p>
 </figcaption>
@@ -1752,7 +1743,7 @@ some_url:</p>
 <li>Selecciona <strong>“Ejecutar de todas formas”</strong></li>
 </ul>
 <figure>
-<p><img alt="Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas.." src="../04-como-extraer-androidqf/assets/04-captura-pantalla-proteccion-windows.jpg" title="imagen 4" /></p>
+<p><img alt="Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas.." src="assets/04-captura-pantalla-proteccion-windows.jpg" title="imagen 4" /></p>
 <figcaption>
 <p><strong>Imagen 4</strong>. Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas.</p>
 </figcaption>
@@ -1766,18 +1757,14 @@ some_url:</p>
 <li>Da clic en <strong><em>“Permitir siempre desde esta computadora”</em></strong>  y luego <strong><em>“Aceptar”</em></strong> o <strong><em>“Permitir”</em></strong> cuando aparezca el mensaje: <strong><em>¿Permitir depuración por USB?</em></strong></li>
 </ol>
 <figure>
-<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confiabilidad al equipo de cómputo para transferir archivos." src="../04-como-extraer-androidqf/assets/05-captura-android-permiso-depuracion.jpg" title="imagen 5" /></p>
+<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confiabilidad al equipo de cómputo para transferir archivos." src="assets/05-captura-android-permiso-depuracion.jpg" title="imagen 5" /></p>
 <figcaption>
 <p><strong>Imagen 5</strong>. Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confiabilidad al equipo de cómputo para transferir archivos.</p>
 </figcaption>
 </figure>
 <ol>
 <li>
-<p class="annotate"><strong>AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB</strong> y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. (1) </p>
-</li>
-<li>
-<p>El nombre de estas carpetas al ser un UUID suele tener nombres como 
-    0caba18f-20a7-48d0-b9ba-724fdaa3ff85 o a577ae94-0a47-479c-82c5-c8017bfb7175.</p>
+<p><strong>AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB</strong> y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. <span class="twemoji" title="El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85."><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"/></svg></span></p>
 </li>
 <li>
 <p>Posteriormente <strong>AndroidQF preguntará el tipo de respaldo</strong> que realizará la herramienta:</p>
@@ -1793,21 +1780,20 @@ some_url:</p>
 <p>Para el ejemplo usamos la opción <strong>Only-SMS</strong> para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el <strong>contexto del caso se considera de alto riesgo</strong> o implica investigación más sofisticada se recomienda marcar la opción  <strong>Everything</strong>, aunque la opción <strong>Only-SMS</strong> en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.*</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada." src="../04-como-extraer-androidqf/assets/06-captura-linux-only-sms.jpg" title="imagen 7" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada." src="assets/06-captura-linux-only-sms.jpg" title="imagen 7" /></p>
 <figcaption>
 <p><strong>Imagen 6</strong>. Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.</p>
 </figcaption>
 </figure>
 <ol>
-<li>
-<p class="annotate">Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una <strong>contraseña temporal de cifrado</strong> para este. En nuestro ejemplo utilizamos <strong>la contraseña “sd”</strong> de seguridad digital en español, tal y como se muestra en la imagen 7. (1) </p>
-</li>
-<li>
-<p>Esta contraseña permite cifrar la copia de seguridad que se genera al ejecutar androidqf. En caso de generar <strong>contraseñas aleatorias</strong>, asegúrate de utilizar un <strong>gestor con adecuadas prácticas de respaldo</strong>. De lo contrario, y sino representa un riesgo, establece una contraseá simple y equivalente para todas tus extracciones. </p>
-</li>
+<li>Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una <strong>contraseña temporal de cifrado</strong> para este. En nuestro ejemplo utilizamos <strong>la contraseña “sd”</strong> de seguridad digital en español, tal y como se muestra en la imagen 7. </li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">Alternativa</p>
+<p>Esta contraseña permite cifrar la copia de seguridad que se genera al ejecutar androidqf. En caso de generar <strong>contraseñas aleatorias</strong>, asegúrate de utilizar un <strong>gestor con adecuadas prácticas de respaldo</strong>. De lo contrario, y sino representa un riesgo, establece una contraseá simple y equivalente para todas tus extracciones.</p>
+</div>
 <figure>
-<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup sd" src="../04-como-extraer-androidqf/assets/07-captura-android-contraseña.jpg" title="imagen 7" /></p>
+<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup sd" src="assets/07-captura-android-contrase%C3%B1a.jpg" title="imagen 7" /></p>
 <figcaption>
 <p><strong>Imagen 7</strong>. Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup “sd”</p>
 </figcaption>
@@ -1816,7 +1802,7 @@ some_url:</p>
 <li>Selecciona: <strong>“Copia de seguridad de mis datos”.</strong></li>
 </ol>
 <figure>
-<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada" src="../04-como-extraer-androidqf/assets/08-captura-android-copia-seguridad.jpg" title="imagen 8" /></p>
+<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada" src="assets/08-captura-android-copia-seguridad.jpg" title="imagen 8" /></p>
 <figcaption>
 <p><strong>Imagen 8</strong>. Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada</p>
 </figcaption>
@@ -1826,7 +1812,7 @@ some_url:</p>
 <p>En algunas ocasiones, suelen aparecer errores sobre la búsqueda de las rutas donde se encuentran los paquetes, por lo que es común ver algunas de estas marcas de error, sin embargo, <strong>estas marcas de error no afectan la extracción de datos forenses en el dispositivo.</strong>*</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF." src="../04-como-extraer-androidqf/assets/09-captura-linux-recoleccion.jpg" title="imagen 9" /></p>
+<p><img alt="Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF." src="assets/09-captura-linux-recoleccion.jpg" title="imagen 9" /></p>
 <figcaption>
 <p><strong>Imagen 9</strong>. Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.</p>
 </figcaption>
@@ -1846,7 +1832,7 @@ some_url:</p>
 <p>Aunque nuestra recomendación es seleccionar “Only non-system packages”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “All”.*</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada." src="../04-como-extraer-androidqf/assets/10-captura-linux-copia-paquetes.jpg" title="imagen 10" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada." src="assets/10-captura-linux-copia-paquetes.jpg" title="imagen 10" /></p>
 <figcaption>
 <p><strong>Imagen 10</strong>. Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.</p>
 </figcaption>
@@ -1864,7 +1850,7 @@ some_url:</p>
 <p>Aunque nuestra recomendación es seleccionar “Yes”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “No”.*</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada." src="../04-como-extraer-androidqf/assets/11-captura-linux-omision-aplicaciones.jpg" title="imagen 11" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada." src="assets/11-captura-linux-omision-aplicaciones.jpg" title="imagen 11" /></p>
 <figcaption>
 <p><strong>Imagen 11</strong>. Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.</p>
 </figcaption>
@@ -1877,7 +1863,7 @@ some_url:</p>
 <p><strong>Esta etapa puede tomar varios minutos</strong>, dependiendo del modelo del teléfono y la cantidad de datos almacenados. El progreso se muestra línea por línea en la terminal y no requiere intervención adicional, salvo al final, donde se debe presionar Enter para completar.</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada." src="../04-como-extraer-androidqf/assets/12-captura-pantalla-ejecucion-correcta.jpg" title="imagen 12" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada." src="assets/12-captura-pantalla-ejecucion-correcta.jpg" title="imagen 12" /></p>
 <figcaption>
 <p><strong>Imagen 12</strong>. Captura de pantalla de terminal de linux con información de ejecución correcta de la extracción forense con AndroidQF y solicitando presionar enter para terminar.</p>
 </figcaption>
@@ -1894,7 +1880,7 @@ some_url:</p>
 <div class="highlight"><pre><span></span><code>grep -i &quot;WARNING\|ERROR&quot; command.log
 </code></pre></div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF." src="../04-como-extraer-androidqf/assets/13-captura-pantalla-terminal-linux-errores.jpg" title="imagen 12" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF." src="assets/13-captura-pantalla-terminal-linux-errores.jpg" title="imagen 12" /></p>
 <figcaption>
 <p><strong>Imagen 13</strong>. Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.</p>
 </figcaption>
@@ -1903,7 +1889,7 @@ some_url:</p>
 </code></pre>
 <p>Abre el archivo con “<em>Bloc de notas”</em>, selecciona la combinación de teclas <strong>ctrl+b</strong> y escribe <strong><em>WARNING</em></strong> o <strong><em>ERROR</em></strong><strong>.</strong></p>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF." src="../04-como-extraer-androidqf/assets/14-captura-pantalla-windows-errores.jpg" title="imagen 14" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF." src="assets/14-captura-pantalla-windows-errores.jpg" title="imagen 14" /></p>
 <figcaption>
 <p><strong>Imagen 14</strong>. Captura de pantalla de Bloc de notas de Windows con la búsqueda de  errores en el archivo command.log generado por AndoridQF.</p>
 </figcaption>
@@ -1912,7 +1898,7 @@ some_url:</p>
 <li>Verifica la <strong>existencia del archivo <em>acquisition.json</em></strong> y que su contenido se vea adecuado.</li>
 </ol>
 <figure>
-<p><img alt="Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF." src="../04-como-extraer-androidqf/assets/15-captura-pantalla-acquisition.jpg" title="imagen 15" /></p>
+<p><img alt="Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF." src="assets/15-captura-pantalla-acquisition.jpg" title="imagen 15" /></p>
 <figcaption>
 <p><strong>Imagen 15</strong>. Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF.</p>
 </figcaption>
@@ -1943,7 +1929,7 @@ some_url:</p>
 └── settings_system.txt  
 </code></pre></div>
 <figure>
-<p><img alt="Captura de pantalla de la aplicación archivos en PopOS! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF." src="../04-como-extraer-androidqf/assets/16-captura-pantalla-archivos-salida.jpg" title="imagen 15" /></p>
+<p><img alt="Captura de pantalla de la aplicación archivos en PopOS! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF." src="assets/16-captura-pantalla-archivos-salida.jpg" title="imagen 15" /></p>
 <figcaption>
 <p><strong>Imagen 16</strong>. Captura de pantalla de la aplicación archivos en PopOS! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.</p>
 </figcaption>
@@ -1958,6 +1944,9 @@ some_url:</p>
 
 
 
+
+  
+  
 
 
 
