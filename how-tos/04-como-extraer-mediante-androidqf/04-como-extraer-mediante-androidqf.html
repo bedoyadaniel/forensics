@@ -1762,10 +1762,7 @@ chmod +x ./androidqf_v1.7.1_linux_amd64</p>
 </li>
 </ul>
 <h3 id="confirmar-y-configurar-la-extraccion"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 17h-2v-4H9V7h2v4h2V7h2m4-4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Confirmar y configurar la extracción</h3>
-<div class="admonition note">
-<p class="admonition-title">Nota</p>
-<p><strong>Los próximos pasos se aplicarán de la misma manera en los 3 sistemas operativos</strong> considerados en este tutorial: Linux, Windows and macOS.</p>
-</div>
+<p>Los próximos pasos se aplicarán de la <strong>misma manera</strong> en los 3 sistemas operativos considerados en este tutorial: <strong>Linux, Windows and macOS.</strong></p>
 <ul>
 <li>
 <p>Da clic en <strong><em>“Permitir siempre desde esta computadora”</em></strong>  y luego <strong><em>“Aceptar”</em></strong> o <strong><em>“Permitir”</em></strong> cuando aparezca el mensaje: <strong><em>¿Permitir depuración por USB?</em></strong></p>
@@ -1785,15 +1782,15 @@ chmod +x ./androidqf_v1.7.1_linux_amd64</p>
 </li>
 <li>
 <p>Posteriormente <strong>AndroidQF preguntará el tipo de respaldo</strong> que realizará la herramienta:</p>
+<div class="admonition warning">
+<p class="admonition-title">Alternativa</p>
+<p>Para el ejemplo usamos la opción <strong>Only-SMS</strong> para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el <strong>contexto del caso se considera de alto riesgo</strong> o implica investigación más sofisticada se recomienda marcar la opción  <strong>Everything</strong>, aunque la opción <strong>Only-SMS</strong> en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.</p>
+</div>
 <ul>
 <li><strong>Only</strong> <strong>SMS</strong>: Realiza un respaldo limitado que incluye solo mensajes SMS y MMS.</li>
 <li><strong>Everything</strong>: Ejecuta un respaldo completo del dispositivo mediante adb backup.</li>
 <li><strong>No</strong> <strong>Backup</strong>: Omite completamente la generación de respaldos; solo extrae otros artefactos vía ADB.</li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Alternativa</p>
-<p>Para el ejemplo usamos la opción <strong>Only-SMS</strong> para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el <strong>contexto del caso se considera de alto riesgo</strong> o implica investigación más sofisticada se recomienda marcar la opción  <strong>Everything</strong>, aunque la opción <strong>Only-SMS</strong> en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.</p>
-</div>
 <figure>
 <p><img alt="Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada." src="assets/06-captura-linux-only-sms.jpg" title="imagen 7" /></p>
 <figcaption>
