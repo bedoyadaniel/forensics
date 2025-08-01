@@ -123,10 +123,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
 ### :material-numeric-4-box: Confirmar y configurar la extracción 
 
-
-!!! note "Nota"
-
-    **Los próximos pasos se aplicarán de la misma manera en los 3 sistemas operativos** considerados en este tutorial: Linux, Windows and macOS.
+Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas operativos considerados en este tutorial: **Linux, Windows and macOS.**
 
 * Da clic en ***“Permitir siempre desde esta computadora”***  y luego ***“Aceptar”*** o ***“Permitir”*** cuando aparezca el mensaje: ***¿Permitir depuración por USB?***
 
@@ -143,13 +140,13 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
 * Posteriormente **AndroidQF preguntará el tipo de respaldo** que realizará la herramienta:
 
-    * **Only** **SMS**: Realiza un respaldo limitado que incluye solo mensajes SMS y MMS.
-    * **Everything**: Ejecuta un respaldo completo del dispositivo mediante adb backup.
-    * **No** **Backup**: Omite completamente la generación de respaldos; solo extrae otros artefactos vía ADB.
-
     !!! warning "Alternativa"
 
         Para el ejemplo usamos la opción **Only-SMS** para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el **contexto del caso se considera de alto riesgo** o implica investigación más sofisticada se recomienda marcar la opción  **Everything**, aunque la opción **Only-SMS** en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.
+
+    * **Only** **SMS**: Realiza un respaldo limitado que incluye solo mensajes SMS y MMS.
+    * **Everything**: Ejecuta un respaldo completo del dispositivo mediante adb backup.
+    * **No** **Backup**: Omite completamente la generación de respaldos; solo extrae otros artefactos vía ADB.
 
     ![Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.](../04-como-extraer-mediante-androidqf/assets/06-captura-linux-only-sms.jpg "imagen 7")
     /// caption
