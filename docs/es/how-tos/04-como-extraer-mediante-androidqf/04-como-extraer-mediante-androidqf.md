@@ -138,8 +138,8 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
 * **AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB** y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. 
 
-!!! Example "Ejemplo" 
-    El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85.
+    !!! info  
+        El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85.
 
 * Posteriormente **AndroidQF preguntará el tipo de respaldo** que realizará la herramienta:
 
@@ -185,13 +185,13 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
 * Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué **tipo de copias de las aplicaciones se desea descargar, para ello hay 3 opciones**:  
 
-    * **All**: Descarga los APK de todas las aplicaciones, incluidas las del sistema.  
-    * **Only** **non-system** **packages**: Descarga solo los APK de aplicaciones instaladas por el usuario.  
-    * **Do** **not** **download** **any**: Omite completamente la descarga de APKs del dispositivo.
-
     !!! warning "Alternativa"
 
         Aunque nuestra recomendación es seleccionar “Only non-system packages”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “All”.
+
+    * **All**: Descarga los APK de todas las aplicaciones, incluidas las del sistema.  
+    * **Only** **non-system** **packages**: Descarga solo los APK de aplicaciones instaladas por el usuario.  
+    * **Do** **not** **download** **any**: Omite completamente la descarga de APKs del dispositivo.
 
     ![Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.](../04-como-extraer-mediante-androidqf/assets/10-captura-linux-copia-paquetes.jpg "imagen 10")
     /// caption
@@ -200,11 +200,11 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
 * Una vez seleccionada la opción de descargas de copias de paquetes, **AndroidQF preguntará acerca de eliminar los APKs** firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.
 
-    * Responde **“Yes”** para que, al realizar la revisión de la información se pueda **enfocar el análisis en los paquetes que sean potencialmente sospechosos**, además de que ahorrará tiempo y espacio de almacenamiento.
-
     !!! warning "Alternativa"
 
         Aunque nuestra recomendación es seleccionar “Yes”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “No”.
+
+    * Responde **“Yes”** para que, al realizar la revisión de la información se pueda **enfocar el análisis en los paquetes que sean potencialmente sospechosos**, además de que ahorrará tiempo y espacio de almacenamiento.
 
     ![Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.](../04-como-extraer-mediante-androidqf/assets/11-captura-linux-omision-aplicaciones.jpg "imagen 11")
     /// caption
