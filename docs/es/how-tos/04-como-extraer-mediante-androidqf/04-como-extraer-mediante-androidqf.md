@@ -52,29 +52,29 @@ A continuación se presentan los pasos detallados para realizar la extracción f
 
 ### :material-numeric-2: Asignar permisos de ejecución al binario descargado (**solo Linux y macOS**)
 
-Si estás utilizando un equipo con Linux o macOS para la extracción, **abre una terminal y navega a la carpeta donde se encuentra el binario**, luego ejecuta:
+* Si estás utilizando un equipo con Linux o macOS para la extracción, **abre una terminal y navega a la carpeta donde se encuentra el binario**, luego ejecuta:
 
 
-**En linux:**
-
-```
-chmod +x ./androidqf_
-```
-
-**En macOS:**
-
-```
-chmod +x ./androidqf_
-```
-
-!!! Warning "¡Atención!"
-
-    Al ejecutar el comando, **asegúrate de completar el nombre** *androidqf_* con el nombre completo del binario descargado en el paso 1. El comando resultante será algo como: 
+    **En linux:**
 
     ```
-    chmod +x ./androidqf_v1.7.1_linux_amd64
+    chmod +x ./androidqf_
+    ```
+
+    **En macOS:**
 
     ```
+    chmod +x ./androidqf_
+    ```
+
+    !!! Warning "¡Atención!"
+
+        Al ejecutar el comando, **asegúrate de completar el nombre** *androidqf_* con el nombre completo del binario descargado en el paso 1. El comando resultante será algo como: 
+
+        ```
+        chmod +x ./androidqf_v1.7.1_linux_amd64
+
+        ```
 
 
 ### :material-numeric-3: Ejecutar AndroidQF 
