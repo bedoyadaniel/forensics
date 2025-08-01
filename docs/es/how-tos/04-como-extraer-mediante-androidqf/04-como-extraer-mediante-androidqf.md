@@ -44,13 +44,13 @@ Para poder realizar una extracción con AndroidQF es **indispensable** considera
 
 A continuación se presentan los pasos detallados para realizar la extracción forense:
 
-### 1- Descargar el binario en AndroidQF
+### :fontawesome-solid-1: Descargar el binario en AndroidQF
 
 * **Descarga la versión más reciente del binario**, y que corresponda a la arquitectura del equipo de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: [https://github.com/mvt-project/androidqf/releases/](https://github.com/mvt-project/androidqf/releases/) 
 
 *  **Crea una nueva carpeta** para almacenar la exrtacción del dispositivo. Mueve el binario recién descargado a esta carpeta.
 
-### 2- Asignar permisos de ejecución al binario descargado (**solo Linux y macOS**)
+### :fontawesome-solid-2: Asignar permisos de ejecución al binario descargado (**solo Linux y macOS**)
 
 Si estás utilizando un equipo con Linux o macOS para la extracción, **abre una terminal y navega a la carpeta donde se encuentra el binario**, luego ejecuta:
 
@@ -77,7 +77,7 @@ chmod +x ./androidqf_
     ```
 
 
-### 3- Ejecutar AndroidQF 
+### :fontawesome-solid-3: Ejecutar AndroidQF 
 
 En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
@@ -122,7 +122,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 ///
 
 
-### 4- Confirmar y configurar la extracción 
+### :fontawesome-solid-4: Confirmar y configurar la extracción 
 
 
 !!! note "Nota"
@@ -221,7 +221,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 ///
 
 
-### 5- Verificar la extracción
+### :fontawesome-solid-5: Verificar la extracción
 
 Una vez finalizada la ejecución de AndroidQF, es importante **validar que la adquisición se completó correctamente**. Para ello, realiza los siguientes pasos:
 
