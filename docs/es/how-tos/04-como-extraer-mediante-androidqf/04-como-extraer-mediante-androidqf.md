@@ -44,16 +44,15 @@ Para poder realizar una extracción con AndroidQF es **indispensable** considera
 
 A continuación se presentan los pasos detallados para realizar la extracción forense:
 
-### Descargar el binario en AndroidQF
+### 1- Descargar el binario en AndroidQF
 
-1.1- **Descarga la versión más reciente del binario**, y que corresponda a la arquitectura del equipo de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: [https://github.com/mvt-project/androidqf/releases/](https://github.com/mvt-project/androidqf/releases/) 
+* **Descarga la versión más reciente del binario**, y que corresponda a la arquitectura del equipo de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: [https://github.com/mvt-project/androidqf/releases/](https://github.com/mvt-project/androidqf/releases/) 
 
-1.2- **Crea una nueva carpeta** para almacenar la exrtacción del dispositivo. Mueve el binario recién descargado a esta carpeta.
+*  **Crea una nueva carpeta** para almacenar la exrtacción del dispositivo. Mueve el binario recién descargado a esta carpeta.
 
-### Asignar permisos de ejecución al binario descargado (**solo Linux y macOS**)
+### 2- Asignar permisos de ejecución al binario descargado (**solo Linux y macOS**)
 
-Si estás utilizando un equipo con Linux o macOS para la extracción, **abre una terminal y navega a la carpeta donde se encuentra el binario.** Luego ejecuta:
-
+Si estás utilizando un equipo con Linux o macOS para la extracción, **abre una terminal y navega a la carpeta donde se encuentra el binario**, luego ejecuta:
 
 
 **En linux:**
@@ -71,18 +70,20 @@ chmod +x ./androidqf_
 !!! Warning "¡Atención!"
 
     Al ejecutar el comando, **asegúrate de completar el nombre** *androidqf_* con el nombre completo del binario descargado en el paso 1. El comando resultante será algo como: 
+
     ```
     chmod +x ./androidqf_v1.7.1_linux_amd64
 
     ```
 
-### Ejecutar AndroidQF 
+
+### 3- Ejecutar AndroidQF 
 
 En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
-3.1- **Conecta**  el dispositivo desbloqueado a la computadora.
+* **Conecta**  el dispositivo desbloqueado a la computadora.
 
-3.2- Cuando se conecte el teléfono, aparecerá un nuevo mensaje. Selecciona **permitir** cuando el dispositivo Android **solicite permiso de acceso a los datos del dispositivo**, tal y como se muestra en la imagen 1.
+* Cuando se conecte el teléfono, aparecerá un nuevo mensaje. Selecciona **permitir** cuando el dispositivo Android **solicite permiso de acceso a los datos del dispositivo**, tal y como se muestra en la imagen 1.
 
 ![ Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.](../04-como-extraer-mediante-androidqf/assets/01-captura-android-permisos-datos.jpg "imagen 1")
 /// caption
@@ -90,7 +91,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 ///
 
 
-3.3- **Ejecuta** el binario 
+* **Ejecuta** el binario 
 
 **En linux y macOS:**
 
@@ -121,14 +122,14 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 ///
 
 
-### Confirmar y configurar la extracción 
+### 4- Confirmar y configurar la extracción 
 
 
 !!! note "Nota"
 
     A partir de este momento, **los próximos pasos se aplicarán de la misma manera en los 3 sistemas operativos** considerados en este tutorial: Linux, Windows and macOS.
 
-4.1- Da clic en ***“Permitir siempre desde esta computadora”***  y luego ***“Aceptar”*** o ***“Permitir”*** cuando aparezca el mensaje: ***¿Permitir depuración por USB?***
+* Da clic en ***“Permitir siempre desde esta computadora”***  y luego ***“Aceptar”*** o ***“Permitir”*** cuando aparezca el mensaje: ***¿Permitir depuración por USB?***
 
 ![Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confiabilidad al equipo de cómputo para transferir archivos.](../04-como-extraer-mediante-androidqf/assets/05-captura-android-permiso-depuracion.jpg "imagen 5")
 /// caption
@@ -136,14 +137,14 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 ///
 
 
-4.2- **AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB** y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. :material-information-outline:{ title="El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85." }
+* **AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB** y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. :material-information-outline:{ title="El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85." }
 
 
-4.3- Posteriormente **AndroidQF preguntará el tipo de respaldo** que realizará la herramienta:
+* Posteriormente **AndroidQF preguntará el tipo de respaldo** que realizará la herramienta:
 
-* **Only** **SMS**: Realiza un respaldo limitado que incluye solo mensajes SMS y MMS.
-* **Everything**: Ejecuta un respaldo completo del dispositivo mediante adb backup.
-* **No** **Backup**: Omite completamente la generación de respaldos; solo extrae otros artefactos vía ADB.
+    * **Only** **SMS**: Realiza un respaldo limitado que incluye solo mensajes SMS y MMS.
+    * **Everything**: Ejecuta un respaldo completo del dispositivo mediante adb backup.
+    * **No** **Backup**: Omite completamente la generación de respaldos; solo extrae otros artefactos vía ADB.
 
 !!! warning "Alternativa"
 
@@ -154,7 +155,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 **Imagen 6**. Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.
 ///
 
-4.4- Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una **contraseña temporal de cifrado** para este. En nuestro ejemplo utilizamos **la contraseña “sd”** de seguridad digital en español, tal y como se muestra en la imagen 7. 
+* Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una **contraseña temporal de cifrado** para este. En nuestro ejemplo utilizamos **la contraseña “sd”** de seguridad digital en español, tal y como se muestra en la imagen 7. 
 
 !!! warning "Alternativa"
 
@@ -165,7 +166,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 **Imagen 7**. Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup “sd”
 ///
 
-4.5- Selecciona: **“Copia de seguridad de mis datos”.**
+* Selecciona: **“Copia de seguridad de mis datos”.**
 
 ![Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada](../04-como-extraer-mediante-androidqf/assets/08-captura-android-copia-seguridad.jpg "imagen 8")
 /// caption
@@ -181,11 +182,11 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 **Imagen 9**. Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.
 ///
 
-4.6- Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué **tipo de copias de las aplicaciones se desea descargar, para ello hay 3 opciones**:  
+* Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué **tipo de copias de las aplicaciones se desea descargar, para ello hay 3 opciones**:  
      
-   1. **All**: Descarga los APK de todas las aplicaciones, incluidas las del sistema.  
-   2. **Only** **non-system** **packages**: Descarga solo los APK de aplicaciones instaladas por el usuario.  
-   3. **Do** **not** **download** **any**: Omite completamente la descarga de APKs del dispositivo.
+    * **All**: Descarga los APK de todas las aplicaciones, incluidas las del sistema.  
+    * **Only** **non-system** **packages**: Descarga solo los APK de aplicaciones instaladas por el usuario.  
+    * **Do** **not** **download** **any**: Omite completamente la descarga de APKs del dispositivo.
 
 !!! warning "Alternativa"
 
@@ -196,9 +197,9 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 **Imagen 10**. Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.
 ///
 
-4.7- Una vez seleccionada la opción de descargas de copias de paquetes, **AndroidQF preguntará acerca de eliminar los APKs** firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.
+* Una vez seleccionada la opción de descargas de copias de paquetes, **AndroidQF preguntará acerca de eliminar los APKs** firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.
 
-* Responde **“Yes”** para que, al realizar la revisión de la información se pueda **enfocar el análisis en los paquetes que sean potencialmente sospechosos**, además de que ahorrará tiempo y espacio de almacenamiento.
+    * Responde **“Yes”** para que, al realizar la revisión de la información se pueda **enfocar el análisis en los paquetes que sean potencialmente sospechosos**, además de que ahorrará tiempo y espacio de almacenamiento.
 
 !!! warning "Alternativa"
 
@@ -209,7 +210,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 **Imagen 11**. Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.
 ///
 
-4.8- **Espera** a que todos los módulos de AndroidQF se ejecuten de acuerdo a su programación.
+* **Espera** a que todos los módulos de AndroidQF se ejecuten de acuerdo a su programación.
 
 !!! info
     **Esta etapa puede tomar varios minutos**, dependiendo del modelo del teléfono y la cantidad de datos almacenados. El progreso se muestra línea por línea en la terminal y no requiere intervención adicional, salvo al final, donde se debe presionar Enter para completar.
@@ -220,11 +221,11 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 ///
 
 
-### Verificación de la extracción
+### 5- Verificar la extracción
 
 Una vez finalizada la ejecución de AndroidQF, es importante **validar que la adquisición se completó correctamente**. Para ello, realiza los siguientes pasos:
 
-5.1- Abre el archivo command.log con un editor de texto y **busca las palabras warning o error**. Si aparece revisa si corresponden a fallos críticos o eventos no relevantes.
+* Abre el archivo command.log con un editor de texto y **busca las palabras warning o error**. Si aparece revisa si corresponden a fallos críticos o eventos no relevantes.
 
 	**En linux/macOS:**
 
@@ -248,14 +249,14 @@ Abre el archivo con “*Bloc de notas”*, selecciona la combinación de teclas 
 **Imagen 14**. Captura de pantalla de Bloc de notas de Windows con la búsqueda de  errores en el archivo command.log generado por AndoridQF.
 ///
 
-5.2- Verifica la **existencia del archivo *acquisition.json*** y que su contenido se vea adecuado.
+* Verifica la **existencia del archivo *acquisition.json*** y que su contenido se vea adecuado.
 
 ![Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF.](../04-como-extraer-mediante-androidqf/assets/15-captura-pantalla-acquisition.jpg "imagen 15")
 /// caption
 **Imagen 15**. Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF.
 ///
 
-5.3- Comprueba la creación de archivos y carpetas de salida. **Asegurate que se hayan generado los siguientes archivos y carpetas:**
+* Comprueba la creación de archivos y carpetas de salida. **Asegurate que se hayan generado los siguientes archivos y carpetas:**
 
 ```
 ├── apks/
