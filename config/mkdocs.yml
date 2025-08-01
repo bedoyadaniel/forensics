@@ -24,7 +24,9 @@ nav:
     - Inicio: 'how-tos/index.md'
     - ¿Cómo obtener y documentar consentimiento informado?: 'how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.md'
     - ¿Cómo habilitar las opciones de desarrollador en Android?: 'how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md'  
-    - ¿Cómo habilitar ADB en Android?: 'how-tos/03-como-habilitar-adb/como-habilitar-adb.md'  
+    - ¿Cómo habilitar ADB en Android?: 'how-tos/03-como-habilitar-adb/como-habilitar-adb.md'
+    - ¿Cómo realizar una extracción mediante AndroidQF?: 'how-tos/04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf.md'  
+  
   - Referencias:
     - Inicio: 'references/index.md'
     - Diccionario AndroidQF: 'references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md'
