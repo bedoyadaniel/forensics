@@ -13,6 +13,12 @@ some_url:
 
 # Guía: ¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?
 
+!!! info "Sobre este recurso"
+
+    Esta guía paso a paso presenta las **instrucciones que permiten habilitar las opciones de desarrollador en diferentes marcas** y modelos de dispositivos Android.
+    
+    [:octicons-arrow-right-24: Llévame a las instrucciones](#cómo-habilitar-adb)   
+
 Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/).
 
 Este recurso en particular se enmarca dentro de la categoría de **guías how-to**, y muestra los pasos a seguir para **habilitar el menú de opciones de desarrollador en diferentes dispositivos Android**, así como una breve explicación de **qué son** las opciones de desarrollador y **porqué son útiles** al hacer forense digital. Este es un **material introductorio**, complementario a otros recursos, como el [explainer de forense basada en log para dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html), y **forma parte de los pasos a seguir para realizar un triaje inicial**.   
