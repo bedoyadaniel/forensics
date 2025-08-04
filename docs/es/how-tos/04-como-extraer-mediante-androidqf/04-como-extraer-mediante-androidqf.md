@@ -59,7 +59,7 @@ A continuación se presentan los pasos detallados para realizar la extracción f
 * Si estás utilizando un equipo con **Linux o macOS** para la extracción, **abre una terminal y navega a la carpeta donde se encuentra el binario**, luego ejecuta:
 
 
-    ??? Warning "¡Atención!"
+    ??? Warning "Completa el nombre"
 
         Al ejecutar el comando, **asegúrate de completar el nombre** *androidqf_* con el nombre completo del binario descargado en el paso 1. El comando resultante será algo como: 
 
@@ -85,7 +85,7 @@ A continuación se presentan los pasos detallados para realizar la extracción f
 
 * **Conecta**  el dispositivo desbloqueado a la computadora utilizando un cable de datos USB.
 
-    ??? failure "Utiliza un cable de datos"
+    ??? failure "No todos los cables USB son iguales"
 
         Algunos cables USB no tienen las conexiones necesarias para transferir datos entre el dispositivo móvil y la computadora. Asegúrate de utilizar un cable que permita transferir datos. Es [difícil distinguirlos a simple vista](https://support.konnected.io/how-to-tell-a-usb-charge-only-cable-from-a-usb-data-cable), pero usualmente los cables de carga rápida o aquellos incluídos con los dispositivos suelen ser cables de datos.  
 
@@ -111,7 +111,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
 === "Linux y MacOS"
 
-    Ejecuta con el **siguiente comando**. **asegúrate de completar el nombre** *androidqf_* con el nombre completo del binario descargado. 
+    Ejecuta con el **siguiente comando**. **Asegúrate de completar** *androidqf_* con el nombre completo del binario descargado. 
     
     ``` 
     ./androidqf-linux-v?
@@ -147,8 +147,8 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 
 * **AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB** y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. 
 
-    ??? info  
-        El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85.
+    ??? question ¿Qué es un UUID?  
+        Es un número generado de forma aleatoria, tse expresa mediante 32 dígitos hexadecimales divididos en cinco grupos separados por guiones de la forma 8-4-4-4-12 lo que da un total de 36 caracteres (32 dígitos y 4 guiones), por ejemplo ```0caba18f-20a7-48d0-b9ba-724fdaa3ff85```
 
 * Posteriormente **AndroidQF preguntará el tipo de respaldo** que realizará la herramienta:
 
@@ -183,7 +183,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
     **Imagen 8**. Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada
     ///
 
-    ??? failure "Error"
+    ??? failure "Mensajes de errores esperados"
 
         En algunas ocasiones, suelen aparecer errores sobre la búsqueda de las rutas donde se encuentran los paquetes, por lo que es común ver algunas de estas marcas de error, sin embargo, **estas marcas de error no afectan la extracción de datos forenses en el dispositivo.***
 
