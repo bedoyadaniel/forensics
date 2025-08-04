@@ -1954,7 +1954,7 @@
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Esta información permite conocer información básica de la extracción y obtener identificadores únicos del sistema que facilitan el <a href="https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#cadena-de-custodia">proceso de custodia de la extracción  forense</a>. </p>
 <p><strong>Ejemplo:</strong></p>
-<pre><code>{
+<div class="highlight"><pre><span></span><code>{
  &quot;uuid&quot;: &quot;0f615832-ed22-411e-9317-b429d28ecf9a&quot;,
  &quot;androidqf_version&quot;: &quot;v1.7.0-1-gf7642bf&quot;,
  &quot;storage_path&quot;: &quot;/home/user/0f615832-ed22-411e-9317-b429d28ecf9a&quot;,
@@ -1972,7 +1972,7 @@
  &quot;sdcard&quot;: &quot;/sdcard/&quot;,
  &quot;cpu&quot;: &quot;arm64-v8a&quot;
 }
-</code></pre>
+</code></pre></div>
 <h3 id="commandlog">command.log</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/log/logger.go">logger.go</a>. Este módulo presenta los logs del proceso de captura y adquisición de la información. </p>
 <p><strong>Información contenida</strong></p>
@@ -1985,7 +1985,7 @@
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Permite generar un registro de las acciones realizadas por la aplicación durante la adquisición de información. A través de este registro, es posible  verificar la completitud de la extracción, asegurando que todos los pasos fueron realizados; o en caso de existir alertas o errores, permite identificarlos. </p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>2025-01-01T14:22:39-06:00 [INFO] Started new acquisition in /home/user/1c3c6742-f225-479f-a836-4a6a86a056b7
+<div class="highlight"><pre><span></span><code>2025-01-01T14:22:39-06:00 [INFO] Started new acquisition in /home/user/1c3c6742-f225-479f-a836-4a6a86a056b7
 2025-01-01T14:22:39-06:00 [INFO] Would you like to take a backup of the device?
 2025-01-01T14:22:41-06:00 [INFO] Generating a backup with argument com.android.providers.telephony. Please check the device to authorize the backup...
 
@@ -1994,7 +1994,7 @@
 2025-01-01T14:22:52-06:00 [INFO] Collecting device properties...
 2025-01-01T14:22:52-06:00 [INFO] Collecting device diagnostic information. This might take a while...
 2025-01-01T14:24:11-06:00 [INFO] Collecting list of running processes...
-2025-01-01T14:24:11-06:00 [DEBUG] Deploying collector binary 'collector_arm64' for architecture 'arm64-v8a'.
+2025-01-01T14:24:11-06:00 [DEBUG] Deploying collector binary &#39;collector_arm64&#39; for architecture &#39;arm64-v8a&#39;.
 2025-01-01T14:24:11-06:00 [INFO] Collecting list of services...
 2025-01-01T14:24:12-06:00 [INFO] Generating a bugreport for the device...
 2025-01-01T14:26:22-06:00 [DEBUG] Bugreport completed!
@@ -2002,7 +2002,7 @@
 2025-01-01T14:26:22-06:00 [DEBUG] Using collector to collect list of files
 2025-01-01T14:39:20-06:00 [INFO] Collecting device settings...
 2025-01-01T14:39:20-06:00 [INFO] Collecting SELinux status...
-</code></pre>
+</code></pre></div>
 <h3 id="hashescsv">hashes.csv</h3>
 <p>La información de este archivo se genera mediante la función <a href="https://github.com/mvt-project/androidqf/blob/main/acquisition/acquisition.go#L134"><em>HashFiles</em></a> del módulo <a href="https://github.com/mvt-project/androidqf/blob/main/acquisition/acquisition.go">acquisition.go</a><em>.</em></p>
 <p><strong>Información contenida</strong></p>
@@ -2014,7 +2014,7 @@
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Los hashes permiten garantizar la integridad de la información y asegurar que no hayan sido modificados después de la adquisición, favoreciendo también procedimientos de cadena de custodia.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>2ab44150-35d3-4b40-a820-c9152fe93a13\apks\gov.dhs.cbp.cbpone_gov.dhs.cbp.cbpone-NYwrqdamzef6AVKRRGXzgA.apk,2d553aada9039d4def18a09b84c317a70d9fdde87524a043db5f0eeb1862e89a
+<div class="highlight"><pre><span></span><code>2ab44150-35d3-4b40-a820-c9152fe93a13\apks\gov.dhs.cbp.cbpone_gov.dhs.cbp.cbpone-NYwrqdamzef6AVKRRGXzgA.apk,2d553aada9039d4def18a09b84c317a70d9fdde87524a043db5f0eeb1862e89a
 2ab44150-35d3-4b40-a820-c9152fe93a13\backup.ab,48202a8cb422d7eeb12ff8ad13fac3a67b37600c63eae8089d9674465da32990
 2ab44150-35d3-4b40-a820-c9152fe93a13\bugreport.zip,ec82812dba70891b78d7130dc16e3474918e4a0e02bb15ec00e1015679f720ee
 2ab44150-35d3-4b40-a820-c9152fe93a13\command.log,c0ae883bebee7503b0ca94a54cdbb43628602046c68b770c760f730a55d6dc8c
@@ -2034,7 +2034,7 @@
 2ab44150-35d3-4b40-a820-c9152fe93a13\settings_global.txt,410f788450907331183ee36979e93fc7dc0b1805e574d1ac1d5fbc9869897c53
 2ab44150-35d3-4b40-a820-c9152fe93a13\settings_secure.txt,be67f431c457edfb88d733594aba662310dbe3863c62da21cbf7dad5bcc0f136
 2ab44150-35d3-4b40-a820-c9152fe93a13\settings_system.txt,b0e7452110867ca3f5c15ea52b9b9a198433a836f97d6fd8b95fcd39fd30c714
-</code></pre>
+</code></pre></div>
 <h2 id="informacion-y-configuracion-del-dispositivo">Información y configuración del dispositivo</h2>
 <h3 id="getproptxt">getprop.txt</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/getprop.go">getprop.go</a><em>.</em></p>
@@ -2042,8 +2042,8 @@
 <p>Este archivo se encuentra en formato <em>TXT</em> y contiene la salida del comando de <code>adb getprop</code>, el cual detalla las <strong>propiedades del sistema</strong>.</p>
 <p>Las propiedades del sistema son pares clave-valor de cadenas que se almacenan en el diccionario global <a href="https://xdaforums.com/t/guide-build-prop-wiki.2056266/"><em>build.prop</em></a> o en archivos de descripción <em>.sysprop</em>, y proporcionan una forma conveniente de compartir configuraciones dentro del sistema. </p>
 <p>La información se puede encontrar utilizando el siguiente formato:</p>
-<pre><code>[{prefix}.]{group}[.{subgroup}]*.{name}[.{type}]
-</code></pre>
+<div class="highlight"><pre><span></span><code>[{prefix}.]{group}[.{subgroup}]*.{name}[.{type}]
+</code></pre></div>
 <p>Algunas propiedades aparecen con el prefijo <em>ro</em>, lo que indica que son propiedades de solo lectura, o que fueron asignadas luego del reinicio del dispositivo. Las propiedades con el prefijo <em>persist</em> se refieren a configuraciones resistentes al reinicio. Algunas propiedades no tendrán prefijo, por lo que inician directamente con el grupo al que pertenecen. </p>
 <p>Los grupos más comunes son:</p>
 <ul>
@@ -2059,7 +2059,7 @@
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Las propiedades brindan información importante sobre el hardware y el software del dispositivo, las cuales pueden ser alteradas por software malicioso para ocultar su presencia o para modificar el comportamiento del dispositivo de forma inadvertida.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>[property_name]: [value]
+<div class="highlight"><pre><span></span><code>[property_name]: [value]
 [aaudio.hw_burst_min_usec]: [2000]
 [aaudio.mmap_exclusive_policy]: [2]
 [aaudio.mmap_policy]: [2]
@@ -2080,7 +2080,7 @@
 [ro.vendor.product.cpu.abilist]: [arm64-v8a,armeabi-v7a,armeabi]
 [ro.vendor.product.cpu.abilist32]: [armeabi-v7a,armeabi]
 [ro.vendor.product.cpu.abilist64]: [arm64-v8a]
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://source.android.com/docs/core/architecture/configuration?hl=es-419#system-properties">Descripción general de la configuración | Propiedades del sistema | Android Open Source Project</a>   </li>
@@ -2095,8 +2095,8 @@
 <p><strong>¿Por qué es importante?</strong></p>
 <p><a href="https://en.wikipedia.org/wiki/Security-Enhanced_Linux"><em>SELinux</em></a> es una capa de seguridad clave en Android. Cambios en su configuración pueden ser un indicativo de compromisos en la seguridad del dispositivo.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>Enforcing
-</code></pre>
+<div class="highlight"><pre><span></span><code>Enforcing
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://source.android.com/docs/security/features/selinux/concepts?hl=es-419">Conceptos de SELinux | Android Open Source Project</a>  </li>
@@ -2111,7 +2111,7 @@
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Permite identificar configuraciones anómalas que podrían comprometer la seguridad, privacidad  o funcionalidad del dispositivo. Configuraciones predeterminadas inusuales pueden señalar intentos de modificar el comportamiento del sistema, intencionados o accidentales.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>Phenotype_boot_count=68
+<div class="highlight"><pre><span></span><code>Phenotype_boot_count=68
 adb_enabled=1
 airplane_mode_on=0
 bluetooth_on=1
@@ -2128,7 +2128,7 @@ wifi_networks_available_notification_on=0
 wifi_on=1
 wifi_scan_always_enabled=1
 zram_enabled=1
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://developer.android.com/reference/android/provider/Settings?hl=es-419">Settings | Android Developers</a>   </li>
@@ -2143,7 +2143,7 @@ zram_enabled=1
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Permite identificar configuraciones anómalas que podrían comprometer la seguridad, privacidad  o funcionalidad del dispositivo. Configuraciones predeterminadas inusuales pueden señalar intentos de modificar el comportamiento del sistema, intencionados o accidentales.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>accessibility_allow_diagonal_scrolling=1
+<div class="highlight"><pre><span></span><code>accessibility_allow_diagonal_scrolling=1
 accessibility_button_mode=1
 accessibility_button_target_component=com.android.settings/com.samsung.android.settings.accessibility.shortcut.AmplifyShortcut
 accessibility_display_magnification_enabled=0
@@ -2162,7 +2162,7 @@ location_mode=3
 location_time_zone_detection_enabled=1
 lockscreen.disabled=0
 wifi_saved_state=0
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://developer.android.com/reference/android/provider/Settings?hl=es-419">Settings | Android Developers</a>   </li>
@@ -2177,7 +2177,7 @@ wifi_saved_state=0
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Permite identificar configuraciones anómalas que podrían comprometer la seguridad, privacidad  o funcionalidad del dispositivo. Configuraciones predeterminadas inusuales pueden señalar intentos de modificar el comportamiento del sistema, intencionados o accidentales.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>FOTA_CLIENT_POLLING_TIME=1710699386219
+<div class="highlight"><pre><span></span><code>FOTA_CLIENT_POLLING_TIME=1710699386219
 FOTA_CLIENT_REGISTRATION=1
 FOTA_CLIENT_TEST=0
 SEM_VIBRATION_FORCE_TOUCH_INTENSITY=4
@@ -2207,7 +2207,7 @@ wifi_call_enable1=0
 wifi_call_preferred1=2
 wifi_call_when_roaming1=0
 wireless_fast_charging=0
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://developer.android.com/reference/android/provider/Settings?hl=es-419">Settings | Android Developers</a>   </li>
@@ -2218,13 +2218,13 @@ wireless_fast_charging=0
 <p><strong>Información contenida</strong></p>
 <p>Este archivo se encuentra en formato <em>txt</em> y contiene la salida del comando <code>adb shell env</code> el cual muestra la configuración de las variables de entorno de la terminal (shell) <a href="http://mirbsd.de/mksh"><em>mkshrc</em></a> la cual es utilizada por Android.</p>
 <p>Por defecto las variables de <em>mkshrc</em> en Android se encuentran en el archivo <em>mkshrc</em> o <em>profile</em> que puede estar en alguno de los siguientes directorios.</p>
-<pre><code>/system/etc
+<div class="highlight"><pre><span></span><code>/system/etc
 /system/etc/profile
 $HOME/
 /data/local
-</code></pre>
+</code></pre></div>
 <p>Mientras que <a href="https://android.googlesource.com/platform/bionic/+/refs/heads/master/libc/include/paths.h#50">el binario de <em>mkshrc</em> se puede encontrar en alguno de los siguientes directorios</a>.</p>
-<pre><code>/product/bin
+<div class="highlight"><pre><span></span><code>/product/bin
 /apex/com.android.runtime/bin
 /apex/com.android.art/bin
 /system_ext/bin
@@ -2233,7 +2233,7 @@ $HOME/
 /odm/bin
 /vendor/bin
 /vendor/xbin
-</code></pre>
+</code></pre></div>
 <p>Las variables contenidas pueden indicar:</p>
 <ul>
 <li>Ubicaciones de particiones  </li>
@@ -2243,7 +2243,7 @@ $HOME/
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Las variables de entorno pueden indicar cambios en las configuraciones de la terminal, del intérprete de comandos, del entorno de ejecución de la máquina virtual de Android o de los puntos de montaje de algunas particiones y carpetas. Esto podría ser un indicador de un comportamiento sospechoso.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>_=/system/bin/env
+<div class="highlight"><pre><span></span><code>_=/system/bin/env
 ANDROID_DATA=/data
 ANDROID_ART_ROOT=/apex/com.android.art
 LOGNAME=shell
@@ -2267,7 +2267,7 @@ SYSTEMSERVERCLASSPATH=/system/framework/com.android.location.provider.jar:/syste
 ASEC_MOUNTPOINT=/mnt/asec
 ANDROID_I18N_ROOT=/apex/com.android.i18n
 EXTERNAL_STORAGE=/sdcard
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://es.wikipedia.org/wiki/Shell_(inform%C3%A1tica)">Shell (informática) - Wikipedia, la enciclopedia libre</a>  </li>
@@ -2304,14 +2304,14 @@ EXTERNAL_STORAGE=/sdcard
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Esta información puede ser utilizada para analizar el comportamiento y ejecución de eventos en el sistema y de las aplicaciones del dispositivo para identificar anomalías o patrones que puedan indicar presencia de malware. En términos forenses son de los archivos más relevantes por su contenido.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>--------- beginning of crash  
+<div class="highlight"><pre><span></span><code>--------- beginning of crash  
 2025-01-01 00:00:00.000 12345 12345 E AndroidRuntime: FATAL EXCEPTION: main  
 2025-01-01 00:00:00.000 12345 12345 E AndroidRuntime: Process: example.android.app, PID: 12345  
 2025-01-01 00:00:00.000 12345 12345 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate receiver example.android.app.MyBroadCastReceiver  
 2025-01-01 00:00:00.000 12345 12345 E AndroidRuntime: at android.app.ActivityThread.handleReceiver(ActivityThread.java:4861)  
 2025-01-01 00:00:00.000 12345 12345 E AndroidRuntime: at android.os.Handler.dispatchMessage(Handler.java:106)  
 2025-01-01 00:00:00.000 30144 30860 I ActivityManager: Process example.android.app has died.  
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://developer.android.com/tools/logcat?hl=es-419">Herramienta de linea de comandos Logcat</a></li>
@@ -2330,7 +2330,7 @@ EXTERNAL_STORAGE=/sdcard
 <p><strong>¿Por qué es importante?</strong></p>
 <p>El archivo brinda una perspectiva completa del estado del sistema en el dispositivo, clave para poder conocer la actividad realizada por servicios, aplicaciones y procesos en el dispositivo. En términos forenses es uno de los archivos más relevantes por su contenido.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>Currently running services:
+<div class="highlight"><pre><span></span><code>Currently running services:
   accessibility
   account
   adb
@@ -2429,9 +2429,7 @@ Current AppOps Service state:
     #0: ModeCallback{12983a3 watchinguid=-1 flags=0x0 op=READ_WRITE_HEALTH_DATA from uid=1000 pid=1807}
     Op POST_NOTIFICATION:
     #0: ModeCallback{12983a3 watchinguid=-1 flags=0x0 op=READ_WRITE_HEALTH_DATA from uid=1000 pid=1807}
-
-
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://developer.android.com/tools/dumpsys?hl=es-419">dumpsys en Android</a></li>
@@ -2682,7 +2680,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p><strong>¿Por qué es importante?</strong></p>
 <p>El contenido de este archivo incluye información que permite identificar aplicaciones instaladas y cuál es su estado en el dispositivo. Esto ayuda a los analistas a evaluar si existen aplicaciones de riesgo o maliciosas, que permisos tienen y cuales pueden comprometer la seguridad.</p>
 <p><strong>Estructura del archivo</strong></p>
-<pre><code>[
+<div class="highlight"><pre><span></span><code>[
     {
         &quot;name&quot;: &quot;com.whatsapp&quot;,
         &quot;files&quot;: [
@@ -2717,7 +2715,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
         &quot;third_party&quot;: true
     }
 ]
-</code></pre>
+</code></pre></div>
 <h3 id="apks">apks/</h3>
 <p>La información de esta carpeta se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/packages.go">packages.go</a>.</p>
 <p><strong>Información contenida</strong></p>
@@ -2732,7 +2730,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Este archivo permite identificar procesos que son ejecutados de manera inusual o que son ejecutados por usuarios no autorizados como resultado de una escalada de privilegios. Así mismo, podemos asegurar que los procesos y sus jerarquías coinciden con las configuraciones establecidas o normales.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>[
+<div class="highlight"><pre><span></span><code>[
     {
         &quot;pid&quot;: 1,
         &quot;uid&quot;: 0,
@@ -2790,7 +2788,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
         &quot;cwd&quot;: &quot;&quot;
     },
 ]
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://developer.android.com/guide/components/processes-and-threads?hl=es-419">Descripción general de los procesos y subprocesos</a></li>
@@ -2803,7 +2801,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Este archivo permite identificar los servicios en ejecución o en sentido contrario identificar si un servicio no se encontraba en ejecución. Esto es útil para identificar que todos los servicios necesarios estén en ejecución para mantener la integridad de la seguridad del dispositivo.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>Found 368 services:
+<div class="highlight"><pre><span></span><code>Found 368 services:
 0   AtlasService: [android.atlas.service]
 1   DockObserver: []
 9   accessibility: [android.view.accessibility.IAccessibilityManager]
@@ -2860,7 +2858,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 358 vpn_management: [android.net.IVpnManager]
 363 wifi: [android.net.wifi.IWifiManager]
 367 window: [android.view.IWindowManager]
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://developer.android.com/develop/background-work/services?hl=es-419">¿Cómo funcionan los servicios en android?</a></li>
@@ -2889,10 +2887,10 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p>Este archivo detecta herramientas de rooting, lo cual puede representar un indicativo  de accesos no autorizados y escalada de privilegios que pueda exponer alguna vulnerabilidad.  Así mismo, permite al analista identificar binarios sospechosos que podrían haberse instalado sin el conocimiento del usuario y ayuda a determinar si el dispositivo ha sido manipulado.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
 <p>El archivo vacío tiene la siguiente estructura:</p>
-<pre><code>[]
-</code></pre>
+<div class="highlight"><pre><span></span><code>[]
+</code></pre></div>
 <p>Cuando el módulo identifica binarios relacionados con el rooting en las rutas estándar del sistema en el dispositivo, contendrá una lista de estas rutas a los binarios detectados:</p>
-<pre><code>[
+<div class="highlight"><pre><span></span><code>[
     &quot;/system/xbin/su&quot;,
     &quot;/system/bin/su&quot;,
     &quot;/data/local/xbin/su&quot;,
@@ -2903,9 +2901,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
     &quot;/data/local/tmp/Superuser.apk&quot;,
     &quot;/data/local/tmp/magiskhide&quot;
 ]
-
-
-</code></pre>
+</code></pre></div>
 <h2 id="informacion-de-archivos-en-el-dispositivo">Información de archivos en el dispositivo</h2>
 <h3 id="backupab">backup.ab</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/androidqf/blob/main/modules/backup.go">backup.go</a>.</p>
@@ -2917,7 +2913,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p><strong>¿Por qué es importante?</strong></p>
 <p>En el caso forense este respaldo permite analizar los SMS en búsqueda de enlaces sospechosos o maliciosos.</p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>(Binary data containing app backups and settings)
+<div class="highlight"><pre><span></span><code>(Binary data containing app backups and settings)
 414e 4452 4f49 4420 4241 434b 5550 0a35
 0a30 0a6e 6f6e 650a 6170 7073 2f63 6f6d
 2e61 6e64 726f 6964 2e63 7473 2e63 7473
@@ -2930,7 +2926,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 3000 0000 3030 3030 3030 3034 3537 3600
 3000 0000 0000 0000 0000 0000 3031 3430
 3134 0020 3000 0000 0000 0000 0000 0000
-</code></pre>
+</code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://github.com/nelenkov/android-backup-extractor">Extracción de archivos de respaldo | Android Backup Extractor</a>  </li>
@@ -2962,7 +2958,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Este archivo tiene relevancia para identificar archivos de interés en una investigación forense, incluyendo potenciales archivos utilizados por atacantes para comprometer un dispositivo y hacer los análisis oportunos que permitan dar seguimiento a actividad maliciosa. </p>
 <p><strong>Ejemplo del contenido del archivo</strong></p>
-<pre><code>{
+<div class="highlight"><pre><span></span><code>{
 &quot;path&quot;: &quot;/sdcard/Android/.Trash/com.sec.android.app.myfiles/.nomedia&quot;,
         &quot;size&quot;: 62,
         &quot;mode&quot;: &quot;-rw-rw----&quot;,
@@ -2980,7 +2976,7 @@ Contiene archivos de registro recolectados directamente desde el dispositivo, ut
         &quot;sha512&quot;: &quot;&quot;,
         &quot;md5&quot;: &quot;&quot;
 }
-</code></pre>
+</code></pre></div>
 
 
 
