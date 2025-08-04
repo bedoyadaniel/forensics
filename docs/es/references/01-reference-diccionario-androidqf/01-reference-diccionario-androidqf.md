@@ -16,7 +16,7 @@ Este documento forma **parte de un repositorio de documentación técnica** que 
 
 Este recurso en particular se enmarca dentro de la categoría de [referencias](https://diataxis.fr/reference), y contiene información sobre los archivos generados por [androidqf](https://github.com/mvt-project/androidqf) al realizar una extracción forense de un dispositivo Android, esto con el objetivo de que una persona analista **conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.**
 
-Este recurso se actualizó por última vez el 16 de Junio del 2025 y para la recopilación de la información se tomó como base el *commit* bd84c2bc.
+Este recurso se actualizó por última vez el 16 de Junio del 2025 y para la recopilación de la información se tomó como base la [versión 1.7.1](https://github.com/mvt-project/androidqf/tree/v1.7.1).
 
 [Androidqf](https://github.com/mvt-project/androidqf) es una herramienta de extracción forense que pertenece al [MVT Project](https://github.com/mvt-project/). Desarrollada inicialmente por [Claudio Guarnieri](https://nex.sx/) y mantenida actualmente por el [Laboratorio de Seguridad de Amnistía Internacional](https://securitylab.amnesty.org/es/).
 
