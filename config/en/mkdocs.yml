@@ -110,8 +110,19 @@ markdown_extensions:
   - pymdownx.emoji: #permite agregar íconos y emojies con códigos cortos
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - material.extensions.preview: #configuration for instant preview
-    configurations:
-    - targets:
-      include:
-      - references/glossary.md
+markdown_extensions:
+  - material.extensions.preview:
+      configurations:
+        - sources: 
+            exclude:
+              - explainers/index.md
+              - how-tos/index.md
+              - references/index.md
+              - tutorials/index.md
+              - index.md
+          targets: 
+            include:
+              - communidad/*
+              - explainers/*
+              - how-tos/*
+              - references/*
