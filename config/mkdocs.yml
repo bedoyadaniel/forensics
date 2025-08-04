@@ -121,4 +121,8 @@ markdown_extensions:
       configurations:
         - targets: 
             include:
+              - communidad/*
+              - explainers/*
+              - how-tos/*
               - references/glossary.md
+

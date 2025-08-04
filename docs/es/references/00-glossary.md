@@ -49,10 +49,11 @@ Un aspecto clave en cualquier acuerdo de consentimiento es la capacidad de quié
 
 ### Copia bit a bit
 
-
+Copia bit a bit, DD o duplicación de disco se refiere al proceso de crear una réplica exacta de un medio electrónico. Permiten proteger la evidencia original, de forma tal que se proteja su integridad y se preserve en apego a mejores prácticas. 
 
 ### CVE
 
+Es un programa de reporte, clasificación y publicación de vulnerabilidades de seguridad. Se establecen registros CVE únicos para cada vulnerabilidad, como por ejemplo ```CVE-2014-0160```
 
 ### DFIR (Digital Forensics and Incident Response)
 
@@ -62,7 +63,8 @@ Por lo tanto, **resulta ventajoso [combinar ambos procesos](https://www.paloalto
 
 ### Exploit
 
-
+[Exploit](https://es.wikipedia.org/wiki/Exploit) es una palabra inglesa que significa explotar o aprovechar, y que en el ámbito de la informática es un fragmento de software, fragmento de datos o secuencia de comandos o acciones, utilizada con el fin de aprovechar una vulnerabilidad de seguridad de un sistema de información para conseguir un comportamiento no deseado del mismo.
+​
 
 ### Forense digital
 
@@ -73,9 +75,18 @@ La forense digital se utiliza para descubrir y examinar datos de dispositivos el
 
 ### Google Takeout
 
+Es una función para cuentas en línea de Google que permite extraer información de diferentes aplicaciones, registros de acceso, logs de seguridad, correo electrónico, entre otros. El proceso tarda algunos días en completarse. 
+
+ [Sige este enlace para acceder a la función e inicar un takeout request.](https://takeout.google.com/?pli=1).  
+
+
 ### Guerra legal (lawfare)
 
+Guerra legal o lawfare se refiere al uso del sistema o instituciones legales para dañar, desacreditar o afectar individuos o organizaciones. Por ejemplo, en relación al caso en las cortes de Estados Unidos entre NSO y WhatsApp, el Citizen Lab enfrentó una serie de recursos y solicitudes legales que buscaban desmantelar su trabajo y acceder a información sensible, incluída la lista de víctimas. En otro ejemplo, en 2018 la empresa Candiense Sandvine amenazó al Citizen Lab con una demanda por difamación a raíz de su publicación concerniente al uso de equipos Sandvine para la implantación de spyware.  
+
 ### Hash
+
+[Hash](https://es.wikipedia.org/wiki/Funci%C3%B3n_hash) son  funciones de criptográficas, que permiten producir un único valor para un conjunto de datos dados. Ejemplos incluyen MD5, SHA1. 
 
 ### Identificación
 
@@ -83,17 +94,29 @@ Se refiere a una etapa de investigación forense, donde la persona analista dete
 
 ### Indicador de compromiso (IOC)
 
-### Inteligencia de amenazas (threat intelligence)
+[Un indicador de compromiso o IDC](https://es.wikipedia.org/wiki/Indicador_de_compromiso) (en inglés: indicator of compromise, IoC) es toda aquella información relevante que describe cualquier incidente de ciberseguridad, actividad y/o artefacto malicioso, mediante el análisis de sus patrones de comportamiento.[1]​ La intención de un indicador de compromiso es esquematizar la información que se recibe o se extrae durante el análisis de un incidente, de tal manera que pueda reutilizarse por otros investigadores o afectados, para descubrir la misma evidencia en sus sistemas y llegar a determinar si han sido o no comprometidos ya sea desde el punto de vista de monitorización frente a amenazas o por análisis forense.[2]​ Por ejemplo, se identifican ficheros creados, entradas de registro modificadas, procesos o servicios nuevos. La idea subyacente es que, si se analiza un sistema y se encuentran los detalles recogidos en un indicador de compromiso concreto, se está ante una infección provocada por el programa malicioso (malware) al que hace referencia dicho indicador de compromiso.[3]​ Los indicadores de compromiso permiten realizar un intercambio sencillo y práctico de información con el fin de detectar intrusos a partir de análisis forenses, respuestas a incidentes o análisis de malware.
 
-### Integridad de la información
+### Log (bitácora)
 
-### iOS
+Los logs, también conocidos como registros o bitácoras, son archivos que documentan actividades que ocurren dentro de un sistema informático, red o aplicación. Estos registros pueden contener información sobre accesos de usuarios, cambios en el sistema, errores, y otras actividades relevantes para una investigación forense. 
 
-### Log
+En este recurso detallamos consideraciones importantes sobre [investigaciones forenses basadas en logs en dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html). 
 
 ### Malware
 
+[De acuerdo a wikipedia](https://es.wikipedia.org/wiki/Malware), un malware, traducido del inglés como programa malicioso, programa maligno, programa malintencionado o código maligno, es cualquier tipo de software que realiza acciones dañinas en un sistema informático de forma intencionada (al contrario software defectuoso) y sin el conocimiento del usuario (al contrario que el software potencialmente no deseado. 
+
 ### MVT
+
+MVT es una herramienta para facilitar el análisis forense consentido de dispositivos que pertenezcan a personas que podrían ser objetivo de ataques de spyware avanzados, y en específico personas parte de la sociedad civil y de comunidades en riesgo.
+
+Se indica en su [sitio web](https://forensics.socialtic.org/comunidad/licencia.html):
+
+_Mobile Verification Toolkit (MVT) is a tool to facilitate the consensual forensic analysis of Android and iOS devices, for the purpose of identifying traces of compromise._
+
+_It has been developed and released by the Amnesty International Security Lab in July 2021 in the context of the Pegasus Project along with a technical forensic methodology. It continues to be maintained by Amnesty International and other contributors._
+
+_In this documentation you will find instructions on how to install and run the mvt-ios and mvt-android commands, and guidance on how to interpret the extracted results._
 
 ### Notificación de amenaza (Threat notification)
 
