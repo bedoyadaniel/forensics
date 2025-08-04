@@ -1713,7 +1713,7 @@
 <li>
 <p>Si estás utilizando un equipo con <strong>Linux o macOS</strong> para la extracción, <strong>abre una terminal y navega a la carpeta donde se encuentra el binario</strong>, luego ejecuta:</p>
 <details class="warning">
-<summary>¡Atención!</summary>
+<summary>Completa el nombre</summary>
 <p>Al ejecutar el comando, <strong>asegúrate de completar el nombre</strong> <em>androidqf_</em> con el nombre completo del binario descargado en el paso 1. El comando resultante será algo como: </p>
 <div class="highlight"><pre><span></span><code>chmod +x ./androidqf_v1.7.1_linux_amd64
 </code></pre></div>
@@ -1731,7 +1731,7 @@
 <li>
 <p><strong>Conecta</strong>  el dispositivo desbloqueado a la computadora utilizando un cable de datos USB.</p>
 <details class="failure">
-<summary>Utiliza un cable de datos</summary>
+<summary>No todos los cables USB son iguales</summary>
 <p>Algunos cables USB no tienen las conexiones necesarias para transferir datos entre el dispositivo móvil y la computadora. Asegúrate de utilizar un cable que permita transferir datos. Es <a href="https://support.konnected.io/how-to-tell-a-usb-charge-only-cable-from-a-usb-data-cable">difícil distinguirlos a simple vista</a>, pero usualmente los cables de carga rápida o aquellos incluídos con los dispositivos suelen ser cables de datos.  </p>
 </details>
 </li>
@@ -1759,7 +1759,7 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Linux y MacOS</label><label for="__tabbed_1_2">Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Ejecuta con el <strong>siguiente comando</strong>. <strong>asegúrate de completar el nombre</strong> <em>androidqf_</em> con el nombre completo del binario descargado. </p>
+<p>Ejecuta con el <strong>siguiente comando</strong>. <strong>Asegúrate de completar</strong> <em>androidqf_</em> con el nombre completo del binario descargado. </p>
 <div class="highlight"><pre><span></span><code>./androidqf-linux-v?
 ./androidqf-macos-v?
 </code></pre></div>
@@ -1797,10 +1797,8 @@
 <ul>
 <li>
 <p><strong>AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB</strong> y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. </p>
-<details class="info">
-<summary>Info</summary>
-<p>El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85.</p>
-</details>
+<p>??? question ¿Qué es un UUID?<br />
+    Es un número generado de forma aleatoria, tse expresa mediante 32 dígitos hexadecimales divididos en cinco grupos separados por guiones de la forma 8-4-4-4-12 lo que da un total de 36 caracteres (32 dígitos y 4 guiones), por ejemplo <code>0caba18f-20a7-48d0-b9ba-724fdaa3ff85</code></p>
 </li>
 <li>
 <p>Posteriormente <strong>AndroidQF preguntará el tipo de respaldo</strong> que realizará la herramienta:</p>
@@ -1842,7 +1840,7 @@
 </figcaption>
 </figure>
 <details class="failure">
-<summary>Error</summary>
+<summary>Mensajes de errores esperados</summary>
 <p>En algunas ocasiones, suelen aparecer errores sobre la búsqueda de las rutas donde se encuentran los paquetes, por lo que es común ver algunas de estas marcas de error, sin embargo, <strong>estas marcas de error no afectan la extracción de datos forenses en el dispositivo.</strong>*</p>
 </details>
 <figure>
