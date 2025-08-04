@@ -26,9 +26,9 @@ nav:
     - ¿Cómo habilitar las opciones de desarrollador en Android?: 'how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md'  
     - ¿Cómo habilitar ADB en Android?: 'how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md'
     - ¿Cómo realizar una extracción mediante AndroidQF?: 'how-tos/04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf.md'  
-  
   - Referencias:
     - Inicio: 'references/index.md'
+    - Glosario: 'references/00-glossary.md'
     - Diccionario AndroidQF: 'references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md'
   - Comunidad:
     - Comunidad de práctica: 'comunidad/index.md'

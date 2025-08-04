@@ -120,6 +120,10 @@ _In this documentation you will find instructions on how to install and run the 
 
 ### Notificación de amenaza (Threat notification)
 
+Las notificaciones de amenaza se refieren a mensajes envíados por plataformas y fabricantes a personas que podrían haber sido 
+
+According to Apple, threat notifications inform and assist people using devices that may have been targeted by mercenary spyware attacks. Apple sends such notifications by email and iMessage to the registered addresses and phone numbers across all devices associated with a person’s Apple Account. The notification is also displayed at the top of the page after the person has signed in to account.apple.com.
+
 ### n-day
 
 ### Persona experta (perito/a)
