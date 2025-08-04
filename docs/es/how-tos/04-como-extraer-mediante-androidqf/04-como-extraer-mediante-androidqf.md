@@ -99,7 +99,7 @@ A continuación se presentan los pasos detallados para realizar la extracción f
         * Revisa las **configuraciones de USB** y asegúrate que la opción de _transferencia de archivos_ se encuentra habilitada.
         * Asegúrate de que el cable USB sea un **cable de datos**. 
 
-    ![ Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.](../04-como-extraer-mediante-androidqf/assets/01-captura-android-permisos-datos.jpg "imagen 1")
+    ![ Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.](../04-como-extraer-mediante-androidqf/assets/01-captura-android-permisos-datos.png "imagen 1")
     /// caption
     **Imagen 1**. Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.
     ///
@@ -118,7 +118,7 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
     ./androidqf-macos-v?
     ```
 
-    ![Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción](../04-como-extraer-mediante-androidqf/assets/02-captura-terminal-linux-ejecucion.jpg "imagen 2")
+    ![Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción](../04-como-extraer-mediante-androidqf/assets/02-captura-terminal-linux-ejecucion.png "imagen 2")
     /// caption
     **Imagen 2**. Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción
     ///
@@ -127,14 +127,14 @@ En este punto es posible ejecutar androidQF siguiendo estas instrucciones:
 
     * Ingresa a la carpeta donde se guardó el binario descargado en el paso 1, y **da doble click primario sobre el archivo.** Aparecerá una ventana de protección de Windows, da click en **“Más información”**
 
-    ![Captura de pantalla de ventana emergente de protección de Windows.](../04-como-extraer-mediante-androidqf/assets/03-captura-terminal-windows-ejecucion.jpg "imagen 3")
+    ![Captura de pantalla de ventana emergente de protección de Windows.](../04-como-extraer-mediante-androidqf/assets/03-captura-terminal-windows-ejecucion.png "imagen 3")
     /// caption
     **Imagen 3**. Captura de pantalla de ventana emergente de protección de Windows.
     ///
 
     * Selecciona **“Ejecutar de todas formas”**
 
-    ![Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas..](../04-como-extraer-mediante-androidqf/assets/04-captura-pantalla-proteccion-windows.jpg "imagen 4")
+    ![Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas..](../04-como-extraer-mediante-androidqf/assets/04-captura-pantalla-proteccion-windows.png "imagen 4")
     /// caption
     **Imagen 4**. Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas.
     ///
@@ -160,7 +160,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
     * **Everything**: Ejecuta un respaldo completo del dispositivo mediante adb backup.
     * **No** **Backup**: Omite completamente la generación de respaldos; solo extrae otros artefactos vía ADB.
 
-    ![Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.](../04-como-extraer-mediante-androidqf/assets/06-captura-linux-only-sms.jpg "imagen 7")
+    ![Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.](../04-como-extraer-mediante-androidqf/assets/06-captura-linux-only-sms.png "imagen 7")
     /// caption
     **Imagen 6**. Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.
     ///
@@ -171,14 +171,14 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 
         Esta contraseña permite cifrar la copia de seguridad que se genera al ejecutar androidqf. En caso de generar **contraseñas aleatorias**, asegúrate de utilizar un **gestor con adecuadas prácticas de respaldo**. De lo contrario, y sino representa un riesgo, establece una contraseá simple y equivalente para todas tus extracciones.
    
-    ![Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup sd](../04-como-extraer-mediante-androidqf/assets/07-captura-android-contraseña.jpg "imagen 7")
+    ![Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup sd](../04-como-extraer-mediante-androidqf/assets/07-captura-android-contraseña.png "imagen 7")
     /// caption
     **Imagen 7**. Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup “sd”
     ///
 
 * Selecciona: **“Copia de seguridad de mis datos”.**
 
-    ![Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada](../04-como-extraer-mediante-androidqf/assets/08-captura-android-copia-seguridad.jpg "imagen 8")
+    ![Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada](../04-como-extraer-mediante-androidqf/assets/08-captura-android-copia-seguridad.png "imagen 8")
     /// caption
     **Imagen 8**. Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada
     ///
@@ -187,7 +187,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 
         En algunas ocasiones, suelen aparecer errores sobre la búsqueda de las rutas donde se encuentran los paquetes, por lo que es común ver algunas de estas marcas de error, sin embargo, **estas marcas de error no afectan la extracción de datos forenses en el dispositivo.***
 
-    ![Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.](../04-como-extraer-mediante-androidqf/assets/09-captura-linux-recoleccion.jpg "imagen 9")
+    ![Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.](../04-como-extraer-mediante-androidqf/assets/09-captura-linux-recoleccion.png "imagen 9")
     /// caption
     **Imagen 9**. Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.
     ///
@@ -202,7 +202,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
     * **Only** **non-system** **packages**: Descarga solo los APK de aplicaciones instaladas por el usuario.  
     * **Do** **not** **download** **any**: Omite completamente la descarga de APKs del dispositivo.
 
-    ![Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.](../04-como-extraer-mediante-androidqf/assets/10-captura-linux-copia-paquetes.jpg "imagen 10")
+    ![Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.](../04-como-extraer-mediante-androidqf/assets/10-captura-linux-copia-paquetes.png "imagen 10")
     /// caption
     **Imagen 10**. Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.
     ///
@@ -215,7 +215,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 
     * Responde **“Yes”** para que, al realizar la revisión de la información se pueda **enfocar el análisis en los paquetes que sean potencialmente sospechosos**, además de que ahorrará tiempo y espacio de almacenamiento.
 
-    ![Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.](../04-como-extraer-mediante-androidqf/assets/11-captura-linux-omision-aplicaciones.jpg "imagen 11")
+    ![Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.](../04-como-extraer-mediante-androidqf/assets/11-captura-linux-omision-aplicaciones.png "imagen 11")
     /// caption
     **Imagen 11**. Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.
     ///
@@ -225,7 +225,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
     ??? info "Duración del proceso"
         **Esta etapa puede tomar varios minutos**, dependiendo del modelo del teléfono y la cantidad de datos almacenados. El progreso se muestra línea por línea en la terminal y no requiere intervención adicional, salvo al final, donde se debe presionar Enter para completar.
 
-    ![Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.](../04-como-extraer-mediante-androidqf/assets/12-captura-pantalla-ejecucion-correcta.jpg "imagen 12")
+    ![Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.](../04-como-extraer-mediante-androidqf/assets/12-captura-pantalla-ejecucion-correcta.png "imagen 12")
     /// caption
     **Imagen 12**. Captura de pantalla de terminal de linux con información de ejecución correcta de la extracción forense con AndroidQF y solicitando presionar enter para terminar.
     ///
@@ -246,7 +246,7 @@ Una vez finalizada la ejecución de AndroidQF, es importante **validar que la ad
     grep -i "WARNING\|ERROR" command.log
     ```
 
-    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../04-como-extraer-mediante-androidqf/assets/13-captura-pantalla-terminal-linux-errores.jpg "imagen 12")
+    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../04-como-extraer-mediante-androidqf/assets/13-captura-pantalla-terminal-linux-errores.png "imagen 12")
     /// caption
     **Imagen 13**. Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.
     ///
@@ -256,14 +256,14 @@ Una vez finalizada la ejecución de AndroidQF, es importante **validar que la ad
 
     Abre el archivo con “*Bloc de notas”*, selecciona la combinación de teclas **ctrl+b** y escribe ***WARNING*** o ***ERROR*****.**
 
-    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../04-como-extraer-mediante-androidqf/assets/14-captura-pantalla-windows-errores.jpg "imagen 14")
+    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../04-como-extraer-mediante-androidqf/assets/14-captura-pantalla-windows-errores.png "imagen 14")
     /// caption
     **Imagen 14**. Captura de pantalla de Bloc de notas de Windows con la búsqueda de  errores en el archivo command.log generado por AndoridQF.
     ///
 
 * Verifica la **existencia del archivo *acquisition.json*** y que su contenido se vea adecuado.
 
-    ![Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF.](../04-como-extraer-mediante-androidqf/assets/15-captura-pantalla-acquisition.jpg "imagen 15")
+    ![Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF.](../04-como-extraer-mediante-androidqf/assets/15-captura-pantalla-acquisition.png "imagen 15")
     /// caption
     **Imagen 15**. Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF.
     ///
@@ -294,7 +294,7 @@ Una vez finalizada la ejecución de AndroidQF, es importante **validar que la ad
     └── settings_system.txt  
     ```
 
-    ![Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.](../04-como-extraer-mediante-androidqf/assets/16-captura-pantalla-archivos-salida.jpg "imagen 15")
+    ![Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.](../04-como-extraer-mediante-androidqf/assets/16-captura-pantalla-archivos-salida.png "imagen 15")
     /// caption
     **Imagen 16**. Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.
     ///
