@@ -122,7 +122,7 @@ Para habilitar las opciones de desarrollador en dispositivos **OPPO** utilizando
 
 Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de **Sistema,** y se **mantendrán habilitadas** hasta que se deshabiliten (desde el menú de opciones de desarrollador). 
 
-![Pasos para habilitar las opciones de desarrollador en un dispositivo Oppo Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-oppo.gif "imagen 5"){ loading=lazy }
+![Pasos para habilitar las opciones de desarrollador en un dispositivo Oppo Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-oppo.gif "imagen 5"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 5**. Pasos para habilitar las opciones de desarrollador en un dispositivo Oppo.
 ///
