@@ -30,5 +30,32 @@ Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar
     [:octicons-arrow-right-24: ¿Cómo obtener y documentar consentimiento informado?](01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
 
 
+-   :fontawesome-solid-glasses:{ .lg .middle }      __¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?__
+
+    ---
+
+    **Instrucciones para habilitar las opciones de desarrollador** en diferentes marcas y modelos de dispositivos Android.
+
+    [:octicons-arrow-right-24: ¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?](02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.html)
+
+
+-   :material-usb-port:{ .lg .middle }      __¿Cómo habilitar ADB en diferentes dispositivos Android?__
+
+    ---
+
+    **Instrucciones para habilitar ADB o o depuración por USB** en diferentes marcas y modelos de dispositivos Android.
+
+    [:octicons-arrow-right-24: ¿Cómo habilitar ADB o depuración USB en Android?](02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.html)
+
+
+-   :fontawesome-solid-stethoscope:{ .lg .middle }      __¿Cómo realizar una extracción mediante AndroidQF?__
+
+    ---
+
+    Esta guía paso a paso presenta las **instrucciones que permiten extraer evidencia forense de dispositivos Android utilizando la herramienta AndroidQF** para un posterior análisis.
+
+    [:octicons-arrow-right-24: ¿Cómo realizar una extracción mediante AndroidQF?](04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf.md)
+
+
 
 </div>
