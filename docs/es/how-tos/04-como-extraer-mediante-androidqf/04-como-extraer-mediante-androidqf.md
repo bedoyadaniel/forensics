@@ -18,7 +18,7 @@ some_url:
 
 Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el marco de referencia de documentación técnica [Diataxis](../../references/00-glossary.md#diataxis).
 
-Este recurso en particular se enmarca dentro de la categoría de [Guia, how-to](../how-tos/), y contiene las instrucciones para realizar una extracción forense con la herramienta [AndroidQF](https://github.com/mvt-project/androidqf).
+Este recurso en particular se enmarca dentro de la categoría de [Guia, how-to](../how-tos/), y contiene las instrucciones para realizar una extracción forense con la herramienta [AndroidQF](../../references/00-glossary.md#androidqf).
 
 ## ¿Qué es AndroidQF?
 
@@ -26,9 +26,9 @@ Este recurso en particular se enmarca dentro de la categoría de [Guia, how-to](
 
 Su enfoque está pensado especialmente para periodistas, activistas, defensores de derechos humanos y los **laboratorios técnicos que acompañan casos de vigilancia digital y amenazas de software espía.**
 
-AndroidQF funciona como un [wrapper](https://developer.mozilla.org/en-US/docs/Glossary/Wrapper) forense sobre [ADB](https://developer.android.com/tools/adb?hl=es-419), automatizando comandos comunes mediante módulos que **permiten realizar extracciones rápidas, seguras y locales desde cualquier sistema operativo (Linux, Windows o macOS)**, sin depender de servicios en la nube ni instalaciones complejas.
+AndroidQF funciona como un [wrapper](https://developer.mozilla.org/en-US/docs/Glossary/Wrapper) forense sobre [ADB](../../references/00-glossary.md#adb), automatizando comandos comunes mediante módulos que **permiten realizar extracciones rápidas, seguras y locales desde cualquier sistema operativo (Linux, Windows o macOS)**, sin depender de servicios en la nube ni instalaciones complejas.
 
-Su utilidad en contextos de sociedad civil radica en su **portabilidad, facilidad de uso y ejecución local.**
+Su utilidad en contextos de sociedad civil radica en su **[portabilidad](../../references/00-glossary.md#herramienta-portable), facilidad de uso y ejecución local.**
 
 Esta guía es complementaria se complementa con otros materiales, como el [diccionario de archivos generados por AndroidQF](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md), sus formatos y recomendaciones de uso o el [explainer sobre forense basada en logs para dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.md).
 
@@ -36,7 +36,7 @@ Esta guía es complementaria se complementa con otros materiales, como el [dicci
 
 Para poder realizar una extracción con AndroidQF es **necesario**:
 
-* Activar el **modo desarrollador** y **activar la depuración por USB** en el dispositivo Android a ser analizado. De ser necesario, consulta nuestras [guías sobre habilitar opciones de desarrollador](../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md) o [la guía sobre cómo habilitar ADB](./how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md). 
+* Activar el **[modo desarrollador](../../references/00-glossary.md#modo-de-desarrollador)** y **[activar la depuración por USB](../../references/00-glossary.md#adb)** en el dispositivo Android a ser analizado. De ser necesario, consulta nuestras [guías sobre habilitar opciones de desarrollador](../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md) o [la guía sobre cómo habilitar ADB](./how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md). 
 * Conocer cuál es [chip integrado de la computadora WIndows, Linux o Mac que se utilizará para realizar la extracción](https://servernet.com.ar/como-saber-si-mi-procesador-es-amd-o-arm/) 
 * Tener un **cable para transferencia de archivos** telefono-computadora. 
 
@@ -46,7 +46,7 @@ A continuación se presentan los pasos detallados para realizar la extracción f
 
 ### :material-numeric-1-box: Descargar el binario en AndroidQF
 
-* **Descarga** la versión más reciente del binario, y que **corresponda a la arquitectura del equipo** de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: [https://github.com/mvt-project/androidqf/releases/](https://github.com/mvt-project/androidqf/releases/) 
+* **Descarga** la versión más reciente del [binario](../../references/00-glossary.md#binario), y que **corresponda a la arquitectura del equipo** de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: [https://github.com/mvt-project/androidqf/releases/](https://github.com/mvt-project/androidqf/releases/) 
 
     ??? question "¿Cómo identificar la arquitectura?"
 
@@ -56,7 +56,7 @@ A continuación se presentan los pasos detallados para realizar la extracción f
 
 ### :material-numeric-2-box: Asignar permisos de ejecución al binario descargado (**solo Linux y macOS**)
 
-* Si estás utilizando un equipo con **Linux o macOS** para la extracción, **abre una terminal y navega a la carpeta donde se encuentra el binario**, luego ejecuta:
+* Si estás utilizando un equipo con **Linux o macOS** para la extracción, es necesario asignar el permiso de ejcución al archivo antes de poder ejecutarlo. Para esto, **abre una terminal y navega a la carpeta donde se encuentra el binario**, luego ejecuta:
 
 
     ??? Warning "Completa el nombre"
@@ -165,7 +165,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
     **Imagen 6**. Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.
     ///
 
-* Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una **contraseña temporal de cifrado** para este. En nuestro ejemplo utilizamos **la contraseña “sd”** de seguridad digital en español, tal y como se muestra en la imagen 7. 
+* Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una **contraseña temporal de cifrado** para cifrar el [respaldo generado a través de ADB](../../references/00-glossary.md#respaldo-generado-por-adb). En nuestro ejemplo utilizamos **la contraseña “sd”** de seguridad digital en español, tal y como se muestra en la imagen 7. 
 
     ??? warning "Alternativa"
 
@@ -198,7 +198,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 
         Aunque nuestra recomendación es seleccionar “Only non-system packages”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “All”.
 
-    * **All**: Descarga los APK de todas las aplicaciones, incluidas las del sistema.  
+    * **All**: Descarga los [APK](../../references/00-glossary.md#apk) de todas las aplicaciones, incluidas las del sistema.  
     * **Only** **non-system** **packages**: Descarga solo los APK de aplicaciones instaladas por el usuario.  
     * **Do** **not** **download** **any**: Omite completamente la descarga de APKs del dispositivo.
 
@@ -207,7 +207,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
     **Imagen 10**. Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.
     ///
 
-* Una vez seleccionada la opción de descargas de copias de paquetes, **AndroidQF preguntará acerca de eliminar los APKs** firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.
+* Una vez seleccionada la opción de descargas de copias de paquetes, **AndroidQF preguntará acerca de eliminar los [APKs](../../references/00-glossary.md#apk)** firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.
 
     ??? warning "Alternativa"
 

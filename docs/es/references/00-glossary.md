@@ -18,6 +18,13 @@ Este recurso en particular es un glosario de términos que incluye **conceptos, 
 
 ## Términos
 
+### ADB
+
+ADB hace referencia a *Android Debug Bridge*, o puente de depuración de Android. ADB es una **herramienta de línea de comandos** **que permite comunicarse directamente a través de USB con un dispositivo Android**, e iniciar diferentes acciones y comandos.  
+
+Desde el punto de vista de **forense digital**, y en particular al hacer [investigaciones basadas en logs](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html) utilizando herramientas como AndroidQF, **ADB permite establecer una comunicación directa con un dispositivo**. Es útil en situaciones donde **se tiene acceso físico al dispositivo**, y cuando se desea obtener información directamente desde el equipo a través de **comandos nativos**, sin utilizar herramientas adicionales. 
+
+
 ### Adquisición
 
 Se refiere a una etapa de investigación forense, la persona analista forense debe determinar la mejor forma de recolectar la evidencia forense. **Qué priorizar y cómo realizar la extracción dependerá de diversos factores**, entre ellos el tipo de incidente, el tipo de atención (en sitio o remota), la [volatilidad de la evidencia](https://www.sciencedirect.com/topics/computer-science/volatile-evidence) y el esfuerzo requerido para la extracción. Consideraciones adicionales para la extracción incluyen lo siguiente:
@@ -33,9 +40,17 @@ Los riesgos particulares que una organización o individuo enfrenta, **dependen 
 
 Su enfoque está pensado especialmente para periodistas, activistas, defensores de derechos humanos y los **laboratorios técnicos que acompañan casos de vigilancia digital y amenazas de software espía.**
 
+### APK
+
+De acuerdo a Wikipedia, un [APK](https://es.wikipedia.org/wiki/APK_(formato)) es un archivo con extensión .apk (Android Application Package, significado en español: Paquete de Aplicación Android) es un paquete para el sistema operativo Android. Este formato es una variante del formato JAR de Java y se usa para distribuir e instalar componentes empaquetados para la plataforma Android para teléfonos inteligentes y tabletas 
+
 ### Artefacto forense
 
 Un artefacto forense se refiere a la evidencia o los datos recuperados durante el análisis forense digital, lo incluye arhivos, registros de procesos, logs, metadatos, etc. 
+
+### Binario
+
+Los binarios de software hacen referencia a archivos que contienen únicamente código binario precompilado, es decir instrucciones que solo son legibles por la máquina y **ya están listos para ejecutarse.** Ejemplos incluyen archivos con la extensión ```.bin```, ```.exe``` o ```.app```.
 
 ### Cadena de custodia
 
@@ -92,6 +107,12 @@ Guerra legal o lawfare se refiere al uso del sistema o instituciones legales par
 
 [Hash](https://es.wikipedia.org/wiki/Funci%C3%B3n_hash) son  funciones de criptográficas, que permiten producir un único valor para un conjunto de datos dados. Ejemplos incluyen MD5, SHA1. 
 
+### Herramienta portable
+
+Hace referencia a una herramienta de software que no requiere ser instalada para su ejecución. La herramienta no modifica ni agrega archivos al sistema, sino que incluye todos los archivos que necesita para ejecutarse dentro de su misma carpeta o binario de ejecución. 
+
+Una de las ventajas de este tipo de programas es que deja menos rastros sobre su ejecución, en comparación con programas que deben ser instalados.
+
 ### Identificación
 
 Se refiere a una etapa de investigación forense, donde la persona analista determina **cuáles dispositivos, cuentas o sistemas podrían contener información relevante para la investigación**. Ejemplos de dispositivos incluyen teléfonos móviles, computadoras, cuentas en línea, medios de almacenamiento, entre otros. Idealmente, para determinar la evidencia a recolectar, la persona analista debe tener contacto con la persona impactada, para entender qué sucedió, qué acciones se han tomado hasta el momento y qué evidencia podría estar disponible.
@@ -109,6 +130,11 @@ En este recurso detallamos consideraciones importantes sobre [investigaciones fo
 ### Malware
 
 [De acuerdo a wikipedia](https://es.wikipedia.org/wiki/Malware), un malware, traducido del inglés como programa malicioso, programa maligno, programa malintencionado o código maligno, es cualquier tipo de software que realiza acciones dañinas en un sistema informático de forma intencionada (al contrario software defectuoso) y sin el conocimiento del usuario (al contrario que el software potencialmente no deseado. 
+
+### Modo de desarrollador
+
+Las [**opciones de desarrollador**](https://developer.android.com/studio/debug/dev-options) hacen referencia a un **menú oculto** del sistema operativo **Android** que permite configurar algunas **funciones adicionales**, pensadas especialmente para apoyar el proceso de [depuración](https://es.wikipedia.org/wiki/Depuraci%C3%B3n_de_programas) durante la **creación de nuevas aplicaciones o cambios en el sistema**. Entre las opciones de desarrollador, también se suelen colocar algunas **configuraciones avanzadas** como por ejemplo, ajustar las preferencias del controlador gráfico o configuraciones avanzadas de redes e incluso **opciones experimentales** que aún están en prueba o desarrollo. 
+
 
 ### MVT
 
@@ -139,6 +165,11 @@ According to Apple, threat notifications inform and assist people using devices 
 ### Respuesta a incidentes de seguridad
 
 La [respuesta a incidentes](https://www.ibm.com/es-es/topics/incident-response) se centra en **detectar y responder a eventos de seguridad**. A través de procedimientos de respuesta, se pretende minimizar el impacto y contener las consecuencias de los incidentes. Para una respuesta efectiva, es importante identificar la causa raíz de las intrusiones, de forma tal que se pueda erradicar la amenaza y se logre una recuperación oportuna.
+
+### Respaldo generado por ADB
+
+Uno de los comandos de la herramienta de consola [ADB](#adb) permite generar un respaldo completo del dispositivo que incluye las aplicaciones y algunas configuraciones. Usualmente se accede en ADB a través del comand ```adb backup```, o se utiliza a través de herramientas como AndroidQF. Al ejecutarse, el dispositivo solicitá una contraseña para cifrar la información.  
+
 
 ### Software espía (spyware)
 
