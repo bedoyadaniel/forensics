@@ -25,7 +25,7 @@ Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar
 
     ---
 
-    Describe **qué es el consentimiento informado** en el contexto de investigaciones forenses para la defensa de los derechos humanos, y **presenta un borrador que puede ser utilizado** por puntos de contacto, analistas y laboratorios forenses para obtener y registrar el consentimiento durante una investigación.
+    Describe **qué es el consentimiento informado** en el contexto de investigaciones forenses, y **presenta un borrador que puede ser adaptado** de acuerdo a las necesidades. 
 
     [:octicons-arrow-right-24: ¿Cómo obtener y documentar consentimiento informado?](01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
 

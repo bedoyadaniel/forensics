@@ -55,6 +55,10 @@ Copia bit a bit, DD o duplicación de disco se refiere al proceso de crear una r
 
 Es un programa de reporte, clasificación y publicación de vulnerabilidades de seguridad. Se establecen registros CVE únicos para cada vulnerabilidad, como por ejemplo ```CVE-2014-0160```
 
+### Diátaxis
+
+[Diátaxis](https://diataxis.fr/start-here/) es un marco de referencia para la escritura y organización de documentación técnica. Cómo principio clave, trata de agrupar la documentación en 4 diferentes categorías:  **Explainers**,  **Guías how-to**, **Tutoriales** y **Referencias**; que a su vez responden a necesidades concretas de la persona lectora. Cada tipo de material tiene un propósito y un estilo diferente. 
+
 ### DFIR (Digital Forensics and Incident Response)
 
 Si la respuesta a un incidente y el análisis forense se realizan por separado, las acciones que se tomen podrían interferir y dificultar tanto la respuesta como el análisis. Por ejemplo, **al responder** a un incidente sin tomar en cuenta las necesidades de preservación de evidencia, **se podrían alterar o destruir pruebas** y artefactos necesarios para el análisis forense. De la misma manera, si únicamente nos enfocamos en el análisis forense, se podría **retrasar la contención de la amenaza** e incrementar las consecuencias y el tiempo de resolución de un incidente.
