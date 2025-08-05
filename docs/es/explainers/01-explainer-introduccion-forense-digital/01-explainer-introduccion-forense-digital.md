@@ -116,7 +116,7 @@ A continuación se detallan algunos aspectos importantes a considerar al realiza
 
 Es posible que algunos de los artefactos forenses que se recolectan contengan información personal (contactos, mensajes, aplicaciones, entre otros) por lo que mantener una comunicación transparente y respetar siempre las decisiones de la persona defensora debe ser siempre la prioridad. Algunos factores importantes a tomar en cuenta para obtener un consentimiento informado incluyen: qué información se debe recolectar, con quién se va a compartir, por cuánto tiempo se almacenará, entre otros.
 
-[Consulta la guía práctica sobre consentimiento](../../how-tos/01-como-obtener-consentimiento-informado/){ .md-button }
+[Consulta la guía práctica sobre consentimiento](../../how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.md){ .md-button }
 
 
 ### Cadena de custodia
