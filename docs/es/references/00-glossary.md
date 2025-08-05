@@ -174,9 +174,17 @@ n-day se refiere a un tipo de [vulnerabilidad](#vulnerabilidad) que ya es conoci
 
 ### Persona experta (perito/a)
 
+De acuerdo a [wikipedia](https://es.wikipedia.org/wiki/Perito), un perito o experto (en femenino, perita o experta)[1]​ es una persona reconocida como una fuente confiable en un determinado tema, técnica o habilidad cuya capacidad para juzgar o decidir en forma correcta, equilibrada e inteligente le confiere autoridad y estatus por sus pares o por el público en una materia específica. 
 
+En el contexto de investigaciones forenses, una persona experta o perita es aquella que tiene un conocimiento reconocido (por ejemplo a través de certificaciones), y que a través de su conocimiento puede analizar, evaluar y emitir juicios sobre evidencia recolectada. 
 
 ### Phishing
+
+El phishing es una técnica que se basa en suplantar o falsificar información para incitar a la persona a realizar una acción, como dar clic a un enlace, abrir un archivo infectado, conectarse a una red o sistema falso, o ingresar información en sitios falsos. Generalmente con el objetivo de robar información, infectar un equipo o sistema de información. 
+
+* Ej. correos electrónicos o SMS sospechosos solicitando dar clic a enlaces.
+* Ej. correos electrónicos o SMS sospechosos solicitando enviar o responder información privada, sensible o financiera.
+* Ej. correos electrónicos sospechosos solicitando abrir archivos adjuntos.
 
 ### Proveedor de servicios de Internet (ISP)
 
