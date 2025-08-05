@@ -35,7 +35,7 @@ Desde el punto de vista de **forense digital**, y en particular al hacer [invest
 
 ## ¿Cómo habilitar ADB?
 
-En general, la depuración por USB o ADB **se encuentra dentro del menú de opciones de desarrollador**. Por lo tanto, si este menú aún no ha sido habilitado, se deben seguir las instrucciones correspondientes para habilitarlo. 
+En general, la depuración por USB o ADB **se encuentra dentro del menú de [opciones de desarrollador](../../references/00-glossary.md#modo-de-desarrollador)**. Por lo tanto, si este menú aún no ha sido habilitado, se deben seguir las instrucciones correspondientes para habilitarlo. 
 
 A continuación se muestran los **pasos a seguir en diferentes modelos y versiones** del sistema operativo Android. 
 
@@ -50,7 +50,8 @@ A continuación se muestran los **pasos a seguir en diferentes modelos y version
 
 ### Google (Pixel OS) 
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**.   
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **[pasos para habilitar las opciones de desarrollador en Pixel](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#google-pixel-os)**.   
+
 Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 2**.  
 
 1. Abre el menú de **Ajustes ⚙️**  
@@ -67,7 +68,8 @@ Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habil
 
 ### Honor (Magic OS) 
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**.   
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **[pasos para habilitar las opciones de desarrollador en Honor](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#honor-magic-os)**.
+
 Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 2**.  
 
 1. Abre el menú de **Ajustes ⚙️**  
@@ -83,7 +85,8 @@ Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habil
 
 ### Motorola (Hello UI)
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**.   
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **[pasos para habilitar las opciones de desarrollador en dispositivos Motorola](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#motorola-hello-ui)**.
+
 Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 3**.  
 
 1. Abre el menú de **Ajustes ⚙️**  
@@ -100,7 +103,9 @@ Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habil
 
 ### Nokia  
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**. Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB,** demostrados en la **imagen 4**.  
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **[pasos para habilitar las opciones de desarrollador en dispositivos Nokia](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#nokia)**. 
+
+Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB,** demostrados en la **imagen 4**.  
 
 1. Abre el menú de **Ajustes ⚙️**  
 2. Navega hasta la última opción **Sistema 📱**  
@@ -115,7 +120,10 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 
 ### Oppo (Magic OS)
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**. Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 5\.**  
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**. Luego de habilitar las opciones de desarrollador, sigue estos **[pasos para habilitar las opciones de desarrollador en dispositivos Oppo](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#oppo-reno-10-color-os)**. 
+
+Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB,** demostrados en la **imagen 5**.  
+
 
 1. Abre el menú de **Ajustes ⚙️**  
 2. Navega hasta la última opción **Herramientas Adicionales 📱**  
@@ -131,7 +139,9 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 
 ### Realme (Realme UI)
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**. Luego de habilitar las opciones de desarrollador, puedes seguir los siguientes **pasos para habilitar ADB**, demostrados en la **imagen 6**.  
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **[pasos para habilitar las opciones de desarrollador en dispositivos Realme](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#realme-realme-ui)**. 
+
+Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB,** demostrados en la **imagen 6**.  
 
 1. Abre el menú de **Ajustes ⚙️**  
 2. Navega hasta la última opción **Herramientas Adicionales 📱**  
@@ -147,7 +157,10 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 
 ### Samsung (One UI)
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**. Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 7\.**  
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **[pasos para habilitar las opciones de desarrollador en dispositivos Samsung](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#samsung-one-ui)**.  
+
+Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 7.**  
+
 
 1. Abre el menú de **Ajustes ⚙️**  
 2. Navega hasta la opción de **Opciones de desarrollador 🤖**  
@@ -161,7 +174,9 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 
 ### Sony (Xperia UI)
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**. Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 8\.**  
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **[pasos para habilitar las opciones de desarrollador en dispositivos Sony](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#sony-xperia-ui)**.  
+
+ Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 8\.**  
 
 1. Abre el menú de **Ajustes ⚙️**  
 2. Ingresa al menú **Sistema 📱**  
@@ -177,7 +192,9 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 
 ### Tecno (Hi OS)
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**. Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 9\.**  
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **[pasos para habilitar las opciones de desarrollador en dispositivos Tecno](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#tecno-hi-os)**.  
+
+Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 9\.**  
 
 1. Abre el menú de **Ajustes ⚙️**  
 2. Ingresa al menú **Sistema 📱**  
@@ -192,7 +209,9 @@ Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador
 
 ### Xiaomi (Hyper OS)
 
-Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **pasos para habilitar las opciones de desarrollador**. Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 10\.**  
+Para habilitar **ADB** es necesario tener acceso a las opciones de desarrollador. Si este menú aún no ha sido habilitado, puedes seguir estos **[pasos para habilitar las opciones de desarrollador en dispositivos Xiaomi](../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#xiaomi-hyper-os)**.   
+
+Luego de habilitar las opciones de desarrollador, sigue estos **pasos para habilitar ADB**, demostrados en la **imagen 10\.**  
 
 1. Abre el menú de **Ajustes ⚙️**  
 2. Navega hasta la última opción **Herramientas Adicionales 📱**  
