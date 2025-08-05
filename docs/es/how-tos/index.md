@@ -30,7 +30,7 @@ Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar
     [:octicons-arrow-right-24: ¿Cómo obtener y documentar consentimiento informado?](01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
 
 
--   :fontawesome-solid-glasses:{ .lg .middle }      __¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?__
+-   :material-test-tube:{ .lg .middle }      __¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?__
 
     ---
 
