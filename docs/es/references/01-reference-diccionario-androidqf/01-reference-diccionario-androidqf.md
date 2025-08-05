@@ -18,7 +18,7 @@ Este recurso en particular se enmarca dentro de la categoría de [referencias](h
 
 Este recurso se actualizó por última vez el 16 de Junio del 2025 y para la recopilación de la información se tomó como base la [versión 1.7.1](https://github.com/mvt-project/androidqf/tree/v1.7.1).
 
-[Androidqf](https://github.com/mvt-project/androidqf) es una herramienta de extracción forense que pertenece al [MVT Project](https://github.com/mvt-project/). Desarrollada inicialmente por [Claudio Guarnieri](https://nex.sx/) y mantenida actualmente por el [Laboratorio de Seguridad de Amnistía Internacional](https://securitylab.amnesty.org/es/).
+[Androidqf](https://github.com/mvt-project/androidqf) es una herramienta de extracción forense que pertenece al [MVT Project](https://github.com/mvt-project/). Es mantenida actualmente por el [Laboratorio de Seguridad de Amnistía Internacional](https://securitylab.amnesty.org/es/).
 
 Su nombre viene de la frase en inglés *Android Quick Forensics*. Se caracteriza por ser una **herramienta portable**, es decir se puede ejecutar en Windows, GNU/Linux y Mac OS mediante un binario precompilado, lo que simplifica la [adquisición de información forense](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#etapa-2-recoleccion-y-adquisicion) de dispositivos Android. 
 

@@ -79,7 +79,7 @@ Data integrity, along with confidentiality and availability, is one of the key p
 
 This acronym refers to Digital Forensics and Incident Response. It is the result of integrating the incident response and forensic analysis procedure into a single set of combined tasks that cover aspects of both processes. 
 
-### Diátaxis
+### Diataxis
 
 [Diátaxis](https://diataxis.fr/start-here/) is a framework for writing and organizing technical documentation. Its core principle is grouping content into four categories: **Explanations**, **How-to Guides**, **Tutorials**, and **References**. Each content type addresses a specific user need and has a distinct purpose and style.
 
