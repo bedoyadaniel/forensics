@@ -12,9 +12,9 @@ some_url:
 
 # Glosario
 
-Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/).
+Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**.
 
-Este recurso en particular es un glosario de términos que incluye **conceptos, abreviaciones y otros términos** que se consideran de importancia para la comprensión de los contenidos. 
+Este recurso en particular es un glosario de términos que incluye **conceptos, abreviaciones y otros términos** que se consideran de importancia para la comprensión de los contenidos. Se organizan en orden alfabético. 
 
 ## Términos
 

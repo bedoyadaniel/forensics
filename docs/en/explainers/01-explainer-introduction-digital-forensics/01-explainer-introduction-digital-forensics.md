@@ -12,9 +12,9 @@ some_url:
 
 # Explainer - Introduction to consensual forensics for the defense of Human Rights 
 
-This document is part of a **technical documentation repository** whose main objective is to establish a baseline of proven, flexible and accessible knowledge to **boost consensual forensic analysis in support of civil society across the globe**. To organize the contents, we use the [technical documentation framework Diátaxis](https://diataxis.fr/). 
+This document is part of a **technical documentation repository** whose main objective is to establish a baseline of proven, flexible and accessible knowledge to **boost consensual forensic analysis in support of civil society across the globe**. To organize the contents, we use the [technical documentation framework Diátaxis](../../references/00-glossary.md#diataxis). 
 
-This particular resource fits within [the explanation category in Diataxis](https://diataxis.fr/explanation/). It describes key concepts about digital forensics, including a definition, the different stages of an investigation and a description of how [forensic science](https://en.wikipedia.org/wiki/Forensic_science) can be applied for the defense of Human Rights. This is an introductory material that tries to set a baseline understanding of key concepts in relation to consensual digital forensics, and that is complementary to other resources in this repository including [how-to guides](../../../how-tos/), [tutorials](../../../tutorials/) and [references](../../../references/). 
+This particular resource fits within [the explanation category in Diataxis](https://diataxis.fr/explanation/). It describes key concepts about digital forensics, including a definition, the different stages of an investigation and a description of how forensic science can be applied for the defense of Human Rights. This is an introductory material that tries to set a baseline understanding of key concepts in relation to consensual digital forensics, and that is complementary to other resources in this repository including [how-to guides](../../../how-tos/), [tutorials](../../../tutorials/) and [references](../../../references/). 
 
 ## What is digital forensics and why is it important?
 

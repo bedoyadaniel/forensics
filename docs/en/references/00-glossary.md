@@ -93,7 +93,7 @@ It involves discovering and examining data on electronic devices to **identify, 
 
 An [exploit](https://en.wikipedia.org/wiki/Exploit_(computer_security)) is a piece of software, data, script, or sequence of actions used to **leverage a security vulnerability** in an information system to cause unintended behavior.
 
-### Expert witness (perito/a)
+### Expert witness
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Expert_witness), an expert witness is a person recognized as a reliable source in a particular field, whose ability to assess and decide competently gives them authority among peers or the public.
 
