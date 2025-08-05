@@ -52,6 +52,7 @@ Existen diferentes marcos de referencia que proponen una serie de etapas para co
 A través de este conjunto de etapas se **busca garantizar la integridad de la evidencia y la confianza en el proceso aplicado**. Por su naturaleza, la evidencia digital es frágil, ya que puede ser alterada o destruida durante el proceso de recolección o análisis.  Es por esto que, independientemente del marco de referencia que se utilice, se deben tomar en consideración los siguientes principios básicos durante todo el ciclo de una investigación:
 
 !!! success "Buenas Prácticas" 
+   
    * En la medida de lo posible, se debe evitar **manipular y trabajar directamente sobre la evidencia recolectada**. En su lugar, es recomendable utilizar copias de trabajo que no pongan en riesgo la evidencia original.
    * **Documentar es un aspecto clave durante una investigación forense**. Cualquier acción que se tome sobre la evidencia, herramientas que se utilicen para el análisis, hallazgos e hipótesis deben ser documentadas. Es importante que un tercero pueda reproducir y verificar de forma independiente el análisis realizado.
    * Si se pretende utilizar la evidencia como parte de un proceso judicial, se debe **conocer la legislación y el marco jurídico** que haga la evidencia admisible en una corte.
