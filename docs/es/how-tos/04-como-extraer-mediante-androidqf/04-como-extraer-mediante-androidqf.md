@@ -49,7 +49,7 @@ A continuación se presentan los pasos detallados para realizar la extracción f
 * **Descarga** la versión más reciente del [binario](../../references/00-glossary.md#binario), y que **corresponda a la arquitectura del equipo** de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: [https://github.com/mvt-project/androidqf/releases/](https://github.com/mvt-project/androidqf/releases/) 
 
     !!! question "¿Cómo identificar la arquitectura?"
-
+        
         Si no estás seguro cuál es la arquitectura del equipo que estás utilizando, consulta este [recurso para conocer cuál es el chip integrado en el dispositivo](https://servernet.com.ar/como-saber-si-mi-procesador-es-amd-o-arm/). 
 
 *  **Crea una nueva carpeta** para almacenar la exrtacción del dispositivo. Mueve el binario recién descargado a esta carpeta.
@@ -148,17 +148,20 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 * **AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB** y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. 
 
     !!! question ¿Qué es un UUID?  
+
         Es un número generado de forma aleatoria, tse expresa mediante 32 dígitos hexadecimales divididos en cinco grupos separados por guiones de la forma 8-4-4-4-12 lo que da un total de 36 caracteres (32 dígitos y 4 guiones), por ejemplo ```0caba18f-20a7-48d0-b9ba-724fdaa3ff85```
 
 * Posteriormente **AndroidQF preguntará el tipo de respaldo** que realizará la herramienta:
+
+    * **Only** **SMS**: Realiza un respaldo limitado que incluye solo mensajes SMS y MMS.
+    * **Everything**: Ejecuta un respaldo completo del dispositivo mediante adb backup.
+    * **No** **Backup**: Omite completamente la generación de respaldos; solo extrae otros artefactos vía ADB.
+
 
     !!! warning "Alternativa"
 
         Para el ejemplo usamos la opción **Only-SMS** para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el **contexto del caso se considera de alto riesgo** o implica investigación más sofisticada se recomienda marcar la opción  **Everything**, aunque la opción **Only-SMS** en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.
 
-    * **Only** **SMS**: Realiza un respaldo limitado que incluye solo mensajes SMS y MMS.
-    * **Everything**: Ejecuta un respaldo completo del dispositivo mediante adb backup.
-    * **No** **Backup**: Omite completamente la generación de respaldos; solo extrae otros artefactos vía ADB.
 
     ![Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.](../04-como-extraer-mediante-androidqf/assets/06-captura-linux-only-sms.png "imagen 7")
     /// caption
@@ -194,13 +197,15 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 
 * Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué **tipo de copias de las aplicaciones se desea descargar, para ello hay 3 opciones**:  
 
+    * **All**: Descarga los [APK](../../references/00-glossary.md#apk) de todas las aplicaciones, incluidas las del sistema.  
+    * **Only** **non-system** **packages**: Descarga solo los APK de aplicaciones instaladas por el usuario.  
+    * **Do** **not** **download** **any**: Omite completamente la descarga de APKs del dispositivo.
+
+
     !!! warning "Alternativa"
 
         Aunque nuestra recomendación es seleccionar “Only non-system packages”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “All”.
 
-    * **All**: Descarga los [APK](../../references/00-glossary.md#apk) de todas las aplicaciones, incluidas las del sistema.  
-    * **Only** **non-system** **packages**: Descarga solo los APK de aplicaciones instaladas por el usuario.  
-    * **Do** **not** **download** **any**: Omite completamente la descarga de APKs del dispositivo.
 
     ![Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.](../04-como-extraer-mediante-androidqf/assets/10-captura-linux-copia-paquetes.png "imagen 10")
     /// caption
@@ -209,11 +214,13 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 
 * Una vez seleccionada la opción de descargas de copias de paquetes, **AndroidQF preguntará acerca de eliminar los [APKs](../../references/00-glossary.md#apk)** firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.
 
+    * Responde **“Yes”** para que, al realizar la revisión de la información se pueda **enfocar el análisis en los paquetes que sean potencialmente sospechosos**, además de que ahorrará tiempo y espacio de almacenamiento.
+
+
     !!! warning "Alternativa"
 
         Aunque nuestra recomendación es seleccionar “Yes”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “No”.
 
-    * Responde **“Yes”** para que, al realizar la revisión de la información se pueda **enfocar el análisis en los paquetes que sean potencialmente sospechosos**, además de que ahorrará tiempo y espacio de almacenamiento.
 
     ![Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.](../04-como-extraer-mediante-androidqf/assets/11-captura-linux-omision-aplicaciones.png "imagen 11")
     /// caption
