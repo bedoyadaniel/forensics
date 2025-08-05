@@ -16,7 +16,7 @@ some_url:
     Esta guía paso a paso presenta las **instrucciones que permiten extraer evidencia forense de dispositivos Android utilizando la herramienta AndroidQF** para un posterior análisis.   
 
 
-Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../../references/00-glossary.md#diataxis).
+Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el marco de referencia de documentación técnica [Diataxis](../../references/00-glossary.md#diataxis).
 
 Este recurso en particular se enmarca dentro de la categoría de [Guia, how-to](../how-tos/), y contiene las instrucciones para realizar una extracción forense con la herramienta [AndroidQF](https://github.com/mvt-project/androidqf).
 
