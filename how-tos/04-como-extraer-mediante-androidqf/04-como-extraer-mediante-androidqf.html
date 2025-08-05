@@ -1719,7 +1719,7 @@
 <h2 id="que-necesito-para-realizar-una-extraccion-con-androidqf">¿Qué necesito para realizar una extracción con AndroidQF?</h2>
 <p>Para poder realizar una extracción con AndroidQF es <strong>necesario</strong>:</p>
 <ul>
-<li>Activar el <strong><a data-preview="" href="../../references/00-glossary.html#modo-de-desarrollador">modo desarrollador</a></strong> y <strong><a data-preview="" href="../../references/00-glossary.html#adb">activar la depuración por USB</a></strong> en el dispositivo Android a ser analizado. De ser necesario, consulta nuestras <a href="../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md">guías sobre habilitar opciones de desarrollador</a> o <a href="./how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md">la guía sobre cómo habilitar ADB</a>. </li>
+<li>Activar el <strong><a data-preview="" href="../../references/00-glossary.html#modo-de-desarrollador">modo desarrollador</a></strong> y <strong><a data-preview="" href="../../references/00-glossary.html#adb">activar la depuración por USB</a></strong> en el dispositivo Android a ser analizado. De ser necesario, consulta nuestras <a href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.html">guías sobre habilitar opciones de desarrollador</a> o <a href="../03-como-habilitar-adb/03-como-habilitar-adb.html">la guía sobre cómo habilitar ADB</a>. </li>
 <li>Conocer cuál es <a href="https://servernet.com.ar/como-saber-si-mi-procesador-es-amd-o-arm/">chip integrado de la computadora WIndows, Linux o Mac que se utilizará para realizar la extracción</a> </li>
 <li>Tener un <strong>cable para transferencia de archivos</strong> telefono-computadora. </li>
 </ul>
@@ -1729,10 +1729,10 @@
 <ul>
 <li>
 <p><strong>Descarga</strong> la versión más reciente del <a data-preview="" href="../../references/00-glossary.html#binario">binario</a>, y que <strong>corresponda a la arquitectura del equipo</strong> de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: <a href="https://github.com/mvt-project/androidqf/releases/">https://github.com/mvt-project/androidqf/releases/</a> </p>
-<details class="question">
-<summary>¿Cómo identificar la arquitectura?</summary>
+<div class="admonition question">
+<p class="admonition-title">¿Cómo identificar la arquitectura?</p>
 <p>Si no estás seguro cuál es la arquitectura del equipo que estás utilizando, consulta este <a href="https://servernet.com.ar/como-saber-si-mi-procesador-es-amd-o-arm/">recurso para conocer cuál es el chip integrado en el dispositivo</a>. </p>
-</details>
+</div>
 </li>
 <li>
 <p><strong>Crea una nueva carpeta</strong> para almacenar la exrtacción del dispositivo. Mueve el binario recién descargado a esta carpeta.</p>
@@ -1742,12 +1742,12 @@
 <ul>
 <li>
 <p>Si estás utilizando un equipo con <strong>Linux o macOS</strong> para la extracción, es necesario asignar el permiso de ejcución al archivo antes de poder ejecutarlo. Para esto, <strong>abre una terminal y navega a la carpeta donde se encuentra el binario</strong>, luego ejecuta:</p>
-<details class="warning">
-<summary>Completa el nombre</summary>
+<div class="admonition warning">
+<p class="admonition-title">Completa el nombre</p>
 <p>Al ejecutar el comando, <strong>asegúrate de completar el nombre</strong> <em>androidqf_</em> con el nombre completo del binario descargado en el paso 1. El comando resultante será algo como: </p>
 <div class="highlight"><pre><span></span><code>chmod +x ./androidqf_v1.7.1_linux_amd64
 </code></pre></div>
-</details>
+</div>
 <p><strong>En linux:</strong></p>
 <div class="highlight"><pre><span></span><code>chmod +x ./androidqf_
 </code></pre></div>
@@ -1760,22 +1760,22 @@
 <ul>
 <li>
 <p><strong>Conecta</strong>  el dispositivo desbloqueado a la computadora utilizando un cable de datos USB.</p>
-<details class="failure">
-<summary>No todos los cables USB son iguales</summary>
+<div class="admonition failure">
+<p class="admonition-title">No todos los cables USB son iguales</p>
 <p>Algunos cables USB no tienen las conexiones necesarias para transferir datos entre el dispositivo móvil y la computadora. Asegúrate de utilizar un cable que permita transferir datos. Es <a href="https://support.konnected.io/how-to-tell-a-usb-charge-only-cable-from-a-usb-data-cable">difícil distinguirlos a simple vista</a>, pero usualmente los cables de carga rápida o aquellos incluídos con los dispositivos suelen ser cables de datos.  </p>
-</details>
+</div>
 </li>
 <li>
 <p>Cuando se conecte el teléfono, aparecerá un nuevo mensaje. Selecciona <strong>permitir</strong> cuando el dispositivo Android <strong>solicite permiso de acceso a los datos del dispositivo</strong>, tal y como se muestra en la imagen 1.</p>
-<details class="failure">
-<summary>No aparece ningún mensaje</summary>
+<div class="admonition failure">
+<p class="admonition-title">No aparece ningún mensaje</p>
 <p>Si al conectar el dispositivo a la computadora no te aparece ningún mensaje sobre permisos, revisa lo siguiente: </p>
 <ul>
-<li>Asegúrate que la <a href="../how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md">depuración por USB se encuentre habilitada</a>.</li>
+<li>Asegúrate que la <a href="../03-como-habilitar-adb/03-como-habilitar-adb.html">depuración por USB se encuentre habilitada</a>.</li>
 <li>Revisa las <strong>configuraciones de USB</strong> y asegúrate que la opción de <em>transferencia de archivos</em> se encuentra habilitada.</li>
 <li>Asegúrate de que el cable USB sea un <strong>cable de datos</strong>. </li>
 </ul>
-</details>
+</div>
 <figure>
 <p><img alt=" Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos." src="assets/01-captura-android-permisos-datos.png" title="imagen 1" /></p>
 <figcaption>
@@ -1827,15 +1827,15 @@
 <ul>
 <li>
 <p><strong>AndroidQF identificará el dispositivo de forma automática una vez que permita la depuración USB</strong> y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. </p>
-<p>??? question ¿Qué es un UUID?<br />
+<p>!!! question ¿Qué es un UUID?<br />
     Es un número generado de forma aleatoria, tse expresa mediante 32 dígitos hexadecimales divididos en cinco grupos separados por guiones de la forma 8-4-4-4-12 lo que da un total de 36 caracteres (32 dígitos y 4 guiones), por ejemplo <code>0caba18f-20a7-48d0-b9ba-724fdaa3ff85</code></p>
 </li>
 <li>
 <p>Posteriormente <strong>AndroidQF preguntará el tipo de respaldo</strong> que realizará la herramienta:</p>
-<details class="warning">
-<summary>Alternativa</summary>
+<div class="admonition warning">
+<p class="admonition-title">Alternativa</p>
 <p>Para el ejemplo usamos la opción <strong>Only-SMS</strong> para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el <strong>contexto del caso se considera de alto riesgo</strong> o implica investigación más sofisticada se recomienda marcar la opción  <strong>Everything</strong>, aunque la opción <strong>Only-SMS</strong> en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.</p>
-</details>
+</div>
 <ul>
 <li><strong>Only</strong> <strong>SMS</strong>: Realiza un respaldo limitado que incluye solo mensajes SMS y MMS.</li>
 <li><strong>Everything</strong>: Ejecuta un respaldo completo del dispositivo mediante adb backup.</li>
@@ -1850,10 +1850,10 @@
 </li>
 <li>
 <p>Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una <strong>contraseña temporal de cifrado</strong> para cifrar el <a data-preview="" href="../../references/00-glossary.html#respaldo-generado-por-adb">respaldo generado a través de ADB</a>. En nuestro ejemplo utilizamos <strong>la contraseña “sd”</strong> de seguridad digital en español, tal y como se muestra en la imagen 7. </p>
-<details class="warning">
-<summary>Alternativa</summary>
+<div class="admonition warning">
+<p class="admonition-title">Alternativa</p>
 <p>Esta contraseña permite cifrar la copia de seguridad que se genera al ejecutar androidqf. En caso de generar <strong>contraseñas aleatorias</strong>, asegúrate de utilizar un <strong>gestor con adecuadas prácticas de respaldo</strong>. De lo contrario, y sino representa un riesgo, establece una contraseá simple y equivalente para todas tus extracciones.</p>
-</details>
+</div>
 <figure>
 <p><img alt="Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup sd" src="assets/07-captura-android-contrase%C3%B1a.png" title="imagen 7" /></p>
 <figcaption>
@@ -1869,10 +1869,10 @@
 <p><strong>Imagen 8</strong>. Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada</p>
 </figcaption>
 </figure>
-<details class="failure">
-<summary>Mensajes de errores esperados</summary>
+<div class="admonition failure">
+<p class="admonition-title">Mensajes de errores esperados</p>
 <p>En algunas ocasiones, suelen aparecer errores sobre la búsqueda de las rutas donde se encuentran los paquetes, por lo que es común ver algunas de estas marcas de error, sin embargo, <strong>estas marcas de error no afectan la extracción de datos forenses en el dispositivo.</strong>*</p>
-</details>
+</div>
 <figure>
 <p><img alt="Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF." src="assets/09-captura-linux-recoleccion.png" title="imagen 9" /></p>
 <figcaption>
@@ -1882,10 +1882,10 @@
 </li>
 <li>
 <p>Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué <strong>tipo de copias de las aplicaciones se desea descargar, para ello hay 3 opciones</strong>:  </p>
-<details class="warning">
-<summary>Alternativa</summary>
+<div class="admonition warning">
+<p class="admonition-title">Alternativa</p>
 <p>Aunque nuestra recomendación es seleccionar “Only non-system packages”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “All”.</p>
-</details>
+</div>
 <ul>
 <li><strong>All</strong>: Descarga los <a data-preview="" href="../../references/00-glossary.html#apk">APK</a> de todas las aplicaciones, incluidas las del sistema.  </li>
 <li><strong>Only</strong> <strong>non-system</strong> <strong>packages</strong>: Descarga solo los APK de aplicaciones instaladas por el usuario.  </li>
@@ -1900,10 +1900,10 @@
 </li>
 <li>
 <p>Una vez seleccionada la opción de descargas de copias de paquetes, <strong>AndroidQF preguntará acerca de eliminar los <a data-preview="" href="../../references/00-glossary.html#apk">APKs</a></strong> firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.</p>
-<details class="warning">
-<summary>Alternativa</summary>
+<div class="admonition warning">
+<p class="admonition-title">Alternativa</p>
 <p>Aunque nuestra recomendación es seleccionar “Yes”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “No”.</p>
-</details>
+</div>
 <ul>
 <li>Responde <strong>“Yes”</strong> para que, al realizar la revisión de la información se pueda <strong>enfocar el análisis en los paquetes que sean potencialmente sospechosos</strong>, además de que ahorrará tiempo y espacio de almacenamiento.</li>
 </ul>
@@ -1916,10 +1916,10 @@
 </li>
 <li>
 <p><strong>Espera</strong> a que todos los módulos de AndroidQF se ejecuten de acuerdo a su programación.</p>
-<details class="info">
-<summary>Duración del proceso</summary>
+<div class="admonition info">
+<p class="admonition-title">Duración del proceso</p>
 <p><strong>Esta etapa puede tomar varios minutos</strong>, dependiendo del modelo del teléfono y la cantidad de datos almacenados. El progreso se muestra línea por línea en la terminal y no requiere intervención adicional, salvo al final, donde se debe presionar Enter para completar.</p>
-</details>
+</div>
 <figure>
 <p><img alt="Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada." src="assets/12-captura-pantalla-ejecucion-correcta.png" title="imagen 12" /></p>
 <figcaption>
