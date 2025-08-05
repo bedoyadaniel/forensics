@@ -19,7 +19,7 @@ some_url:
     [:octicons-arrow-right-24: Llévame a las instrucciones](#cómo-habilitar-adb)   
 
 
-Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/).
+Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../../references/00-glossary.md#diataxis).
 
 Este recurso en particular se enmarca dentro de la categoría de **guías how-to**, y muestra los pasos a seguir para **habilitar la depuración por USB o *Android Debug Bridge* en diferentes dispositivos Android**, así como una breve explicación de **qué es la depuración por USB,** y **porqué  es útil** al hacer forense digital. Este es un **material introductorio**, complementario a otros recursos, como el [explainer de forense basada en log para dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html) y la [guía para habilitar las opciones de desarrollador](../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.html) ; y **forma parte de los pasos a seguir para realizar un triaje inicial**.   
 
