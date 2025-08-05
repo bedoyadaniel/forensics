@@ -170,11 +170,17 @@ According to Apple, threat notifications inform and assist people using devices 
 
 ### n-day
 
+n-day se refiere a un tipo de [vulnerabilidad](#vulnerabilidad) que ya es conocida, pero que aún no ha sido resuelta en todos los sistemas afectados. En algunos casos, podrían existir parches de seguridad o mitigaciones oficiales pero que aún no han sido aplicadas a los equipos afectados.  
+
 ### Persona experta (perito/a)
+
+
 
 ### Phishing
 
 ### Proveedor de servicios de Internet (ISP)
+
+Se refiere a la empresa que brinda el servicio de Internet a la persona usuaria. Usualmente proveen _conexión de última milla_, 
 
 ### Respuesta a incidentes de seguridad
 
@@ -188,12 +194,22 @@ Uno de los comandos de la herramienta de consola [ADB](#adb) permite generar un 
 
 [SocialTIC](https://socialtic.org) es una organización de la sociedad civil basada en México. Su misión es SocialTIC **empoderar de manera segura a actores de cambio en América Latina** reforzando sus acciones de análisis, comunicación social e incidencia a través del uso estratégico de tecnologías digitales y datos.
 
-
 ### Software espía (spyware)
+
+Tipo de malware que recopila información de una computadora o dispositivo móvil y después transmite esta información a una entidad externa sin el conocimiento o el consentimiento del propietario del computador. Las funcionalidades de este tipo de herramientas son variadas, pero en general permiten acceder y extraer información almacenada y en tránsito, así como manipular los sensores del dispositivo (cámara, microfono, etc).  
 
 ### Stalkerware
 
+Un stalkerware es un software espía utilizado en pequeña escala, principalmente en círculos íntimos como son los de pareja, familia o amistades. 
+
+En lo habitual, se instalan al tener acceso físico al dispositivo, y buscaban recabar toda la información posible. El atacante puede tener acceso a un panel de control en donde visualiza toda la información.
+
+Este tipo de herramientas suelen venderse como opciones de protección familiar para evitar el uso malintencionado del dispositivo o prevenir el robo de los mismos, sin embargo, sus funciones y capacidades permiten utilizarlas como herramientas de monitoreo y espionaje casero.
+
+
 ### TTP
+
+Proviene de la abreviatura en inglés de _Techniques, Tactics and Procedures_, y se refiere a un listado de técnicas, tácticas y comportamientos utilizados por actores de amenazas. El marco de referencia de TTPs más conocido es el de [MITRE ATT&CK](https://attack.mitre.org/), que incluye además un registro histórico de [TTPs asociadas a ciertos actores de amenazas](https://attack.mitre.org/groups/). 
 
 ### Triaje
 
@@ -208,6 +224,15 @@ Por ejemplo, algunos arhivos de logs se sobre-escriben al llegar a cierto límit
 
 ### Vulnerabilidad
 
+Por otro lado, una vulnerabilidad se refiere a una deficiencia o debilidad en procesos, sistemas, prácticas o hábitos que pueden propiciar amenazas o incrementar el impacto y las consecuencias de un incidente.
+
 ### Zero click
 
+Se refiere a un tipo de ataque en el que **no se requiere la intervención de la persona usuaria para la implantación del malware**. Usualmente este tipo de ataques son muy sofisticados y costosos, y requieren de múltiples vulnerabilidades encadenadas para tener éxito.
+
+
 ### Zero day
+
+Se refiere a un tipo de ataque que explota una [vulnerabilidad](#vulnerabilidad) que no es conocida, ni siquiera por el fabricante del dispositivo. Por lo tanto, no existen parches o soluciones que puedan ser aplicadas. 
+
+Puede consultar aquí la [página de wikipedia para "Ataque de día cero"](https://es.wikipedia.org/wiki/Ataque_de_d%C3%ADa_cero). 
