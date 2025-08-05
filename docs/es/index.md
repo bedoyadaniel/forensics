@@ -16,7 +16,7 @@ hide:
 # Repositorio de documentación sobre forense digital consentida para la defensa de los Derechos Humanos
 
 
-Este es un repositorio de **documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar la forense digital consentida en beneficio de la sociedad civil**. Su desarrollo es liderado por la organización de la sociedad civil [SocialTIC](../es/references/00-glossary.md#socialtic). 
+Este es un repositorio de **documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar la forense digital consentida en beneficio de la sociedad civil**. Su desarrollo es liderado por la organización de la sociedad civil [SocialTIC](https://socialtic.org). 
 
 **La forense digital permite descubrir y examinar datos de dispositivos y medios electrónicos** con el objetivo de identificar, recuperar, documentar e interpretar la información digital y su conexión con ataques digitales. En este repositorio se describen procedimientos estándar, apegados a buenas prácticas y enfocados en escenarios donde existe un **consentimiento informado**. Se pretende que a través de estas investigaciones se **genere evidencia forense de ataques digitales** que impulse acciones de **rendición de cuentas**.
 
@@ -35,7 +35,7 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
 
 ## Contenidos publicados
 
-Para organizar los contenidos, se utiliza el marco de referencia de documentación técnica [Diátaxis](../es/references/00-glossary.md#diataxis). En apego a esta metodología hemos organizado los contenidos de este respositorio en las siguientes categorías: 
+Para organizar los contenidos, se utiliza el marco de referencia de documentación técnica [Diátaxis](https://diataxis.fr). En apego a esta metodología hemos organizado los contenidos de este respositorio en las siguientes categorías: 
 
 <div class="grid cards" markdown>
 
