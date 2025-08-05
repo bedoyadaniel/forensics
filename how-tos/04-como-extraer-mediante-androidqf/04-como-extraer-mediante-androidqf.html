@@ -1709,17 +1709,17 @@
 <p>Esta guía paso a paso presenta las <strong>instrucciones que permiten extraer evidencia forense de dispositivos Android utilizando la herramienta AndroidQF</strong> para un posterior análisis.   </p>
 </div>
 <p>Este documento forma <strong>parte de un repositorio de documentación técnica</strong> que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para <strong>impulsar el análisis forense consentido en beneficio de la sociedad civil</strong>. Para organizar los contenidos, se utiliza el marco de referencia de documentación técnica <a data-preview="" href="../../references/00-glossary.html#diataxis">Diataxis</a>.</p>
-<p>Este recurso en particular se enmarca dentro de la categoría de <a href="../how-tos/">Guia, how-to</a>, y contiene las instrucciones para realizar una extracción forense con la herramienta <a href="https://github.com/mvt-project/androidqf">AndroidQF</a>.</p>
+<p>Este recurso en particular se enmarca dentro de la categoría de <a href="../how-tos/">Guia, how-to</a>, y contiene las instrucciones para realizar una extracción forense con la herramienta <a data-preview="" href="../../references/00-glossary.html#androidqf">AndroidQF</a>.</p>
 <h2 id="que-es-androidqf">¿Qué es AndroidQF?</h2>
 <p><a href="https://github.com/mvt-project/androidqf">AndroidQF</a> es una herramienta de software libre y de código abierto <strong>enfocada en la extracción forense de dispositivos Android</strong>. Actualmente mantenida por el <a href="https://securitylab.amnesty.org/es/">Laboratorio de Seguridad de Amnistía Internacional</a>. </p>
 <p>Su enfoque está pensado especialmente para periodistas, activistas, defensores de derechos humanos y los <strong>laboratorios técnicos que acompañan casos de vigilancia digital y amenazas de software espía.</strong></p>
-<p>AndroidQF funciona como un <a href="https://developer.mozilla.org/en-US/docs/Glossary/Wrapper">wrapper</a> forense sobre <a href="https://developer.android.com/tools/adb?hl=es-419">ADB</a>, automatizando comandos comunes mediante módulos que <strong>permiten realizar extracciones rápidas, seguras y locales desde cualquier sistema operativo (Linux, Windows o macOS)</strong>, sin depender de servicios en la nube ni instalaciones complejas.</p>
-<p>Su utilidad en contextos de sociedad civil radica en su <strong>portabilidad, facilidad de uso y ejecución local.</strong></p>
+<p>AndroidQF funciona como un <a href="https://developer.mozilla.org/en-US/docs/Glossary/Wrapper">wrapper</a> forense sobre <a data-preview="" href="../../references/00-glossary.html#adb">ADB</a>, automatizando comandos comunes mediante módulos que <strong>permiten realizar extracciones rápidas, seguras y locales desde cualquier sistema operativo (Linux, Windows o macOS)</strong>, sin depender de servicios en la nube ni instalaciones complejas.</p>
+<p>Su utilidad en contextos de sociedad civil radica en su <strong><a data-preview="" href="../../references/00-glossary.html#herramienta-portable">portabilidad</a>, facilidad de uso y ejecución local.</strong></p>
 <p>Esta guía es complementaria se complementa con otros materiales, como el <a href="../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md">diccionario de archivos generados por AndroidQF</a>, sus formatos y recomendaciones de uso o el <a href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.md">explainer sobre forense basada en logs para dispositivos Android</a>.</p>
 <h2 id="que-necesito-para-realizar-una-extraccion-con-androidqf">¿Qué necesito para realizar una extracción con AndroidQF?</h2>
 <p>Para poder realizar una extracción con AndroidQF es <strong>necesario</strong>:</p>
 <ul>
-<li>Activar el <strong>modo desarrollador</strong> y <strong>activar la depuración por USB</strong> en el dispositivo Android a ser analizado. De ser necesario, consulta nuestras <a href="../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md">guías sobre habilitar opciones de desarrollador</a> o <a href="./how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md">la guía sobre cómo habilitar ADB</a>. </li>
+<li>Activar el <strong><a data-preview="" href="../../references/00-glossary.html#modo-de-desarrollador">modo desarrollador</a></strong> y <strong><a data-preview="" href="../../references/00-glossary.html#adb">activar la depuración por USB</a></strong> en el dispositivo Android a ser analizado. De ser necesario, consulta nuestras <a href="../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md">guías sobre habilitar opciones de desarrollador</a> o <a href="./how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md">la guía sobre cómo habilitar ADB</a>. </li>
 <li>Conocer cuál es <a href="https://servernet.com.ar/como-saber-si-mi-procesador-es-amd-o-arm/">chip integrado de la computadora WIndows, Linux o Mac que se utilizará para realizar la extracción</a> </li>
 <li>Tener un <strong>cable para transferencia de archivos</strong> telefono-computadora. </li>
 </ul>
@@ -1728,7 +1728,7 @@
 <h3 id="descargar-el-binario-en-androidqf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 17h-2V9h-2V7h4m5-4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Descargar el binario en AndroidQF</h3>
 <ul>
 <li>
-<p><strong>Descarga</strong> la versión más reciente del binario, y que <strong>corresponda a la arquitectura del equipo</strong> de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: <a href="https://github.com/mvt-project/androidqf/releases/">https://github.com/mvt-project/androidqf/releases/</a> </p>
+<p><strong>Descarga</strong> la versión más reciente del <a data-preview="" href="../../references/00-glossary.html#binario">binario</a>, y que <strong>corresponda a la arquitectura del equipo</strong> de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: <a href="https://github.com/mvt-project/androidqf/releases/">https://github.com/mvt-project/androidqf/releases/</a> </p>
 <details class="question">
 <summary>¿Cómo identificar la arquitectura?</summary>
 <p>Si no estás seguro cuál es la arquitectura del equipo que estás utilizando, consulta este <a href="https://servernet.com.ar/como-saber-si-mi-procesador-es-amd-o-arm/">recurso para conocer cuál es el chip integrado en el dispositivo</a>. </p>
@@ -1741,7 +1741,7 @@
 <h3 id="asignar-permisos-de-ejecucion-al-binario-descargado-solo-linux-y-macos"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 11a2 2 0 0 1-2 2h-2v2h4v2H9v-4a2 2 0 0 1 2-2h2V9H9V7h4a2 2 0 0 1 2 2m4-6H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Asignar permisos de ejecución al binario descargado (<strong>solo Linux y macOS</strong>)</h3>
 <ul>
 <li>
-<p>Si estás utilizando un equipo con <strong>Linux o macOS</strong> para la extracción, <strong>abre una terminal y navega a la carpeta donde se encuentra el binario</strong>, luego ejecuta:</p>
+<p>Si estás utilizando un equipo con <strong>Linux o macOS</strong> para la extracción, es necesario asignar el permiso de ejcución al archivo antes de poder ejecutarlo. Para esto, <strong>abre una terminal y navega a la carpeta donde se encuentra el binario</strong>, luego ejecuta:</p>
 <details class="warning">
 <summary>Completa el nombre</summary>
 <p>Al ejecutar el comando, <strong>asegúrate de completar el nombre</strong> <em>androidqf_</em> con el nombre completo del binario descargado en el paso 1. El comando resultante será algo como: </p>
@@ -1849,7 +1849,7 @@
 </figure>
 </li>
 <li>
-<p>Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una <strong>contraseña temporal de cifrado</strong> para este. En nuestro ejemplo utilizamos <strong>la contraseña “sd”</strong> de seguridad digital en español, tal y como se muestra en la imagen 7. </p>
+<p>Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una <strong>contraseña temporal de cifrado</strong> para cifrar el <a data-preview="" href="../../references/00-glossary.html#respaldo-generado-por-adb">respaldo generado a través de ADB</a>. En nuestro ejemplo utilizamos <strong>la contraseña “sd”</strong> de seguridad digital en español, tal y como se muestra en la imagen 7. </p>
 <details class="warning">
 <summary>Alternativa</summary>
 <p>Esta contraseña permite cifrar la copia de seguridad que se genera al ejecutar androidqf. En caso de generar <strong>contraseñas aleatorias</strong>, asegúrate de utilizar un <strong>gestor con adecuadas prácticas de respaldo</strong>. De lo contrario, y sino representa un riesgo, establece una contraseá simple y equivalente para todas tus extracciones.</p>
@@ -1887,7 +1887,7 @@
 <p>Aunque nuestra recomendación es seleccionar “Only non-system packages”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “All”.</p>
 </details>
 <ul>
-<li><strong>All</strong>: Descarga los APK de todas las aplicaciones, incluidas las del sistema.  </li>
+<li><strong>All</strong>: Descarga los <a data-preview="" href="../../references/00-glossary.html#apk">APK</a> de todas las aplicaciones, incluidas las del sistema.  </li>
 <li><strong>Only</strong> <strong>non-system</strong> <strong>packages</strong>: Descarga solo los APK de aplicaciones instaladas por el usuario.  </li>
 <li><strong>Do</strong> <strong>not</strong> <strong>download</strong> <strong>any</strong>: Omite completamente la descarga de APKs del dispositivo.</li>
 </ul>
@@ -1899,7 +1899,7 @@
 </figure>
 </li>
 <li>
-<p>Una vez seleccionada la opción de descargas de copias de paquetes, <strong>AndroidQF preguntará acerca de eliminar los APKs</strong> firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.</p>
+<p>Una vez seleccionada la opción de descargas de copias de paquetes, <strong>AndroidQF preguntará acerca de eliminar los <a data-preview="" href="../../references/00-glossary.html#apk">APKs</a></strong> firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.</p>
 <details class="warning">
 <summary>Alternativa</summary>
 <p>Aunque nuestra recomendación es seleccionar “Yes”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “No”.</p>

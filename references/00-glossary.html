@@ -1213,6 +1213,19 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#adb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          ADB
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#adquisicion" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1252,11 +1265,37 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#apk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          APK
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#artefacto-forense" class="md-nav__link">
     <span class="md-ellipsis">
       
         <span class="md-typeset">
           Artefacto forense
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Binario
         </span>
       
     </span>
@@ -1408,6 +1447,19 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#herramienta-portable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Herramienta portable
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#identificacion" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1452,6 +1504,19 @@
       
         <span class="md-typeset">
           Malware
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modo-de-desarrollador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Modo de desarrollador
         </span>
       
     </span>
@@ -1543,6 +1608,19 @@
       
         <span class="md-typeset">
           Respuesta a incidentes de seguridad
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#respaldo-generado-por-adb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Respaldo generado por ADB
         </span>
       
     </span>
@@ -2032,6 +2110,9 @@
 <p>Este documento forma <strong>parte de un repositorio de documentación técnica</strong> que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para <strong>impulsar el análisis forense consentido en beneficio de la sociedad civil</strong>. Para organizar los contenidos, se utiliza el <a href="https://diataxis.fr/">marco de referencia de documentación técnica Diataxis</a>.</p>
 <p>Este recurso en particular es un glosario de términos que incluye <strong>conceptos, abreviaciones y otros términos</strong> que se consideran de importancia para la comprensión de los contenidos. </p>
 <h2 id="terminos">Términos</h2>
+<h3 id="adb">ADB</h3>
+<p>ADB hace referencia a <em>Android Debug Bridge</em>, o puente de depuración de Android. ADB es una <strong>herramienta de línea de comandos</strong> <strong>que permite comunicarse directamente a través de USB con un dispositivo Android</strong>, e iniciar diferentes acciones y comandos.  </p>
+<p>Desde el punto de vista de <strong>forense digital</strong>, y en particular al hacer <a data-preview="" href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html">investigaciones basadas en logs</a> utilizando herramientas como AndroidQF, <strong>ADB permite establecer una comunicación directa con un dispositivo</strong>. Es útil en situaciones donde <strong>se tiene acceso físico al dispositivo</strong>, y cuando se desea obtener información directamente desde el equipo a través de <strong>comandos nativos</strong>, sin utilizar herramientas adicionales. </p>
 <h3 id="adquisicion">Adquisición</h3>
 <p>Se refiere a una etapa de investigación forense, la persona analista forense debe determinar la mejor forma de recolectar la evidencia forense. <strong>Qué priorizar y cómo realizar la extracción dependerá de diversos factores</strong>, entre ellos el tipo de incidente, el tipo de atención (en sitio o remota), la <a href="https://www.sciencedirect.com/topics/computer-science/volatile-evidence">volatilidad de la evidencia</a> y el esfuerzo requerido para la extracción. Consideraciones adicionales para la extracción incluyen lo siguiente:</p>
 <h3 id="analisis-de-riesgos">Análisis de riesgos</h3>
@@ -2039,8 +2120,12 @@
 <h3 id="androidqf">AndroidQF</h3>
 <p><a href="https://github.com/mvt-project/androidqf">AndroidQF</a> es una herramienta de software libre y de código abierto <strong>enfocada en la extracción forense de dispositivos Android</strong>. Actualmente mantenida por el <a href="https://securitylab.amnesty.org/es/">Laboratorio de Seguridad de Amnistía Internacional</a>. </p>
 <p>Su enfoque está pensado especialmente para periodistas, activistas, defensores de derechos humanos y los <strong>laboratorios técnicos que acompañan casos de vigilancia digital y amenazas de software espía.</strong></p>
+<h3 id="apk">APK</h3>
+<p>De acuerdo a Wikipedia, un <a href="https://es.wikipedia.org/wiki/APK_(formato)">APK</a> es un archivo con extensión .apk (Android Application Package, significado en español: Paquete de Aplicación Android) es un paquete para el sistema operativo Android. Este formato es una variante del formato JAR de Java y se usa para distribuir e instalar componentes empaquetados para la plataforma Android para teléfonos inteligentes y tabletas </p>
 <h3 id="artefacto-forense">Artefacto forense</h3>
 <p>Un artefacto forense se refiere a la evidencia o los datos recuperados durante el análisis forense digital, lo incluye arhivos, registros de procesos, logs, metadatos, etc. </p>
+<h3 id="binario">Binario</h3>
+<p>Los binarios de software hacen referencia a archivos que contienen únicamente código binario precompilado, es decir instrucciones que solo son legibles por la máquina y <strong>ya están listos para ejecutarse.</strong> Ejemplos incluyen archivos con la extensión <code>.bin</code>, <code>.exe</code> o <code>.app</code>.</p>
 <h3 id="cadena-de-custodia">Cadena de custodia</h3>
 <p>Al proceso de documentar con claridad quién y de qué forma se manipula  la evidencia se le conoce como <strong>cadena de custodia</strong>. La evidencia forense puede ser manipulada o destruída durante el proceso forense, por lo que la persona analista debe ser capaz de demostrar la <a href="https://www.ibm.com/es-es/topics/data-integrity">integridad de la evidencia</a>.  En caso de que esta demostración no sea posible o suficientemente robusta, es posible que las evidencia <strong>no sea admisible en procesos judiciales</strong>, o sea refutada y desestimada por otros especialistas.</p>
 <h3 id="consentimiento-informado">Consentimiento informado</h3>
@@ -2068,6 +2153,9 @@
 <p>Guerra legal o lawfare se refiere al uso del sistema o instituciones legales para dañar, desacreditar o afectar individuos o organizaciones. Por ejemplo, en relación al caso en las cortes de Estados Unidos entre NSO y WhatsApp, el Citizen Lab enfrentó una serie de recursos y solicitudes legales que buscaban desmantelar su trabajo y acceder a información sensible, incluída la lista de víctimas. En otro ejemplo, en 2018 la empresa Candiense Sandvine amenazó al Citizen Lab con una demanda por difamación a raíz de su publicación concerniente al uso de equipos Sandvine para la implantación de spyware.  </p>
 <h3 id="hash">Hash</h3>
 <p><a href="https://es.wikipedia.org/wiki/Funci%C3%B3n_hash">Hash</a> son  funciones de criptográficas, que permiten producir un único valor para un conjunto de datos dados. Ejemplos incluyen MD5, SHA1. </p>
+<h3 id="herramienta-portable">Herramienta portable</h3>
+<p>Hace referencia a una herramienta de software que no requiere ser instalada para su ejecución. La herramienta no modifica ni agrega archivos al sistema, sino que incluye todos los archivos que necesita para ejecutarse dentro de su misma carpeta o binario de ejecución. </p>
+<p>Una de las ventajas de este tipo de programas es que deja menos rastros sobre su ejecución, en comparación con programas que deben ser instalados.</p>
 <h3 id="identificacion">Identificación</h3>
 <p>Se refiere a una etapa de investigación forense, donde la persona analista determina <strong>cuáles dispositivos, cuentas o sistemas podrían contener información relevante para la investigación</strong>. Ejemplos de dispositivos incluyen teléfonos móviles, computadoras, cuentas en línea, medios de almacenamiento, entre otros. Idealmente, para determinar la evidencia a recolectar, la persona analista debe tener contacto con la persona impactada, para entender qué sucedió, qué acciones se han tomado hasta el momento y qué evidencia podría estar disponible.</p>
 <h3 id="indicador-de-compromiso-ioc">Indicador de compromiso (IOC)</h3>
@@ -2077,6 +2165,8 @@
 <p>En este recurso detallamos consideraciones importantes sobre <a data-preview="" href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html">investigaciones forenses basadas en logs en dispositivos Android</a>. </p>
 <h3 id="malware">Malware</h3>
 <p><a href="https://es.wikipedia.org/wiki/Malware">De acuerdo a wikipedia</a>, un malware, traducido del inglés como programa malicioso, programa maligno, programa malintencionado o código maligno, es cualquier tipo de software que realiza acciones dañinas en un sistema informático de forma intencionada (al contrario software defectuoso) y sin el conocimiento del usuario (al contrario que el software potencialmente no deseado. </p>
+<h3 id="modo-de-desarrollador">Modo de desarrollador</h3>
+<p>Las <a href="https://developer.android.com/studio/debug/dev-options"><strong>opciones de desarrollador</strong></a> hacen referencia a un <strong>menú oculto</strong> del sistema operativo <strong>Android</strong> que permite configurar algunas <strong>funciones adicionales</strong>, pensadas especialmente para apoyar el proceso de <a href="https://es.wikipedia.org/wiki/Depuraci%C3%B3n_de_programas">depuración</a> durante la <strong>creación de nuevas aplicaciones o cambios en el sistema</strong>. Entre las opciones de desarrollador, también se suelen colocar algunas <strong>configuraciones avanzadas</strong> como por ejemplo, ajustar las preferencias del controlador gráfico o configuraciones avanzadas de redes e incluso <strong>opciones experimentales</strong> que aún están en prueba o desarrollo. </p>
 <h3 id="mvt">MVT</h3>
 <p>MVT es una herramienta para facilitar el análisis forense consentido de dispositivos que pertenezcan a personas que podrían ser objetivo de ataques de spyware avanzados, y en específico personas parte de la sociedad civil y de comunidades en riesgo.</p>
 <p>Se indica en su <a href="https://forensics.socialtic.org/comunidad/licencia.html">sitio web</a>:</p>
@@ -2092,6 +2182,8 @@
 <h3 id="proveedor-de-servicios-de-internet-isp">Proveedor de servicios de Internet (ISP)</h3>
 <h3 id="respuesta-a-incidentes-de-seguridad">Respuesta a incidentes de seguridad</h3>
 <p>La <a href="https://www.ibm.com/es-es/topics/incident-response">respuesta a incidentes</a> se centra en <strong>detectar y responder a eventos de seguridad</strong>. A través de procedimientos de respuesta, se pretende minimizar el impacto y contener las consecuencias de los incidentes. Para una respuesta efectiva, es importante identificar la causa raíz de las intrusiones, de forma tal que se pueda erradicar la amenaza y se logre una recuperación oportuna.</p>
+<h3 id="respaldo-generado-por-adb">Respaldo generado por ADB</h3>
+<p>Uno de los comandos de la herramienta de consola <a data-preview="" href="#adb">ADB</a> permite generar un respaldo completo del dispositivo que incluye las aplicaciones y algunas configuraciones. Usualmente se accede en ADB a través del comand <code>adb backup</code>, o se utiliza a través de herramientas como AndroidQF. Al ejecutarse, el dispositivo solicitá una contraseña para cifrar la información.  </p>
 <h3 id="software-espia-spyware">Software espía (spyware)</h3>
 <h3 id="stalkerware">Stalkerware</h3>
 <h3 id="ttp">TTP</h3>
