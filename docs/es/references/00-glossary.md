@@ -27,7 +27,7 @@ Desde el punto de vista de **forense digital**, y en particular al hacer [invest
 
 ### Adquisición
 
-Se refiere a una etapa de investigación forense, la persona analista forense debe determinar la mejor forma de recolectar la evidencia forense. **Qué priorizar y cómo realizar la extracción dependerá de diversos factores**, entre ellos el tipo de incidente, el tipo de atención (en sitio o remota), la [volatilidad de la evidencia](https://www.sciencedirect.com/topics/computer-science/volatile-evidence) y el esfuerzo requerido para la extracción. Consideraciones adicionales para la extracción incluyen lo siguiente:
+Se refiere a una etapa de investigación forense, la persona analista forense debe determinar la mejor forma de recolectar la evidencia forense, y aplicar los procedimientos necesarios para extraer los artefactos forenses.
 
 
 ### Análisis de riesgos
@@ -143,7 +143,7 @@ En este recurso detallamos consideraciones importantes sobre [investigaciones fo
 
 ### Malware
 
-[De acuerdo a wikipedia](https://es.wikipedia.org/wiki/Malware), un malware, traducido del inglés como programa malicioso, programa maligno, programa malintencionado o código maligno, es cualquier tipo de software que realiza acciones dañinas en un sistema informático de forma intencionada (al contrario software defectuoso) y sin el conocimiento del usuario (al contrario que el software potencialmente no deseado. 
+Un malware, traducido del inglés como programa malicioso, programa maligno, programa malintencionado o código maligno, es cualquier tipo de software que realiza acciones dañinas en un sistema informático de forma intencionada (al contrario software defectuoso) y sin el conocimiento del usuario (al contrario que el software potencialmente no deseado. 
 
 ### Modo de desarrollador
 
