@@ -80,9 +80,7 @@ Es un programa de reporte, clasificación y publicación de vulnerabilidades de 
 
 ### DFIR (Digital Forensics and Incident Response)
 
-Si la respuesta a un incidente y el análisis forense se realizan por separado, las acciones que se tomen podrían interferir y dificultar tanto la respuesta como el análisis. Por ejemplo, **al responder** a un incidente sin tomar en cuenta las necesidades de preservación de evidencia, **se podrían alterar o destruir pruebas** y artefactos necesarios para el análisis forense. De la misma manera, si únicamente nos enfocamos en el análisis forense, se podría **retrasar la contención de la amenaza** e incrementar las consecuencias y el tiempo de resolución de un incidente.
-
-Por lo tanto, **resulta ventajoso [combinar ambos procesos](https://www.paloaltonetworks.es/cyberpedia/digital-forensics-and-incident-response)**, de manera que durante la respuesta a un incidente se consideren mejores prácticas para la recolección y preservación de evidencia, y se utilicen hallazgos producto del análisis forense para contener y erradicar amenazas, y, ultimadamente, se prevengan futuros incidentes.
+Sus siglas en Inglés hacen referencia a la combinación y unificación de los procedimientos de respuesta a incidentes y análisis forense. Se pretende que durante la respuesta a un incidente se consideren mejores prácticas para la recolección y preservación de evidencia, y se utilicen hallazgos producto del análisis forense para contener y erradicar amenazas, y, ultimadamente, se prevengan futuros incidentes.
 
 ### Exploit
 
