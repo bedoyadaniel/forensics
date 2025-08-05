@@ -52,6 +52,10 @@ Un artefacto forense se refiere a la evidencia o los datos recuperados durante e
 
 Los binarios de software hacen referencia a archivos que contienen únicamente código binario precompilado, es decir instrucciones que solo son legibles por la máquina y **ya están listos para ejecutarse.** Ejemplos incluyen archivos con la extensión ```.bin```, ```.exe``` o ```.app```.
 
+### Bugreport
+
+Es una herramienta nativa de línea de comandos en Android, disponible desde la interfaz gráfica o desde el shell de ADB. Permite generar un informe de errores que contiene logs de diagnóstico, generados a partir de el llamado a logcat, dumsptate y dumpsys. Se genera dentro de un archivo .zip y está compuesto de una estructura de carpetas con información sobre errores, uso de memoria, llamados al sistema, información de red, información del dispositivo, entre otros.
+
 ### Cadena de custodia
 
 Al proceso de documentar con claridad quién y de qué forma se manipula  la evidencia se le conoce como **cadena de custodia**. La evidencia forense puede ser manipulada o destruída durante el proceso forense, por lo que la persona analista debe ser capaz de demostrar la [integridad de la evidencia](https://www.ibm.com/es-es/topics/data-integrity).  En caso de que esta demostración no sea posible o suficientemente robusta, es posible que las evidencia **no sea admisible en procesos judiciales**, o sea refutada y desestimada por otros especialistas.
@@ -121,6 +125,18 @@ Se refiere a una etapa de investigación forense, donde la persona analista dete
 
 [Un indicador de compromiso o IDC](https://es.wikipedia.org/wiki/Indicador_de_compromiso) (en inglés: indicator of compromise, IoC) es toda aquella información relevante que describe cualquier incidente de ciberseguridad, actividad y/o artefacto malicioso, mediante el análisis de sus patrones de comportamiento.[1]​ La intención de un indicador de compromiso es esquematizar la información que se recibe o se extrae durante el análisis de un incidente, de tal manera que pueda reutilizarse por otros investigadores o afectados, para descubrir la misma evidencia en sus sistemas y llegar a determinar si han sido o no comprometidos ya sea desde el punto de vista de monitorización frente a amenazas o por análisis forense.[2]​ Por ejemplo, se identifican ficheros creados, entradas de registro modificadas, procesos o servicios nuevos. La idea subyacente es que, si se analiza un sistema y se encuentran los detalles recogidos en un indicador de compromiso concreto, se está ante una infección provocada por el programa malicioso (malware) al que hace referencia dicho indicador de compromiso.[3]​ Los indicadores de compromiso permiten realizar un intercambio sencillo y práctico de información con el fin de detectar intrusos a partir de análisis forenses, respuestas a incidentes o análisis de malware.
 
+### Integridad de la información
+
+La integridad de ala información, junto con la confidencialidad y disponibilidad, forman parte de los principios clave para la protección de la información.  La integridad busca garantizar que los datos son son exactos y fiables y **que no han sido modificados accidentalmente o de manera intencional por terceros no autorizados**, ni cuando están en reposo, en uso o en movimiento.
+
+### Inteligencia de amenazas
+
+De acuerdo a [wikipedia](https://es.wikipedia.org/wiki/Inteligencia_de_Ciberamenazas), la Inteligencia de Ciberamenazas (en inglés: Cyber Threat Intelligence, CTI), también conocida como Inteligencia de Amenazas Cibernéticas, es la actividad de recopilar información basada en conocimientos, habilidad y experiencias sobre la ocurrencia y evaluación de amenazas cibernéticas y físicas, así como en los actores de amenazas que tienen la intención y el objetivo de ayudar a mitigar los posibles ataques y eventos dañinos que ocurren en el ciberespacio.
+
+Este concepto surgió para combatir la gran variedad de amenazas que se están produciendo así como para ayudar a los profesionales de la seguridad a reconocer los indicadores de los ciberataques, extraer información sobre los métodos de los ataques, y en consecuencia, responder a los mismos de manera idónea y precisa.
+
+La Inteligencia de Ciberamenazas busca generar conocimiento en torno al enemigo con la finalidad de reducir el riesgo que puede ocasionar sobre cualquier institución. Es una estrategia que en todo momento buscará anteponerse a los ataques y contrarrestarlos analizando la amenaza en su conjunto para detectar los datos clave que ayudan a identificar al autor del ataque, al ciberdelincuente.​ Su finalidad última es proporcionar la capacidad de percibir, reconocer, razonar, aprender y actuar de manera inteligente y oportuna sobre indicadores de escenarios de ataque y ataques cibernéticos avanzados, dicho de otra forma, tomar las acciones defensivas inteligentes correspondientes.
+
 ### Log (bitácora)
 
 Los logs, también conocidos como registros o bitácoras, son archivos que documentan actividades que ocurren dentro de un sistema informático, red o aplicación. Estos registros pueden contener información sobre accesos de usuarios, cambios en el sistema, errores, y otras actividades relevantes para una investigación forense. 
@@ -183,7 +199,14 @@ Uno de los comandos de la herramienta de consola [ADB](#adb) permite generar un 
 
 ### Triaje
 
+El triage de incidentes de seguridad se refiere al proceso de evaluación inicial y clasificación de los incidentes de seguridad en función de distintos factores, como la gravedad, la urgencia, y el impacto potencial. Su objetivo principal es asignar recursos y prioridades de manera efectiva, permitiendo que los equipos de respuesta a incidentes se enfoquen en las amenazas más críticas y reduzcan el riesgo para la organización. Este proceso, fundamental en la gestión de incidentes, es similar al triage médico, donde los pacientes son clasificados según la gravedad de su condición para determinar el orden de atención.
+
+
 ### Volatilidad
+
+La volatilidad de la evidencia digital hace referencia al hecho de que alguna información disponible en los sistemas se destruye o altera conforme pasa el tiempo. 
+
+Por ejemplo, algunos arhivos de logs se sobre-escriben al llegar a cierto límite, por lo que alguna de esta evidencia podría no existir de forma permanente en el tiempo. 
 
 ### Vulnerabilidad
 
