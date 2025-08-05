@@ -170,6 +170,10 @@ La [respuesta a incidentes](https://www.ibm.com/es-es/topics/incident-response) 
 
 Uno de los comandos de la herramienta de consola [ADB](#adb) permite generar un respaldo completo del dispositivo que incluye las aplicaciones y algunas configuraciones. Usualmente se accede en ADB a través del comand ```adb backup```, o se utiliza a través de herramientas como AndroidQF. Al ejecutarse, el dispositivo solicitá una contraseña para cifrar la información.  
 
+### SocialTIC
+
+[SocialTIC](https://socialtic.org) es una organización de la sociedad civil basada en México. Su misión es SocialTIC **empoderar de manera segura a actores de cambio en América Latina** reforzando sus acciones de análisis, comunicación social e incidencia a través del uso estratégico de tecnologías digitales y datos.
+
 
 ### Software espía (spyware)
 
