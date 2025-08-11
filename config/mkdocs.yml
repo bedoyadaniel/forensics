@@ -102,8 +102,10 @@ plugins:
   - offline #facilita consulta y navegación del sitio offline
   - privacy #plug-in para cargar recursos localmente, reducir tracking
   - typeset #permite colocar íconos como parte de headers
-  - git-revision-date-localized #permite agregar fecha de ultima actualizacion
-
+  - document-dates:
+      position: top            # Display position: top (after title)  bottom (end of document)
+  #- git-revision-date-localized #permite agregar fecha de ultima actualizacion
+  #- git-authors #agrega autores al post
 
 
 markdown_extensions:
