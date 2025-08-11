@@ -104,8 +104,9 @@ plugins:
   - typeset #permite colocar íconos como parte de headers
   - document-dates:
       position: top            # Display position: top (after title)  bottom (end of document)
-  #- git-revision-date-localized #permite agregar fecha de ultima actualizacion
-  #- git-authors #agrega autores al post
+      exclude:                 # List of excluded files
+        - index.md              # Exclude specific file
+
 
 
 markdown_extensions:

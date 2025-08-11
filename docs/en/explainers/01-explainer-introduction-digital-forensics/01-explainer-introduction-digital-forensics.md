@@ -2,11 +2,14 @@
 title: Explainer - Introduction to consensual digital forensics for the defense of Human Rights 
 summary: Explainer to introduce key concepts of consensual digital forensics in civil society
 keywords: forensics, informed consent, introduction, stages, human rights
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [explainer, intro]
 last_updated: 2025-02-13
+created: 2025-02-13
 some_url:
+authors: Daniel-Bedoya
+avatar: https://avatars.githubusercontent.com/u/13720909?v=4&size=64 
+
 ---
 
 
