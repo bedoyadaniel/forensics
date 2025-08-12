@@ -7,6 +7,7 @@ tags: [explainer, intro]
 last_updated: 2025-02-03
 some_url:
 created: 2025-02-03
+comments: true
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
