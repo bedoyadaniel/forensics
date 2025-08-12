@@ -150,3 +150,9 @@ La forense digital involucra una serie de **prácticas, metodologías, herramien
 El análisis forense consentido implica un **proceso riguroso a través de una serie de etapas**, donde se busca garantizar y demostrar la integridad de la evidencia y el análisis que se realiza. La mayoría de etapas, a excepción de la fase de análisis, no son técnicamente complejas, pero sí requieren de familiaridad con algunas herramientas y un entendimiento básico de conceptos como la cadena de custodia y el consentimiento informado. Los laboratorios y practicantes de la forense deben también evaluar y tomar medidas para mitigar riesgos que puedan surgir a raíz de las investigaciones.
 
 En conjunto y a través de la confianza laboratorios forenses emergentes y otros ya establecidos pueden colaborar para fortalecer la práctica forense en la sociedad civil. Es a través de la colaboración entre pares que podremos responder de manera holística a las necesidades de las personas defensoras en riesgo.
+
+## Comentarios
+
+¿Tienes comentarios o sugerencias sobre este recurso? Puedes utilizar la función de comentar que se muestra a continuación para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), por lo que puedes comentar allí directamente si lo prefieres. 
+
+
