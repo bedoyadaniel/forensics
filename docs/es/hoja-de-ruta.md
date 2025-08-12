@@ -2,12 +2,17 @@
 title: Ruta de contenidos
 summary: Índice de contenidos 
 keywords: índice
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [indice, intro]
 last_updated: 2025-03-14
 some_url:
 icon: material/flare
+created: 2025-02-01
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 

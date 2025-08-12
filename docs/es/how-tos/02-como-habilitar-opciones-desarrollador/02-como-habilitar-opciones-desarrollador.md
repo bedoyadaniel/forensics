@@ -2,11 +2,15 @@
 title: ¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?
 summary: Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android.
 keywords: triage, android, developer options
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [how-to, intro]
 last_updated: 2025-07-28
 some_url:
+created: 2025-07-28
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
 ---
 

@@ -1,13 +1,18 @@
 ---
 title: Primeros pasos
 summary: Primeros pasos en el repositorio 
-keywords: índice
+keywords: Primeros pasos
 authors: Daniel Bedoya Arroyo
 lang: es
 tags: [indice, intro]
-last_updated: 2025-03-14
+last_updated: 2025-07-15
 some_url:
 icon: material/source-commit-start
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
 ---
 

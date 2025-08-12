@@ -2,10 +2,15 @@
 title: Adquisición y extracción de dispositivos Android mediante AndroidQF
 summary: Adquisición y extracción de dispositivos Android mediante AndroidQF 
 keywords: android, adquisicion, extraccion, androidqf
-authors: José Martínez
+authors: 
 tags: [androidqf, extraction, acquisition, adquisicion, extraccion]
 last_updated: 2025-08-01
 some_url:
+created: 2025-08-01
+author:
+    name: José Martínez
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
 ---
 

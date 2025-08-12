@@ -8,7 +8,7 @@ last_updated: 2025-06-16
 some_url:
 created: 2025-06-16
 author:
-    name: Daniel
+    name: José Martínez
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
 

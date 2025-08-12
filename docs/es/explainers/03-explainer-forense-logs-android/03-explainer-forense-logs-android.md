@@ -2,11 +2,16 @@
 title: Principios para forense basada en logs en dispositivos Android 
 summary: Documento introductorio con principios para forense basada en logs en dispositivos Android
 keywords: forense, logs, android, androidqf
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [explainer, intro]
 last_updated: 2025-06-23
 some_url:
+created: 2025-06-23
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 # Explainer: Principios para forense basada en logs en dispositivos Android

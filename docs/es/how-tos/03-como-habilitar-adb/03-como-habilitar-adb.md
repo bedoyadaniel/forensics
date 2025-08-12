@@ -2,11 +2,15 @@
 title: ¿Cómo habilitar ADB en diferentes dispositivos Android?
 summary: Cómo habilitar ADB en diferentes dispositivos Android.
 keywords: triage, android, ADB, debug bridge, usb debug
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [how-to, intro]
 last_updated: 2025-07-30
 some_url:
+created: 2025-07-30
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
 ---
 

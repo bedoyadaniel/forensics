@@ -7,8 +7,11 @@ lang: es
 tags: [how-to, intro]
 last_updated: 2025-03-14
 some_url:
-
-
+created: 2025-03-14
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
 ---
 

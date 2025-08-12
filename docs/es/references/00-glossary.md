@@ -2,11 +2,16 @@
 title: Glosario 
 summary: Glosario 
 keywords: glosario
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [glossary, glosario, reference]
 last_updated: 2025-08-04
 some_url:
+created: 2025-08-04
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 
