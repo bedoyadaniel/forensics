@@ -100,10 +100,10 @@ plugins:
   - offline #facilita consulta y navegación del sitio offline
   - privacy #plug-in para cargar recursos localmente, reducir tracking
   - typeset #permite colocar íconos como parte de headers
-  - document-dates:
-      position: top            # Display position: top (after title)  bottom (end of document)
-      exclude:                 # List of excluded files
-        - index.md              # Exclude specific file
+#  - document-dates:
+#      position: top            # Display position: top (after title)  bottom (end of document)
+#      exclude:                 # List of excluded files
+#        - index.md              # Exclude specific file
 
 markdown_extensions:
   - admonition #cuadros de texto
