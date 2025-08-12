@@ -7,9 +7,11 @@ tags: [explainer, intro]
 last_updated: 2025-02-13
 created: 2025-02-13
 some_url:
-authors: Daniel-Bedoya
-avatar: https://avatars.githubusercontent.com/u/13720909?v=4&size=64 
-
+author:
+    name: Daniel
+    avatar: https://avatars.githubusercontent.com/u/13720909?v=4
+    description: SocialTIC
+    
 ---
 
 
