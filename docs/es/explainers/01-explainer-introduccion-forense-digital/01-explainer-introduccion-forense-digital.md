@@ -56,11 +56,12 @@ La presente guía y repositorio documental se enfocan en el análisis forense. S
 Existen diferentes marcos de referencia que proponen una serie de etapas para completar una investigación forense, como por ejemplo la [norma ISO 27037](https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf) o las guía de [NIST para la integración del análisis forense en procesos de respuesta a incidentes](https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8428.pdf).
 
 !!! success "Buenas Prácticas" 
-   A través de este conjunto de etapas se **busca garantizar la integridad de la evidencia y la confianza en el proceso aplicado**. Por su naturaleza, la evidencia digital es frágil, ya que puede ser alterada o destruida durante el proceso de recolección o análisis.  Es por esto que, independientemente del marco de referencia que se utilice, se deben tomar en consideración los siguientes principios básicos durante todo el ciclo de una investigación:
+
+    A través de este conjunto de etapas se **busca garantizar la integridad de la evidencia y la confianza en el proceso aplicado**. Por su naturaleza, la evidencia digital es frágil, ya que puede ser alterada o destruida durante el proceso de recolección o análisis.  Es por esto que, independientemente del marco de referencia que se utilice, se deben tomar en consideración los siguientes principios básicos durante todo el ciclo de una investigación:
    
-   * En la medida de lo posible, se debe evitar **manipular y trabajar directamente sobre la evidencia recolectada**. En su lugar, es recomendable utilizar copias de trabajo que no pongan en riesgo la evidencia original.
-   * **Documentar es un aspecto clave durante una investigación forense**. Cualquier acción que se tome sobre la evidencia, herramientas que se utilicen para el análisis, hallazgos e hipótesis deben ser documentadas. Es importante que un tercero pueda reproducir y verificar de forma independiente el análisis realizado.
-   * Si se pretende utilizar la evidencia como parte de un proceso judicial, se debe **conocer la legislación y el marco jurídico** que haga la evidencia admisible en una corte.
+    * En la medida de lo posible, se debe evitar **manipular y trabajar directamente sobre la evidencia recolectada**. En su lugar, es recomendable utilizar copias de trabajo que no pongan en riesgo la evidencia original.
+    * **Documentar es un aspecto clave durante una investigación forense**. Cualquier acción que se tome sobre la evidencia, herramientas que se utilicen para el análisis, hallazgos e hipótesis deben ser documentadas. Es importante que un tercero pueda reproducir y verificar de forma independiente el análisis realizado.
+    * Si se pretende utilizar la evidencia como parte de un proceso judicial, se debe **conocer la legislación y el marco jurídico** que haga la evidencia admisible en una corte.
 
 La mayoría de marcos de referencia coinciden en las siguientes etapas: **identificación, recolección, preservación, análisis y presentación**. A continuación se detalla en qué consiste cada una de estas etapas:
 
