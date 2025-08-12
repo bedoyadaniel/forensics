@@ -64,6 +64,16 @@ Existen diferentes marcos de referencia que proponen una serie de etapas para co
 
 La mayoría de marcos de referencia coinciden en las siguientes etapas: **identificación, recolección, preservación, análisis y presentación**. A continuación se detalla en qué consiste cada una de estas etapas:
 
+``` mermaid
+graph LR
+  A[:fontawesome-solid-magnifying-glass: Identificación] --> B[:material-truck: Recolección y adquisición];
+  B --> C[:material-eye-check: Verificación y preservación];
+  C --> D[:material-head-cog: Análisis];
+  D --> E[:fontawesome-solid-person-chalkboard: Presentación];
+  E --> A;
+```
+
+
 ### Etapa 1 - Identificación
 
 Durante la identificación, la persona analista determina **cuáles dispositivos, cuentas o sistemas podrían contener información relevante para la investigación**. Ejemplos de dispositivos incluyen teléfonos móviles, computadoras, cuentas en línea, medios de almacenamiento, entre otros. Idealmente, para determinar la evidencia a recolectar, la persona analista debe tener contacto con la persona impactada, para entender qué sucedió, qué acciones se han tomado hasta el momento y qué evidencia podría estar disponible.

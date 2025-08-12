@@ -115,6 +115,11 @@ markdown_extensions:
   - admonition #cuadros de texto
   - pymdownx.details #cuadros de texto
   - pymdownx.superfences #cuadros de texto
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list #permite agregar html dentro del markdown  
   - md_in_html #permite desplegar grids
   - pymdownx.blocks.caption #caption para imágenes
