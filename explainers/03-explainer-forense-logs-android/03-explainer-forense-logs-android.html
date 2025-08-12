@@ -48,15 +48,15 @@
     
     
       
-        <script src="../../assets/external/unpkg.com/iframe-worker/shim.js"></script>
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
       
     
     
       
         
         
-        
-        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -1653,7 +1653,7 @@
 
 
 <h1 id="explainer-principios-para-forense-basada-en-logs-en-dispositivos-android">Explainer: Principios para forense basada en logs en dispositivos Android</h1>
-<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-06-23'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-06-23T00:00:00'>2025-06-23</time></span><span data-tippy-content data-tippy-raw='2025-06-23'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-06-23T00:00:00'>2025-06-23</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Daniel' data-tippy-content data-tippy-raw='&lt;a href="https://socialtic.org/quienes-somos/" target="_blank"&gt;Daniel&lt;/a&gt;'><span class='avatar-text'></span><img class="avatar" src="../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
+<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-06-23'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-06-23T00:00:00'>2025-06-23</time></span><span data-tippy-content data-tippy-raw='2025-06-23'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-06-23T00:00:00'>2025-06-23</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Daniel' data-tippy-content data-tippy-raw='&lt;a href="https://socialtic.org/quienes-somos/" target="_blank"&gt;Daniel&lt;/a&gt;'><span class='avatar-text'></span><img class='avatar' src='https://avatars.githubusercontent.com/Socialtic' /></div></div></div></div>
 
 <p>Este documento forma <strong>parte de un repositorio de documentación técnica</strong> que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para <strong>impulsar el análisis forense consentido en beneficio de la sociedad civil</strong>. Para organizar los contenidos, se utiliza el <a data-preview="" href="../../references/00-glossary.html#diataxis">marco de referencia de documentación técnica Diataxis</a>.</p>
 <p>Este recurso en particular se enmarca dentro de la categoría de materiales explicativos, y presenta los <strong>fundamentos de la forense basada en logs para dispositivos Android</strong>, incluyendo una definición de forense basada en logs y una comparación con otros tipos de análisis, así como casos de uso. Este es un <strong>material introductorio que no requiere conocimientos previos</strong>, y se complementa con otras <a href="https://forensics.socialtic.org/how-tos/index.html">guías</a> de <a data-preview="" href="../../references/00-glossary.html#adquisición">extracción forense</a>.</p>
@@ -1817,7 +1817,10 @@
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a
+      href="https://squidfunk.github.io/mkdocs-material/"
+      target="_blank" rel="noopener"
+    >
       Material for MkDocs
     </a>
   
