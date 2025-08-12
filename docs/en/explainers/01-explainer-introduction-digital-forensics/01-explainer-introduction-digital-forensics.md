@@ -5,11 +5,11 @@ keywords: forensics, informed consent, introduction, stages, human rights
 lang: en
 tags: [explainer, intro]
 last_updated: 2025-02-13
-created: 2025-02-13
 some_url:
+created: 2025-02-13
 author:
-    name: Daniel Bedoya
-    avatar: ../../../../overrides/assets/img/avatars/dani-avatar.png
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
     description: SocialTIC
 
 ---

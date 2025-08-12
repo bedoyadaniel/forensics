@@ -2,11 +2,16 @@
 title: Community - Best practices for contributions
 summary: Best practices for contributions in English
 keywords: forensics, community, consensual, contribuition, language, english
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [community, intro]
 last_updated: 2025-07-15
 some_url:
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 # Best practices for contributions

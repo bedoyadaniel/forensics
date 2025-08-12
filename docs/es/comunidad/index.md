@@ -2,13 +2,15 @@
 title: Comunidad - Comunidad de práctica forense para la defensa de los derechos humanos
 summary: Motivación para contribuir con el repositorio
 keywords: forense, comunidad, contribucion
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [comunidad, intro]
 last_updated: 2025-07-14
 some_url:
 icon: material/account-group
-
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
 ---
 

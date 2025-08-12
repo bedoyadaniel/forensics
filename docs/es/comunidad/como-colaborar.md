@@ -2,11 +2,15 @@
 title: Comunidad - ¿Cómo colaborar con este repositorio?
 summary: Paso a paso para contribuciones en github
 keywords: forense, comunidad, contribucion
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [comunidad, issue, pull request, commit, github intro]
 last_updated: 2025-07-14
 some_url:
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 

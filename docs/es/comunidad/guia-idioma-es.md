@@ -2,11 +2,15 @@
 title: Comunidad - Guía de estilo
 summary: Guía de estilo para contribuciones
 keywords: forense, comunidad, contribucion
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [comunidad, intro, estilo]
 last_updated: 2025-07-14
 some_url:
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 # Guía de estilo general

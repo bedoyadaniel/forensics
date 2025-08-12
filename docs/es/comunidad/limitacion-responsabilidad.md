@@ -2,11 +2,15 @@
 title: Comunidad - Limitación de responsabilidad
 summary: Limitación de responsabilidad
 keywords: forense, comunidad, responsabilidad
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [comunidad, intro, descargo, responsabilidad]
 last_updated: 2025-07-14
 some_url:
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 # Limitación de responsabilidades

@@ -2,11 +2,16 @@
 title: Limitation of reponsibilities
 summary: Limitation of reponsibilities
 keywords: forensics, community, consensual, contribuition
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [community, intro]
 last_updated: 2025-07-15
 some_url:
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 This project is focused on strengthening consensual forensic analysis capabilities in high-risk civil society contexts. Consequently, contributions will **not** be accepted if they:

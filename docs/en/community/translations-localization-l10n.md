@@ -2,11 +2,16 @@
 title: Community - Additional translation and localization efforts
 summary: Considerations for additional translation and localization efforts 
 keywords: forensics, community, consensual, contribuition
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [community, localization, translation]
 last_updated: 2025-07-15
 some_url:
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 # Additional translation and localization efforts

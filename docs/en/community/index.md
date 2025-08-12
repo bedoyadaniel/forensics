@@ -2,12 +2,17 @@
 title: Community on consensual forensics for the defense of human rights
 summary: Description and introduction to the consensual forensics community
 keywords: forensics, community, consensual, contribuition
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [community, intro]
 last_updated: 2025-07-15
 some_url:
 icon: material/account-group
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 
 ---
 

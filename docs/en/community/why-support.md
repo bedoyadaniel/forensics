@@ -2,11 +2,16 @@
 title: Community - Supporting this effort
 summary: Reasons to support this effort
 keywords: forensics, community, consensual, contribuition
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [community, intro]
 last_updated: 2025-07-15
 some_url:
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 This repository tries to collect **knowledge and experiences of an entire community of practice**. The development of contents is led by the [civil society organization SocialTIC](https://socialtic.org/), but the intention is that the materials **accurately reflect the techniques and practices of analysts and researchers in the field**; focusing throughout on particularities and considerations of applying forensics for the defense of human rights.  Gathering and maintaining these collective learnings up to date requires a collective effort that, coincidentally, helps align the contents with the actual needs of the **communities who consult them**. 

@@ -2,11 +2,16 @@
 title: Community - How to collaborate with this repository?
 summary: How to collaborate with this repository?
 keywords: forensics, community, consensual, contribuition
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [community, intro]
 last_updated: 2025-07-15
 some_url:
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 # How to collaborate with this repository?

@@ -2,13 +2,17 @@
 title: Comunidad - Código de conducta
 summary: Código de conducta del repositorio
 keywords: forense, comunidad, codigo de conducta, comportamiento
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [comunidad, intro, coc, code-of-conduct]
 last_updated: 2025-07-14
 some_url:
----
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
+---
 
 # Código de conducta
 

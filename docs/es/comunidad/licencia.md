@@ -2,11 +2,15 @@
 title: Comunidad - Licencia de los contenidos
 summary: Licencia de los contenidos
 keywords: forense, comunidad, contribucion, traducción, traducir
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [comunidad, intro, traducir]
 last_updated: 2025-07-14
 some_url:
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 
