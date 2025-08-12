@@ -67,10 +67,10 @@ La mayoría de marcos de referencia coinciden en las siguientes etapas: **identi
 
 ``` mermaid
 graph LR
-  A[:fontawesome-solid-magnifying-glass: Identificación] --> B[:material-truck: Recolección y adquisición];
-  B --> C[:material-eye-check: Verificación y preservación];
-  C --> D[:material-head-cog: Análisis];
-  D --> E[:fontawesome-solid-person-chalkboard: Presentación];
+  A[material-symbols:garden-cart Identificación] --> B[material-symbols:garden-cart Recolección y adquisición];
+  B --> C[material-symbols:lab-research-outline Verificación y preservación];
+  C --> D[material-symbols:cognition-rounded Análisis];
+  D --> E[material-symbols:balance Presentación];
   E --> A;
 ```
 

@@ -113,6 +113,8 @@ plugins:
        - references/index.md
        - tutorials/index.md
 
+extra_javascript:
+  - path: assets/javascript/extra.js
 
 markdown_extensions:
   - admonition #cuadros de texto
