@@ -98,7 +98,7 @@ extra:
 plugins:
   - search  #habilita barra de búsqueda
   - offline #facilita consulta y navegación del sitio offline
-  - privacy #plug-in para cargar recursos localmente, reducir tracking
+#  - privacy #plug-in para cargar recursos localmente, reducir tracking
   - typeset #permite colocar íconos como parte de headers
   - document-dates:
       position: top            # Display position: top (after title)  bottom (end of document)
