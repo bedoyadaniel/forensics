@@ -7,6 +7,11 @@ lang: en
 tags: [explainer, intro]
 last_updated: 2025-05-27
 some_url:
+created: 2025-05-27
+authors:
+    - Daniel Bedoya
+    - Gurshabad Grover
+
 ---
 
 # Explainer: Risks, threats and mitigations for forensic labs supporting Human Rights Defenders

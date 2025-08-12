@@ -2,13 +2,15 @@
 title: How to obtain and document informed consent during a forensic investigation?
 summary: Guide on what is consent, why it is important and a template to obtain consent
 keywords: consent, informed consent, consented forensics
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [how-to, intro]
 last_updated: 2025-03-14
 some_url:
-
-
+created: 2025-03-14
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
 ---
 

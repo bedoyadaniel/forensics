@@ -2,12 +2,16 @@
 title: Roadmap
 summary: Roadmap and publication strategy
 keywords: roadmap, strategy, timeline
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [index, intro]
 last_updated: 2025-06-25
 some_url:
 icon: material/flare
+created: 2025-02-01
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
 ---
 

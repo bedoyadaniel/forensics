@@ -7,6 +7,12 @@ lang: en
 tags: [glossary, reference]
 last_updated: 2025-08-05
 some_url:
+created: 2025-08-05
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 # Glossary

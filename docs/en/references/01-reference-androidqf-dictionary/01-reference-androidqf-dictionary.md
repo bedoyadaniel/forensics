@@ -2,11 +2,16 @@
 title: AndroidQF output file dictionary
 summary: dictionary of androidqf resulting files 
 keywords: android, androidqf, reference
-authors: Daniel Bedoya Arroyo
 lang: en 
 tags: [explainer, intro]
 last_updated: 2025-06-16
 some_url:
+created: 2025-06-16
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 # AndroidQF output file dictionary

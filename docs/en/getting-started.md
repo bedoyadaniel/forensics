@@ -1,13 +1,17 @@
 ---
 title: Getting started
 summary: First steps to navigate the repostitory 
-keywords: índice
-authors: Daniel Bedoya Arroyo
+keywords: start here, first steps, begin
 lang: es
 tags: [indice, intro]
 last_updated: 2025-07-24
 some_url:
 icon: material/source-commit-start
+created: 2025-07-24
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
 ---
 

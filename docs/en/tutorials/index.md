@@ -2,12 +2,16 @@
 title: Indes of tutorials
 summary: Tutorials
 keywords: index, tutorials
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [index, tutorials]
 last_updated: 2025-07-22
 some_url:
 icon: material/school
+created: 2025-07-22
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 ---
 
 # Tutorials

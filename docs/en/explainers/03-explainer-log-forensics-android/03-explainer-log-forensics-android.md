@@ -2,11 +2,16 @@
 title: Introduction to log-based forensics on Android devices
 summary: Document with introduction to log-based forensics on Android devices
 keywords: forense, logs, android, androidqf
-authors: Daniel Bedoya Arroyo
 lang: en
 tags: [explainer, intro]
 last_updated: 2025-06-23
 some_url:
+created: 2025-06-23
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
 ---
 
 
