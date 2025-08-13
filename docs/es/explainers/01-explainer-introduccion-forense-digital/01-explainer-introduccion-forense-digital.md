@@ -4,7 +4,7 @@ summary: Documento introductorio a la forense digital consentida en beneficio de
 keywords: forense, consentimiento informado, introduccion, etapas, derechos humanos
 lang: es
 tags: [explainer, intro]
-last_updated: 2025-02-03
+last_updated: 2025-08-13
 some_url:
 created: 2025-02-03
 comments: true
@@ -31,15 +31,36 @@ Por ejemplo, en Polonia, luego de [investigaciones forenses lideradas por el Cit
 
 ## ¿En dónde se aplica la forense digital?
 
-Las investigaciones forenses se pueden llevar a cabo con diferentes objetivos y enfoques, por ejemplo:
+Las investigaciones forenses se pueden llevar a cabo con diferentes objetivos y enfoques: 
 
-* **Investigaciones periciales**: Se realizan en apego a marcos jurídicos, y su principal objetivo es recolectar y presentar evidencia que pueda ser utilizada en **procedimientos judiciales, ya sea civiles o criminales**. Las investigaciones periciales son lideradas mayoritariamente por entidades policiales y agencias de investigación gubernamentales. Históricamente, ha sido el enfoque de investigación más frecuente, y desde donde se originan algunas de las prácticas y marcos de referencia.
+<div class="grid cards" markdown>
 
-* **Investigaciones académicas:** Buscan identificar **nuevas líneas de investigación** que permitan avanzar en los métodos y generar conocimiento práctico y teórico que avance el área de investigación forense.
+-   :material-telescope:{ .lg .middle } __Investigaciones periciales__
 
-* **Investigaciones en el sector privado:** Son lideradas por equipos internos o consultores externos. Buscan esclarecer el **orígen y los alcances de intrusiones e incidentes** en perjuicio de empresas o instituciones.
+    ---
 
-* **Protección de defensores de Derechos Humanos (DDHH)**: En el contexto de protección a personas defensoras de Derechos Humanos, las investigaciones forenses buscan generar, preservar y presentar evidencia de incidentes de seguridad digital en perjuicio de personas defensoras de Derechos Humanos. Se busca que las personas afectadas puedan acceder a mecanismos de justicia, que reduzcan la impunidad y permitan exponer los abusos de poder y las violaciones a sus derechos fundamentales.
+    Se realizan en apego a marcos jurídicos, y su principal objetivo es recolectar y presentar evidencia que pueda ser utilizada en **procedimientos judiciales, ya sea civiles o criminales**. Las investigaciones periciales son lideradas mayoritariamente por entidades policiales y agencias de investigación gubernamentales. Históricamente, ha sido el enfoque de investigación más frecuente, y desde donde se originan algunas de las prácticas y marcos de referencia. 
+
+-   :material-wrench-cog:{ .lg .middle } __Investigaciones académicas__
+
+    ---
+
+    Buscan identificar **nuevas líneas de investigación** que permitan avanzar en los métodos y generar conocimiento práctico y teórico que avance el área de investigación forense.
+
+-   :material-school:{ .lg .middle } __Investigaciones en el sector privado__
+
+    ---
+
+    Son lideradas por equipos internos o consultores externos. Buscan esclarecer el **orígen y los alcances de intrusiones e incidentes** en perjuicio de empresas o instituciones. 
+
+-   :material-ruler:{ .lg .middle } __Protección de defensores de Derechos Humanos (DDHH)__
+
+    ---
+
+    En el contexto de protección a personas defensoras de Derechos Humanos, las investigaciones forenses buscan generar, preservar y presentar evidencia de incidentes de seguridad digital en perjuicio de personas defensoras de Derechos Humanos. Se busca que las personas afectadas puedan acceder a mecanismos de justicia, que reduzcan la impunidad y permitan exponer los abusos de poder y las violaciones a sus derechos fundamentales. 
+
+
+</div>
 
 De forma frecuente, las investigaciones forenses inician cuando se detecta un posible incidente de seguridad. Si bien el **análisis forense y la respuesta a incidentes** persiguen objetivos distintos, consolidar ambos procesos permite fortalecer la forma en que se responde a los incidentes, al tiempo que se preserva evidencia. 
 
@@ -48,6 +69,12 @@ La [respuesta a incidentes](../../references/00-glossary.md#respuesta-a-incident
 Si la respuesta a un incidente y el análisis forense se realizan por separado, las acciones que se tomen podrían interferir y dificultar tanto la respuesta como el análisis. Por ejemplo, **al responder** a un incidente sin tomar en cuenta las necesidades de preservación de evidencia, **se podrían alterar o destruir pruebas** y artefactos necesarios para el análisis forense. De la misma manera, si únicamente nos enfocamos en el análisis forense, se podría **retrasar la contención de la amenaza** e incrementar las consecuencias y el tiempo de resolución de un incidente.
 
 Por lo tanto, **resulta ventajoso [combinar ambos procesos en lo que se conoce como DFIR](../../references/00-glossary.md#dfir-digital-forensics-and-incident-response)**, de manera que durante la respuesta a un incidente se consideren mejores prácticas para la recolección y preservación de evidencia, y se utilicen hallazgos producto del análisis forense para contener y erradicar amenazas, y, ultimadamente, se prevengan futuros incidentes.
+
+``` mermaid
+flowchart LR
+  A[Respuesta a Incidentes] --> C[DFIR];
+  B[Forense Digital] --> C;
+```
 
 La presente guía y repositorio documental se enfocan en el análisis forense. Sin embargo, es importante **considerar la estrecha relación que existe con los procesos de respuesta a incidentes**, de forma tal que se puedan integrar buenas prácticas forenses durante la atención a casos y situaciones de emergencia.
 
@@ -71,33 +98,33 @@ graph LR
   B --> C[Verificación y preservación];
   C --> D[Análisis];
   D --> E[Presentación];
-  E --> A;
 ```
 
+=== "Identificación"
 
-### Etapa 1 - Identificación
+    Durante la identificación, la persona analista determina **cuáles dispositivos, cuentas o sistemas podrían contener información relevante para la investigación**. Ejemplos de dispositivos incluyen teléfonos móviles, computadoras, cuentas en línea, medios de almacenamiento, entre otros. Idealmente, para determinar la evidencia a recolectar, la persona analista debe tener contacto con la persona impactada, para entender qué sucedió, qué acciones se han tomado hasta el momento y qué evidencia podría estar disponible.
 
-Durante la identificación, la persona analista determina **cuáles dispositivos, cuentas o sistemas podrían contener información relevante para la investigación**. Ejemplos de dispositivos incluyen teléfonos móviles, computadoras, cuentas en línea, medios de almacenamiento, entre otros. Idealmente, para determinar la evidencia a recolectar, la persona analista debe tener contacto con la persona impactada, para entender qué sucedió, qué acciones se han tomado hasta el momento y qué evidencia podría estar disponible.
+=== "Recolección y adquisición"
 
-### Etapa 2 - Recolección y adquisición
+    Una vez que se identifican los dispositivos y sistemas que pueden contener evidencia útil, la persona analista forense debe determinar la mejor forma de recolectar la evidencia forense. **Qué priorizar y cómo realizar la extracción dependerá de diversos factores**, entre ellos el tipo de incidente, el tipo de atención (en sitio o remota), la [volatilidad de la evidencia](../../references/00-glossary.md#volatilidad) y el esfuerzo requerido para la extracción. Consideraciones adicionales para la extracción incluyen lo siguiente:
 
-Una vez que se identifican los dispositivos y sistemas que pueden contener evidencia útil, la persona analista forense debe determinar la mejor forma de recolectar la evidencia forense. **Qué priorizar y cómo realizar la extracción dependerá de diversos factores**, entre ellos el tipo de incidente, el tipo de atención (en sitio o remota), la [volatilidad de la evidencia](../../references/00-glossary.md#volatilidad) y el esfuerzo requerido para la extracción. Consideraciones adicionales para la extracción incluyen lo siguiente:
+    * Es posible que la persona analista identifique **más fuentes de información de las que se tenga capacidad para extraer**. Por ejemplo, si se sospecha de una infección de spyware, podría existir información relevante en el dispositivo afectado, en los equipos de red, en los equipos del proveedor de servicio, entre otros. Se debe priorizar aquella evidencia que, de acuerdo a la experiencia, tenga mayor valor para la investigación y requiera un menor esfuerzo.
+    * Por su naturaleza **algunos datos útiles para el análisis son volátiles**, es decir la información se destruye o altera en el tiempo, al apagar el dispositivo o al interactuar con el dispositivo. Un ejemplo de información volátil es la lista de procesos activos en un dispositivo en un momento determinado. En general, es recomendable priorizar la extracción de los datos volátiles sobre los no volátiles (como el sistema de archivos).
+    * Tomando lo anterior en consideración, la persona analista puede optar por diferentes tipos de extracción.  Por ejemplo, se puede realizar una **imagen física**, o [copia bit a bit](../../references/00-glossary.md#copia-bit-a-bit) de una unidad de almacenamiento, a fin de duplicar de forma íntegra su contenido, incluyendo información presente en la unidad pero que pudo haber sido eliminada. Alternativamente, se puede realizar una **imagen lógica**, es decir una copia de los archivos visibles. En algunos casos, la persona analista puede realizar una extracción de **información específica**, por ejemplo archivos de logs únicamente.
 
-* Es posible que la persona analista identifique **más fuentes de información de las que se tenga capacidad para extraer**. Por ejemplo, si se sospecha de una infección de spyware, podría existir información relevante en el dispositivo afectado, en los equipos de red, en los equipos del proveedor de servicio, entre otros. Se debe priorizar aquella evidencia que, de acuerdo a la experiencia, tenga mayor valor para la investigación y requiera un menor esfuerzo.
-* Por su naturaleza **algunos datos útiles para el análisis son volátiles**, es decir la información se destruye o altera en el tiempo, al apagar el dispositivo o al interactuar con el dispositivo. Un ejemplo de información volátil es la lista de procesos activos en un dispositivo en un momento determinado. En general, es recomendable priorizar la extracción de los datos volátiles sobre los no volátiles (como el sistema de archivos).
-* Tomando lo anterior en consideración, la persona analista puede optar por diferentes tipos de extracción.  Por ejemplo, se puede realizar una **imagen física**, o [copia bit a bit](../../references/00-glossary.md#copia-bit-a-bit) de una unidad de almacenamiento, a fin de duplicar de forma íntegra su contenido, incluyendo información presente en la unidad pero que pudo haber sido eliminada. Alternativamente, se puede realizar una **imagen lógica**, es decir una copia de los archivos visibles. En algunos casos, la persona analista puede realizar una extracción de **información específica**, por ejemplo archivos de logs únicamente.
+=== "Verificación y preservación"
 
-### Etapa 3 - Verificación y preservación
+    Una vez que se realiza la extracción, es importante verificar la integridad de la evidencia recolectada. El objetivo es poder **demostrar que la evidencia que la persona analista ha utilizado para su análisis no ha sido alterada**. La verificación y preservación son siempre importantes, pero tienen especial relevancia si se pretende utilizar la evidencia en procedimientos judiciales. Usualmente, la verificación de la integridad implica la utilización de [funciones de hash criptográficas](../../references/00-glossary.md#hash), que permiten producir un único valor para un conjunto de datos dados. Por su parte, la preservación se relaciona con el establecimiento de una [**cadena de custodia**](../../references/00-glossary.md#cadena-de-custodia), especialmente para evidencia física (dispositivos físicos, discos duros, etc), a través de un registro y documentación de dónde, cómo y quién ha accedido a la evidencia.
 
-Una vez que se realiza la extracción, es importante verificar la integridad de la evidencia recolectada. El objetivo es poder **demostrar que la evidencia que la persona analista ha utilizado para su análisis no ha sido alterada**. La verificación y preservación son siempre importantes, pero tienen especial relevancia si se pretende utilizar la evidencia en procedimientos judiciales. Usualmente, la verificación de la integridad implica la utilización de [funciones de hash criptográficas](../../references/00-glossary.md#hash), que permiten producir un único valor para un conjunto de datos dados. Por su parte, la preservación se relaciona con el establecimiento de una [**cadena de custodia**](../../references/00-glossary.md#cadena-de-custodia), especialmente para evidencia física (dispositivos físicos, discos duros, etc), a través de un registro y documentación de dónde, cómo y quién ha accedido a la evidencia. 
+=== "Análisis"
 
-### Etapa 4 - Análisis
+    Durante el análisis, la persona analista utiliza herramientas especializadas y análisis manual para estudiar y analizar la evidencia, a fin de **establecer hipótesis y conclusiones** sobre lo que sucedió. En muchas  ocasiones, la persona analista se enfrentará a grandes cantidades de información, por lo que un análisis manual puede ser poco efectivo y muy lento, en especial si no se tiene claridad en qué y dónde buscar. Algunas herramientas forenses pueden facilitar el proceso, en especial si se tiene acceso a [**indicadores de compromiso**](../../references/00-glossary.md#indicador-de-compromiso-ioc). Durante esta etapa, es clave utilizar metodologías y procedimientos consistentes, que puedan ser replicables y verificables. En algunas ocasiones no será posible establecer una conclusión a partir de la información existente.
 
-Durante el análisis, la persona analista utiliza herramientas especializadas y análisis manual para estudiar y analizar la evidencia, a fin de **establecer hipótesis y conclusiones** sobre lo que sucedió. En muchas  ocasiones, la persona analista se enfrentará a grandes cantidades de información, por lo que un análisis manual puede ser poco efectivo y muy lento, en especial si no se tiene claridad en qué y dónde buscar. Algunas herramientas forenses pueden facilitar el proceso, en especial si se tiene acceso a [**indicadores de compromiso**](../../references/00-glossary.md#indicador-de-compromiso-ioc). Durante esta etapa, es clave utilizar metodologías y procedimientos consistentes, que puedan ser replicables y verificables. En algunas ocasiones no será posible establecer una conclusión a partir de la información existente.
+=== "Presentación"
 
-### Etapa 5 - Presentación
+    La última etapa de un análisis forense que implica preparar y presentar la información derivada del análisis. Se debe tomar en consideración el objetivo y la audiencia a la que se le estará presentando la información para determinar la mejor estructura de contenidos. Por ejemplo, si se debe preparar un informe como parte de un procedimiento judicial, el reporte debe ser detallado e incluir información que permita verificar y reproducir los hallazgos. Por el contrario, si el reporte es de uso interno de una organización y está dirigido al equipo de liderazgo, el reporte puede enfocarse en las conclusiones y recomendaciones de remediación.
 
-La última etapa de un análisis forense que implica preparar y presentar la información derivada del análisis. Se debe tomar en consideración el objetivo y la audiencia a la que se le estará presentando la información para determinar la mejor estructura de contenidos. Por ejemplo, si se debe preparar un informe como parte de un procedimiento judicial, el reporte debe ser detallado e incluir información que permita verificar y reproducir los hallazgos. Por el contrario, si el reporte es de uso interno de una organización y está dirigido al equipo de liderazgo, el reporte puede enfocarse en las conclusiones y recomendaciones de remediación.
+
 
 ## ¿Cómo se aplica la forense digital en la práctica de defensa de Derechos Humanos?
 
