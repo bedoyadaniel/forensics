@@ -8,6 +8,7 @@ last_updated: 2025-03-14
 some_url:
 icon: material/flare
 created: 2025-02-01
+comments: true
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
@@ -50,3 +51,11 @@ Durante los próximos meses, esperamos publicar contenidos sobre los siguientes 
 * Análisis de aplicaciones maliciosas para sistema operativo Android *(estimado segunda mitad 2025\)*  
 * Análisis manual de logs *(estimado segunda mitad 2025\)*  
 * Análisis de vulnerabilidades en Android *(estimado segunda mitad 2025\)*
+
+
+
+## Comentarios
+
+¿Tienes **comentarios o sugerencias** sobre esta hoja de ruta? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
+
+

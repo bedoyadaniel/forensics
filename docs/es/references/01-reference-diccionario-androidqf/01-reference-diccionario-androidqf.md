@@ -2,12 +2,12 @@
 title: Diccionario de archivos generados por la herramienta androidqf 
 summary: dictionary of androidqf resulting files 
 keywords: android, androidqf, reference
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [explainer, intro]
 last_updated: 2025-06-16
 some_url:
 created: 2025-06-16
+comments: true
 author:
     name: José Martínez
     url: https://socialtic.org/quienes-somos/

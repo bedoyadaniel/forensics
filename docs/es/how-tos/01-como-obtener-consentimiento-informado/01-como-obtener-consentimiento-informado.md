@@ -2,14 +2,14 @@
 title: ¿Cómo obtener y documentar un consentimiento informado para una investigación forense?
 summary: Guía how-to sobre consentimiento informado, qué es, cómo obtenerlo y cómo documentarlo. 
 keywords: consent, informed consent, consented forensics
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [how-to, intro]
 last_updated: 2025-03-14
 some_url:
 created: 2025-03-14
+comments: true
 author:
-    name: Daniel
+    name: Daniel Bedoya
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
 

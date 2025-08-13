@@ -7,6 +7,7 @@ tags: [explainer, intro]
 last_updated: 2025-06-23
 some_url:
 created: 2025-06-23
+comments: true
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
@@ -111,3 +112,10 @@ En el caso del **sistema Android,** debido a la diversidad de fabricantes y tecn
 Una gran parte de los reportes hasta ahora publicados por sociedad civil han utilizado la forense basada en logs para justificar y documentar sus hallazgos, debido en parte a que permite realizar investigaciones de forma remota, minimiza la información personal a recolectar y entrega resultados de alta confiabilidad. 
 
 Si deseas contribuir con el desarrollo, la traducción o difusión de este recurso por favor escríbenos a [seguridad@socialtic.org](mailto:seguridad@socialtic.org) 
+
+
+## Comentarios
+
+¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
+
+

@@ -7,6 +7,7 @@ tags: [how-to, intro]
 last_updated: 2025-07-28
 some_url:
 created: 2025-07-28
+comments: true
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
@@ -212,3 +213,10 @@ La interfaz gráfica de los dispositivos Android varía entre fabricantes que ut
 El menú de **opciones de desarrollador** es un menú oculto, que se habilita a través de un procedimiento sencillo en la interfaz gráfica, y que es necesario para modificar **opciones claves requeridas durante un proceso de extracción forense**, como la consola ADB o un reporte de errores. En este recurso se recopilan **capturas de pantalla correspondientes a diferentes fabricantes** e interfaces, con la intención de **facilitar la habilitación las opciones de desarrollador** para personas analistas de la sociedad civil. 
 
 Si **tienes acceso a una interfaz gráfica que no se muestra en la lista**, y deseas incorporar la captura correspondiente a este recurso, puedes escribirnos a través de un *[issue](../../comunidad/como-colaborar.md#propuestas-de-mejora-o-correcciones-a-través-de-issues)* o, si te sientes cómodo con markdown, puedes enviar una solicitud de integración a través de un *[pull request](../../comunidad/como-colaborar.md#solicitudes-de-integración-a-través-de-pull-request)*.
+
+
+## Comentarios
+
+¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
+
+

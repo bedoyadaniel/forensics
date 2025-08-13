@@ -7,6 +7,7 @@ tags: [how-to, intro]
 last_updated: 2025-07-30
 some_url:
 created: 2025-07-30
+comments: true
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
@@ -228,3 +229,10 @@ Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apar
 Debido a la **diversidad de fabricantes** y versiones del sistema operativo Android hemos presentado en este material una lista de fabricantes e **instrucciones paso a paso para habilitar ADB**, y así **facilitar y promover el análisis forense consentido** en beneficio de la sociedad civil. 
 
 Si **tienes acceso a una interfaz gráfica que no se muestra en la lista**, y deseas incorporar la captura correspondiente a este recurso, puedes escribirnos a través de un *issue* o, si te sientes cómodo con markdown, puedes enviar una solicitud de integración a través de un *pull request.*
+
+
+## Comentarios
+
+¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
+
+
