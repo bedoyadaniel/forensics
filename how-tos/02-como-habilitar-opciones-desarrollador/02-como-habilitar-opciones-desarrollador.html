@@ -1244,6 +1244,19 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#comentarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Comentarios
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1953,6 +1966,8 @@
 <p>La interfaz gráfica de los dispositivos Android varía entre fabricantes que utilizan como base el <a href="https://source.android.com/?hl=es-419">proyecto de código abierto Android (AOSP)</a>. Cada fabricante realiza sus propios desarrollos sobre esta capa base, con diferentes niveles de customización, lo que resulta en interfaces con <strong>diferentes apariencias, menús y opciones</strong>. </p>
 <p>El menú de <strong>opciones de desarrollador</strong> es un menú oculto, que se habilita a través de un procedimiento sencillo en la interfaz gráfica, y que es necesario para modificar <strong>opciones claves requeridas durante un proceso de extracción forense</strong>, como la consola ADB o un reporte de errores. En este recurso se recopilan <strong>capturas de pantalla correspondientes a diferentes fabricantes</strong> e interfaces, con la intención de <strong>facilitar la habilitación las opciones de desarrollador</strong> para personas analistas de la sociedad civil. </p>
 <p>Si <strong>tienes acceso a una interfaz gráfica que no se muestra en la lista</strong>, y deseas incorporar la captura correspondiente a este recurso, puedes escribirnos a través de un <em><a href="../../comunidad/como-colaborar.html#propuestas-de-mejora-o-correcciones-a-través-de-issues">issue</a></em> o, si te sientes cómodo con markdown, puedes enviar una solicitud de integración a través de un <em><a href="../../comunidad/como-colaborar.html#solicitudes-de-integración-a-través-de-pull-request">pull request</a></em>.</p>
+<h2 id="comentarios">Comentarios</h2>
+<p>¿Tienes <strong>comentarios o sugerencias</strong> sobre este recurso? Puedes utilizar la <strong>función de comentar que se muestra a continuación</strong> para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro <a href="../../comunidad/codigo-de-conducta.html">código de conducta</a>. La función de comentarios enlaza directamente a la sección de <a href="https://github.com/Socialtic/forensics/discussions"><em>Discussions</em> de Github</a>, donde también <strong>puedes participar en las discusiones de forma directa</strong>, si lo prefieres.   </p>
 
 
 
@@ -1967,6 +1982,50 @@
 
 
 
+
+
+<!-- Insert generated snippet here -->
+
+
+
+<script src="https://giscus.app/client.js" data-repo="socialtic/forensics" data-repo-id="R_kgDONvIuiA" data-category="General" data-category-id="DIC_kwDONvIuiM4CuEFV" data-mapping="pathname" data-strict="0" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>
