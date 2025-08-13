@@ -2,7 +2,6 @@
 title: Primeros pasos
 summary: Primeros pasos en el repositorio 
 keywords: Primeros pasos
-authors: Daniel Bedoya Arroyo
 lang: es
 tags: [indice, intro]
 last_updated: 2025-07-15
