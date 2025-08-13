@@ -116,6 +116,9 @@ plugins:
 extra_javascript:
   - path: assets/javascript/extra.js
 
+extra_css:
+  - assets/css/extra.css
+
 markdown_extensions:
   - admonition #cuadros de texto
   - pymdownx.details #cuadros de texto

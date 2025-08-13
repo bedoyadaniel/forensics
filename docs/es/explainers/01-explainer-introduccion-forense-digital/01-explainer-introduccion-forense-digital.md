@@ -35,25 +35,25 @@ Las investigaciones forenses se pueden llevar a cabo con diferentes objetivos y 
 
 <div class="grid cards" markdown>
 
--   :material-telescope:{ .lg .middle } __Investigaciones periciales__
+-   :material-police-badge:{ .lg .middle } __Investigaciones periciales__
 
     ---
 
     Se realizan en apego a marcos jurídicos, y su principal objetivo es recolectar y presentar evidencia que pueda ser utilizada en **procedimientos judiciales, ya sea civiles o criminales**. Las investigaciones periciales son lideradas mayoritariamente por entidades policiales y agencias de investigación gubernamentales. Históricamente, ha sido el enfoque de investigación más frecuente, y desde donde se originan algunas de las prácticas y marcos de referencia. 
 
--   :material-wrench-cog:{ .lg .middle } __Investigaciones académicas__
+-   :fontawesome-solid-university:{ .lg .middle } __Investigaciones académicas__
 
     ---
 
     Buscan identificar **nuevas líneas de investigación** que permitan avanzar en los métodos y generar conocimiento práctico y teórico que avance el área de investigación forense.
 
--   :material-school:{ .lg .middle } __Investigaciones en el sector privado__
+-   :fontawesome-solid-money-bill-1-wave:{ .lg .middle } __Investigaciones en el sector privado__
 
     ---
 
     Son lideradas por equipos internos o consultores externos. Buscan esclarecer el **orígen y los alcances de intrusiones e incidentes** en perjuicio de empresas o instituciones. 
 
--   :material-ruler:{ .lg .middle } __Protección de defensores de Derechos Humanos (DDHH)__
+-   :octicons-megaphone-16:{ .lg .middle } __Protección de defensores de Derechos Humanos (DDHH)__
 
     ---
 
