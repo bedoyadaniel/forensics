@@ -910,6 +910,19 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Comments
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1644,6 +1657,8 @@
 <p><strong>On Android devices</strong>, due to the diversity of manufacturers and technologies involved in development, there are a wide variety of standards and tools to become familiar with—including syslog, dumpstate, and ADB. Additionally, tools like AndroidQF are especially helpful for gathering forensic information from Android systems.</p>
 <p>A large share of published reports by civil society organizations have relied on log-based forensics to support and document their findings. This is in part due to its ability to support remote investigations, its limited collection of personal information, and its capacity to produce high-confidence results.</p>
 <p>If you would like to contribute to the development, translation, or dissemination of this resource, please contact us at <a href="mailto:seguridad@socialtic.org"><strong>seguridad@socialtic.org</strong>.</a>.</p>
+<h2 id="comments">Comments</h2>
+<p>Do you have any <strong>comment or suggestion</strong> about this resource? You can use the <strong>comment function provided below</strong> to leave your ideas, corrections or thoughts. Please make sure to follow our <a href="../../community/code-of-conduct.html">code of conduct</a> when leaving your comment. If you prefer, you can also participate in the discussion directly in the <a href="https://github.com/Socialtic/forensics/discussions">github repository</a>. </p>
 
 
 
@@ -1658,6 +1673,50 @@
 
 
 
+
+
+<!-- Insert generated snippet here -->
+
+
+
+<script src="https://giscus.app/client.js" data-repo="socialtic/forensics" data-repo-id="R_kgDONvIuiA" data-category="General" data-category-id="DIC_kwDONvIuiM4CuEFV" data-mapping="pathname" data-strict="0" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>

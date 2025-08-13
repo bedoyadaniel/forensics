@@ -983,6 +983,19 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Comments
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1785,6 +1798,8 @@
 <p>Digital forensic investigations involve a series of <strong>practices, methodologies, tools, skills and standards that can lead to verifiable conclusions about digital security incidents</strong>. In the context of Human Rights defense, evidence collected through forensic investigations can boost accountability actions that reduce the impunity that is frequently tied with digital attacks. </p>
 <p>Consensual forensic analysis <strong>implies following a rigorous, systematic and objective process across a series of phases</strong>, where the goal is to guarantee the chain of custody and demonstrate the integrity of the evidence used for the analysis. Most of the steps in a forensic investigation are not technically complex, but do require a basic understanding of key concepts like informed consent and chain of custody. Labs and forensic researchers should also assess risks and take adequate precautions to mitigate risks that emerge from forensic investigations. </p>
 <p>It is by working together as a community and continuing to develop trust among emerging and established forensic labs that will be able to grow and strengthen the forensic practice in civil society. Peer collaboration is key to respond holistically to the needs of at-risk communities from civil society. <strong>We extend an open invitation to collaborate with this resource and this repository.</strong> If you have any observation or request, you can submit it directly through the <a href="https://github.com/Socialtic/forensics/issues">issues section of this repository</a>. If you have additional resources you would like to include into this repository, please reach out to <a href="mailto:seguridad@socialtic.org">seguridad@socialtic.org</a>. </p>
+<h2 id="comments">Comments</h2>
+<p>Do you have any <strong>comment or suggestion</strong> about this resource? You can use the <strong>comment function provided below</strong> to leave your ideas, corrections or thoughts. Please make sure to follow our <a href="../../community/code-of-conduct.html">code of conduct</a> when leaving your comment. If you prefer, you can also participate in the discussion directly in the <a href="https://github.com/Socialtic/forensics/discussions">github repository</a>. </p>
 
 
 
@@ -1799,6 +1814,50 @@
 
 
 
+
+
+<!-- Insert generated snippet here -->
+
+
+
+<script src="https://giscus.app/client.js" data-repo="socialtic/forensics" data-repo-id="R_kgDONvIuiA" data-category="General" data-category-id="DIC_kwDONvIuiM4CuEFV" data-mapping="pathname" data-strict="0" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>
