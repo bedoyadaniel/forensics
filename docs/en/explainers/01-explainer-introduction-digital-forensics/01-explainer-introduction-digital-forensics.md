@@ -35,13 +35,37 @@ For example, in Poland, after [digital forensic investigations led by Amnesty Te
 
 In general, beyond being used as an accountability tool in Civil Society, forensic investigations are carried out with different objectives and areas of focus, for example:
 
-* **Expert investigations for judicial proceedings:** They are often carried out by investigators in alignment with local laws for criminal or civil cases. Expert investigations are often carried out by police, military or judicial entities. Historically, a lot of the documentation and processes have been developed by these groups in contexts where there is no direct consent for the investigation. 
 
-* **Academic investigations:** Through academic investigations researchers look to develop new lines and techniques for research that create improvements in the methodologies and generate practical knowledge to advance the forensic science field. 
+<div class="grid cards" markdown>
 
-* **Private sector investigations:** Private sector investigations are led by internal teams or external consultants, and have the goal of identifying the origin and the scope of possible intrusions and security incidents affecting business or institutions. 
+-   :material-police-badge:{ .lg .middle } __Expert investigations for judicial proceedings__
 
-* **Investigations to protect Human Rights Defenders (HRDs)**: In the context of protection to Human Rights Defenders, forensic investigations intend to generate, preserve and present evidence of digital security incidents affecting HRDs. The goal is to enable access to remediation and accountability mechanisms that reduce the attacker's impunity and expose perpetrators that violate fundamental rights. 
+    ---
+
+    They are often carried out by investigators in alignment with local laws for criminal or civil cases. Expert investigations are often carried out by police, military or judicial entities. Historically, a lot of the documentation and processes have been developed by these groups in contexts where there is no direct consent for the investigation 
+
+-   :fontawesome-solid-university:{ .lg .middle } __Academic investigations__
+
+    ---
+
+    Through academic investigations researchers look to develop new lines and techniques for research that create improvements in the methodologies and generate practical knowledge to advance the forensic science field. 
+
+-   :fontawesome-solid-money-bill-1-wave:{ .lg .middle } __Private sector investigations__
+
+    ---
+
+    Private sector investigations are led by internal teams or external consultants, and have the goal of identifying the origin and the scope of possible intrusions and security incidents affecting business or institutions.  
+
+-   :octicons-megaphone-16:{ .lg .middle } __Investigations to protect Human Rights Defenders (HRDs)__
+
+    ---
+
+    In the context of protection to Human Rights Defenders, forensic investigations intend to generate, preserve and present evidence of digital security incidents affecting HRDs. The goal is to enable access to remediation and accountability mechanisms that reduce the attacker's impunity and expose perpetrators that violate fundamental rights. 
+
+
+</div>
+
+
 
 Frequently, forensic investigations start when there is a detection of a possible security incident. Although **forensic analysis and incident response** pursue different goals, consolidating both processes results in a stronger incident handling and containment that is also capable of collecting and preserving important evidence. 
 
@@ -50,6 +74,12 @@ Frequently, forensic investigations start when there is a detection of a possibl
 When incident response and forensic analysis are done separately, actions that are taken without adequate coordination can have an impact both and challenge both the response and the analysis. For example, **managing an incident without considering the need to document and preserve evidence, can result in damage or destruction of files and artifacts required of the forensic investigation**. In a similar way, focusing solely on the forensic analysis, might delay the contention of an incident, resulting in higher severity consequences and a longer resolution time. 
 
 Therefore, **it is ideal to combine both processes in what is often referred to as [Digital Forensics and Incident Response](../../references/00-glossary.md#dfir-digital-forensics-and-incident-response) (DFIR)**, so that the response considers best practices for the collection and preservation of evidence, and findings from the forensic research can be used to contain and, ultimately, prevent future incidents. 
+
+``` mermaid
+flowchart LR
+  A[Incident Response] --> C[DFIR];
+  B[Digital Forensics] --> C;
+```
 
 This guide and repository are focused on the forensic aspects of an investigation. However, please **keep in mind the close relationship that forensic has with incident response processes**, so that you can integrate forensic best practices when responding to emergencies and handling requests for assistance. 
 
@@ -67,31 +97,42 @@ There are several frameworks and norms that suggest a series of phases in order 
 
 Most of the frameworks coincide in the following phases: **identification, collection, preservation, analysis and presentation**. Below we detail what happens during each of these phases. 
 
-### Stage 1 - Identification
+``` mermaid
+graph LR
+  A[1- Identification] --> B[2- Collection and acquisition];
+  B --> C[3- Verification and preservation];
+  C --> D[4- Analysis];
+  D --> E[5- Presentation];
+```
 
-During the identification phase, the analyst **determines which devices, accounts or systems might contain relevant information for the investigation**. Examples include mobile phones, computers, online accounts, storage media, among others. Ideally, to determine which evidence to collect, the analyst should engage in a conversation with the impacted person, to understand what happened, what actions have been taken and what evidence and artifacts might be available. 
 
-### Stage 2 - Collection and acquisition 
+=== "1- Identification"
 
-Once you identify the devices and systems that might contain evidence, the forensic analyst determines the best way to retrieve such evidence. **The prioritization and the exact procedure to be used depends on several factors**, including the type of incident, whether support is happening remotely or on the ground, the [volatility](../../references/00-glossary.md#volatility) of the evidence and the amount of effort required for the extraction. Keep in mind the following: 
+    During the identification phase, the analyst **determines which devices, accounts or systems might contain relevant information for the investigation**. Examples include mobile phones, computers, online accounts, storage media, among others. Ideally, to determine which evidence to collect, the analyst should engage in a conversation with the impacted person, to understand what happened, what actions have been taken and what evidence and artifacts might be available. 
 
-* **It is possible that the analyst identifies more sources of information that you have capacity to collect.** For example, if you are investigating a potential spyware infection, relevant data might exist in the targeted device, the network equipment, devices from the ISP, online accounts, to name a few. You should prioritize the collection of evidence that, according to your experience, has the greater value and potential for the investigation, and requires a reasonable amount of effort to collect.   
-* Due to its nature, **some digital data useful for analysis is volatile**, which means it can be altered or destroyed as time passes or when you interact or turn the device off. An example of volatile data would be the list of running processes on a device. In general, it is recommended to prioritize the extraction of volatile data over non-volatile data (like hard-drives and file systems).   
-* Considering the above, the analyst can then make a decision on the best way to extract information from devices. For example, you can create a **physical image**, or [bit-for-bit](../../references/00-glossary.md#bit-by-bit-copy) copy of a storage media, to duplicate the contents, including information that might still be present but whose pointers were removed. Alternatively, you can also create **logical images**, or copy of visible archives. You might also want to extract **specific information**, for example targeted log files. 
+=== "2- Collection and acquisition"
 
-### Stage 3 - Verification and preservation 
+    Once you identify the devices and systems that might contain evidence, the forensic analyst determines the best way to retrieve such evidence. **The prioritization and the exact procedure to be used depends on several factors**, including the type of incident, whether support is happening remotely or on the ground, the [volatility](../../references/00-glossary.md#volatility) of the evidence and the amount of effort required for the extraction. Keep in mind the following: 
 
-Once you extract information, it is important to document and verify the integrity of the collected data. The goal of the integrity verification is to **demonstrate that the information that has been collected from the device has not been altered during the analysis**.Verification and preservation are always important, but they are critical in case you pretend to use the evidence in legal proceedings. Normally, the verification involves the calculation of [cryptographic hash functions](../../references/00-glossary.md#hash) at the time of extraction, that generate an unique value for or fingerprint of a given data, that can be compared and verified later in the process. 
+    * **It is possible that the analyst identifies more sources of information that you have capacity to collect.** For example, if you are investigating a potential spyware infection, relevant data might exist in the targeted device, the network equipment, devices from the ISP, online accounts, to name a few. You should prioritize the collection of evidence that, according to your experience, has the greater value and potential for the investigation, and requires a reasonable amount of effort to collect.   
+    * Due to its nature, **some digital data useful for analysis is volatile**, which means it can be altered or destroyed as time passes or when you interact or turn the device off. An example of volatile data would be the list of running processes on a device. In general, it is recommended to prioritize the extraction of volatile data over non-volatile data (like hard-drives and file systems).   
+    * Considering the above, the analyst can then make a decision on the best way to extract information from devices. For example, you can create a **physical image**, or [bit-for-bit](../../references/00-glossary.md#bit-by-bit-copy) copy of a storage media, to duplicate the contents, including information that might still be present but whose pointers were removed. Alternatively, you can also create **logical images**, or copy of visible archives. You might also want to extract **specific information**, for example targeted log files. 
 
-The preservation of evidence is closely related with the concept of [chain of custody](../../references/00-glossary.md#chain-of-custody), which is especially important when dealing with physical evidence like devices, hard drives, computers, etc. It requires the establishment of a paper trail that documents where, when and how evidence was collected, where it was stored and who had access to it. 
+=== "3- Verification and preservation"
 
-### Stage 4 - Analysis
+    Once you extract information, it is important to document and verify the integrity of the collected data. The goal of the integrity verification is to **demonstrate that the information that has been collected from the device has not been altered during the analysis**.Verification and preservation are always important, but they are critical in case you pretend to use the evidence in legal proceedings. Normally, the verification involves the calculation of [cryptographic hash functions](../../references/00-glossary.md#hash) at the time of extraction, that generate an unique value for or fingerprint of a given data, that can be compared and verified later in the process. 
 
-During this phase, the analyst uses specialized tools and manual review to study and analyze the evidence to **establish hypotheses and derive conclusions about what might have occurred**. Often, the analysis will face large amounts of data, therefore a manual analysis can be slow and challenging, especially if there is no clarity on what or where to look. Some forensic tools can facilitate this process, especially if there is access to [indicators of compromise](../../references/00-glossary.md#indicator-of-compromise-ioc). During this phase, it is important to use consistent and reproducible procedures and methodologies that can be verified. Sometimes, it won't be possible to establish any conclusion from the existing information. 
+    The preservation of evidence is closely related with the concept of [chain of custody](../../references/00-glossary.md#chain-of-custody), which is especially important when dealing with physical evidence like devices, hard drives, computers, etc. It requires the establishment of a paper trail that documents where, when and how evidence was collected, where it was stored and who had access to it. 
 
-### Stage 5 - Presentation
+=== "4- Analysis"
 
-During the last step, an analyst **prepares and presents key conclusions derived from the analysis**. How the results are presented depends on the goal of the analysis and the audience. For example, it is different to present results to a potential target seeking an understanding of whether their devices were compromised, than presenting results in a public report whose goal is to expose abuses and document findings. If the report is intended to be used in legal proceedings it is helpful to consider the local jurisdiction and what might make expert testimony admissible in court. 
+    During this phase, the analyst uses specialized tools and manual review to study and analyze the evidence to **establish hypotheses and derive conclusions about what might have occurred**. Often, the analysis will face large amounts of data, therefore a manual analysis can be slow and challenging, especially if there is no clarity on what or where to look. Some forensic tools can facilitate this process, especially if there is access to [indicators of compromise](../../references/00-glossary.md#indicator-of-compromise-ioc). During this phase, it is important to use consistent and reproducible procedures and methodologies that can be verified. Sometimes, it won't be possible to establish any conclusion from the existing information. 
+
+=== "5- Presentation"
+
+    During the last step, an analyst **prepares and presents key conclusions derived from the analysis**. How the results are presented depends on the goal of the analysis and the audience. For example, it is different to present results to a potential target seeking an understanding of whether their devices were compromised, than presenting results in a public report whose goal is to expose abuses and document findings. If the report is intended to be used in legal proceedings it is helpful to consider the local jurisdiction and what might make expert testimony admissible in court. 
+
+
 
 ## How can digital forensics be applied in the defense of Human Rights?
 
@@ -126,6 +167,8 @@ Different from forensic investigations in other contexts (judicial, corporate), 
 
 It is possible that some of the artifacts that are collected during a forensic investigation contain personal information (contacts, messages, applications, photos, etc), therefore **you should be transparent with beneficiaries about what is included, while also trying to minimize or eliminate any personal information that is not relevant for the forensic analysis**. If you plan to share artifacts or collected information with 3rd parties, it is important to inform upfront and get explicit consent to share with additional parties. 
 
+[Consult the guide on consent](../../how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md){ .md-button }
+
 ### Chain of custody
 
 [Chain of custody (CoC)](../../references/00-glossary.md#chain-of-custody), in legal contexts, is the **chronological documentation or paper trail that records the sequence of custody, control, transfer, analysis, and disposition of materials**, including physical or electronic evidence. In particular, forensic evidence is fragile in nature, since it can be manipulated or destroyed, and therefore, it becomes important for a forensic analyst to be able to describe the collection and custody process, and prove the [integrity](../../references/00-glossary.md#data-integrity) of the evidence used for analysis. Not having a robust trail and documentation of how the evidence was collected, stored and analyzed can result in it being inadmissible for legal proceedings, or to be contested and dismissed by other specialists. 
@@ -143,6 +186,8 @@ Forensic investigations **can lead to the exposure and documentation of Human Ri
 There have been documented cases of [physical surveillance](https://www.nytimes.com/2019/01/28/world/black-cube-nso-citizen-lab-intelligence.html) and legal warfare against organizations doing forensic analysis, and there are often actions from states and companies to create obstacles, stop or even criminalize efforts from forensic labs and independent researchers. **Engaging in risk assessment activities regularly, and specially ahead of the publication of reports**, is important and necessary, and can help reduce and minimize consequences of legitimate research. There is a list of organizations that can support with risk assessment in the site of the Digital First Aid Kit. 
 
 In addition, due to the fact that analysts will be investigating digital security threats and attacks, they will be frequently in contact with malicious infrastructure. It is also important to consider [operational security](https://en.wikipedia.org/wiki/Operations_security) measures that can protect against risks of self-compromise and also mitigate and assess the risk of alerting attackers and spyware operators of ongoing investigations, which could lead to a shift in infrastructure and practices, limiting the scope of the investigation.  
+
+[Consult the explainer on risks](../02-explainer-risks-threats/02-explainer-risks-threats.md){ .md-button }
 
 ## Conclusion
 
