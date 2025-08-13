@@ -94,17 +94,17 @@ La mayoría de marcos de referencia coinciden en las siguientes etapas: **identi
 
 ``` mermaid
 graph LR
-  A[Identificación] --> B[Recolección y adquisición];
-  B --> C[Verificación y preservación];
-  C --> D[Análisis];
-  D --> E[Presentación];
+  A[1- Identificación] --> B[2- Recolección y adquisición];
+  B --> C[3- Verificación y preservación];
+  C --> D[4- Análisis];
+  D --> E[5- Presentación];
 ```
 
-=== "Identificación"
+=== "1- Identificación"
 
     Durante la identificación, la persona analista determina **cuáles dispositivos, cuentas o sistemas podrían contener información relevante para la investigación**. Ejemplos de dispositivos incluyen teléfonos móviles, computadoras, cuentas en línea, medios de almacenamiento, entre otros. Idealmente, para determinar la evidencia a recolectar, la persona analista debe tener contacto con la persona impactada, para entender qué sucedió, qué acciones se han tomado hasta el momento y qué evidencia podría estar disponible.
 
-=== "Recolección y adquisición"
+=== "2- Recolección y adquisición"
 
     Una vez que se identifican los dispositivos y sistemas que pueden contener evidencia útil, la persona analista forense debe determinar la mejor forma de recolectar la evidencia forense. **Qué priorizar y cómo realizar la extracción dependerá de diversos factores**, entre ellos el tipo de incidente, el tipo de atención (en sitio o remota), la [volatilidad de la evidencia](../../references/00-glossary.md#volatilidad) y el esfuerzo requerido para la extracción. Consideraciones adicionales para la extracción incluyen lo siguiente:
 
@@ -112,15 +112,15 @@ graph LR
     * Por su naturaleza **algunos datos útiles para el análisis son volátiles**, es decir la información se destruye o altera en el tiempo, al apagar el dispositivo o al interactuar con el dispositivo. Un ejemplo de información volátil es la lista de procesos activos en un dispositivo en un momento determinado. En general, es recomendable priorizar la extracción de los datos volátiles sobre los no volátiles (como el sistema de archivos).
     * Tomando lo anterior en consideración, la persona analista puede optar por diferentes tipos de extracción.  Por ejemplo, se puede realizar una **imagen física**, o [copia bit a bit](../../references/00-glossary.md#copia-bit-a-bit) de una unidad de almacenamiento, a fin de duplicar de forma íntegra su contenido, incluyendo información presente en la unidad pero que pudo haber sido eliminada. Alternativamente, se puede realizar una **imagen lógica**, es decir una copia de los archivos visibles. En algunos casos, la persona analista puede realizar una extracción de **información específica**, por ejemplo archivos de logs únicamente.
 
-=== "Verificación y preservación"
+=== "3- Verificación y preservación"
 
     Una vez que se realiza la extracción, es importante verificar la integridad de la evidencia recolectada. El objetivo es poder **demostrar que la evidencia que la persona analista ha utilizado para su análisis no ha sido alterada**. La verificación y preservación son siempre importantes, pero tienen especial relevancia si se pretende utilizar la evidencia en procedimientos judiciales. Usualmente, la verificación de la integridad implica la utilización de [funciones de hash criptográficas](../../references/00-glossary.md#hash), que permiten producir un único valor para un conjunto de datos dados. Por su parte, la preservación se relaciona con el establecimiento de una [**cadena de custodia**](../../references/00-glossary.md#cadena-de-custodia), especialmente para evidencia física (dispositivos físicos, discos duros, etc), a través de un registro y documentación de dónde, cómo y quién ha accedido a la evidencia.
 
-=== "Análisis"
+=== "4- Análisis"
 
     Durante el análisis, la persona analista utiliza herramientas especializadas y análisis manual para estudiar y analizar la evidencia, a fin de **establecer hipótesis y conclusiones** sobre lo que sucedió. En muchas  ocasiones, la persona analista se enfrentará a grandes cantidades de información, por lo que un análisis manual puede ser poco efectivo y muy lento, en especial si no se tiene claridad en qué y dónde buscar. Algunas herramientas forenses pueden facilitar el proceso, en especial si se tiene acceso a [**indicadores de compromiso**](../../references/00-glossary.md#indicador-de-compromiso-ioc). Durante esta etapa, es clave utilizar metodologías y procedimientos consistentes, que puedan ser replicables y verificables. En algunas ocasiones no será posible establecer una conclusión a partir de la información existente.
 
-=== "Presentación"
+=== "5- Presentación"
 
     La última etapa de un análisis forense que implica preparar y presentar la información derivada del análisis. Se debe tomar en consideración el objetivo y la audiencia a la que se le estará presentando la información para determinar la mejor estructura de contenidos. Por ejemplo, si se debe preparar un informe como parte de un procedimiento judicial, el reporte debe ser detallado e incluir información que permita verificar y reproducir los hallazgos. Por el contrario, si el reporte es de uso interno de una organización y está dirigido al equipo de liderazgo, el reporte puede enfocarse en las conclusiones y recomendaciones de remediación.
 
@@ -191,6 +191,6 @@ En conjunto y a través de la confianza laboratorios forenses emergentes y otros
 
 ## Comentarios
 
-¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la función de comentar que se muestra a continuación para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), por lo que puedes comentar allí **directamente** si lo prefieres. 
+¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la función de comentar que se muestra a continuación para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también puedes participar en las discusiones de forma directa, si lo prefieres.   
 
 
