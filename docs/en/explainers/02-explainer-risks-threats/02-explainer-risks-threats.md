@@ -8,6 +8,7 @@ tags: [explainer, intro]
 last_updated: 2025-05-27
 some_url:
 created: 2025-05-27
+comments: true
 authors:
     - Daniel Bedoya
     - Gurshabad Grover
@@ -180,3 +181,7 @@ Throughout this document, we have presented threats, risks and resources that mi
 Rather than undermining or depressing emerging efforts, with this resource we aim to provide the necessary context to engage in forensic analysis and research responsibly, and to emphasize the importance of operational security practices, policies and investments to ensure that our research is leading to accountability actions without inflicting more harm on those targeted or the people supporting them. 
 
 If you have any observation or request for change on this documentation repository, you can submit an issue directly through the  [github issue section of this repository](https://github.com/Socialtic/forensics/issues). If you have additional inquiries, please reach out to [seguridad@socialtic.org](mailto:seguridad@socialtic.org).
+
+## Comments
+
+Do you have any **comment or suggestion** about this resource? You can use the **comment function provided below** to leave your ideas, corrections or thoughts. Please make sure to follow our [code of conduct](../../community/code-of-conduct.md) when leaving your comment. If you prefer, you can also participate in the discussion directly in the [github repository](https://github.com/Socialtic/forensics/discussions). 

@@ -7,6 +7,7 @@ tags: [explainer, intro]
 last_updated: 2025-06-23
 some_url:
 created: 2025-06-23
+comments: true
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
@@ -110,3 +111,6 @@ A large share of published reports by civil society organizations have relied on
 
 If you would like to contribute to the development, translation, or dissemination of this resource, please contact us at [**seguridad@socialtic.org**.](mailto:seguridad@socialtic.org).
 
+## Comments
+
+Do you have any **comment or suggestion** about this resource? You can use the **comment function provided below** to leave your ideas, corrections or thoughts. Please make sure to follow our [code of conduct](../../community/code-of-conduct.md) when leaving your comment. If you prefer, you can also participate in the discussion directly in the [github repository](https://github.com/Socialtic/forensics/discussions). 

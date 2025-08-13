@@ -7,6 +7,7 @@ tags: [how-to, intro]
 last_updated: 2025-03-14
 some_url:
 created: 2025-03-14
+comments: true
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
@@ -137,3 +138,7 @@ When you request and document informed consent for forensic investigations, take
 **The objective of informed consent is to bring clarity, transparency and certainty, so that whoever is requesting support for a forensic investigation can understand potential risks, and is empowered to decide the course and limits of the research.** Beyond just crafting and signing an informed consent document, it is important that the process is used to clarify key questions and manage expectations. 
 
 During the process of obtaining consent, you will also **identify, acknowledge and accept risks.** Being aware of such risks is important, not just for the beneficiary of assistance but also for the organization conducting the analysis. In response, organizations engaging in forensic research should review and implement adequate processes and policies to respond and protect sensitive information.
+
+## Comments
+
+Do you have any **comment or suggestion** about this resource? You can use the **comment function provided below** to leave your ideas, corrections or thoughts. Please make sure to follow our [code of conduct](../../community/code-of-conduct.md) when leaving your comment. If you prefer, you can also participate in the discussion directly in the [github repository](https://github.com/Socialtic/forensics/discussions). 

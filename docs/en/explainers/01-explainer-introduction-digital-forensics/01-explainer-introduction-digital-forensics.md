@@ -7,6 +7,7 @@ tags: [explainer, intro]
 last_updated: 2025-02-13
 some_url:
 created: 2025-02-13
+comments: true
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
@@ -150,3 +151,10 @@ Digital forensic investigations involve a series of **practices, methodologies, 
 Consensual forensic analysis **implies following a rigorous, systematic and objective process across a series of phases**, where the goal is to guarantee the chain of custody and demonstrate the integrity of the evidence used for the analysis. Most of the steps in a forensic investigation are not technically complex, but do require a basic understanding of key concepts like informed consent and chain of custody. Labs and forensic researchers should also assess risks and take adequate precautions to mitigate risks that emerge from forensic investigations. 
 
 It is by working together as a community and continuing to develop trust among emerging and established forensic labs that will be able to grow and strengthen the forensic practice in civil society. Peer collaboration is key to respond holistically to the needs of at-risk communities from civil society. **We extend an open invitation to collaborate with this resource and this repository.** If you have any observation or request, you can submit it directly through the [issues section of this repository](https://github.com/Socialtic/forensics/issues). If you have additional resources you would like to include into this repository, please reach out to [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
+
+
+## Comments
+
+Do you have any **comment or suggestion** about this resource? You can use the **comment function provided below** to leave your ideas, corrections or thoughts. Please make sure to follow our [code of conduct](../../community/code-of-conduct.md) when leaving your comment. If you prefer, you can also participate in the discussion directly in the [github repository](https://github.com/Socialtic/forensics/discussions). 
+
+
