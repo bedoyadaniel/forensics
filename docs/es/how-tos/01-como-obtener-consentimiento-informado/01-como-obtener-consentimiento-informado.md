@@ -133,3 +133,10 @@ Al solicitar y obtener consentimiento para llevar a cabo investigaciones forense
 **El objetivo del consentimiento informado es brindar transparencia y claridad, de forma tal que quién solicita el análisis pueda decidir el alcance y el curso de la investigación**, en consideración de los posibles riesgos. Más allá de la documentación del consentimiento, es importante que la persona analista presente (de forma verbal o escrita) información clara sobre el proceso de análisis, incluyendo qué información se recolectará, qué datos sensibles se incluyen en dicha información, qué resultados se pueden esperar del proceso, con quién se compartirá la información adquirida, por cuánto tiempo se almacenará, entre otros. 
 
 Durante el proceso de consentimiento también se reconocen y aceptan los riesgos que conlleva una investigación forense. Además de estar acuerdo con estos riesgos, **es importante que la organización que realiza la recolección y el análisis –y cualquier otra organización con quién se compartan los datos– manejen la información de forma responsable**, en apego a políticas de protección y retención de la información. 
+
+
+## Comentarios
+
+¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
+
+
