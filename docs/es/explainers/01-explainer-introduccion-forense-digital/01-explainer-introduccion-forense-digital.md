@@ -34,6 +34,36 @@ Por ejemplo, en Polonia, luego de [investigaciones forenses lideradas por el Cit
 Las investigaciones forenses se pueden llevar a cabo con diferentes objetivos y enfoques: 
 
 
+<div class="grid cards" markdown>
+
+-   :material-police-badge:{ .lg .middle } __Investigaciones periciales__
+
+    ---
+
+    Se realizan en apego a marcos jurídicos, y su principal objetivo es recolectar y presentar evidencia que pueda ser utilizada en **procedimientos judiciales, ya sea civiles o criminales**. Las investigaciones periciales son lideradas mayoritariamente por entidades policiales y agencias de investigación gubernamentales. Históricamente, ha sido el enfoque de investigación más frecuente, y desde donde se originan algunas de las prácticas y marcos de referencia. 
+
+-   :fontawesome-solid-university:{ .lg .middle } __Investigaciones académicas__
+
+    ---
+
+    Buscan identificar **nuevas líneas de investigación** que permitan avanzar en los métodos y generar conocimiento práctico y teórico que avance el área de investigación forense.
+
+-   :fontawesome-solid-money-bill-1-wave:{ .lg .middle } __Investigaciones en el sector privado__
+
+    ---
+
+    Son lideradas por equipos internos o consultores externos. Buscan esclarecer el **orígen y los alcances de intrusiones e incidentes** en perjuicio de empresas o instituciones. 
+
+-   :octicons-megaphone-16:{ .lg .middle } __Protección de defensores de Derechos Humanos (DDHH)__
+
+    ---
+
+    En el contexto de protección a personas defensoras de Derechos Humanos, las investigaciones forenses buscan generar, preservar y presentar evidencia de incidentes de seguridad digital en perjuicio de personas defensoras de Derechos Humanos. Se busca que las personas afectadas puedan acceder a mecanismos de justicia, que reduzcan la impunidad y permitan exponer los abusos de poder y las violaciones a sus derechos fundamentales. 
+
+
+</div>
+
+
 De forma frecuente, las investigaciones forenses inician cuando se detecta un posible incidente de seguridad. Si bien el **análisis forense y la respuesta a incidentes** persiguen objetivos distintos, consolidar ambos procesos permite fortalecer la forma en que se responde a los incidentes, al tiempo que se preserva evidencia. 
 
 La [respuesta a incidentes](../../references/00-glossary.md#respuesta-a-incidentes-de-seguridad) se centra en **detectar y responder a eventos de seguridad**. A través de procedimientos de respuesta, se pretende minimizar el impacto y contener las consecuencias de los incidentes. Para una respuesta efectiva, es importante identificar la causa raíz de las intrusiones, de forma tal que se pueda erradicar la amenaza y se logre una recuperación oportuna.
