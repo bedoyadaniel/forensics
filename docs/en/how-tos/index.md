@@ -35,7 +35,7 @@ A good example is a cooking recipe, where the focus is to achieve a result, in t
 
     Shows the steps to **enable the Developer Options menu on different Android devices**, as well as a brief explanation of what developer options are and why they are useful in digital forensics.
 
-    [:octicons-arrow-right-24: Hoe to enable developer options on Android?](02-how-to-enable-developer-options/02-how-to-enable-developer-options.html)
+    [:octicons-arrow-right-24: How to enable developer options on Android?](02-how-to-enable-developer-options/02-how-to-enable-developer-options.html)
 
 
 -   :material-usb-port:{ .lg .middle }      __How to enable ADB on and Android device?__
