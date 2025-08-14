@@ -61,7 +61,7 @@ To enable the developer options in **Pixel devices** follow these steps, shown a
 3. Navigate to the bottom and locate the **Build Number** 🔢   
 4. **Tap 7 times** the  build number, until you see a confirmation message  👆
 
-![Steps to enable developer options on a Google Pixel running Android 13.](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Google.gif "imagen 1")
+![Steps to enable developer options on a Google Pixel running Android 13.](../../../es/how-tos/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Google.gif "imagen 1")
 /// caption
 **Image 1**. Steps to enable developer options on a Google Pixel running Android 13.
 ///
@@ -80,7 +80,7 @@ To enable the developer options in **Honor devices** follow these steps, shown a
 
 From now on, the developer options will appear as an additional menu under **System & Updates**, and **will remain enabled** until they are manually disabled from the developer options menu. 
 
-![Steps to enable developer options on a Honor Magic Lite running Magic OS 7.1 and Android 13.](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Honor.gif "imagen 2")
+![Steps to enable developer options on a Honor Magic Lite running Magic OS 7.1 and Android 13.](../../../es/how-tos/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Honor.gif "imagen 2")
 /// caption
 **Image 2**. Steps to enable developer options on a Honor Magic Lite running Magic OS 7.1 and Android 13.
 ///
@@ -96,7 +96,7 @@ To enable the developer options in **Motorola devices** follow these steps, show
 
 From now on, the developer options will appear as an additional menu under **System**, and **will remain enabled** until they are manually disabled from the developer options menu. 
 
-![Steps to enable developer options on a Motorola Edge Neo 40 running Hi OS and Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Motorola.gif "imagen 3")
+![Steps to enable developer options on a Motorola Edge Neo 40 running Hi OS and Android 13](../../../es/how-tos/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Motorola.gif "imagen 3")
 /// caption
 **Image 3**. Steps to enable developer options on a Motorola Edge Neo 40 running Hi OS and Android 13.
 ///
@@ -113,7 +113,7 @@ To enable the developer options in **Nokia devices** follow these steps, shown a
 
 From now on, the developer options will appear as an additional menu under **System**, and **will remain enabled** until they are manually disabled from the developer options menu. 
 
-![Steps to enable developer options on a Nokia G42 5G running Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Nokia.gif "imagen 4")
+![Steps to enable developer options on a Nokia G42 5G running Android 13](../../../es/how-tos/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Nokia.gif "imagen 4")
 /// caption
 **Image 4**.  Steps to enable developer options on a Nokia G42 5G running Android 13.
 ///
@@ -130,7 +130,7 @@ To enable the developer options in **OPPO devices** follow these steps, shown al
 
 From now on, the developer options will appear as an additional menu under **Additional Settings**, and **will remain enabled** until they are manually disabled from the developer options menu. 
 
-![Steps to enable developer options on a Oppo device](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-oppo.gif "imagen 5"){: style="height:480x;width:216px"}
+![Steps to enable developer options on a Oppo device](../../../es/how-tos/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-oppo.gif "imagen 5"){: style="height:480x;width:216px"}
 /// caption
 **Image 5**. Steps to enable developer options on a Oppo device.
 ///
@@ -148,7 +148,7 @@ To enable the developer options in **Realme devices** follow these steps, shown 
 
 From now on, the developer options will appear as an additional menu under **Additional Settings**, and **will remain enabled** until they are manually disabled from the developer options menu. 
 
-![Steps to enable developer options on a  Realme GT2 Pro with RealMe UI 4.0 and Android 13](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Realme.gif "imagen 6")
+![Steps to enable developer options on a  Realme GT2 Pro with RealMe UI 4.0 and Android 13](../../../es/how-tos/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Realme.gif "imagen 6")
 /// caption
 **Image 6**. Steps to enable developer options on a Realme GT2 Pro with RealMe UI 4.0 and Android 13
 ///
@@ -180,7 +180,7 @@ To enable the developer options in **Sony devices** follow these steps, shown al
 
 From now on, the developer options will appear as an additional menu under **System**, and **will remain enabled** until they are manually disabled from the developer options menu. 
 
-![Steps to enable developer options on a Sony Xperia 10V with Xperia UI 4.0 and Android 14](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Sony.gif "imagen 8")
+![Steps to enable developer options on a Sony Xperia 10V with Xperia UI 4.0 and Android 14](../../../es/how-tos/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Sony.gif "imagen 8")
 /// caption
 **Image 8**.  Steps to enable developer options on a Sony Xperia 10V with Xperia UI 4.0 and Android 14.
 ///
@@ -195,7 +195,7 @@ To enable the developer options in **Tecno Spark devices** follow these steps, s
 3. Locate the **Build Number** 🔢   
 4. **Tap 7 times** the  build number, until you see a confirmation message  👆
 
-![Steps to enable developer options on a Tecno Spark Go with Hi OS and Android 13.](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Tecno.gif "imagen 9")
+![Steps to enable developer options on a Tecno Spark Go with Hi OS and Android 13.](../../../es/how-tos/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Tecno.gif "imagen 9")
 /// caption
 **Image 9**.  Steps to enable developer options on a Tecno Spark Go with Hi OS and Android 13.
 ///
@@ -209,7 +209,7 @@ To enable the developer options in **Xiaomi devices** follow these steps, shown 
 3. Ubica la información sobre el **Versión de Sistema Operativo** 🔢   
 4. Presiona **7 veces** sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆
 
-![Steps to enable developer options on a Xiamoi device](../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xiaomi.gif "imagen 10")
+![Steps to enable developer options on a Xiamoi device](../../../es/how-tos/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xiaomi.gif "imagen 10")
 /// caption
 **image 10**.  Steps to enable developer options on a Xiamoi device.
 ///
@@ -220,9 +220,9 @@ Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apar
 
 The graphical interface of Android devices varies between manufacturers that use the [Android Open Source Project (AOSP)](https://source.android.com/?hl=es-419) as a base. Each manufacturer develops its own customization layer, with different levels of modification, resulting in interfaces with different appearances, menus, and options.
 
-The developer options menu is a hidden menu that can be enabled through a simple procedure in the graphical interface and is necessary to modify key settings required during a forensic extraction process, such as the ADB console or generating a bug report. This resource compiles screenshots from different manufacturers and interfaces to make it easier for civil society analysts to enable developer options.
+The developer options menu is a **hidden menu that can be enabled through a simple procedure in the graphical interface** and is necessary to modify key settings **required during a forensic extraction **process, such as the ADB console or generating a bug report. This resource compiles screenshots from different manufacturers and interfaces to make it easier for civil society analysts to enable developer options.
 
-If you have access to a graphical interface not shown in this list and would like to contribute a screenshot to this resource, you can contact us through an issue or, if you are comfortable with markdown, submit a pull request.
+If you have access to a **graphical interface not shown in this list** and would like to **contribute** a screenshot to this resource, you can contact us through an [issue](../../community/how-to-contribute.md#reporting-issues) or, if you are comfortable with markdown, submit a [pull request](../../community/how-to-contribute.md#integrating-new-content-through-pull-requests).
 
 
 ## Comments
