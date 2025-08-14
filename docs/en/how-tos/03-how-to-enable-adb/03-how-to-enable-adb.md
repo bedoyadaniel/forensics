@@ -73,7 +73,6 @@ To enable **ADB** it is necessary to have access to the developer options menu. 
 
 ![Steps to enable ADB on a Honor Magic Lite running Magic OS 7.1 and Android 13.](../../../how-tos/03-como-habilitar-adb/assets/activating-adb-honor-magic-lite.gif "image 2"){: style="height:480x;width:216px"}
 /// caption
-/// caption
 **Image 2**. Steps to enable ADB on a Honor Magic Lite running Magic OS 7.1 and Android 13.
 ///
 
