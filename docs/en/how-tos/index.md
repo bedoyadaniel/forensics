@@ -29,6 +29,23 @@ A good example is a cooking recipe, where the focus is to achieve a result, in t
 
     [:octicons-arrow-right-24: How to obtain and document informed consent?](01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.html)
 
+-   :material-test-tube:{ .lg .middle }      __How to enable developer options on an Android device?__
+
+    ---
+
+    Shows the steps to **enable the Developer Options menu on different Android devices**, as well as a brief explanation of what developer options are and why they are useful in digital forensics.
+
+    [:octicons-arrow-right-24: Hoe to enable developer options on Android?](02-how-to-enable-developer-options/02-how-to-enable-developer-options.html)
+
+
+-   :material-usb-port:{ .lg .middle }      __How to enable ADB on and Android device?__
+
+    ---
+
+     Presents the **steps to enable USB debugging**, also known as Android Debug Bridge or ADB, on different Android devices. It also provides a brief explanation of what USB debugging is and why it is useful in digital forensics
+
+    [:octicons-arrow-right-24: How to enable ADB on Android?](03-how-to-enable-adb/03-how-to-enable-adb.html)
+
 
 
 </div>

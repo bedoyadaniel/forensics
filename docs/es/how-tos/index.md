@@ -45,7 +45,7 @@ Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar
 
     **Instrucciones para habilitar ADB o o depuración por USB** en diferentes marcas y modelos de dispositivos Android.
 
-    [:octicons-arrow-right-24: ¿Cómo habilitar ADB o depuración USB en Android?](02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.html)
+    [:octicons-arrow-right-24: ¿Cómo habilitar ADB o depuración USB en Android?](03-como-habilitar-adb/03-como-habilitar-adb.html)
 
 
 -   :fontawesome-solid-stethoscope:{ .lg .middle }      __¿Cómo realizar una extracción mediante AndroidQF?__

@@ -46,7 +46,7 @@ The result of these additional developments on the base project is a **wide vari
 * [Hello UI](https://beebom.com/motorola-hello-ui-review/): Graphic interface developed by **Motorola**, part of **Lenovo**. [This video](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Di3ZU9-TGJlE&sa=D&source=docs&ust=1753486266796661&usg=AOvVaw14C09MkoaBDTU4pbef9Aqq) shows relevant aspects of the graphic interface. 
 * [Xperia UI](https://en.wikipedia.org/wiki/Sony_Xperia): User interface developed by **Sony**.   
 * [Magic OS](https://en.wikipedia.org/wiki/Honor_\(brand\)#MagicOS): Operating system developed by **Honor**, previously a subsidiary of Huawei.
-* 
+
 
 ## Step-by-step instructions
 
