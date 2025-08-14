@@ -25,6 +25,7 @@ nav:
     - Home: 'how-tos/index.md'
     - Obtain and document informed consent: 'how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md'
     - Enable developer options on Android: 'how-tos/02-how-to-enable-developer-options/02-how-to-enable-developer-options.md'
+    - Enable ADB on Android: 'how-tos/03-how-to-enable-adb/03-how-to-enable-adb.md'    
   - Reference:
     - Home: 'references/index.md'
     - Glossary: 'references/00-glossary.md'
