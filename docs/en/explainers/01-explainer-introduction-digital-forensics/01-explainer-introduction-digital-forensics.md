@@ -8,6 +8,8 @@ last_updated: 2025-02-13
 some_url:
 created: 2025-02-13
 comments: true
+alternate: 
+    es: /explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
