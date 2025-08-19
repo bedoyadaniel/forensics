@@ -58,6 +58,8 @@ En la mayor parte de los dispositivos Android es posible generar un reporte de e
 
     También es posible extraer un **reporte de errores desde la consola de ADB**. Este procedimiento podría ser más ágil y adecuado para personas analistas que desean extraer reportes de errores de varios dispositivos. 
 
+    [:octicons-arrow-right-24: Llévame a las instrucciones](#pasos-para-generar-un-bugreport-a-través-de-la-interfaz-gráfica)
+
 Debido a la forma en que se desarrolla el sistema operativo Android y a las capas de personalización que agrega cada fabricante, las **instrucciones exactas para generar un reporte de errores varían levemente**. A continuación presentamos las instrucciones para diferentes fabricantes y versiones del sistema operativo Android. 
 
 ??? question "¿Por qué cambian las instrucciones entre diferentes dispositivos?"
