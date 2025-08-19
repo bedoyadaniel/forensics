@@ -48,13 +48,22 @@ Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar
     [:octicons-arrow-right-24: ¿Cómo habilitar ADB o depuración USB en Android?](03-como-habilitar-adb/03-como-habilitar-adb.html)
 
 
+-   :material-bug:{ .lg .middle }      __¿Cómo generar un _bugreport_?__
+
+    ---
+
+    **Instrucciones para generar un reporte de errores o _bugreport_** en diferentes marcas y modelos de dispositivos Android.
+
+    [:octicons-arrow-right-24: ¿Cómo generar un bugreport en Android?](05-como-extraer-bugreport/05-como-extraer-bugreport.html)
+
+
 -   :fontawesome-solid-stethoscope:{ .lg .middle }      __¿Cómo realizar una extracción mediante AndroidQF?__
 
     ---
 
     Esta guía paso a paso presenta las **instrucciones que permiten extraer evidencia forense de dispositivos Android utilizando la herramienta AndroidQF** para un posterior análisis.
 
-    [:octicons-arrow-right-24: ¿Cómo realizar una extracción mediante AndroidQF?](04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf.md)
+    [:octicons-arrow-right-24: ¿Cómo realizar una extracción mediante AndroidQF?](04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf.html)
 
 
 
