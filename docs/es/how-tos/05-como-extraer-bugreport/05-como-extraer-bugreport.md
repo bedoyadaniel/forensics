@@ -45,12 +45,12 @@ A continuación se muestran los requisitos para extraer un bugreport a través d
 
     Para extraer un bugreport a través de la consola de ADB es necesario: 
 
-    * **El dispositivo Android a ser analizado**: Activar el \[modo desarrollador\](../../references/00-glossary.md\#modo-de-desarrollador) y \[activar la depuración por USB\](../../references/00-glossary.md\#adb). De ser necesario, consulta nuestras guías sobre habilitar opciones de desarrollador o la guía sobre cómo habilitar ADB   
+    * **El dispositivo Android a ser analizado**: Activar el [modo desarrollador](../../references/00-glossary.md#modo-de-desarrollador) y [activar la depuración por USB](../../references/00-glossary.md#adb). De ser necesario, consulta nuestras guías sobre habilitar opciones de desarrollador o la guía sobre cómo habilitar ADB   
     * **Computadora Windows, Linux o Mac:** Se utilizará para realizar la extracción.  
     * Tener un **cable para transferencia de archivos** telefono-computadora.
 
 
-## Pasos para generar un reporte de errores o _bugreport_ a través de la interfaz gráfica
+## Pasos para generar un _bugreport_ a través de la interfaz gráfica
 
 En la mayor parte de los dispositivos Android es posible generar un reporte de errores sin necesidad de descargar herramientas adicionales, navegando únicamente a través de los menús del dispositivo.  Este será el **método de preferencia** **cuando se solicite a una persona defensora** compartir este artefacto forense. 
 
@@ -263,7 +263,7 @@ Luego de habilitar las opciones de desarrollador, sigue estos **generar un repor
 ///
 
 
-## Pasos para generar un reporte de errores o *bugreport* a través de la consola ADB
+## Pasos para generar un *bugreport* a través de la consola ADB
 
 Además del método para generar un reporte de errores a través de la interfaz gráfica, es posible generar un reporte de errores a través de la consola ADB siguiendo estos pasos. Es importante recordar que antes de seguir estas instrucciones, debes habilitar la depuración por USB. 
 
