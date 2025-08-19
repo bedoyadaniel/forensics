@@ -9,7 +9,7 @@ some_url:
 created: 2025-02-03
 comments: true
 alternate: 
-    en: /explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.html
+    en: explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.html
 author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
