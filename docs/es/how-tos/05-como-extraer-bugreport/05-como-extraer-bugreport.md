@@ -54,7 +54,7 @@ A continuación se muestran los requisitos para extraer un bugreport a través d
 
 En la mayor parte de los dispositivos Android es posible generar un reporte de errores sin necesidad de descargar herramientas adicionales, navegando únicamente a través de los menús del dispositivo.  Este será el **método de preferencia** **cuando se solicite a una persona defensora** compartir este artefacto forense. 
 
-??? Tip "Generar bugreport utilizando ADB"
+!!! Tip "Generar bugreport utilizando ADB"
 
     También es posible extraer un **reporte de errores desde la consola de ADB**. Este procedimiento podría ser más ágil y adecuado para personas analistas que desean extraer reportes de errores de varios dispositivos. 
 
@@ -62,7 +62,7 @@ En la mayor parte de los dispositivos Android es posible generar un reporte de e
 
 Debido a la forma en que se desarrolla el sistema operativo Android y a las capas de personalización que agrega cada fabricante, las **instrucciones exactas para generar un reporte de errores varían levemente**. A continuación presentamos las instrucciones para diferentes fabricantes y versiones del sistema operativo Android. 
 
-??? question "¿Por qué cambian las instrucciones entre diferentes dispositivos?"
+!!! question "¿Por qué cambian las instrucciones entre diferentes dispositivos?"
 
     El sistema operativo Android basa su núcleo en el proyecto de código abierto [*Android Open Source Project*](https://source.android.com/)*.* Sin embargo, la [mayoría de fabricantes utilizan una versión propietaria de Google](https://www.makeuseof.com/tag/android-really-open-source-matter/), sobre la cuál se agregan capas de personalización adicionales, que en la mayoría de casos son también propietarias. 
 
@@ -285,7 +285,7 @@ $ adb bugreport E:\Reports\MyBugReportsPath
 
 ```
 
-??? warning "Múltiples dispositivos"
+!!! warning "Múltiples dispositivos"
 
     Si tienes **varios dispositivos conectados**, debes **especificar el dispositivo con la opción \-s**. Ejecuta el comando `adb devices` para obtener el número de serie del dispositivo y generar el informe de errores:
 
