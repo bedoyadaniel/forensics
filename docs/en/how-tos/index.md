@@ -46,6 +46,13 @@ A good example is a cooking recipe, where the focus is to achieve a result, in t
 
     [:octicons-arrow-right-24: How to enable ADB on Android?](03-how-to-enable-adb/03-how-to-enable-adb.html)
 
+-   :fontawesome-solid-stethoscope:{ .lg .middle }      __How to make an extraction with AndroidQF?__
+
+    ---
+
+    Presents the steps and requirements to **complete a forensic extraction** of key [artifacts](../references/00-glossary.md#forensic-artifact) from android devices using the tool [AndroidQF](../references/00-glossary.md#androidqf).
+
+    [:octicons-arrow-right-24: How to extract with AndroidQF?](04-how-to-extract-with-androidqf/04-how-to-extract-with-androidqf.html)
 
 
 </div>
