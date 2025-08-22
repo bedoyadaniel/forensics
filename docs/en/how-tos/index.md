@@ -50,7 +50,7 @@ A good example is a cooking recipe, where the focus is to achieve a result, in t
 
     ---
 
-    Presents the steps and requirements to **complete a forensic extraction** of key [artifacts](../references/00-glossary.md#forensic-artifact) from android devices using the tool [AndroidQF](../references/00-glossary.md#androidqf).
+    Presents the steps and requirements to **complete a forensic extraction** of key artifacts from android devices using the tool AndroidQF.
 
     [:octicons-arrow-right-24: How to extract with AndroidQF?](04-how-to-extract-with-androidqf/04-how-to-extract-with-androidqf.html)
 
