@@ -33,8 +33,10 @@ La información generada por *mvt-bugreport* se puede agrupar en 5 categorías p
 * Información sobre registros y eventos del sistema  
 * Procesos y aplicaciones
 
+## Detalles de la adquisición 
 
-## info.json {#info.json}
+
+### info.json {#info.json}
 
 **Información contenida**
 
@@ -74,7 +76,7 @@ Esta información permite establecer una referencia del archivo analizado y la h
 }
 ```
 
-## command.log {#command.log}
+### command.log {#command.log}
 
 **Información contenida**
 
@@ -156,7 +158,7 @@ Please seek reputable expert help if you have serious concerns about a possible 
 
 * [Introduction to STIX](https://oasis-open.github.io/cti-documentation/stix/intro.html)
 
-## timeline.csv {#timeline.csv}
+### timeline.csv {#timeline.csv}
 
 **Información contenida**  
 Este archivo se encuentra en formato *csv* y almacena una línea de tiempo de la actividad del dispositivo. Esta actividad se obtiene de la ejecución de los módulos de análisis de MVT y se ordena por tiempo.
@@ -210,9 +212,9 @@ le.android.ext.services"
 
 ```
 
-# Configuración del dispositivo {#configuración-del-dispositivo}
+## Configuración del dispositivo {#configuración-del-dispositivo}
 
-## getprop.json {#getprop.json}
+### getprop.json {#getprop.json}
 
 La información de este archivo se obtiene mediante el módulo [getprop](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/getprop.py) y el artefacto [getprop](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/getprop.py).
 
@@ -292,9 +294,9 @@ Las propiedades brindan información importante sobre el hardware y el software 
 * [Agrega propiedades del sistema | Android Open Source Project](https://source.android.com/docs/core/architecture/configuration/add-system-properties?hl=es-419)  
 * [Compatibilidad de políticas | Android Open Source Project](https://source.android.com/docs/security/features/selinux/compatibility?hl=es-419#system-property-and-ownership) 
 
-# Información sobre registros y eventos del sistema {#información-sobre-registros-y-eventos-del-sistema}
+## Información sobre registros y eventos del sistema 
 
-## dumpsys\_adb\_state.json {#dumpsys_adb_state.json}
+### dumpsys\_adb\_state.json {#dumpsys_adb_state.json}
 
 El contenido de este archivo se genera mediante el módulo [adb\_state](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/adb_state.py). y el artefacto [dumpsys\_adb](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_adb.py). 
 
@@ -332,7 +334,7 @@ El archivo sigue una estructura de lista de objetos JSON tipo clave-valor
 ]
 ```
 
-## bugreport\_timestamps.json {#bugreport_timestamps.json}
+### bugreport\_timestamps.json {#bugreport_timestamps.json}
 
 El contenido de este archivo se genera mediante el módulo [fs\_timestamps](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/fs_timestamps.py) y el artefacto [file\_timestamps](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/file_timestamps.py).
 
@@ -393,7 +395,7 @@ La información de este archivo nos permite identificar cambios inusuales en el 
 * [Device configuration | Android Open Source Project](https://source.android.com/docs/core/storage/config#file_mappings)   
 * [Partitions overview | Android Open Source Project](https://source.android.com/docs/core/architecture/partitions) 
 
-## dbinfo.json {#dbinfo.json}
+### dbinfo.json {#dbinfo.json}
 
 El contenido de este archivo se genera mediante el módulo [dbinfo](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/dbinfo.py) y el artefacto [dumpsys\_dbinfo](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_dbinfo.py).
 
@@ -447,7 +449,7 @@ Este archivo resulta importante para dar seguimiento a las consultas ejecutadas 
 
 * [Data and file storage overview | App data and files | Android Developers](https://developer.android.com/training/data-storage) 
 
-## receivers.json {#receivers.json}
+### receivers.json {#receivers.json}
 
 La información de este archivo se genera mediante el módulo [receivers](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/receivers.py) y el artefacto [dympsys\_receivers](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_receivers.py).
 
@@ -490,9 +492,9 @@ La información asociada a *intents* y *receivers* nos permite identificar si un
 }
 ```
 
-# Procesos y aplicaciones {#procesos-y-aplicaciones}
+## Procesos y aplicaciones {#procesos-y-aplicaciones}
 
-## packages.json {#packages.json}
+### packages.json {#packages.json}
 
 La información de este archivo se genera mediante el módulo [packages](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/packages.py) y el artefacto [dumpsys\_packages](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_packages.py).
 
@@ -596,7 +598,7 @@ La información de este archivo permite al analista conocer y mapear las aplicac
 
 * [Permisos en Android](https://developer.android.com/guide/topics/permissions/overview?hl=es-419)
 
-## activities.json {#activities.json}
+### activities.json {#activities.json}
 
 La información de este archivo se genera mediante el módulo [activities](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/activities.py) y el artefacto [dumpsys\_package\_activities](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_package_activities.py).
 
@@ -647,7 +649,7 @@ Esto es útil para identificar cómo es que interactúan las aplicaciones entre 
 * [Intents and intent filters](https://developer.android.com/guide/components/intents-filters)  
 *  [Introducción a las actividades](https://developer.android.com/guide/components/activities/intro-activities?hl=es-419#tcoa) 
 
-## appops.json {#appops.json}
+### appops.json {#appops.json}
 
 La información de este archivo se genera mediante el módulo [appops](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/appops.py) y el artefacto [dumpsys\_appos](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_appops.py).
 
@@ -734,7 +736,7 @@ Identificar contextos riesgosos de solicitud de permisos en *apps operations,* p
 * [AppOpsManager](https://developer.android.com/reference/android/app/AppOpsManager)  
 * [App-ops](https://android.googlesource.com/platform/frameworks/base/+/refs/heads/main/core/java/android/app/AppOps.md) 
 
-## accessibility.json {#accessibility.json}
+### accessibility.json {#accessibility.json}
 
 La información de este archivo se genera mediante el módulo [accessibility](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/accessibility.py) y el artefacto [dumpsys\_accesibility](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_accessibility.py).
 
@@ -784,7 +786,7 @@ Este archivo nos permite identificar si una aplicación hace uso de un servicio 
 
 * [AccessibilityService on Android](https://developer.android.com/reference/android/accessibilityservice/AccessibilityService)
 
-## tombstones.json {#tombstones.json}
+### tombstones.json {#tombstones.json}
 
 La información de este archivo se genera mediante el módulo [tombstones](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/tombstones.py), el artefacto [tombstone\_crashes](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/tombstone_crashes.py) y el parser [proto/tombstone](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/parsers/proto/tombstone.py).
 
@@ -902,7 +904,7 @@ Esto es útil para detectar los procesos, servicios o aplicaciones que están fa
 * [Definiciones públicas de dominos](https://android.googlesource.com/platform/system/sepolicy/+/refs/heads/main/public/)  
 * [Definiciones públicas de dominios vendor-HAL](https://android.googlesource.com/platform/system/sepolicy/+/refs/heads/main/vendor)
 
-## battery\_daily.json {#battery_daily.json}
+### battery\_daily.json {#battery_daily.json}
 
 La información de este archivo se genera mediante el módulo [battery\_daily](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/battery_daily.py) y el artefacto [dumpsys\_battery\_daily](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_battery_daily.py).
 
@@ -938,7 +940,7 @@ Esto es útil para identificar aplicaciones que han cambiado de versión de mane
 ]
 ```
 
-## battery\_history.json {#battery_history.json}
+### battery\_history.json {#battery_history.json}
 
 La información de este archivo se genera mediante el módulo [battery\_history](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_battery_history.py) y el artefacto [dumpsys\_battery\_history](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_battery_history.py).
 
@@ -977,7 +979,7 @@ La información del *battery\_history* permite identificar los eventos ejecutado
 }
 ```
 
-## platform\_compact.json {#platform_compact.json}
+### platform\_compact.json {#platform_compact.json}
 
 La información de este archivo se genera mediante el módulo [platform\_compat](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/platform_compat.py) y el artefacto [dumpsys\_platform\_compat](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_platform_compat.py).
 
