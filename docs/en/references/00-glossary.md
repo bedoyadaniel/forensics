@@ -118,7 +118,7 @@ A feature for Google online accounts that allows users to extract data from diff
 
 ### Graphical User Interface
 
-
+According to [wikipedia](https://en.wikipedia.org/wiki/Graphical_user_interface), Graphical User Interface or GUI a form of user interface that allows users to interact with electronic devices through graphical icons and visual indicators such as secondary notation. In many applications, GUIs are used instead of text-based UIs, which are based on typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs), which require commands to be typed on a computer keyboard.
 
 
 ### Hash
