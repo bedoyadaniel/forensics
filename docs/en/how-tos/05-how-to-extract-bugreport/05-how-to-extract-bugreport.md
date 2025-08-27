@@ -89,7 +89,7 @@ Once developer options are enabled, follow these steps to generate a bugreport (
 9. Select the preferred mechanism and **share the bugreport**  
 
 
-![ Steps to generate a bug report on a Honor Magic Lite con la versión Magic OS 7.1 en Android 13](../../../05-como-extraer-bugreport/assets/bug-report-honor-magic5-lite.gif "image 1"){: style="height:480x;width:216px"}
+![ Steps to generate a bug report on a Honor Magic Lite con la versión Magic OS 7.1 en Android 13](../../../how-tos/05-como-extraer-bugreport/assets/bug-report-honor-magic5-lite.gif "image 1"){: style="height:480x;width:216px"}
 /// caption
 **image 1**.  Steps to generate a bug report on a Honor Magic Lite running Magic OS 7.1.
 ///
@@ -111,7 +111,7 @@ Once developer options are enabled, follow these steps to generate a bugreport (
 8. You will see a warning message informing about sensitive data. Click **Ok**  
 9. Select the preferred mechanism and **share the bugreport**  
 
-![ Steps to generate a bug report on a Motorola Edge Neo 40 utilizando Hello UI en Android 13](../../../05-como-extraer-bugreport/assets/bug-report-motorola-edge-40-neo.gif "image 4"){: style="height:480x;width:216px"}
+![ Steps to generate a bug report on a Motorola Edge Neo 40 utilizando Hello UI en Android 13](../../../how-tos/05-como-extraer-bugreport/assets/bug-report-motorola-edge-40-neo.gif "image 4"){: style="height:480x;width:216px"}
 /// caption
 **image 2**.  Steps to generate a bug report on a Motorola Edge Neo 40 running Hello UI.
 ///
@@ -156,7 +156,7 @@ Once developer options are enabled, follow these steps to generate a bugreport (
 
 
 
-![Steps to generate a bug report on a OPPO Reno 10 utilizando Android 13](../../../05-como-extraer-bugreport/assets/bug-report-oppo-reno10-5g.gif "image 5"){: style="height:480x;width:216px"}
+![Steps to generate a bug report on a OPPO Reno 10 utilizando Android 13](../../../how-tos/05-como-extraer-bugreport/assets/bug-report-oppo-reno10-5g.gif "image 5"){: style="height:480x;width:216px"}
 /// caption
 **image 4**. Steps to generate a bug report on a OPPO Reno 10 running Android 13
 ///
@@ -179,7 +179,7 @@ Once developer options are enabled, follow these steps to generate a bugreport (
 9. Select the preferred mechanism and **share the bugreport**  
 
 
-![ Steps to generate a bug report on a Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13](../../../05-como-extraer-bugreport/assets/bug-report-realme-gt2-pro.gif "image 6"){: style="height:480x;width:216px"}
+![ Steps to generate a bug report on a Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13](../../../how-tos/05-como-extraer-bugreport/assets/bug-report-realme-gt2-pro.gif "image 6"){: style="height:480x;width:216px"}
 /// caption
 **image 5**. Steps to generate a bug report on a Realme GT2 Pro with RealMe UI 4.0 and Android 13
 ///
@@ -199,7 +199,7 @@ Once developer options are enabled, follow these steps to generate a bugreport (
 7. You will see a warning message informing about sensitive data. Click **Ok**  
 8. Select the preferred mechanism and **share the bugreport**  
 
-![ Steps to generate a bug report on a Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../../../05-como-extraer-bugreport/assets/bug-report-samsung-galaxy-a54-5g.gif "image 7"){: style="height:480x;width:216px"}
+![ Steps to generate a bug report on a Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13](../../../how-tos/05-como-extraer-bugreport/assets/bug-report-samsung-galaxy-a54-5g.gif "image 7"){: style="height:480x;width:216px"}
 /// caption
 **image 6**. Steps to generate a bug report on a Samsung Galaxy A54 with One UI and Android 13
 ///
@@ -221,7 +221,7 @@ Once developer options are enabled, follow these steps to generate a bugreport (
 8. You will see a warning message informing about sensitive data. Click **Ok**  
 9. Select the preferred mechanism and **share the bugreport**  
 
-![ Steps to generate a bug report on a Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14\.](../../../05-como-extraer-bugreport/assets/bug-report-sony-xperia-10-v.gif "image 8"){: style="height:480x;width:216px"}
+![ Steps to generate a bug report on a Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14\.](../../../how-tos/05-como-extraer-bugreport/assets/bug-report-sony-xperia-10-v.gif "image 8"){: style="height:480x;width:216px"}
 /// caption
 **image 7**. Steps to generate a bug report on a Sony Xperia 10V with Xperia UI 4.0 running Android 14\.
 ///
@@ -243,7 +243,7 @@ Once developer options are enabled, follow these steps to generate a bugreport (
 8. You will see a warning message informing about sensitive data. Click **Ok**  
 9. Select the preferred mechanism and **share the bugreport**  
 
-![Pasos para generar un reporte de errores en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13](../../../05-como-extraer-bugreport/assets/bug-report-tecno-spark-go-2023.gif"image 9"){: style="height:480x;width:216px"}
+![Pasos para generar un reporte de errores en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13](../../../how-tos/05-como-extraer-bugreport/assets/bug-report-tecno-spark-go-2023.gif"image 9"){: style="height:480x;width:216px"}
 /// caption
 **image 8**.  Steps to generate a bug report on a Tecno Spark Go with Hi OS running Android 13.
 ///
@@ -265,7 +265,7 @@ Once developer options are enabled, follow these steps to generate a bugreport (
 9. Select the preferred mechanism and **share the bugreport**  
 
 
-![Pasos para generar un reporte de errores en un dispositivo Xiaomi 13T.](../05-como-extraer-bugreport/assets/bug-report-xiaomi-13t.gif "image 10"){: style="height:480x;width:216px"}
+![Pasos para generar un reporte de errores en un dispositivo Xiaomi 13T.](../../../how-tos/05-como-extraer-bugreport/assets/bug-report-xiaomi-13t.gif "image 10"){: style="height:480x;width:216px"}
 /// caption
 **image 9**.  Steps to generate a bug report on a Xiaomi 13T.
 ///
@@ -273,7 +273,7 @@ Once developer options are enabled, follow these steps to generate a bugreport (
 
 ## Steps to generate a bugreport via the ADB console
 
-In addition to the graphical method, it is possible to generate a bugreport via the ADB console. Remember to [enable USB debugging](../../../03-how-to-enable-adb/03-how-to-enable-adb.md) before following these steps.
+In addition to the graphical method, it is possible to generate a bugreport via the ADB console. Remember to [enable USB debugging](../03-how-to-enable-adb/03-how-to-enable-adb.md) before following these steps.
 
 
 ### Generate the bugreport
