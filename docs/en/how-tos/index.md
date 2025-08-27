@@ -53,7 +53,7 @@ A good example is a cooking recipe, where the focus is to achieve a result, in t
 
     Step by step instructions shocasing how to generate a bugreport on an Android device. The guide includes detailed guidance on generating a bugreport on different flavors of Android and also through ADB. 
 
-    [:octicons-arrow-right-24: ¿Cómo generar un bugreport en Android?](05-how-to-extract-bugreport/05-how-to-extract-bugreport.html)
+    [:octicons-arrow-right-24: How to extract a bugreport from an Android device?](05-how-to-extract-bugreport/05-how-to-extract-bugreport.html)
 
 
 
