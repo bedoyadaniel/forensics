@@ -46,6 +46,17 @@ A good example is a cooking recipe, where the focus is to achieve a result, in t
 
     [:octicons-arrow-right-24: How to enable ADB on Android?](03-how-to-enable-adb/03-how-to-enable-adb.html)
 
+
+-   :material-bug:{ .lg .middle }      __How to extract a _bugreport_ from an Android device?__
+
+    ---
+
+    Step by step instructions shocasing how to generate a bugreport on an Android device. The guide includes detailed guidance on generating a bugreport on different flavors of Android and also through ADB. 
+
+    [:octicons-arrow-right-24: ¿Cómo generar un bugreport en Android?](05-how-to-extract-bugreport/05-how-to-extract-bugreport.html)
+
+
+
 -   :fontawesome-solid-stethoscope:{ .lg .middle }      __How to make an extraction with AndroidQF?__
 
     ---
