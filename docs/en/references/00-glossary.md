@@ -116,6 +116,11 @@ A feature for Google online accounts that allows users to extract data from diff
 [Use this link to access the feature and start a takeout request.](https://takeout.google.com/?pli=1)
 
 
+### Graphical User Interface
+
+
+
+
 ### Hash
 
 A [hash](https://en.wikipedia.org/wiki/Hash_function) is a cryptographic function that produces a unique value for a given data set. Common examples include MD5 and SHA1.

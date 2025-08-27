@@ -130,7 +130,7 @@ Luego de habilitar las opciones de desarrollador, sigue estos **generar un repor
 9. Selecciona el mecanismo de preferencia y **comparte el bugreport**  
 
 
-![Pasos para  generar un reporte de errores en un dispositivo Nokia G42 5G utilizando Android 13\.](../03-como-habilitar-adb/assets/activating-adb-nokia-g42.gif "imagen 4"){: style="height:480x;width:216px"}
+![Pasos para  generar un reporte de errores en un dispositivo Nokia G42 5G utilizando Android 13\.](../05-como-extraer-bugreport/assets/bug-report-nokia-g42.gif "imagen 4"){: style="height:480x;width:216px"}
 /// caption
 **Imagen 3**. Pasos para generar un reporte de errores en un dispositivo Nokia G42 5G utilizando Android 13\.
 ///
