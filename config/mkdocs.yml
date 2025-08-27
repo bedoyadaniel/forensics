@@ -31,6 +31,7 @@ nav:
     - Inicio: 'references/index.md'
     - Glosario: 'references/00-glossary.md'
     - Diccionario AndroidQF: 'references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md'
+    - Diccionario MVT bugreport: 'references/02-reference-diccionario-mvt-bugreport/02-reference-diccionario-mvt-bugreport.md'
   - Comunidad:
     - Comunidad de práctica: 'comunidad/index.md'
     - ¿Por qué contribuir con este repositorio?: 'comunidad/por-que-contribuir.md'
