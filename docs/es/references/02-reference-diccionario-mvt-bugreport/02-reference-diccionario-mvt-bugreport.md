@@ -24,7 +24,7 @@ Este recurso forma **parte de un repositorio de documentación técnica** que ti
 
 Este recurso en particular se enmarca dentro de la categoría de [referencias](https://diataxis.fr/reference), y contiene información sobre el análisis de [bugreport](../references/00-glossary.md#bugreport) generados por dispositivos Android mediante el comando ***mvt-android check-bugreport***  durante el uso de la herramienta MVT (*Mobile Verification Toolkit)*, desarrollada y mantenida por el [Laboratorio de Seguridad de Amnistía Internacional](https://securitylab.amnesty.org/es/) y perteneciente al [MVT Project](../references/00-glossary.md#mvt). Esto con el objetivo de que una persona analista **conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.**
 
-Este recurso se actualizó por última vez el 25 de julio de 2025 y para la recopilación de la información se tomó como base el *commit* *595a2f6536d9fc1dffb85605995631eff4146994*.
+Para la recopilación de la información se tomó como base el la versión 2.6.0 de MVT.
 
 La información generada por *mvt-bugreport* se puede agrupar en 5 categorías principales:
 
