@@ -184,7 +184,7 @@ The following steps will be **applied equally** on Linux, Windows, or macOS. Onc
 
 * Select: **“Backup now”.**
 
-    ![Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada](../../../how-tos/4-como-extraer-mediante-androidqf/assets/08-captura-android-copia-seguridad.png "imagen 8")
+    ![Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada](../../../how-tos/04-como-extraer-mediante-androidqf/assets/08-captura-android-copia-seguridad.png "imagen 8")
     /// caption
     **Image 8**. Screenshot of a Samsung mobile on the backup and restore screen
     ///
@@ -258,7 +258,7 @@ Once complete,  it is important to **verify that the acquisition was completed s
     grep -i "WARNING\|ERROR" command.log
     ```
 
-    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../04-como-extraer-mediante-androidqf/assets/13-captura-pantalla-terminal-linux-errores.png "imagen 12")
+    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../../../04-como-extraer-mediante-androidqf/assets/13-captura-pantalla-terminal-linux-errores.png "imagen 12")
     /// caption
     **Imagen 12**. Grep command on a Linux system looking for errors on the extraction.
     ///
