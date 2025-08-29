@@ -112,7 +112,7 @@ At this point, AndroidQF can be executed.
 
 === "Linux y MacOS"
 
-    Execute the **following command**. Make sure you add the full binary name i.e. *androidqf_***. 
+    Execute the **following command**. Make sure you add the full binary name i.e. *androidq_*. 
     
     ``` 
     ./androidqf-linux-v?
@@ -121,7 +121,8 @@ At this point, AndroidQF can be executed.
 
     ![Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción](../../../how-tos/04-como-extraer-mediante-androidqf/assets/02-captura-terminal-linux-ejecucion.png "imagen 2")
     /// caption
-    **Image 2**. Screen capture of a Linux terminal executing the androidqf binary to start an extraction.     ///
+    **Image 2**. Screen capture of a Linux terminal executing the androidqf binary to start an extraction.
+    ///
 
 === "Windows"
 
@@ -258,7 +259,7 @@ Once complete,  it is important to **verify that the acquisition was completed s
     grep -i "WARNING\|ERROR" command.log
     ```
 
-    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../../../04-como-extraer-mediante-androidqf/assets/13-captura-pantalla-terminal-linux-errores.png "imagen 12")
+    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../../../how-tos/04-como-extraer-mediante-androidqf/assets/13-captura-pantalla-terminal-linux-errores.png "imagen 12")
     /// caption
     **Imagen 12**. Grep command on a Linux system looking for errors on the extraction.
     ///
@@ -268,7 +269,7 @@ Once complete,  it is important to **verify that the acquisition was completed s
 
     Open the ```command.log``` file using *Notepad*. Open the search menu from the navigation bar or using the keyboard shortcut **ctrl+b** y search for ***WARNING*** or ***ERROR*****.**
 
-    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../04-como-extraer-mediante-androidqf/assets/14-captura-pantalla-windows-errores.png "imagen 14")
+    ![Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.](../../../how-tos/04-como-extraer-mediante-androidqf/assets/14-captura-pantalla-windows-errores.png "imagen 14")
     /// caption
     **Imagen 14**. Screen-capture of Windows notepad searching for errors in the command.log file 
     ///
