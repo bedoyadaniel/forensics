@@ -26,7 +26,7 @@ Este recurso en particular se enmarca dentro de la categoría de [referencias](h
 
 Para la recopilación de la información se tomó como base el la versión 2.6.0 de MVT.
 
-La información generada por *mvt-bugreport* se puede agrupar en 5 categorías principales:
+La información generada por *mvt-bugreport* se puede agrupar en 4 categorías principales:
 
 * Detalles de la adquisición  
 * Configuración del dispositivo  
