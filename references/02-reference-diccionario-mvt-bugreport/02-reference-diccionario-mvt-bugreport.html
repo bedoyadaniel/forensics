@@ -2470,16 +2470,18 @@ Los <em>intents</em> permiten identificar si una aplicación está enviando info
 <p>La información en el archivo se presenta de la siguiente manera:</p>
 <ul>
 <li><strong>package_name</strong>. Nombre del paquete (aplicación o servicio).  </li>
-<li><strong>permissions</strong>: Lista de permisos asociados a la aplicación.  </li>
+<li><strong>permissions</strong>: Lista de permisos asociados a la aplicación.  <ul>
 <li><strong>name</strong>: Nombre del permiso solicitado por el paquete.  </li>
 <li><strong>entries</strong>: Historial de operaciones sobre el permiso.  <ul>
-<li><strong>access</strong>: Estado del permiso  </li>
+<li><strong>access</strong>: Estado del permiso  <ul>
 <li><em>allow</em>. Se permitió el acceso al permiso.  </li>
 <li><em>ignore</em>. No se permitió el acceso al permiso.  </li>
-<li><em>deny</em>. Arroja una <em>SecurityException</em> al  solicitar el acceso al permiso.   </li>
+<li><em>deny</em>. Arroja una <em>SecurityException</em> al solicitar el acceso al permiso.   </li>
 <li><em>default</em>. Comportamiento por defecto del permiso.  </li>
 <li><em>foreground</em>. Se permitió el acceso al permiso pero solo si la aplicación está en segundo plano.  </li>
-<li><strong>type</strong>: Categoría de la operación. Esta se compone del estado actual de la operación y de una bandera asociada al contexto de ejecución de la operación. El estado de la operación se refiere a si fue realizada en primer plano, segundo plano, etc. Y el contexto de ejecución se refiere a si la operación se ejecutó por la aplicación directamente, por una aplicación externa confiable, por una aplicación no-verificada, etc. Estas se concatenan mediante un guión medio. <em>No se incluye en todos los registros.</em>  </li>
+</ul>
+</li>
+<li><strong>type</strong>: Categoría de la operación. Esta se compone del estado actual de la operación y de una bandera asociada al contexto de ejecución de la operación. El estado de la operación se refiere a si fue realizada en primer plano, segundo plano, etc. Y el contexto de ejecución se refiere a si la operación se ejecutó por la aplicación directamente, por una aplicación externa confiable, por una aplicación no-verificada, etc. Estas se concatenan mediante un guión medio. <em>No se incluye en todos los registros.</em>  <ul>
 <li>Los valores para el estado de la operación pueden ser los siguientes:  <ul>
 <li><em>pers</em>. La operación pertenece a un proceso persistente (por ejemplo, servicios del sistema que no deben morir).  </li>
 <li><em>top</em>. La operación corresponde a la app que está actualmente en primer plano (visible para el usuario).  </li>
@@ -2501,7 +2503,11 @@ Los <em>intents</em> permiten identificar si una aplicación está enviando info
 <li><em>unknown</em>. Contexto de operación desconocido.  </li>
 </ul>
 </li>
+</ul>
+</li>
 <li><strong>timestamp</strong>: Marca de tiempo en que se registró la operación. <em>No se incluye en todos los registros.</em>  </li>
+</ul>
+</li>
 </ul>
 </li>
 <li><strong>uid</strong>: Identificador de usuario asociado a la aplicación.</li>
@@ -2604,11 +2610,13 @@ Los <em>intents</em> permiten identificar si una aplicación está enviando info
 <li><strong>tid</strong>: Identificador del hilo donde ocurrió el crash (puede coincidir con el pid si fue el hilo principal).  </li>
 <li><strong>process_name</strong>: Nombre del proceso que falló.  </li>
 <li><strong>binary_path</strong>: Ruta del binario ejecutado al momento del fallo.  </li>
-<li><strong>selinux_label</strong>: Etiqueta de contexto SELinux <em>u:r:dominio:s0:categoría</em> asociada al proceso que falló. Compuesta por:  </li>
+<li><strong>selinux_label</strong>: Etiqueta de contexto SELinux <em>u:r:dominio:s0:categoría</em> asociada al proceso que falló. Compuesta por:  <ul>
 <li><strong>u</strong>: Usuario SELinux que agrupa procesos bajo un mismo espacio de reglas de seguridad.  </li>
 <li><strong>r</strong>: Rol SELinux que conecta al usuario con los dominios. En el caso de la política SELinux de android, el rol está presente para la compatibilidad con el formato estándar de SELinux.  </li>
 <li><strong>dominio</strong>: Tipo o dominio SELinux. Esta parte del contexto identifica el proceso o servicio que falló. Los dominios que pueden aparecer en este campo provienen de la política SELinux activa del dispositivo, donde, dentro de esta política, los dominios se definen en archivos <em>.te</em> especfiicos para servicios del sistema, aplicaciones de usuario, en el HAL o en un proceso crítico.  </li>
 <li><strong>Nivel de seguridad:</strong> Corresponde al componente multi level security o multi category security e incluye únicamente el nivel base de seguridad y en algunas ocasiones categorías adicionales que permiten diferenciar instancias de procesos fallidos bajo un mismo dominio. El nivel más simple es s0, que es el valor base presente en la mayoría de procesos del sistema, cuando se requiere un aislamiento adicional, principalmente en aplicaciones de usuario, el nivel puede incluir categorías adicionales.  </li>
+</ul>
+</li>
 <li><strong>uid</strong>: ID de usuario asociado a la ejecución del procesos.  </li>
 <li><strong>signal_info</strong>: Señal enviada desde o al sistema al provocar la falla.  </li>
 <li><strong>code</strong>: Código específico que indica cómo se generó la señal. Pueden ser los siguientes:   <ul>
