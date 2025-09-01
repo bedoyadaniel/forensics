@@ -32,6 +32,7 @@ nav:
     - Home: 'references/index.md'
     - Glossary: 'references/00-glossary.md'
     - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.md'
+    - mvt bugreport output file dictionary: 'references/02-reference-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.md'
   - Community:
     - Consensual forensics community: 'community/index.md'
     - Supporting this effort: 'community/why-support.md'
