@@ -659,35 +659,35 @@ Este archivo se encuentra en formato *json* y contiene información sobre las op
 
 La información en el archivo se presenta de la siguiente manera:
 
-* **package\_name**. Nombre del paquete (aplicación o servicio).  
+* **package_name**. Nombre del paquete (aplicación o servicio).  
 * **permissions**: Lista de permisos asociados a la aplicación.  
-  * **name**: Nombre del permiso solicitado por el paquete.  
-  * **entries**: Historial de operaciones sobre el permiso.  
-    * **access**: Estado del permiso  
-        * *allow*. Se permitió el acceso al permiso.  
-        * *ignore*. No se permitió el acceso al permiso.  
-        * *deny*. Arroja una *SecurityException* al  solicitar el acceso al permiso.   
-        * *default*. Comportamiento por defecto del permiso.  
-        * *foreground*. Se permitió el acceso al permiso pero solo si la aplicación está en segundo plano.  
-    * **type**: Categoría de la operación. Esta se compone del estado actual de la operación y de una bandera asociada al contexto de ejecución de la operación. El estado de la operación se refiere a si fue realizada en primer plano, segundo plano, etc. Y el contexto de ejecución se refiere a si la operación se ejecutó por la aplicación directamente, por una aplicación externa confiable, por una aplicación no-verificada, etc. Estas se concatenan mediante un guión medio. *No se incluye en todos los registros.*  
-        * Los valores para el estado de la operación pueden ser los siguientes:  
-            * *pers*. La operación pertenece a un proceso persistente (por ejemplo, servicios del sistema que no deben morir).  
-            * *top*. La operación corresponde a la app que está actualmente en primer plano (visible para el usuario).  
-            * *fgsvcl*. La operación pertenece a un servicio en primer plano que accede a la ubicación.  
-            * *fgsvc*. La operación pertenece a un servicio en primer plano (foreground service).  
-            * *fg*. La operación está en primer plano (actividad visible o componente en uso).  
-            * *bg*. La operación está en segundo plano.  
-            * *cch*. La operación está en la caché, es decir, el proceso no se está ejecutando activamente.  
-            * *gone*. La operación no tiene procesos activos (no existe actualmente).  
-            * *unknown*. Estado desconocido o no categorizado.  
-        * Los valores para la bandera de contexto de la operación pueden ser los siguientes:  
-            * *s*. La operación fue ejecutada directamente por la propia aplicación (contexto propio).  
-            * *tp*. La operación fue ejecutada por una aplicación confiable actuando como proxy para otra aplicación.  
-            * *up*. La operación fue ejecutada por una aplicación no confiable actuando como proxy para otra aplicación.  
-            * *tpd*. La operación fue ejecutada en nombre de esta aplicación por un proxy confiable.  
-            * *upd*. La operación fue ejecutada en nombre de esta aplicación por un proxy no confiable.  
-            * *unknown*. Contexto de operación desconocido.  
-    * **timestamp**: Marca de tiempo en que se registró la operación. *No se incluye en todos los registros.*  
+    * **name**: Nombre del permiso solicitado por el paquete.  
+    * **entries**: Historial de operaciones sobre el permiso.  
+        * **access**: Estado del permiso  
+            * *allow*. Se permitió el acceso al permiso.  
+            * *ignore*. No se permitió el acceso al permiso.  
+            * *deny*. Arroja una *SecurityException* al solicitar el acceso al permiso.   
+            * *default*. Comportamiento por defecto del permiso.  
+            * *foreground*. Se permitió el acceso al permiso pero solo si la aplicación está en segundo plano.  
+        * **type**: Categoría de la operación. Esta se compone del estado actual de la operación y de una bandera asociada al contexto de ejecución de la operación. El estado de la operación se refiere a si fue realizada en primer plano, segundo plano, etc. Y el contexto de ejecución se refiere a si la operación se ejecutó por la aplicación directamente, por una aplicación externa confiable, por una aplicación no-verificada, etc. Estas se concatenan mediante un guión medio. *No se incluye en todos los registros.*  
+            * Los valores para el estado de la operación pueden ser los siguientes:  
+                * *pers*. La operación pertenece a un proceso persistente (por ejemplo, servicios del sistema que no deben morir).  
+                * *top*. La operación corresponde a la app que está actualmente en primer plano (visible para el usuario).  
+                * *fgsvcl*. La operación pertenece a un servicio en primer plano que accede a la ubicación.  
+                * *fgsvc*. La operación pertenece a un servicio en primer plano (foreground service).  
+                * *fg*. La operación está en primer plano (actividad visible o componente en uso).  
+                * *bg*. La operación está en segundo plano.  
+                * *cch*. La operación está en la caché, es decir, el proceso no se está ejecutando activamente.  
+                * *gone*. La operación no tiene procesos activos (no existe actualmente).  
+                * *unknown*. Estado desconocido o no categorizado.  
+            * Los valores para la bandera de contexto de la operación pueden ser los siguientes:  
+                * *s*. La operación fue ejecutada directamente por la propia aplicación (contexto propio).  
+                * *tp*. La operación fue ejecutada por una aplicación confiable actuando como proxy para otra aplicación.  
+                * *up*. La operación fue ejecutada por una aplicación no confiable actuando como proxy para otra aplicación.  
+                * *tpd*. La operación fue ejecutada en nombre de esta aplicación por un proxy confiable.  
+                * *upd*. La operación fue ejecutada en nombre de esta aplicación por un proxy no confiable.  
+                * *unknown*. Contexto de operación desconocido.  
+        * **timestamp**: Marca de tiempo en que se registró la operación. *No se incluye en todos los registros.*  
 * **uid**: Identificador de usuario asociado a la aplicación.
 
 **¿Por qué es importante?**
