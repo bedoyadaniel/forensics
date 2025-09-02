@@ -10,9 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://forensics.socialtic.org/en/references/02-refrerence-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.html">
+        <link rel="canonical" href="https://forensics.socialtic.org/en/references/02-reference-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.html">
       
       
+        <link rel="prev" href="../01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.html">
+      
+      
+        <link rel="next" href="../../community/index.html">
       
       
         
@@ -27,7 +31,7 @@
     
     
       
-        <title>02 reference mvt bugreport dictionary - SocialTIC Forensics</title>
+        <title>MVT bugreport output file dictionary - SocialTIC Forensics</title>
       
     
     
@@ -135,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              02 reference mvt bugreport dictionary
+              MVT bugreport output file dictionary
             
           </span>
         </div>
@@ -367,10 +371,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../index.html" class="md-tabs__link">
           
   
@@ -1102,6 +1108,8 @@
       
   
   
+    
+  
   
   
     
@@ -1121,16 +1129,19 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -1154,13 +1165,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1233,10 +1244,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../02-reference-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MVT bugreport output file dictionary
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="02-reference-mvt-bugreport-dictionary.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1252,6 +1288,334 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mvt-bugreport-output-file-dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          MVT bugreport output file dictionary
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acquisition-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Acquisition details
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acquisition details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#info.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          info.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command.log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          command.log
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeline.csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          timeline.csv
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Device configurations
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Device configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getprop.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          getprop.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-on-system-logs-and-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Information on system logs and events
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information on system logs and events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dumpsys_adb_state.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          dumpsys_adb_state.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bugreport_timestamps.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          bugreport_timestamps.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dbinfo.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          dbinfo.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receivers.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          receivers.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processes-and-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Processes and applications
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packages.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          packages.json
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="packages.json">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activities.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          activities.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appops.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          appops.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          accessibility.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tombstones.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          tombstones.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery_daily.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          battery_daily.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery_history.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          battery_history.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform_compact.json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          platform_compact.json
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Comments
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1573,7 +1937,7 @@
 
 
   
-    <a href="https://github.com/Socialtic/forensics/edit/main/docs/en/references/02-refrerence-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Socialtic/forensics/edit/main/docs/en/references/02-reference-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1582,16 +1946,16 @@
     
       
     
-    <a href="https://github.com/Socialtic/forensics/raw/main/docs/en/references/02-refrerence-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/Socialtic/forensics/raw/main/docs/en/references/02-reference-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-  <h1>02 reference mvt bugreport dictionary</h1>
+  <h1>MVT bugreport output file dictionary</h1>
 
-<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-09-01'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-09-01T18:09:32-06:00'>2025-09-01</time></span><span data-tippy-content data-tippy-raw='2025-09-02'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-09-02T00:09:44.902559+00:00'>2025-09-02</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Daniel' data-tippy-content data-tippy-raw='&lt;a href="mailto:13720909+bedoyadaniel@users.noreply.github.com"&gt;Daniel&lt;/a&gt;'><span class='avatar-text'></span><img class="avatar" src="../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
+<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-09-01'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-09-01T20:03:36-06:00'>2025-09-01</time></span><span data-tippy-content data-tippy-raw='2025-09-02'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-09-02T02:03:50.921225+00:00'>2025-09-02</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Daniel' data-tippy-content data-tippy-raw='&lt;a href="mailto:13720909+bedoyadaniel@users.noreply.github.com"&gt;Daniel&lt;/a&gt;'><span class='avatar-text'></span><img class="avatar" src="../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
 <hr />
 <p>title: MVT bugreport output file dictionary
 summary: dictionary of files generated by mvt-bugreport
@@ -2489,6 +2853,44 @@ In general terms, an intent is a message that can be used to request an action f
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: AndroidQF output file dictionary">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                AndroidQF output file dictionary
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../community/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: Community">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Community
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
