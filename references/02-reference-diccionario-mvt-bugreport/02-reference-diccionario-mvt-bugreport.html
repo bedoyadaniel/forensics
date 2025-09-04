@@ -1949,7 +1949,7 @@
 <h1 id="diccionario-de-archivos-generados-por-la-herramienta-mvt-al-analizar-un-bugreport">Diccionario de archivos generados por la herramienta mvt al analizar un bugreport</h1>
 <div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-08-27'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-08-27T00:00:00'>2025-08-27</time></span><span data-tippy-content data-tippy-raw='2025-08-27'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-08-27T00:00:00'>2025-08-27</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='José Martínez' data-tippy-content data-tippy-raw='&lt;a href="https://socialtic.org/quienes-somos/" target="_blank"&gt;José Martínez&lt;/a&gt;'><span class='avatar-text'></span><img class="avatar" src="../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
 
-<p>El presente documento contiene información sobre los archivos generados por la MVT a través del componente <a href="https://github.com/mvt-project/mvt/tree/main/src/mvt/android/modules/bugreport">mvt-check bugreport</a>. El objetivo de este diccionario, es que la persona analista tenga la facilidad de buscar información específica y conocer el formato en que la información del análisis forense es presentada. </p>
+<p>El presente documento contiene información sobre los archivos generados por la MVT a través del componente <a href="https://github.com/mvt-project/mvt/tree/main/src/mvt/android/modules/bugreport">mvt-check bugreport</a>. El objetivo de este diccionario, es que la persona analista tenga la facilidad de buscar información específica y conocer el formato en que la información del análisis forense es presentada.</p>
 <p>Este recurso forma <strong>parte de un repositorio de documentación técnica</strong> que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para <strong>impulsar el análisis forense consentido en beneficio de la sociedad civil</strong>. Para organizar los contenidos, se utiliza el <a href="../references/00-glossary.md#diátaxis">marco de referencia de documentación técnica Diataxis</a>.</p>
 <p>Este recurso en particular se enmarca dentro de la categoría de <a href="https://diataxis.fr/reference">referencias</a>, y contiene información sobre el análisis de <a href="../references/00-glossary.md#bugreport">bugreport</a> generados por dispositivos Android mediante el comando <strong><em>mvt-android check-bugreport</em></strong>  durante el uso de la herramienta MVT (<em>Mobile Verification Toolkit)</em>, desarrollada y mantenida por el <a href="https://securitylab.amnesty.org/es/">Laboratorio de Seguridad de Amnistía Internacional</a> y perteneciente al <a href="../references/00-glossary.md#mvt">MVT Project</a>. Esto con el objetivo de que una persona analista <strong>conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.</strong></p>
 <p>Para la recopilación de la información se tomó como base el la versión 2.6.0 de MVT.</p>
@@ -1966,14 +1966,14 @@
 <p>Este archivo se encuentra en formato <em>json</em> y contiene información relacionada con el análisis realizado a un archivo bugreport. Contiene la siguiente información:</p>
 <ul>
 <li>Ruta del archivo analizado.  </li>
-<li>Versión de utilizada de MVT.  </li>
+<li>Versión utilizada de MVT.  </li>
 <li>Fecha del análisis.  </li>
 <li>Lista de archivos de indicadores de compromiso.  </li>
 <li>Hash del bugreport analizado (SHA-256).</li>
 </ul>
 <p><strong>¿Por qué es importante?</strong></p>
 <p>Este archivo nos permite <strong>validar el análisis que se ha realizado</strong>, documentando que se tiene un registro del proceso de adquisición y los indicadores que se consideraron para hacer la comparación.</p>
-<p>Esta información permite establecer una referencia del archivo analizado y la herramientas de indicadores utilizados utilizados en el análisis , esto facilita el <a href="https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#cadena-de-custodia">proceso de custodia de la extracción forense</a>. </p>
+<p>Esta información permite establecer una referencia del archivo analizado y la herramientas de indicadores utilizados utilizados en el análisis , esto facilita el <a href="https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#cadena-de-custodia">proceso de custodia de la extracción forense</a>.</p>
 <p><strong>Estructura del archivo:</strong></p>
 <div class="highlight"><pre><span></span><code>{
     &quot;target_path&quot;: &quot;/ruta/del/archivo/bugreport.zip&quot;,
@@ -2075,7 +2075,7 @@ Este archivo se encuentra en formato <em>csv</em> y almacena una línea de tiemp
 <li>Descripción de la actividad identificada en el dispositivo (Description).</li>
 </ul>
 <p><strong>¿Por qué es importante?</strong></p>
-<p>Este archivo permite dar seguimiento a la actividad interna del dispositivo, pudiendo generar una idea amplia de cómo se comportó el dispositivo e identificar eventos relevantes. </p>
+<p>Este archivo permite dar seguimiento a la actividad interna del dispositivo, pudiendo generar una idea amplia de cómo se comportó el dispositivo e identificar eventos relevantes.</p>
 <p><strong>Estructura del archivo</strong></p>
 <p>Este archivo sigue un formato línea por línea con la siguiente estructura.</p>
 <div class="highlight"><pre><span></span><code>&quot;Device Local Timestamp&quot;,&quot;Plugin&quot;,&quot;Event&quot;,&quot;Description&quot;
@@ -2114,11 +2114,11 @@ le.android.ext.services&quot;
 <p>La información de este archivo se obtiene mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/getprop.py">getprop</a> y el artefacto <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/getprop.py">getprop</a>.</p>
 <p><strong>Información contenida</strong></p>
 <p>Este archivo se encuentra en formato <em>json</em> y contiene una lista de las propiedades del dispositivo que son extraídas de la sección <em>SYSTEM PROPERTIES</em> del <em>dumpsys</em>.</p>
-<p>Estas propiedades del sistema son pares clave-valor de cadenas que se almacenan en el diccionario global <a href="https://xdaforums.com/t/guide-build-prop-wiki.2056266/"><em>build.prop</em></a> o en archivos de descripción <em>.sysprop</em>, y proporcionan una forma conveniente de compartir configuraciones dentro del sistema. </p>
+<p>Estas propiedades del sistema son pares clave-valor de cadenas que se almacenan en el diccionario global <a href="https://xdaforums.com/t/guide-build-prop-wiki.2056266/"><em>build.prop</em></a> o en archivos de descripción <em>.sysprop</em>, y proporcionan una forma conveniente de compartir configuraciones dentro del sistema.</p>
 <p>La información se puede encontrar utilizando el siguiente formato:</p>
 <div class="highlight"><pre><span></span><code>[{prefix}.]{group}[.{subgroup}]*.{name}[.{type}]
 </code></pre></div>
-<p>Algunas propiedades aparecen con el prefijo <em>ro</em>, lo que indica que son propiedades de solo lectura, o que fueron asignadas luego del reinicio del dispositivo. Las propiedades con el prefijo <em>persist</em> se refieren a configuraciones resistentes al reinicio. Algunas propiedades no tendrán prefijo, por lo que inician directamente con el grupo al que pertenecen. </p>
+<p>Algunas propiedades aparecen con el prefijo <em>ro</em>, lo que indica que son propiedades de solo lectura, o que fueron asignadas luego del reinicio del dispositivo. Las propiedades con el prefijo <em>persist</em> se refieren a configuraciones resistentes al reinicio. Algunas propiedades no tendrán prefijo, por lo que inician directamente con el grupo al que pertenecen.</p>
 <p>Los grupos más comunes son:</p>
 <ul>
 <li><em>bluetooth</em>, relacionado con Bluetooth  </li>
@@ -2173,11 +2173,11 @@ le.android.ext.services&quot;
 <li><a href="https://source.android.com/docs/core/architecture/configuration?hl=es-419#system-properties">Descripción general de la configuración | Propiedades del sistema | Android Open Source Project</a>   </li>
 <li><a href="https://source.android.com/docs/core/architecture/configuration/sysprops-apis?hl=es-419">Cómo implementar propiedades del sistema como APIs | Android Open Source Project</a>  </li>
 <li><a href="https://source.android.com/docs/core/architecture/configuration/add-system-properties?hl=es-419">Agrega propiedades del sistema | Android Open Source Project</a>  </li>
-<li><a href="https://source.android.com/docs/security/features/selinux/compatibility?hl=es-419#system-property-and-ownership">Compatibilidad de políticas | Android Open Source Project</a> </li>
+<li><a href="https://source.android.com/docs/security/features/selinux/compatibility?hl=es-419#system-property-and-ownership">Compatibilidad de políticas | Android Open Source Project</a></li>
 </ul>
 <h2 id="informacion-sobre-registros-y-eventos-del-sistema">Información sobre registros y eventos del sistema</h2>
 <h3 id="dumpsys_adb_state.json">dumpsys_adb_state.json</h3>
-<p>El contenido de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/adb_state.py">adb_state</a>. y el artefacto <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_adb.py">dumpsys_adb</a>. </p>
+<p>El contenido de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/adb_state.py">adb_state</a>. y el artefacto <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_adb.py">dumpsys_adb</a>.</p>
 <p><strong>Información contenida</strong></p>
 <p>Este archivo se encuentra en formato <em>json</em> y contiene información de una conexión ADB la cual es extraída del servicio <em>adb</em> del <em>dumpsys.</em></p>
 <p>La información en el archivo se presenta de la siguiente manera:</p>
@@ -2188,8 +2188,8 @@ le.android.ext.services&quot;
 <li><strong>user_keys</strong>. Lista de claves públicas de usuario almacenadas en el dispositivo.</li>
 </ul>
 <p><strong>¿Por qué es importante?</strong></p>
-<p>El contenido de este archivo, permite al analista saber si el dispositivo ha sido conectado recientemente a un equipo mediante ADB, lo cual puede dar a conocer los intentos de extracción y análisis de información forense en un dispositivo móvil. </p>
-<p>Esto es particularmente útil si se sospecha del uso de herramientas como <a href="https://www.amnesty.org/en/latest/news/2024/12/serbia-authorities-using-spyware-and-cellebrite-forensic-extraction-tools-to-hack-journalists-and-activists/">UFED de Cellebrite</a> o similares en detenciones arbitrarias o accesos físicos al dispositivo. </p>
+<p>El contenido de este archivo, permite al analista saber si el dispositivo ha sido conectado recientemente a un equipo mediante ADB, lo cual puede dar a conocer los intentos de extracción y análisis de información forense en un dispositivo móvil.</p>
+<p>Esto es particularmente útil si se sospecha del uso de herramientas como <a href="https://www.amnesty.org/en/latest/news/2024/12/serbia-authorities-using-spyware-and-cellebrite-forensic-extraction-tools-to-hack-journalists-and-activists/">UFED de Cellebrite</a> o similares en detenciones arbitrarias o accesos físicos al dispositivo.</p>
 <p>Una consideración de esta información es que esta información no necesariamente demuestra una intervención maliciosa, sino es un precedente de las conexiones recurrentes con ADB.</p>
 <p><strong>Estructura del archivo:</strong></p>
 <p>El archivo sigue una estructura de lista de objetos JSON tipo clave-valor</p>
@@ -2207,10 +2207,10 @@ le.android.ext.services&quot;
 <p><strong>Información contenida</strong></p>
 <p>Este archivo se encuentra en formato <em>json</em> y contiene información asociada al sistema de archivos y puntos de montaje del sistema que se encuentran en la carpeta <em>FS</em> (File system) dentro del bugreport.</p>
 <p>De manera más clara, si en el sistema de archivos existe <em>/dirA/dirB/fileC</em> esto se traduce como <em>FS/dirA/dirB/fileC</em>.</p>
-<p>Es importante no confundir el sistema de archivos y puntos de montaje con los archivos generados por el usuario. </p>
+<p>Es importante no confundir el sistema de archivos y puntos de montaje con los archivos generados por el usuario.</p>
 <p>La información se presenta como una lista que contiene la ruta del archivo y su última fecha de modificación.</p>
 <p><strong>¿Por qué es importante?</strong></p>
-<p>La información de este archivo nos permite identificar cambios inusuales en el sistema de archivos y en los puntos de montaje, los cuales pueden ser indicios de actividad maliciosa. Por ejemplo, puede revelar señales de una escalación de privilegios, montajes no autorizados o accesos inusuales que podrían haberse originado por un escape de sandbox a través de descriptores de archivos asociados a hardware como la GPU. Además, esta información puede ayudar a rastrear fallos del sistema vinculados a otros registros como bugreports previos, crash logs o tombstones, facilitando así la reconstrucción de eventos sospechosos.</p>
+<p>La información de este archivo nos permite identificar cambios inusuales en el sistema de archivos y en los puntos de montaje, los cuales pueden ser indicios de actividad maliciosa. Por ejemplo, puede revelar señales de una escalada de privilegios, montajes no autorizados o accesos inusuales que podrían haberse originado por un escape de sandbox a través de descriptores de archivos asociados a hardware como la GPU. Además, esta información puede ayudar a rastrear fallos del sistema vinculados a otros registros como bugreports previos, crash logs o tombstones, facilitando así la reconstrucción de eventos sospechosos.</p>
 <p><strong>Estructura del archivo:</strong></p>
 <div class="highlight"><pre><span></span><code>{
         &quot;path&quot;: &quot;FS/cache/recovery/last_log.8&quot;,
@@ -2249,7 +2249,7 @@ le.android.ext.services&quot;
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://source.android.com/docs/core/storage/config#file_mappings">Device configuration | Android Open Source Project</a>   </li>
-<li><a href="https://source.android.com/docs/core/architecture/partitions">Partitions overview | Android Open Source Project</a> </li>
+<li><a href="https://source.android.com/docs/core/architecture/partitions">Partitions overview | Android Open Source Project</a></li>
 </ul>
 <h3 id="dbinfo.json">dbinfo.json</h3>
 <p>El contenido de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/dbinfo.py">dbinfo</a> y el artefacto <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_dbinfo.py">dumpsys_dbinfo</a>.</p>
@@ -2293,7 +2293,7 @@ le.android.ext.services&quot;
 </code></pre></div>
 <p><strong>Aprende más</strong></p>
 <ul>
-<li><a href="https://developer.android.com/training/data-storage">Data and file storage overview | App data and files | Android Developers</a> </li>
+<li><a href="https://developer.android.com/training/data-storage">Data and file storage overview | App data and files | Android Developers</a></li>
 </ul>
 <h3 id="receivers.json">receivers.json</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/receivers.py">receivers</a> y el artefacto <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_receivers.py">dympsys_receivers</a>.</p>
@@ -2461,7 +2461,7 @@ Los <em>intents</em> permiten identificar si una aplicación está enviando info
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://developer.android.com/guide/components/intents-filters">Intents and intent filters</a>  </li>
-<li><a href="https://developer.android.com/guide/components/activities/intro-activities?hl=es-419#tcoa">Introducción a las actividades</a> </li>
+<li><a href="https://developer.android.com/guide/components/activities/intro-activities?hl=es-419#tcoa">Introducción a las actividades</a></li>
 </ul>
 <h3 id="appops.json">appops.json</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/appops.py">appops</a> y el artefacto <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_appops.py">dumpsys_appos</a>.</p>
@@ -2513,7 +2513,7 @@ Los <em>intents</em> permiten identificar si una aplicación está enviando info
 <li><strong>uid</strong>: Identificador de usuario asociado a la aplicación.</li>
 </ul>
 <p><strong>¿Por qué es importante?</strong></p>
-<p>Las <em>apps operations</em> permiten identificar con precisión qué aplicaciones han solicitado permisos específicos y bajo qué condiciones y contexto de ejecución se están solicitando estas. </p>
+<p>Las <em>apps operations</em> permiten identificar con precisión qué aplicaciones han solicitado permisos específicos y bajo qué condiciones y contexto de ejecución se están solicitando estas.</p>
 <p>Esto es útil para identificar si una aplicación se ejecuta en contextos de confiables (<em>trusted context)</em> o contextos no confiables (un<em>trusted context)</em> al solicitar un permiso, es decir, identificar si una aplicación está usando a otra aplicación como proxy para poder solicitar un permiso y verificar la forma en que esta operación se llevó a cabo, por ejemplo, si esta solicitud de permiso vino desde otra aplicación como proxy en segundo plano o ejecutándose desde cache.</p>
 <p>Identificar contextos riesgosos de solicitud de permisos en <em>apps operations,</em> permite reconocer patrones de solicitud de permisos repetitivos que sean sospechosos y que nos permitan evaluar a profundidad si el contexto en que se ejecuta la operación es legítimo o está vinculado al abuso de permisos y privilegios revelando algún comportamiento malicioso relacionado con malware.</p>
 <p><strong>Estructura del archivo:</strong></p>
@@ -2549,7 +2549,7 @@ Los <em>intents</em> permiten identificar si una aplicación está enviando info
 <p><strong>Aprende más</strong></p>
 <ul>
 <li><a href="https://developer.android.com/reference/android/app/AppOpsManager">AppOpsManager</a>  </li>
-<li><a href="https://android.googlesource.com/platform/frameworks/base/+/refs/heads/main/core/java/android/app/AppOps.md">App-ops</a> </li>
+<li><a href="https://android.googlesource.com/platform/frameworks/base/+/refs/heads/main/core/java/android/app/AppOps.md">App-ops</a></li>
 </ul>
 <h3 id="accessibility.json">accessibility.json</h3>
 <p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/accessibility.py">accessibility</a> y el artefacto <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_accessibility.py">dumpsys_accesibility</a>.</p>
@@ -2735,7 +2735,7 @@ Este archivo se encuentra en formato <em>json</em> y contiene información sobre
 ]
 </code></pre></div>
 <h3 id="battery_history.json">battery_history.json</h3>
-<p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_battery_history.py">battery_history</a> y el artefacto <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_battery_history.py">dumpsys_battery_history</a>.</p>
+<p>La información de este archivo se genera mediante el módulo <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/bugreport/battery_history.py">battery_history</a> y el artefacto <a href="https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/dumpsys_battery_history.py">dumpsys_battery_history</a>.</p>
 <p><strong>Información contenida</strong></p>
 <p>Este archivo se encuentra en formato <em>json</em> y contiene información sobre los registros <em>event</em> relacionados con una aplicación instalada y su servicio. Esta información es extraída del servicio <em>batterystats</em> del <em>dumpsys</em>.</p>
 <p>Un <em>event</em> es un registro que indica una acción ejecutada por una aplicación y el servicio específico que realizó el cambio. El <em>event</em> representa el inicio o fin de una acción programada de una aplicación sobre el dispositivo, la activación o desactivación de un método de una aplicación que mantiene un dispositivo activo y los cambios de estados que tiene una aplicación al pasar de primer a segundo plano.</p>
