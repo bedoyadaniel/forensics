@@ -14,7 +14,6 @@ author:
 
 ---
 
-## Contributors
 
 Este repositorio recopila conocimiento e información de una comunidad de práctica. Aunque SocialTIC lidera el desarrollo y la presentación del repositorio, **los contenidos dependen de la colaboración de múltiples aliades que apoyan en el co-desarrollo, ampliación, revisión y traducción de los materiales.**
 

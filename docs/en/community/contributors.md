@@ -14,7 +14,7 @@ author:
 
 ---
 
-## Contributors
+
 
 This repository collects knowledge and information from a community of practice. SocialTIC leads the development and presentation of the repository, but **we rely on the contribution of many partners** to co-develop, complete, review and translate the contents.   
 
