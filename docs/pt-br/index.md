@@ -1,37 +1,76 @@
+---
+title: Página de inicio forensics ES
+summary: Página de inicio 
+keywords: homepage, home, inicio
+authors: Daniel Bedoya Arroyo
+lang: es
+tags: [indice, home]
+last_updated: 2025-07-21
+some_url:
+icon: material/home
+hide:
+    - footer
+---
+
 
 # Repositorio de documentación sobre forense digital consentida para la defensa de los Derechos Humanos
 
+!!! warning "Tradução em Português ainda não disponível"
+    Este recurso **ainda não foi traduzido para o português**. Estamos exibindo a versão em espanhol, e você também pode consultar a versão em inglês. Se você quiser, pode contribuir com a tradução deste recurso — ficaríamos muito felizes com sua colaboração! Para isso, consulte nossos [recursos da comunidade](comunidad/como-colaborar.md).
 
-Este es un repositorio de **documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar la forense digital consentida en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el marco de referencia de documentación técnica [Diátaxis](https://diataxis.fr/).
+Este es un repositorio de **documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar la forense digital consentida en beneficio de la sociedad civil**. Su desarrollo es liderado por la organización de la sociedad civil [SocialTIC](https://socialtic.org). 
 
-**La forense digital permite descubrir y examinar datos de dispositivos y medios electrónicos** con el objetivo de identificar, recuperar, documentar e interpretar la información digital y su conexión con ataques digitales. En este repositorio se describen procedimientos estándar, apegados a buenas prácticas, que permiten **generar evidencia** para impulsar acciones de rendición de cuentas, que **reduzcan y expongan** **la impunidad con la que se ejecutan ataques digitales**.
+**La forense digital permite descubrir y examinar datos de dispositivos y medios electrónicos** con el objetivo de identificar, recuperar, documentar e interpretar la información digital y su conexión con ataques digitales. En este repositorio se describen procedimientos estándar, apegados a buenas prácticas y enfocados en escenarios donde existe un **consentimiento informado**. Se pretende que a través de estas investigaciones se **genere evidencia forense de ataques digitales** que impulse acciones de **rendición de cuentas**.
+
+<div class="grid cards" markdown>
+
+-   :material-robot-confused:{ .lg .middle } __¿No sabes por dónde iniciar?__
+
+    ---
+
+    Si quieres __conocer más sobre el repositorio__ visita la sección de **primeros pasos**. 
+
+    [:octicons-arrow-right-24: Inicia aquí](../iniciar.html)
+
+
+</div>
 
 ## Contenidos publicados
 
-### [Explainers](../explainers/)
+Para organizar los contenidos, se utiliza el marco de referencia de documentación técnica [Diátaxis](https://diataxis.fr). En apego a esta metodología hemos organizado los contenidos de este respositorio en las siguientes categorías: 
 
-**Aprendizaje de aspectos teóricos** a través de contexto sobre un tema específico. Permite comprender el “porqué”.
+<div class="grid cards" markdown>
 
-* [Introducción a la forense digital consentida para la defensa de los Derechos Humanos](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html)
-* [Riesgos y amenazas para laboratorios forenses de la sociedad civil](../explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.html)
-* [Principios para forense basada en logs en dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html)
+-   :material-telescope:{ .lg .middle } __Explainers__
 
-### [Tutoriales](../tutorials/)
+    ---
 
- **Aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad.
+    __Aprendizaje de aspectos teóricos__ a través de contexto sobre un tema específico. 
 
-* Aún no se ha publicado ningún tutorial.
+    [:octicons-arrow-right-24:   Índice de explainers](../explainers/)
 
-### [Guías how-to](../how-tos/)
+-   :material-wrench-cog:{ .lg .middle } __Guías How-To__
 
- Recetas para **ejecutar tareas a través de instrucciones paso a paso.**
+    ---
 
-* [¿Cómo obtener y documentar consentimiento informado para una investigación forense?](../how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.html)
+    Recetas para **ejecutar tareas** a través de instrucciones paso a paso.
 
-### [Referencias](../references)
+    [:octicons-arrow-right-24:   Índice de guías how-to](../how-tos/)
 
-**Conocimiento teórico necesario para ejecutar una tarea de forma confiable y sin errores**.
+-   :material-school:{ .lg .middle } __Tutoriales__
 
-* [Diccionario de archivos generados por la herramienta androidqf](../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html)
+    ---
 
+    **Aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. 
 
+    [:octicons-arrow-right-24:   Índice de tutoriales](../tutorials/)
+
+-   :material-ruler:{ .lg .middle } __Referencias__
+
+    ---
+
+    Conocimiento teórico que **facilita la ejecución de una tarea** de forma confiable y sin errores. 
+
+    [:octicons-arrow-right-24:   Índice de Referencias](../references/)
+
+</div>

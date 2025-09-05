@@ -1,5 +1,27 @@
+---
+title: Primeros pasos
+summary: Primeros pasos en el repositorio 
+keywords: Primeros pasos
+lang: es
+tags: [indice, intro]
+last_updated: 2025-07-15
+some_url:
+icon: material/source-commit-start
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
 
-# ¿Por dónde iniciar?
+---
+
+
+# Primeros pasos
+
+!!! warning "Tradução em Português ainda não disponível"
+    Este recurso **ainda não foi traduzido para o português**. Estamos exibindo a versão em espanhol, e você também pode consultar a versão em inglês. Se você quiser, pode contribuir com a tradução deste recurso — ficaríamos muito felizes com sua colaboração! Para isso, consulte nossos [recursos da comunidade](comunidad/como-colaborar.md).
+
+En esta sección encontrarás información básica sobre este repositorio, incluyendo una **descripción de la audiencia meta**, detalles sobre la forma en que se organizan los contenidos utilizando **diátaxis** y sugerencias para **navegar** a través de los materiales.  
 
 ## ¿Qué es este repositorio de documentación?
 
@@ -25,29 +47,74 @@ Los materiales enfocados en el **análisis y presentación de resultados son esp
 
 Para la organización de este repositorio de documentación se utiliza el [marco de referencia Diátaxis](https://diataxis.fr/reference/), que **sugiere cuatro tipos de recursos diferentes: tutoriales, guías how-to, explainers y referencias.**
 
-### [Explainers](../explainers/)
 
-Los explainers son materiales para el **aprendizaje de aspectos teóricos**, que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
+<div class="grid cards" markdown>
 
-Por ejemplo, nuestro primer [explainer sobre forense digital consentida en beneficio de la sociedad civil](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html), presenta información sobre las ciencias forenses y cómo se utiliza en diferentes ámbitos, para luego enfocarse en su práctica dentro de la sociedad civil como una herramienta para la defensa de derechos fundamentales. 
+-   :material-telescope:{ .lg .middle } __Explainers__
 
-### [Tutoriales](../tutorials/)
+    ---
 
-El tutorial tiene como objetivo el **aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. En otros términos es un **aprender haciendo**. Los tutoriales son actividades guiadas que permiten adquirir habilidades y conocimientos, y cuyo enfoque es el aprendizaje y no el completar una tarea.
+    === "Definición"
 
-Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B.
+        Los explainers son materiales para el **aprendizaje de aspectos teóricos**, que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
 
-### [Guías how-to](../how-tos/)
+        [Índice de explainers](../explainers/){ .md-button }
 
-**El objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas. 
+    === "Ejemplo"
 
-Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar una tarea, en este caso, preparar un platillo. Asume que la persona ya tiene conocimientos básicos como cortar los alimentos, mezclar con una batidora, etc. 
 
-### [Referencias](../references/)
+        Por ejemplo, nuestro primer [explainer sobre forense digital consentida en beneficio de la sociedad civil](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html), presenta información sobre las ciencias forenses y cómo se utiliza en diferentes ámbitos, para luego enfocarse en su práctica dentro de la sociedad civil como una herramienta para la defensa de derechos fundamentales. 
 
-Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea** de forma confiable y sin errores. 
 
-Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y preciso, que sirve de apoyo al completar una tarea, en este caso, llegar de un punto A al Punto B.
+-   :material-wrench-cog:{ .lg .middle } __Guías How-To__
+
+    ---
+
+    === "Definición"
+
+
+        **El objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas. 
+
+        [Índice de guías how-to](../how-tos/){ .md-button }
+
+    === "Ejemplo"
+
+        Por ejemplo, en una receta de cocina se enseña a la persona lectora a completar una tarea, en este caso, preparar un platillo. Asume que la persona ya tiene conocimientos básicos como cortar los alimentos, mezclar con una batidora, etc.
+
+
+-   :material-school:{ .lg .middle } __Tutoriales__
+
+    ---
+
+    === "Definición"
+
+
+        El tutorial tiene como objetivo el **aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. En otros términos es un **aprender haciendo**. Los tutoriales son actividades guiadas que permiten adquirir habilidades y conocimientos, y cuyo enfoque es el aprendizaje y no el completar una tarea.
+
+        [Índice de tutoriales](../tutorials/){ .md-button }
+
+    === "Ejemplo"
+
+        Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B. 
+
+
+-   :material-ruler:{ .lg .middle } __Referencias__
+
+    ---
+
+    === "Definición"
+
+        Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea** de forma confiable y sin errores. 
+
+        [Índice de referencias](../references/){ .md-button }
+
+    === "Ejemplo"
+
+        Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y preciso, que sirve de apoyo al completar una tarea, en este caso, llegar de un punto A al Punto B.
+    
+
+</div>
+
 
 ## ¿Cómo navegar el repositorio de documentación? 
 
@@ -58,35 +125,14 @@ En apego al marco de referencia Diátaxis, debemos primero identificar la necesi
 * Si el objetivo es **aplicar conocimientos** para completar una tarea específica, revise la sección de **guías how-to**.
 * Si el objetivo es **obtener información descriptiva sobre conceptos o herramientas**, consulte la sección de **referencias**. 
 
-Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan a las personas lectoras adquirir los conocimientos necesarios para completar tareas en diferentes etapas del proceso de una investigación forense. En lo inmediato, se recomienda iniciar con una lectura al [explainer introductorio en forense digital](../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html). 
+Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan a las personas lectoras adquirir los conocimientos necesarios para completar tareas en diferentes etapas del proceso de una investigación forense. 
 
 ## ¿Cómo colaborar con este repositorio? 
 
-Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. **Se publican bajo [licencia Creative Commons atribución-Sharealike](https://creativecommons.org/licenses/by-sa/4.0/deed.es)** Agradecemos cualquier esfuerzo por personas y comunidades para participar, mejorar y contribuir al desarrollo de este recurso, incluyendo en acciones como **replicar, verificar, mejorar y extender los recursos y metodologías.** 
+Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. Se publican bajo [la licencia MVT](../comunidad/licencia.html), en aras de fortalecer el análisis forense consentido.
 
-Los contenidos publicados en este sitio son parte de un [repositorio de Github](https://github.com/Socialtic/forensics), por lo que es posible **enviar comentarios y sugerencias** de forma directa a través de la [sección de problemas (issues)](https://github.com/Socialtic/forensics/issues). Para otro tipo de colaboraciones, dudas, comentarios o sugerencias se pone a disposición el correo electrónico [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
+Agradecemos cualquier esfuerzo por personas y comunidades para participar, mejorar y contribuir al desarrollo de este recurso, incluyendo en acciones como **replicar, verificar, mejorar y extender los recursos y metodologías.** En nuestra sección de [comunidad](../comunidad/) se incluye más información sobre las diferentes formas de contribuir y establecer contacto. Para otro tipo de colaboraciones, dudas, comentarios o sugerencias se pone a disposición el correo electrónico [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
 
-Agradecemos también cualquier recurso adicional que pueda fortalecer la práctica forense en la sociedad civil, aún cuando sigan formatos distintos a los presentados en el marco de referencia  Diátaxis. 
+[Comunidad](../comunidad/){ .md-button }
 
-## Guía de estilo para el idioma español
 
-Para la escritura de documentos en el presente repositorio se sugiere apegarse a los siguientes lineamientos de estilo: 
-
-* Utilizar el lenguaje descriptivo markdown para la escritura de los documentos  
-* Evitar utilizar palabras en inglés que sí tienen traducción al español. Por ejemplo, no utilizar app sino aplicación. Por cuestiones de claridad, algunos términos pueden mantenerse en inglés.  
-* Utilizar el impersonal. En los casos que sea imposible, se puede utilizar la segunda persona del plural.   
-* Las páginas deben tener nombres de ruta en minúsculas y con guión medio. No se deben utilizar caracteres especiales como acentos u otros símbolos.
-
-Para resaltar elementos informativos, de advertencia, de error o de importancia legal se utilizarán bloques como los siguientes:
-
-!!! success "Buenas Prácticas" 
-    El bloque de confirmación (verde) sirve para distinguir las buenas prácticas.
-
-!!! warning "Alternativa"
-    El bloque de advertencia (amarillo) sirve para mencionar otra manera de hacer las cosas (esto es especialmente útil para los how-to).
-
-!!! failure "Error"
-    El bloque de error (rojo) sirve para explicar qué otro camino seguir si se encuentra un error, o cómo solucionar un posible error.
-
-!!! abstract "Consideración Legal"
-    El bloque de información (azul) se utiliza para resaltar consideraciones legales
