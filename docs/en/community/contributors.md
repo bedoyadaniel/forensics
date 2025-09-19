@@ -28,6 +28,7 @@ Any **error or misrepresentation** on any resource remains the **responsibility 
 | Natalia Krapiva | Access Now | Reviewer | Explainer: Risks, threats and mitigations for forensic labs supporting Human Rights Defenders |
 | Thomas Kaye | Access Now | Reviewer | Explainer: Risks, threats and mitigations for forensic labs supporting Human Rights Defenders |
 | Marianne Parrott | Amnesty International Security Lab | Translator | Explainer: Risks, threats and mitigations for forensic labs supporting Human Rights Defenders |
+| Molly Cyr | Amnesty International Security Lab | Reviewer | Explainer: Risks, threats and mitigations for forensic labs supporting Human Rights Defenders |
 | Priscilla Ruiz | Artículo 19 | Reviewer | How to obtain and document informed consent during a forensic investigation? |
 | Natalia Krapiva | Access Now | Reviewer | How to obtain and document informed consent during a forensic investigation? |
 | N/A | RSF Security Lab | Contribute source screenshots | How to enable developer options on an Android device? |
