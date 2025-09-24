@@ -13,7 +13,7 @@ author:
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
 alternate: 
-    en: getting-started.html
+    en: ../getting-started.html
 
 ---
 
@@ -128,7 +128,7 @@ Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan 
 
 ## ¿Cómo colaborar con este repositorio? 
 
-Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. Se publican bajo [la licencia MVT](../comunidad/licencia.html), en aras de fortalecer el análisis forense consentido.
+Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. Se publican bajo [la licencia MVT](../comunidad/licencia.html), en aras de fortalecer el análisis forense consentido. 
 
 Agradecemos cualquier esfuerzo por personas y comunidades para participar, mejorar y contribuir al desarrollo de este recurso, incluyendo en acciones como **replicar, verificar, mejorar y extender los recursos y metodologías.** En nuestra sección de [comunidad](../comunidad/) se incluye más información sobre las diferentes formas de contribuir y establecer contacto. Para otro tipo de colaboraciones, dudas, comentarios o sugerencias se pone a disposición el correo electrónico [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
 
