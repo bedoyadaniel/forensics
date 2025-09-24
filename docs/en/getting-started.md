@@ -2,7 +2,7 @@
 title: Getting started
 summary: First steps to navigate the repostitory 
 keywords: start here, first steps, begin
-lang: es
+lang: en
 tags: [indice, intro]
 last_updated: 2025-07-24
 some_url:
