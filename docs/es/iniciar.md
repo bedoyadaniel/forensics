@@ -12,7 +12,9 @@ author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
-
+alternate: 
+  en: getting-started.html
+  
 ---
 
 
