@@ -11,6 +11,8 @@ author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
+alternate: 
+    en: en/references/00-glossary.html
 
 ---
 
