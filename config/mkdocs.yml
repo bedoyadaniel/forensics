@@ -87,8 +87,10 @@ theme:
 extra:
   alternate: 
     - name: Español
+      link: /index.html
       lang: es
     - name: English
+      link: /en/index.html
       lang: en   
   social:
     - icon: fontawesome/brands/twitter
