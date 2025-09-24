@@ -13,7 +13,7 @@ author:
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
 alternate: 
-    es: ../iniciar.html
+    es: ../es/iniciar.html
 
 ---
 
