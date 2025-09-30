@@ -87,13 +87,13 @@ theme:
 extra:
   alternate: 
     - name: Español
-      link: forensics/index.html
+      link: index.html
       lang: es
     - name: English
-      link: forensics/en/index.html
+      link: en/index.html
       lang: en  
     - name: Português   
-      link: forensics/pt-br/index.html
+      link: pt-br/index.html
       lang: pt-br
   social:
     - icon: fontawesome/brands/twitter
