@@ -16,8 +16,6 @@ author:
 
 ---
 
-Prueba de modificación de repositorio de prueba test local CI 
-
 # Hoja de ruta
 
 En este recurso presentamos las consideraciones principales para determinar el **orden de desarrollo y prioridad de publicación de contenidos**. Se incluye además una lista de contenidos adicionales que se espera desarrollar. 
