@@ -12,38 +12,17 @@ nav:
   - Home: 
     - Inicio: 'index.md'
     - Getting started: 'getting-started.md'
-    - Roadmap: 'roadmap.md'
-    - Community: 'community/index.md'
   - Explainers:
     - Home: 'explainers/index.md'
-    - Introduction to digital forensics: 'explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.md'
-    - Risks, threats and mitigations fo forensic labs: 'explainers/02-explainer-risks-threats/02-explainer-risks-threats.md'
-    - Introduction to log-based forensics on Android: 'explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.md'
   - Tutorials: 
     - Home: 'tutorials/index.md'
   - How-to's:
     - Home: 'how-tos/index.md'
-    - Obtain and document informed consent: 'how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md'
-    - Enable developer options on Android: 'how-tos/02-how-to-enable-developer-options/02-how-to-enable-developer-options.md'
-    - Enable ADB on Android: 'how-tos/03-how-to-enable-adb/03-how-to-enable-adb.md'    
-    - Extract a bugreport on Android: 'how-tos/05-how-to-extract-bugreport/05-how-to-extract-bugreport.md'    
-    - Perform an extraction using AndroidQF: 'how-tos/04-how-to-extract-with-androidqf/04-how-to-extract-with-androidqf.md'    
   - Reference:
     - Home: 'references/index.md'
-    - Glossary: 'references/00-glossary.md'
-    - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.md'
-    - MVT bugreport output file dictionary: 'references/02-reference-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.md'
   - Community:
     - Consensual forensics community: 'community/index.md'
-    - Supporting this effort: 'community/why-support.md'
-    - How can I collaborate?: 'community/how-to-contribute.md'
-    - Contributors: 'community/contributors.md'
-    - Best practices for English language: 'community/language-guide-en.md'
-    - Additional translation and localization efforts: 'community/translations-localization-l10n.md'
-    - License of contents: 'community/license.md'
-    - Code of conduct: 'community/code-of-conduct.md'
-    - Limitation of responsibilities: 'community/limitation-of-responsibility.md'
-
+ 
 theme: 
   name: material
   custom_dir: '../../overrides/'
@@ -89,13 +68,13 @@ extra_css:
 extra:
   alternate: #configuración de idiomas
     - name: Español
-      link: forensics/es/
+      link: /es/
       lang: es
     - name: English
-      link: forensics/en/
+      link: /en/
       lang: en  
     - name: Português   
-      link: forensics/pt-br/
+      link: /pt-br/
       lang: pt-br
   social:
     - icon: fontawesome/brands/twitter
