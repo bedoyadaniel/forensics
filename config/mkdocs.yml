@@ -92,6 +92,9 @@ extra:
     - name: English
       link: /en/index.html
       lang: en   
+    - name: Português   
+      link: /pt-br/index.html
+      lang: pt-br
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/socialtic
