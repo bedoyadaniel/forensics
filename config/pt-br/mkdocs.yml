@@ -89,13 +89,13 @@ extra_css:
 extra:
   alternate: #configuración de idiomas
     - name: Español
-      link: index.html
+      link: /es/
       lang: es
     - name: English
-      link: en/index.html
+      link: /en/
       lang: en  
     - name: Português   
-      link: pt-br/index.html
+      link: /pt-br/
       lang: pt-br
   social:
     - icon: fontawesome/brands/twitter
