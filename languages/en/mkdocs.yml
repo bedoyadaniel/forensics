@@ -1,54 +1,54 @@
 site_name: SocialTIC Forensics
-site_url: https://forensics.socialtic.org/
-site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
-docs_dir: '../docs/es'
-site_dir: '../generated'
+site_url: https://forensics.socialtic.org/en/
+site_description: Documentation for consensual forensic investigations in civil society
+site_dir: '../../generated/en'
 repo_url: https://github.com/Socialtic/forensics
-edit_uri: edit/main/docs/es/
+edit_uri: edit/main/docs/en/
 copyright: MVT License
+
 
 nav:
   - Home: 
     - Inicio: 'index.md'
-    - Primeros pasos: iniciar.md
-    - Hoja de ruta: 'hoja-de-ruta.md'
-    - Comunidad: 'comunidad/index.md'
+    - Getting started: 'getting-started.md'
+    - Roadmap: 'roadmap.md'
+    - Community: 'community/index.md'
   - Explainers:
-    - Inicio: 'explainers/index.md'
-    - Introducción a la forense digital consentida: 'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'
-    - Riesgos y amenazas para laboratorios forenses: 'explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.md'
-    - Principios para forense basada en logs en Android: 'explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.md'
-  - Tutoriales: 
-    - Inicio: 'tutorials/index.md'
-  - Guías how-to:
-    - Inicio: 'how-tos/index.md'
-    - ¿Cómo obtener y documentar consentimiento informado?: 'how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.md'
-    - ¿Cómo habilitar las opciones de desarrollador en Android?: 'how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md'  
-    - ¿Cómo habilitar ADB en Android?: 'how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md'
-    - ¿Cómo generar un reporte de errores en Android?: 'how-tos/05-como-extraer-bugreport/05-como-extraer-bugreport.md'  
-    - ¿Cómo realizar una extracción mediante AndroidQF?: 'how-tos/04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf.md'  
-  - Referencias:
-    - Inicio: 'references/index.md'
-    - Glosario: 'references/00-glossary.md'
-    - Diccionario AndroidQF: 'references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md'
-    - Diccionario MVT bugreport: 'references/02-reference-diccionario-mvt-bugreport/02-reference-diccionario-mvt-bugreport.md'
-  - Comunidad:
-    - Comunidad de práctica: 'comunidad/index.md'
-    - ¿Por qué contribuir con este repositorio?: 'comunidad/por-que-contribuir.md'
-    - ¿Cómo colaborar con este repositorio?: 'comunidad/como-colaborar.md'
-    - Contribuidores: 'comunidad/contributors.md'
-    - Mejores prácticas para el idioma español: 'comunidad/guia-idioma.md'
-    - Traducciones y localizaciones: 'comunidad/como-localizar-l10n.md'
-    - Licencia de uso: 'comunidad/licencia.md'
-    - Código de conducta: 'comunidad/codigo-de-conducta.md'
-    - Limitación de responsabilidades: 'comunidad/limitacion-responsabilidad.md'
+    - Home: 'explainers/index.md'
+    - Introduction to digital forensics: 'explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.md'
+    - Risks, threats and mitigations fo forensic labs: 'explainers/02-explainer-risks-threats/02-explainer-risks-threats.md'
+    - Introduction to log-based forensics on Android: 'explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.md'
+  - Tutorials: 
+    - Home: 'tutorials/index.md'
+  - How-to's:
+    - Home: 'how-tos/index.md'
+    - Obtain and document informed consent: 'how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md'
+    - Enable developer options on Android: 'how-tos/02-how-to-enable-developer-options/02-how-to-enable-developer-options.md'
+    - Enable ADB on Android: 'how-tos/03-how-to-enable-adb/03-how-to-enable-adb.md'    
+    - Extract a bugreport on Android: 'how-tos/05-how-to-extract-bugreport/05-how-to-extract-bugreport.md'    
+    - Perform an extraction using AndroidQF: 'how-tos/04-how-to-extract-with-androidqf/04-how-to-extract-with-androidqf.md'    
+  - Reference:
+    - Home: 'references/index.md'
+    - Glossary: 'references/00-glossary.md'
+    - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/01-reference-androidqf-dictionary.md'
+    - MVT bugreport output file dictionary: 'references/02-reference-mvt-bugreport-dictionary/02-reference-mvt-bugreport-dictionary.md'
+  - Community:
+    - Consensual forensics community: 'community/index.md'
+    - Supporting this effort: 'community/why-support.md'
+    - How can I collaborate?: 'community/how-to-contribute.md'
+    - Contributors: 'community/contributors.md'
+    - Best practices for English language: 'community/language-guide-en.md'
+    - Additional translation and localization efforts: 'community/translations-localization-l10n.md'
+    - License of contents: 'community/license.md'
+    - Code of conduct: 'community/code-of-conduct.md'
+    - Limitation of responsibilities: 'community/limitation-of-responsibility.md'
 
 theme: 
   name: material
-  custom_dir: '../overrides/'
+  custom_dir: '../../overrides/'
   logo: assets/img/ST_logo-01.png
   favicon: assets/img/ST_logo-01-bn.png
-  language: es
+  language: en
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: default
@@ -75,23 +75,27 @@ theme:
     - navigation.sections #evita comprimir items del menú en grupos
     - navigation.top #Agrega botón para regresar al inicio
     - navigation.tracking #Sigue la navegación del usuario en la URL
-    - navigation.footer #Agrega botones de contenido actual y contenido siguiente
     - content.action.view #Agrega botón de ver fuente
     - content.action.edit #Agrega botón de edición
     - toc.follow #Sigue la navegación del usuario en la tabla de contenidos 
     - toc.integrate #La tabla de contenidos está integrada a la barra de  la izquierda
-   
-    
+    - navigation.footer #Agrega botones de contenido actual y contenido siguiente
+
+extra_css:
+  - assets/css/extra.css
 
 
 extra:
-  alternate: 
+  alternate: #configuración de idiomas
     - name: Español
-      link: /index.html
       lang: es
+      link: ../es/
     - name: English
-      link: /en/index.html
-      lang: en   
+      lang: en  
+      link: .
+    - name: Português   
+      lang: pt-br
+      link: ../pt-br/
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/socialtic
@@ -103,7 +107,7 @@ extra:
 plugins:
   - search  #habilita barra de búsqueda
   - offline #facilita consulta y navegación del sitio offline
-  - privacy: #plug-in para cargar recursos localmente, reducir tracking
+  - privacy:  #plug-in para cargar recursos localmente, reducir tracking
       external_assets_exclude: #Permitir sistema de comentarios
         - giscus.app/*
   - typeset #permite colocar íconos como parte de headers
@@ -116,15 +120,10 @@ plugins:
        - references/index.md
        - tutorials/index.md
 
-extra_javascript:
-  - path: assets/javascript/extra.js
-
-extra_css:
-  - assets/css/extra.css
-
 markdown_extensions:
   - admonition #cuadros de texto
   - pymdownx.details #cuadros de texto
+  - pymdownx.superfences #cuadros de texto
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -132,7 +131,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true 
-  - attr_list #permite agregar html dentro del markdown
+  - attr_list #permite agregar html dentro del markdown  
   - md_in_html #permite desplegar grids
   - pymdownx.blocks.caption #caption para imágenes
   - pymdownx.emoji: #permite agregar íconos y emojies con códigos cortos
