@@ -25,7 +25,7 @@ jobs:
       - run: pip install mkdocs-document-dates
 
       - name: Build docs (default)
-        run: mkdocs build -f config/mkdocs.yml
+        run: mkdocs build -f config/es/mkdocs.yml
 
       - name: Build docs (EN)
         run: mkdocs build -f config/en/mkdocs.yml
