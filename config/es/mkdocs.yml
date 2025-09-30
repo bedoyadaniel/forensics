@@ -66,13 +66,10 @@ theme:
 extra:
   alternate: 
     - name: Español
-      link: /es/
       lang: es
     - name: English
-      link: /en/
       lang: en  
     - name: Português   
-      link: /pt-br/
       lang: pt-br
   social:
     - icon: fontawesome/brands/twitter
