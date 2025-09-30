@@ -17,23 +17,17 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install MkDocs Material Insiders
-        run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
+      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: pip install mkdocs-document-dates
-
-      - name: Build docs (default)
-        run: mkdocs build -f config/es/mkdocs.yml
-
-      - name: Build docs (EN)
-        run: mkdocs build -f config/en/mkdocs.yml
-
-      - name: Build docs (pt-BR)
-        run: mkdocs build -f config/pt-br/mkdocs.yml
+      - run: mkdocs build -f config/es/mkdocs.yml
+      - run: mkdocs build -f config/en/mkdocs.yml
+      - run: mkdocs build -f config/pt-br/mkdocs.yml
 
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./generated   # change if you configured site_dir: generated
+          publish_dir: ./generated   
+
+
+env:
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
