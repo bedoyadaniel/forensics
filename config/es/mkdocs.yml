@@ -1,8 +1,8 @@
 site_name: SocialTIC Forensics
 site_url: https://bedoyadaniel.github.io/forensics/
 site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
-docs_dir: '../docs/es'
-site_dir: '../generated/es'
+docs_dir: '../../docs/es'
+site_dir: '../../generated/es'
 repo_url: https://github.com/Socialtic/forensics
 edit_uri: edit/main/docs/es/
 copyright: MVT License
