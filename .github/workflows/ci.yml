@@ -30,6 +30,9 @@ jobs:
       - name: Build docs (EN)
         run: mkdocs build -f config/en/mkdocs.yml
 
+      - name: Build docs (pt-BR)
+        run: mkdocs build -f config/pt-br/mkdocs.yml
+
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
