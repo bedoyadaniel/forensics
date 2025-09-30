@@ -24,9 +24,6 @@ nav:
 
 theme: 
   name: material
-  custom_dir: '../overrides/'
-  logo: assets/img/ST_logo-01.png
-  favicon: assets/img/ST_logo-01-bn.png
   language: pt-br
   palette:
     - media: "(prefers-color-scheme: dark)"
