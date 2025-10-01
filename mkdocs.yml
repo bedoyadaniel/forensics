@@ -61,7 +61,7 @@ extra:
 plugins:
   - projects: #Permite multi-idioma
       log_level: debug
-      projects_dir: ./languages
+      projects_dir: .
 #  - search  #habilita barra de búsqueda
   - offline #facilita consulta y navegación del sitio offline
   - privacy: #plug-in para cargar recursos localmente, reducir tracking
