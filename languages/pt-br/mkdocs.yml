@@ -75,7 +75,7 @@ plugins:
   - privacy: #plug-in para cargar recursos localmente, reducir tracking
       external_assets_exclude: #Permitir sistema de comentarios
         - giscus.app/*
-  - typeset #permite colocar íconos como parte de headers
+          # - typeset #permite colocar íconos como parte de headers
     #  - document-dates:
     # position: top            # Display position: top (after title)  bottom (end of document)
     # exclude:                 # List of excluded files
