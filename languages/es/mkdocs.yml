@@ -1,7 +1,6 @@
 site_name: SocialTIC Forensics
 site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
 site_dir: '../generated/es/'
-edit_uri: edit/main/docs/es/
 copyright: MVT License
 
 nav:
@@ -74,7 +73,7 @@ theme:
     - content.action.edit #Agrega botón de edición
     - toc.follow #Sigue la navegación del usuario en la tabla de contenidos 
     - toc.integrate #La tabla de contenidos está integrada a la barra de  la izquierda
-   
+       
     
 
 
@@ -97,14 +96,15 @@ plugins:
       external_assets_exclude: #Permitir sistema de comentarios
         - giscus.app/*
   - typeset #permite colocar íconos como parte de headers
-  - document-dates:
-      position: top            # Display position: top (after title)  bottom (end of document)
-      exclude:                 # List of excluded files
-       - index.md              # Exclude specific file
-       - explainers/index.md
-       - how-tos/index.md
-       - references/index.md
-       - tutorials/index.md
+    #  - document-dates:
+    #
+    #      position: top            # Display position: top (after title)  bottom (end of document)
+    #      exclude:                 # List of excluded files
+    #       - index.md              # Exclude specific file
+    #       - explainers/index.md
+    #      - how-tos/index.md
+    #       - references/index.md
+    #       - tutorials/index.md
 
 
 

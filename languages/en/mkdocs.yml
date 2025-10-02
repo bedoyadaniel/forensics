@@ -1,6 +1,5 @@
 site_name: SocialTIC Forensics
 site_dir: '../../generated/en'
-edit_uri: edit/main/docs/en/
 copyright: MVT License
 
 
@@ -94,14 +93,14 @@ plugins:
       external_assets_exclude: #Permitir sistema de comentarios
         - giscus.app/*
   - typeset #permite colocar íconos como parte de headers
-  - document-dates:
-      position: top            # Display position: top (after title)  bottom (end of document)
+    #  - document-dates:
+    #      position: top            # Display position: top (after title)  bottom (end of document)
       exclude:                 # List of excluded files
-       - index.md              # Exclude specific file
-       - explainers/index.md
-       - how-tos/index.md
-       - references/index.md
-       - tutorials/index.md
+        #       - index.md              # Exclude specific file
+        #       - explainers/index.md
+        #       - how-tos/index.md
+        #       - references/index.md
+        #       - tutorials/index.md
 
 markdown_extensions:
   - admonition #cuadros de texto
