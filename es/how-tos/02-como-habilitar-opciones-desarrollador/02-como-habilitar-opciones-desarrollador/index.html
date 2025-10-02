@@ -1,0 +1,2086 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación para investigaciones forenses consentidas en Sociedad Civil">
+      
+      
+        <meta name="author" content="{'name': 'Daniel', 'url': 'https://socialtic.org/quienes-somos/', 'description': 'SocialTIC'}">
+      
+      
+        <link rel="canonical" href="https://bedoyadaniel.github.io/forensics/index.html/es/how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador/">
+      
+      
+        <link rel="prev" href="../../01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado/">
+      
+      
+        <link rel="next" href="../../03-como-habilitar-adb/03-como-habilitar-adb/">
+      
+      
+        
+          <link rel="alternate" href="../../.." hreflang="es">
+        
+          <link rel="alternate" href="../../../../en/" hreflang="en">
+        
+          <link rel="alternate" href="../../../../pt-br/" hreflang="pt-br">
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21+insiders-4.53.17">
+    
+    
+      
+        <title>¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android? - SocialTIC Forensics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.010a373c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-como-habilitar-las-opciones-de-desarrollador-en-diferentes-dispositivos-android" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../.." title="SocialTIC Forensics" class="md-header__button md-logo" aria-label="SocialTIC Forensics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SocialTIC Forensics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleccionar idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../.." hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../../pt-br/" hreflang="pt-br" class="md-select__link">
+              Português
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../explainers/" class="md-tabs__link">
+          
+  
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.9 8.9-1.7 1-4-6.9 1.7-1zm-12.1-1 3 5.2 6.1-3.5-3-5.2zm1.6 4.8-2-3.5-4.3 2.5 2 3.5zm-9.3 1.9 1 1.7 2.6-1.5-1-1.7zm10-.6-.3-.4-4.3 2.5.3.4c.2.3.5.6.8.8L7 22h2l1.4-4.3h.1L12 22h2l-1.9-5.6c.5-.7.5-1.6 0-2.4"/></svg>
+    
+  
+  Explainers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tutorials/" class="md-tabs__link">
+          
+  
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg>
+    
+  
+  Tutoriales
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.94 17.94a3.3 3.3 0 0 0 0-.89l.97-.73a.22.22 0 0 0 .06-.29l-.92-1.56c-.05-.1-.19-.14-.29-.1l-1.15.45c-.24-.17-.49-.32-.78-.44l-.17-1.19a.235.235 0 0 0-.23-.19h-1.85c-.12 0-.22.08-.24.19l-.17 1.19c-.29.12-.54.27-.78.44l-1.15-.45c-.1-.04-.24 0-.28.1l-.93 1.56c-.06.1-.03.22.06.29l.97.73c-.01.15-.03.3-.03.45s.02.29.03.44l-.97.74a.22.22 0 0 0-.06.29l.93 1.56c.04.1.18.13.28.1l1.15-.46c.24.18.49.33.78.45l.17 1.19c.02.11.12.19.24.19h1.85c.11 0 .21-.08.23-.19l.17-1.19c.29-.12.54-.27.78-.45l1.15.46c.1.03.24 0 .29-.1l.92-1.56a.22.22 0 0 0-.06-.29zM16.5 19c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5M9 2c1.8.6 3 2.3 3 4.2 0 2-1.2 3.7-3 4.3v11c0 .3-.2.5-.5.5h-2c-.3 0-.5-.2-.5-.6v-11c-1.8-.6-3-2.3-3-4.2S4.2 2.6 6 2v3.7h3z"/></svg>
+    
+  
+  Guías how-to
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../references/" class="md-tabs__link">
+          
+  
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m1.39 18.36 1.77-1.76L4.58 18l1.06-1.05-1.42-1.41 1.42-1.42 2.47 2.48 1.06-1.06-2.47-2.48 1.41-1.41 1.42 1.41L10.59 12l-1.42-1.41 1.42-1.42 2.47 2.48 1.06-1.06-2.47-2.48 1.41-1.41 1.41 1.41 1.07-1.06-1.42-1.41 1.42-1.42L18 6.7l1.07-1.06-2.47-2.48 1.76-1.77 4.25 4.25L5.64 22.61z"/></svg>
+    
+  
+  Referencias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../comunidad/" class="md-tabs__link">
+          
+  
+  
+    
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
+    
+  
+  Comunidad
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="SocialTIC Forensics" class="md-nav__button md-logo" aria-label="SocialTIC Forensics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SocialTIC Forensics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../iniciar/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-4 4.9V21h-2v-4.1A5 5 0 0 1 7 12a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Primeros pasos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../hoja-de-ruta/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 11H1v2h6zm2.17-3.24L7.05 5.64 5.64 7.05l2.12 2.12zM13 1h-2v6h2zm5.36 6.05-1.41-1.41-2.12 2.12 1.41 1.41zM17 11v2h6v-2zm-5-2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m2.83 7.24 2.12 2.12 1.41-1.41-2.12-2.12zm-9.19.71 1.41 1.41 2.12-2.12-1.41-1.41zM11 23h2v-6h-2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Hoja de ruta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comunidad/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Comunidad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../explainers/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.9 8.9-1.7 1-4-6.9 1.7-1zm-12.1-1 3 5.2 6.1-3.5-3-5.2zm1.6 4.8-2-3.5-4.3 2.5 2 3.5zm-9.3 1.9 1 1.7 2.6-1.5-1-1.7zm10-.6-.3-.4-4.3 2.5.3.4c.2.3.5.6.8.8L7 22h2l1.4-4.3h.1L12 22h2l-1.9-5.6c.5-.7.5-1.6 0-2.4"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Explainers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Explainers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción a la forense digital consentida
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Riesgos y amenazas para laboratorios forenses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Principios para forense basada en logs en Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../tutorials/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutoriales
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutoriales
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.94 17.94a3.3 3.3 0 0 0 0-.89l.97-.73a.22.22 0 0 0 .06-.29l-.92-1.56c-.05-.1-.19-.14-.29-.1l-1.15.45c-.24-.17-.49-.32-.78-.44l-.17-1.19a.235.235 0 0 0-.23-.19h-1.85c-.12 0-.22.08-.24.19l-.17 1.19c-.29.12-.54.27-.78.44l-1.15-.45c-.1-.04-.24 0-.28.1l-.93 1.56c-.06.1-.03.22.06.29l.97.73c-.01.15-.03.3-.03.45s.02.29.03.44l-.97.74a.22.22 0 0 0-.06.29l.93 1.56c.04.1.18.13.28.1l1.15-.46c.24.18.49.33.78.45l.17 1.19c.02.11.12.19.24.19h1.85c.11 0 .21-.08.23-.19l.17-1.19c.29-.12.54-.27.78-.45l1.15.46c.1.03.24 0 .29-.1l.92-1.56a.22.22 0 0 0-.06-.29zM16.5 19c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5M9 2c1.8.6 3 2.3 3 4.2 0 2-1.2 3.7-3 4.3v11c0 .3-.2.5-.5.5h-2c-.3 0-.5-.2-.5-.6v-11c-1.8-.6-3-2.3-3-4.2S4.2 2.6 6 2v3.7h3z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Guías how-to
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guías how-to
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Cómo obtener y documentar consentimiento informado?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Cómo habilitar las opciones de desarrollador en Android?
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Cómo habilitar las opciones de desarrollador en Android?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-son-y-porque-son-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué son y porqué son útiles?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-hay-diferentes-formas-de-habilitarlas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Por qué hay diferentes formas de habilitarlas?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-instrucciones-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lista de instrucciones paso a paso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lista de instrucciones paso a paso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-pixel-os" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Google (Pixel OS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#honor-magic-os" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Honor (Magic OS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motorola-hello-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motorola (Hello UI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nokia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nokia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oppo-reno-10-color-os" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oppo Reno 10 (Color OS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#realme-realme-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Realme (Realme UI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samsung-one-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Samsung (One UI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sony-xperia-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sony (Xperia UI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecno-hi-os" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tecno (Hi OS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xiaomi-hyper-os" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Xiaomi (Hyper OS)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusión
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comentarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comentarios
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-como-habilitar-adb/03-como-habilitar-adb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Cómo habilitar ADB en Android?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-como-extraer-bugreport/05-como-extraer-bugreport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Cómo generar un reporte de errores en Android?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Cómo realizar una extracción mediante AndroidQF?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../references/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m1.39 18.36 1.77-1.76L4.58 18l1.06-1.05-1.42-1.41 1.42-1.42 2.47 2.48 1.06-1.06-2.47-2.48 1.41-1.41 1.42 1.41L10.59 12l-1.42-1.41 1.42-1.42 2.47 2.48 1.06-1.06-2.47-2.48 1.41-1.41 1.41 1.41 1.07-1.06-1.42-1.41 1.42-1.42L18 6.7l1.07-1.06-2.47-2.48 1.76-1.77 4.25 4.25L5.64 22.61z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencias
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Referencias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/00-glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diccionario AndroidQF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/02-reference-diccionario-mvt-bugreport/02-reference-diccionario-mvt-bugreport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diccionario MVT bugreport
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../comunidad/" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Comunidad
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Comunidad
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comunidad/por-que-contribuir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Por qué contribuir con este repositorio?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comunidad/como-colaborar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Cómo colaborar con este repositorio?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comunidad/contributors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribuidores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comunidad/guia-idioma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mejores prácticas para el idioma español
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comunidad/como-localizar-l10n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Traducciones y localizaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comunidad/licencia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licencia de uso
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comunidad/codigo-de-conducta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Código de conducta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../comunidad/limitacion-responsabilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limitación de responsabilidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="guia-como-habilitar-las-opciones-de-desarrollador-en-diferentes-dispositivos-android">Guía: ¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?</h1>
+<p>Este recurso se enmarca dentro de la categoría de <strong>guías how-to</strong>, y muestra los pasos a seguir para <strong>habilitar el menú de opciones de desarrollador en diferentes dispositivos Android</strong>, así como una breve explicación de <strong>qué son</strong> las opciones de desarrollador y <strong>porqué son útiles</strong> al hacer forense digital. Este es un <strong>material introductorio</strong>, complementario a otros recursos, como el <a href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html">explainer de forense basada en log para dispositivos Android</a>, y <strong>forma parte de los pasos a seguir para realizar un triaje inicial</strong>.   </p>
+<p>Agradecemos la <strong>colaboración</strong> del <a href="https://rsf.org/en/digital-security-lab">laboratorio de seguridad de Reporteros Sin Fronteras</a>, quienes brindaron los insumos iniciales necesarios para la producción de esta guía. </p>
+<h2 id="que-son-y-porque-son-utiles">¿Qué son y porqué son útiles?</h2>
+<p>Las <a href="https://developer.android.com/studio/debug/dev-options"><strong>opciones de desarrollador</strong></a> hacen referencia a un <strong>menú oculto</strong> del sistema operativo <strong>Android</strong> que permite configurar algunas <strong>funciones adicionales</strong>, pensadas especialmente para apoyar el proceso de <a href="https://es.wikipedia.org/wiki/Depuraci%C3%B3n_de_programas">depuración</a> durante la <strong>creación de nuevas aplicaciones o cambios en el sistema</strong>. Entre las opciones de desarrollador, también se suelen colocar algunas <strong>configuraciones avanzadas</strong> como por ejemplo, ajustar las preferencias del controlador gráfico o configuraciones avanzadas de redes e incluso <strong>opciones experimentales</strong> que aún están en prueba o desarrollo. </p>
+<p>Desde el punto de vista de <strong>forense digital</strong>, y en particular al hacer <a href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html">investigaciones basadas en logs</a> utilizando herramientas como MVT y AndroidQF, las opciones de desarrollador nos <strong>permiten habilitar funciones claves</strong>, como el <strong><a data-preview="" href="../../../references/00-glossary/#adb">depurado USB</a></strong>, la consola de <strong>ADB</strong> o la <strong>generación</strong> de reportes de errores o <strong><em>bug report</em></strong>. Es por esto que en muchas ocasiones, el <strong>primer paso</strong> será habilitar el menú de opciones de desarrollador. </p>
+<h2 id="por-que-hay-diferentes-formas-de-habilitarlas">¿Por qué hay diferentes formas de habilitarlas?</h2>
+<p>El sistema operativo Android basa su núcleo en el proyecto de código abierto <a href="https://source.android.com/"><em>Android Open Source Project</em></a><em>.</em> Sin embargo, la <a href="https://www.makeuseof.com/tag/android-really-open-source-matter/">mayoría de fabricantes utilizan una versión propietaria de Google</a>, sobre la cuál se agregan capas de personalización adicionales, que en la mayoría de casos son también propietarias. Existen algunas alternativas, como por ejemplo <a href="https://lineageos.org/">LineageOS</a>, <a href="https://grapheneos.org/">Graphene OS</a> o <a href="https://calyxos.org/">CalyxOS</a>, que se basan enteramente en principios de <strong>código abierto</strong> y buscan alejarse de los ecosistemas propietarios. </p>
+<p>El resultado de estos desarrollos adicionales sobre el proyecto base significa que existen una <strong>amplia variedad de interfaces gráficas</strong> para el sistema operativo. Podemos mencionar algunos ejemplos como: </p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Google_Pixel">Pixel UI</a>: Interfaz de usuario desarrollado por <strong>Google</strong> para los dispositivos Pixel. Es similar a la versión base de Android, pero incluye <a href="https://www.howtogeek.com/google-pixel-devices-stock-android/">personalizaciones adicionales y propietarias desarrolladas por Google</a>.   </li>
+<li><a href="https://es.wikipedia.org/wiki/One_UI">One UI</a>: Interfaz de usuario desarrollada por <strong>Samsung</strong> para dispositivos inteligentes, incluyendo dispositivos móviles con Android desde el año 2017. Existen versiones de One UI para teléfonos, tablets, relojes inteligentes y computadoras.  </li>
+<li><a href="https://es.wikipedia.org/wiki/Xiaomi_HyperOS">HyperOS</a>: Interfaz de usuario desarrollada por <strong>Xiaomi</strong>, lanzada en 2023, y que reemplaza a la interfaz de usuario anterior conocida como <a href="https://es.wikipedia.org/wiki/MIUI">MIUI</a>.   </li>
+<li><a href="https://es.wikipedia.org/wiki/ColorOS">ColorOS</a>: ColorOS es un sistema operativo móvil  e interfaz de usuario creado por <strong>Oppo Electronics</strong>  </li>
+<li><a href="https://en.wikipedia.org/wiki/Realme">Realme UI</a>: Interfaz de usuario desarrollada por <strong>Realme</strong>, que a su vez es subsidiaria de <a href="https://en.wikipedia.org/wiki/Oppo">Oppo Electronics</a>, dueña también de la marca <strong>OnePlus</strong>.   </li>
+<li><a href="https://en.wikipedia.org/wiki/OxygenOS">Oxygen OS</a>: Es un sistema operativo desarrollado por la empresa <strong>OnePlus</strong> de forma exclusiva para teléfonos móviles.    </li>
+<li><a href="https://en.wikipedia.org/wiki/HarmonyOS">Harmony OS</a>:    Sistema operativo desarrollado por <strong>Huawei</strong>. A pesar de que en ocasiones se posiciona como un sistema operativo diferente, si tienes sus bases en Android y en la capa de personalización previa, conocida como <a href="https://en.wikipedia.org/wiki/EMUI">EMUI</a>.  </li>
+<li><a href="https://beebom.com/motorola-hello-ui-review/">Hello UI</a>: Interfaz desarrollada por <strong>Motorola,</strong> empresa parte de <strong>Lenovo</strong>. <a href="https://www.google.com/url?q=https://www.youtube.com/watch?v%3Di3ZU9-TGJlE&amp;sa=D&amp;source=docs&amp;ust=1753486266796661&amp;usg=AOvVaw14C09MkoaBDTU4pbef9Aqq">Este video</a> muestra aspectos relevantes de la interfaz.    </li>
+<li><a href="https://en.wikipedia.org/wiki/Sony_Xperia">Xperia UI</a>: Interfaz de usuario desarrollada por <strong>Sony</strong> para dispositivos <a href="https://en.wikipedia.org/wiki/Sony_Xperia">Xperia</a>.   </li>
+<li><a href="https://en.wikipedia.org/wiki/Honor_(brand)#MagicOS">Magic OS</a>: Sistema operativo desarrollado por el fabricante <a href="https://en.wikipedia.org/wiki/Honor_(brand)"><strong>Honor</strong></a>, previamente una subsidiaria de <strong>Huawei</strong>. </li>
+</ul>
+<h2 id="lista-de-instrucciones-paso-a-paso">Lista de instrucciones paso a paso</h2>
+<p>A continuación se muestran los <strong>pasos a seguir</strong> para habilitar el menú de opciones de desarrollador en <strong>diferentes dispositivos</strong>, así como una captura de pantalla de los menús a seguir para poder visualizar este menú. </p>
+<h3 id="google-pixel-os">Google (Pixel OS)</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos del fabricante <strong>Google</strong> utilizando <strong>Pixel OS</strong> puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 1.</strong> </p>
+<ol>
+<li>Abre el menú de <strong>Ajustes</strong> ⚙️  </li>
+<li>Navega hasta la última opción <strong>Acerca del teléfono</strong> 📱  </li>
+<li>Ubica la información sobre el <strong>Número de compilación</strong> 🔢   </li>
+<li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<figure>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Google Pixel con Android 13" loading="lazy" src="../assets/enable-dev-options-Google.gif" title="imagen 1" /></p>
+<figcaption>
+<p><strong>Imagen 1</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Google Pixel con Android 13.</p>
+</figcaption>
+</figure>
+<p>Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de <strong>Sistema,</strong> y se <strong>mantendrán habilitadas</strong> hasta que se deshabiliten (desde el menú de opciones de desarrollador).   </p>
+<h3 id="honor-magic-os">Honor (Magic OS)</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos del fabricante <strong>Honor</strong> utilizando la versión de Android <strong>Magic OS</strong> puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 2.</strong> </p>
+<ol>
+<li>Abre el menú de <strong>Ajustes</strong> ⚙️  </li>
+<li>Navega hasta la última opción <strong>Acerca del teléfono</strong> 📱  </li>
+<li>Ubica la información sobre el <strong>Número de compilación</strong> 🔢   </li>
+<li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<p>Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de <strong>Sistema,</strong> y se <strong>mantendrán habilitadas</strong> hasta que se deshabiliten (desde el menú de opciones de desarrollador).   </p>
+<figure>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13" loading="lazy" src="../assets/enable-dev-options-Honor.gif" title="imagen 2" /></p>
+<figcaption>
+<p><strong>Imagen 2</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13.</p>
+</figcaption>
+</figure>
+<h3 id="motorola-hello-ui">Motorola (Hello UI)</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos <strong>Motorola</strong> utilizando la versión 13 de Android puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 3.</strong> </p>
+<ol>
+<li>Abre el menú de <strong>Ajustes</strong> ⚙️  </li>
+<li>Navega hasta la última opción <strong>Acerca del teléfono</strong> 📱  </li>
+<li>Ubica la información sobre el *<em>Número de compilación</em> 🔢   </li>
+<li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<figure>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Motorola Edge Neo 40 utilizando Hi OS en Android 13" loading="lazy" src="../assets/enable-dev-options-Motorola.gif" title="imagen 4" /></p>
+<figcaption>
+<p><strong>Imagen 3</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Motorola Edge Neo 40 utilizando Hi OS en Android 13.</p>
+</figcaption>
+</figure>
+<h3 id="nokia">Nokia</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos <strong>Nokia</strong> utilizando la versión de Android 13 o superior puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 4.</strong> </p>
+<ol>
+<li>Abre el menú de <strong>Ajustes</strong> ⚙️  </li>
+<li>Navega hasta la última opción <strong>Acerca del teléfono</strong> 📱  </li>
+<li>Ubica la información sobre el <strong>Número de compilación</strong> 🔢   </li>
+<li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<p>Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de <strong>Sistema,</strong> y se <strong>mantendrán habilitadas</strong> hasta que se deshabiliten (desde el menú de opciones de desarrollador). </p>
+<figure>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Nokia G42 5G utilizando Android 13" loading="lazy" src="../assets/enable-dev-options-Nokia.gif" title="imagen 4" /></p>
+<figcaption>
+<p><strong>Imagen 4</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Nokia G42 5G utilizando Android 13.</p>
+</figcaption>
+</figure>
+<h3 id="oppo-reno-10-color-os">Oppo Reno 10 (Color OS)</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos <strong>OPPO</strong> utilizando la versión de Android 13 o superior puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 5.</strong></p>
+<ol>
+<li>Abre el menú de <strong>Ajustes</strong> ⚙️</li>
+<li>Navega hasta la última opción <strong>Acerca del teléfono</strong> 📱</li>
+<li>Ubica la información sobre el <strong>No. de versión</strong> 🔢</li>
+<li>Presiona <strong>7 veces</strong> sobre el número de versión, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<p>Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de <strong>Sistema,</strong> y se <strong>mantendrán habilitadas</strong> hasta que se deshabiliten (desde el menú de opciones de desarrollador). </p>
+<figure>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Oppo Android 13" src="../assets/enable-dev-options-oppo.gif" style="height:480x;width:216px" title="imagen 5" /></p>
+<figcaption>
+<p><strong>Imagen 5</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Oppo.</p>
+</figcaption>
+</figure>
+<h3 id="realme-realme-ui">Realme (Realme UI)</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos <strong>Realme</strong> utilizando la capa de personalización Realme UI puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 6.</strong> </p>
+<ol>
+<li>Abre el menú de <strong>Ajustes</strong> ⚙️  </li>
+<li>Navega hasta la última opción <strong>Acerca del dispositivo</strong> 📱  </li>
+<li>Ingresa al menú de <strong>versión</strong> 📝  </li>
+<li>Ubica la información sobre el <strong>Número de compilación</strong> 🔢   </li>
+<li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<figure>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13" loading="lazy" src="../assets/enable-dev-options-Realme.gif" title="imagen 6" /></p>
+<figcaption>
+<p><strong>Imagen 6</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13</p>
+</figcaption>
+</figure>
+<h3 id="samsung-one-ui">Samsung (One UI)</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos <strong>Samsung</strong> utilizando la capa de personalización One UI puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 7.</strong> </p>
+<ol>
+<li>Abre el menú de <strong>Ajustes ⚙️</strong>  </li>
+<li>Navega hasta la última opción <strong>Acerca del teléfono</strong> 📱  </li>
+<li>Ingresa al menú de <strong>Información de Software</strong> 📝  </li>
+<li>Ubica la información sobre el <strong>Número de compilación</strong> 🔢   </li>
+<li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<figure>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13" loading="lazy" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnB4bTJ0dWpnaWVsY2s0aWVnYTZyejN3a3N1bnhwZnV2NW10cGN2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ctCvv5Is6UZ6CEhQ4D/giphy.gif" title="imagen 7" /></p>
+<figcaption>
+<p><strong>Imagen 7</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13</p>
+</figcaption>
+</figure>
+<h3 id="sony-xperia-ui">Sony (Xperia UI)</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos <strong>Xperia</strong> utilizando la capa de personalización Xperia UI puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 8.</strong> </p>
+<ol>
+<li>Abre el menú de <strong>Ajustes</strong> ⚙️  </li>
+<li>Navega hasta la última opción <strong>Acerca del teléfono</strong> 📱  </li>
+<li>Ubica la información sobre el <strong>Número de compilación</strong> 🔢   </li>
+<li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<figure>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14" loading="lazy" src="../assets/enable-dev-options-Sony.gif" title="imagen 8" /></p>
+<figcaption>
+<p><strong>Imagen 8</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14.</p>
+</figcaption>
+</figure>
+<h3 id="tecno-hi-os">Tecno (Hi OS)</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos <strong>Tecno Spark</strong> utilizando la capa de personalización Hi OS puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 9.</strong> </p>
+<ol>
+<li>Abre el menú de <strong>Ajustes</strong> ⚙️  </li>
+<li>Navega hasta la opción <strong>Mi Teléfono</strong> 📱  </li>
+<li>Ubica la información sobre el <strong>Número de compilación</strong> 🔢   </li>
+<li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<figure>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13." loading="lazy" src="../assets/enable-dev-options-Tecno.gif" title="imagen 9" /></p>
+<figcaption>
+<p><strong>Imagen 9</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13.</p>
+</figcaption>
+</figure>
+<h3 id="xiaomi-hyper-os">Xiaomi (Hyper OS)</h3>
+<p>Para habilitar las opciones de desarrollador en dispositivos <strong>Xiaomi</strong> utilizando la capa de personalización Hyper OS puedes seguir los siguientes pasos, ejemplificados también en la <strong>imagen 10.</strong> </p>
+<ol>
+<li>Abre el menú de <strong>Ajustes</strong> ⚙️  </li>
+<li>Ingresa a la opción de <strong>Acerca del teléfono</strong> 📱  </li>
+<li>Ubica la información sobre el <strong>Versión de Sistema Operativo</strong> 🔢   </li>
+<li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
+</ol>
+<figure>
+<p><img alt="PPasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi." loading="lazy" src="../assets/enable-dev-options-Xiaomi.gif" title="imagen 10" /></p>
+<figcaption>
+<p><strong>imagen 10</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi.</p>
+</figcaption>
+</figure>
+<p>Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de <strong>Opciones avanzadas,</strong> y se <strong>mantendrán habilitadas</strong> hasta que se deshabiliten (desde el menú de opciones de desarrollador). </p>
+<h2 id="conclusion">Conclusión</h2>
+<p>La interfaz gráfica de los dispositivos Android varía entre fabricantes que utilizan como base el <a href="https://source.android.com/?hl=es-419">proyecto de código abierto Android (AOSP)</a>. Cada fabricante realiza sus propios desarrollos sobre esta capa base, con diferentes niveles de customización, lo que resulta en interfaces con <strong>diferentes apariencias, menús y opciones</strong>. </p>
+<p>El menú de <strong>opciones de desarrollador</strong> es un menú oculto, que se habilita a través de un procedimiento sencillo en la interfaz gráfica, y que es necesario para modificar <strong>opciones claves requeridas durante un proceso de extracción forense</strong>, como la consola ADB o un reporte de errores. En este recurso se recopilan <strong>capturas de pantalla correspondientes a diferentes fabricantes</strong> e interfaces, con la intención de <strong>facilitar la habilitación las opciones de desarrollador</strong> para personas analistas de la sociedad civil. </p>
+<p>Si <strong>tienes acceso a una interfaz gráfica que no se muestra en la lista</strong>, y deseas incorporar la captura correspondiente a este recurso, puedes escribirnos a través de un <em><a href="../../../comunidad/como-colaborar/#propuestas-de-mejora-o-correcciones-a-través-de-issues">issue</a></em> o, si te sientes cómodo con markdown, puedes enviar una solicitud de integración a través de un <em><a href="../../../comunidad/como-colaborar/#solicitudes-de-integración-a-través-de-pull-request">pull request</a></em>.</p>
+<h2 id="comentarios">Comentarios</h2>
+<p>¿Tienes <strong>comentarios o sugerencias</strong> sobre este recurso? Puedes utilizar la <strong>función de comentar que se muestra a continuación</strong> para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro <a href="../../../comunidad/codigo-de-conducta/">código de conducta</a>. La función de comentarios enlaza directamente a la sección de <a href="https://github.com/Socialtic/forensics/discussions"><em>Discussions</em> de Github</a>, donde también <strong>puedes participar en las discusiones de forma directa</strong>, si lo prefieres.   </p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../../01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: ¿Cómo obtener y documentar consentimiento informado?">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                ¿Cómo obtener y documentar consentimiento informado?
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../03-como-habilitar-adb/03-como-habilitar-adb/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: ¿Cómo habilitar ADB en Android?">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                ¿Cómo habilitar ADB en Android?
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      MVT License
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["search.highlight", "search.suggest", "search.share", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.footer", "content.action.view", "content.action.edit", "toc.follow", "toc.integrate"], "search": "../../../../assets/javascripts/workers/search.26099bd0.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.9d1edc04.min.js"></script>
+      
+    
+  </body>
+</html>
