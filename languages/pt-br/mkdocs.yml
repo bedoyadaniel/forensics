@@ -21,7 +21,7 @@ nav:
 
 theme: 
   name: material
-  language: pt-br
+  language: pt-BR
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: default
