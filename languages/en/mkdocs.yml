@@ -1,8 +1,5 @@
 site_name: SocialTIC Forensics
-site_url: https://forensics.socialtic.org/en/
-site_description: Documentation for consensual forensic investigations in civil society
 site_dir: '../../generated/en'
-repo_url: https://github.com/Socialtic/forensics
 edit_uri: edit/main/docs/en/
 copyright: MVT License
 
@@ -78,10 +75,6 @@ theme:
     - toc.integrate #La tabla de contenidos está integrada a la barra de  la izquierda
     - navigation.footer #Agrega botones de contenido actual y contenido siguiente
 
-extra_css:
-  - assets/css/extra.css
-
-
 extra:
   alternate: #configuración de idiomas
     - name: Español
@@ -93,13 +86,6 @@ extra:
     - name: Português   
       lang: pt-br
       link: ../pt-br/
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/socialtic
-    - icon: fontawesome/brands/github
-      link: https://github.com/socialtic/forensics/
-    - icon: material/web
-      link: https://socialtic.org
 
 plugins:
   - search  #habilita barra de búsqueda

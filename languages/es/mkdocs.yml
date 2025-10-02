@@ -1,30 +1,48 @@
 site_name: SocialTIC Forensics
-site_url: https://forensics.socialtic.org/
 site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
-site_dir: '../generated/pt-br/'
-repo_url: https://github.com/Socialtic/forensics
+site_dir: '../generated/es/'
 edit_uri: edit/main/docs/es/
 copyright: MVT License
 
 nav:
-nav:
   - Home: 
     - Inicio: 'index.md'
-    - Primeros pasos: getting-started.md
+    - Primeros pasos: iniciar.md
+    - Hoja de ruta: 'hoja-de-ruta.md'
+    - Comunidad: 'comunidad/index.md'
   - Explainers:
     - Inicio: 'explainers/index.md'
+    - Introducción a la forense digital consentida: 'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md'
+    - Riesgos y amenazas para laboratorios forenses: 'explainers/02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.md'
+    - Principios para forense basada en logs en Android: 'explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.md'
   - Tutoriales: 
     - Inicio: 'tutorials/index.md'
   - Guías how-to:
     - Inicio: 'how-tos/index.md'
+    - ¿Cómo obtener y documentar consentimiento informado?: 'how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.md'
+    - ¿Cómo habilitar las opciones de desarrollador en Android?: 'how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md'  
+    - ¿Cómo habilitar ADB en Android?: 'how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md'
+    - ¿Cómo generar un reporte de errores en Android?: 'how-tos/05-como-extraer-bugreport/05-como-extraer-bugreport.md'  
+    - ¿Cómo realizar una extracción mediante AndroidQF?: 'how-tos/04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf.md'  
   - Referencias:
     - Inicio: 'references/index.md'
+    - Glosario: 'references/00-glossary.md'
+    - Diccionario AndroidQF: 'references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md'
+    - Diccionario MVT bugreport: 'references/02-reference-diccionario-mvt-bugreport/02-reference-diccionario-mvt-bugreport.md'
   - Comunidad:
-    - Comunidad de práctica: 'community/index.md'
+    - Comunidad de práctica: 'comunidad/index.md'
+    - ¿Por qué contribuir con este repositorio?: 'comunidad/por-que-contribuir.md'
+    - ¿Cómo colaborar con este repositorio?: 'comunidad/como-colaborar.md'
+    - Contribuidores: 'comunidad/contributors.md'
+    - Mejores prácticas para el idioma español: 'comunidad/guia-idioma.md'
+    - Traducciones y localizaciones: 'comunidad/como-localizar-l10n.md'
+    - Licencia de uso: 'comunidad/licencia.md'
+    - Código de conducta: 'comunidad/codigo-de-conducta.md'
+    - Limitación de responsabilidades: 'comunidad/limitacion-responsabilidad.md'
 
 theme: 
   name: material
-  language: pt-br
+  language: es
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: default
@@ -61,23 +79,16 @@ theme:
 
 
 extra:
-  alternate: #configuración de idiomas
+  alternate: 
     - name: Español
       lang: es
-      link: ../es/
+      link: .
     - name: English
       lang: en  
       link: ../en/
     - name: Português   
       lang: pt-br
-      link: .
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/socialtic
-    - icon: fontawesome/brands/github
-      link: https://github.com/socialtic/forensics/
-    - icon: material/web
-      link: https://socialtic.org
+      link: ../pt-br/
 
 plugins:
   - search  #habilita barra de búsqueda
@@ -95,11 +106,7 @@ plugins:
        - references/index.md
        - tutorials/index.md
 
-extra_javascript:
-  - path: assets/javascript/extra.js
 
-extra_css:
-  - assets/css/extra.css
 
 markdown_extensions:
   - admonition #cuadros de texto
