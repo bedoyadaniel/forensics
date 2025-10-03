@@ -229,6 +229,7 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 * **Espera** a que todos los módulos de AndroidQF se ejecuten de acuerdo a su programación.
 
     !!! info "Duración del proceso"
+    
         **Esta etapa puede tomar varios minutos**, dependiendo del modelo del teléfono y la cantidad de datos almacenados. El progreso se muestra línea por línea en la terminal y no requiere intervención adicional, salvo al final, donde se debe presionar Enter para completar.
 
     ![Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.](../04-como-extraer-mediante-androidqf/assets/12-captura-pantalla-ejecucion-correcta.png "imagen 12")

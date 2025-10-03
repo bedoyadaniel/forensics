@@ -81,6 +81,8 @@ theme:
     - toc.follow #Sigue la navegación del usuario en la tabla de contenidos 
     - toc.integrate #La tabla de contenidos está integrada a la barra de  la izquierda
     - navigation.footer #Agrega botones de contenido actual y contenido siguiente
+    - content.code.copy #Agrega la opción para copiar código al clipboard
+    - content.code.annotate #permite agregar comentarios al código
 
 extra_css:
   - assets/css/extra.css
