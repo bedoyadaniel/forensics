@@ -108,10 +108,6 @@ Posteriormente verifica en el panel de notificaciones que el dispositivo se encu
 
 ## Obteniendo AndroidQF
 
-!!! info 
- 
-    El ejemplo de este tutorial se abordará desde un sistema operativo PopOS basado en **GNU/Linux**, el cual tiene grandes similitudes con sistemas operativos macOS. Para **configuraciones especiales de Windows se incluyen los pasos extras** necesarios para lograr el tutorial.
-
 En esta sección se detalla **cómo descargar el binario y preparar tu computadora** para ejecutar AndroidQF. Además, para profundizar en la puesta a punto del binario y **explorar una alternativa**, se muestran los pasos para compilar tu propio binario en un sistema Linux. 
 
 ### Descarga e instalación de AndroidQF desde su repositorio oficial
@@ -328,7 +324,7 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
 
 * *\-s*: Si tienes varios dispositivos conectados, puedes usar este parámetro para especificar el dispositivo a analizar.
 
-=== "Identificar dispositivos conectados en Linux/MacOS"
+=== "Identificar dispositivos en Linux/MacOS"
 
     En el caso de macOS y Linux puedes listar los dispositivos con adb, te dejamos esta guía de [Cómo instalar ADB en macOS y Linux](https://www-xda--developers-com.translate.goog/install-adb-windows-macos-linux/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc).
 	  
@@ -340,12 +336,12 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
 
     El resultado se muestra en la imagen 16. 
 
-    <!-- ![ Captura de pantalla de terminal de linux con ejecución de comando *adb devices.*](assets/16-captura-linux-adb-devices.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux con ejecución de comando *adb devices.*](assets/16-captura-linux-adb-devices.png "imagen 1")
     /// caption
     **Imagen 16**. Captura de pantalla de terminal de linux con ejecución de comando *adb devices.*
     ///
 
-=== "Identificar dispositivos conectados en en Windows"
+=== "Identificar dispositivos en Windows"
 
     En el caso de Windows, cuando ejecutas el binario de AndroidQF por primera vez, se crea el ejecutable de ADB y se puede utilizar para listar los dispositivos:
 
@@ -374,15 +370,14 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
 
 
 * \-o: Te permite indicar un output o carpeta de salida donde se guardarán los archivos extraídos.  
-  Si no se especifica un output o una carpeta de salida, AndroidQF identificará el dispositivo una vez que permita la depuración USB y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85 o a577ae94-0a47-479c-82c5-c8017bfb7175.
 
-  Como ejemplo en este tutorial, se utiliza el parámetro *\-o* para definir la carpeta de salida de la extracción en lugar de dejar que AndroidQF genere un UUID. De esta manera, el comando creará una carpeta que tendrá un nombre más legible, que combina la fecha en formato año-mes-día con un texto adicional de identificación, que en esta ejemplificación llamaremos *acquisition01*.
+    Si no se especifica un output o una carpeta de salida, AndroidQF identificará el dispositivo una vez que permita la depuración USB y generará una carpeta con un identificador único (UUID). En esta carpeta se almacenará la extracción. El nombre de estas carpetas al ser un UUID suele tener nombres como 0caba18f-20a7-48d0-b9ba-724fdaa3ff85 o a577ae94-0a47-479c-82c5-c8017bfb7175.
 
+    Como ejemplo en este tutorial, se utiliza el parámetro *\-o* para definir la carpeta de salida de la extracción en lugar de dejar que AndroidQF genere un UUID. De esta manera, el comando creará una carpeta que tendrá un nombre más legible, que combina la fecha en formato año-mes-día con un texto adicional de identificación, que en esta ejemplificación llamaremos *acquisition01*.
 
     ```shell
     ./androidqf -s numero-serial -o "$(date +%Y-%m-%d)"-identificador
     ```
-
 
     ![  Captura de pantalla de terminal de linux con integración del parámetro *\-o*.](assets/19-captura-andoridqf-output.png "imagen 1")
     /// caption
@@ -484,7 +479,7 @@ Esta sección contempla las acciones y consideracions **una vez que comienza la 
 
 Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la terminal y otras el dispositivo Android. Estas configuraciones son secuenciales, por lo que es **recomendable que estar alerta del proceso de ejecución de la extracción**, a continuación se mencionan estas configuraciones de manera explícita:
 
-1. En el teléfono :material-cellphone-basic:: Cuando aparezca el mensaje ***¿Permitir depuración por USB?***, da clic en ***“Permitir siempre desde esta computadora”*** y luego ***“Aceptar”*** o ***“Permitir”***.  
+1. **:material-cellphone-basic: - en el teléfono:** Cuando aparezca el mensaje ***¿Permitir depuración por USB?***, da clic en ***“Permitir siempre desde esta computadora”*** y luego ***“Aceptar”*** o ***“Permitir”***.  
 
     ![ Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confianza al equipo de cómputo para transferir archivos.](assets/26-captura-android-permiso-depuracion.png "imagen 1")
     /// caption
@@ -492,7 +487,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
     /// 
 
 
-2. En la terminal :octicons-terminal-16:: Posteriormente AndroidQF preguntará el tipo de respaldo que realizará la herramienta:
+2. **:octicons-terminal-16: - en la terminal:** Posteriormente AndroidQF preguntará el tipo de respaldo que realizará la herramienta:
 
     * **Only** **SMS**: Realiza un respaldo limitado que incluye solo mensajes SMS y MMS.  
     * **Everything**: Ejecuta un respaldo completo del dispositivo mediante adb backup.  
@@ -508,7 +503,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
     /// 
 
 
-3. En el teléfono :material-cellphone-basic:: Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una contraseña temporal de cifrado para este. En nuestro ejemplo utilizamos **la contraseña “sd”** de seguridad digital en español,**** tal y como se muestra en la figura 28. 
+3. **:material-cellphone-basic: - en el teléfono:** Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una contraseña temporal de cifrado para este. En nuestro ejemplo utilizamos **la contraseña “sd”** de seguridad digital en español,**** tal y como se muestra en la figura 28. 
 
     !!! note "Sobre la definición de contraseñas para el respaldo"
 
@@ -524,7 +519,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
     /// 
 
 
-4. En el teléfono :material-cellphone-basic:: Posteriormente selecciona el botón**: “Copia de seguridad de mis datos”.**
+4. **:material-cellphone-basic: - en el teléfono:** Posteriormente selecciona el botón**: “Copia de seguridad de mis datos”.**
 
     ![ Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada.](assets/29-captura-android-copia-seguridad.png "imagen 1")
     /// caption
@@ -533,7 +528,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
     En la terminal :octicons-terminal-16:: Para este momento, AndroidQF estará realizando la copia de seguridad y recolectando la información del backup y la información de las aplicaciones (paquetes) instalados en el dispositivo.
 
-    !!! warning ""Errores en las rutas
+    !!! warning "Errores en las rutas"
 
         En algunas ocasiones, suelen aparecer errores sobre la búsqueda de las rutas donde se encuentran los paquetes, por lo que es común ver algunas de estas marcas de error, sin embargo, **estas marcas de error no afectan la extracción de datos forenses en el dispositivo.***
 
@@ -542,7 +537,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
     **Imagen 30**. Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.
     /// 
 
-5. En la terminal :octicons-terminal-16:: Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué tipo de copia de las aplicaciones se desea realizar, para ello hay 3 opciones:  
+5. **:octicons-terminal-16: - en la terminal:** Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué tipo de copia de las aplicaciones se desea realizar, para ello hay 3 opciones:  
 
     * **All**: Descarga los APK de todas las aplicaciones, incluidas las del sistema.
     * **Only** **non-system** **packages**: Descarga solo los APK de aplicaciones instaladas por el usuario.
@@ -561,7 +556,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
     /// 
 
 
-6. En la terminal :octicons-terminal-16:: Una vez seleccionada la opción de descargas de copias de paquetes, AndroidQF preguntará acerca de eliminar los APKs firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.
+6. **:octicons-terminal-16: - en la terminal:** Una vez seleccionada la opción de descargas de copias de paquetes, AndroidQF preguntará acerca de eliminar los APKs firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.
 
 	  
 	Responde “Yes” para que, al realizar la revisión de la información se pueda enfocar el análisis en los paquetes que sean potencialmente sospechosos, además de que ahorrará tiempo y espacio de almacenamiento.
@@ -600,23 +595,24 @@ Este binario lee información del sistema del dispositivo en los directorios /pr
 
 El collector no ejecuta ningún comando adb, sin embargo, sus comandos equivalentes podrían ser los siguientes:
 
-    Para el comando ps (procesos):
+**Para el comando ps (procesos):**
 
-    ```shell
-    adb shell ps # (1)!
-    ```
-    1. Este comando lista los procesos en ejecución en el dispositivo (PID, nombre, usuario, estado).
+```shell
+adb shell ps # (1)!
+```
+1. Este comando lista los procesos en ejecución en el dispositivo (PID, nombre, usuario, estado).
 
-    Para el comando find (registro de archivos):
+**Para el comando find (registro de archivos):**
 
-    ```shell
-    adb shell ls/stat + adb pull + hashing # (1)!
-    ```
-    1. Donde:
-        * ls: lista archivos en un directorio.  
-        * stat: muestra atributos de un archivo (tamaño, permisos, MAC times, UID/GID).  
-        * adb pull: copia archivos del dispositivo al host.  
-        * hashing: calcula sumas de verificación (MD5, SHA1, SHA256, etc.) para asegurar integridad.
+```shell
+adb shell ls/stat + adb pull + hashing # (1)!
+```
+1. Donde:
+    * ls: lista archivos en un directorio.  
+    * stat: muestra atributos de un archivo (tamaño, permisos, MAC times, UID/GID).  
+    * adb pull: copia archivos del dispositivo al host.  
+    * hashing: calcula sumas de verificación (MD5, SHA1, SHA256, etc.) para asegurar integridad.
+
 
 #### Backup
 
@@ -626,25 +622,25 @@ Este módulo permite obtener una copia de los SMS o de la información del siste
 
 Sus comandos equivalentes en *adb* son los siguientes:
 
-    **Solo SMS**
+**Solo SMS**
 
-    ```shell
-    adb backup com.android.providers.telephony
-    ```
+```shell
+adb backup com.android.providers.telephony
+```
 
-    **Todo**
+**Todo**
 
-    ```shell
-    adb backup -all
-    ```
+```shell
+adb backup -all
+```
 
 #### Bugreport
 
 El módulo [bugreport](https://github.com/mvt-project/androidqf/blob/main/modules/bugreport.go) genera un reporte completo del sistema del dispositivo mediante la llamada interna al comando:
 
-    ```shell
-    adb bugreport bugreport.zip
-    ```
+```shell
+adb bugreport bugreport.zip
+```
 
 A través del método *adb.Client.Bugreport()*.
 
@@ -654,9 +650,9 @@ El bugreport devuelve una visión general del estado del dispositivo, incluyendo
 
 El módulo [dumpsys](https://github.com/mvt-project/androidqf/blob/main/modules/dumpsys.go) obtiene información del diagnóstico de los servicios en el dispositivo mediante el comando:
 
-    ```shell
-    adb shell dumpsys
-    ```
+```shell
+adb shell dumpsys
+```
 
 El reporte de dumpsys proporciona detalles técnicos sobre el estado de los servicios y componentes del sistema que resulta muy útil para identificar configuraciones o comportamientos anormales.
 
@@ -666,17 +662,17 @@ El módulo [env](https://github.com/mvt-project/androidqf/blob/main/modules/env.
 
 El comando equivalente en *adb* es:
 
-    ```shell
-    adb shell env
-    ```
+```shell
+adb shell env
+```
 
 #### Files
 
 El módulo [files](https://github.com/mvt-project/androidqf/blob/main/modules/files.go) genera un registro de archivos y metadatos en las rutas /sdcard/, /system, /vendor, /data , etc. a través del Collector, pero si este no está disponible, ejecuta el comando adb para buscar archivos y directorios específicos: 
 
-    ```shell
-    adb shell find <ruta>
-    ```
+```shell
+adb shell find <ruta>
+```
 
 La salida de este módulo permite obtener las rutas completas de los archivos presentes en los dispositivos, lo cual ayuda mucho a dar contexto sobre su ubicación y posible creación.
 
@@ -688,9 +684,9 @@ La salida de este módulo nos permite indagar sobre las propiedades, las cuales 
 
 Su comando equivalente en *adb* es:
 
-    ```shell
-    adb shell getprop
-    ```
+```shell
+adb shell getprop
+```
 
 #### Logcat
 
@@ -698,15 +694,15 @@ El módulo [logcat](https://github.com/mvt-project/androidqf/blob/main/modules/l
 
 Comando equivalente en *adb* para los registros actuales:
 
-    ```shell
-    adb shell logcat -d -b all "*:V"
-    ```
+```shell
+adb shell logcat -d -b all "*:V"
+```
 
 Comando equivalente en *adb* para los registros previos al último reinicio:
 
-    ```shell
-    adb shell logcat -L -b all "*:V"
-    ```
+```shell
+adb shell logcat -L -b all "*:V"
+```
 
 #### Logs
 
@@ -726,15 +722,15 @@ La información puede ser correlacionada a incidentes.
 
 Comando equivalente en *adb* para el listado recursivo de cada carpeta:
 
-    ```shell
-    adb shell ls -R <carpeta>
-    ```
+```shell
+adb shell ls -R <carpeta>
+```
 
 Comando equivalente en *adb* para la descarga de cada archivo:
 
-    ```shell
-    adb pull <ruta_remota> <ruta_local>
-    ```
+```shell
+adb pull <ruta_remota> <ruta_local>
+```
 
 #### Packages
 
@@ -742,23 +738,23 @@ El módulo [packages](https://github.com/mvt-project/androidqf/blob/main/modules
 
 Comando equivalente en adb para listar los paquetes y sus rutas:
 
-    ```shell
-    adb shell pm list packages -f
-    ```
+```shell
+adb shell pm list packages -f
+```
 
 Comando equivalente en adb para descargar cada APK:
 
-    ```shell
-    adb pull <ruta_apk> <ruta_local>
-    ```
+```shell
+adb pull <ruta_apk> <ruta_local>
+```
 
 #### Processes
 
 El módulo [processes](https://github.com/mvt-project/androidqf/blob/main/modules/processes.go)  obtiene la lista de procesos  mediante el Collector, sin embargo, si este no está disponible ejecuta el siguiente comando adb para obtener los procesos:
 
-    ```c#
-    adb shell ps -A
-    ```
+```c#
+adb shell ps -A
+```
 
 La información de salida de este módulo permite saber qué se estaba ejecutando en el momento de la adquisición y, con collector, incluye cmdline, variables de entorno, cwd y contextos SELinux para detectar procesos anómalos, persistencias y actividad sospechosa.
 
@@ -768,9 +764,9 @@ El módulo [root\_binaries](https://github.com/mvt-project/androidqf/blob/main/m
 
 Su comando equivalente en *adb* es (se repite para cada binario sospechoso):
 
-    ```shell
-    adb shell which -a su
-    ```
+```shell
+adb shell which -a su
+```
 
 #### SELinux
 
@@ -778,9 +774,9 @@ El módulo [SELinux](https://github.com/mvt-project/androidqf/blob/main/modules/
 
 Su comando equivalente en *adb* es:
 
-    ```shell
-    adb shell getenforce
-    ```
+```shell
+adb shell getenforce
+```
 
 #### Services
 
@@ -788,9 +784,9 @@ El módulo [services](https://github.com/mvt-project/androidqf/blob/main/modules
 
 Su comando equivalente en *adb* es:
 
-    ```shell
-    adb shell service list
-    ```
+```shell
+adb shell service list
+```
 
 #### Settings
 
@@ -798,11 +794,11 @@ El módulo [settings](https://github.com/mvt-project/androidqf/blob/main/modules
 
 Su comando equivalente en *adb* es:
 
-    ```shell
-    adb shell cmd settings list system
-    adb shell cmd settings list secure
-    adb shell cmd settings list global
-    ```
+```shell
+adb shell cmd settings list system
+adb shell cmd settings list secure
+adb shell cmd settings list global
+```
 
 #### Temp
 
@@ -810,15 +806,15 @@ El módulo temp recopila el contenido del directorio temporal identificado en el
 
 Comando equivalente en adb para listar los archivos:
 
-    ```shell
-    adb shell ls -R /data/local/tmp/
-    ```
+```shell
+adb shell ls -R /data/local/tmp/
+```
 
 Comando equivalente en adb para extraerlos:
 
-    ```shell
-    adb pull /data/local/tmp/ <ruta_local>
-    ```
+```shell
+adb pull /data/local/tmp/ <ruta_local>
+ ```
 
 ## Verificación de la extracción
 
@@ -915,39 +911,39 @@ Una vez finalizada la ejecución de AndroidQF, es importante validar que la adqu
 
 3. Comprueba la creación de archivos y carpetas de salida
 
-	Asegurate que se hayan generado los siguientes archivos y carpetas:
+Asegurate que se hayan generado los siguientes archivos y carpetas:
 
 * Archivos  
-    * acquisition.json  
-    * backup.ab  
-    * bugreport.zip  
-    * command.log  
-    * dumpsys.txt  
-    * env.txt  
-    * files.json  
-    * getprop.txt  
-    * hashes.csv  
-    * logcat.txt  
-    * packages.json  
-    * processes.txt  
-    * root\_binaries.json  
-    * selinux.txt  
-    * services.txt  
-    * settings\_global.txt  
-    * settings\_secure.txt  
-    * settings\_system.txt  
+  * acquisition.json  
+  * backup.ab  
+  * bugreport.zip  
+  * command.log  
+  * dumpsys.txt  
+  * env.txt  
+  * files.json  
+  * getprop.txt  
+  * hashes.csv  
+  * logcat.txt  
+  * packages.json  
+  * processes.txt  
+  * root\_binaries.json  
+  * selinux.txt  
+  * services.txt  
+  * settings\_global.txt  
+  * settings\_secure.txt  
+  * settings\_system.txt  
 * Carpetas de salida  
-    * apks/  
-    * logs/  
-    * tmp/
+  * apks/  
+  * logs/  
+  * tmp/
 
 	  
-	Esto significa que los módulos se ejecutaron correctamente.
+Esto significa que los módulos se ejecutaron correctamente.
 
-    ![ Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.](assets/36-captura-pantalla-archivos-salida.png "imagen 1")
-    /// caption
-    **Imagen 36** Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.
-    ///
+![ Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.](assets/36-captura-pantalla-archivos-salida.png "imagen 1")
+/// caption
+**Imagen 36** Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.
+///
 
 Identificar que una extracción fue realizada exitosamente implica un proceso de análisis, de habilidad y de instinto para leer líneas con distintos formatos e identificar todos los nombres de los archivos de salida. Todo tu esfuerzo ayuda a que la comunidad refuerce estas herramientas para hacerlas mejor en la sociedad civil.
 
