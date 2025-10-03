@@ -26,7 +26,7 @@ Este recurso en particular se enmarca dentro de la categoría de [tutoriales](ht
 Este tutorial tiene el **objetivo de enseñar de forma prácrica** de forma clara y accesible **cómo usar AndroidQF para realizar extracciones forenses en dispositivos Android**, destacando su utilidad en contextos de análisis de amenazas e incidentes que afectan a personas defensoras de derechos humanos, periodistas y organizaciones de la sociedad civil.
 
 
-!!! tip "¿Cómo seguir este tutorial?
+!!! tip "¿Cómo seguir este tutorial?"
 
     Este tutorial pretende ser un **recurso para el aprendizaje**, por lo que algunos conceptos se exploran a profundidad, mostrando también alternativas y posibilidades. Si buscas una guía concisa, con instrucciones paso a paso para completar una extracción, consulta nuestra [guía de adquisición con androidqf.](../../how-tos/04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf.md)
     
@@ -38,17 +38,17 @@ Para poder completar este tutorial es **indispensable** contar con  los siguient
 
 * Un **dispositivo  Android**. El dispositivo debe funcionar y se debe conocer su contraseña, PIN o patrón de desbloqueo, este debe contar con la **depuración USB activa**.
 
-!!! question "¿Cómo habilitar la depuración por USB?"
+    !!! question "¿Cómo habilitar la depuración por USB?"
 
-    Si el dispositivo no tiene activa esta configuración, es necesario que primero sigas los pasos sobre [¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?](../../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md) y posteriormente, seguir los pasos sobre [¿Cómo habilitar ADB (depuración por USB) en diferentes dispositivos Android?](../../how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md). 
+        Si el dispositivo no tiene activa esta configuración, es necesario que primero sigas los pasos sobre [¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?](../../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md) y posteriormente, seguir los pasos sobre [¿Cómo habilitar ADB (depuración por USB) en diferentes dispositivos Android?](../../how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md). 
 
 * Un **equipo de cómputo** con un sistema operativo Windows, Linux o macOS reciente.
 
 * Cable USB para **transferencia de datos** en buen estado 
 
-!!! info "No todos los cables USB son iguales"
+    !!! info "No todos los cables USB son iguales"
 
-    Algunos cables USB no tienen las conexiones necesarias para transferir datos entre el dispositivo móvil y la computadora. Estos cables son útiles para cargar nuestro dispositivo, pero no funcionan para transferir información. Para la extracción, asegúrate de utilizar un cable que permita transferir datos. Es [difícil distinguirlos a simple vista](https://support.konnected.io/how-to-tell-a-usb-charge-only-cable-from-a-usb-data-cable), pero usualmente los cables de carga rápida o aquellos incluídos con los dispositivos suelen ser cables de datos. 
+        Algunos cables USB no tienen las conexiones necesarias para transferir datos entre el dispositivo móvil y la computadora. Estos cables son útiles para cargar nuestro dispositivo, pero no funcionan para transferir información. Para la extracción, asegúrate de utilizar un cable que permita transferir datos. Es [difícil distinguirlos a simple vista](https://support.konnected.io/how-to-tell-a-usb-charge-only-cable-from-a-usb-data-cable), pero usualmente los cables de carga rápida o aquellos incluídos con los dispositivos suelen ser cables de datos. 
 
 ## Acerca de AndroidQF
 
@@ -340,7 +340,7 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
 
     El resultado se muestra en la imagen 16. 
 
-    <!-- ![ Captura de pantalla de terminal de linux con ejecución de comando *adb devices.*](assets/16-captura-linux-adb-devices.png "imagen 1") -->
+    <!-- ![ Captura de pantalla de terminal de linux con ejecución de comando *adb devices.*](assets/16-captura-linux-adb-devices.png "imagen 1")
     /// caption
     **Imagen 16**. Captura de pantalla de terminal de linux con ejecución de comando *adb devices.*
     ///
@@ -820,7 +820,7 @@ Comando equivalente en adb para extraerlos:
     adb pull /data/local/tmp/ <ruta_local>
     ```
 
-### Verificación de la extracción
+## Verificación de la extracción
 
 Una vez finalizada la ejecución de AndroidQF, es importante validar que la adquisición se completó correctamente. Para ello, realiza los siguientes pasos:
 
