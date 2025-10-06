@@ -48,7 +48,7 @@ Para poder completar este tutorial es **indispensable** contar con  los siguient
 
     !!! info "No todos los cables USB son iguales"
 
-        Algunos cables USB no tienen las conexiones necesarias para transferir datos entre el dispositivo móvil y la computadora. Estos cables son útiles para cargar nuestro dispositivo, pero no funcionan para transferir información. Para la extracción, asegúrate de utilizar un cable que permita transferir datos. Es [difícil distinguirlos a simple vista](https://support.konnected.io/how-to-tell-a-usb-charge-only-cable-from-a-usb-data-cable), pero usualmente los cables de carga rápida o aquellos incluídos con los dispositivos suelen ser cables de datos. 
+        Algunos cables USB no tienen las conexiones necesarias para transferir datos entre el dispositivo móvil y la computadora. Estos cables son útiles para cargar nuestro dispositivo, pero no funcionan para transferir información. Para la extracción, asegúrate de utilizar un cable que permita transferir datos. Es [difícil distinguirlos a simple vista](https://support.konnected.io/how-to-tell-a-usb-charge-only-cable-from-a-usb-data-cable), pero usualmente los cables de carga rápida o aquellos incluidos con los dispositivos suelen ser cables de datos. 
 
 ## Acerca de AndroidQF
 
@@ -75,8 +75,8 @@ Su diseño permite realizar **extracciones rápidas y seguras de  dispositivos A
 Esto la convierte en una herramienta accesible y confiable para investigadores, defensores de derechos humanos, periodistas y laboratorios de análisis forense digital, especialmente porque:
 
 * **Puede usarse de manera portable** sin necesidad de realizar una instalación compleja.  
-* Su modularidad **permite decidir exactamente qué datos obtener**, esto según el nivel de riesgo de una persona.  
 * El **control de la información forense es a nivel local** y no se comparten datos por algún servicio web o nube  
+* Su modularidad **permite decidir exactamente qué datos obtener**, esto según el nivel de riesgo de una persona.  
 * La herramienta y su documentación entran en la categoría de **software libre y código abierto**, por lo que su código fuente es transparente y consultable por cualquier persona interesada en conocer cómo funciona la herramienta.
 
 La facilidad para conocer qué información forense fue extraída y cuál fue el proceso, permite brindar mayor transparencia y confianza al proceso, de forma tal que se reduzcan los riesgos técnicos y éticos del análisis forense consensuado.
@@ -103,7 +103,7 @@ Posteriormente verifica en el panel de notificaciones que el dispositivo se encu
 
 ![  Captura de pantalla de dispositivo móvil android con los ajustes de uso USB para transferir archivos](assets/03-captura-android-ajustes-usb.png "imagen 1")
 /// caption
-**Imagen 3**. Captura de pantalla de dispositivo móvil android con los ajustes de uso USB para transferir archivos.
+**Imagen 3**. Captura de pantalla de dispositivo móvil Android con los ajustes de uso USB para transferir archivos.
 ///
 
 ## Obteniendo AndroidQF
@@ -186,7 +186,7 @@ Es importante que consideres que la descarga correcta del binario **depende de l
 
 Adicionalmente, en este tutorial te presentamos la alternativa de **compilar el binario de AndroidQF** para Linux. Esta opción te brinda la posibilidad de generar el binario directamente en tu sistema y evitar depender únicamente de los binarios publicados en los lanzamientos oficiales. Esto **no es un paso obligatorio**, pero te permite comprender como utilizar el repositorio de código para generar el archivo ejecutable paso a paso. 
 
-Si no deseas explorar la compilación, o estás utilizando un equipo con Windows, puedes continuar el tutorial en la sección de [exploración y ejecución de AndroidQF](#exploración-y-ejecución-androidqf)
+Si no deseas explorar la compilación, o estás utilizando un equipo con Windows, puedes continuar el tutorial en la sección de [exploración y ejecución de AndroidQF](#exploracion-y-ejecucion-androidqf)
 
 !!! Tip "Integridad del binario de AndroidQF"
 
@@ -299,7 +299,7 @@ AndroidQF integra una lista completa de parámetros disponibles a través de su 
 
     ![ Captura de pantalla de terminal de linux con ejecución de parámetro *–help*.](assets/13-captura-androidqf-help.png "imagen 1")
     /// caption
-    **Imagen 13**. Captura de pantalla de terminal de linux con ejecución de parámetro *–help*.
+    **Imagen 13**. Captura de pantalla de terminal de Linux con ejecución de parámetro *–help*.
     ///
 
 === "Comando help en Windows"
@@ -365,7 +365,7 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
 
     ![  Captura de pantalla de terminal de linux con integración del parámetro *\-s*.](assets/18-captura-androidqf-serial-number.png "imagen 1")
     /// caption
-    **Imagen 18**.  Captura de pantalla de terminal de linux con integración del parámetro *\-s*.
+    **Imagen 18**.  Captura de pantalla de terminal de Linux con integración del parámetro *\-s*.
     ///
 
 
@@ -409,7 +409,7 @@ Sin importar cuál sistema operativo utilices en tu equipo de cómputo, primero 
 ./androidqf -s numero-serial -o /ruta/de/salida/"$(date +%Y-%m-%d)"-complemento # (1)!
 ```
 
-1. Utilizamos los parámetros **-s** para indicar el número serial y **-o** para especificar la ruta de salida. Utilizamos tamibén el comando **date** para incluir de forma automática la fecha en el nombre de la carpeta. 
+1. Utilizamos los parámetros **-s** para indicar el número serial y **-o** para especificar la ruta de salida. Utilizamos también el comando **date** para incluir de forma automática la fecha en el nombre de la carpeta. 
 
 === "Ejecución en Linux/MacOS"
 
@@ -464,7 +464,7 @@ Sin importar cuál sistema operativo utilices en tu equipo de cómputo, primero 
 
     Selecciona **“Ejecutar de todas formas”**
 
-    ![ Captura de pantalla de ventana emergente de protección de Windows con la selección de *Ejecutar de todas formas*.](assets/25-captura-windows-ejecucion.png imagen 1")
+    ![ Captura de pantalla de ventana emergente de protección de Windows con la selección de *Ejecutar de todas formas*.](assets/25-captura-windows-ejecucion.png "imagen 25")
     /// caption
     **Imagen 25**. Captura de pantalla de ventana emergente de protección de Windows con la selección de *Ejecutar de todas formas*.
     /// 
@@ -475,7 +475,7 @@ Sin importar cuál sistema operativo utilices en tu equipo de cómputo, primero 
 
     Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas operativos considerados en este tutorial: **Linux, Windows and macOS.**    
 
-Esta sección contempla las acciones y consideracions **una vez que comienza la ejecución**, es decir, en cuanto ejecutamos el comando mostrado en la sección anterior. 
+Esta sección contempla las acciones y consideraciones **una vez que comienza la ejecución**, es decir, en cuanto ejecutamos el comando mostrado en la sección anterior. 
 
 Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la terminal y otras el dispositivo Android. Estas configuraciones son secuenciales, por lo que es **recomendable que estar alerta del proceso de ejecución de la extracción**, a continuación se mencionan estas configuraciones de manera explícita:
 
@@ -511,7 +511,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
         Dependiendo del contexto y el caso puedes elegir la contraseña adecuada, aunque si se realizan extracciones de manera continua se puede utilizar la misma contraseña como una practica interna de tu equipo.
 
-        Si bien reutilizar contraseñas no es una práctica de seguridad digital recomendada, es importante considerar el contexto y recordar que está contraseña protegerá únicamente uno de los archivos incluídos en la extracción forense. Sin embargo, los demás archivos recolectados no estarán cifrados, por lo que independientemente de la contraseña que se utilice, debemos manejar la carpeta de extracción como información sensible, y almacenarla únicamente en medios con medidas y estándares de protección adicional de acuerdo a nuestra política interna de manejo y protección de la información.
+        Si bien reutilizar contraseñas no es una práctica de seguridad digital recomendada, es importante considerar el contexto y recordar que está contraseña protegerá únicamente uno de los archivos incluidos en la extracción forense. Sin embargo, los demás archivos recolectados no estarán cifrados, por lo que independientemente de la contraseña que se utilice, debemos manejar la carpeta de extracción como información sensible, y almacenarla únicamente en medios con medidas y estándares de protección adicional de acuerdo a nuestra política interna de manejo y protección de la información.
 
     ![ Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup “sd”](assets/28-captura-android-contraseña.png "imagen 1")
     /// caption
@@ -534,7 +534,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
     ![ Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.](assets/30-captura-linux-recoleccion.png "imagen 1")
     /// caption
-    **Imagen 30**. Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.
+    **Imagen 30**. Captura de pantalla de terminal de Linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.
     /// 
 
 5. **:octicons-terminal-16: - en la terminal:** Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué tipo de copia de las aplicaciones se desea realizar, para ello hay 3 opciones:  
@@ -567,7 +567,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
     
     ![ Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción “*Only non-system packages”* seleccionada.](assets/32-captura-linux-omision-aplicaciones.png "imagen 1")
     /// caption
-    **Imagen 32** Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.
+    **Imagen 32** Captura de pantalla de terminal de Linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.
     /// 
 
     Para este punto, se ejecutarán múltiples tareas de adquisición, como la recopilación de propiedades del dispositivo, logs del sistema, procesos en ejecución, configuraciones, archivos temporales, etc. que explicaremos una a una en la siguiente sección.
@@ -835,7 +835,7 @@ Una vez finalizada la ejecución de AndroidQF, es importante validar que la adqu
 
         La salida estará en texto plano:
 
-        ```
+        ```shell
         2025-07-28T13:05:36-06:00 [ERROR] Failed to get file paths for package com.adobe.reader: exit status 1: 
         2025-07-28T13:05:55-06:00 [ERROR] Failed to get file paths for package com.whova.event: exit status 1: 
         2025-07-28T13:07:27-06:00 [ERROR] Failed to get file paths for package im.vector.app: exit status 1: 
@@ -870,7 +870,7 @@ Una vez finalizada la ejecución de AndroidQF, es importante validar que la adqu
 
 	=== "En Windows" 
 
-        Abre el archivo con *Bloc de notas*. Si usas WIndows en español presiona  la combinación de teclas **ctrl+b** y si usas WIndows en inglés o portugues, utiliza  **ctrl+f.** Luego escribe ***WARNING*** y ***ERROR*** en el cuadro de búsqueda.
+        Abre el archivo con *Bloc de notas*. Si usas Windows en español presiona  la combinación de teclas **ctrl+b** y si usas WIndows en inglés o portugues, utiliza  **ctrl+f.** Luego escribe ***WARNING*** y ***ERROR*** en el cuadro de búsqueda.
 
         La figura 35 muestra la salida de una búsqueda de errores en Windows. en este caso, no se encuentran  errores referentes al proceso de extracción forense.
 
