@@ -10,15 +10,16 @@ theme:
   name: material
 
 plugins:
+  - search
   - i18n:
-    reconfigure_material: true
-    reconfigure_search: true
-    docs_structure: folder
-    languages:
-        - locale: en
-          name: English
-          build: true
-          default: true
-        - locale: English
-          name: Español
-          build: true    
+      reconfigure_material: true
+      reconfigure_search: true
+      docs_structure: folder
+      languages:
+          - locale: en
+            name: English
+            build: true
+            default: true
+          - locale: English
+            name: Español
+            build: true    
