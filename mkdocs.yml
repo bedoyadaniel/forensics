@@ -11,5 +11,6 @@ theme:
 
 plugins:
   - projects:
+      log_level: debug
       cache: false
       projects_dir: languages
