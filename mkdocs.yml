@@ -20,6 +20,6 @@ plugins:
           name: English
           build: true
           default: true
-        - locale: English
+        - locale: es
           name: Español
           build: true    
