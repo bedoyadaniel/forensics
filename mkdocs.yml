@@ -2,6 +2,10 @@
 
 site_url: https://example.com
 site_name: My Docs
+site_dir: generated
+
+
+
 theme:
   name: material
 
