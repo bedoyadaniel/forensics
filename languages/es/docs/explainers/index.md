@@ -1,7 +1,7 @@
 ---
 
 alternate:
-  es: explainers/
+  en: explainers/
 
 
 ---
