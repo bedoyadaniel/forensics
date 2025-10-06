@@ -1,7 +1,6 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
 site_name: My Documentation
-site_url: https://bedoyadaniel.github.io/forensics/en/
 theme:
   language: en
   name: material
