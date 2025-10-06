@@ -17,7 +17,7 @@ jobs:
 
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: pip install mkdocs-document-dates
-      - run: mkdocs build -v
+      - run: mkdocs build  
       
 
       - uses: peaceiris/actions-gh-pages@v4
