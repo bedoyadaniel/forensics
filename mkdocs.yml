@@ -15,11 +15,12 @@ plugins:
       reconfigure_material: true
       reconfigure_search: true
       docs_structure: folder
+      fallback_to_default: true
       languages:
-        en:
+        - locale: en
           name: English
           build: true
           default: true
-        es:
+        - locale: es
           name: Español
-          build: true
+          build: true    
