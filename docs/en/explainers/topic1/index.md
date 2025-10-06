@@ -1,3 +1,3 @@
-# Tema 1 
+# Explainer topic 1 
 
-Material explicativo tema 1
+Explainer topic 1
