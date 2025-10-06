@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://bedoyadaniel.github.io/</loc>
-        <lastmod>2025-10-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/en/"/>
-    </url>
-    <url>
-        <loc>https://bedoyadaniel.github.io/explainers/</loc>
-        <lastmod>2025-10-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/explainers/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/en/explainers/"/>
-    </url>
-    <url>
-        <loc>https://bedoyadaniel.github.io/explainers/topic1/</loc>
-        <lastmod>2025-10-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/explainers/topic1/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/en/explainers/topic1/"/>
-    </url>
-    <url>
-        <loc>https://bedoyadaniel.github.io/en/</loc>
-        <lastmod>2025-10-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/en/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/"/>
-    </url>
-    <url>
-        <loc>https://bedoyadaniel.github.io/en/explainers/</loc>
-        <lastmod>2025-10-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/en/explainers/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/explainers/"/>
-    </url>
-    <url>
-        <loc>https://bedoyadaniel.github.io/en/explainers/topic1/</loc>
-        <lastmod>2025-10-06</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/en/explainers/topic1/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/explainers/topic1/"/>
+         <loc>https://bedoyadaniel.github.io/forensics/index.html/index.html</loc>
+         <lastmod>2025-10-06</lastmod>
     </url>
 </urlset>
