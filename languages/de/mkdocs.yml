@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-site_name: My Documentation
+site_name: Meine Dokumentation
 theme:
-  language: en
+  language: de
   name: material
   features:
     - navigation.sections
@@ -15,8 +15,8 @@ plugins:
 extra:
   alternate:
     - name: English
-      link: .
+      link: ../en/
       lang: en
     - name: Deutsch
-      link: ../de/
+      link: .
       lang: de
