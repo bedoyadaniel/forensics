@@ -9,6 +9,7 @@ theme:
     - navigation.tabs
 
 plugins:
+  - blog
   - search
 
 extra:
@@ -16,6 +17,6 @@ extra:
     - name: English
       link: .
       lang: en
-    - name: Español
-      link: ../es/
-      lang: es
+    - name: Deutsch
+      link: ../de/
+      lang: de

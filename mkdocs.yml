@@ -1,16 +1,13 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-site_url: https://bedoyadaniel.github.io/
+site_url: https://bedoyadaniel.github.io/forensics/
 site_name: My Docs
 site_dir: generated/
-
-
-
 theme:
   name: material
 
 plugins:
   - projects:
-      log_level: debug
       cache: false
       projects_dir: languages
+      alternate: true
