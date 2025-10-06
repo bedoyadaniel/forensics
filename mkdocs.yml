@@ -19,11 +19,8 @@ plugins:
       reconfigure_material: true
       reconfigure_search: true
       docs_structure: folder
-      fallback_to_default: true
-      default_language: en
       languages:
         - locale: en
-          default: true
           name: English
           build: true
         - locale: es
