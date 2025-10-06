@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://bedoyadaniel.github.io/forensics/en/</loc>
+         <loc>https://bedoyadaniel.github.io/forensics/de/</loc>
          <lastmod>2025-10-06</lastmod>
     </url>
     <url>
-         <loc>https://bedoyadaniel.github.io/forensics/en/blog/</loc>
+         <loc>https://bedoyadaniel.github.io/forensics/de/blog/</loc>
          <lastmod>2025-10-06</lastmod>
     </url>
     <url>
-         <loc>https://bedoyadaniel.github.io/forensics/en/blog/2023/12/02/hello-world/</loc>
+         <loc>https://bedoyadaniel.github.io/forensics/de/blog/2023/12/02/hallo-welt/</loc>
          <lastmod>2025-10-06</lastmod>
     </url>
     <url>
-         <loc>https://bedoyadaniel.github.io/forensics/en/blog/archive/2023/</loc>
+         <loc>https://bedoyadaniel.github.io/forensics/de/blog/archive/2023/</loc>
          <lastmod>2025-10-06</lastmod>
     </url>
 </urlset>
