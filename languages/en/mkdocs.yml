@@ -16,6 +16,6 @@ extra:
     - name: English
       link: .
       lang: en
-    - name: Deutsch
-      link: ../de/
-      lang: de
+    - name: Español
+      link: ../es/
+      lang: es
