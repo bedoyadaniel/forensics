@@ -1,3 +1,3 @@
 # Home
 
-[Click here to read our blog](blog/index.md)
+[Click here to read our explainers](explainers/index.md)

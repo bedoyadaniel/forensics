@@ -1,4 +1,3 @@
-# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
 site_name: Meine Dokumentation
 theme:
@@ -9,7 +8,6 @@ theme:
     - navigation.tabs
 
 plugins:
-  - blog
   - search
 
 extra:
