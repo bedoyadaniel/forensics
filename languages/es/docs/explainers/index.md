@@ -8,6 +8,11 @@ tags: [indice, explainer]
 last_updated: 2025-07-22
 some_url:
 icon: material/telescope
+alternate: 
+    en: explainers/index.md
+    pt-br: explainers/index.md
+    
+
 ---
 
 # Explainers 
