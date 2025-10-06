@@ -1,3 +1,5 @@
-# Repositorio Forense
+---
+template: redirect.html
+location: en/
+---
 
-Indice de recursos

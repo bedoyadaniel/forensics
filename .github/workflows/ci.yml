@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - prueba-languages
 permissions:
   contents: write
 jobs:

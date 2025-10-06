@@ -1,62 +1,9 @@
-site_name: SocialTIC Forensics
-site_url: https://bedoyadaniel.github.io/forensics/index.html
-site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
-docs_dir: 'docs/'
-site_dir: 'generated/'
-repo_url: https://github.com/Socialtic/forensics
-edit_uri: edit/main/docs/es/
-copyright: MVT License
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-
-theme: 
+site_url: https://example.com
+site_name: My Docs
+theme:
   name: material
-  custom_dir: 'overrides/'
-  logo: assets/img/ST_logo-01.png
-  favicon: assets/img/ST_logo-01-bn.png
-  language: es
-  palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: default
-      primary: black
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
-  features:
-    - search.highlight #Resalta las coincidencias en el recurso que se abre luego de una búsqueda
-    - search.suggest #Sugerencias de búsqueda
-    - search.share #agrega botón para compartir en la búsqueda
-    - navigation.path #Permite ver breadcrumbs, solo versión insider
-    - navigation.tabs #Permite visualizar seccions como tabs
-    - navigation.tabs.sticky #Tabs se mantienen fijos en parte alta de la página
-    - navigation.indexes #Navega directamente al index de cada carpeta
-    - navigation.instant #Carga recursos internos utilizando XHR, para mejorar eficiencia en carga de páginas
-    - navigation.instant.prefetch #Reduce tiempo de carga percibido al cargar páginas internas cuando la persona se posiciona sobre link
-    - navigation.sections #evita comprimir items del menú en grupos
-    - navigation.top #Agrega botón para regresar al inicio
-    - navigation.tracking #Sigue la navegación del usuario en la URL
-    - navigation.footer #Agrega botones de contenido actual y contenido siguiente
-    - content.action.view #Agrega botón de ver fuente
-    - content.action.edit #Agrega botón de edición
-    - toc.follow #Sigue la navegación del usuario en la tabla de contenidos 
-    - toc.integrate #La tabla de contenidos está integrada a la barra de  la izquierda
-   
-    
-
-
-extra:
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/socialtic
-    - icon: fontawesome/brands/github
-      link: https://github.com/socialtic/forensics/
-    - icon: material/web
-      link: https://socialtic.org
 
 plugins:
   - projects: #Permite multi-idioma
