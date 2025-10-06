@@ -10,7 +10,15 @@ theme:
   name: material
 
 plugins:
-  - projects:
-      log_level: debug
-      cache: false
-      projects_dir: languages
+  - i18n:
+    reconfigure_material: true
+    reconfigure_search: true
+    docs_structure: folder
+    languages:
+        - locale: en
+          name: English
+          build: true
+          default: true
+        - locale: English
+          name: Español
+          build: true    
