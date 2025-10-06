@@ -18,10 +18,10 @@ plugins:
       fallback_to_default: true
       default_language: en
       languages:
-        en:
+        - locale: en
+          default: true
           name: English
           build: true
-          default: true
-        es:
+        - locale: es
           name: Español
           build: true
