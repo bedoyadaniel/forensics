@@ -10,8 +10,13 @@ theme:
   name: material
 
 nav:
-  - Home: index.md
-  - Topic1: explainers/index.md
+  - Home: 
+    - Inicio: 'index.md'
+  - Explainers: 
+    - Inicio: 'explainers/index.md'
+    - Tema 1: 'explainers/topic1/index.md'
+
+
 
 plugins:
   - search
@@ -20,10 +25,17 @@ plugins:
       reconfigure_search: true
       docs_structure: folder
       languages:
-        - locale: en
-          name: English
-          build: true
         - locale: es
           name: Español
           default: true
           build: true
+        - locale: en
+          name: English
+          build: true
+          nav:
+            - Home: 
+              - Home: 'index.md'
+            - Explainers:
+              - Start: 'explainers/index.md'
+              - Topic 1: 'explainers/topic1/index.md'
+

@@ -1,3 +1,3 @@
-# Explainer on topic 1
+# Explainer del tema 1
 
 Explainer topic 1
