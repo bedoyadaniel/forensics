@@ -9,6 +9,10 @@ site_dir: generated/
 theme:
   name: material
 
+nav:
+  - Home: index.md
+  - Topic1: explainers/index.md
+
 plugins:
   - search
   - i18n:
