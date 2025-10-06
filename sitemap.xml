@@ -8,10 +8,24 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/es/"/>
     </url>
     <url>
+        <loc>https://bedoyadaniel.github.io/explainers/</loc>
+        <lastmod>2025-10-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/explainers/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/es/explainers/"/>
+    </url>
+    <url>
         <loc>https://bedoyadaniel.github.io/es/</loc>
         <lastmod>2025-10-06</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/es/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/"/>
+    </url>
+    <url>
+        <loc>https://bedoyadaniel.github.io/es/explainers/</loc>
+        <lastmod>2025-10-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/es/explainers/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/explainers/"/>
     </url>
 </urlset>
