@@ -15,7 +15,6 @@ plugins:
       reconfigure_material: true
       reconfigure_search: true
       docs_structure: folder
-      fallback_to_default: true
       languages:
         en:
           name: English
