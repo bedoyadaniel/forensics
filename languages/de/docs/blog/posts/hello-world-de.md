@@ -1,7 +1,7 @@
 ---
 date: 2023-12-02
 alternate: 
-  de: blog/2023/12/02/hello-world/
+  en: blog/2023/12/02/hello-world/
 
 ---
 
