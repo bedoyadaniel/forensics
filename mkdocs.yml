@@ -17,10 +17,10 @@ plugins:
       docs_structure: folder
       fallback_to_default: true
       languages:
-        - locale: en
-            name: English
-            build: true
-            default: true
-        - locale: es
-            name: Español
-            build: true    
+        en:
+          name: English
+          build: true
+          default: true
+        es:
+          name: Español
+          build: true
