@@ -1,0 +1,1 @@
+{"config":{"lang":["de"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"],"fields":{"title":{"boost":1000.0},"text":{"boost":1.0},"tags":{"boost":1000000.0}}},"docs":[{"location":"","title":"Home page en ES","text":"<p>Visita la seccion de explainers</p>"},{"location":"explainers/","title":"Explainer en ES","text":"<p>Este es un explainer en Espa\u00f1ol</p>"}]}
