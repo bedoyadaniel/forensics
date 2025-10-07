@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://bedoyadaniel.github.io/forensics/index.html</loc>
+        <lastmod>2025-10-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/forensics/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/forensics/en/index.html"/>
+    </url>
+    <url>
+        <loc>https://bedoyadaniel.github.io/forensics/explainers/index.html</loc>
+        <lastmod>2025-10-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/forensics/explainers/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/forensics/en/explainers/index.html"/>
+    </url>
+    <url>
+        <loc>https://bedoyadaniel.github.io/forensics/explainers/topic1/index.html</loc>
+        <lastmod>2025-10-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/forensics/explainers/topic1/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/forensics/en/explainers/topic1/index.html"/>
+    </url>
+    <url>
+        <loc>https://bedoyadaniel.github.io/forensics/en/index.html</loc>
+        <lastmod>2025-10-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/forensics/en/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/forensics/index.html"/>
+    </url>
+    <url>
+        <loc>https://bedoyadaniel.github.io/forensics/en/explainers/index.html</loc>
+        <lastmod>2025-10-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/forensics/en/explainers/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/forensics/explainers/index.html"/>
+    </url>
+    <url>
+        <loc>https://bedoyadaniel.github.io/forensics/en/explainers/topic1/index.html</loc>
+        <lastmod>2025-10-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://bedoyadaniel.github.io/forensics/en/explainers/topic1/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://bedoyadaniel.github.io/forensics/explainers/topic1/index.html"/>
+    </url>
+</urlset>
