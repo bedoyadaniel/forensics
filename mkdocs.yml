@@ -1,13 +1,41 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-site_url: https://bedoyadaniel.github.io/forensics/
+site_url: https://bedoyadaniel.github.io/
 site_name: My Docs
 site_dir: generated/
+
+
+
 theme:
   name: material
 
+nav:
+  - Home: 
+    - Inicio: 'index.md'
+  - Explainers: 
+    - Inicio: 'explainers/index.md'
+    - Tema 1: 'explainers/topic1/index.md'
+
+
+
 plugins:
-  - projects:
-      cache: false
-      projects_dir: languages
-      alternate: true
+  - search
+  - i18n:
+      reconfigure_material: true
+      reconfigure_search: true
+      docs_structure: folder
+      languages:
+        - locale: es
+          name: Español
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav:
+            - Home: 
+              - Home: 'index.md'
+            - Explainers:
+              - Start: 'explainers/index.md'
+              - Topic 1: 'explainers/topic1/index.md'
+
