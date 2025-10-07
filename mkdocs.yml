@@ -4,6 +4,8 @@ site_description: Documentación para investigaciones forenses consentidas en So
 repo_url: https://github.com/Socialtic/forensics
 edit_uri: edit/main/docs/es/
 copyright: MVT License
+site_dir: 'generated/'
+
 
 nav:
   - Home:
