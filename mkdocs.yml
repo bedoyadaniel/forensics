@@ -156,7 +156,7 @@ plugins:
               - License of contents: 'community/license/index.md'
               - Code of conduct: 'community/code-of-conduct/index.md'
               - Limitation of responsibilities: 'community/limitation-of-responsibility/index.md'
-        - locale: pt-br
+        - locale: pt
           name: Portuguese
           build: true
           nav:
