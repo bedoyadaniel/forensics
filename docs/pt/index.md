@@ -2,7 +2,7 @@
 title: Página de inicio forensics ES
 summary: Página de inicio 
 keywords: homepage, home, inicio
-authors: Daniel Bedoya Arroyo
+author: Daniel Bedoya Arroyo
 lang: es
 tags: [indice, home]
 last_updated: 2025-07-21
