@@ -160,16 +160,41 @@ plugins:
           name: Portuguese
           build: true
           nav:
+            - Home:
+              - Home: 'index.md'
+              - Getting started: 'home/getting-started/index.md'
+              - Roadmap: 'home/roadmap/index.md'
+              - Community: 'community/index.md'
             - Explicadores:
+              - Home: 'explainers/index.md'
               - Introdução à perícia digital consentida para a defesa dos direitos humanos: 'explainers/01-explainer-introduction-digital-forensics/index.md'
               - Riscos e ameaças para laboratórios forenses da sociedade civil: 'explainers/02-explainer-risks-threats/index.md'
               - Princípios para perícia forense baseada em logs em dispositivos Android: 'explainers/03-explainer-log-forensics-android/index.md'
+            - Tutoriales:
+              - Home: 'tutorials/index.md'
+              - Explorando AndroidQF para la adquisición de información: 'tutorials/01-tutorial-learning-androidqf/index.md'
             - How-to's:
+              - Home: 'how-tos/index.md'
               - Como obter um consentimento informado para uma investigação forense?: 'how-tos/01-how-to-obtain-informed-consent/index.md'
-            - References:
+              - ¿Cómo habilitar las opciones de desarrollador en Android?: 'how-tos/02-how-to-enable-developer-options/index.md'
+              - ¿Cómo habilitar ADB en Android?: 'how-tos/03-how-to-enable-adb/index.md'
+              - ¿Cómo generar un reporte de errores en Android?: 'how-tos/05-how-to-extract-bugreport/index.md'
+              - ¿Cómo realizar una extracción mediante AndroidQF?: 'how-tos/04-how-to-extract-with-androidqf/index.md'
+            - Referencias:
+              - Home: 'references/index.md'
               - Glosario: 'references/00-glossary.md'
               - Dicionário de arquivos gerados pela ferramenta androidqf: 'references/01-reference-androidqf-dictionary/index.md'
-                
+              - Diccionario de archivos generados por mvt bugreport: 'references/02-reference-mvt-bugreport-dictionary/index.md'
+            - Community:
+              - Comunidad de práctica: 'community/index.md'
+              - ¿Por qué contribuir con este repositorio?: 'community/why-support/index.md'
+              - ¿Cómo colaborar con este repositorio?: 'community/how-to-contribute/index.md'
+              - Contribuidores: 'community/contributors/index.md'
+              - Mejores prácticas para el idioma español: 'community/language-guide/index.md'
+              - Traducciones y localizaciones: 'community/translations-localization-i10n/index.md'
+              - Licencia de uso: 'community/license/index.md'
+              - Código de conducta: 'community/code-of-conduct/index.md'
+              - Limitación de responsabilidades: 'community/limitation-of-responsibility/index.md'              
 
 
 
