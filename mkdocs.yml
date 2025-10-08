@@ -47,6 +47,9 @@ nav:
 
 theme: 
   name: material
+  custom_dir: 'overrides/'
+  logo: assets/img/ST_logo-01.png
+  favicon: assets/img/ST_logo-01-bn.png
   language: es
   palette:
     - media: "(prefers-color-scheme: dark)"
@@ -163,7 +166,7 @@ plugins:
               - Princípios para perícia forense baseada em logs em dispositivos Android: 'explainers/03-explainer-log-forensics-android/index.md'
             - How-to's:
               - Como obter um consentimento informado para uma investigação forense?: 'how-tos/01-how-to-obtain-informed-consent/index.md'
-             - References:
+            - References:
               - Glosario: 'references/00-glossary.md'
               - Dicionário de arquivos gerados pela ferramenta androidqf: 'references/01-reference-androidqf-dictionary/index.md'
                 
