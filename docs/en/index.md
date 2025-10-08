@@ -2,7 +2,7 @@
 title: homepage in EN 
 summary: Homepage EN 
 keywords: homepage, home, inicio
-authors: Daniel Bedoya Arroyo
+author: Daniel Bedoya Arroyo
 lang: en
 tags: [indice, home]
 last_updated: 2025-07-21

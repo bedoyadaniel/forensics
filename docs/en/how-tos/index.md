@@ -2,7 +2,7 @@
 title: Index of guides
 summary: Index of how-to guides
 keywords: guides, index
-authors: Daniel Bedoya Arroyo
+author: Daniel Bedoya Arroyo
 lang: en
 tags: [indice, reference]
 last_updated: 2025-07-22

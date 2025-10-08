@@ -2,7 +2,7 @@
 title: Índice de guías
 summary: Índice de guías
 keywords: guides, index
-authors: Daniel Bedoya Arroyo
+author: Daniel Bedoya Arroyo
 lang: en
 tags: [indice, guides]
 last_updated: 2025-07-22

@@ -2,7 +2,7 @@
 title: Index of references
 summary: Index of references
 keywords: reference, index
-authors: Daniel Bedoya Arroyo
+author: Daniel Bedoya Arroyo
 lang: en
 tags: [indice, reference]
 last_updated: 2025-09-01

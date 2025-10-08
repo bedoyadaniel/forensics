@@ -2,7 +2,7 @@
 title: Index of explainers
 summary: Index of explainers
 keywords: explainers, index
-authors: Daniel Bedoya Arroyo
+author: Daniel Bedoya Arroyo
 lang: en
 tags: [index, explainer]
 last_updated: 2025-07-22

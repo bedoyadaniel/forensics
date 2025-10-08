@@ -2,7 +2,7 @@
 title: Índice de tutorales
 summary: Índice de tutoriales 
 keywords: indice, tutorial
-authors: Daniel Bedoya Arroyo
+author: Daniel Bedoya Arroyo
 lang: es
 tags: [indice, intro]
 last_updated: 2025-07-21
