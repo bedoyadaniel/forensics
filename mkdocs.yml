@@ -1,0 +1,201 @@
+site_name: SocialTIC Forensics
+site_url: https://bedoyadaniel.github.io/forensics/
+site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
+repo_url: https://github.com/Socialtic/forensics
+edit_uri: edit/main/docs/es/
+copyright: MVT License
+site_dir: 'generated/'
+
+
+nav:
+  - Home:
+    - Inicio: 'index.md'
+    - Primeros pasos: 'home/getting-started/index.md'
+    - Hoja de que ruta: 'home/roadmap/index.md'
+    - Comunidad: 'community/index.md'
+  - Explainers:
+    - Inicio: 'explainers/index.md'
+    - Introducción a la forense digital consentida: 'explainers/01-explainer-introduction-digital-forensics/index.md'
+    - Riesgos y amenazas para laboratorios forenses: 'explainers/02-explainer-risks-threats/index.md'
+    - Principios para forense basada en logs en Android: 'explainers/03-explainer-log-forensics-android/index.md'
+  - Tutoriales:
+    - Inicio: 'tutorials/index.md'
+    - Explorando AndroidQF para la adquisición de información: 'tutorials/01-tutorial-learning-androidqf/index.md' 
+  - How-to's:
+    - Inicio: 'how-tos/index.md'
+    - ¿Cómo obtener y documentar consentimiento informado?: 'how-tos/01-how-to-obtain-informed-consent/index.md'
+    - ¿Cómo habilitar las opciones de desarrollador en Android?: 'how-tos/02-how-to-enable-developer-options/index.md'
+    - ¿Cómo habilitar ADB en Android?: 'how-tos/03-how-to-enable-adb/index.md'
+    - ¿Cómo generar un reporte de errores en Android?: 'how-tos/05-how-to-extract-bugreport/index.md'
+    - ¿Cómo realizar una extracción mediante AndroidQF?: 'how-tos/04-how-to-extract-with-androidqf/index.md'
+  - Referencias:
+    - Inicio: 'references/index.md'
+    - Glosario: 'references/00-glossary.md'
+    - Diccionario AndroidQF: 'references/01-reference-androidqf-dictionary/index.md'
+    - Diccionario MVT bugreport: 'references/02-reference-mvt-bugreport-dictionary/index.md'
+  - Comunidad:
+    - Comunidad de práctica: 'community/index.md'
+    - ¿Por qué contribuir con este repositorio?: 'community/why-support/index.md'
+    - ¿Cómo colaborar con este repositorio?: 'community/how-to-contribute/index.md'
+    - Contribuidores: 'community/contributors/index.md'
+    - Mejores prácticas para el idioma español: 'community/language-guide/index.md'
+    - Traducciones y localizaciones: 'community/translations-localization-i10n/index.md'
+    - Licencia de uso: 'community/license/index.md'
+    - Código de conducta: 'community/code-of-conduct/index.md'
+    - Limitación de responsabilidades: 'community/limitation-of-responsibility/index.md'
+
+
+theme: 
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - search.highlight #Resalta las coincidencias en el recurso que se abre luego de una búsqueda
+    - search.suggest #Sugerencias de búsqueda
+    - search.share #agrega botón para compartir en la búsqueda
+    - navigation.path #Permite ver breadcrumbs, solo versión insider
+    - navigation.tabs #Permite visualizar seccions como tabs
+    - navigation.tabs.sticky #Tabs se mantienen fijos en parte alta de la página
+    - navigation.indexes #Navega directamente al index de cada carpeta
+      #- navigation.instant #Carga recursos internos utilizando XHR, para mejorar eficiencia en carga de páginas
+    - navigation.instant.prefetch #Reduce tiempo de carga percibido al cargar páginas internas cuando la persona se posiciona sobre link
+    - navigation.sections #evita comprimir items del menú en grupos
+    - navigation.top #Agrega botón para regresar al inicio
+    - navigation.tracking #Sigue la navegación del usuario en la URL
+    - navigation.footer #Agrega botones de contenido actual y contenido siguiente
+    - content.action.view #Agrega botón de ver fuente
+    - content.action.edit #Agrega botón de edición
+    - toc.follow #Sigue la navegación del usuario en la tabla de contenidos 
+    - toc.integrate #La tabla de contenidos está integrada a la barra de  la izquierda
+    - content.code.copy #Agrega la opción para copiar código al clipboard
+    - content.code.annotate #permite agregar comentarios al código
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/socialtic
+    - icon: fontawesome/brands/github
+      link: https://github.com/socialtic/forensics/
+    - icon: material/web
+      link: https://socialtic.org
+
+plugins:
+  - search  #habilita barra de búsqueda
+  - offline #facilita consulta y navegación del sitio offline
+  - privacy: #plug-in para cargar recursos localmente, reducir tracking
+      external_assets_exclude: #Permitir sistema de comentarios
+        - giscus.app/*
+  - typeset #permite colocar íconos como parte de headers
+  - document-dates:
+      position: top            # Display position: top (after title)  bottom (end of document)
+      exclude:                 # List of excluded files
+       - index.md              # Exclude specific file
+       - explainers/index.md
+       - how-tos/index.md
+       - references/index.md
+       - tutorials/index.md
+  - i18n: #Plugin para localización
+      reconfigure_material: true
+      reconfigure_search: true
+      docs_structure: folder
+      languages:
+        - locale: es
+          name: Español
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav:
+            - Home:
+              - Home: 'index.md'
+              - Getting started: 'home/getting-started/index.md'
+              - Roadmap: 'home/roadmap/index.md'
+              - Community: 'community/index.md'
+            - Explainers:
+              - Home: 'explainers/index.md'
+              - Introduction to digital forensics: 'explainers/01-explainer-introduction-digital-forensics/index.md'
+              - Risks, threats and mitigations for forensic labs: 'explainers/02-explainer-risks-threats/index.md'
+              - Introduction to log-based forensics on Android: 'explainers/03-explainer-log-forensics-android/index.md'
+            - Tutorials:
+              - Home: 'tutorials/index.md'
+            - How-to's:
+              - Home: 'how-tos/index.md'
+              - How to obtain and document informed consent?: 'how-tos/01-how-to-obtain-informed-consent/index.md'
+              - How to enable developer options on Android?: 'how-tos/02-how-to-enable-developer-options/index.md'
+              - How to enable ADB on Android?: 'how-tos/03-how-to-enable-adb/index.md'
+              - How to extract a bugreport on Android?: 'how-tos/05-how-to-extract-bugreport/index.md'
+              - How to perform an extraction using AndroidQF?: 'how-tos/04-how-to-extract-with-androidqf/index.md'
+            - References:
+              - Home: 'references/index.md'
+              - Glossary: 'references/00-glossary.md'
+              - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/index.md'
+              - MVT bugreport output file dictionary: 'references/02-reference-mvt-bugreport-dictionary/index.md'
+            - Community:
+              - Consensual forensics community: 'community/index.md'
+              - Supporting this effort: 'community/why-support/index.md'
+              - How can I collaborate with this repository?: 'community/how-to-contribute/index.md'
+              - Contributors: 'community/contributors/index.md'
+              - Best practices for English language: 'community/language-guide/index.md'
+              - Additional translation and localization efforts: 'community/translations-localization-i10n/index.md'
+              - License of contents: 'community/license/index.md'
+              - Code of conduct: 'community/code-of-conduct/index.md'
+              - Limitation of responsibilities: 'community/limitation-of-responsibility/index.md'
+        - locale: pt-br
+          name: Portuguese
+          build: true
+          nav:
+            - Explicadores:
+              - Introdução à perícia digital consentida para a defesa dos direitos humanos: 'explainers/01-explainer-introduction-digital-forensics/index.md'
+              - Riscos e ameaças para laboratórios forenses da sociedade civil: 'explainers/02-explainer-risks-threats/index.md'
+              - Princípios para perícia forense baseada em logs em dispositivos Android: 'explainers/03-explainer-log-forensics-android/index.md'
+            - How-to's:
+              - Como obter um consentimento informado para uma investigação forense?: 'how-tos/01-how-to-obtain-informed-consent/index.md'
+             - References:
+              - Glosario: 'references/00-glossary.md'
+              - Dicionário de arquivos gerados pela ferramenta androidqf: 'references/01-reference-androidqf-dictionary/index.md'
+                
+
+
+
+markdown_extensions:
+  - admonition #cuadros de texto
+  - pymdownx.details #cuadros de texto
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - attr_list #permite agregar html dentro del markdown
+  - md_in_html #permite desplegar grids
+  - pymdownx.blocks.caption #caption para imágenes
+  - pymdownx.emoji: #permite agregar íconos y emojies con códigos cortos
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - material.extensions.preview:
+      configurations:
+        - sources: 
+            exclude:
+              - explainers/index.md
+              - how-tos/index.md
+              - references/index.md
+              - tutorials/index.md
+              - index.md
+          targets: 
+            include:
+              - references/*
+
