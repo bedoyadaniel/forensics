@@ -30,41 +30,61 @@ If you are interested in translating the repository's content into a **new langu
 
 ## Content Structure
 
-The repository is **structured to support translations into new languages**. In general, content across all languages is **organized** in the following way:
+
+The repository is **structured to support translations into new languages**. To handle localization and translations, we use the [plug-in mkdocs-static-i18n](https://ultrabug.github.io/mkdocs-static-i18n/) with the folder structure. This means that contents across languages are organized in equal structures, with **matching file and folder names across languages.** 
+
+Folder names are defined in English, and names are replicated across languages. Despite folder names being in English, **Spanish is the default language for the repository**. The docs/ folder have the following structure: 
+
 
 ```
 docs/
-en/
-explainers/
-how-tos/
-references/
-tutorials/
-community/
-index.md
-es/
-explainers/
-how-tos/
-references/
-tutoriales/
-comunidad/
-index.md
+  es/
+    localized-assets/
+      resource 1/
+        image1.png
+    home/
+      getting-started/
+        index.md
+      roadmap/
+        index.md
+    explainers/
+      explainer-topic-01/
+        index.md
+      explainer-topic-n/
+        index.md
+    how-tos/
+      how-to-topic-01/
+        index.md  
+      how-to-topic-n/
+        index.md
+    tutorials/
+      tutorial-topic-01/
+        index.md  
+      tutorial-topic-n/
+        index.md
+    references/
+      reference-topic-01/
+        index.md
+      reference-topic-n/
+        index.md
+    index.md
 
 ```
 
-Additionally**, each new piece of content will have its own corresponding folder**, which contains a Markdown file with the content. For example, the explainer titled *"Introduction to Consensual Digital Forensics for the Defense of Human Rights"* is organized as follows in both English and Spanish:
+Each **new content will have its new corresponding folder**, where a file with the name 'index.md' will have the contents in MarkDown fomat. For example, the 'Explainer: Introduction to consented forensics for the defense of human rights' will look as follows in the folder structure:
 
 ```
 es/
-explainers/
-01-explainer-introduccion-forense-digital/
-01-explainer-introduccion-forense-digital.md
+  explainers/
+    01-explainer-introduction-digital-forensics/
+      index.md
+
 en/
-	explainers/
-		01-explainer-introduction-digital-forensics/
-			01-explainer-introduction-digital-forensics.md
+  explainers/
+    01-explainer-introduction-digital-forensics/
+      index.md
 	
 ```
+As you can see, **there are virtually no differences** except for the location of the files and folders. 
 
-Before starting a translation, we recommend exploring the content folders and reaching out with any questions. It is also advised to **review the style guidelines for file naming**, which are included as part of the repository’s contribution best practices.
-
-To contribute translations directly to the repository, please follow the instructions outlined in the *pull requests* or integration requests section.
+To contribute translations directly to the repository, please follow the instructions outlined in the [pull requests requests section](../../community/how-to-contribute/index.md#integrating-new-content-through-pull-requests).
