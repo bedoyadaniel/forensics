@@ -12,8 +12,7 @@ author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
-alternate: 
-  en: getting-started.html
+
 
 ---
 
@@ -57,7 +56,7 @@ Para la organización de este repositorio de documentación se utiliza el [marco
 
         Los explainers son materiales para el **aprendizaje de aspectos teóricos**, que brindan contexto sobre un tema específico. Permite comprender conceptos como parte de temas más amplios, y frecuentemente ayudan a aclarar el “porqué”.
 
-        [Índice de explainers](../explainers/){ .md-button }
+        [Índice de explainers](../../explainers/){ .md-button }
 
     === "Ejemplo"
 
@@ -74,7 +73,7 @@ Para la organización de este repositorio de documentación se utiliza el [marco
 
         **El objetivo de las guías how-to es poder ejecutar una tarea** a través de instrucciones paso a paso. Asume que quién sigue la guía ya posee las competencias necesarias para ejecutar las tareas, por lo que se enfoca en los pasos necesarios para llegar a un resultado, de forma correcta y en apego a las mejores prácticas. 
 
-        [Índice de guías how-to](../how-tos/){ .md-button }
+        [Índice de guías how-to](../../how-tos/){ .md-button }
 
     === "Ejemplo"
 
@@ -90,7 +89,7 @@ Para la organización de este repositorio de documentación se utiliza el [marco
 
         El tutorial tiene como objetivo el **aprendizaje de conocimientos prácticos** a través del desarrollo de una actividad. En otros términos es un **aprender haciendo**. Los tutoriales son actividades guiadas que permiten adquirir habilidades y conocimientos, y cuyo enfoque es el aprendizaje y no el completar una tarea.
 
-        [Índice de tutoriales](../tutorials/){ .md-button }
+        [Índice de tutoriales](../../tutorials/){ .md-button }
 
     === "Ejemplo"
 
@@ -105,7 +104,7 @@ Para la organización de este repositorio de documentación se utiliza el [marco
 
         Las referencias contienen **conocimiento teórico necesario para ejecutar una tarea** de forma confiable y sin errores. 
 
-        [Índice de referencias](../references/){ .md-button }
+        [Índice de referencias](../../references/){ .md-button }
 
     === "Ejemplo"
 
@@ -128,10 +127,10 @@ Conforme se agreguen contenidos, se trazarán rutas de aprendizaje que permitan 
 
 ## ¿Cómo colaborar con este repositorio? 
 
-Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. Se publican bajo [la licencia MVT](../comunidad/licencia.html), en aras de fortalecer el análisis forense consentido. 
+Los materiales publicados en este repositorio son parte de un **esfuerzo colectivo** en beneficio de la comunidad de práctica forense de la sociedad civil. Se publican bajo [la licencia MVT](../../community/license/), en aras de fortalecer el análisis forense consentido. 
 
-Agradecemos cualquier esfuerzo por personas y comunidades para participar, mejorar y contribuir al desarrollo de este recurso, incluyendo en acciones como **replicar, verificar, mejorar y extender los recursos y metodologías.** En nuestra sección de [comunidad](../comunidad/) se incluye más información sobre las diferentes formas de contribuir y establecer contacto. Para otro tipo de colaboraciones, dudas, comentarios o sugerencias se pone a disposición el correo electrónico [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
+Agradecemos cualquier esfuerzo por personas y comunidades para participar, mejorar y contribuir al desarrollo de este recurso, incluyendo en acciones como **replicar, verificar, mejorar y extender los recursos y metodologías.** En nuestra sección de [comunidad](../../community/) se incluye más información sobre las diferentes formas de contribuir y establecer contacto. Para otro tipo de colaboraciones, dudas, comentarios o sugerencias se pone a disposición el correo electrónico [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
 
-[Comunidad](../comunidad/){ .md-button }
+[Comunidad](../../community/){ .md-button }
 
 
