@@ -9,9 +9,9 @@ some_url:
 created: 2025-03-14
 comments: true
 authors:
-    name: Daniel Bedoya
-    name: MariaLab
-    name: Data Privacy Brasil
+    - Daniel Bedoya
+    - MariaLab
+    - Data Privacy Brasil
 
 ---
 

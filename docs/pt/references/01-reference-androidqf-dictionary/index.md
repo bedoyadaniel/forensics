@@ -9,9 +9,9 @@ some_url:
 created: 2025-06-16
 comments: true
 authors:
-    name: Jose Martinez
-    name: MariaLab
-    name: Data Privacy Brasil
+    - Jose Martinez
+    - MariaLab
+    - Data Privacy Brasil
 
 ---
 
