@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://bedoyadaniel.github.io/forensics/en/tutorials/01-tutorial-learning-androidqf/index.html">
       
       
+        <link rel="prev" href="../index.html">
+      
+      
+        <link rel="next" href="../../how-tos/index.html">
       
       
         
@@ -345,10 +349,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../index.html" class="md-tabs__link">
           
   
@@ -831,6 +837,8 @@
       
   
   
+    
+  
   
   
     
@@ -840,20 +848,25 @@
           
         
       
+        
+      
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -876,9 +889,14 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -889,6 +907,508 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exploring AndroidQF for data acquisition on Android
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="index.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exploring AndroidQF for data acquisition on Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-para-seguir-este-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Requisitos para seguir este tutorial
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acerca-de-androidqf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Acerca de AndroidQF
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acerca de AndroidQF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-hace-androidqf-a-nivel-tecnico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          ¿Qué hace AndroidQF a nivel técnico?
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-que-es-util-para-hacer-analisis-forense-en-sociedad-civil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          ¿Por qué es útil para hacer análisis forense en sociedad civil?
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revision-de-configuraciones-en-el-dispositivo-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Revisión de configuraciones en el dispositivo Android
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obteniendo-androidqf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Obteniendo AndroidQF
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Obteniendo AndroidQF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descarga-e-instalacion-de-androidqf-desde-su-repositorio-oficial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Descarga e instalación de AndroidQF desde su repositorio oficial
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternativa-compilacion-de-binario-de-androidqf-para-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Alternativa: Compilación de binario de AndroidQF para Linux
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploracion-y-ejecucion-androidqf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Exploración y ejecución AndroidQF
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploración y ejecución AndroidQF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exploracion-de-androidqf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Exploración de AndroidQF
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejecucion-de-androidqf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Ejecución de AndroidQF
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consideraciones-durante-la-ejecucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Consideraciones durante la ejecución
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modulos-ejecutados-durante-una-adquisicion-con-androidqf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Módulos ejecutados durante una adquisición con AndroidQF
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Módulos ejecutados durante una adquisición con AndroidQF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Collector
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Backup
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bugreport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Bugreport
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dumpsys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Dumpsys
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#env" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Env
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Files
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getprop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Getprop
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logcat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Logcat
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Logs
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Packages
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Processes
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#root-binaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Root binaries
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selinux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          SELinux
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Services
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Settings
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Temp
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificacion-de-la-extraccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Verificación de la extracción
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-del-tutorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Conclusión del tutorial
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
               
             
           </ul>
@@ -1624,6 +2144,46 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../index.html" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../index.html" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -1650,7 +2210,7 @@
 <h1 id="tutorial-explorando-androidqf-para-la-adquisicion-de-informacion-en-android">Tutorial - Explorando AndroidQF para la adquisición de información en Android</h1>
 <div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-08-18'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-08-18T00:00:00'>2025-08-18</time></span><span data-tippy-content data-tippy-raw='2025-08-18'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-08-18T00:00:00'>2025-08-18</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='José Martínez' data-tippy-content data-tippy-raw='<a href="https://socialtic.org/quienes-somos/" target="_blank" rel="noopener">José Martínez</a>'><span class='avatar-text'></span><img class="avatar" src="../../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
 
-<p>Este documento forma <strong>parte de un repositorio de documentación técnica</strong> que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para <strong>impulsar el análisis forense consentido en beneficio de la sociedad civil</strong>. Para organizar los contenidos, se utiliza el <a href="../../references/00-glossary/index.html#diataxis">marco de referencia de documentación técnica Diataxis</a>.</p>
+<p>Este documento forma <strong>parte de un repositorio de documentación técnica</strong> que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para <strong>impulsar el análisis forense consentido en beneficio de la sociedad civil</strong>. Para organizar los contenidos, se utiliza el <a data-preview="" href="../../references/00-glossary/index.html#diataxis">marco de referencia de documentación técnica Diataxis</a>.</p>
 <p>Este recurso en particular se enmarca dentro de la categoría de <a href="https://diataxis.fr/tutorials/">tutoriales</a>, y contiene actividades prácticas guiadas para familiarizarse con una extracción forense a través de la herramienta <a href="https://github.com/mvt-project/androidqf">AndroidQF</a>.</p>
 <p>Este tutorial tiene el <strong>objetivo de enseñar de forma prácrica</strong> de forma clara y accesible <strong>cómo usar AndroidQF para realizar extracciones forenses en dispositivos Android</strong>, destacando su utilidad en contextos de análisis de amenazas e incidentes que afectan a personas defensoras de derechos humanos, periodistas y organizaciones de la sociedad civil.</p>
 <div class="admonition tip">
@@ -1682,9 +2242,9 @@
 <h2 id="acerca-de-androidqf">Acerca de AndroidQF</h2>
 <p><a href="https://github.com/mvt-project/androidqf">AndroidQF</a> es una herramienta de software libre y de código abierto <strong>enfocada en la extracción forense de dispositivos Android</strong>. Forma parte del <a href="https://github.com/mvt-project/">MVT Project</a>, desarrollada inicialmente por <a href="https://nex.sx/">Claudio Guarnieri</a> y es mantenida actualmente por el <a href="https://securitylab.amnesty.org/es/">Laboratorio de Seguridad de Amnistía Internacional</a>. </p>
 <p>Su nombre viene del inglés <em>Android Quick Forensics</em> (Forense Rápido en Android), y su diseño y elaboración están enfocados en <strong>facilitar la adquisición de información para realizar análisis forenses consensuados</strong> en contexto  de la sociedad civil.</p>
-<p>AndroidQF es destacado dentro de los grupos técnicos que realizan extracciones como una <strong><a href="../../references/00-glossary/index.html#herramienta-portable">herramienta portable</a> de fácil uso, ya que puede ejecutarse en Windows, Linux y macOS</strong> mediante binarios precompilados.</p>
+<p>AndroidQF es destacado dentro de los grupos técnicos que realizan extracciones como una <strong><a data-preview="" href="../../references/00-glossary/index.html#herramienta-portable">herramienta portable</a> de fácil uso, ya que puede ejecutarse en Windows, Linux y macOS</strong> mediante binarios precompilados.</p>
 <h3 id="que-hace-androidqf-a-nivel-tecnico">¿Qué hace AndroidQF a nivel técnico?</h3>
-<p>Técnicamente, AndroidQF es un <a href="https://developer.mozilla.org/en-US/docs/Glossary/Wrapper">wrapper</a> forense sobre <a href="../../references/00-glossary/index.html#adb">ADB</a>, esto significa que automatiza comandos ADB empaquetados en <a href="https://github.com/mvt-project/androidqf/tree/main/modules">módulos</a> que ejecutan operaciones específicas y que siguen un flujo concreto. </p>
+<p>Técnicamente, AndroidQF es un <a href="https://developer.mozilla.org/en-US/docs/Glossary/Wrapper">wrapper</a> forense sobre <a data-preview="" href="../../references/00-glossary/index.html#adb">ADB</a>, esto significa que automatiza comandos ADB empaquetados en <a href="https://github.com/mvt-project/androidqf/tree/main/modules">módulos</a> que ejecutan operaciones específicas y que siguen un flujo concreto. </p>
 <p>Algunas de los componentes generales de AndroidQF son:</p>
 <ul>
 <li><strong>Interfaz de ejecución.</strong> Muestra una interfaz de línea de comandos con la que interactúa la persona y genera el registro de toda la actividad durante la ejecución.  </li>
@@ -1701,7 +2261,7 @@
 <li>La herramienta y su documentación entran en la categoría de <strong>software libre y código abierto</strong>, por lo que su código fuente es transparente y consultable por cualquier persona interesada en conocer cómo funciona la herramienta.</li>
 </ul>
 <p>La facilidad para conocer qué información forense fue extraída y cuál fue el proceso, permite brindar mayor transparencia y confianza al proceso, de forma tal que se reduzcan los riesgos técnicos y éticos del análisis forense consensuado.</p>
-<p>De forma complementaria a este tutorial, en este repositorio se encuentra un <a href="../../references/01-reference-androidqf-dictionary/">Diccionario de archivos generados por la herramienta androidqf</a>, un material de referencia que contiene <strong>información acerca de los archivos generados</strong>, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.</p>
+<p>De forma complementaria a este tutorial, en este repositorio se encuentra un <a data-preview="" href="../../references/01-reference-androidqf-dictionary/">Diccionario de archivos generados por la herramienta androidqf</a>, un material de referencia que contiene <strong>información acerca de los archivos generados</strong>, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.</p>
 <h2 id="revision-de-configuraciones-en-el-dispositivo-android">Revisión de configuraciones en el dispositivo Android</h2>
 <p>Para iniciar este tutorial, es importante <strong>confirmar las configuraciones necesarias en el dispositivo Android y del equipo de cómputo</strong>, esto asegurará que haya una buena transmisión de información entre dispositivos al realizar la extracción forense.</p>
 <p>Con la depuración USB activa, es momento de <strong>conectar el dispositivo móvil al equipo de cómputo</strong> a través del cable de transferencia de archivos. Cuando conectes el teléfono, selecciona <strong>permitir</strong> en el momento en que el dispositivo Android <strong>solicite permiso de acceso a los datos del dispositivo.</strong></p>
@@ -1727,7 +2287,7 @@
 <h2 id="obteniendo-androidqf">Obteniendo AndroidQF</h2>
 <p>En esta sección se detalla <strong>cómo descargar el binario y preparar tu computadora</strong> para ejecutar AndroidQF. Además, para profundizar en la puesta a punto del binario y <strong>explorar una alternativa</strong>, se muestran los pasos para compilar tu propio binario en un sistema Linux. </p>
 <h3 id="descarga-e-instalacion-de-androidqf-desde-su-repositorio-oficial">Descarga e instalación de AndroidQF desde su repositorio oficial</h3>
-<p>Para comenzar necesitas descargar el <a href="../../references/00-glossary/index.html#binario">binario</a> de AndroidQF desde su <a href="https://github.com/mvt-project/androidqf/releases/">repositorio oficial de GitHub</a>.</p>
+<p>Para comenzar necesitas descargar el <a data-preview="" href="../../references/00-glossary/index.html#binario">binario</a> de AndroidQF desde su <a href="https://github.com/mvt-project/androidqf/releases/">repositorio oficial de GitHub</a>.</p>
 <p>Es importante que consideres que la descarga correcta del binario <strong>depende de la arquitectura de tu procesador y de tu sistema operativo</strong>. A continuación te mostramos los detalles para sistemas operativos Windows y Linux/MacOS. </p>
 <div class="admonition info">
 <p class="admonition-title">Disponibilidad en Windows</p>
@@ -2138,9 +2698,9 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mvt-p
 </figure>
 </li>
 </ol>
-<p>Una vez que finalice el proceso de adquisición, la herramienta habrá capturado los archivos e informaciones clave necesarias para un <a href="../../references/00-glossary/index.html#triaje">triaje</a>. En la siguiente sección brindamos una descripción a profundidad de los módulos que se ejecutan. Si no deseas consultar información adicional sobre los módulos de AndroidQF, puedes dirigirte a la sección de <a href="#verificación-de-la-extracción">verificación</a>. </p>
+<p>Una vez que finalice el proceso de adquisición, la herramienta habrá capturado los archivos e informaciones clave necesarias para un <a data-preview="" href="../../references/00-glossary/index.html#triaje">triaje</a>. En la siguiente sección brindamos una descripción a profundidad de los módulos que se ejecutan. Si no deseas consultar información adicional sobre los módulos de AndroidQF, puedes dirigirte a la sección de <a href="#verificación-de-la-extracción">verificación</a>. </p>
 <h3 id="modulos-ejecutados-durante-una-adquisicion-con-androidqf">Módulos ejecutados durante una adquisición con AndroidQF</h3>
-<p>A continuación se describen los módulos que AndoridQF ejecuta desde que se inicia la adquisición hasta que esta termina, sin embargo, esta descripción únicamente tiene como objetivo ilustrar el proceso de la adquisición, si deseas profundizar en la construcción y estructura de cada módulo,  puedes consultar el <a href="../../references/01-reference-androidqf-dictionary/">Diccionario de archivos generados por AndroidQF</a>. </p>
+<p>A continuación se describen los módulos que AndoridQF ejecuta desde que se inicia la adquisición hasta que esta termina, sin embargo, esta descripción únicamente tiene como objetivo ilustrar el proceso de la adquisición, si deseas profundizar en la construcción y estructura de cada módulo,  puedes consultar el <a data-preview="" href="../../references/01-reference-androidqf-dictionary/">Diccionario de archivos generados por AndroidQF</a>. </p>
 <h4 id="collector">Collector</h4>
 <p>El <a href="https://github.com/mvt-project/androidqf/tree/main/android-collector">collector</a> es un binario que se carga y ejecuta directamente en el dispositivo Android automáticamente con <em>adb</em> al ejecutar AndroidQF. </p>
 <p>Este binario lee información del sistema del dispositivo en los directorios /proc, /sys, /system a través de los subcomandos <em>ps (</em>que recolecta la información de los procesos en ejecución) y <em>find</em> (que genera registros de archivos presentes en estos directorios con sus metadatos y hashes). Esta información es devuelta por el colector en formato JSON y viaja por adb shell al binario de AndroidQF que está siendo ejecutado en el equipo de cómputo para guardarse en la salida de la adquisición.</p>
@@ -2386,7 +2946,7 @@ grep -i "WARNING\|ERROR" command.log</code></p>
 <h2 id="conclusion-del-tutorial">Conclusión del tutorial</h2>
 <p>¡Felicidades! Has completado con éxito el proceso de adquisición forense con AndroidQF. Ejecutar una extracción de información forense no es una tarea sencilla, pero ahora dominas los pasos esenciales para realizar extracciones seguras, documentadas y con consentimiento. AndroidQF te permitirá como analista a apoyar en investigaciones desde tu laboratorio, organización o causa si eres  analista independiente sobre vigilancia, amenazas digitales y documentación de incidentes o ataques digitales. Tus nuevas habilidades son cruciales para reforzar el uso de estas herramientas en beneficio de muchas comunidad y la sociedad civil.</p>
 <p>Ahora que tienes la extracción, el siguiente paso es que puedas interpretar la información obtenida, pues una vez que una extracción fue realizada exitosamente es necesario comenzar un proceso de análisis de la información contenida en esta extracción.</p>
-<p>Para apoyarte en este análisis, este repositorio incluye un recurso de referencia clave: el <a href="../../references/01-reference-androidqf-dictionary/">Diccionario de archivos generados por AndroidQF</a>. Con este recurso, podrás:</p>
+<p>Para apoyarte en este análisis, este repositorio incluye un recurso de referencia clave: el <a data-preview="" href="../../references/01-reference-androidqf-dictionary/">Diccionario de archivos generados por AndroidQF</a>. Con este recurso, podrás:</p>
 <ul>
 <li>Identificar el contenido de cada archivo de salida.  </li>
 <li>Comprender por qué esta información es importante y cómo usarla en un análisis forense.  </li>
@@ -2470,6 +3030,44 @@ grep -i "WARNING\|ERROR" command.log</code></p>
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../how-tos/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: Home">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

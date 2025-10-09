@@ -840,6 +840,8 @@
           
         
       
+        
+      
     
     
     
@@ -876,6 +878,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
@@ -889,6 +896,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/01-tutorial-learning-androidqf/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exploring AndroidQF for data acquisition on Android
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -1658,7 +1693,7 @@
 <p>In the context of <strong>digital forensics</strong>, especially in <a href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html">log-based investigations</a> using tools like AndroidQF, <strong>ADB allows direct communication with the device</strong>. It is useful when there is <strong>physical access to the device</strong> and when retrieving information through <strong>native commands</strong>, without relying on additional tools.</p>
 <p>You can read more about <a href="https://developer.android.com/tools/adb?hl=es-419">ADB on the Android Developers Website</a>.  </p>
 <h3 id="adb-generated-backup">ADB-Generated Backup</h3>
-<p>One of the console commands in <a href="#adb">ADB</a> allows for creating a full backup of the device, including applications and some configurations. This is usually done with the <code>adb backup</code> command or via tools like AndroidQF. When executed, the device will prompt for a password to encrypt the information.</p>
+<p>One of the console commands in <a data-preview="" href="#adb">ADB</a> allows for creating a full backup of the device, including applications and some configurations. This is usually done with the <code>adb backup</code> command or via tools like AndroidQF. When executed, the device will prompt for a password to encrypt the information.</p>
 <h3 id="acquisition">Acquisition</h3>
 <p>This refers to a stage in forensic investigation where the forensic analyst must determine the best method to collect digital evidence, and apply it to gather the relevant artifacts. </p>
 <h3 id="androidqf">AndroidQF</h3>
@@ -1673,7 +1708,7 @@
 <h3 id="bugreport">Bugreport</h3>
 <p>A native command-line tool on Android, available via the graphical interface or ADB shell. It generates a bug report containing diagnostic logs, including outputs from logcat, dumpsys, and dumpstate. It is packaged in a <code>.zip</code> file with a structured folder system containing error logs, memory usage, system calls, network and device information, among others.</p>
 <h3 id="chain-of-custody">Chain of custody</h3>
-<p>The process of clearly documenting who accessed the evidence and how it was handled is known as the <strong>chain of custody</strong>. Forensic evidence can be manipulated or destroyed during investigation, so the analyst must demonstrate the <a href="#data-integrity">integrity of the evidence</a>. If this cannot be properly demonstrated, the evidence may <strong>not be admissible in legal proceedings</strong>, or may be challenged and dismissed by other experts.</p>
+<p>The process of clearly documenting who accessed the evidence and how it was handled is known as the <strong>chain of custody</strong>. Forensic evidence can be manipulated or destroyed during investigation, so the analyst must demonstrate the <a data-preview="" href="#data-integrity">integrity of the evidence</a>. If this cannot be properly demonstrated, the evidence may <strong>not be admissible in legal proceedings</strong>, or may be challenged and dismissed by other experts.</p>
 <h3 id="cve">CVE</h3>
 <p>A program and reference method for reporting, classifying, and publishing security vulnerabilities. Each vulnerability is assigned a unique CVE ID, such as <code>CVE-2014-0160</code>.</p>
 <p>Read the <a href="https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures">wikipedia page here</a>. </p>
@@ -1727,7 +1762,7 @@
 <p><em>It was developed and released by the Amnesty International Security Lab in July 2021 as part of the Pegasus Project, along with a forensic methodology. It continues to be maintained by Amnesty International and other contributors.</em></p>
 <p><em>This documentation provides instructions on how to install and run mvt-ios and mvt-android commands, as well as guidance on interpreting the extracted results.</em></p>
 <h3 id="n-day">n-day</h3>
-<p>n-day refers to a type of <a href="#vulnerability">vulnerability</a> that is already known but not yet patched in all affected systems. In some cases, official patches or mitigations may exist but have not yet been applied</p>
+<p>n-day refers to a type of <a data-preview="" href="#vulnerability">vulnerability</a> that is already known but not yet patched in all affected systems. In some cases, official patches or mitigations may exist but have not yet been applied</p>
 <h3 id="phishing">Phishing</h3>
 <p>Phishing is a technique based on impersonating or falsifying information to prompt the user to take an action — such as clicking on a link, opening an infected file, connecting to a fake network or system, or entering information on fake websites. The objective is usually to steal information or infect a device or information system.</p>
 <ul>
@@ -1769,7 +1804,7 @@
 <h3 id="zero-click">Zero Click</h3>
 <p>Refers to an attack that <strong>requires no user interaction for malware to be installed</strong>. These attacks are typically highly sophisticated and expensive, often requiring the chaining of multiple vulnerabilities to succeed.</p>
 <h3 id="zero-day">Zero Day</h3>
-<p>A type of attack that exploits a <a href="#vulnerability">vulnerability</a> that is not yet known — not even by the device manufacturer. As a result, there are no patches or fixes available.</p>
+<p>A type of attack that exploits a <a data-preview="" href="#vulnerability">vulnerability</a> that is not yet known — not even by the device manufacturer. As a result, there are no patches or fixes available.</p>
 <p>See the <a href="https://es.wikipedia.org/wiki/Ataque_de_d%C3%ADa_cero">Wikipedia page for "Zero-day attack"</a>.</p>
 
 
