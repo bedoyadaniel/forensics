@@ -207,7 +207,9 @@ plugins:
               - Licencia de uso: 'community/license/index.md'
               - Código de conducta: 'community/code-of-conduct/index.md'
               - Limitación de responsabilidades: 'community/limitation-of-responsibility/index.md'              
-
+  - redirects:
+      redirect_maps:
+          'iniciar.md': 'es/home/getting-started/index.md'
 
 
 markdown_extensions:
