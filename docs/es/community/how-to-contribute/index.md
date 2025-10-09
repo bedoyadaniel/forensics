@@ -28,21 +28,21 @@ Si encuentras algún error, o tienes una propuesta de mejora **[puedes iniciar u
 
 A la hora de levantar un issue, te solicitamos utilizar el formato descrito en el documento [*issue template*](https://github.com/Socialtic/forensics/blob/main/.github/ISSUE_TEMPLATE/official_template.md), que se cargará de forma automática al intentar abrir un nuevo *issue* en el repositorio, tal y como se muestra en la **imagen 1**.
 
-![Tab de issues del repositorio forensics, para generar un nuevo issue utilizar el botón de new issue que se encuentra en la parte superior derecha de la interfaz web de GitHub.](/comunidad/assets/img/community-new-issue.jpg "imagen 1"){ loading=lazy }
+![Tab de issues del repositorio forensics, para generar un nuevo issue utilizar el botón de new issue que se encuentra en la parte superior derecha de la interfaz web de GitHub.](../../../assets/community/community-new-issue.jpg "imagen 1"){ loading=lazy }
 /// caption
 **imagen 1.** Tab de issues del repositorio forensics, para generar un nuevo issue utilizar el botón de new issue que se encuentra en la parte superior derecha de la interfaz web de GitHub.
 ///
 
 Al dar *click* en el botón, se presentará la opción para seleccionar un formato. Seleccionar la opción de *issue template*, tal y como se muestra en la **imgaen 2.**
 
-![Pop-up para seleccionar una plantilla, dentro del tab de *issues* del repositorio forensics. Se despliega al hacer click en el botón de nuevo *issue.* ](/comunidad/assets/img/community-new-issue-pop-up.jpg "imagen 2")
+![Pop-up para seleccionar una plantilla, dentro del tab de *issues* del repositorio forensics. Se despliega al hacer click en el botón de nuevo *issue.* ](../../../assets/community/community-new-issue-pop-up.jpg "imagen 2")
 /// caption
 **imagen 2.** Pop-up para seleccionar una plantilla, dentro del tab de *issues* del repositorio forensics. Se despliega al hacer click en el botón de nuevo issue.
 ///
 
 Al utilizar la opción de un formato predefinido como el *issue template* se abrirá una interfaz desde donde se puede editar el texto del tema a reportar utilizando el formato recomendado. Recomendamos **utilizar el *template* pre-cargado y eliminar** cualquier sección que no sea relevante, tal y como se muestra en la **imagen 3.**
 
-![Ejemplo de reporte de un *issue* a través de la interfaz gráfico de GitHub en el repositorio forensics.](/comunidad/assets/img/community-new-template.jpg "imagen 3") 
+![Ejemplo de reporte de un *issue* a través de la interfaz gráfico de GitHub en el repositorio forensics.](../../../assets/community/community-new-template.jpg "imagen 3") 
 /// caption
 **imagen 3.** Ejemplo de reporte de un *issue* a través de la interfaz gráfico de GitHub en el repositorio forensics.
 ///
@@ -57,7 +57,7 @@ Para **proponer una integración de cambios al repositorio** puedes seguir los s
 !!! tip "Recomendación"
     Puedes hacerlo desde el navegador web en [github.com](http://github.com), utilizando el **botón “Fork”** en la parte superior derecha del [repositorio principal](https://github.com/Socialtic/forensics), tal y como se muestra en la **imagen 4.**
 
-![Interfaz de GitHub para el repositorio forensics, donde se resalta la opción para bifurcar el repositorio](/comunidad/assets/img/community-fork-tab.jpg "imagen 4")
+![Interfaz de GitHub para el repositorio forensics, donde se resalta la opción para bifurcar el repositorio](../../../assets/community/community-fork-tab.jpg "imagen 4")
 /// caption
 **imagen 4.** Interfaz de GitHub para el repositorio forensics, donde se resalta la opción para bifurcar el repositorio.
 ///
@@ -69,14 +69,14 @@ Para **proponer una integración de cambios al repositorio** puedes seguir los s
     - Usa **nombres descriptivos** para tus ramas, como “fix-guia-acquisition”, “add-tutorial-analyzing-mvt-bugreport  
     - Puedes hacerlo en github dando click a la sección de *“branches”* como se muestra en la **imagen 5**.   
 
-![Interfaz de GitHub para el fork del repositorio forensics, donde se resalta la sección para consultar las ramas o branches.](/comunidad/assets/img/community-fork-branch-tab.jpg "imagen 5")  
+![Interfaz de GitHub para el fork del repositorio forensics, donde se resalta la sección para consultar las ramas o branches.](../../../assets/community/community-fork-branch-tab.jpg "imagen 5")  
 /// caption
 **imagen 5.** Interfaz de GitHub para el fork del repositorio forensics, donde se resalta la sección para consultar las ramas o branches.
 ///
 
 Desde la sección de *branches*, puedes hacer una nueva rama o *branch* **dentro de tu copia o *fork* del repositorio**, tal y como se muestra en la **imagen 6**. 
 
-![Interfaz de GitHub para el *fork* del repositorio forensics en la sección de branches, donde se resalta la opción para crear una nueva rama.](/comunidad/assets/img/community-fork-new-branch.jpg "imagen 6")  
+![Interfaz de GitHub para el *fork* del repositorio forensics en la sección de branches, donde se resalta la opción para crear una nueva rama.](../../../assets/community/community-fork-new-branch.jpg "imagen 6")  
 /// caption
 **imagen 6** Interfaz de GitHub para el *fork* del repositorio forensics en la sección de branches, donde se resalta la opción para crear una nueva rama.
 ///
@@ -87,7 +87,7 @@ Desde la sección de *branches*, puedes hacer una nueva rama o *branch* **dentro
     - Sigue las recomendaciones oficiales de [Git Guides para hacer *commits*](https://github.com/git-guides/git-commit)  
     - Cuando hagas cambios en algún documento a través de la interfaz web, GitHub confirmará la rama o *branch* a la cual se le deben aplicar los cambios. Utiliza la rama que creaste. 
 
-![Interfaz de GitHub para el repositorio forensics, donde se muestra el formulario a completar cuando se realiza un cambio o commit.](/comunidad/assets/img/community-fork-commit.jpg "imagen 7")
+![Interfaz de GitHub para el repositorio forensics, donde se muestra el formulario a completar cuando se realiza un cambio o commit.](../../../assets/community/community-fork-commit.jpg "imagen 7")
 /// caption
 **imagen 7.** Interfaz de GitHub para el repositorio forensics, donde se muestra el formulario a completar cuando se realiza un cambio o commit.
 ///
@@ -100,7 +100,7 @@ Desde la sección de *branches*, puedes hacer una nueva rama o *branch* **dentro
     - Puedes enviar la solicitud utilizando la interfaz web de Github, y dando click en la opción que se presenta para hacer una solicitud de integración luego de hacer cambios en una rama, tal y como se muestra en la **imagen 8.** 
 
 
-![Interfaz de GitHub para un fork del repositorio forensics, donde se muestra la opción para comparar y enviar una solicitud de integración al repositorio principal.](/comunidad/assets/img/community-fork-compare-pull-request.jpg "imagen 8")
+![Interfaz de GitHub para un fork del repositorio forensics, donde se muestra la opción para comparar y enviar una solicitud de integración al repositorio principal.](../../../assets/community/community-fork-compare-pull-request.jpg "imagen 8")
 /// caption
 **imagen 8.** Interfaz de GitHub para un fork del repositorio forensics, donde se muestra la opción para comparar y enviar una solicitud de integración al repositorio principal.
 ///
@@ -108,14 +108,14 @@ Desde la sección de *branches*, puedes hacer una nueva rama o *branch* **dentro
 La **imagen 9** muestra los detalles de una solicitud de integración, utilizando el formato pre-establecido. 
 
 
-![Interfaz de GitHub para un fork del repositorio forensics, donde se muestra el detalle de una solicitud de integración o pull request. ](/comunidad/assets/img/community-pull-request-template.jpg "imagen 9")
+![Interfaz de GitHub para un fork del repositorio forensics, donde se muestra el detalle de una solicitud de integración o pull request. ](../../../assets/community/community-pull-request-template.jpg "imagen 9")
 /// caption
 **imagen 9.** Interfaz de GitHub para un fork del repositorio forensics, donde se muestra el detalle de una solicitud de integración o pull request. 
 ///
 
 Una vez que tu solicitud de integración sea **revisada y aceptada**, se ve verá como la que se muestra en la **imagen 10**. Esto también significa que tus cambios fueron **aplicados directamente al repositorio principal** publicado en forensics.socialtic.org. 
 
-![Interfaz de GitHub para el repositorio forensics, donde se muestra la revisión e integración de un pull request.](/comunidad/assets/img/community-pull-request-example.jpg "imagen 10. ")
+![Interfaz de GitHub para el repositorio forensics, donde se muestra la revisión e integración de un pull request.](../../../assets/community/community-pull-request-example.jpg "imagen 10. ")
 /// caption
 **imagen 10.** Interfaz de GitHub para el repositorio forensics, donde se muestra la revisión e integración de un pull request.
 ///
