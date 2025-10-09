@@ -18,15 +18,15 @@ author:
 
 # Diccionario de archivos generados por la herramienta androidqf 
 
-Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../../references/00-glossary.md#diataxis/).
+Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../../references/00-glossary/index.md#diataxis/).
 
-Este recurso en particular se enmarca dentro de la categoría de [referencias](https://diataxis.fr/reference), y contiene información sobre los archivos generados por [androidqf](../../references/00-glossary.md#androidqf) al realizar una extracción forense de un dispositivo Android, esto con el objetivo de que una persona analista **conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.**
+Este recurso en particular se enmarca dentro de la categoría de [referencias](https://diataxis.fr/reference), y contiene información sobre los archivos generados por [androidqf](../../references/00-glossary/index.md#androidqf) al realizar una extracción forense de un dispositivo Android, esto con el objetivo de que una persona analista **conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.**
 
 Este recurso se actualizó por última vez el 16 de Junio del 2025 y para la recopilación de la información se tomó como base la [versión 1.7.1](https://github.com/mvt-project/androidqf/tree/v1.7.1).
 
 [Androidqf](https://github.com/mvt-project/androidqf) es una herramienta de extracción forense que pertenece al [MVT Project](https://github.com/mvt-project/). Es mantenida actualmente por el [Laboratorio de Seguridad de Amnistía Internacional](https://securitylab.amnesty.org/es/).
 
-Su nombre viene de la frase en inglés *Android Quick Forensics*. Se caracteriza por ser una **herramienta portable**, es decir se puede ejecutar en Windows, GNU/Linux y Mac OS mediante un binario precompilado, lo que simplifica la [adquisición de información forense](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#etapa-2-recoleccion-y-adquisicion) de dispositivos Android. 
+Su nombre viene de la frase en inglés *Android Quick Forensics*. Se caracteriza por ser una **herramienta portable**, es decir se puede ejecutar en Windows, GNU/Linux y Mac OS mediante un binario precompilado, lo que simplifica la [adquisición de información forense](../../explainers/01-explainer-introduction-digital-forensics/index.md#cómo-se-aplica-la-forense-digital-en-la-práctica-de-defensa-de-derechos-humanos) de dispositivos Android. 
 
 La información generada por androidqf se puede agrupar en 5 categorías principales:
 
@@ -57,7 +57,7 @@ Este archivo se encuentra en formato *json* y registra información relacionada 
 
 **¿Por qué es importante?**
 
-Esta información permite conocer información básica de la extracción y obtener identificadores únicos del sistema que facilitan el [proceso de custodia de la extracción  forense](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#cadena-de-custodia). 
+Esta información permite conocer información básica de la extracción y obtener identificadores únicos del sistema que facilitan el [proceso de custodia de la extracción  forense](../../explainers/01-explainer-introduction-digital-forensics/index.md#cadena-de-custodia). 
 
 **Ejemplo:**
 
@@ -1189,6 +1189,6 @@ Este archivo tiene relevancia para identificar archivos de interés en una inves
 
 ## Comentarios
 
-¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
+¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../community/code-of-conduct/). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
 
 

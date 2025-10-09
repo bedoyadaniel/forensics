@@ -19,7 +19,7 @@ author:
 
 # Tutorial - Explorando AndroidQF para la adquisición de información en Android
 
-Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../../references/00-glossary.md#diataxis).
+Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../../references/00-glossary/index.md#diataxis).
 
 Este recurso en particular se enmarca dentro de la categoría de [tutoriales](https://diataxis.fr/tutorials/), y contiene actividades prácticas guiadas para familiarizarse con una extracción forense a través de la herramienta [AndroidQF](https://github.com/mvt-project/androidqf).
 
@@ -28,7 +28,7 @@ Este tutorial tiene el **objetivo de enseñar de forma prácrica** de forma clar
 
 !!! tip "¿Cómo seguir este tutorial?"
 
-    Este tutorial pretende ser un **recurso para el aprendizaje**, por lo que algunos conceptos se exploran a profundidad, mostrando también alternativas y posibilidades. Si buscas una guía concisa, con instrucciones paso a paso para completar una extracción, consulta nuestra [guía de adquisición con androidqf.](../../how-tos/04-como-extraer-mediante-androidqf/04-como-extraer-mediante-androidqf.md)
+    Este tutorial pretende ser un **recurso para el aprendizaje**, por lo que algunos conceptos se exploran a profundidad, mostrando también alternativas y posibilidades. Si buscas una guía concisa, con instrucciones paso a paso para completar una extracción, consulta nuestra [guía de adquisición con androidqf.](../../how-tos/04-how-to-extract-with-androidqf/)
     
     Se recomienda destinar un espacio de tiempo de al menos 90 minutos para la exploración inicial, es especial si no se cuenta con experiencia previa en la herramienta. 
 
@@ -40,7 +40,7 @@ Para poder completar este tutorial es **indispensable** contar con  los siguient
 
     !!! question "¿Cómo habilitar la depuración por USB?"
 
-        Si el dispositivo no tiene activa esta configuración, es necesario que primero sigas los pasos sobre [¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?](../../how-tos/02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md) y posteriormente, seguir los pasos sobre [¿Cómo habilitar ADB (depuración por USB) en diferentes dispositivos Android?](../../how-tos/03-como-habilitar-adb/03-como-habilitar-adb.md). 
+        Si el dispositivo no tiene activa esta configuración, es necesario que primero sigas los pasos sobre [¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?](../../how-tos/02-how-to-enable-developer-options/) y posteriormente, seguir los pasos sobre [¿Cómo habilitar ADB (depuración por USB) en diferentes dispositivos Android?](../../how-tos/03-how-to-enable-adb/). 
 
 * Un **equipo de cómputo** con un sistema operativo Windows, Linux o macOS reciente.
 
@@ -56,11 +56,11 @@ Para poder completar este tutorial es **indispensable** contar con  los siguient
 
 Su nombre viene del inglés *Android Quick Forensics* (Forense Rápido en Android), y su diseño y elaboración están enfocados en **facilitar la adquisición de información para realizar análisis forenses consensuados** en contexto  de la sociedad civil.
 
-AndroidQF es destacado dentro de los grupos técnicos que realizan extracciones como una **[herramienta portable](../../references/00-glossary.md#herramienta-portable) de fácil uso, ya que puede ejecutarse en Windows, Linux y macOS** mediante binarios precompilados.
+AndroidQF es destacado dentro de los grupos técnicos que realizan extracciones como una **[herramienta portable](../../references/00-glossary/index.md#herramienta-portable) de fácil uso, ya que puede ejecutarse en Windows, Linux y macOS** mediante binarios precompilados.
 
 ### ¿Qué hace AndroidQF a nivel técnico?
 
-Técnicamente, AndroidQF es un [wrapper](https://developer.mozilla.org/en-US/docs/Glossary/Wrapper) forense sobre [ADB](../../references/00-glossary.md#adb), esto significa que automatiza comandos ADB empaquetados en [módulos](https://github.com/mvt-project/androidqf/tree/main/modules) que ejecutan operaciones específicas y que siguen un flujo concreto. 
+Técnicamente, AndroidQF es un [wrapper](https://developer.mozilla.org/en-US/docs/Glossary/Wrapper) forense sobre [ADB](../../references/00-glossary/index.md#adb), esto significa que automatiza comandos ADB empaquetados en [módulos](https://github.com/mvt-project/androidqf/tree/main/modules) que ejecutan operaciones específicas y que siguen un flujo concreto. 
 
 Algunas de los componentes generales de AndroidQF son:
 
@@ -81,7 +81,7 @@ Esto la convierte en una herramienta accesible y confiable para investigadores, 
 
 La facilidad para conocer qué información forense fue extraída y cuál fue el proceso, permite brindar mayor transparencia y confianza al proceso, de forma tal que se reduzcan los riesgos técnicos y éticos del análisis forense consensuado.
 
-De forma complementaria a este tutorial, en este repositorio se encuentra un [Diccionario de archivos generados por la herramienta androidqf](https://forensics.socialtic.org/references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html), un material de referencia que contiene **información acerca de los archivos generados**, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.
+De forma complementaria a este tutorial, en este repositorio se encuentra un [Diccionario de archivos generados por la herramienta androidqf](../../references/01-reference-androidqf-dictionary/), un material de referencia que contiene **información acerca de los archivos generados**, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.
 
 ## Revisión de configuraciones en el dispositivo Android
 
@@ -89,19 +89,19 @@ Para iniciar este tutorial, es importante **confirmar las configuraciones necesa
 
 Con la depuración USB activa, es momento de **conectar el dispositivo móvil al equipo de cómputo** a través del cable de transferencia de archivos. Cuando conectes el teléfono, selecciona **permitir** en el momento en que el dispositivo Android **solicite permiso de acceso a los datos del dispositivo.**
 
-![ Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.](assets/01-captura-android-permisos-datos.png "imagen 1")
+![ Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.](../../../assets/01-tutorial/01-captura-android-permisos-datos.png "imagen 1")
 /// caption
 **Imagen 1**. Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.
 ///
     
 Posteriormente verifica en el panel de notificaciones que el dispositivo se encuentra conectado en modo **USB para transferir archivos** (ver imagen 2), para ello, da clic en la notificación de Sistema Android Y selecciona *USB para Transferir archivos/Android Auto* )ver imagen 3). Si no se observa ninguna notificación, puedes revisar las **configuraciones de usb** en el menú de ajustes del dispositivo, verificando que la opción de _transferencia de archivos_ se encuentra habilitada. 
 
-![ Captura de pantalla del panel de notificaciones en dispositivo móvil android.](assets/02-captura-android-panel-notificaciones.png "imagen 1")
+![ Captura de pantalla del panel de notificaciones en dispositivo móvil android.](../../../assets/01-tutorial/02-captura-android-panel-notificaciones.png "imagen 1")
 /// caption
 **Imagen 2**. Captura de pantalla del panel de notificaciones en dispositivo móvil android.
 ///
 
-![  Captura de pantalla de dispositivo móvil android con los ajustes de uso USB para transferir archivos](assets/03-captura-android-ajustes-usb.png "imagen 1")
+![  Captura de pantalla de dispositivo móvil android con los ajustes de uso USB para transferir archivos](../../../assets/01-tutorial/03-captura-android-ajustes-usb.png "imagen 1")
 /// caption
 **Imagen 3**. Captura de pantalla de dispositivo móvil Android con los ajustes de uso USB para transferir archivos.
 ///
@@ -112,7 +112,7 @@ En esta sección se detalla **cómo descargar el binario y preparar tu computado
 
 ### Descarga e instalación de AndroidQF desde su repositorio oficial
 
-Para comenzar necesitas descargar el [binario](../../references/00-glossary.md#binario) de AndroidQF desde su [repositorio oficial de GitHub](https://github.com/mvt-project/androidqf/releases/).
+Para comenzar necesitas descargar el [binario](../../references/00-glossary/index.md#binario) de AndroidQF desde su [repositorio oficial de GitHub](https://github.com/mvt-project/androidqf/releases/).
 
 Es importante que consideres que la descarga correcta del binario **depende de la arquitectura de tu procesador y de tu sistema operativo**. A continuación te mostramos los detalles para sistemas operativos Windows y Linux/MacOS. 
 
@@ -126,28 +126,28 @@ Es importante que consideres que la descarga correcta del binario **depende de l
 
     En Linux y macOS: Abre la terminal y escribe *uname \-m*. La salida de este comando te dirá la arquitectura de tu procesador (x86\_64 o arm64). La imagen 4 muestra un ejemplo en un sistema Linux. 
 
-    ![  Captura de pantalla de terminal de Linux con la salida del comando *uname \-m.*](assets/04-captura-linux-comando-uname.png "imagen 1")
+    ![  Captura de pantalla de terminal de Linux con la salida del comando *uname \-m.*](../../../assets/01-tutorial/04-captura-linux-comando-uname.png "imagen 1")
     /// caption
     **Imagen 4**. Captura de pantalla de terminal de Linux con la salida del comando *uname \-m.*
     ///
 
     Dependiendo de esta salida, descarga el binario correspondiente en la lista de descargas del [repositorio oficial de AndroidQF](https://github.com/mvt-project/androidqf/releases/). La imagen 5 muestra la lista de descargas. 
 
-    ![  Captura de pantalla de lista de descargas de androidqf en el repositorio oficial de github.](assets/05-captura-pantalla-repositorio-descargas-androidqf.png "imagen 1")
+    ![  Captura de pantalla de lista de descargas de androidqf en el repositorio oficial de github.](../../../assets/01-tutorial/05-captura-pantalla-repositorio-descargas-androidqf.png "imagen 1")
     /// caption
     **Imagen 5**. Captura de pantalla de lista de descargas de androidqf en el repositorio oficial de github.
     ///
 
     En la imagen 6 se muestra el archivo descargado, en este caso particular la versión 1.7.0. La versión podría variar conforme se realicen actualizaciones a la herramienta. 
 
-    ![  Imagen de referencia de descarga de binario de AndroidQF en su versión 1.7.0 para sistema Linux amd64](assets/06-captura-pantalla-descarga-binario-androidqf.png "imagen 1")
+    ![  Imagen de referencia de descarga de binario de AndroidQF en su versión 1.7.0 para sistema Linux amd64](../../../assets/01-tutorial/06-captura-pantalla-descarga-binario-androidqf.png "imagen 1")
     /// caption
     **Imagen 6**. Imagen de referencia de descarga de binario de AndroidQF en su versión 1.7.0 para sistema Linux amd64
     ///
 
     Opcionalmente, puedes mover el binario descargado a una carpeta exclusiva de la herramienta o a una carpeta donde realices extracciones forenses, aunque puedes mantener el binario en la carpeta de descargas.   
 
-    ![  Captura de pantalla de terminal de linux con ejecución de comando *mv* para mover el binario descargado](assets/07-captura-linux-comando-mv.png "imagen 1")
+    ![  Captura de pantalla de terminal de linux con ejecución de comando *mv* para mover el binario descargado](../../../assets/01-tutorial/07-captura-linux-comando-mv.png "imagen 1")
     /// caption
     **Imagen 7**. Captura de pantalla de terminal de linux con ejecución de comando *mv* para mover el binario descargado
     ///
@@ -158,7 +158,7 @@ Es importante que consideres que la descarga correcta del binario **depende de l
     chmod +x ./androidqf-XXX
     ```
 
-    ![ Captura de pantalla de terminal de linux con ejecución de comando *chmod \+x* para agregar permisos de ejecución al binario](assets/08-captura-windows-explorador-binario-andoridqf.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux con ejecución de comando *chmod \+x* para agregar permisos de ejecución al binario](../../../assets/01-tutorial/08-captura-windows-explorador-binario-andoridqf.png "imagen 1")
     /// caption
     **Imagen 8**. Captura de pantalla de terminal de linux con ejecución de comando *chmod \+x* para agregar permisos de ejecución al binario
     ///
@@ -169,7 +169,7 @@ Es importante que consideres que la descarga correcta del binario **depende de l
     Como se indicó anteriormente, para sistemas operativos Windows **solamente existe un binario disponible**, que llevará un nombre similar a _androidqf_v1.7.0_windows_amd64_signed.exe_. Para obtener AndroidQF debes descargar este archivo. En la imagen 9 mostramos una carpeta con el binario (archivo _.exe_) descargado. 
     
 
-    ![ Captura de pantalla del explorador de archivos de Windows con la carpeta del binario en la carpeta donde se guardará la extracción forense.](assets/09-captura-linux-permisos-ejecucion-andoridqf.png "imagen 1")
+    ![ Captura de pantalla del explorador de archivos de Windows con la carpeta del binario en la carpeta donde se guardará la extracción forense.](../../../assets/01-tutorial/09-captura-linux-permisos-ejecucion-andoridqf.png "imagen 1")
     /// caption
     **Imagen 9**. Captura de pantalla del explorador de archivos de Windows con la carpeta del binario en la carpeta donde se guardará la extracción forense.
     ///
@@ -251,7 +251,7 @@ make collector
 
 Espera hasta que termine la construcción del collector, tal y como se muestra en la figura 10. .
 
-![ Captura de pantalla de terminal de linux con ejecución de comando build collector.](assets/10-captura-linux-make-collector.png "imagen 1")
+![ Captura de pantalla de terminal de linux con ejecución de comando build collector.](../../../assets/01-tutorial/10-captura-linux-make-collector.png "imagen 1")
 /// caption
 **Imagen 10**. Captura de pantalla de terminal de linux con ejecución de comando *build collector.*
 ///
@@ -262,7 +262,7 @@ Posteriormente se compila la versión de AndroidQF para Linux utilizando la inst
 make linux
 ```
 
-![ Captura de pantalla de terminal de linux con ejecución de comando *make linux.*](assets/11-captura-linux-builder-done.png "imagen 1")
+![ Captura de pantalla de terminal de linux con ejecución de comando *make linux.*](../../../assets/01-tutorial/11-captura-linux-builder-done.png "imagen 1")
 /// caption
 **Imagen 11**. Captura de pantalla de terminal de linux con ejecución de comando *make linux.*
 ///
@@ -273,7 +273,7 @@ Al finalizar la compilación se generan los binarios dentro de la carpeta *build
 ls build/
 ```
 
-![ Captura de pantalla de terminal de linux con ejecución de comando ls build/.](assets/12-captura-linux-ls-build.png "imagen 1")
+![ Captura de pantalla de terminal de linux con ejecución de comando ls build/.](../../../assets/01-tutorial/12-captura-linux-ls-build.png "imagen 1")
 /// caption
 **Imagen 12**. Captura de pantalla de terminal de linux con ejecución de comando *ls build/.*
 ///
@@ -297,7 +297,7 @@ AndroidQF integra una lista completa de parámetros disponibles a través de su 
 
     Ejemplo en Linux:
 
-    ![ Captura de pantalla de terminal de linux con ejecución de parámetro *–help*.](assets/13-captura-androidqf-help.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux con ejecución de parámetro *–help*.](../../../assets/01-tutorial/13-captura-androidqf-help.png "imagen 1")
     /// caption
     **Imagen 13**. Captura de pantalla de terminal de Linux con ejecución de parámetro *–help*.
     ///
@@ -308,14 +308,14 @@ AndroidQF integra una lista completa de parámetros disponibles a través de su 
 
     En la carpeta donde tienes guardado el binario de AndroidQF da clic derecho y selecciona opción Abrir en terminal, tal y como se muestra en la imagen 14:
 
-    ![ Captura de pantalla de carpeta de Windows con el menú derecho activo y la opción *abrir en terminal* identificado](assets/14-captura-windows-abrir-terminal.png "imagen 1")
+    ![ Captura de pantalla de carpeta de Windows con el menú derecho activo y la opción *abrir en terminal* identificado](../../../assets/01-tutorial/14-captura-windows-abrir-terminal.png "imagen 1")
     /// caption
     **Imagen 14**. Captura de pantalla de carpeta de Windows con el menú derecho activo y la opción *abrir en terminal* identificado
     ///    
 
     Una vez en la termina, puedes ejecutar el comando con el parámetro *–help*, tal y como se muestra en la imagen 15.   
 
-    ![ Captura de pantalla de terminal de Windows Powershell con el parámetro *–help* ejecutado.](assets/15-captura-windows-androidqf-help.png "imagen 1")
+    ![ Captura de pantalla de terminal de Windows Powershell con el parámetro *–help* ejecutado.](../../../assets/01-tutorial/15-captura-windows-androidqf-help.png "imagen 1")
     /// caption
     **Imagen 15**. Captura de pantalla de terminal de Windows Powershell con el parámetro *–help* ejecutado.
     ///
@@ -336,7 +336,7 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
 
     El resultado se muestra en la imagen 16. 
 
-    ![ Captura de pantalla de terminal de linux con ejecución de comando *adb devices.*](assets/16-captura-linux-adb-devices.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux con ejecución de comando *adb devices.*](../../../assets/01-tutorial/16-captura-linux-adb-devices.png "imagen 1")
     /// caption
     **Imagen 16**. Captura de pantalla de terminal de linux con ejecución de comando *adb devices.*
     ///
@@ -351,7 +351,7 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
     
     El resultado se muestra en la imagen 17. 
 
-    ![ Captura de pantalla de terminal de Windows PowerShell con ejecución del ejecutable *adb* y el parámetro *devices.*](assets/17-captura-windows-adb-devices.png "imagen 1")
+    ![ Captura de pantalla de terminal de Windows PowerShell con ejecución del ejecutable *adb* y el parámetro *devices.*](../../../assets/01-tutorial/17-captura-windows-adb-devices.png "imagen 1")
     /// caption
     **Imagen 17**. Captura de pantalla de terminal de Windows PowerShell con ejecución del ejecutable *adb* y el parámetro *devices.*
     ///
@@ -363,7 +363,7 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
     ./androidqf -s numero-serial
     ```
 
-    ![  Captura de pantalla de terminal de linux con integración del parámetro *\-s*.](assets/18-captura-androidqf-serial-number.png "imagen 1")
+    ![  Captura de pantalla de terminal de linux con integración del parámetro *\-s*.](../../../assets/01-tutorial/18-captura-androidqf-serial-number.png "imagen 1")
     /// caption
     **Imagen 18**.  Captura de pantalla de terminal de Linux con integración del parámetro *\-s*.
     ///
@@ -379,7 +379,7 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
     ./androidqf -s numero-serial -o "$(date +%Y-%m-%d)"-identificador
     ```
 
-    ![  Captura de pantalla de terminal de linux con integración del parámetro *\-o*.](assets/19-captura-andoridqf-output.png "imagen 1")
+    ![  Captura de pantalla de terminal de linux con integración del parámetro *\-o*.](../../../assets/01-tutorial/19-captura-andoridqf-output.png "imagen 1")
     /// caption
     **Imagen 19**.  Captura de pantalla de terminal de linux con integración del parámetro *\-o*.
     ///
@@ -391,7 +391,7 @@ Esto muestra un menú de ayuda en la terminal con todos los parámetros disponib
     ./androidqf -s numero-serial -o "$(date +%Y-%m-%d)"-complemento-opcional -v
     ```
 
-    ![  Captura de pantalla de terminal de linux con integración del parámetro *\-o*.](assets/20-captura-androidqf-verbose.png "imagen 1")
+    ![  Captura de pantalla de terminal de linux con integración del parámetro *\-o*.](../../../assets/01-tutorial/20-captura-androidqf-verbose.png "imagen 1")
     /// caption
     **Imagen 20**.  Captura de pantalla de terminal de linux con integración del parámetro *\-v*.
     ///
@@ -421,7 +421,7 @@ Sin importar cuál sistema operativo utilices en tu equipo de cómputo, primero 
 
     En la imagen 21 te presentamos un ejemplo de la salida en un sistema Linux. 
 
-    ![  Captura de pantalla de terminal de Linux con comando de ejecución preparado](assets/21-captura-linux-ejecucion-andoridqf.png "imagen 1")
+    ![  Captura de pantalla de terminal de Linux con comando de ejecución preparado](../../../assets/01-tutorial/21-captura-linux-ejecucion-andoridqf.png "imagen 1")
     /// caption
     **Imagen 21**.  Captura de pantalla de terminal de Linux con comando de ejecución preparado.
     ///
@@ -438,7 +438,7 @@ Sin importar cuál sistema operativo utilices en tu equipo de cómputo, primero 
     ./androidqf.exe -s numero-serial -o "$(Get-Date -Format 'yyyy-MM-dd')-acquisition01
     ```
 
-    ![  Captura de pantalla de la terminal de Windows PowerShell con comando de ejecución preparado.](assets/22-captura-windows-ejecuion-androidqf-terminal.png "imagen 1")
+    ![  Captura de pantalla de la terminal de Windows PowerShell con comando de ejecución preparado.](../../../assets/01-tutorial/22-captura-windows-ejecuion-androidqf-terminal.png "imagen 1")
     /// caption
     **Imagen 22**. Captura de pantalla de la terminal de Windows PowerShell con comando de ejecución preparado.
     ///    
@@ -448,7 +448,7 @@ Sin importar cuál sistema operativo utilices en tu equipo de cómputo, primero 
 
     En la carpeta donde se guardó el binario se puede ejecutar el binario con doble clic.
 
-    ![  Captura de pantalla del explorador de archivos con la carpeta de descarga del binario de androidqf.](assets/23-captura-windows-ejecuion-androidqf-interfaz.png "imagen 1")
+    ![  Captura de pantalla del explorador de archivos con la carpeta de descarga del binario de androidqf.](../../../assets/01-tutorial/23-captura-windows-ejecuion-androidqf-interfaz.png "imagen 1")
     /// caption
     **Imagen 23**. Captura de pantalla del explorador de archivos con la carpeta de descarga del binario de androidqf.
     /// 
@@ -457,14 +457,14 @@ Sin importar cuál sistema operativo utilices en tu equipo de cómputo, primero 
 
     Para ello da clic en **“Más información”** 
 
-    ![ Captura de pantalla de ventana emergente de protección de Windows.](assets/24-captura-windows-proteccion.png "imagen 1")
+    ![ Captura de pantalla de ventana emergente de protección de Windows.](../../../assets/01-tutorial/24-captura-windows-proteccion.png "imagen 1")
     /// caption
     **Imagen 24**. Captura de pantalla de ventana emergente de protección de Windows.
     /// 
 
     Selecciona **“Ejecutar de todas formas”**
 
-    ![ Captura de pantalla de ventana emergente de protección de Windows con la selección de *Ejecutar de todas formas*.](assets/25-captura-windows-ejecucion.png "imagen 25")
+    ![ Captura de pantalla de ventana emergente de protección de Windows con la selección de *Ejecutar de todas formas*.](../../../assets/01-tutorial/25-captura-windows-ejecucion.png "imagen 25")
     /// caption
     **Imagen 25**. Captura de pantalla de ventana emergente de protección de Windows con la selección de *Ejecutar de todas formas*.
     /// 
@@ -481,7 +481,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
 1. **:material-cellphone-basic: - en el teléfono:** Cuando aparezca el mensaje ***¿Permitir depuración por USB?***, da clic en ***“Permitir siempre desde esta computadora”*** y luego ***“Aceptar”*** o ***“Permitir”***.  
 
-    ![ Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confianza al equipo de cómputo para transferir archivos.](assets/26-captura-android-permiso-depuracion.png "imagen 1")
+    ![ Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confianza al equipo de cómputo para transferir archivos.](../../../assets/01-tutorial/26-captura-android-permiso-depuracion.png "imagen 1")
     /// caption
     **Imagen 26**. Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de depuración y confianza al equipo de cómputo para transferir archivos.
     /// 
@@ -497,7 +497,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
         Para el ejemplo usamos la opción **Only-SMS** para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el contexto del caso se considera de alto riesgo o implica investigación más sofisticada se recomienda marcar la opción  **Everything**, aunque la opción **Only-SMS** en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.*
 
-    ![ Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción *Only-SMS* seleccionada.](assets/27-captura-linux-only-sms.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción *Only-SMS* seleccionada.](../../../assets/01-tutorial/27-captura-linux-only-sms.png "imagen 1")
     /// caption
     **Imagen 27**. Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción *Only-SMS* seleccionada.
     /// 
@@ -513,7 +513,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
         Si bien reutilizar contraseñas no es una práctica de seguridad digital recomendada, es importante considerar el contexto y recordar que está contraseña protegerá únicamente uno de los archivos incluidos en la extracción forense. Sin embargo, los demás archivos recolectados no estarán cifrados, por lo que independientemente de la contraseña que se utilice, debemos manejar la carpeta de extracción como información sensible, y almacenarla únicamente en medios con medidas y estándares de protección adicional de acuerdo a nuestra política interna de manejo y protección de la información.
 
-    ![ Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup “sd”](assets/28-captura-android-contraseña.png "imagen 1")
+    ![ Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup “sd”](../../../assets/01-tutorial/28-captura-android-contraseña.png "imagen 1")
     /// caption
     **Imagen 28**. Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup.
     /// 
@@ -521,7 +521,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
 4. **:material-cellphone-basic: - en el teléfono:** Posteriormente selecciona el botón**: “Copia de seguridad de mis datos”.**
 
-    ![ Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada.](assets/29-captura-android-copia-seguridad.png "imagen 1")
+    ![ Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada.](../../../assets/01-tutorial/29-captura-android-copia-seguridad.png "imagen 1")
     /// caption
     **Imagen 29**. Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada.
     /// 
@@ -532,7 +532,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
         En algunas ocasiones, suelen aparecer errores sobre la búsqueda de las rutas donde se encuentran los paquetes, por lo que es común ver algunas de estas marcas de error, sin embargo, **estas marcas de error no afectan la extracción de datos forenses en el dispositivo.***
 
-    ![ Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.](assets/30-captura-linux-recoleccion.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.](../../../assets/01-tutorial/30-captura-linux-recoleccion.png "imagen 1")
     /// caption
     **Imagen 30**. Captura de pantalla de terminal de Linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.
     /// 
@@ -550,7 +550,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
         Aunque nuestra recomendación es seleccionar “Only non-system packages”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “All”.*
 
-    ![ Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción “*Only non-system packages”* seleccionada.](assets/31-captura-linux-copia-paquetes.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción “*Only non-system packages”* seleccionada.](../../../assets/01-tutorial/31-captura-linux-copia-paquetes.png "imagen 1")
     /// caption
     **Imagen 31**. Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción “*Only non-system packages”* seleccionada.
     /// 
@@ -565,7 +565,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
 
         Aunque nuestra recomendación es seleccionar “Yes”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “No”.
     
-    ![ Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción “*Only non-system packages”* seleccionada.](assets/32-captura-linux-omision-aplicaciones.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción “*Only non-system packages”* seleccionada.](../../../assets/01-tutorial/32-captura-linux-omision-aplicaciones.png "imagen 1")
     /// caption
     **Imagen 32** Captura de pantalla de terminal de Linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.
     /// 
@@ -576,16 +576,16 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
     
         **Esta etapa puede tomar varios minutos**, dependiendo del modelo del teléfono y la cantidad de datos almacenados. El progreso se muestra línea por línea en la terminal y no requiere intervención adicional, salvo al final, donde se debe presionar Enter para completar.
 
-    ![ Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción “*Only non-system packages”* seleccionada.](assets/33-captura-pantalla-ejecucion-correcta.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción “*Only non-system packages”* seleccionada.](../../../assets/01-tutorial/33-captura-pantalla-ejecucion-correcta.png "imagen 1")
     /// caption
     **Imagen 33** Captura de pantalla de terminal de linux con información de ejecución correcta de la extracción forense con AndroidQF y solicitando presionar *“Enter”* para terminar.
     /// 
 
-Una vez que finalice el proceso de adquisición, la herramienta habrá capturado los archivos e informaciones clave necesarias para un [triaje](../../references/00-glossary.md#triaje). En la siguiente sección brindamos una descripción a profundidad de los módulos que se ejecutan. Si no deseas consultar información adicional sobre los módulos de AndroidQF, puedes dirigirte a la sección de [verificación](#verificación-de-la-extracción). 
+Una vez que finalice el proceso de adquisición, la herramienta habrá capturado los archivos e informaciones clave necesarias para un [triaje](../../references/00-glossary/index.md#triaje). En la siguiente sección brindamos una descripción a profundidad de los módulos que se ejecutan. Si no deseas consultar información adicional sobre los módulos de AndroidQF, puedes dirigirte a la sección de [verificación](#verificación-de-la-extracción). 
 
 ### Módulos ejecutados durante una adquisición con AndroidQF
 
-A continuación se describen los módulos que AndoridQF ejecuta desde que se inicia la adquisición hasta que esta termina, sin embargo, esta descripción únicamente tiene como objetivo ilustrar el proceso de la adquisición, si deseas profundizar en la construcción y estructura de cada módulo,  puedes consultar el [Diccionario de archivos generados por AndroidQF](../../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md). 
+A continuación se describen los módulos que AndoridQF ejecuta desde que se inicia la adquisición hasta que esta termina, sin embargo, esta descripción únicamente tiene como objetivo ilustrar el proceso de la adquisición, si deseas profundizar en la construcción y estructura de cada módulo,  puedes consultar el [Diccionario de archivos generados por AndroidQF](../../references/01-reference-androidqf-dictionary/). 
 
 #### Collector
 
@@ -863,7 +863,7 @@ Una vez finalizada la ejecución de AndroidQF, es importante validar que la adqu
 
         La imagen 34 muestra la salida de búsqueda de errores en un sistema Linux.
 
-        ![ Captura de pantalla de terminal de linux con el comando *grep* para buscar errores en el archivo command.log generado por AndoridQF.](assets/34-captura-pantalla-terminal-linux-errores.png "imagen 1")
+        ![ Captura de pantalla de terminal de linux con el comando *grep* para buscar errores en el archivo command.log generado por AndoridQF.](../../../assets/01-tutorial/34-captura-pantalla-terminal-linux-errores.png "imagen 1")
         /// caption
         **Imagen 34** Captura de pantalla de terminal de linux con el comando *grep* para buscar errores en el archivo command.log generado por AndoridQF.
         /// 
@@ -874,7 +874,7 @@ Una vez finalizada la ejecución de AndroidQF, es importante validar que la adqu
 
         La figura 35 muestra la salida de una búsqueda de errores en Windows. en este caso, no se encuentran  errores referentes al proceso de extracción forense.
 
-        ![ Captura de pantalla de Bloc de notas de Windows con la búsqueda de  errores en el archivo command.log generado por AndoridQF.](assets/35-captura-pantalla-windows-errores.png "imagen 1")
+        ![ Captura de pantalla de Bloc de notas de Windows con la búsqueda de  errores en el archivo command.log generado por AndoridQF.](../../../assets/01-tutorial/35-captura-pantalla-windows-errores.png "imagen 1")
         /// caption
         **Imagen 35** Captura de pantalla de Bloc de notas de Windows con la búsqueda de  errores en el archivo command.log generado por AndoridQF.
         ///
@@ -940,7 +940,7 @@ Asegurate que se hayan generado los siguientes archivos y carpetas:
 	  
 Esto significa que los módulos se ejecutaron correctamente.
 
-![ Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.](assets/36-captura-pantalla-archivos-salida.png "imagen 1")
+![ Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.](../../../assets/01-tutorial/36-captura-pantalla-archivos-salida.png "imagen 1")
 /// caption
 **Imagen 36** Captura de pantalla de la aplicación archivos en PopOS\! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.
 ///
@@ -953,7 +953,7 @@ Identificar que una extracción fue realizada exitosamente implica un proceso de
 
 Ahora que tienes la extracción, el siguiente paso es que puedas interpretar la información obtenida, pues una vez que una extracción fue realizada exitosamente es necesario comenzar un proceso de análisis de la información contenida en esta extracción.
 
-Para apoyarte en este análisis, este repositorio incluye un recurso de referencia clave: el [Diccionario de archivos generados por AndroidQF](https://forensics.socialtic.org/references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html). Con este recurso, podrás:
+Para apoyarte en este análisis, este repositorio incluye un recurso de referencia clave: el [Diccionario de archivos generados por AndroidQF](../../references/01-reference-androidqf-dictionary/). Con este recurso, podrás:
 
 * Identificar el contenido de cada archivo de salida.  
 * Comprender por qué esta información es importante y cómo usarla en un análisis forense.  

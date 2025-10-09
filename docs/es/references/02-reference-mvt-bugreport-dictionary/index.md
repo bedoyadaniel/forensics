@@ -20,9 +20,9 @@ author:
 
 El presente documento contiene información sobre los archivos generados por la MVT a través del componente [mvt-check bugreport](https://github.com/mvt-project/mvt/tree/main/src/mvt/android/modules/bugreport). El objetivo de este diccionario, es que la persona analista tenga la facilidad de buscar información específica y conocer el formato en que la información del análisis forense es presentada.
 
-Este recurso forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../references/00-glossary.md#diátaxis).
+Este recurso forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../../references/00-glossary/index.md#diátaxis).
 
-Este recurso en particular se enmarca dentro de la categoría de [referencias](https://diataxis.fr/reference), y contiene información sobre el análisis de [bugreport](../references/00-glossary.md#bugreport) generados por dispositivos Android mediante el comando ***mvt-android check-bugreport***  durante el uso de la herramienta MVT (*Mobile Verification Toolkit)*, desarrollada y mantenida por el [Laboratorio de Seguridad de Amnistía Internacional](https://securitylab.amnesty.org/es/) y perteneciente al [MVT Project](../references/00-glossary.md#mvt). Esto con el objetivo de que una persona analista **conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.**
+Este recurso en particular se enmarca dentro de la categoría de [referencias](https://diataxis.fr/reference), y contiene información sobre el análisis de [bugreport](../references/00-glossary.md#bugreport) generados por dispositivos Android mediante el comando ***mvt-android check-bugreport***  durante el uso de la herramienta MVT (*Mobile Verification Toolkit)*, desarrollada y mantenida por el [Laboratorio de Seguridad de Amnistía Internacional](https://securitylab.amnesty.org/es/) y perteneciente al [MVT Project](../../references/00-glossary/index.md#mvt). Esto con el objetivo de que una persona analista **conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.**
 
 Para la recopilación de la información se tomó como base el la versión 2.6.0 de MVT.
 
@@ -52,7 +52,7 @@ Este archivo se encuentra en formato *json* y contiene información relacionada 
 
 Este archivo nos permite **validar el análisis que se ha realizado**, documentando que se tiene un registro del proceso de adquisición y los indicadores que se consideraron para hacer la comparación.
 
-Esta información permite establecer una referencia del archivo analizado y la herramientas de indicadores utilizados utilizados en el análisis , esto facilita el [proceso de custodia de la extracción forense](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#cadena-de-custodia).
+Esta información permite establecer una referencia del archivo analizado y la herramientas de indicadores utilizados utilizados en el análisis , esto facilita el [proceso de custodia de la extracción forense](../../explainers/01-explainer-introduction-digital-forensics/index.md#cadena-de-custodia).
 
 **Estructura del archivo:**
 
@@ -1023,4 +1023,4 @@ La información del *platform\_compat* permite identificar aplicaciones desinsta
 
 ## Comentarios
 
-¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
+¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../community/code-of-conduct/). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   

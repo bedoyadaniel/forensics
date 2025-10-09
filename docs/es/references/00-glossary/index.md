@@ -29,7 +29,7 @@ Este recurso en particular es un glosario de términos que incluye **conceptos, 
 
 ADB hace referencia a *Android Debug Bridge*, o puente de depuración de Android. ADB es una **herramienta de línea de comandos** **que permite comunicarse directamente a través de USB con un dispositivo Android**, e iniciar diferentes acciones y comandos.  
 
-Desde el punto de vista de **forense digital**, y en particular al hacer [investigaciones basadas en logs](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html) utilizando herramientas como AndroidQF, **ADB permite establecer una comunicación directa con un dispositivo**. Es útil en situaciones donde **se tiene acceso físico al dispositivo**, y cuando se desea obtener información directamente desde el equipo a través de **comandos nativos**, sin utilizar herramientas adicionales. 
+Desde el punto de vista de **forense digital**, y en particular al hacer [investigaciones basadas en logs](../../explainers/03-explainer-log-forensics-android/) utilizando herramientas como AndroidQF, **ADB permite establecer una comunicación directa con un dispositivo**. Es útil en situaciones donde **se tiene acceso físico al dispositivo**, y cuando se desea obtener información directamente desde el equipo a través de **comandos nativos**, sin utilizar herramientas adicionales. 
 
 
 ### Adquisición
@@ -146,7 +146,7 @@ La Inteligencia de Ciberamenazas busca generar conocimiento en torno al enemigo 
 
 Los logs, también conocidos como registros o bitácoras, son archivos que documentan actividades que ocurren dentro de un sistema informático, red o aplicación. Estos registros pueden contener información sobre accesos de usuarios, cambios en el sistema, errores, y otras actividades relevantes para una investigación forense. 
 
-En este recurso detallamos consideraciones importantes sobre [investigaciones forenses basadas en logs en dispositivos Android](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html). 
+En este recurso detallamos consideraciones importantes sobre [investigaciones forenses basadas en logs en dispositivos Android](../../explainers/03-explainer-log-forensics-android/). 
 
 ### Malware
 
@@ -161,7 +161,7 @@ Las [**opciones de desarrollador**](https://developer.android.com/studio/debug/d
 
 MVT es una herramienta para facilitar el análisis forense consentido de dispositivos que pertenezcan a personas que podrían ser objetivo de ataques de spyware avanzados, y en específico personas parte de la sociedad civil y de comunidades en riesgo.
 
-Se indica en su [sitio web](https://forensics.socialtic.org/comunidad/licencia.html):
+Se indica en su [sitio web](../../community/license/):
 
 _Mobile Verification Toolkit (MVT) is a tool to facilitate the consensual forensic analysis of Android and iOS devices, for the purpose of identifying traces of compromise._
 
