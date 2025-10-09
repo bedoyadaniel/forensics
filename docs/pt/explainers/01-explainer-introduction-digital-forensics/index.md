@@ -8,9 +8,6 @@ last_updated: 2025-09-05
 some_url:
 created: 2025-02-03
 comments: true
-alternate: 
-    en: explainers/01-explainer-introduction-digital-forensics/01-explainer-introduction-digital-forensics.html
-    es: explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html
 authors:
     name: Daniel Bedoya
     name: MariaLab
@@ -22,7 +19,7 @@ authors:
 
 Este documento faz parte de um repositório de documentação técnica que tem como objetivo estabelecer uma base de conhecimento comprovada, flexível e acessível para promover a análise forense consentida em benefício da sociedade civil. A [estrutura de documentação técnica Diataxis] (https://diataxis.fr/) é usada para organizar o conteúdo.
 
-Este documento é classificado como [material explicativo] (https://diataxis.fr/explanation/). Ele descreve os principais conceitos da ciência forense digital, incluindo uma definição tradicional, uma visão geral dos estágios de uma investigação e uma discussão sobre como a [ciência forense](https://es.wikipedia.org/wiki/Criminal%C3%ADstica) é aplicada no contexto digital para a defesa dos direitos humanos. É um material introdutório, que tem como objetivo fornecer uma base de conhecimento geral sobre a prática forense, e é complementado por recursos adicionais, como [guias](.../.../.../how-tos/#){ data-preview }, [tutoriais](.../.../.../tutorials/#){ data-preview } e [referências](.../.../.../references/#){ data-preview }.
+Este documento é classificado como [material explicativo] (https://diataxis.fr/explanation/). Ele descreve os principais conceitos da ciência forense digital, incluindo uma definição tradicional, uma visão geral dos estágios de uma investigação e uma discussão sobre como a [ciência forense](https://es.wikipedia.org/wiki/Criminal%C3%ADstica) é aplicada no contexto digital para a defesa dos direitos humanos. É um material introdutório, que tem como objetivo fornecer uma base de conhecimento geral sobre a prática forense, e é complementado por recursos adicionais, como [guias](../../how-tos/){ data-preview }, [tutoriais](../../tutorials/){ data-preview } e [referências](../../references/){ data-preview }.
 
 ## O que é a perícia forense digital e por que ela é importante?
 
@@ -161,7 +158,7 @@ Ao contrário das investigações forenses em outros contextos (periciais ou cor
 
 É possível que alguns dos artefatos forenses coletados contenham informações pessoais (contatos, mensagens, aplicativos, entre outros), portanto, manter uma comunicação transparente e sempre respeitar as decisões da pessoa defensora deve ser sempre a prioridade. Alguns fatores importantes a serem levados em consideração para obter um consentimento informado incluem: quais informações devem ser coletadas, com quem serão compartilhadas, por quanto tempo serão armazenadas, entre outros.
 
-[Consulta a guía práctica sobre consentimento informado](../../how-tos/01-como-obtener-consentimiento-informado/01-como-obtener-consentimiento-informado.md){ .md-button }
+[Consulta a guía práctica sobre consentimento informado](../../how-tos/01-how-to-obtain-informed-consent/){ .md-button }
 
 
 ### Cadena de custodia
@@ -182,7 +179,7 @@ As investigações forenses podem expor abusos dos direitos humanos contra pesso
 
 Além disso, devido à natureza da prática forense, você estará frequentemente em contato com infraestruturas maliciosas, pelo que é fundamental definir medidas de [**segurança operacional**](https://es.ifixit.com/Wiki/OPSEC_and_Personal_Online_Security)**l** que protejam as pessoas analistas. Além dos riscos operacionais, deve-se avaliar o risco de alertar os invasores sobre uma investigação em andamento, o que poderia levar a uma mudança em sua infraestrutura e operação, reduzindo o sucesso da investigação.
 
-[Consulta el explainer sobre riscos](../02-explainer-riesgos-amenazas/02-explainer-riesgos-amenazas.md){ .md-button }
+[Consulta el explainer sobre riscos](../02-explainer-risks-threats/){ .md-button }
 
 ## Conclusão
 
@@ -195,6 +192,6 @@ Em conjunto e através da confiança, laboratórios forenses emergentes e outros
 
 ## Comentários
 
-Tem comentários ou sugestões sobre este recurso? Você pode usar a função de comentários mostrada abaixo para deixar suas ideias ou observações. Por favor, certifique-se de seguir nosso [código de conduta](../../comunidad/codigo-de-conducta.md). A função de comentários leva diretamente à seção de [Discussions do Github](https://github.com/Socialtic/forensics/discussions), onde você também pode participar das discussões de forma direta.
+Tem comentários ou sugestões sobre este recurso? Você pode usar a função de comentários mostrada abaixo para deixar suas ideias ou observações. Por favor, certifique-se de seguir nosso [código de conduta](../../community/code-of-conduct/). A função de comentários leva diretamente à seção de [Discussions do Github](https://github.com/Socialtic/forensics/discussions), onde você também pode participar das discussões de forma direta.
 
 

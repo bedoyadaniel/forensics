@@ -82,13 +82,13 @@ Na seção a seguir, apresentamos um **modelo de carta de consentimento informad
 
 Para gerar uma carta de consentimento a partir do modelo proposto, siga as seguintes etapas: 
 
-1- **Baixe** o [rascunho da carta de consentimento informado](exemplo-pt-br-carta-de-consentimento-para-analise-forense_BRASIL.odt). O formato utiliza campos de formulário, de forma que, ao converter para PDF, possa ser preenchido facilmente.
+1- **Baixe** o [rascunho da carta de consentimento informado](../../assets/01-how-to/exemplo-pt-br-carta-de-consentimento-para-analise-forense_BRASIL.odt). O formato utiliza campos de formulário, de forma que, ao converter para PDF, possa ser preenchido facilmente.
 
-![captura da carta de consentimento](../../../es/how-tos/01-como-obtener-consentimiento-informado/carta-de-consentimiento.png "Carta de consentimento")
+![captura da carta de consentimento](../../../es/assets/01-how-to/carta-de-consentimiento.png "Carta de consentimento")
 
 Nos links a seguir, você pode **baixar o rascunho da carta de consentimento** em diferentes formatos:
 
-* [Carta de consentimento em ODT](exemplo-pt-br-carta-de-consentimento-para-analise-forense-odt.odt)
+* [Carta de consentimento em ODT](../../assets/01-how-to/exemplo-pt-br-carta-de-consentimento-para-analise-forense-odt.odt)
 * [Rascunho da carta de consentimento em Google docs (ESPAÑOL)](https://docs.google.com/document/d/1YPiMO7WuGwE7hMHLZ9VPQkTLALN_bhmL0DASaZn3r2A/template/preview). 
 
 
@@ -152,6 +152,6 @@ Durante o processo de consentimento, também são reconhecidos e aceitos os risc
 
 ## Comentários
 
-Tem comentários ou sugestões sobre este recurso? Você pode usar a função de comentários mostrada abaixo para deixar suas ideias ou observações. Por favor, certifique-se de seguir nosso [código de conduta](../../comunidad/codigo-de-conducta.md). A função de comentários leva diretamente à seção de [Discussions do Github](https://github.com/Socialtic/forensics/discussions), onde você também pode participar das discussões de forma direta.
+Tem comentários ou sugestões sobre este recurso? Você pode usar a função de comentários mostrada abaixo para deixar suas ideias ou observações. Por favor, certifique-se de seguir nosso [código de conduta](../../community/code-of-conduct/). A função de comentários leva diretamente à seção de [Discussions do Github](https://github.com/Socialtic/forensics/discussions), onde você também pode participar das discussões de forma direta.
 
 

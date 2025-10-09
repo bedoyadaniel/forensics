@@ -26,7 +26,7 @@ Este recurso foi atualizado pela última vez em 16 de junho de 2025 e, para a co
 
 [Androidqf](https://github.com/mvt-project/androidqf) é uma ferramenta de extração forense que pertence ao [MVT Project](https://github.com/mvt-project/). Desenvolvida inicialmente por [Claudio Guarnieri](https://nex.sx/) e atualmente mantida pelo [Laboratório de Segurança da Anistia Internacional](https://securitylab.amnesty.org/es/).
 
-Seu nome vem da expressão em inglês *Android Quick Forensics*. Caracteriza-se por ser uma **ferramenta portátil**, ou seja, pode ser executada no Windows, GNU/Linux e Mac OS através de um binário pré-compilado para a [aquisição de informações forenses](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#etapa-2-recolha-e-aquisição) de dispositivos Android. 
+Seu nome vem da expressão em inglês *Android Quick Forensics*. Caracteriza-se por ser uma **ferramenta portátil**, ou seja, pode ser executada no Windows, GNU/Linux e Mac OS através de um binário pré-compilado para a [aquisição de informações forenses](../../explainers/01-explainer-introduction-digital-forensics/index.md#quais-são-as-etapas-de-uma-investigação-forense) de dispositivos Android. 
 
 As informações geradas pelo androidqf podem ser agrupadas em 5 categorias principais:
 
@@ -56,7 +56,7 @@ Este arquivo está no formato *json* e registra informações relacionadas ao pr
 * 
 **Por que isso é importante?**
 
-Essas informações permitem conhecer informações básicas da extração e obter identificadores únicos do sistema que facilitam o [processo de custódia da extração forense](../../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md#). 
+Essas informações permitem conhecer informações básicas da extração e obter identificadores únicos do sistema que facilitam o [processo de custódia da extração forense](../../explainers/01-explainer-introduction-digital-forensics/index.md#cadena-de-custodia). 
 
 **Exemplo:**
 
@@ -1155,6 +1155,6 @@ Este arquivo é relevante para identificar arquivos de interesse em uma investig
 
 ## Comentários
 
-Tem comentários ou sugestões sobre este recurso? Você pode usar a função de comentários mostrada abaixo para deixar suas ideias ou observações. Por favor, certifique-se de seguir nosso [código de conduta](../../comunidad/codigo-de-conducta.md). A função de comentários leva diretamente à seção de [Discussions do Github](https://github.com/Socialtic/forensics/discussions), onde você também pode participar das discussões de forma direta.
+Tem comentários ou sugestões sobre este recurso? Você pode usar a função de comentários mostrada abaixo para deixar suas ideias ou observações. Por favor, certifique-se de seguir nosso [código de conduta](../../community/code-of-conduct). A função de comentários leva diretamente à seção de [Discussions do Github](https://github.com/Socialtic/forensics/discussions), onde você também pode participar das discussões de forma direta.
 
 

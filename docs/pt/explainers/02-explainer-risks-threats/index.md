@@ -34,7 +34,7 @@ Por outro lado, uma **vulnerabilidade** refere-se a uma deficiência ou fraqueza
 
 O **risco** resulta da combinação da possibilidade de uma ameaça se concretizar com a gravidade do impacto, caso ela venha a ocorrer. O risco não é um conceito estático; ele varia com o tempo, dependendo de fatores internos e externos, por isso, realizar exercícios regulares de análise de riscos é uma prática necessária para reduzir a probabilidade e a gravidade das ameaças.
 
-No contexto da perícia forense para a sociedade civil, como descrevemos anteriormente em [nosso explicador sobre perícia forense para a defesa dos direitos humanos](https://forensics.socialtic.org/explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html), o processo de atendimento geralmente começa quando uma pessoa defensora dos direitos humanos se aproxima de um ponto de contato ou de um laboratório de ameaças para solicitar assistência. Em muitos casos, é possível que a pessoa se encontre em um **contexto de alto risco, exposta a ataques digitais, legais, físicos e psicossociais**.
+No contexto da perícia forense para a sociedade civil, como descrevemos anteriormente em [nosso explicador sobre perícia forense para a defesa dos direitos humanos](../01-explainer-introduction-digital-forensics/), o processo de atendimento geralmente começa quando uma pessoa defensora dos direitos humanos se aproxima de um ponto de contato ou de um laboratório de ameaças para solicitar assistência. Em muitos casos, é possível que a pessoa se encontre em um **contexto de alto risco, exposta a ataques digitais, legais, físicos e psicossociais**.
 
 Os riscos específicos que uma organização ou indivíduo enfrenta **dependem do contexto e do seu trabalho específico**. Embora o foco das investigações forenses não seja a contenção e mitigação de ameaças, **é essencial considerar o contexto de riscos** e evitar iniciar ações que possam levar a um aumento dos danos e impactos sofridos pela pessoa.
 Este recurso se concentra principalmente nos *riscos para os laboratórios forenses* que apoiam defensores dos direitos humanos, mas é importante estender o exercício de análise a outros processos, serviços ou políticas que possam impactar o bem-estar das pessoas em risco.
@@ -180,7 +180,7 @@ Nossa intenção com este documento não é minimizar ou minar os esforços emer
 
 ## Comentários
 
-Tem comentários ou sugestões sobre este recurso? Você pode usar a função de comentários mostrada abaixo para deixar suas ideias ou observações. Por favor, certifique-se de seguir nosso [código de conduta](../../comunidad/codigo-de-conducta.md). A função de comentários leva diretamente à seção de [Discussions do Github](https://github.com/Socialtic/forensics/discussions), onde você também pode participar das discussões de forma direta.
+Tem comentários ou sugestões sobre este recurso? Você pode usar a função de comentários mostrada abaixo para deixar suas ideias ou observações. Por favor, certifique-se de seguir nosso [código de conduta](../../community/code-of-conduct/). A função de comentários leva diretamente à seção de [Discussions do Github](https://github.com/Socialtic/forensics/discussions), onde você também pode participar das discussões de forma direta.
 
 
 
