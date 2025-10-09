@@ -26,41 +26,60 @@ Si tienes interés en traducir los contenidos del repositorio a un **nuevo idiom
 
 ### Organización de los contenidos
 
-El repositorio se encuentra **estructurado para aceptar traducciones a nuevos idiomas**. En general, los contenidos en todos los idiomas **se estructuran de la siguiente manera**: 
+El repositorio se encuentra **estructurado para aceptar traducciones a nuevos idiomas**. Para el manejo de las traducciones se utiliza el [plug-in mkdocs-static-i18n](https://ultrabug.github.io/mkdocs-static-i18n/). 
+
+Se utilza la configuración de carpetas, por lo que en general, los contenidos en todos los idiomas **se estructuran de la siguiente manera**, con los **nombres de carpetas en idioma Inglés**. Se muestra a continuación la estructura para el idioma español: 
 
 ```
 docs/
-en/
-explainers/
-how-tos/
-references/
-tutorials/
-community/
-index.md
-es/
-explainers/
-how-tos/
-references/
-tutoriales/
-comunidad/
-index.md
+  es/
+    localized-assets/
+      resource 1/
+        image1.png
+    home/
+      getting-started/
+        index.md
+      roadmap/
+        index.md
+    explainers/
+      explainer-topic-01/
+        index.md
+      explainer-topic-n/
+        index.md
+    how-tos/
+      how-to-topic-01/
+        index.md  
+      how-to-topic-n/
+        index.md
+    tutorials/
+      tutorial-topic-01/
+        index.md  
+      tutorial-topic-n/
+        index.md
+    references/
+      reference-topic-01/
+        index.md
+      reference-topic-n/
+        index.md
+    index.md
 
 ```
 
-Adicionalmente, **cada nuevo contenido tendrá su propia carpeta correspondiente**, donde se aloja el archivo en formato markdown con los contenidos. Por ejemplo, el contenido *Explainer:* *Introducción a la forense digital consentida para la defensa de los derechos humanos* se organiza de la siguiente forma en el idioma inglés y español: 
+**Cada nuevo contenido tendrá su propia carpeta correspondiente**, donde se aloja el archivo en formato markdown de nombre 'index.md' con los contenidos. Por ejemplo, el contenido *Explainer:* *Introducción a la forense digital consentida para la defensa de los derechos humanos* se organiza de la siguiente forma en el idioma inglés y español: 
 
 ```
 es/
-explainers/
-01-explainer-introduccion-forense-digital/
-01-explainer-introduccion-forense-digital.md
+  explainers/
+    01-explainer-introduction-digital-forensics/
+      index.md
+
 en/
-	explainers/
-		01-explainer-introduction-digital-forensics/
-			01-explainer-introduction-digital-forensics.md
+  explainers/
+    01-explainer-introduction-digital-forensics/
+      index.md
 	
 ```
 
-Antes de comenzar una traducción, recomendamos explorar las carpetas de contenidos, y consultar ante cualquier duda. Se recomienda además revisar los **lineamientos de estilo para la nomenclatura de archivos incluídos como parte de las mejores prácticas** de contribución del repositorio.     
+Tal y como se observa, **no existen diferencia en el nombre de los archivos o carpetas**, y la única diferencia radica en el folder en el cual se ubica la documentación. 
 
-Para realizar contribuciones directamente al repositorio en relación a traducciones, se recomienda seguir las instrucciones en la sección de *pull requests* o solicitudes de integración. 
+Para realizar contribuciones directamente al repositorio en relación a traducciones, se recomienda seguir las instrucciones en la sección de *pull requests* o [solicitudes de integración](../how-to-contribute/index.md#solicitudes-de-integración-a-través-de-pull-request). 
