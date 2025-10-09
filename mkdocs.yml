@@ -104,11 +104,11 @@ plugins:
   - document-dates:
       position: top            # Display position: top (after title)  bottom (end of document)
       exclude:                 # List of excluded files
-        - docs/es/index.md              # Exclude specific file
-        - docs/es/explainers/index.md
-        - docs/es/how-tos/index.md
-        - docs/es/references/index.md
-        - docs/es/tutorials/index.md
+        - index.md              # Exclude specific file
+        - explainers/index.md
+        - how-tos/index.md
+        - references/index.md
+        - tutorials/index.md
   - i18n: #Plugin para localización
       reconfigure_material: true
       reconfigure_search: true
