@@ -140,6 +140,7 @@ plugins:
               - Introduction to log-based forensics on Android: 'explainers/03-explainer-log-forensics-android/index.md'
             - Tutorials:
               - Home: 'tutorials/index.md'
+              - Exploring AndroidQF for data acquisition on Android: 'tutorials/01-tutorial-learning-androidqf/index.md'
             - How-to's:
               - Home: 'how-tos/index.md'
               - How to obtain and document informed consent?: 'how-tos/01-how-to-obtain-informed-consent/index.md'
@@ -224,12 +225,19 @@ markdown_extensions:
       configurations:
         - sources: 
             exclude:
-              - explainers/index.md
-              - how-tos/index.md
-              - references/index.md
-              - tutorials/index.md
-              - index.md
+              - es/explainers/index.md
+              - es/how-tos/index.md
+              - es/references/index.md
+              - es/tutorials/index.md
+              - es/index.md
+              - en/explainers/index.md
+              - en/how-tos/index.md
+              - en/references/index.md
+              - en/tutorials/index.md
+              - en/index.md
+
           targets: 
             include:
-              - references/*
+              - es/references/*
+              - en/references/*
 
