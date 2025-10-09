@@ -235,7 +235,6 @@ markdown_extensions:
               - en/references/index.md
               - en/tutorials/index.md
               - en/index.md
-
           targets: 
             include:
               - es/references/*
