@@ -2016,22 +2016,22 @@
 <h1 id="guia-how-to-extract-a-bugreport-from-an-android-device">Guía: How to extract a bugreport from an Android device?</h1>
 <div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-08-27'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-08-27T00:00:00'>2025-08-27</time></span><span data-tippy-content data-tippy-raw='2025-08-27'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-08-27T00:00:00'>2025-08-27</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Daniel' data-tippy-content data-tippy-raw='<a href="https://socialtic.org/quienes-somos/" target="_blank" rel="noopener">Daniel</a>'><span class='avatar-text'></span><img class="avatar" src="../../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
 
-<p>This resource falls under the <strong><a href="../index.html">how-to guides</a></strong> and details the steps required to generate a bugreport, both using the ADB debugging console and through the device’s graphical user interface (GUI). It is an introductory material, complementary to other resources such as the <a href="../../explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.md">explainer on log-based forensics for Android devices</a> and the guide on <a href="../03-how-to-enable-adb/03-how-to-enable-adb.md">how to enable ADB</a>.</p>
+<p>This resource falls under the <strong><a href="../">how-to guides</a></strong> and details the steps required to generate a bugreport, both using the ADB debugging console and through the device’s graphical user interface (GUI). It is an introductory material, complementary to other resources such as the <a href="../../explainers/03-explainer-log-forensics-android/">explainer on log-based forensics for Android devices</a> and the guide on <a href="../../how-tos/03-how-to-enable-adb/">how to enable ADB</a>.</p>
 <p><strong>We appreciate the collaboration of <a href="https://rsf.org/en/digital-security-lab">RSF Security Lab</a></strong>, who provided us with a set of guides and screenshots that enabled the development of this resource. </p>
 <h2 id="what-is-a-bugreport-and-why-is-it-useful">What is a bugreport and why is it useful?</h2>
 <p>As the name suggests, a bugreport is a collection of <strong>logs and diagnostic information</strong> that helps identify and fix errors when developing an Android application.  In the context of consent-based forensic analysis, the bugreport is a valuable forensic artifact for Android device triage, including use with the MVT tool. For instance, Amnesty Tech used a similar technique to <a href="https://securitylab.amnesty.org/latest/2024/12/tech-guide-detecting-novispy-spyware-with-androidqf-and-the-mobile-verification-toolkit-mvt/">detect the NoviSpy spyware</a>.</p>
-<p>Android natively allows generating bugreports both through the <a href="../../references/00-glossary.md#graphical-user-interface">graphical user interface</a> and through the ADB console. Below we include instructions on how to generate a bugreport through both approaches. </p>
+<p>Android natively allows generating bugreports both through the <a data-preview="" href="../../references/00-glossary/index.html#graphical-user-interface">graphical user interface</a> and through the ADB console. Below we include instructions on how to generate a bugreport through both approaches. </p>
 <h2 id="what-do-you-need-to-extract-a-bugreport">What do you need to extract a bugreport?</h2>
 <p>Below are the requirements for extracting a bugreport using the graphical interface (GUI) and the ADB console.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GUI</label><label for="__tabbed_1_2">Using ADB</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>To extract the bugreport from the GUI, it is necessary to have access to the Android device and to <strong>enable developer options</strong>. If you are not sure how to enable developer options on your device, consult this <a href="../02-how-to-enable-developer-options/02-how-to-enable-developer-options.md">how-to guide</a>.</p>
+<p>To extract the bugreport from the GUI, it is necessary to have access to the Android device and to <strong>enable developer options</strong>. If you are not sure how to enable developer options on your device, consult this <a href="../02-how-to-enable-developer-options/">how-to guide</a>.</p>
 </div>
 <div class="tabbed-block">
 <p>To extract Para extraer un bugreport a través de la consola de ADB es necesario: </p>
 <ul>
-<li>The <strong>Android device to be analyzed</strong>: Enable Developer Mode and USB Debugging. If needed, consult our guides on <a href="../../references/00-glossary.md#developer-mode">enabling Developer Options</a> or on how to <a href="../../references/00-glossary.md#adb">enable ADB</a>.</li>
+<li>The <strong>Android device to be analyzed</strong>: Enable Developer Mode and USB Debugging. If needed, consult our guides on <a data-preview="" href="../../references/00-glossary/index.html#developer-mode">enabling Developer Options</a> or on how to <a data-preview="" href="../../references/00-glossary/index.html#adb">enable ADB</a>.</li>
 <li><strong>A computer (Windows, Linux, or macOS):</strong> This will be used for the extraction. </li>
 <li>A <strong>data transfer cable</strong> (phone-to-computer).</li>
 </ul>
@@ -2049,10 +2049,10 @@
 <div class="admonition question">
 <p class="admonition-title">WWhy do instructions vary across devices?</p>
 <p>The Android operating system is based on the <a href="https://source.android.com/"><em>Android Open Source Project</em></a><em>.</em> However, most manufacturers <a href="https://www.makeuseof.com/tag/android-really-open-source-matter/">use a propietary version developed by Google</a>, on top of which manufacturers add personalization layers. </p>
-<p><a href="../02-how-to-enable-developer-options/02-how-to-enable-developer-options.md#why-are-there-different-ways-to-enable-them"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read more here</a> </p>
+<p><a href="../02-how-to-enable-developer-options/#why-are-there-different-ways-to-enable-them"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Read more here</a> </p>
 </div>
 <h3 id="honor-magic-5-lite-magic-os">Honor Magic 5 Lite (Magic OS)</h3>
-<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/02-how-to-enable-developer-options.md#honor-magic-os">steps to enable developer options on a Honor device</a>.</p>
+<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/#honor-magic-os">steps to enable developer options on a Honor device</a>.</p>
 <p>Once developer options are enabled, follow these steps to generate a bugreport (see Image 1):</p>
 <ol>
 <li>Open <strong>Settings</strong></li>
@@ -2066,13 +2066,13 @@
 <li>Select the preferred mechanism and <strong>share the bugreport</strong>  </li>
 </ol>
 <figure>
-<p><img alt=" Steps to generate a bug report on a Honor Magic Lite con la versión Magic OS 7.1 en Android 13" src="../../../how-tos/05-como-extraer-bugreport/assets/bug-report-honor-magic5-lite.gif" style="height:480x;width:216px" title="image 1" /></p>
+<p><img alt=" Steps to generate a bug report on a Honor Magic Lite con la versión Magic OS 7.1 en Android 13" src="../../../assets/05-how-to/bug-report-honor-magic5-lite.gif" style="height:480x;width:216px" title="image 1" /></p>
 <figcaption>
 <p><strong>image 1</strong>.  Steps to generate a bug report on a Honor Magic Lite running Magic OS 7.1.</p>
 </figcaption>
 </figure>
 <h3 id="motorola-hello-ui">Motorola (Hello UI)</h3>
-<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#motorola-hello-ui">steps to enable developer options on a  Motorola device</a>**.</p>
+<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/index.html#motorola-hello-ui">steps to enable developer options on a  Motorola device</a>**.</p>
 <p>Once developer options are enabled, follow these steps to generate a bugreport (see Image 2):</p>
 <ol>
 <li>Open <strong>Settings</strong></li>
@@ -2086,13 +2086,13 @@
 <li>Select the preferred mechanism and <strong>share the bugreport</strong>  </li>
 </ol>
 <figure>
-<p><img alt=" Steps to generate a bug report on a Motorola Edge Neo 40 utilizando Hello UI en Android 13" src="../../../how-tos/05-como-extraer-bugreport/assets/bug-report-motorola-edge-40-neo.gif" style="height:480x;width:216px" title="image 4" /></p>
+<p><img alt=" Steps to generate a bug report on a Motorola Edge Neo 40 utilizando Hello UI en Android 13" src="../../../assets/05-how-to/bug-report-motorola-edge-40-neo.gif" style="height:480x;width:216px" title="image 4" /></p>
 <figcaption>
 <p><strong>image 2</strong>.  Steps to generate a bug report on a Motorola Edge Neo 40 running Hello UI.</p>
 </figcaption>
 </figure>
 <h3 id="nokia">Nokia</h3>
-<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#nokia">steps to enable developer options on a  Nokia device</a>**. </p>
+<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/index.html#nokia">steps to enable developer options on a  Nokia device</a>**. </p>
 <p>Once developer options are enabled, follow these steps to generate a bugreport (see Image 3):</p>
 <ol>
 <li>Open <strong>Settings</strong></li>
@@ -2106,13 +2106,13 @@
 <li>Select the preferred mechanism and <strong>share the bugreport</strong>  </li>
 </ol>
 <figure>
-<p><img alt=" Steps to generate a bug report on a Nokia G42 5G utilizando Android 13." src="../../../how-tos/05-como-extraer-bugreport/assets/bug-report-nokia-g42.gif" style="height:480x;width:216px" title="image 4" /></p>
+<p><img alt=" Steps to generate a bug report on a Nokia G42 5G utilizando Android 13." src="../../../assets/05-how-to/bug-report-nokia-g42.gif" style="height:480x;width:216px" title="image 4" /></p>
 <figcaption>
 <p><strong>image 3</strong>.  Steps to generate a bug report on a Nokia G42 5G running Android 13.</p>
 </figcaption>
 </figure>
 <h3 id="oppo-magic-os">Oppo (Magic OS)</h3>
-<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#oppo-reno-10-color-os">steps to enable developer options on a Oppo device</a>**. </p>
+<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/index.html#oppo-reno-10-color-os">steps to enable developer options on a Oppo device</a>**. </p>
 <p>Once developer options are enabled, follow these steps to generate a bugreport (see Image 4):</p>
 <ol>
 <li>Open <strong>Settings</strong></li>
@@ -2126,13 +2126,13 @@
 <li>Select the preferred mechanism and <strong>share the bugreport</strong>  </li>
 </ol>
 <figure>
-<p><img alt="Steps to generate a bug report on a OPPO Reno 10 utilizando Android 13" src="../../../how-tos/05-como-extraer-bugreport/assets/bug-report-oppo-reno10-5g.gif" style="height:480x;width:216px" title="image 5" /></p>
+<p><img alt="Steps to generate a bug report on a OPPO Reno 10 utilizando Android 13" src="../../../assets/05-how-to/bug-report-oppo-reno10-5g.gif" style="height:480x;width:216px" title="image 5" /></p>
 <figcaption>
 <p><strong>image 4</strong>. Steps to generate a bug report on a OPPO Reno 10 running Android 13</p>
 </figcaption>
 </figure>
 <h3 id="realme-realme-ui">Realme (Realme UI)</h3>
-<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#realme-realme-ui">steps to enable developer options on a Realme device</a>**. </p>
+<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/index.html#realme-realme-ui">steps to enable developer options on a Realme device</a>**. </p>
 <p>Once developer options are enabled, follow these steps to generate a bugreport (see Image 5):</p>
 <ol>
 <li>Open <strong>Settings</strong></li>
@@ -2146,13 +2146,13 @@
 <li>Select the preferred mechanism and <strong>share the bugreport</strong>  </li>
 </ol>
 <figure>
-<p><img alt=" Steps to generate a bug report on a Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13" src="../../../how-tos/05-como-extraer-bugreport/assets/bug-report-realme-gt2-pro.gif" style="height:480x;width:216px" title="image 6" /></p>
+<p><img alt=" Steps to generate a bug report on a Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13" src="../../../assets/05-how-to/bug-report-realme-gt2-pro.gif" style="height:480x;width:216px" title="image 6" /></p>
 <figcaption>
 <p><strong>image 5</strong>. Steps to generate a bug report on a Realme GT2 Pro with RealMe UI 4.0 and Android 13</p>
 </figcaption>
 </figure>
 <h3 id="samsung-one-ui">Samsung (One UI)</h3>
-<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#samsung-one-ui">steps to enable developer options on a Samsung device</a>**. </p>
+<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/index.html#samsung-one-ui">steps to enable developer options on a Samsung device</a>**. </p>
 <p>Once developer options are enabled, follow these steps to generate a bugreport (see Image 6):</p>
 <ol>
 <li>Open <strong>Settings</strong></li>
@@ -2165,13 +2165,13 @@
 <li>Select the preferred mechanism and <strong>share the bugreport</strong>  </li>
 </ol>
 <figure>
-<p><img alt=" Steps to generate a bug report on a Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13" src="../../../how-tos/05-como-extraer-bugreport/assets/bug-report-samsung-galaxy-a54-5g.gif" style="height:480x;width:216px" title="image 7" /></p>
+<p><img alt=" Steps to generate a bug report on a Samsung Galaxy A54 con One UI en un dispositivo utilizando Android 13" src="../../../assets/05-how-to/bug-report-samsung-galaxy-a54-5g.gif" style="height:480x;width:216px" title="image 7" /></p>
 <figcaption>
 <p><strong>image 6</strong>. Steps to generate a bug report on a Samsung Galaxy A54 with One UI and Android 13</p>
 </figcaption>
 </figure>
 <h3 id="sony-xperia-ui">Sony (Xperia UI)</h3>
-<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#sony-xperia-ui">steps to enable developer options on a Sony device</a>**.</p>
+<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/index.html#sony-xperia-ui">steps to enable developer options on a Sony device</a>**.</p>
 <p>Once developer options are enabled, follow these steps to generate a bugreport (see Image 7):</p>
 <ol>
 <li>Open <strong>Settings</strong></li>
@@ -2185,13 +2185,13 @@
 <li>Select the preferred mechanism and <strong>share the bugreport</strong>  </li>
 </ol>
 <figure>
-<p><img alt=" Steps to generate a bug report on a Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14." src="../../../how-tos/05-como-extraer-bugreport/assets/bug-report-sony-xperia-10-v.gif" style="height:480x;width:216px" title="image 8" /></p>
+<p><img alt=" Steps to generate a bug report on a Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14." src="../../../assets/05-how-to/bug-report-sony-xperia-10-v.gif" style="height:480x;width:216px" title="image 8" /></p>
 <figcaption>
 <p><strong>image 7</strong>. Steps to generate a bug report on a Sony Xperia 10V with Xperia UI 4.0 running Android 14.</p>
 </figcaption>
 </figure>
 <h3 id="tecno-hi-os">Tecno (Hi OS)</h3>
-<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md#tecno-hi-os">steps to enable developer options on a Tecno device</a>**.  . </p>
+<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/index.html#tecno-hi-os">steps to enable developer options on a Tecno device</a>**.  . </p>
 <p>Once developer options are enabled, follow these steps to generate a bugreport (see Image 8):</p>
 <ol>
 <li>Open <strong>Settings</strong></li>
@@ -2205,13 +2205,13 @@
 <li>Select the preferred mechanism and <strong>share the bugreport</strong>  </li>
 </ol>
 <figure>
-<p><img alt="Pasos para generar un reporte de errores en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13" src="../../../how-tos/05-como-extraer-bugreport/assets/bug-report-tecno-spark-go-2023.gif" style="height:480x;width:216px" title="image 9" /></p>
+<p><img alt="Pasos para generar un reporte de errores en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13" src="../../../assets/05-how-to/bug-report-tecno-spark-go-2023.gif" style="height:480x;width:216px" title="image 9" /></p>
 <figcaption>
 <p><strong>image 8</strong>.  Steps to generate a bug report on a Tecno Spark Go with Hi OS running Android 13.</p>
 </figcaption>
 </figure>
 <h3 id="xiaomi-hyper-os">Xiaomi (Hyper OS)</h3>
-<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/02-how-to-enable-developer-options.md#xiaomi-hyper-os">steps to enable developer options on a Xiaomi device</a>. </p>
+<p>To generate a bugreport you <strong>need access to developer options</strong>. If this menu has not yet been enabled, follow these <a href="../02-how-to-enable-developer-options/#xiaomi-hyper-os">steps to enable developer options on a Xiaomi device</a>. </p>
 <p>Once developer options are enabled, follow these steps to generate a bugreport (see Image 9):</p>
 <ol>
 <li>Open <strong>Settings</strong></li>
@@ -2225,13 +2225,13 @@
 <li>Select the preferred mechanism and <strong>share the bugreport</strong>  </li>
 </ol>
 <figure>
-<p><img alt="Pasos para generar un reporte de errores en un dispositivo Xiaomi 13T." src="../../../how-tos/05-como-extraer-bugreport/assets/bug-report-xiaomi-13t.gif" style="height:480x;width:216px" title="image 10" /></p>
+<p><img alt="Pasos para generar un reporte de errores en un dispositivo Xiaomi 13T." src="../../../assets/05-how-to/bug-report-xiaomi-13t.gif" style="height:480x;width:216px" title="image 10" /></p>
 <figcaption>
 <p><strong>image 9</strong>.  Steps to generate a bug report on a Xiaomi 13T.</p>
 </figcaption>
 </figure>
 <h2 id="steps-to-generate-a-bugreport-via-the-adb-console">Steps to generate a bugreport via the ADB console</h2>
-<p>In addition to the graphical method, it is possible to generate a bugreport via the ADB console. Remember to <a href="../03-how-to-enable-adb/03-how-to-enable-adb.md">enable USB debugging</a> before following these steps.</p>
+<p>In addition to the graphical method, it is possible to generate a bugreport via the ADB console. Remember to <a href="../03-how-to-enable-adb/">enable USB debugging</a> before following these steps.</p>
 <h3 id="generate-the-bugreport">Generate the bugreport</h3>
 <p>If you only have <strong>one device connected</strong>, you can obtain a bugreport using the following command:</p>
 <div class="highlight"><pre><span></span><code>$ adb bugreport
@@ -2262,10 +2262,10 @@ dumpstate-stats.txt
 </code></pre></div>
 <h2 id="conclusion">Conclusión</h2>
 <p>A <strong>bugreport</strong> is an error report generated by the Android operating system  that contains diagnostic information designed <strong>primarily for debugging application errors</strong>. However, <strong>many of the logs and behaviors included are also useful for forensic analysis</strong>. Extracting a bugreport is one of the first steps in an investigation cycle and is a frequent way to begin the triage process on Android devices.</p>
-<p>Due to the <strong>diversity of manufacturers and Android versions</strong>, this guide presents a list of step-by-step instructions to generate a bugreport, to facilitate and promote consent-based forensic analysis in benefit of civil society. Always ensure you discuss and obtain <a href="../01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md">informed consent</a> before extracting forensic information.</p>
-<p>If you have access to a <strong>graphical interface not captured in this resource</strong> and would like to <strong>contribute</strong> the necessary screenshots to add this resource, you can contact us through an <a href="../../community/how-to-contribute.md#reporting-issues">issue</a> or, if you are comfortable with markdown, submit a <a href="../../community/how-to-contribute.md#integrating-new-content-through-pull-requests">pull request</a>.</p>
+<p>Due to the <strong>diversity of manufacturers and Android versions</strong>, this guide presents a list of step-by-step instructions to generate a bugreport, to facilitate and promote consent-based forensic analysis in benefit of civil society. Always ensure you discuss and obtain <a href="../../how-tos/01-how-to-obtain-informed-consent/">informed consent</a> before extracting forensic information.</p>
+<p>If you have access to a <strong>graphical interface not captured in this resource</strong> and would like to <strong>contribute</strong> the necessary screenshots to add this resource, you can contact us through an <a href="../../community/how-to-contribute/index.html#reporting-issues">issue</a> or, if you are comfortable with markdown, submit a <a href="../../community/how-to-contribute/index.html#integrating-new-content-through-pull-requests">pull request</a>.</p>
 <h2 id="comments">Comments</h2>
-<p>Do you have any <strong>comment or suggestion</strong> about this resource? You can use the <strong>comment function provided below</strong> to leave your ideas, corrections or thoughts. Please make sure to follow our <a href="../../community/code-of-conduct.md">code of conduct</a> when leaving your comment. If you prefer, you can also participate in the discussion directly in the <a href="https://github.com/Socialtic/forensics/discussions">github repository</a>. </p>
+<p>Do you have any <strong>comment or suggestion</strong> about this resource? You can use the <strong>comment function provided below</strong> to leave your ideas, corrections or thoughts. Please make sure to follow our <a href="../../community/code-of-conduct/">code of conduct</a> when leaving your comment. If you prefer, you can also participate in the discussion directly in the <a href="https://github.com/Socialtic/forensics/discussions">github repository</a>. </p>
 
 
 
