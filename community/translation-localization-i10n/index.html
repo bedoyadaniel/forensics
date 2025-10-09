@@ -1666,7 +1666,7 @@
 
   <h1>Comunidad - Traducciones y localizaciones</h1>
 
-<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-10-09'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-10-09T11:10:04-06:00'>2025-10-09</time></span><span data-tippy-content data-tippy-raw='2025-07-14'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-07-14T00:00:00'>2025-07-14</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Daniel' data-tippy-content data-tippy-raw='<a href="https://socialtic.org/quienes-somos/" target="_blank" rel="noopener">Daniel</a>'><span class='avatar-text'></span><img class="avatar" src="../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
+<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-10-09'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-10-09T11:24:23-06:00'>2025-10-09</time></span><span data-tippy-content data-tippy-raw='2025-07-14'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-07-14T00:00:00'>2025-07-14</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Daniel' data-tippy-content data-tippy-raw='<a href="https://socialtic.org/quienes-somos/" target="_blank" rel="noopener">Daniel</a>'><span class='avatar-text'></span><img class="avatar" src="../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
 <p>Desde SocialTIC comprendemos la importancia de mantener <strong>recursos accesibles</strong>, de <strong>fácil lectura</strong> y que puedan generar un impacto en <strong>poblaciones con diferentes capacidades técnicas y en múltiples regiones del mundo</strong>. Debido a nuestra experticia y ubicación geográfica, nuestros recursos frecuentemente estarán <strong>disponibles primero en idioma español,</strong>  y de forma posterior se destinarán los recursos necesarios para la <strong>traducción al idioma inglés</strong>.  Si tienes interés en <strong>colaborar con la traducción de recursos del español al inglés</strong>, o viceversa, por favor escríbenos a <a href="mailto:seguridad@socialtic.org"><strong>seguridad@socialtic.org</strong></a>. </p>
 <p>Si tienes interés en traducir los contenidos del repositorio a un <strong>nuevo idioma</strong>, te solicitamos <strong>informarnos a través de un nuevo <em>issue</em> o directamente a través de seguridad@socialtic.org</strong>. Si bien concordamos en la importancia de localizar recursos, existen algunas consideraciones importantes antes de iniciar una traducción: </p>
 <ul>
@@ -1677,35 +1677,53 @@
 <li>Licencia de uso:  Este repositorio extiende <a href="https://docs.mvt.re/en/latest/license/">la licencia de MVT</a> para fomentar el análisis forense consensuado. </li>
 </ul>
 <h3 id="organizacion-de-los-contenidos">Organización de los contenidos</h3>
-<p>El repositorio se encuentra <strong>estructurado para aceptar traducciones a nuevos idiomas</strong>. En general, los contenidos en todos los idiomas <strong>se estructuran de la siguiente manera</strong>: </p>
+<p>El repositorio se encuentra <strong>estructurado para aceptar traducciones a nuevos idiomas</strong>. Para el manejo de las traducciones se utiliza el <a href="https://ultrabug.github.io/mkdocs-static-i18n/">plug-in mkdocs-static-i18n</a>. </p>
+<p>Se utilza la configuración de carpetas, por lo que en general, los contenidos en todos los idiomas <strong>se estructuran de la siguiente manera</strong>, con los <strong>nombres de carpetas en idioma Inglés</strong>. Se muestra a continuación la estructura para el idioma español: </p>
 <div class="highlight"><pre><span></span><code>docs/
-en/
-explainers/
-how-tos/
-references/
-tutorials/
-community/
-index.md
-es/
-explainers/
-how-tos/
-references/
-tutoriales/
-comunidad/
-index.md
-</code></pre></div>
-<p>Adicionalmente, <strong>cada nuevo contenido tendrá su propia carpeta correspondiente</strong>, donde se aloja el archivo en formato markdown con los contenidos. Por ejemplo, el contenido <em>Explainer:</em> <em>Introducción a la forense digital consentida para la defensa de los derechos humanos</em> se organiza de la siguiente forma en el idioma inglés y español: </p>
-<div class="highlight"><pre><span></span><code>es/
-explainers/
-01-explainer-introduccion-forense-digital/
-01-explainer-introduccion-forense-digital.md
-en/
+  es/
+    localized-assets/
+      resource 1/
+        image1.png
+    home/
+      getting-started/
+        index.md
+      roadmap/
+        index.md
     explainers/
-        01-explainer-introduction-digital-forensics/
-            01-explainer-introduction-digital-forensics.md
+      explainer-topic-01/
+        index.md
+      explainer-topic-n/
+        index.md
+    how-tos/
+      how-to-topic-01/
+        index.md  
+      how-to-topic-n/
+        index.md
+    tutorials/
+      tutorial-topic-01/
+        index.md  
+      tutorial-topic-n/
+        index.md
+    references/
+      reference-topic-01/
+        index.md
+      reference-topic-n/
+        index.md
+    index.md
 </code></pre></div>
-<p>Antes de comenzar una traducción, recomendamos explorar las carpetas de contenidos, y consultar ante cualquier duda. Se recomienda además revisar los <strong>lineamientos de estilo para la nomenclatura de archivos incluídos como parte de las mejores prácticas</strong> de contribución del repositorio.     </p>
-<p>Para realizar contribuciones directamente al repositorio en relación a traducciones, se recomienda seguir las instrucciones en la sección de <em>pull requests</em> o solicitudes de integración. </p>
+<p><strong>Cada nuevo contenido tendrá su propia carpeta correspondiente</strong>, donde se aloja el archivo en formato markdown de nombre 'index.md' con los contenidos. Por ejemplo, el contenido <em>Explainer:</em> <em>Introducción a la forense digital consentida para la defensa de los derechos humanos</em> se organiza de la siguiente forma en el idioma inglés y español: </p>
+<div class="highlight"><pre><span></span><code>es/
+  explainers/
+    01-explainer-introduction-digital-forensics/
+      index.md
+
+en/
+  explainers/
+    01-explainer-introduction-digital-forensics/
+      index.md
+</code></pre></div>
+<p>Tal y como se observa, <strong>no existen diferencia en el nombre de los archivos o carpetas</strong>, y la única diferencia radica en el folder en el cual se ubica la documentación. </p>
+<p>Para realizar contribuciones directamente al repositorio en relación a traducciones, se recomienda seguir las instrucciones en la sección de <em>pull requests</em> o <a href="../how-to-contribute/index.html#solicitudes-de-integración-a-través-de-pull-request">solicitudes de integración</a>. </p>
 
 
 
