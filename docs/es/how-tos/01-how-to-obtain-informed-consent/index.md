@@ -32,7 +32,7 @@ El [consentimiento](https://es.wikipedia.org/wiki/Consentimiento) es un principi
 
 Un aspecto clave en cualquier acuerdo de consentimiento es la capacidad de quién acepta el acuerdo de tomar una **decisión informada** sobre el curso de la investigación, e incluso poder rechazar la asistencia. En la práctica forense, esto significa brindar toda la información necesaria para que quién solicita el análisis comprenda las acciones, riesgos, derechos y obligaciones que conlleva el proceso de investigación. Es importante que la **persona analista se comunique de forma clara y transparente**, y respete la voluntad de quién solicita el apoyo. 
 
-Durante una investigación forense, la persona analista deberá recolectar y analizar la evidencia, y también presentar los resultados de su análisis. **Los [artefactos forenses](../../references/00-glossary.md#artefacto-forense) que se recolectan pueden contener información personal (contactos, archivos, fotografías, etc)**, que podría acarrear riesgos si se realiza un manejo inadecuado. Además, esta información podría estar sujeta a normas de protección de la información ([GDPR](https://es.wikipedia.org/wiki/Reglamento_General_de_Protecci%C3%B3n_de_Datos), por ejemplo) y, más allá de la regulación existente, requieren de un tratamiento responsable, idealmente **respaldado por [políticas de manejo, protección y retención de la información](https://protege.la/guias-contenido/diseno-politicas-protocolos-lineamientos/).** 
+Durante una investigación forense, la persona analista deberá recolectar y analizar la evidencia, y también presentar los resultados de su análisis. **Los [artefactos forenses](../../references/00-glossary/index.md#artefacto-forense) que se recolectan pueden contener información personal (contactos, archivos, fotografías, etc)**, que podría acarrear riesgos si se realiza un manejo inadecuado. Además, esta información podría estar sujeta a normas de protección de la información ([GDPR](https://es.wikipedia.org/wiki/Reglamento_General_de_Protecci%C3%B3n_de_Datos), por ejemplo) y, más allá de la regulación existente, requieren de un tratamiento responsable, idealmente **respaldado por [políticas de manejo, protección y retención de la información](https://protege.la/guias-contenido/diseno-politicas-protocolos-lineamientos/).** 
 
 !!! abstract "Consideración Legal"
     Los datos que se recolecten estarán sujetos a legislación para la protección y manejo de la información de la  **jurisdicción local de residencia de la persona a quien se le hará el diagnostico forense.**
@@ -71,14 +71,14 @@ En la siguiente sección presentamos un **borrador de una carta de consentimient
 
 Para generar una carta de consentimiento a partir del borrador propuesto, siga los siguientes pasos: 
 
-1- **Descargue** el [borrador de carta de consentimiento informado](borrador-carta-de-consentimiento-para-analisis-forense-odt.odt). El formato utiliza campos de formulario, de forma tal que al convertir en PDF pueda ser completado de forma sencilla.
+1- **Descargue** el [borrador de carta de consentimiento informado](../../assets/01-how-to/borrador-carta-de-consentimiento-para-analisis-forense-odt.odt). El formato utiliza campos de formulario, de forma tal que al convertir en PDF pueda ser completado de forma sencilla.
 
-![captura de carta de consentimiento](carta-de-consentimiento.png "Carta de consentimiento")
+![captura de carta de consentimiento](../../assets/01-how-to/carta-de-consentimiento.png "Carta de consentimiento")
 
 En los siguientes enlaces puedes **descargar el borrador de carta de consentimiento** en diferentes formatos:
 
-* [Carta de consentimiento en ODT](borrador-carta-de-consentimiento-para-analisis-forense-odt.odt)
-* [Ejemplo del resultado al convertir el borrador .odt a PDF](borrador-carta-de-consentimiento-para-analisis-forense-pdf.pdf). 
+* [Carta de consentimiento en ODT](../../assets/01-how-to/borrador-carta-de-consentimiento-para-analisis-forense-odt.odt)
+* [Ejemplo del resultado al convertir el borrador .odt a PDF](../../assets/01-how-to/borrador-carta-de-consentimiento-para-analisis-forense-pdf.pdf). 
 * [Borrador de carta de consentimiento en Google docs](https://docs.google.com/document/d/1YPiMO7WuGwE7hMHLZ9VPQkTLALN_bhmL0DASaZn3r2A/template/preview). 
 
 2- **Complete y verifique** las secciones resaltadas en amarillo: 
@@ -86,7 +86,7 @@ En los siguientes enlaces puedes **descargar el borrador de carta de consentimie
 * **Nombre de la organización**: Incluya el nombre de la organización que realiza el análisis forense  
 * **Objetivo de la investigación**: Ajuste el objetivo, según sea necesario, indicando claramente qué acciones se realizarán durante la investigación forense, y con qué objetivo.   
 * **Consentimiento para publicar:** Si el objetivo es publicar los resultados de la investigación, mantenga y ajuste el texto correspondiente para obtener el consentimiento necesario. Si no tiene intención en publicar resultados, elimine esta sección.   
-* **Detalle de la información a recolectar**: Detalle la [información que se recolectará](#¿qué-información-sensible-se-recolecta-durante-un-análisis-forense?) para el análisis forense, dependiendo del tipo de dispositivo y proceso de adquisición.    
+* **Detalle de la información a recolectar**: Detalle la [información que se recolectará](#qué-información-sensible-se-recolecta-durante-un-análisis-forense) para el análisis forense, dependiendo del tipo de dispositivo y proceso de adquisición.    
 * **Enlace a la política de manejo de la información:** En caso de existir, incluya el enlace a la  política de manejo de la información. **Aclare si la información será compartida con terceras personas.** 
 * **Confidencialidad de la investigación**: Detalle si la participación en la investigación se debe manejar como información confidencial, de forma tal que quién solicita el análisis comprenda si se espera que no se compartan detalles sobre el análisis. 
 
@@ -104,11 +104,11 @@ A continuación se listan los **artefactos forenses que típicamente se recolect
 
 ### Android
 
-* [Google Takeout](../../references/00-glossary.md#google-takeout): Google Takeout (disponible en [takeout.google.com](http://takeout.google.com)) permite seleccionar datos a exportar sobre diferentes productos de Google, incluyendo **información de acceso a la cuenta de Google, información de descarga de aplicaciones de PlayStore, información sobre el registro y actividad de la cuenta, mensajes, entre otros**. La lista es extensa, por lo que se recomienda solicitar puntualmente lo que sea necesario para el análisis, y evitar extraer información que contenga fotografías, u otros información personal no relevante. Al solicitar y documentar consentimiento, aclare lo que se solicitará del Google Takeout y el tipo de información que se incluye.   
+* [Google Takeout](../../references/00-glossary/index.md#google-takeout): Google Takeout (disponible en [takeout.google.com](http://takeout.google.com)) permite seleccionar datos a exportar sobre diferentes productos de Google, incluyendo **información de acceso a la cuenta de Google, información de descarga de aplicaciones de PlayStore, información sobre el registro y actividad de la cuenta, mensajes, entre otros**. La lista es extensa, por lo que se recomienda solicitar puntualmente lo que sea necesario para el análisis, y evitar extraer información que contenga fotografías, u otros información personal no relevante. Al solicitar y documentar consentimiento, aclare lo que se solicitará del Google Takeout y el tipo de información que se incluye.   
 
-* [Android Bugreport](../../references/00-glossary.md#bugreport): El ‘bugreport’ o informe de errores es un archivo generado por el sistema operativo Android para ayudar a encontrar y diagnosticar errores en las aplicaciones y el sistema operativo. **En general, no incluyen [información personal](https://cio-wiki.org/wiki/Personally_Identifiable_Information_\(PII\))**, pero sí incluye información sobre aplicaciones instaladas en el dispositivo, información sobre redes wi-fi y archivos de logs que podrían describir acciones realizadas por el usuario o el sistema.   
+* [Android Bugreport](../../references/00-glossary/index.md#bugreport): El ‘bugreport’ o informe de errores es un archivo generado por el sistema operativo Android para ayudar a encontrar y diagnosticar errores en las aplicaciones y el sistema operativo. **En general, no incluyen [información personal](https://cio-wiki.org/wiki/Personally_Identifiable_Information_\(PII\))**, pero sí incluye información sobre aplicaciones instaladas en el dispositivo, información sobre redes wi-fi y archivos de logs que podrían describir acciones realizadas por el usuario o el sistema.   
 
-* [Adquisición de AndroidQF](../../references/00-glossary.md#androidqf): AndroidQF permite realizar una extracción de información de un dispositivo Android con el fin de realizar un análisis forense. **La mayoría de los archivos recolectados no contienen información sensible,** pero de forma opcional se puede generar una copia de  los mensajes SMS y MMS. En concreto, recolecta configuraciones del sistema, lista de procesos, lista de servicios, copia de logs, lista de aplicaciones instaladas, lista de archivos del sistema y copia de los archivos temporales. De forma opcional se puede también exportar una copia de las aplicaciones instaladas.  
+* [Adquisición de AndroidQF](../../references/00-glossary/index.md#androidqf): AndroidQF permite realizar una extracción de información de un dispositivo Android con el fin de realizar un análisis forense. **La mayoría de los archivos recolectados no contienen información sensible,** pero de forma opcional se puede generar una copia de  los mensajes SMS y MMS. En concreto, recolecta configuraciones del sistema, lista de procesos, lista de servicios, copia de logs, lista de aplicaciones instaladas, lista de archivos del sistema y copia de los archivos temporales. De forma opcional se puede también exportar una copia de las aplicaciones instaladas.  
 
 ### iOS
 
@@ -137,6 +137,6 @@ Durante el proceso de consentimiento también se reconocen y aceptan los riesgos
 
 ## Comentarios
 
-¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
+¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../community/code-of-conduct/). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
 
 
