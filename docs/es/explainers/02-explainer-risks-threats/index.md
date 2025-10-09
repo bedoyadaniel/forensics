@@ -16,7 +16,7 @@ authors:
 
 # Explainer: Riesgos y amenazas para laboratorios forenses de la sociedad civil
 
-Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../../references/00-glossary.md#diataxis).
+Este documento forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](../../references/00-glossary/index.md#diataxis).
 
 Este recurso en particular se enmarca dentro de la categoría de [explainers](https://diataxis.fr/explanation/), y **describe los riesgos, amenazas y vulnerabilidades** que analistas y laboratorios forenses de la sociedad civil enfrentan por causa de su trabajo. Es un material introductorio que incluye ejemplos y enlaces a recursos preventivos que pueden ayudar a entender y mitigar los riesgos a los que se enfrentan.
 
@@ -30,7 +30,7 @@ Por otro lado, una **vulnerabilidad** se refiere a una deficiencia o debilidad e
 
 El **riesgo** resulta de combinar la posibilidad de que una amenaza se materialice con la severidad del impacto, si termina ocurriendo. El riesgo no es un concepto estático; varía con el tiempo, dependiendo de factores internos y externos, por lo que realizar ejercicios regulares de análisis de riesgos es una práctica necesaria para reducir la probabilidad y severidad de las amenazas. 
 
-En el contexto de la forense consentida en beneficio de la sociedad civil, como describimos anteriormente en [nuestro explainer sobre forense para la defensa de los derechos humanos](../01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md), el proceso de atención usualmente inicia cuando una persona defensora de Derechos Humanos se acerca a un punto de contacto o a un laboratorio de amenazas para solicitar asistencia. En muchos casos, y **en particular cuando se sospecha de una amenaza avanzada**, es posible que la persona se encuentre en un **contexto de alto riesgo, expuesta a ataques digitales, legales, físicos y psicosociales**. 
+En el contexto de la forense consentida en beneficio de la sociedad civil, como describimos anteriormente en [nuestro explainer sobre forense para la defensa de los derechos humanos](../01-explainer-introduction-digital-forensics/), el proceso de atención usualmente inicia cuando una persona defensora de Derechos Humanos se acerca a un punto de contacto o a un laboratorio de amenazas para solicitar asistencia. En muchos casos, y **en particular cuando se sospecha de una amenaza avanzada**, es posible que la persona se encuentre en un **contexto de alto riesgo, expuesta a ataques digitales, legales, físicos y psicosociales**. 
 
 Los riesgos particulares que una organización o individuo enfrenta, **dependen del contexto y de su trabajo particular**. Si bien el enfoque de las investigaciones forenses no es la contención y mitigación de amenazas, **es importante tener conciencia del entorno de riesgos**, y evitar iniciar acciones que puedan llevar a un incremento en los daños e impactos experimentados por la persona en riesgo. 
 
@@ -178,12 +178,12 @@ A través de este documento hemos presentado una descripción de las actores de 
 
 Nuestra intención a través de este documento no es minimizar o socavar esfuerzos emergentes para hacer más análisis forense desde la sociedad civil. Al contrario, **resaltamos la importancia de implementar prácticas y políticas de seguridad operacional de forma tal que se inicien investigaciones de forma responsable** y sin incrementar el riesgo para personas, ya de por sí, en situaciones vulnerables. 
 
-**Te invitamos a colaborar con la documentación en este repositorio**. Si tienes alguna observación o solicitud, puedes hacerla a través de la [sección de problemas (issues) del repositorio](../../comunidad/como-colaborar.md#propuestas-de-mejora-o-correcciones-a-través-de-issues). Si tienes recursos que deseas integrar a este repositorio documental, escríbenos a [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
+**Te invitamos a colaborar con la documentación en este repositorio**. Si tienes alguna observación o solicitud, puedes hacerla a través de la [sección de problemas (issues) del repositorio](../../community/how-to-contribute/index.md#propuestas-de-mejora-o-correcciones-a-través-de-issues). Si tienes recursos que deseas integrar a este repositorio documental, escríbenos a [seguridad@socialtic.org](mailto:seguridad@socialtic.org). 
 
 
 
 ## Comentarios
 
-¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../comunidad/codigo-de-conducta.md). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
+¿Tienes **comentarios o sugerencias** sobre este recurso? Puedes utilizar la **función de comentar que se muestra a continuación** para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro [código de conducta](../../community/code-of-conduct/). La función de comentarios enlaza directamente a la sección de [_Discussions_ de Github](https://github.com/Socialtic/forensics/discussions), donde también **puedes participar en las discusiones de forma directa**, si lo prefieres.   
 
 
