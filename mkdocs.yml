@@ -93,6 +93,7 @@ extra:
       link: https://github.com/socialtic/forensics/
     - icon: material/web
       link: https://socialtic.org
+  announcement: 'Esta página aún no ha sido traducida al Español, por lo que te mostramos la versión en Inglés.'  # Banner de no disponible en ES  
 
 plugins:
   - search  #habilita barra de búsqueda
@@ -127,6 +128,8 @@ plugins:
         - locale: en
           name: English
           build: true
+          extra:
+            announcement: 'This page has not been translated yet to English, therefore we are showing you the Spanish version.'  # Banner de no disponible en EN  
           nav:
             - Home:
               - Home: 'index.md'
@@ -166,6 +169,8 @@ plugins:
         - locale: pt
           name: Portuguese
           build: true
+          extra:
+            announcement: 'Este recurso ainda não está disponível em português, por isso estamos mostrando a versão em espanhol.'  # Banner de no disponible en PT 
           nav:
             - Home:
               - Home: 'index.md'
