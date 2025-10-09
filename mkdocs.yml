@@ -109,6 +109,12 @@ plugins:
         - es/how-tos/index.md
         - es/references/index.md
         - es/tutorials/index.md
+        - en/index.md              # Exclude specific file
+        - en/explainers/index.md
+        - en/how-tos/index.md
+        - en/references/index.md
+        - en/tutorials/index.md
+        - pt/index.md
   - i18n: #Plugin para localización
       reconfigure_material: true
       reconfigure_search: true
