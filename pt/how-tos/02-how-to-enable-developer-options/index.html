@@ -2002,11 +2002,11 @@
 <h1 id="guia-como-habilitar-las-opciones-de-desarrollador-en-diferentes-dispositivos-android">Guía: ¿Cómo habilitar las opciones de desarrollador en diferentes dispositivos Android?</h1>
 <div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-07-28'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-07-28T00:00:00'>2025-07-28</time></span><span data-tippy-content data-tippy-raw='2025-07-28'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-07-28T00:00:00'>2025-07-28</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='Daniel' data-tippy-content data-tippy-raw='<a href="https://socialtic.org/quienes-somos/" target="_blank" rel="noopener">Daniel</a>'><span class='avatar-text'></span><img class="avatar" src="../../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
 
-<p>Este recurso se enmarca dentro de la categoría de <strong>guías how-to</strong>, y muestra los pasos a seguir para <strong>habilitar el menú de opciones de desarrollador en diferentes dispositivos Android</strong>, así como una breve explicación de <strong>qué son</strong> las opciones de desarrollador y <strong>porqué son útiles</strong> al hacer forense digital. Este es un <strong>material introductorio</strong>, complementario a otros recursos, como el <a href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html">explainer de forense basada en log para dispositivos Android</a>, y <strong>forma parte de los pasos a seguir para realizar un triaje inicial</strong>.   </p>
+<p>Este recurso se enmarca dentro de la categoría de <strong>guías how-to</strong>, y muestra los pasos a seguir para <strong>habilitar el menú de opciones de desarrollador en diferentes dispositivos Android</strong>, así como una breve explicación de <strong>qué son</strong> las opciones de desarrollador y <strong>porqué son útiles</strong> al hacer forense digital. Este es un <strong>material introductorio</strong>, complementario a otros recursos, como el <a href="../../explainers/03-explainer-log-forensics-android/">explainer de forense basada en log para dispositivos Android</a>, y <strong>forma parte de los pasos a seguir para realizar un triaje inicial</strong>.   </p>
 <p>Agradecemos la <strong>colaboración</strong> del <a href="https://rsf.org/en/digital-security-lab">laboratorio de seguridad de Reporteros Sin Fronteras</a>, quienes brindaron los insumos iniciales necesarios para la producción de esta guía. </p>
 <h2 id="que-son-y-porque-son-utiles">¿Qué son y porqué son útiles?</h2>
 <p>Las <a href="https://developer.android.com/studio/debug/dev-options"><strong>opciones de desarrollador</strong></a> hacen referencia a un <strong>menú oculto</strong> del sistema operativo <strong>Android</strong> que permite configurar algunas <strong>funciones adicionales</strong>, pensadas especialmente para apoyar el proceso de <a href="https://es.wikipedia.org/wiki/Depuraci%C3%B3n_de_programas">depuración</a> durante la <strong>creación de nuevas aplicaciones o cambios en el sistema</strong>. Entre las opciones de desarrollador, también se suelen colocar algunas <strong>configuraciones avanzadas</strong> como por ejemplo, ajustar las preferencias del controlador gráfico o configuraciones avanzadas de redes e incluso <strong>opciones experimentales</strong> que aún están en prueba o desarrollo. </p>
-<p>Desde el punto de vista de <strong>forense digital</strong>, y en particular al hacer <a href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html">investigaciones basadas en logs</a> utilizando herramientas como MVT y AndroidQF, las opciones de desarrollador nos <strong>permiten habilitar funciones claves</strong>, como el <strong><a href="../../references/00-glossary.md#adb">depurado USB</a></strong>, la consola de <strong>ADB</strong> o la <strong>generación</strong> de reportes de errores o <strong><em>bug report</em></strong>. Es por esto que en muchas ocasiones, el <strong>primer paso</strong> será habilitar el menú de opciones de desarrollador. </p>
+<p>Desde el punto de vista de <strong>forense digital</strong>, y en particular al hacer <a href="../../explainers/03-explainer-log-forensics-android/">investigaciones basadas en logs</a> utilizando herramientas como MVT y AndroidQF, las opciones de desarrollador nos <strong>permiten habilitar funciones claves</strong>, como el <strong><a href="../../references/00-glossary/index.html#adb">depurado USB</a></strong>, la consola de <strong>ADB</strong> o la <strong>generación</strong> de reportes de errores o <strong><em>bug report</em></strong>. Es por esto que en muchas ocasiones, el <strong>primer paso</strong> será habilitar el menú de opciones de desarrollador. </p>
 <h2 id="por-que-hay-diferentes-formas-de-habilitarlas">¿Por qué hay diferentes formas de habilitarlas?</h2>
 <p>El sistema operativo Android basa su núcleo en el proyecto de código abierto <a href="https://source.android.com/"><em>Android Open Source Project</em></a><em>.</em> Sin embargo, la <a href="https://www.makeuseof.com/tag/android-really-open-source-matter/">mayoría de fabricantes utilizan una versión propietaria de Google</a>, sobre la cuál se agregan capas de personalización adicionales, que en la mayoría de casos son también propietarias. Existen algunas alternativas, como por ejemplo <a href="https://lineageos.org/">LineageOS</a>, <a href="https://grapheneos.org/">Graphene OS</a> o <a href="https://calyxos.org/">CalyxOS</a>, que se basan enteramente en principios de <strong>código abierto</strong> y buscan alejarse de los ecosistemas propietarios. </p>
 <p>El resultado de estos desarrollos adicionales sobre el proyecto base significa que existen una <strong>amplia variedad de interfaces gráficas</strong> para el sistema operativo. Podemos mencionar algunos ejemplos como: </p>
@@ -2033,7 +2033,7 @@
 <li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
 </ol>
 <figure>
-<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Google Pixel con Android 13" loading="lazy" src="../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Google.gif" title="imagen 1" /></p>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Google Pixel con Android 13" loading="lazy" src="../../../assets/02-how-to/enable-dev-options-Google.gif" title="imagen 1" /></p>
 <figcaption>
 <p><strong>Imagen 1</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Google Pixel con Android 13.</p>
 </figcaption>
@@ -2049,7 +2049,7 @@
 </ol>
 <p>Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de <strong>Sistema,</strong> y se <strong>mantendrán habilitadas</strong> hasta que se deshabiliten (desde el menú de opciones de desarrollador).   </p>
 <figure>
-<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13" loading="lazy" src="../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Honor.gif" title="imagen 2" /></p>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13" loading="lazy" src="../../../assets/02-how-to/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Honor.gif" title="imagen 2" /></p>
 <figcaption>
 <p><strong>Imagen 2</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Honor Magic Lite con la versión Magic OS 7.1 en Android 13.</p>
 </figcaption>
@@ -2063,7 +2063,7 @@
 <li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
 </ol>
 <figure>
-<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Motorola Edge Neo 40 utilizando Hi OS en Android 13" loading="lazy" src="../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Motorola.gif" title="imagen 4" /></p>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Motorola Edge Neo 40 utilizando Hi OS en Android 13" loading="lazy" src="../../../assets/02-how-to/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Motorola.gif" title="imagen 4" /></p>
 <figcaption>
 <p><strong>Imagen 3</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Motorola Edge Neo 40 utilizando Hi OS en Android 13.</p>
 </figcaption>
@@ -2078,7 +2078,7 @@
 </ol>
 <p>Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de <strong>Sistema,</strong> y se <strong>mantendrán habilitadas</strong> hasta que se deshabiliten (desde el menú de opciones de desarrollador). </p>
 <figure>
-<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Nokia G42 5G utilizando Android 13" loading="lazy" src="../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Nokia.gif" title="imagen 4" /></p>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Nokia G42 5G utilizando Android 13" loading="lazy" src="../../../assets/02-how-to/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Nokia.gif" title="imagen 4" /></p>
 <figcaption>
 <p><strong>Imagen 4</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Nokia G42 5G utilizando Android 13.</p>
 </figcaption>
@@ -2093,7 +2093,7 @@
 </ol>
 <p>Las opciones de desarrollador aparecerán como un nuevo submenú dentro del apartado de <strong>Sistema,</strong> y se <strong>mantendrán habilitadas</strong> hasta que se deshabiliten (desde el menú de opciones de desarrollador). </p>
 <figure>
-<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Oppo Android 13" src="../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-oppo.gif" style="height:480x;width:216px" title="imagen 5" /></p>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Oppo Android 13" src="../../../assets/02-how-to/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-oppo.gif" style="height:480x;width:216px" title="imagen 5" /></p>
 <figcaption>
 <p><strong>Imagen 5</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Oppo.</p>
 </figcaption>
@@ -2108,7 +2108,7 @@
 <li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
 </ol>
 <figure>
-<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13" loading="lazy" src="../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Realme.gif" title="imagen 6" /></p>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13" loading="lazy" src="../../../assets/02-how-to/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Realme.gif" title="imagen 6" /></p>
 <figcaption>
 <p><strong>Imagen 6</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Realme GT2 Pro con RealMe UI 4.0 utilizando Android 13</p>
 </figcaption>
@@ -2137,7 +2137,7 @@
 <li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
 </ol>
 <figure>
-<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14" loading="lazy" src="../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Sony.gif" title="imagen 8" /></p>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14" loading="lazy" src="../../../assets/02-how-to/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Sony.gif" title="imagen 8" /></p>
 <figcaption>
 <p><strong>Imagen 8</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Sony Xperia 10V con Xperia UI 4.0 utilizando Android 14.</p>
 </figcaption>
@@ -2151,7 +2151,7 @@
 <li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
 </ol>
 <figure>
-<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13." loading="lazy" src="../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Tecno.gif" title="imagen 9" /></p>
+<p><img alt="Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13." loading="lazy" src="../../../assets/02-how-to/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Tecno.gif" title="imagen 9" /></p>
 <figcaption>
 <p><strong>Imagen 9</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Tecno Spark Go con Hi OS utilizando Android 13.</p>
 </figcaption>
@@ -2165,7 +2165,7 @@
 <li>Presiona <strong>7 veces</strong> sobre el número de compilación, hasta que veas un mensaje de confirmación. 👆</li>
 </ol>
 <figure>
-<p><img alt="PPasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi." loading="lazy" src="../02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xiaomi.gif" title="imagen 10" /></p>
+<p><img alt="PPasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi." loading="lazy" src="../../../assets/02-how-to/02-como-habilitar-opciones-desarrollador/assets/enable-dev-options-Xiaomi.gif" title="imagen 10" /></p>
 <figcaption>
 <p><strong>imagen 10</strong>. Pasos para habilitar las opciones de desarrollador en un dispositivo Xiamoi.</p>
 </figcaption>
@@ -2174,9 +2174,9 @@
 <h2 id="conclusion">Conclusión</h2>
 <p>La interfaz gráfica de los dispositivos Android varía entre fabricantes que utilizan como base el <a href="https://source.android.com/?hl=es-419">proyecto de código abierto Android (AOSP)</a>. Cada fabricante realiza sus propios desarrollos sobre esta capa base, con diferentes niveles de customización, lo que resulta en interfaces con <strong>diferentes apariencias, menús y opciones</strong>. </p>
 <p>El menú de <strong>opciones de desarrollador</strong> es un menú oculto, que se habilita a través de un procedimiento sencillo en la interfaz gráfica, y que es necesario para modificar <strong>opciones claves requeridas durante un proceso de extracción forense</strong>, como la consola ADB o un reporte de errores. En este recurso se recopilan <strong>capturas de pantalla correspondientes a diferentes fabricantes</strong> e interfaces, con la intención de <strong>facilitar la habilitación las opciones de desarrollador</strong> para personas analistas de la sociedad civil. </p>
-<p>Si <strong>tienes acceso a una interfaz gráfica que no se muestra en la lista</strong>, y deseas incorporar la captura correspondiente a este recurso, puedes escribirnos a través de un <em><a href="../../comunidad/como-colaborar.md#propuestas-de-mejora-o-correcciones-a-través-de-issues">issue</a></em> o, si te sientes cómodo con markdown, puedes enviar una solicitud de integración a través de un <em><a href="../../comunidad/como-colaborar.md#solicitudes-de-integración-a-través-de-pull-request">pull request</a></em>.</p>
+<p>Si <strong>tienes acceso a una interfaz gráfica que no se muestra en la lista</strong>, y deseas incorporar la captura correspondiente a este recurso, puedes escribirnos a través de un <em><a href="../../community/how-to-contribute/index.html#propuestas-de-mejora-o-correcciones-a-través-de-issues">issue</a></em> o, si te sientes cómodo con markdown, puedes enviar una solicitud de integración a través de un <em><a href="../../community/how-to-contribute/index.html#solicitudes-de-integración-a-través-de-pull-request">pull request</a></em>.</p>
 <h2 id="comentarios">Comentarios</h2>
-<p>¿Tienes <strong>comentarios o sugerencias</strong> sobre este recurso? Puedes utilizar la <strong>función de comentar que se muestra a continuación</strong> para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro <a href="../../comunidad/codigo-de-conducta.md">código de conducta</a>. La función de comentarios enlaza directamente a la sección de <a href="https://github.com/Socialtic/forensics/discussions"><em>Discussions</em> de Github</a>, donde también <strong>puedes participar en las discusiones de forma directa</strong>, si lo prefieres.   </p>
+<p>¿Tienes <strong>comentarios o sugerencias</strong> sobre este recurso? Puedes utilizar la <strong>función de comentar que se muestra a continuación</strong> para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro <a href="../../community/code-of-conduct/">código de conducta</a>. La función de comentarios enlaza directamente a la sección de <a href="https://github.com/Socialtic/forensics/discussions"><em>Discussions</em> de Github</a>, donde también <strong>puedes participar en las discusiones de forma directa</strong>, si lo prefieres.   </p>
 
 
 

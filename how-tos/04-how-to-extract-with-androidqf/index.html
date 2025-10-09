@@ -1914,17 +1914,17 @@
 <h1 id="guia-como-realizar-una-extraccion-mediante-androidqf">Guia: ¿Cómo realizar una extracción mediante AndroidQF?</h1>
 <div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-08-01'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-08-01T00:00:00'>2025-08-01</time></span><span data-tippy-content data-tippy-raw='2025-08-01'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-08-01T00:00:00'>2025-08-01</time></span><span class='material-icons' data-icon='doc_author'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='José Martínez' data-tippy-content data-tippy-raw='<a href="https://socialtic.org/quienes-somos/" target="_blank" rel="noopener">José Martínez</a>'><span class='avatar-text'></span><img class="avatar" src="../../assets/external/avatars.githubusercontent.com/Socialtic.png"></div></div></div></div>
 
-<p>Este recurso se enmarca dentro de la categoría de <a href="../how-tos/">Guia, how-to</a>, y contiene las instrucciones para realizar una extracción forense con la herramienta <a href="../../references/00-glossary.md#androidqf">AndroidQF</a>.</p>
+<p>Este recurso se enmarca dentro de la categoría de <a href="../">Guia, how-to</a>, y contiene las instrucciones para realizar una extracción forense con la herramienta <a href="../../references/00-glossary/index.html#androidqf">AndroidQF</a>.</p>
 <h2 id="que-es-androidqf">¿Qué es AndroidQF?</h2>
 <p><a href="https://github.com/mvt-project/androidqf">AndroidQF</a> es una herramienta de software libre y de código abierto <strong>enfocada en la extracción forense de dispositivos Android</strong>. Actualmente mantenida por el <a href="https://securitylab.amnesty.org/es/">Laboratorio de Seguridad de Amnistía Internacional</a>. </p>
 <p>Su enfoque está pensado especialmente para periodistas, activistas, defensores de derechos humanos y los <strong>laboratorios técnicos que acompañan casos de vigilancia digital y amenazas de software espía.</strong></p>
-<p>AndroidQF funciona como un <a href="https://developer.mozilla.org/en-US/docs/Glossary/Wrapper">wrapper</a> forense sobre <a href="../../references/00-glossary.md#adb">ADB</a>, automatizando comandos comunes mediante módulos que <strong>permiten realizar extracciones rápidas, seguras y locales desde cualquier sistema operativo (Linux, Windows o macOS)</strong>, sin depender de servicios en la nube ni instalaciones complejas.</p>
-<p>Su utilidad en contextos de sociedad civil radica en su <strong><a href="../../references/00-glossary.md#herramienta-portable">portabilidad</a>, facilidad de uso y ejecución local.</strong></p>
-<p>Esta guía es complementaria se complementa con otros materiales, como el <a href="../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.md">diccionario de archivos generados por AndroidQF</a>, sus formatos y recomendaciones de uso o el <a href="../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.md">explainer sobre forense basada en logs para dispositivos Android</a>.</p>
+<p>AndroidQF funciona como un <a href="https://developer.mozilla.org/en-US/docs/Glossary/Wrapper">wrapper</a> forense sobre <a href="../../references/00-glossary/index.html#adb">ADB</a>, automatizando comandos comunes mediante módulos que <strong>permiten realizar extracciones rápidas, seguras y locales desde cualquier sistema operativo (Linux, Windows o macOS)</strong>, sin depender de servicios en la nube ni instalaciones complejas.</p>
+<p>Su utilidad en contextos de sociedad civil radica en su <strong><a href="../../references/00-glossary/index.html#herramienta-portable">portabilidad</a>, facilidad de uso y ejecución local.</strong></p>
+<p>Esta guía es complementaria se complementa con otros materiales, como el <a href="../../references/01-reference-androidqf-dictionary/">diccionario de archivos generados por AndroidQF</a>, sus formatos y recomendaciones de uso o el <a href="../../explainers/03-explainer-log-forensics-android/">explainer sobre forense basada en logs para dispositivos Android</a>.</p>
 <h2 id="que-necesito-para-realizar-una-extraccion-con-androidqf">¿Qué necesito para realizar una extracción con AndroidQF?</h2>
 <p>Para poder realizar una extracción con AndroidQF es <strong>necesario</strong>:</p>
 <ul>
-<li>El <strong>dispositivo Android a ser analizado</strong>: Activar el <strong><a href="../../references/00-glossary.md#modo-de-desarrollador">modo desarrollador</a></strong> y <strong><a href="../../references/00-glossary.md#adb">activar la depuración por USB</a></strong>. De ser necesario, consulta nuestras <a href="../02-como-habilitar-opciones-desarrollador/02-como-habilitar-opciones-desarrollador.md">guías sobre habilitar opciones de desarrollador</a> o <a href="../03-como-habilitar-adb/03-como-habilitar-adb.md">la guía sobre cómo habilitar ADB</a>. </li>
+<li>El <strong>dispositivo Android a ser analizado</strong>: Activar el <strong><a href="../../references/00-glossary/index.html#modo-de-desarrollador">modo desarrollador</a></strong> y <strong><a href="../../references/00-glossary/index.html#adb">activar la depuración por USB</a></strong>. De ser necesario, consulta nuestras <a href="../02-how-to-enable-developer-options/">guías sobre habilitar opciones de desarrollador</a> o <a href="../03-how-to-enable-adb/">la guía sobre cómo habilitar ADB</a>. </li>
 <li><strong>Computadora Windows, Linux o Mac</strong>: Se utilizará para realizar la extracción. Es necesario conocer cuál es <a href="https://servernet.com.ar/como-saber-si-mi-procesador-es-amd-o-arm/">chip integrado del equipo</a> </li>
 <li>Tener un <strong>cable para transferencia de archivos</strong> telefono-computadora. </li>
 </ul>
@@ -1933,7 +1933,7 @@
 <h3 id="descargar-el-binario-en-androidqf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 17h-2V9h-2V7h4m5-4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg></span> Descargar el binario en AndroidQF</h3>
 <ul>
 <li>
-<p><strong>Descarga</strong> la versión más reciente del <a href="../../references/00-glossary.md#binario">binario</a>, y que <strong>corresponda a la arquitectura del equipo</strong> de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: <a href="https://github.com/mvt-project/androidqf/releases/">https://github.com/mvt-project/androidqf/releases/</a> </p>
+<p><strong>Descarga</strong> la versión más reciente del <a href="../../references/00-glossary/index.html#binario">binario</a>, y que <strong>corresponda a la arquitectura del equipo</strong> de cómputo donde se va a ejecutar. La descarga se realiza de los releases del repositorio: <a href="https://github.com/mvt-project/androidqf/releases/">https://github.com/mvt-project/androidqf/releases/</a> </p>
 <div class="admonition question">
 <p class="admonition-title">¿Cómo identificar la arquitectura?</p>
 <p>Si no estás seguro cuál es la arquitectura del equipo que estás utilizando, consulta este <a href="https://servernet.com.ar/como-saber-si-mi-procesador-es-amd-o-arm/">recurso para conocer cuál es el chip integrado en el dispositivo</a>. </p>
@@ -1976,13 +1976,13 @@
 <p class="admonition-title">No aparece ningún mensaje</p>
 <p>Si al conectar el dispositivo a la computadora no te aparece ningún mensaje sobre permisos, revisa lo siguiente: </p>
 <ul>
-<li>Asegúrate que la <a href="../03-como-habilitar-adb/03-como-habilitar-adb.md">depuración por USB se encuentre habilitada</a>.</li>
+<li>Asegúrate que la <a href="../03-how-to-enable-adb/">depuración por USB se encuentre habilitada</a>.</li>
 <li>Revisa las <strong>configuraciones de USB</strong> y asegúrate que la opción de <em>transferencia de archivos</em> se encuentra habilitada.</li>
 <li>Asegúrate de que el cable USB sea un <strong>cable de datos</strong>. </li>
 </ul>
 </div>
 <figure>
-<p><img alt=" Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos." src="../04-como-extraer-mediante-androidqf/assets/01-captura-android-permisos-datos.png" title="imagen 1" /></p>
+<p><img alt=" Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos." src="../../assets/04-how-to/01-captura-android-permisos-datos.png" title="imagen 1" /></p>
 <figcaption>
 <p><strong>Imagen 1</strong>. Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.</p>
 </figcaption>
@@ -1999,7 +1999,7 @@
 ./androidqf-macos-v?
 </code></pre></div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción" src="../04-como-extraer-mediante-androidqf/assets/02-captura-terminal-linux-ejecucion.png" title="imagen 2" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción" src="../../assets/04-how-to/02-captura-terminal-linux-ejecucion.png" title="imagen 2" /></p>
 <figcaption>
 <p><strong>Imagen 2</strong>. Captura de pantalla de terminal de linux con ejecución del binario para el inicio de la extracción</p>
 </figcaption>
@@ -2010,7 +2010,7 @@
 <li>Ingresa a la carpeta donde se guardó el binario descargado en el paso 1, y <strong>da doble click primario sobre el archivo.</strong> Aparecerá una ventana de protección de Windows, da click en <strong>“Más información”</strong></li>
 </ul>
 <figure>
-<p><img alt="Captura de pantalla de ventana emergente de protección de Windows." src="../04-como-extraer-mediante-androidqf/assets/03-captura-terminal-windows-ejecucion.png" title="imagen 3" /></p>
+<p><img alt="Captura de pantalla de ventana emergente de protección de Windows." src="../../assets/04-how-to/03-captura-terminal-windows-ejecucion.png" title="imagen 3" /></p>
 <figcaption>
 <p><strong>Imagen 3</strong>. Captura de pantalla de ventana emergente de protección de Windows.</p>
 </figcaption>
@@ -2019,7 +2019,7 @@
 <li>Selecciona <strong>“Ejecutar de todas formas”</strong></li>
 </ul>
 <figure>
-<p><img alt="Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas.." src="../04-como-extraer-mediante-androidqf/assets/04-captura-pantalla-proteccion-windows.png" title="imagen 4" /></p>
+<p><img alt="Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas.." src="../../assets/04-how-to/04-captura-pantalla-proteccion-windows.png" title="imagen 4" /></p>
 <figcaption>
 <p><strong>Imagen 4</strong>. Captura de pantalla de ventana emergente de protección de Windows con la selección de ejecutar de todas formas.</p>
 </figcaption>
@@ -2048,20 +2048,20 @@
 <p>Para el ejemplo usamos la opción <strong>Only-SMS</strong> para limitar la extracción únicamente a mensajes, reduciendo la exposición de datos personales innecesarios. Si el <strong>contexto del caso se considera de alto riesgo</strong> o implica investigación más sofisticada se recomienda marcar la opción  <strong>Everything</strong>, aunque la opción <strong>Only-SMS</strong> en la mayoría de los casos sigue siendo suficiente para buscar intentos de phishing mediante SMS.</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada." src="../04-como-extraer-mediante-androidqf/assets/06-captura-linux-only-sms.png" title="imagen 7" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada." src="../../assets/04-how-to/06-captura-linux-only-sms.png" title="imagen 7" /></p>
 <figcaption>
 <p><strong>Imagen 6</strong>. Captura de pantalla de terminal de linux con el menú backup de AndroidQF y la opción Only SMS seleccionada.</p>
 </figcaption>
 </figure>
 </li>
 <li>
-<p>Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una <strong>contraseña temporal de cifrado</strong> para cifrar el <a href="../../references/00-glossary.md#respaldo-generado-por-adb">respaldo generado a través de ADB</a>. En nuestro ejemplo utilizamos <strong>la contraseña “sd”</strong> de seguridad digital en español, tal y como se muestra en la imagen 7. </p>
+<p>Al seleccionar el tipo de respaldo, el teléfono solicitará utilizar una <strong>contraseña temporal de cifrado</strong> para cifrar el <a href="../../references/00-glossary/index.html#respaldo-generado-por-adb">respaldo generado a través de ADB</a>. En nuestro ejemplo utilizamos <strong>la contraseña “sd”</strong> de seguridad digital en español, tal y como se muestra en la imagen 7. </p>
 <div class="admonition warning">
 <p class="admonition-title">Alternativa</p>
 <p>Esta contraseña permite cifrar la copia de seguridad que se genera al ejecutar androidqf. En caso de generar <strong>contraseñas aleatorias</strong>, asegúrate de utilizar un <strong>gestor con adecuadas prácticas de respaldo</strong>. De lo contrario, y sino representa un riesgo, establece una contraseá simple y equivalente para todas tus extracciones.</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup sd" src="../04-como-extraer-mediante-androidqf/assets/07-captura-android-contraseña.png" title="imagen 7" /></p>
+<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup sd" src="../../assets/04-how-to/07-captura-android-contrase%C3%B1a.png" title="imagen 7" /></p>
 <figcaption>
 <p><strong>Imagen 7</strong>. Captura de pantalla de dispositivo móvil Android Samsung solicitando la contraseña temporal del backup “sd”</p>
 </figcaption>
@@ -2070,7 +2070,7 @@
 <li>
 <p>Selecciona: <strong>“Copia de seguridad de mis datos”.</strong></p>
 <figure>
-<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada" src="../04-como-extraer-mediante-androidqf/assets/08-captura-android-copia-seguridad.png" title="imagen 8" /></p>
+<p><img alt="Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada" src="../../assets/04-how-to/08-captura-android-copia-seguridad.png" title="imagen 8" /></p>
 <figcaption>
 <p><strong>Imagen 8</strong>. Captura de pantalla de dispositivo móvil Android Samsung con la opción “Copia de seguridad de mis datos” seleccionada</p>
 </figcaption>
@@ -2080,7 +2080,7 @@
 <p>En algunas ocasiones, suelen aparecer errores sobre la búsqueda de las rutas donde se encuentran los paquetes, por lo que es común ver algunas de estas marcas de error, sin embargo, <strong>estas marcas de error no afectan la extracción de datos forenses en el dispositivo.</strong>*</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF." src="../04-como-extraer-mediante-androidqf/assets/09-captura-linux-recoleccion.png" title="imagen 9" /></p>
+<p><img alt="Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF." src="../../assets/04-how-to/09-captura-linux-recoleccion.png" title="imagen 9" /></p>
 <figcaption>
 <p><strong>Imagen 9</strong>. Captura de pantalla de terminal de linux indicando la recolección de información de paquetes de aplicaciones por parte de AndroidQF.</p>
 </figcaption>
@@ -2089,7 +2089,7 @@
 <li>
 <p>Cuando AndoridQF encuentra todos los paquetes instalados en el dispositivo preguntará qué <strong>tipo de copias de las aplicaciones se desea descargar, para ello hay 3 opciones</strong>:  </p>
 <ul>
-<li><strong>All</strong>: Descarga los <a href="../../references/00-glossary.md#apk">APK</a> de todas las aplicaciones, incluidas las del sistema.  </li>
+<li><strong>All</strong>: Descarga los <a href="../../references/00-glossary/index.html#apk">APK</a> de todas las aplicaciones, incluidas las del sistema.  </li>
 <li><strong>Only</strong> <strong>non-system</strong> <strong>packages</strong>: Descarga solo los APK de aplicaciones instaladas por el usuario.  </li>
 <li><strong>Do</strong> <strong>not</strong> <strong>download</strong> <strong>any</strong>: Omite completamente la descarga de APKs del dispositivo.</li>
 </ul>
@@ -2098,14 +2098,14 @@
 <p>Aunque nuestra recomendación es seleccionar “Only non-system packages”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “All”.</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada." src="../04-como-extraer-mediante-androidqf/assets/10-captura-linux-copia-paquetes.png" title="imagen 10" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada." src="../../assets/04-how-to/10-captura-linux-copia-paquetes.png" title="imagen 10" /></p>
 <figcaption>
 <p><strong>Imagen 10</strong>. Captura de pantalla de terminal de linux con el menú copias de paquetes de aplicaciones de AndroidQF y la opción Only non-system packages seleccionada.</p>
 </figcaption>
 </figure>
 </li>
 <li>
-<p>Una vez seleccionada la opción de descargas de copias de paquetes, <strong>AndroidQF preguntará acerca de eliminar los <a href="../../references/00-glossary.md#apk">APKs</a></strong> firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.</p>
+<p>Una vez seleccionada la opción de descargas de copias de paquetes, <strong>AndroidQF preguntará acerca de eliminar los <a href="../../references/00-glossary/index.html#apk">APKs</a></strong> firmados por desarrolladores o entidades confiables (como Google o el fabricante del dispositivo), esto con el fin de reducir el tamaño de la carpeta de extracción.</p>
 <ul>
 <li>Responde <strong>“Yes”</strong> para que, al realizar la revisión de la información se pueda <strong>enfocar el análisis en los paquetes que sean potencialmente sospechosos</strong>, además de que ahorrará tiempo y espacio de almacenamiento.</li>
 </ul>
@@ -2114,7 +2114,7 @@
 <p>Aunque nuestra recomendación es seleccionar “Yes”, la selección depende de tu enfoque de análisis e investigación, por lo que en casos con sospechas de ataques sofisticados se puede utilizar la opción “No”.</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada." src="../04-como-extraer-mediante-androidqf/assets/11-captura-linux-omision-aplicaciones.png" title="imagen 11" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada." src="../../assets/04-how-to/11-captura-linux-omision-aplicaciones.png" title="imagen 11" /></p>
 <figcaption>
 <p><strong>Imagen 11</strong>. Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada.</p>
 </figcaption>
@@ -2127,7 +2127,7 @@
 <p><strong>Esta etapa puede tomar varios minutos</strong>, dependiendo del modelo del teléfono y la cantidad de datos almacenados. El progreso se muestra línea por línea en la terminal y no requiere intervención adicional, salvo al final, donde se debe presionar Enter para completar.</p>
 </div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada." src="../04-como-extraer-mediante-androidqf/assets/12-captura-pantalla-ejecucion-correcta.png" title="imagen 12" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el menú de omisión de aplicaciones con certificado confiable de AndroidQF y la opción Yes seleccionada." src="../../assets/04-how-to/12-captura-pantalla-ejecucion-correcta.png" title="imagen 12" /></p>
 <figcaption>
 <p><strong>Imagen 12</strong>. Captura de pantalla de terminal de linux con información de ejecución correcta de la extracción forense con AndroidQF y solicitando presionar enter para terminar.</p>
 </figcaption>
@@ -2146,7 +2146,7 @@
 <div class="highlight"><pre><span></span><code>grep -i &quot;WARNING\|ERROR&quot; command.log
 </code></pre></div>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF." src="../04-como-extraer-mediante-androidqf/assets/13-captura-pantalla-terminal-linux-errores.png" title="imagen 12" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF." src="../../assets/04-how-to/13-captura-pantalla-terminal-linux-errores.png" title="imagen 12" /></p>
 <figcaption>
 <p><strong>Imagen 13</strong>. Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF.</p>
 </figcaption>
@@ -2155,7 +2155,7 @@
 <div class="tabbed-block">
 <p>Abre el archivo con “<em>Bloc de notas”</em>, selecciona la combinación de teclas <strong>ctrl+b</strong> y escribe <strong><em>WARNING</em></strong> o <strong><em>ERROR</em></strong><strong>.</strong></p>
 <figure>
-<p><img alt="Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF." src="../04-como-extraer-mediante-androidqf/assets/14-captura-pantalla-windows-errores.png" title="imagen 14" /></p>
+<p><img alt="Captura de pantalla de terminal de linux con el comando grep para buscar errores en el archivo command.log generado por AndoridQF." src="../../assets/04-how-to/14-captura-pantalla-windows-errores.png" title="imagen 14" /></p>
 <figcaption>
 <p><strong>Imagen 14</strong>. Captura de pantalla de Bloc de notas de Windows con la búsqueda de  errores en el archivo command.log generado por AndoridQF.</p>
 </figcaption>
@@ -2167,7 +2167,7 @@
 <li>
 <p>Verifica la <strong>existencia del archivo <em>acquisition.json</em></strong> y que su contenido se vea adecuado.</p>
 <figure>
-<p><img alt="Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF." src="../04-como-extraer-mediante-androidqf/assets/15-captura-pantalla-acquisition.png" title="imagen 15" /></p>
+<p><img alt="Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF." src="../../assets/04-how-to/15-captura-pantalla-acquisition.png" title="imagen 15" /></p>
 <figcaption>
 <p><strong>Imagen 15</strong>. Captura de pantalla de Sublime Text Con la salida del archivo acquisition.json generado por AndoridQF.</p>
 </figcaption>
@@ -2198,7 +2198,7 @@
 └── settings_system.txt  
 </code></pre></div>
 <figure>
-<p><img alt="Captura de pantalla de la aplicación archivos en PopOS! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF." src="../04-como-extraer-mediante-androidqf/assets/16-captura-pantalla-archivos-salida.png" title="imagen 15" /></p>
+<p><img alt="Captura de pantalla de la aplicación archivos en PopOS! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF." src="../../assets/04-how-to/16-captura-pantalla-archivos-salida.png" title="imagen 15" /></p>
 <figcaption>
 <p><strong>Imagen 16</strong>. Captura de pantalla de la aplicación archivos en PopOS! mostrando la carpeta de salida de archivos y directorios generados con la extracción forense con AndroidQF.</p>
 </figcaption>
@@ -2207,10 +2207,10 @@
 </ul>
 <h2 id="conclusion">Conclusión</h2>
 <p>AndroidQF permite realizar adquirir y extraer evidencia forense de dispositivos Android. Es una <strong>herramienta ampliamente utilizada por laboratorios de la sociedad civil</strong>, debido a su practicidad, simplicidad y portabilidad. En esta guía detallamos el paso a paso a seguir para realizar extracciones utilizando Windows, MacOS o Linux. </p>
-<p>La extracción de potencial evidencia es una de las <strong><a href="../explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.html#cuales-son-las-etapas-de-una-investigacion-forense">primeras etapas a seguir dentro de una investigación forense</a></strong>, y es clave para poder iniciar un triaje. A partir de esta información extraída, se puede iniciar una etapa de análisis, ya sea de forma manual (<a href="../references/01-reference-diccionario-androidqf/01-reference-diccionario-androidqf.html">pudes consultar el diccionario de archivos aquí</a>) o utilizando una herramienta como <a href="https://docs.mvt.re/en/latest/">MVT</a>. </p>
-<p>Si deseas contribuir con el desarrollo, la traducción o difusión de este recurso u otros recursos, <strong>revisa nuestra <a href="../comunidad/">sección de comunidad</a></strong> donde encontrarás más información al respecto.</p>
+<p>La extracción de potencial evidencia es una de las <strong><a href="../../explainers/01-explainer-introduction-digital-forensics/index.html#cuáles-son-las-etapas-de-una-investigación-forense">primeras etapas a seguir dentro de una investigación forense</a></strong>, y es clave para poder iniciar un triaje. A partir de esta información extraída, se puede iniciar una etapa de análisis, ya sea de forma manual (<a href="../../references/01-reference-androidqf-dictionary/">pudes consultar el diccionario de archivos aquí</a> o utilizando una herramienta como <a href="https://docs.mvt.re/en/latest/">MVT</a>. </p>
+<p>Si deseas contribuir con el desarrollo, la traducción o difusión de este recurso u otros recursos, <strong>revisa nuestra <a href="../../community/">sección de comunidad</a></strong> donde encontrarás más información al respecto.</p>
 <h2 id="comentarios">Comentarios</h2>
-<p>¿Tienes <strong>comentarios o sugerencias</strong> sobre este recurso? Puedes utilizar la <strong>función de comentar que se muestra a continuación</strong> para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro <a href="../../comunidad/codigo-de-conducta.md">código de conducta</a>. La función de comentarios enlaza directamente a la sección de <a href="https://github.com/Socialtic/forensics/discussions"><em>Discussions</em> de Github</a>, donde también <strong>puedes participar en las discusiones de forma directa</strong>, si lo prefieres.   </p>
+<p>¿Tienes <strong>comentarios o sugerencias</strong> sobre este recurso? Puedes utilizar la <strong>función de comentar que se muestra a continuación</strong> para dejarnos tus ideas o apreciaciones. Por favor asegúrate de seguir nuestro <a href="../../community/code-of-conduct/">código de conducta</a>. La función de comentarios enlaza directamente a la sección de <a href="https://github.com/Socialtic/forensics/discussions"><em>Discussions</em> de Github</a>, donde también <strong>puedes participar en las discusiones de forma directa</strong>, si lo prefieres.   </p>
 
 
 
