@@ -209,7 +209,7 @@ plugins:
               - Limitación de responsabilidades: 'community/limitation-of-responsibility/index.md'              
   - redirects:
       redirect_maps:
-          'iniciar.md': '../home/getting-started/index.md'
+          'iniciar.md': 'https://bedoyadaniel.github.io/forensics/home/getting-started/index.html'
           'en/getting-started.md': 'en/home/getting-started/index.md'
 
 
