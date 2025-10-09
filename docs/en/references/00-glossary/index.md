@@ -28,7 +28,7 @@ This particular resource is a glossary of terms that includes **concepts, abbrev
 
 ADB stands for *Android Debug Bridge*. It is a **command-line tool** that **enables direct communication via USB with an Android device**, allowing the execution of various actions and commands.
 
-In the context of **digital forensics**, especially in [log-based investigations](../explainers/03-explainer-forense-logs-android/03-explainer-forense-logs-android.html) using tools like AndroidQF, **ADB allows direct communication with the device**. It is useful when there is **physical access to the device** and when retrieving information through **native commands**, without relying on additional tools.
+In the context of **digital forensics**, especially in [log-based investigations](../../explainers/03-explainer-log-forensics-android/) using tools like AndroidQF, **ADB allows direct communication with the device**. It is useful when there is **physical access to the device** and when retrieving information through **native commands**, without relying on additional tools.
 
 You can read more about [ADB on the Android Developers Website](https://developer.android.com/tools/adb?hl=es-419).  
 
@@ -140,7 +140,7 @@ An [indicator of compromise (IOC)](https://en.wikipedia.org/wiki/Indicator_of_co
 
 A key aspect is that the person providing consent must be able to make an **informed decision** about the investigation and retain the right to reject assistance. In practice, this means providing enough information so that the requestor understands the actions, risks, rights, and responsibilities involved. The **forensic analyst must communicate clearly and transparently**, and respect the will of the person requesting support.
 
-Read more on informed consent in our [how-to guide](../how-tos/01-how-to-obtain-informed-consent/01-how-to-obtain-informed-consent.md). 
+Read more on informed consent in our [how-to guide](../../how-tos/01-how-to-obtain-informed-consent/). 
 
 
 ### Internet Service Provider (ISP) 
@@ -151,13 +151,13 @@ Refers to the company that provides Internet service to the user. These companie
 
 Lawfare refers to the **use of legal systems or institutions to harm, discredit, or undermine individuals or organizations**.
 
-Read more in the related [explainer on risks and threats for forensic labs](../explainers/02-explainer-risks-threats/02-explainer-risks-threats.md). 
+Read more in the related [explainer on risks and threats for forensic labs](../../explainers/02-explainer-risks-threats/). 
 
 ### Log
 
 Logs (also called records or audit trails) are files that document events occurring within a computer system, network, or application. These may include user access, system changes, errors, and other activity relevant to forensic investigations.
 
-This resource includes considerations for [log-based forensic investigations on Android devices](../explainers/03-explainer-log-forensics-android/03-explainer-log-forensics-android.md)
+This resource includes considerations for [log-based forensic investigations on Android devices](../../explainers/03-explainer-log-forensics-android/)
 
 
 ### Malware
@@ -168,7 +168,7 @@ Malware (short for malicious software) refers to any kind of software designed t
 
 MVT is a tool that facilitates consent-based forensic analysis of devices belonging to individuals at risk of **advanced spyware attacks**, especially civil society members and vulnerable communities.
 
-As stated on its [official site](https://forensics.socialtic.org/comunidad/licencia.html):
+As stated on its [official site](https://docs.mvt.re/en/latest/license/):
 
 _Mobile Verification Toolkit (MVT) is a tool to facilitate the consensual forensic analysis of Android and iOS devices, for the purpose of identifying traces of compromise._
 

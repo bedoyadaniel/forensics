@@ -28,7 +28,7 @@ Digital forensics makes possible the **discovery and examination of digital data
 
     If you want to **learn more about this repository** check our getting started section.
 
-    [:octicons-arrow-right-24: Start here](../en/getting-started.html)
+    [:octicons-arrow-right-24: Start here](home/getting-started/)
 
 
 </div>
@@ -46,7 +46,7 @@ To organize the contents, we use [the technical documentation framework Diátaxi
 
     Explainers deepen and broaden the reader’s **understanding of a subject**. They brings clarity, light and context. 
 
-    [:octicons-arrow-right-24:   Index of explainers](../en/explainers/)
+    [:octicons-arrow-right-24:   Index of explainers](explainers/)
 
 -   :material-wrench-cog:{ .lg .middle } __How-To Guides__
 
@@ -54,7 +54,7 @@ To organize the contents, we use [the technical documentation framework Diátaxi
 
     How-to’s are all about **executing a task and achieving a goal through step-by-step instructions**.
 
-    [:octicons-arrow-right-24:   Index of how-to guides](../en/how-tos/)
+    [:octicons-arrow-right-24:   Index of how-to guides](how-tos/)
 
 -   :material-school:{ .lg .middle } __Tutorials__
 
@@ -62,7 +62,7 @@ To organize the contents, we use [the technical documentation framework Diátaxi
 
     Tutorials are all about **learning through guided practical exercises**. 
 
-    [:octicons-arrow-right-24:   Index of tutorials](../en/tutorials/)
+    [:octicons-arrow-right-24:   Index of tutorials](tutorials/)
 
 -   :material-ruler:{ .lg .middle } __References__
 
@@ -70,7 +70,7 @@ To organize the contents, we use [the technical documentation framework Diátaxi
 
     Reference material describes the machinery. **One hardly reads reference material; one consults it.** 
 
-    [:octicons-arrow-right-24:   Index of references](../en/references/)
+    [:octicons-arrow-right-24:   Index of references](references/)
 
 </div>
 

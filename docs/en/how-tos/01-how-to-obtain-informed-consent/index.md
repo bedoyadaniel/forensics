@@ -20,12 +20,12 @@ author:
 !!! warning "" 
     This document has been translated by a non-native English speaker. We appreciate any contribution from advanced or native speakers to review and improve the language. You can [contribute directly through the associated repository](https://github.com/Socialtic/forensics/issues) or get in touch with us at [seguridad@socialtic.org](mailto:seguridad@socialtic.org). Thanks!
 
-This document is part of a **technical documentation repository** whose main objective is to establish a baseline of proven, flexible and accessible knowledge to **boost consented forensic analysis in support of civil society across the globe**. To organize the contents, we use the [technical documentation framework Diátaxis](../../references/00-glossary.md#diataxis). 
+This document is part of a **technical documentation repository** whose main objective is to establish a baseline of proven, flexible and accessible knowledge to **boost consented forensic analysis in support of civil society across the globe**. To organize the contents, we use the [technical documentation framework Diátaxis](../../references/00-glossary/index.md##diataxis). 
 
 This resource fits within the [how-to guides](https://diataxis.fr/how-to-guides/) category. It **describes what is informed consent and why it is important** in the context of forensic investigations. It also includes a template that can be used by point of contacts, analysts and forensic labs to obtain and record consent during a forensic investigation. 
 
 !!! abstract "Consideración Legal"
-    This document **does not detail and is not sufficient to establish and maintain [chain of custody](../../references/00-glossary.md#chain-of-custody).** These important procedures will be described in a separate piece of documentation in the future. 
+    This document **does not detail and is not sufficient to establish and maintain [chain of custody](../../references/00-glossary/index.md##chain-of-custody).** These important procedures will be described in a separate piece of documentation in the future. 
 
 We appreciate references and reviews by the community of practice to support the development of this document. 
 
@@ -75,14 +75,14 @@ In the following section we present **a draft of a letter of informed consent th
 
 In order to create an informed consent document, aside from engaging in direct conversations with the requester of assistance, follow these steps: 
 
-1- **Download** the [informed consent letter draft template](template-letter-of-consent-for-forensic-analysis-odt.odt). The document uses form fields, so that when exporting as a PDF  it can be completed and signed easily.
+1- **Download** the [informed consent letter draft template](../../assets/01-how-to/template-letter-of-consent-for-forensic-analysis-odt.odt). The document uses form fields, so that when exporting as a PDF  it can be completed and signed easily.
 
 ![screenshot of consent letter](consent-form-odt.png "Carta de consentimienti")
 
 In the following links you can **download the consent letter templates in different formats:** 
 
-* [Consent letter in ODT](template-letter-of-consent-for-forensic-analysis-odt.odt)
-* [Example of a PDF generated using the ODT template](template-letter-of-consent-for-forensic-analysis-pdf.pdf). 
+* [Consent letter in ODT](../../assets/01-how-to/template-letter-of-consent-for-forensic-analysis-odt.odt)
+* [Example of a PDF generated using the ODT template](../../assets/01-how-to/template-letter-of-consent-for-forensic-analysis-pdf.pdf). 
 * [Letter of consent as a Google Doc](https://docs.google.com/document/d/1bxN7EHrahztVVTKYqRbdEXaXiYhsRzBf6HsdoLjnAcs/template/preview). 
 
 
@@ -141,4 +141,4 @@ During the process of obtaining consent, you will also **identify, acknowledge a
 
 ## Comments
 
-Do you have any **comment or suggestion** about this resource? You can use the **comment function provided below** to leave your ideas, corrections or thoughts. Please make sure to follow our [code of conduct](../../community/code-of-conduct.md) when leaving your comment. If you prefer, you can also participate in the discussion directly in the [github repository](https://github.com/Socialtic/forensics/discussions). 
+Do you have any **comment or suggestion** about this resource? You can use the **comment function provided below** to leave your ideas, corrections or thoughts. Please make sure to follow our [code of conduct](../../community/code-of-conduct/) when leaving your comment. If you prefer, you can also participate in the discussion directly in the [github repository](https://github.com/Socialtic/forensics/discussions). 

@@ -54,7 +54,7 @@ To organize this repository we follow the [technical documentation framework Dia
 
     For example, the first explainer included in this documentation repository presents information about the larger forensic science field, and how consensual digital forensics for civil society fit in the larger scheme of things while also touching on the importance as a mechanism for accountability.
 
-    [:octicons-arrow-right-24:   Index of explainers](explainers/index.html)
+    [:octicons-arrow-right-24:   Index of explainers](../../explainers/)
 
 -   :material-wrench-cog:{ .lg .middle } __How-To Guides__
 
@@ -64,7 +64,7 @@ To organize this repository we follow the [technical documentation framework Dia
 
     A good example is a **cooking recipe**, where the focus is to achieve a result, in this case preparing a specific dish in a repeatable way. It assumes the person already has basic knowledge on aspects like cutting and measuring the ingredients, setting the oven temperature, etc. 
 
-    [:octicons-arrow-right-24:   Index of how-to guides](how-tos/index.html)
+    [:octicons-arrow-right-24:   Index of how-to guides](../../how-tos/)
 
 -   :material-school:{ .lg .middle } __Tutorials__
 
@@ -74,7 +74,7 @@ To organize this repository we follow the [technical documentation framework Dia
 
     An example of a tutorial is a car driving lesson. Usually, in a good driving lesson students familiarize themselves with the vehicle, the controls, and learn as they go. The **objective is not getting from going A to point B, instead is the skills you learn in the way.**  
 
-    [:octicons-arrow-right-24:   Index of tutorials](tutorials/index.html)
+    [:octicons-arrow-right-24:   Index of tutorials](../../tutorials/)
 
 -   :material-ruler:{ .lg .middle } __References__
 
@@ -84,7 +84,7 @@ To organize this repository we follow the [technical documentation framework Dia
 
     A good example of a reference is a map. It is a clear, neutral and precise resource that serves as support when completing a task, in this case getting from point A to point B.
 
-    [:octicons-arrow-right-24:   Index of references](references/index.html)
+    [:octicons-arrow-right-24:   Index of references](../../references/)
 
 </div>
 
@@ -106,8 +106,8 @@ As we continue to include content in this repository, we will define learning pa
 
 All materials published in this repository are part of a **collective effort to support the civil society forensic analysis community**. As such, we are thankful for any effort from individuals or organizations to share, improve and contribute to the development of this resource, including through **actions like replicating, verifying and extending resources and methodologies.** 
 
-If you are interested in collaborating, or believe there are additional resources that can be added to this repository to strengthen the forensic practice of civil society, please let us know. You can find more information in the [community page of this repository](community/index.html). 
+If you are interested in collaborating, or believe there are additional resources that can be added to this repository to strengthen the forensic practice of civil society, please let us know. You can find more information in the [community page of this repository](../../community/). 
 
-[Comunidad](community/){ .md-button }
+[Comunidad](../../community/){ .md-button }
 
 
