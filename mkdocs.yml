@@ -208,7 +208,8 @@ plugins:
               - Código de conducta: 'community/code-of-conduct/index.md'
               - Limitación de responsabilidades: 'community/limitation-of-responsibility/index.md'              
   - redirects:
-      redirect_maps:'iniciar.md': 'https://forensics.socialtic.org/home/getting-started/index.html'
+      redirect_maps:
+          'iniciar.md': 'https://forensics.socialtic.org/home/getting-started/index.html'
           'hoja-de-ruta.md': 'https://forensics.socialtic.org/home/roadmap/index.html'
           'comunidad/index.md': 'https://forensics.socialtic.org/community/index.html'
           'explainers/01-explainer-introduccion-forense-digital/01-explainer-introduccion-forense-digital.md': 'https://forensics.socialtic.org/explainers/01-explainer-introduction-digital-forensics/index.html'
