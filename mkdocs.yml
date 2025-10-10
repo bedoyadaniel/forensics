@@ -253,8 +253,6 @@ plugins:
           'en/community/code-of-conduct.md': 'en/community/code-of-conduct/index.md'
           'en/community/limitation-of-responsibility.md': 'en/community/limitation-of-responsibility/index.md'
 
-
-
 markdown_extensions:
   - admonition #cuadros de texto
   - pymdownx.details #cuadros de texto
