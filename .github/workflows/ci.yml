@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - prueba-languages
 permissions:
   contents: write
 jobs:
@@ -16,15 +17,16 @@ jobs:
 
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: pip install mkdocs-document-dates
-      - run: mkdocs build -f config/mkdocs.yml
-      - run: mkdocs build -f config/en/mkdocs.yml
+      - run: pip install mkdocs-static-i18n
+      - run: pip install mkdocs-redirects
+      - run: mkdocs build  
       
 
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./generated
-          cname: forensics.socialtic.org
+          cname: https://forensics.socialtic.org
      
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}

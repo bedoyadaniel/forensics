@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+{% block announce %}
+    {%
+        set announcement = {
+            "en": "This page has not yet been translated into English, therefore it is displayed in Spanish.",
+            "es": "Esta página aún no ha sido traducida al Español, por lo que te mostramos la versión en Inglés.",
+            "pt": "Este recurso ainda não está disponível em português, por isso estamos mostrando a versão em espanhol.",
+        }
+    %}
+    {%
+        set call_to_action = {
+            "en": "Support us and translate!",
+            "pl": "¡Ayúdanos a traducir!",
+            "pt": "Ajude-nos a traduzir!",
+        }
+    %}
+    {% if i18n_page_locale != "es" and i18n_file_locale != i18n_page_locale %}
+        <div class="forensics-announce">
+            {{ announcement[i18n_page_locale] }}
+            <a href="/forensics/{{ i18n_page_locale }}/community/how-to-contribute/">{{ call_to_action[i18n_page_locale] }}</a>
+        </div>
+    {% endif %}
+    {# Add script with additional localization for use in extra.js #}
+    <script>
+        const gGM_SELECT_VERSION = "{{ lang.t('select.version') }}";
+        const gGMC_TRANSLATE_CTA = "{{ call_to_action[i18n_page_locale] }}";
+        const gGMC_PAGE_LOCALE = "{{ i18n_page_locale }}";
+        const gGMC_FILE_LOCALE = "{{ i18n_file_locale }}";
+        const gGMC_TRANSLATE_SVG = '{% include ".icons/material/web-plus.svg" %}';
+    </script>
+    {# Include original content after the additions #}
+    {{ super() }}
+{% endblock %}
+
+
+

@@ -1,0 +1,19 @@
+---
+title: Community on consensual forensics for the defense of human rights
+summary: Description and introduction to the consensual forensics community
+keywords: forensics, community, consensual, contribuition
+lang: en
+tags: [community, intro]
+last_updated: 2025-07-15
+some_url:
+created: 2025-07-15
+author:
+    name: Daniel
+    url: https://socialtic.org/quienes-somos/
+    description: SocialTIC
+
+---
+
+This repository adopts the following **Code of Conduct**, based on the [SocialTIC team’s code of conduct](https://socialtic.org/codigo/). Its purpose is to ensure a **respectful, safe, and inclusive environment** for all individuals interacting with this project, both in digital and in-person spaces.
+
+You can consult the [code of conduct in Spanish by clicking here](../../../es/community/code-of-conduct/). 
