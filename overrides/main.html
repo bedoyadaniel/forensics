@@ -11,7 +11,7 @@
     %}
     {%
         set call_to_action = {
-            "en": "Support us and translate!",
+            "en": "Help us translate!",
             "pl": "¡Ayúdanos a traducir!",
             "pt": "Ajude-nos a traduzir!",
         }
@@ -19,7 +19,7 @@
     {% if i18n_page_locale != "es" and i18n_file_locale != i18n_page_locale %}
         <div class="forensics-announce">
             {{ announcement[i18n_page_locale] }}
-            <a href="/forensics/{{ i18n_page_locale }}/community/how-to-contribute/">{{ call_to_action[i18n_page_locale] }}</a>
+            <a href="/{{ i18n_page_locale }}/community/how-to-contribute/">{{ call_to_action[i18n_page_locale] }}</a>
         </div>
     {% endif %}
     {# Add script with additional localization for use in extra.js #}
