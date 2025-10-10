@@ -1,8 +1,8 @@
 site_name: SocialTIC Forensics
 site_url: https://forensics.socialtic.org
 site_description: Documentación para investigaciones forenses consentidas en Sociedad Civil
-repo_url: https://github.com/Socialtic/forensics
-edit_uri: edit/main/docs/es/
+repo_url: https://github.com/Socialtic/forensics/
+edit_uri: edit/main/docs/
 copyright: MVT License
 site_dir: 'generated/'
 
