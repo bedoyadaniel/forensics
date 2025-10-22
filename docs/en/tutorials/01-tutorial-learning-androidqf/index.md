@@ -820,7 +820,7 @@ Equivalent *adb* command to extract them:
 
 ```shell
 adb pull /data/local/tmp/ <ruta_local>
- ```
+```
 
 ## Verifying the extraction
 
