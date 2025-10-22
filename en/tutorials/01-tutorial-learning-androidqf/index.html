@@ -2228,7 +2228,7 @@
 
 
 <h1 id="tutorial-exploring-androidqf-for-forensic-acquisition-on-android-devices">Tutorial – Exploring AndroidQF for forensic acquisition on Android devices</h1>
-<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-10-22'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-10-22T00:00:00'>2025-10-22</time></span><span data-tippy-content data-tippy-raw='2025-10-22'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-10-22T16:50:34+00:00'>2025-10-22</time></span><span class='material-icons' data-icon='doc_authors'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='José Martínez' data-tippy-content data-tippy-raw='José Martínez'><span class='avatar-text'></span><img class='avatar' src='' /></div><div class='avatar-wrapper' data-name='Daniel Bedoya' data-tippy-content data-tippy-raw='Daniel Bedoya'><span class='avatar-text'></span><img class='avatar' src='' /></div></div></div></div>
+<div class='document-dates-plugin-wrapper document-dates-top'><div class='document-dates-plugin' locale=''><span data-tippy-content data-tippy-raw='2025-10-22'><span class='material-icons' data-icon='doc_created'></span><time datetime='2025-10-22T00:00:00'>2025-10-22</time></span><span data-tippy-content data-tippy-raw='2025-10-22'><span class='material-icons' data-icon='doc_modified'></span><time datetime='2025-10-22T17:03:18+00:00'>2025-10-22</time></span><span class='material-icons' data-icon='doc_authors'></span><div class='avatar-group'><div class='avatar-wrapper' data-name='José Martínez' data-tippy-content data-tippy-raw='José Martínez'><span class='avatar-text'></span><img class='avatar' src='' /></div><div class='avatar-wrapper' data-name='Daniel Bedoya' data-tippy-content data-tippy-raw='Daniel Bedoya'><span class='avatar-text'></span><img class='avatar' src='' /></div></div></div></div>
 
 <p>This document is <strong>part of a technical documentation repository</strong> aimed at building a proven, flexible, and accessible knowledge base to <strong>promote consent-based digital forensics in support of civil society</strong>. To organize all contents we use the technical documentation framework <a data-preview="" href="../../references/00-glossary/index.html#diataxis">Diátaxis</a>.</p>
 <p>This resource falls within the <a href="https://diataxis.fr/tutorials/">tutorials</a> category and provides <strong>guided practical activities</strong> to become familiar with the forensic extraction tool <a href="https://github.com/mvt-project/androidqf">AndroidQF</a>.</p>
@@ -2350,7 +2350,7 @@
 <div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>./androidqf-XXX
 </code></pre></div>
 <figure>
-<p><img alt="Screenshot of a Linux terminal running the *chmod +x* command to add execution permissions to the binary." src="../../../assets/01-tutorial/08-captura-windows-explorador-binario-andoridqf.png" title="image 1" /></p>
+<p><img alt="Screenshot of a Linux terminal running the *chmod +x* command to add execution permissions to the binary." src="../../../assets/01-tutorial/08-captura-linux-permisos-ejecucion-andoridqf.png" title="image 1" /></p>
 <figcaption>
 <p><strong>Image 8.</strong> Screenshot of a Linux terminal running the <em>chmod +x</em> command to add execution permissions to the binary.</p>
 </figcaption>
@@ -2445,7 +2445,7 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mvt-p
 <p>AndroidQF includes a complete list of available parameters through its <em>--help</em> parameter (or its shorthand <em>-h</em>). This works on Linux, macOS, and Windows using the following command:</p>
 <div class="highlight"><pre><span></span><code>./androidqf_vXXX_<span class="w"> </span>--help
 </code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><em>help</em> command in Linux/MacOS</label><label for="__tabbed_2_2"><em>help</em> command on Windows</label><label for="__tabbed_2_3">Identifying devices in Windows</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><em>help</em> command in Linux/MacOS</label><label for="__tabbed_2_2"><em>help</em> command on Windows</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Output of help command in Linux:</p>
@@ -2472,15 +2472,16 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mvt-p
 <p><strong>Image 15</strong>. Screenshot of Windows Powershell terminal with the <em>–help</em> parameter executed.</p>
 </figcaption>
 </figure>
-<p>This displays a help menu in the terminal with all available parameters. The most important ones for conducting a forensic extraction are:</p>
+</div>
+</div>
+</div>
+<p>The most important options and parameters for conducting a forensic extraction are:</p>
 <ul>
 <li><em>-s</em>: If you have multiple devices connected, you can use this parameter to specify which device to analyze.</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Identifying devices in Linux/MacOS</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Identifying devices in Linux/MacOS</label><label for="__tabbed_3_2">Identifying devices in Windows</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <p>In the case of macOS and Linux, you can list devices using adb. Here is a guide on <a href="https://www-xda--developers-com.translate.goog/install-adb-windows-macos-linux/?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=es&amp;_x_tr_pto=tc">How to install ADB on macOS and Linux</a>.</p>
 <p>The command to list devices on macOS and Linux is:</p>
 <div class="highlight"><pre><span></span><code>adb<span class="w"> </span>devices
