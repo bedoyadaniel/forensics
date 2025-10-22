@@ -4,14 +4,13 @@ summary: Exploring AndroidQF for forensic acquisition on Android devices
 keywords: triage, android, androidqf, acquisition,
 lang: en
 tags: [tutorial, triage, intro]
-last_updated: 2025-10-21
+last_updated: 2025-10-22
 some_url:
-created: 2025-10-21
+created: 2025-10-22
 comments: true
-author:
-    name: José Martínez
-    url: https://socialtic.org/quienes-somos/
-    description: SocialTIC
+authors:
+    - José Martínez
+    - Daniel Bedoya 
 
 ---
 
@@ -58,7 +57,7 @@ To complete this tutorial, you **must** have the following:
 
 AndroidQF stands for *Android Quick Forensics*, and its goal is to **facilitate the acquisition of information when engaging in consented forensic analysis** in civil society contexts.
 
-AndroidQF is a **[portable tool](../../references/00-glossary/index.md#herramienta-portable)**, meaning it does not need to be installed, and can be executed directly using **Windows, Linux, and macOS** precompiled binaries.
+AndroidQF is a **[portable tool](../../references/00-glossary/index.md#portable-tool)**, meaning it does not need to be installed, and can be executed directly using **Windows, Linux, and macOS** precompiled binaries.
 
 ### What does AndroidQF do at a technical level?
 
