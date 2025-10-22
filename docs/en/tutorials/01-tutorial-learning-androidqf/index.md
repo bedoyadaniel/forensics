@@ -602,20 +602,22 @@ The collector does not execute any adb commands itself; however, its equivalent 
 **Command ps (processes):**
 
 ```shell
-adb shell ps # (1)!
+adb shell ps # (1)
 ```
-1. This command lists the process in execution on the device. 
+
+1.  This command lists the process in execution on the device. 
 
 **For the command find (file record):**
 
 ```shell
 adb shell ls/stat + adb pull + hashing # (1)!
 ```
-1. where:
-    * ls: lists files in the folder
-    * stat: shows file attributes (size, permissions, MAC times, UID/GID).  
-    * adb pull: copy files from the device to the host.  
-    * hashing: calculates hashses for integrity verification (MD5, SHA1, SHA256, etc.)
+
+1.  where:
+      * ls: lists files in the folder
+      * stat: shows file attributes (size, permissions, MAC times, UID/GID).  
+      * adb pull: copy files from the device to the host.  
+      * hashing: calculates hashses for integrity verification (MD5, SHA1, SHA256, etc.)
 
 
 #### Backup
