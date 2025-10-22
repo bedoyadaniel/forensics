@@ -158,7 +158,7 @@ Es importante que consideres que la descarga correcta del binario **depende de l
     chmod +x ./androidqf-XXX
     ```
 
-    ![ Captura de pantalla de terminal de linux con ejecución de comando *chmod \+x* para agregar permisos de ejecución al binario](../../../assets/01-tutorial/08-captura-windows-explorador-binario-andoridqf.png "imagen 1")
+    ![ Captura de pantalla de terminal de linux con ejecución de comando *chmod \+x* para agregar permisos de ejecución al binario](../../../assets/01-tutorial/08-captura-linux-permisos-ejecucion-andoridqf.png "imagen 1")
     /// caption
     **Imagen 8**. Captura de pantalla de terminal de linux con ejecución de comando *chmod \+x* para agregar permisos de ejecución al binario
     ///
@@ -169,7 +169,7 @@ Es importante que consideres que la descarga correcta del binario **depende de l
     Como se indicó anteriormente, para sistemas operativos Windows **solamente existe un binario disponible**, que llevará un nombre similar a _androidqf_v1.7.0_windows_amd64_signed.exe_. Para obtener AndroidQF debes descargar este archivo. En la imagen 9 mostramos una carpeta con el binario (archivo _.exe_) descargado. 
     
 
-    ![ Captura de pantalla del explorador de archivos de Windows con la carpeta del binario en la carpeta donde se guardará la extracción forense.](../../../assets/01-tutorial/09-captura-linux-permisos-ejecucion-andoridqf.png "imagen 1")
+    ![ Captura de pantalla del explorador de archivos de Windows con la carpeta del binario en la carpeta donde se guardará la extracción forense.](../../../assets/01-tutorial/09-captura-windows-explorador-binario-andoridqf.png "imagen 1")
     /// caption
     **Imagen 9**. Captura de pantalla del explorador de archivos de Windows con la carpeta del binario en la carpeta donde se guardará la extracción forense.
     ///
@@ -600,18 +600,20 @@ El collector no ejecuta ningún comando adb, sin embargo, sus comandos equivalen
 ```shell
 adb shell ps # (1)!
 ```
-1. Este comando lista los procesos en ejecución en el dispositivo (PID, nombre, usuario, estado).
+
+1.  Este comando lista los procesos en ejecución en el dispositivo (PID, nombre, usuario, estado).
 
 **Para el comando find (registro de archivos):**
 
 ```shell
 adb shell ls/stat + adb pull + hashing # (1)!
 ```
-1. Donde:
-    * ls: lista archivos en un directorio.  
-    * stat: muestra atributos de un archivo (tamaño, permisos, MAC times, UID/GID).  
-    * adb pull: copia archivos del dispositivo al host.  
-    * hashing: calcula sumas de verificación (MD5, SHA1, SHA256, etc.) para asegurar integridad.
+
+1.  Donde:
+      * ls: lista archivos en un directorio.  
+      * stat: muestra atributos de un archivo (tamaño, permisos, MAC times, UID/GID).  
+      * adb pull: copia archivos del dispositivo al host.  
+      * hashing: calcula sumas de verificación (MD5, SHA1, SHA256, etc.) para asegurar integridad.
 
 
 #### Backup
@@ -814,7 +816,7 @@ Comando equivalente en adb para extraerlos:
 
 ```shell
 adb pull /data/local/tmp/ <ruta_local>
- ```
+```
 
 ## Verificación de la extracción
 
@@ -947,7 +949,7 @@ Esto significa que los módulos se ejecutaron correctamente.
 
 Identificar que una extracción fue realizada exitosamente implica un proceso de análisis, de habilidad y de instinto para leer líneas con distintos formatos e identificar todos los nombres de los archivos de salida. Todo tu esfuerzo ayuda a que la comunidad refuerce estas herramientas para hacerlas mejor en la sociedad civil.
 
-## Conclusión del tutorial  
+## Conclusión  
 
 ¡Felicidades! Has completado con éxito el proceso de adquisición forense con AndroidQF. Ejecutar una extracción de información forense no es una tarea sencilla, pero ahora dominas los pasos esenciales para realizar extracciones seguras, documentadas y con consentimiento. AndroidQF te permitirá como analista a apoyar en investigaciones desde tu laboratorio, organización o causa si eres  analista independiente sobre vigilancia, amenazas digitales y documentación de incidentes o ataques digitales. Tus nuevas habilidades son cruciales para reforzar el uso de estas herramientas en beneficio de muchas comunidad y la sociedad civil.
 

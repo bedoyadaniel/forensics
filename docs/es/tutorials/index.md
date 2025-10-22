@@ -16,7 +16,7 @@ En esta sección encontrarás materiales tutoriales. Segùn [el marco de referen
 
 Por ejemplo, una lección para aprender a conducir es usualmente un tutorial, donde la persona estudiante se familiariza con el vehículo, los controles, y aprende mientras avanza. El objetivo son las habilidades y conocimientos, y no llegar del punto A al B.
 
-## Tutoriales publicadas
+## Tutoriales publicados
 
 <div class="grid cards" markdown>
 
