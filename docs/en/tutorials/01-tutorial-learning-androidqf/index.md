@@ -157,7 +157,7 @@ It’s important to note that the correct binary depends on **your processor arc
     chmod +x ./androidqf-XXX
     ```
 
-    ![Screenshot of a Linux terminal running the *chmod +x* command to add execution permissions to the binary.](../../../assets/01-tutorial/08-captura-windows-explorador-binario-andoridqf.png "image 1")
+    ![Screenshot of a Linux terminal running the *chmod +x* command to add execution permissions to the binary.](../../../assets/01-tutorial/08-captura-linux-permisos-ejecucion-andoridqf.png "image 1")
     /// caption
     **Image 8.** Screenshot of a Linux terminal running the *chmod +x* command to add execution permissions to the binary.
     ///
@@ -320,28 +320,28 @@ AndroidQF includes a complete list of available parameters through its *--help* 
     /// caption
     **Image 14**. Screenshot of a Windows folder with the right-click menu open and the *Open in Terminal* option highlighted
     ///
-    
+
     Once in the terminal, you can execute the command with the *–help* parameter, as shown in image 15.
-    
+
     ![ Screenshot of Windows Powershell terminal with the *–help* parameter executed](../../../assets/01-tutorial/15-captura-windows-androidqf-help.png "image 1")
     /// caption
     **Image 15**. Screenshot of Windows Powershell terminal with the *–help* parameter executed.
     ///
-    
-    This displays a help menu in the terminal with all available parameters. The most important ones for conducting a forensic extraction are:
-    
-    * *\-s*: If you have multiple devices connected, you can use this parameter to specify which device to analyze.
-    
-    === "Identifying devices in Linux/MacOS"
-    
+
+The most important options and parameters for conducting a forensic extraction are:
+
+* *\-s*: If you have multiple devices connected, you can use this parameter to specify which device to analyze.
+
+=== "Identifying devices in Linux/MacOS"
+
     In the case of macOS and Linux, you can list devices using adb. Here is a guide on [How to install ADB on macOS and Linux](https://www-xda--developers-com.translate.goog/install-adb-windows-macos-linux/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc).
-    
+
     The command to list devices on macOS and Linux is:
 
     ```shell
     adb devices
     ```
-    
+
     The result is shown in image 16.
 
     ![ Screenshot of Linux terminal with the *adb devices* command executed](../../../assets/01-tutorial/16-captura-linux-adb-devices.png "image 1")
@@ -369,7 +369,6 @@ AndroidQF includes a complete list of available parameters through its *--help* 
     ```shell
     ./androidqf -s numero-serial
     ```
-
 
     ![  Captura de pantalla de terminal de linux con integración del parámetro *\-s*.](../../../assets/01-tutorial/18-captura-androidqf-serial-number.png "imagen 1")
     /// caption
