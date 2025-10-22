@@ -166,7 +166,7 @@ It’s important to note that the correct binary depends on **your processor arc
 
     As previously mentioned, for Windows operating systems **only one binary is available**, typically named _androidqf_v1.7.0_windows_amd64_signed.exe_. To obtain AndroidQF, download this file. Image 9 shows a folder containing the downloaded binary (.exe file).
 
-    ![Screenshot of Windows File Explorer showing the folder with the binary where the forensic extraction will be stored.](../../../assets/01-tutorial/09-captura-linux-permisos-ejecucion-andoridqf.png "image 1")
+    ![Screenshot of Windows File Explorer showing the folder with the binary where the forensic extraction will be stored.](../../../assets/01-tutorial/09-captura-windows-explorador-binario-andoridqf.png "image 1")
     /// caption
     **Image 9.** Screenshot of Windows File Explorer showing the folder with the binary where the forensic extraction will be stored.
     ///
@@ -317,7 +317,7 @@ AndroidQF includes a complete list of available parameters through its *--help* 
     In the folder where you have saved the AndroidQF binary, right-click and select the option "Open in Terminal," as shown in image 14:
 
     ![ Screenshot of a Windows folder with the right-click menu open and the *Open in Terminal* option highlighted](../../../assets/01-tutorial/14-captura-windows-abrir-terminal.png "image 1")
-/// caption
+    /// caption
     **Image 14**. Screenshot of a Windows folder with the right-click menu open and the *Open in Terminal* option highlighted
     ///
     
