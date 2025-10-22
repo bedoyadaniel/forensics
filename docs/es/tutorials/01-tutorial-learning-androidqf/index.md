@@ -23,7 +23,7 @@ Este documento forma **parte de un repositorio de documentación técnica** que 
 
 Este recurso en particular se enmarca dentro de la categoría de [tutoriales](https://diataxis.fr/tutorials/), y contiene actividades prácticas guiadas para familiarizarse con una extracción forense a través de la herramienta [AndroidQF](https://github.com/mvt-project/androidqf).
 
-Este tutorial tiene el **objetivo de enseñar de forma prácrica** de forma clara y accesible **cómo usar AndroidQF para realizar extracciones forenses en dispositivos Android**, destacando su utilidad en contextos de análisis de amenazas e incidentes que afectan a personas defensoras de derechos humanos, periodistas y organizaciones de la sociedad civil.
+Este tutorial tiene el **objetivo de enseñar de forma práctica, clara y accesible cómo usar AndroidQF** para realizar extracciones forenses en dispositivos Android, destacando su utilidad en contextos de análisis de amenazas e incidentes que afectan a personas defensoras de derechos humanos, periodistas y organizaciones de la sociedad civil.
 
 
 !!! tip "¿Cómo seguir este tutorial?"
