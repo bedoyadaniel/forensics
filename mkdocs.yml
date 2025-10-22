@@ -30,7 +30,7 @@ nav:
     - ¿Cómo realizar una extracción mediante AndroidQF?: 'how-tos/04-how-to-extract-with-androidqf/index.md'
   - Referencias:
     - Inicio: 'references/index.md'
-    - Glosario: 'references/00-glossary.md'
+    - Glosario: 'references/00-glossary/index.md'
     - Diccionario AndroidQF: 'references/01-reference-androidqf-dictionary/index.md'
     - Diccionario MVT bugreport: 'references/02-reference-mvt-bugreport-dictionary/index.md'
   - Comunidad:
@@ -153,7 +153,7 @@ plugins:
               - How to perform an extraction using AndroidQF?: 'how-tos/04-how-to-extract-with-androidqf/index.md'
             - References:
               - Home: 'references/index.md'
-              - Glossary: 'references/00-glossary.md'
+              - Glossary: 'references/00-glossary/index.md'
               - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/index.md'
               - MVT bugreport output file dictionary: 'references/02-reference-mvt-bugreport-dictionary/index.md'
             - Community:
