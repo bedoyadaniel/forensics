@@ -1,4 +1,4 @@
-name: ci 
+name: translation-ci 
 on:
   push:
     branches:
@@ -18,9 +18,9 @@ jobs:
         id: deepl-step
         with:
           provider: deepl
-          lang: en-es
-          source: Love
-          api_key: ${{secrets.DEEPL_API_KEY }}
+          lang: es-pt-br
+          source: ../../docs/es/index.md 
+          api_key: ${{DEEPL_API_KEY }}
       - name: Print the result
         run: echo "Translation is '${{ steps.deepl-step.outputs.text }}'"
         shell: sh
