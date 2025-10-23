@@ -15,6 +15,7 @@ hide:
 
 # Repositorio de documentación sobre forense digital consentida para la defensa de los Derechos Humanos
 
+Prueba traducción
 
 Este es un repositorio de **documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar la forense digital consentida en beneficio de la sociedad civil**. Su desarrollo es liderado por la organización de la sociedad civil [SocialTIC](https://socialtic.org). 
 
