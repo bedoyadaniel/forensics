@@ -19,7 +19,7 @@ jobs:
         with:
           provider: deepl
           lang: es-fr
-          source: ../../docs/es/index.md 
+          source: '../../docs/es/index.md' 
           api_key: ${{secrets.DEEPL_API_KEY }}
       - name: Print the result
         run: echo "Translation is '${{ steps.deepl-step.outputs.text }}'"
