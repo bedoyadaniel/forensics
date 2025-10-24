@@ -18,7 +18,7 @@ jobs:
         id: deepl-step
         with:
           provider: deepl
-            lang: ES|PT-BR
+          lang: ES|PT-BR
           source: 'docs/es/index.md' 
           api_key: ${{secrets.DEEPL_API_KEY }}
       - name: Print the result
