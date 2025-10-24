@@ -30,7 +30,7 @@ Este tutorial tiene el **objetivo de enseñar de forma práctica, clara y accesi
 
     Este tutorial pretende ser un **recurso para el aprendizaje**, por lo que algunos conceptos se exploran a profundidad, mostrando también alternativas y posibilidades. Si buscas una guía concisa, con instrucciones paso a paso para completar una extracción, consulta nuestra [guía de adquisición con androidqf.](../../how-tos/04-how-to-extract-with-androidqf/)
     
-    Se recomienda destinar un espacio de tiempo de al menos 90 minutos para la exploración inicial, es especial si no se cuenta con experiencia previa en la herramienta. 
+    Se recomienda destinar un espacio de tiempo de al menos **90 minutos para la exploración inicial**, es especial si no se cuenta con experiencia previa en la herramienta. 
 
 ## Requisitos para seguir este tutorial
 
@@ -428,32 +428,32 @@ Sin importar cuál sistema operativo utilices en tu equipo de cómputo, primero 
 
 === "Ejecución en Windows"
 
-    En windows abordaremos dos maneras:
+    Para iniciar la ejecución en Windows, es posible utilizar la terminal o el explorador de archivos. 
 
-    1. Desde la **terminal**:
+    === "Terminal"
 
-    Con tu terminal abierta en la carpeta donde se encuentra el binario de AndoridQF, ejecuta el binario mediante el comando con los parámetros necesarios según tu análisis (similar al caso de Linux y macOS)
+        Con tu terminal abierta en la carpeta donde se encuentra el binario de AndoridQF, ejecuta el binario mediante el comando con los parámetros necesarios según tu análisis (similar al caso de Linux y macOS)
 
-    ```shell
-    ./androidqf.exe -s numero-serial -o "$(Get-Date -Format 'yyyy-MM-dd')-acquisition01
-    ```
+        ```shell
+        ./androidqf.exe -s numero-serial -o "$(Get-Date -Format 'yyyy-MM-dd')-acquisition01
+        ```
 
-    ![  Captura de pantalla de la terminal de Windows PowerShell con comando de ejecución preparado.](../../../assets/01-tutorial/22-captura-windows-ejecuion-androidqf-terminal.png "imagen 1")
-    /// caption
-    **Imagen 22**. Captura de pantalla de la terminal de Windows PowerShell con comando de ejecución preparado.
-    ///    
+        ![  Captura de pantalla de la terminal de Windows PowerShell con comando de ejecución preparado.](../../../assets/01-tutorial/22-captura-windows-ejecuion-androidqf-terminal.png "imagen 1")
+        /// caption
+        **Imagen 22**. Captura de pantalla de la terminal de Windows PowerShell con comando de ejecución preparado.
+        ///
 
+    === "Explorador de archivos"
 
-    2. Iniciando el ejecutable **desde el explorador de archivos**:
+        En la carpeta donde se guardó el binario se puede ejecutar el binario con doble clic.
 
-    En la carpeta donde se guardó el binario se puede ejecutar el binario con doble clic.
-
-    ![  Captura de pantalla del explorador de archivos con la carpeta de descarga del binario de androidqf.](../../../assets/01-tutorial/23-captura-windows-ejecuion-androidqf-interfaz.png "imagen 1")
-    /// caption
-    **Imagen 23**. Captura de pantalla del explorador de archivos con la carpeta de descarga del binario de androidqf.
-    /// 
+        ![  Captura de pantalla del explorador de archivos con la carpeta de descarga del binario de androidqf.](../../../assets/01-tutorial/23-captura-windows-ejecuion-androidqf-interfaz.png "imagen 1")
+        /// caption
+        **Imagen 23**. Captura de pantalla del explorador de archivos con la carpeta de descarga del binario de androidqf.
+        /// 
     
-    Aparecerá un **mensaje de protección de Windows** diciendo que el sistema evitó ejecutar la aplicación para evitar riesgos, sin embargo, al ser AndroidQF una herramienta libre y de código abierto con constantes mejoras no hay una distribución comercial.
+    
+    Una vez que ejecutes el binario, aparecerá un **mensaje de protección de Windows** diciendo que el sistema evitó ejecutar la aplicación para evitar riesgos, sin embargo, al ser AndroidQF una herramienta libre y de código abierto con constantes mejoras no hay una distribución comercial.
 
     Para ello da clic en **“Más información”** 
 
@@ -581,242 +581,7 @@ Cuando inicia la ejecución, es necesario realizar algunas configuraciones en la
     **Imagen 33** Captura de pantalla de terminal de linux con información de ejecución correcta de la extracción forense con AndroidQF y solicitando presionar *“Enter”* para terminar.
     /// 
 
-Una vez que finalice el proceso de adquisición, la herramienta habrá capturado los archivos e informaciones clave necesarias para un [triaje](../../references/00-glossary/index.md#triaje). En la siguiente sección brindamos una descripción a profundidad de los módulos que se ejecutan. Si no deseas consultar información adicional sobre los módulos de AndroidQF, puedes dirigirte a la sección de [verificación](#verificación-de-la-extracción). 
-
-### Módulos ejecutados durante una adquisición con AndroidQF
-
-A continuación se describen los módulos que AndoridQF ejecuta desde que se inicia la adquisición hasta que esta termina, sin embargo, esta descripción únicamente tiene como objetivo ilustrar el proceso de la adquisición, si deseas profundizar en la construcción y estructura de cada módulo,  puedes consultar el [Diccionario de archivos generados por AndroidQF](../../references/01-reference-androidqf-dictionary/). 
-
-#### Collector
-
-El [collector](https://github.com/mvt-project/androidqf/tree/main/android-collector) es un binario que se carga y ejecuta directamente en el dispositivo Android automáticamente con *adb* al ejecutar AndroidQF. 
-
-Este binario lee información del sistema del dispositivo en los directorios /proc, /sys, /system a través de los subcomandos *ps (*que recolecta la información de los procesos en ejecución) y *find* (que genera registros de archivos presentes en estos directorios con sus metadatos y hashes). Esta información es devuelta por el colector en formato JSON y viaja por adb shell al binario de AndroidQF que está siendo ejecutado en el equipo de cómputo para guardarse en la salida de la adquisición.
-
-El collector no ejecuta ningún comando adb, sin embargo, sus comandos equivalentes podrían ser los siguientes:
-
-**Para el comando ps (procesos):**
-
-```shell
-adb shell ps # (1)!
-```
-
-1.  Este comando lista los procesos en ejecución en el dispositivo (PID, nombre, usuario, estado).
-
-**Para el comando find (registro de archivos):**
-
-```shell
-adb shell ls/stat + adb pull + hashing # (1)!
-```
-
-1.  Donde:
-      * ls: lista archivos en un directorio.  
-      * stat: muestra atributos de un archivo (tamaño, permisos, MAC times, UID/GID).  
-      * adb pull: copia archivos del dispositivo al host.  
-      * hashing: calcula sumas de verificación (MD5, SHA1, SHA256, etc.) para asegurar integridad.
-
-
-#### Backup
-
-El módulo [Backup](https://github.com/mvt-project/androidqf/blob/main/modules/backup.go) módulo realiza una copia de seguridad del dispositivo mediante *adb backup* según la opción seleccionada (solo SMS, todo el dispositivo o nada). El archivo generado se guarda como *backup.ab* en la carpeta de la adquisición.
-
-Este módulo permite obtener una copia de los SMS o de la información del sistema backup donde encontramos la evidencia preservada que ayude a la identificación de vectores de ataque en posibles ataques digitales que deriven de phishing.
-
-Sus comandos equivalentes en *adb* son los siguientes:
-
-**Solo SMS**
-
-```shell
-adb backup com.android.providers.telephony
-```
-
-**Todo**
-
-```shell
-adb backup -all
-```
-
-#### Bugreport
-
-El módulo [bugreport](https://github.com/mvt-project/androidqf/blob/main/modules/bugreport.go) genera un reporte completo del sistema del dispositivo mediante la llamada interna al comando:
-
-```shell
-adb bugreport bugreport.zip
-```
-
-A través del método *adb.Client.Bugreport()*.
-
-El bugreport devuelve una visión general del estado del dispositivo, incluyendo los logs del sistema, las configuraciones y actividad reciente del dispositivo que resulta información necesaria y valiosa para detectar fallos, comportamientos anormales o sospechosos que se puedan relacionar con algún incidente.
-
-#### Dumpsys
-
-El módulo [dumpsys](https://github.com/mvt-project/androidqf/blob/main/modules/dumpsys.go) obtiene información del diagnóstico de los servicios en el dispositivo mediante el comando:
-
-```shell
-adb shell dumpsys
-```
-
-El reporte de dumpsys proporciona detalles técnicos sobre el estado de los servicios y componentes del sistema que resulta muy útil para identificar configuraciones o comportamientos anormales.
-
-#### Env
-
-El módulo [env](https://github.com/mvt-project/androidqf/blob/main/modules/env.go) captura y guarda las variables de entorno activas del dispositivo en el momento de la adquisición. Estas variables son pares clave valor que le dicen al sistema qué rutas y configuraciones está usando realmente (carpetas temporales, almacenamiento externo o librerías cargadas). Su registro ayuda a interpretar el contexto exacto de ejecución del dispositivo.
-
-El comando equivalente en *adb* es:
-
-```shell
-adb shell env
-```
-
-#### Files
-
-El módulo [files](https://github.com/mvt-project/androidqf/blob/main/modules/files.go) genera un registro de archivos y metadatos en las rutas /sdcard/, /system, /vendor, /data , etc. a través del Collector, pero si este no está disponible, ejecuta el comando adb para buscar archivos y directorios específicos: 
-
-```shell
-adb shell find <ruta>
-```
-
-La salida de este módulo permite obtener las rutas completas de los archivos presentes en los dispositivos, lo cual ayuda mucho a dar contexto sobre su ubicación y posible creación.
-
-#### Getprop
-
-El módulo [getprop](https://github.com/mvt-project/androidqf/blob/main/modules/getprop.go) recolecta las propiedades del dispositivo como versión de android, numero de compilacion, número de serie, configuraciones de red, fabricante, estado del debug USB y valores relacionados con software y hardware. 
-
-La salida de este módulo nos permite indagar sobre las propiedades, las cuales pueden ser alteradas por software malicioso para ocultar su presencia o para modificar el comportamiento del dispositivo de forma inadvertida.
-
-Su comando equivalente en *adb* es:
-
-```shell
-adb shell getprop
-```
-
-#### Logcat
-
-El módulo [logcat](https://github.com/mvt-project/androidqf/blob/main/modules/logcat.go) realiza dos procesos clave: primero captura los registros actuales de todos los buffers y guarda la salida como logcat.txt, posteriormente, intenta obtener los registros previos al último reinicio y los guarda como logcat\_old.txt (aunque no siempre se pueden recolectar). Estos registros incluyen mensajes del sistema referentes a errores, advertencias, mensajes de aplicaciones, procesos y servicios del sistema operativo, logs de depuración, etc. La información de logcat puede revelar patrones que indican anomalías o comportamientos maliciosos que pueden relacionarse con aplicaciones o procesos específicos.
-
-Comando equivalente en *adb* para los registros actuales:
-
-```shell
-adb shell logcat -d -b all "*:V"
-```
-
-Comando equivalente en *adb* para los registros previos al último reinicio:
-
-```shell
-adb shell logcat -L -b all "*:V"
-```
-
-#### Logs
-
-El módulo [logs](https://github.com/mvt-project/androidqf/blob/main/modules/logs.go) lista los ficheros y recopila los archivos de registro del sistema y aplicaciones puntualmente extrae los archivos de: 
-
-    * /data/system/uiderrors.txt  
-    *  /proc/kmsg  
-    *  /proc/last\_kmsg  
-    *  /sys/fs/pstore/console-ramoops   
-    * /data/anr/  
-    *  /data/log/  
-    *  /sdcard/log/
-
-Algunos pueden no ser accesibles por permisos del dispositivo.
-
-La información puede ser correlacionada a incidentes.
-
-Comando equivalente en *adb* para el listado recursivo de cada carpeta:
-
-```shell
-adb shell ls -R <carpeta>
-```
-
-Comando equivalente en *adb* para la descarga de cada archivo:
-
-```shell
-adb pull <ruta_remota> <ruta_local>
-```
-
-#### Packages
-
-El módulo [packages](https://github.com/mvt-project/androidqf/blob/main/modules/packages.go) lista las aplicaciones instaladas y opcionalmente descarga sus APKs. Si una aplicación es descargada, este módulo verifica el certificado de firma del APK y permite eliminar los firmados con certificados de confianza para reducir el volumen a APKs desconocidas. Conocer las aplicaciones que están en el sistema y las que instaló el usuario ayuda a identificar si alguna de ellas es potencialmente maliciosa o es relacionada con algún comportamiento ejecutado en contextos no confiables.
-
-Comando equivalente en adb para listar los paquetes y sus rutas:
-
-```shell
-adb shell pm list packages -f
-```
-
-Comando equivalente en adb para descargar cada APK:
-
-```shell
-adb pull <ruta_apk> <ruta_local>
-```
-
-#### Processes
-
-El módulo [processes](https://github.com/mvt-project/androidqf/blob/main/modules/processes.go)  obtiene la lista de procesos  mediante el Collector, sin embargo, si este no está disponible ejecuta el siguiente comando adb para obtener los procesos:
-
-```c#
-adb shell ps -A
-```
-
-La información de salida de este módulo permite saber qué se estaba ejecutando en el momento de la adquisición y, con collector, incluye cmdline, variables de entorno, cwd y contextos SELinux para detectar procesos anómalos, persistencias y actividad sospechosa.
-
-#### Root binaries
-
-El módulo [root\_binaries](https://github.com/mvt-project/androidqf/blob/main/modules/root_binaries.go) busca rastros de rooting en el dispositivo revisando si existen binarios o aplicaciones conocidas como su, busybox, magisk, Superuser.apk, etc. Detectar la presencia de estos binarios permite conocer si existen alteraciones en los registros del dispositivo y su sistema o incluso la presencia de permisos escalados.
-
-Su comando equivalente en *adb* es (se repite para cada binario sospechoso):
-
-```shell
-adb shell which -a su
-```
-
-#### SELinux
-
-El módulo [SELinux](https://github.com/mvt-project/androidqf/blob/main/modules/selinux.go) obtiene el estado SELinux en el dispositivo mediante getenforce, donde este puede ser *enforcing*, *permissive* o *disabled*. Este estado indica el nivel de control de acceso que el sistema aplica, por ejemplo, el modo permisible o sidables puede sugerir configuraciones inseguras o manipulaciones que facilitan alguna intrusión, resulta útil para complementar el contexto del comportamiento de un dispositivo.
-
-Su comando equivalente en *adb* es:
-
-```shell
-adb shell getenforce
-```
-
-#### Services
-
-El módulo [services](https://github.com/mvt-project/androidqf/blob/main/modules/services.go) obtiene la lista de servicios en ejecución en el sistema. Esta información permite identificar que todos los servicios necesarios estén en ejecución para mantener la integridad de la seguridad del dispositivo. 
-
-Su comando equivalente en *adb* es:
-
-```shell
-adb shell service list
-```
-
-#### Settings
-
-El módulo [settings](https://github.com/mvt-project/androidqf/blob/main/modules/settings.go) extrae la configuración del dispositivo en los espacios de nombres system, secure y global usando cmd settings list. Permite conocer ajustes críticos del dispositivo, como configuraciones de red, seguridad o de accesibilidad. Estos datos ayudan a entender cómo estaba configurado el sistema y a detectar cambios anómalos que podrían relacionarse con un ataque o comportamiento sospechoso.
-
-Su comando equivalente en *adb* es:
-
-```shell
-adb shell cmd settings list system
-adb shell cmd settings list secure
-adb shell cmd settings list global
-```
-
-#### Temp
-
-El módulo temp recopila el contenido del directorio temporal identificado en el dispositivo (por defecto /data/local/tmp/ u otro según lo reporte env). Los archivos se copian a la carpeta tmp/ dentro del directorio de trabajo. El directorio temporal puede contener archivos creados por aplicaciones, instaladores, exploits o herramientas de depuración. Revisarlo permite detectar rastros de ejecución reciente, archivos transitorios sospechosos o evidencias que normalmente no permanecen en almacenamiento persistente.
-
-Comando equivalente en adb para listar los archivos:
-
-```shell
-adb shell ls -R /data/local/tmp/
-```
-
-Comando equivalente en adb para extraerlos:
-
-```shell
-adb pull /data/local/tmp/ <ruta_local>
-```
+Una vez que finalice el proceso de adquisición, la herramienta habrá capturado los archivos e informaciones clave necesarias para un [triaje](../../references/00-glossary/index.md#triaje). 
 
 ## Verificación de la extracción
 
