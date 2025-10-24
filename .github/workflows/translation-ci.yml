@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: bedoyadaniel/translation-action
+      - uses: bedoyadaniel/translation-action@main
         id: deepl-step
         with:
           provider: deepl
