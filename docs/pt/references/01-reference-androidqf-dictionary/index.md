@@ -36,7 +36,7 @@ As informações geradas pelo androidqf podem ser agrupadas em 5 categorias prin
 * Processos e aplicativos
 * Arquivos copiados
 
-## Adquisición y extracción
+## Aquisição e Extração
 
 ### acquisition.json
 
@@ -463,7 +463,7 @@ EXTERNAL_STORAGE=/sdcard
 
 **Saiba mais**
 
-* [Shell (informática) \- Wikipedia, la enciclopedia libre](https://pt.wikipedia.org/wiki/Shell_(computa%C3%A7%C3%A3o))  
+* [Shell (informática) \- Wikipedia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Shell_(computa%C3%A7%C3%A3o))  
 * [Can I update the adb shell's environment variables? \- Android Enthusiasts Stack Exchange](https://android.stackexchange.com/questions/53389/can-i-update-the-adb-shells-environment-variables/64926#64926)   
 * [Update mksh to latest version \- Android Enthusiasts Stack Exchange](https://android.stackexchange.com/questions/217617/update-mksh-to-latest-version/217627#217627) 
 
@@ -488,12 +488,12 @@ O arquivo contém a seguinte estrutura:
 * Marca de tempo (timestamp).
 * Identificador do processo e do thread (PID) e (TID).
 - Nível de prioridade:
-    - E: Erro 
-    - W: Aviso
+    - E: Erro
+    - W: Aviso (de _Warning_, em inglês_)
     - I: Informação
     - D: Depuração
     - F: Fatal
-    - V: Verboso
+    - V: Verborrágico (de _Verbose_, em inglês_)
 * Etiqueta que indica o componente ou processo do sistema.
 * Descrição e detalhes das mensagens ou erros.
 
@@ -767,7 +767,7 @@ Os arquivos e pastas contidos neste diretório são os seguintes:
     * **last_kmsg**: Arquivo que contém o último log persistente do kernel após uma reinicialização.
 * `sys/fs/pstore/`
 
-## Procesos y aplicaciones 
+## Processos e Aplicações
 
 ### packages.json
 
@@ -791,7 +791,7 @@ O arquivo contém:
 
 O conteúdo deste arquivo inclui informações que permitem identificar os aplicativos instalados e seu status no dispositivo. Isso ajuda os analistas a avaliar se existem aplicativos de risco ou maliciosos, quais permissões eles têm e quais podem comprometer a segurança.
 
-**Estructura del archivo**
+**Estrutura do arquivo**
 
 ```
 [
