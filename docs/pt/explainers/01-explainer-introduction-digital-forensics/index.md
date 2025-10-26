@@ -125,7 +125,7 @@ graph LR
 
 
 
-## ¿Cómo se aplica la forense digital en la práctica de defensa de Derechos Humanos?
+## Como a perícia digital é aplicada na prática da defesa dos direitos humanos
 
 Na grande maioria dos casos, as pessoas e organizações que defendem os direitos humanos não dispõem de sistemas de monitoramento robustos que alertem sobre possíveis invasões em suas redes ou dispositivos. Portanto, é comum que **a detecção de um possível ataque ocorra quando as consequências de um incidente são percebidas**. Também não é comum que organizações da sociedade civil tenham pessoal especializado em segurança digital, de modo que as tarefas de resposta a incidentes frequentemente recaem sobre equipes internas de tecnologia ou comunicação, às vezes apoiadas por linhas de ajuda ou consultores externos.
 
@@ -161,7 +161,7 @@ Ao contrário das investigações forenses em outros contextos (periciais ou cor
 [Consulta a guía práctica sobre consentimento informado](../../how-tos/01-how-to-obtain-informed-consent/){ .md-button }
 
 
-### Cadena de custodia
+### Cadeia de Custódia
 
 O processo de documentar claramente quem e de que forma a evidência é manipulada é conhecido como **cadeia de custódia**. A evidência forense pode ser manipulada ou destruída durante o processo forense, pelo que a pessoa analista deve ser capaz de demonstrar a [integridade da evidência](https://www.ibm.com/br-pt/topics/data-integrity). Caso essa demonstração não seja possível ou suficientemente robusta, é possível que as evidências **não sejam admissíveis em processos judiciais** ou sejam refutadas e rejeitadas por outres especialistas.
 
