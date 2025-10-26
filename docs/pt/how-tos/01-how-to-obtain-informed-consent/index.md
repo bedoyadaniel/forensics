@@ -128,7 +128,7 @@ A seguir, estão listados os **artefatos forenses que normalmente são coletados
  
 * [Backup](https://support.apple.com/en-us/108771): Os arquivos de backup permitem fazer uma cópia das informações incluídas em um dispositivo iOS. **Por padrão, inclui informações confidenciais**, como fotos, mensagens, dados do Apple Mail, contatos, calendários, notas, entre outros. Recomenda-se usar ou implementar soluções que reduzam as informações confidenciais após a extração e antes do compartilhamento.
 
-## Consideraciones importantes al obtener el consentimiento
+## Consideraciones importantes ao obter o consentimiento
 
 Ao solicitar e obter consentimento para realizar investigações forenses, leve em consideração o seguinte:
 
@@ -142,7 +142,7 @@ Ao solicitar e obter consentimento para realizar investigações forenses, leve 
 - [Data Privacy](https://dataprivacy.com.br/) (Brasil) - [atendimento@dataprivacy.com.br)](mailto:atendimento@dataprivacy.com.br))
 
 
-## Conclusión
+## Conclusãl
 
 **O objetivo do consentimento informado é proporcionar transparência e clareza, de forma que quem solicita a análise possa decidir o alcance e o curso da investigação**, levando em consideração os possíveis riscos. Além da documentação do consentimento, é importante que a pessoa analista apresente (verbalmente ou por escrito) informações claras sobre o processo de análise, incluindo quais informações serão coletadas, quais dados sensíveis estão incluídos nessas informações, quais resultados podem ser esperados do processo, com quem as informações adquiridas serão compartilhadas, por quanto tempo serão armazenadas, entre outros.
  
