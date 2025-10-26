@@ -54,9 +54,9 @@ Para saber exatamente de onde vêm as ameaças que um analista ou um laboratóri
 
 * **Empresas de cibersegurança com fins lucrativos:** Nos últimos anos, surgiram algumas empresas privadas de cibersegurança que buscam lucrar com produtos voltados para detectar e prevenir infecções por spyware. Essas empresas, em algumas ocasiões, se aproximam da sociedade civil em busca de inteligência sobre ameaças ou indicadores de comprometimento, que lhes permitam avançar em suas investigações e produtos. Devido à diferença de incentivos e recursos, muitas vezes essas relações resultam em acordos extrativistas, que podem acabar prejudicando a reputação dos laboratórios forenses e, potencialmente, impactar as vítimas se suas informações não forem tratadas de forma responsável. Alguns exemplos específicos foram relatados de forma privada e até mesmo [algumas críticas e discussões públicas enfatizam o oportunismo e as práticas antiéticas de empresas como a iVerify](https://discuss.grapheneos.org/d/14993-debunking-fake-stock-pixel-os-vulnerability-from-an-edr-company).
 
-## Ejemplos de amenazas 
+## Exemplos de ameaças
 
-A pesar de que no es posible compilar una lista completa de todas las amenazas que un laboratorio forense puede enfrentar, podemos partir de ejemplos y reportes anteriores para explorar algunos ejemplos de amenazas que han sido documentadas. 
+Embora não seja possível compilar uma lista completa de todas as ameaças que um laboratório forense pode enfrentar, podemos partir de exemplos e relatórios anteriores para explorar alguns exemplos de ameaças que foram documentadas.
 
 ### Digitais
 
@@ -124,7 +124,7 @@ A seguir estão alguns recursos para iniciar exercícios de análise de riscos:
 
 * [Cybersecurity Assessment Tool (CAT)](https://cybercat.tools/#assessment): A ferramenta de diagnóstico de segurança cibernética, ou CAT, é uma ferramenta projetada para medir o nível de maturidade, resiliência e força de uma organização em relação à sua segurança cibernética. Ela pode ajudar laboratórios de ameaças, ou as organizações onde estes estão hospedados, a identificar seus próprios riscos, ameaças, vulnerabilidades e oportunidades. 
 
-* [SAFETAG](https://safetag.org/): SAFETAG é uma estrutura de referência para a sociedade civil que adapta modelos tradicionais de testes de penetração e análise de riscos para que sejam úteis e práticos para pequenas e médias organizações da sociedade civil.
+* [SAFETAG](https://safetag.org/): SAFETAG é uma abordagem de auditoria para a sociedade civil que adapta modelos tradicionais de testes de penetração e análise de riscos para que sejam úteis e práticos para pequenas e médias organizações da sociedade civil.
 
 * [Plano de segurança (EFF)](https://ssd.eff.org/module/your-security-plan): A EFF disponibiliza um recurso em suas diretrizes de SSD voltado especificamente para indivíduos ou pessoas analistas independentes para criar um plano para gerenciar riscos digitais.
 
