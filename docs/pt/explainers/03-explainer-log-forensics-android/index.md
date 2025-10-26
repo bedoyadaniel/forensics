@@ -103,7 +103,7 @@ Antes de iniciar uma análise forense baseada em logs, é importante levar em co
 
 * **Revisão por pares e trabalho colaborativo**: Ao realizar investigações forenses de qualquer tipo, incluindo aquelas baseadas em logs, é importante verificar as descobertas com colegas de confiança que possam replicar de forma independente a metodologia para confirmar os resultados. É altamente recomendável realizar revisões por pares antes de publicar, especialmente se os resultados forem apresentados por meio de uma nova metodologia ou se se tratar de uma nova vulnerabilidade.
 
-## Conclusión
+## Conclusão
 
 A **investigação forense baseada em logs** utiliza registros importantes do dispositivo, como informações de processos, relatórios de erros ou logs do sistema, para identificar indicadores de comprometimento conhecidos ou destacar anomalias ao comparar com uma linha de base estabelecida. 
 
