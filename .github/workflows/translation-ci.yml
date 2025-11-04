@@ -9,18 +9,19 @@ permissions:
 
 
 jobs:
-  deepl:
-    name: DeepL
+  translate:
+    name: translate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-      - uses: bedoyadaniel/translation-action@main
-        id: deepl-step
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          provider: deepl
-          lang: es-en
-          source: 'docs/es/index.md' 
-          api_key: ${{secrets.DEEPL_API_KEY }}
-      - name: Print the result
-        run: echo "Translation is '${{ steps.deepl-step.outputs.text }}'"
-        shell: sh
+          python-version: 3.x
+
+      - run: pip install deepl markdown
+
+      - name: Run translation
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+        run: python translation-action/translate.py
+
