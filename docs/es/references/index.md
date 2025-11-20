@@ -29,13 +29,22 @@ Un ejemplo de una referencia sería un mapa. Es un recurso claro, neutral y prec
 
     [:octicons-arrow-right-24: Diccionario de archivos generados por la herramienta androidqf](01-reference-androidqf-dictionary/)
 
--   :material-bug-check:{ .lg .middle }      __Diccionario de archivos generados por la herramienta mvt bugreport__
+-   :material-bug-check:{ .lg .middle }      __Diccionario de archivos generados por la herramienta mvt-android check-bugreport__
 
     ---
 
     Contiene **información sobre los archivos generados por mvt-android check-bugreport** para analizar un reporte de errores o bugreport de un dispositivo Android. El diccionario permite que una persona analista conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.
 
-    [:octicons-arrow-right-24: Diccionario de archivos generados por la herramienta androidqf](02-reference-mvt-bugreport-dictionary/)
+    [:octicons-arrow-right-24: Diccionario de archivos generados por la herramienta mvt-android check-bugreport](02-reference-mvt-bugreport-dictionary/)
+
+
+-   :simple-android:{ .lg .middle }      __Diccionario de archivos generados por la herramienta mvt-android check-androidqf__
+
+    ---
+
+    Contiene **información sobre los archivos generados por mvt-android check-androidqf** para analizar una extracción realizada con AndroidQF. El diccionario permite que una persona analista conozca los archivos generados, cómo utilizarlos, donde buscar información específica y en qué formato la encontrará.
+
+    [:octicons-arrow-right-24: Diccionario de archivos generados por la herramienta mvt-android check-androidqf ](02-reference-mvt-bugreport-dictionary/)
 
 
 
