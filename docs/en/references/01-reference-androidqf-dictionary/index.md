@@ -8,9 +8,7 @@ last_updated: 2025-06-16
 some_url:
 created: 2025-06-16
 comments: true
-authors: 
-	- jose
-	- dani
+name: jose
 
 ---
 
