@@ -9,9 +9,8 @@ some_url:
 created: 2025-08-21
 comments: true
 authors:
-    - José Martínez
-    - Daniel Bedoya
-
+    - jose
+    - dani
 
 ---
 
