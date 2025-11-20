@@ -33,7 +33,7 @@ nav:
     - Glosario: 'references/00-glossary/index.md'
     - Diccionario AndroidQF: 'references/01-reference-androidqf-dictionary/index.md'
     - Diccionario MVT bugreport: 'references/02-reference-mvt-bugreport-dictionary/index.md'
-    - Diccionario MVT androidqf: 'reference/03-reference-mvt-androidqf-dictionary/index.md'
+    - Diccionario MVT androidqf: 'references/03-reference-mvt-androidqf-dictionary/index.md'
   - Comunidad:
     - Comunidad de práctica: 'community/index.md'
     - ¿Por qué contribuir con este repositorio?: 'community/why-support/index.md'
@@ -157,7 +157,7 @@ plugins:
               - Glossary: 'references/00-glossary/index.md'
               - AndroidQF output file dictionary: 'references/01-reference-androidqf-dictionary/index.md'
               - MVT bugreport output file dictionary: 'references/02-reference-mvt-bugreport-dictionary/index.md'
-              - MVT androdiqf output file dictionary: 'reference/03-reference-mvt-androidqf-dictionary/index.md'
+              - MVT androdiqf output file dictionary: 'references/03-reference-mvt-androidqf-dictionary/index.md'
             - Community:
               - Consensual forensics community: 'community/index.md'
               - Supporting this effort: 'community/why-support/index.md'
@@ -199,7 +199,7 @@ plugins:
               - Glosario: 'references/00-glossary.md'
               - Dicionário de arquivos gerados pela ferramenta androidqf: 'references/01-reference-androidqf-dictionary/index.md'
               - Diccionario de archivos generados por mvt bugreport: 'references/02-reference-mvt-bugreport-dictionary/index.md'
-              - Diccionario de archivos generados por mvt androidqf: 'reference/03-reference-mvt-androidqf-dictionary/index.md'
+              - Diccionario de archivos generados por mvt androidqf: 'references/03-reference-mvt-androidqf-dictionary/index.md'
             - Community:
               - Comunidad de práctica: 'community/index.md'
               - ¿Por qué contribuir con este repositorio?: 'community/why-support/index.md'

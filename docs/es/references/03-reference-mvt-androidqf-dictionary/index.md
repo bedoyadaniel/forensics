@@ -37,47 +37,48 @@ La información generada por *mvt-androidqf* se puede agrupar en 5 categorías p
 * Procesos y aplicaciones  
 * Archivos respaldados
 
-A su vez cada una de las categorías contiene archivos específicos generados por la herramienta, los cuales se enlistan en el siguiente índice:
+A su vez cada una de las categorías contiene archivos específicos generados por la herramienta, los cuales se enlistan en el **siguiente índice de contenidos**:
 
-[Detalles de la adquisición](#detalles-de-la-adquisición)
-    [info.json](#info.json)
-    [command.log](#command.log)
-    [timeline.csv](#timeline.csv)
-[Configuración del dispositivo](#configuración-del-dispositivo)
-    [aqf\_getprop.json](#aqf_getprop.json)
-    [aqf\_settings.json](#aqf_settings.json)
-    [mounts.json](#mounts.json)
-[Procesos y aplicaciones](#procesos-y-aplicaciones)
-    [aqf\_packages.json](#aqf_packages.json)
-    [root\_binaries.py](#root_binaries.py)
-[Archivos respaldados](#archivos-respaldados)
-    [aqf\_files.json](#aqf_files.json)
+- [Detalles de la adquisición](#detalles-de-la-adquisición)
+    - [info.json](#info.json)
+    - [command.log](#command.log)
+    - [timeline.csv](#timeline.csv)
+- [Configuración del dispositivo](#configuración-del-dispositivo)
+    - [aqf_getprop.json](#aqf_getprop.json)
+    - [aqf_settings.json](#aqf_settings.json)
+    - [mounts.json](#mounts.json)
+- [Procesos y aplicaciones](#procesos-y-aplicaciones)
+    - [aqf_packages.json](#aqf_packages.json)
+    - [root_binaries.py](#root_binaries.py)
+- [Archivos respaldados](#archivos-respaldados)
+    - [aqf_files.json](#aqf_files.json)
 
 Durante la ejecución del comando ***mvt-android check-andoridqf**,* MVT también ejecuta módulos que corresponden a  ***mvt-android check-bugreport*** y ***mvt-android check-backup,*** esto siempre y cuando exista una carpeta bugreport.zip y un archivo backup.ab dentro de la carpeta de entrada de una extracción con androidqf.
 
-En el [diccionario de archivos generados por la herramienta mvt al analizar un bugreport](../02-reference-mvt-bugreport-dictionary/index.md) se describe la salida del comando check-bugreport y los archivos resultantes. A continuación se incluyen los enlaces a las secciones de cada uno de los módulos ejecutados por el comando check-androidqf para analizar el bugreport.
+En el material de referencia complementario [sobre archivos generados por la herramienta mvt al analizar un bugreport](../02-reference-mvt-bugreport-dictionary/index.md) se describe la salida del comando check-bugreport y los archivos resultantes. A continuación se muestra el **las referencias específicas a los módulos ejecutados por el comando check-androidqf para analizar el bugreport:**
 
-[Configuración del dispositivo](../02-reference-mvt-bugreport-dictionary/index.md#configuración-del-dispositivo-configuración-del-dispositivo)
-    [dumpsys_get_prop.json](../02-reference-mvt-bugreport-dictionary/index.md#getprop.json)
-[Información sobre registros y eventos del sistema](../02-reference-mvt-bugreport-dictionary/index.md#informacion-sobre-registros-y-eventos-del-sistema)
-    [dumpsys_adb_state.json](../02-reference-mvt-bugreport-dictionary/index.md#dumpsys_adb_state.json)
-    [bugreport_timestamps.json](../02-reference-mvt-bugreport-dictionary/index.md#bugreport_timestamps.json)
-    [dbinfo.json](../02-reference-mvt-bugreport-dictionary/index.md#dbinfo.json)
-    [dumpsys_receivers.json](../02-reference-mvt-bugreport-dictionary/index.md#receivers.json)
-[Procesos y aplicaciones](../02-reference-mvt-bugreport-dictionary/index.md#procesos-y-aplicaciones)
-    [dumpsys_packages.json](../02-reference-mvt-bugreport-dictionary/index.md#packages.json)
-    [dumpsys_activities.json](../02-reference-mvt-bugreport-dictionary/index.md#activities.json)
-    [dumpsys_appops.json](../02-reference-mvt-bugreport-dictionary/index.md#appops.json)
-    [dumpsys_accessibility.json](../02-reference-mvt-bugreport-dictionary/index.md#accesibility.json)
-    [tombstones.json](../02-reference-mvt-bugreport-dictionary/index.md#tombstones.json)
-    [dumpsys_battery_daily.json](../02-reference-mvt-bugreport-dictionary/index.md#battery_daily.json)
-    [dumpsys_battery_history.json](../02-reference-mvt-bugreport-dictionary/index.md#battery_history.json)
-    [dumpsys_platform_compact.json](../02-reference-mvt-bugreport-dictionary/index.md#platform_compact.json)
+- [Configuración del dispositivo](../02-reference-mvt-bugreport-dictionary/index.md#configuración-del-dispositivo-configuración-del-dispositivo)
+    - [dumpsys_get_prop.json](../02-reference-mvt-bugreport-dictionary/index.md#getprop.json)
+- [Información sobre registros y eventos del sistema](../02-reference-mvt-bugreport-dictionary/index.md#informacion-sobre-registros-y-eventos-del-sistema)
+    - [dumpsys_adb_state.json](../02-reference-mvt-bugreport-dictionary/index.md#dumpsys_adb_state.json)
+    - [bugreport_timestamps.json](../02-reference-mvt-bugreport-dictionary/index.md#bugreport_timestamps.json)
+    - [dbinfo.json](../02-reference-mvt-bugreport-dictionary/index.md#dbinfo.json)
+    - [dumpsys_receivers.json](../02-reference-mvt-bugreport-dictionary/index.md#receivers.json)
+- [Procesos y aplicaciones](../02-reference-mvt-bugreport-dictionary/index.md#procesos-y-aplicaciones)
+    - [dumpsys_packages.json](../02-reference-mvt-bugreport-dictionary/index.md#packages.json)
+    - [dumpsys_activities.json](../02-reference-mvt-bugreport-dictionary/index.md#activities.json)
+    - [dumpsys_appops.json](../02-reference-mvt-bugreport-dictionary/index.md#appops.json)
+    - [dumpsys_accessibility.json](../02-reference-mvt-bugreport-dictionary/index.md#accesibility.json)
+    - [tombstones.json](../02-reference-mvt-bugreport-dictionary/index.md#tombstones.json)
+    - [dumpsys_battery_daily.json](../02-reference-mvt-bugreport-dictionary/index.md#battery_daily.json)
+    - [dumpsys_battery_history.json](../02-reference-mvt-bugreport-dictionary/index.md#battery_history.json)
+    - [dumpsys_platform_compact.json](../02-reference-mvt-bugreport-dictionary/index.md#platform_compact.json)
+
 
 Asi mismo , también listamos los módulos ejecutado por ***check-backup***, los cuáles se detallan al final de este recurso.  
 
-[Información sobre registros y eventos del sistema](#información-sobre-registros-y-eventos-del-sistema)  
-[sms.json](#sms.json)
+- [Información sobre registros y eventos del sistema](#información-sobre-registros-y-eventos-del-sistema)  
+- [sms.json](#sms.json)
 
 # Detalles de la adquisición {#detalles-de-la-adquisición}
 
@@ -337,83 +338,84 @@ Este archivo se encuentra en formato *json* y contiene información sobre las pa
 
 El módulo se encarga de identificar configuraciones sospechosas en puntos de montaje /system, /vendor, /product y /system\_ext como modo de acceso de lectura y escritura, marcas de tiempo noatime o nodiratime, posteriormente se encarga de formatear cada punto de montaje de la siguiente manera:
 
-* **device**:  Partición o volumen montado, en android las más comunes son:  
-  * Particiones de almacenamiento físico   
-    * /dev/block/sdX: Dispositivo de almacenamiento físico ([eMMC/UFS](https://new.c.mi.com/es/post/11738)) expuesto como sd por el kernel.  
-    * /dev/block/mmcblk: Dispositivo de almacenamiento eMMC presentado como mmcblk.  
-    * /dev/block/dm-X: Dispositivo manejado por device-mapper (cifrado, verity o particiones lógicas).  
-    * /dev/block/by-name/: Enlaces simbólicos que apuntan a las particiones reales por su nombre e.j. system, vendor, userdata.  
-  * Volumen virtual del kernel en RAM  
-    * proc: Interfaz virtual para obtener información del kernel y procesos.  
-    * sysfs: expone información de dispositivos, drivers y parámetros del kernel.  
-    * selinuxfs: Muestra políticas, estados y etiquetas de SELinux.  
-    * tracefs: sistema virtual para herramientas de trazado y debugging del kernel.  
-    * pstore: Almacena registros persistentes de fallos del kernel.  
-    * bpf: Expone interfaces para programas [eBPF](https://source.android.com/docs/core/architecture/kernel/bpf) cargados en el kernel.  
-  * Espacio de usuario  
-    * /dev/fuse: Interfaz [FUSE](https://source.android.com/docs/core/storage/fuse-passthrough) usada por Android para montar almacenamiento emulado p.j  /storage/emulated.  
-  * Interfaces internas de control de kernel  
-    * none: Identificador que indica que el montaje no proviene de un dispositivo real.  
-    * binder: [Sistema de IPC](https://source.android.com/docs/core/architecture/ipc/binder-overview) interno de Android para comunicación entre procesos.  
-  * Archivos APEX montados como loopback  
-    * /dev/block/loopX: Dispositivos de bucle usados para montar paquetes APEX como si fueran particiones reales.
+* **device**: Partición o volumen montado, en android las más comunes son:
+    * Particiones de almacenamiento físico
+        * /dev/block/sdX: Dispositivo de almacenamiento físico ([eMMC/UFS](https://new.c.mi.com/es/post/11738)) expuesto como sd por el kernel.
+        * /dev/block/mmcblk: Dispositivo de almacenamiento eMMC presentado como mmcblk.
+        * /dev/block/dm-X: Dispositivo manejado por device-mapper (cifrado, verity o particiones lógicas).
+        * /dev/block/by-name/: Enlaces simbólicos que apuntan a las particiones reales por su nombre e.j. system, vendor, userdata.
+    * Volumen virtual del kernel en RAM
+        * proc: Interfaz virtual para obtener información del kernel y procesos.
+        * sysfs: Expone información de dispositivos, drivers y parámetros del kernel.
+        * selinuxfs: Muestra políticas, estados y etiquetas de SELinux.
+        * tracefs: Sistema virtual para herramientas de trazado y debugging del kernel.
+        * pstore: Almacena registros persistentes de fallos del kernel.
+        * bpf: Expone interfaces para programas [eBPF](https://source.android.com/docs/core/architecture/kernel/bpf) cargados en el kernel.
+    * Espacio de usuario
+        * /dev/fuse: Interfaz [FUSE](https://source.android.com/docs/core/storage/fuse-passthrough) usada por Android para montar almacenamiento emulado p.j /storage/emulated.
+    * Interfaces internas de control de kernel
+        * none: Identificador que indica que el montaje no proviene de un dispositivo real.
+        * binder: [Sistema de IPC](https://source.android.com/docs/core/architecture/ipc/binder-overview) interno de Android para comunicación entre procesos.
+    * Archivos APEX montados como loopback
+        * /dev/block/loopX: Dispositivos de bucle usados para montar paquetes APEX como si fueran particiones reales.
 
-* **mount point**: Ruta de la carpeta raiz del almacenamiento donde se accede a la información, en android suelen ser los siguientes:  
-  * /system: Contiene el sistema operativo principal .  
-  * /vendor: Incluye componentes y drivers proporcionados por el fabricante del hardware como HALs, firmware y binarios específicos del proveedor.  
-  * /product: Almacena personalizaciones del fabricante sobre las funciones del sistema y aplicaciones específicas del dispositivo.  
-  * /data: Área de datos del usuario y almacenamiento de apps.  
-  * /cache: Espacio temporal usado para archivos de actualización y datos transitorios del sistema.  
-  * /metadata: Contiene información crítica de dispositivo necesaria para [AVB](https://source.android.com/docs/security/features/verifiedboot/avb), cifrado y validaciones del sistema.  
-  * /mnt/media\_rw/: Punto de montaje para almacenamiento removible o adoptado e.j. SD card  
-  * /storage/emulated: Vista emulada de almacenamiento interno del usuario.  
-  * /proc: Sistema virtual que expone información del kernel y procesos (no es almacenamiento real).  
-  * /sys: Sistema virtual que expone información sobre dispositivos y controladores del kernel.  
-  * /mnt/user/0/emulated: Vista específica del almacenamiento emulado para el usuario 0\.
+* **mount point**: Ruta de la carpeta raíz del almacenamiento donde se accede a la información, en android suelen ser los siguientes:
+    * /system: Contiene el sistema operativo principal.
+    * /vendor: Incluye componentes y drivers proporcionados por el fabricante del hardware como HALs, firmware y binarios específicos del proveedor.
+    * /product: Almacena personalizaciones del fabricante sobre las funciones del sistema y aplicaciones específicas del dispositivo.
+    * /data: Área de datos del usuario y almacenamiento de apps.
+    * /cache: Espacio temporal usado para archivos de actualización y datos transitorios del sistema.
+    * /metadata: Contiene información crítica necesaria para [AVB](https://source.android.com/docs/security/features/verifiedboot/avb), cifrado y validaciones del sistema.
+    * /mnt/media_rw/: Punto de montaje para almacenamiento removible o adoptado e.j. SD card.
+    * /storage/emulated: Vista emulada de almacenamiento interno del usuario.
+    * /proc: Sistema virtual que expone información del kernel y procesos (no es almacenamiento real).
+    * /sys: Sistema virtual que expone información sobre dispositivos y controladores del kernel.
+    * /mnt/user/0/emulated: Vista específica del almacenamiento emulado para el usuario 0.
 
-* **filesystem\_type**: Tipo de sistema de archivos, en android son los siguientes:  
-  * ext4: Sistema de archivos de Linux usado en particiones internas.  
-  * f2fs: Sistema de archivos optimizado para almacenamiento flash.  
-  * erofs: Sistema de archivos de solo lectura optimizado.  
-  * vfat: Sistema de archivos FAT32 usado para tarjetas SD y almacenamiento externo.  
-  * sdfat: Implementación extendida de FAT/exFAT.  
-  * tmpfs: Sistema de archivos temporal en RAM usado para directorios volátiles e.j. /dev, /run, /apex.  
-  * proc: Sistema de archivos virtual que expone información del kernel y procesos.  
-  * sysfs: Sistema virtual que muestra información de hardware, drivers y controladores del kernel.  
-  * selinuxfs: Sistema virtual que expone parámetros y estado de SELinux en el dispositivo.  
-  * functionfs: Sistema usado para interfaces [USB gadget](https://source.android.com/docs/core/permissions/usb-hal) cuando Android actúa como dispositivo USB.  
-  * incremental-fs: Sistema diseñado para permitir instalar o ejecutar apps “bajo demanda” mientras aún están descargándose.  
-  * binder: Sistema de comunicación interna IPC de Android.  
-  * cgroup: Sistema virtual basado en control groups para gestionar recursos por procesos e.j. CPU, memoria.  
-  * fuse: Sistema de archivos en espacio de usuario utilizado para almacenamiento emulado.
+* **filesystem_type**: Tipo de sistema de archivos, en android son los siguientes:
+    * ext4: Sistema de archivos de Linux usado en particiones internas.
+    * f2fs: Sistema de archivos optimizado para almacenamiento flash.
+    * erofs: Sistema de archivos de solo lectura optimizado.
+    * vfat: Sistema de archivos FAT32 usado para tarjetas SD y almacenamiento externo.
+    * sdfat: Implementación extendida de FAT/exFAT.
+    * tmpfs: Sistema de archivos temporal en RAM usado para directorios volátiles e.j. /dev, /run, /apex.
+    * proc: Sistema de archivos virtual que expone información del kernel y procesos.
+    * sysfs: Sistema virtual que muestra información de hardware, drivers y controladores del kernel.
+    * selinuxfs: Sistema virtual que expone parámetros y estado de SELinux en el dispositivo.
+    * functionfs: Sistema usado para interfaces [USB gadget](https://source.android.com/docs/core/permissions/usb-hal) cuando Android actúa como dispositivo USB.
+    * incremental-fs: Sistema diseñado para instalar o ejecutar apps “bajo demanda” mientras aún están descargándose.
+    * binder: Sistema de comunicación interna IPC de Android.
+    * cgroup: Sistema virtual basado en control groups para gestionar recursos por procesos e.j. CPU, memoria.
+    * fuse: Sistema de archivos en espacio de usuario utilizado para almacenamiento emulado.
 
-* **mount\_options**  
-  * modos de acceso  
-    * ro: read only  
-    * rw: read an write   
-  * etiquetas de seguridad  
-    * seclabel: Habilita y aplica etiquetas SELinux al sistema de archivos.  
-    * nodev: Evita que se usen archivos de dispositivo en esa partición.  
-    * nosuid: Bloquea binarios con [set-UID/set-GID](https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-permissions-understanding-setuid-setgid-and-the-sticky-bit) para evitar escalación.  
-    * noexec: Impide ejecutar archivos desde esa partición.  
-    * hidepid=invisible: Oculta procesos de otros usuarios en */proc*.  
-    * user\_xattr: Permite atributos extendidos definidos por el usuario.  
-    * acl: Permite listas de control de acceso más detalladas que *rwx*.  
-    * inlinecrypt: Usa cifrado en línea soportado por hardware/FS (Android).  
-    * usrquota: Habilita cuotas por usuario (espacio limitado).  
-    * grpquota: Habilita cuotas por grupo.  
-  * marcas de tiempo  
-    * lazytime: Aplaza la escritura de timestamps al almacenamiento para mejorar el rendimiento.  
-    * relatime: Actualiza tiempos de acceso solo si es necesario.  
-    * noatime: Desactiva la actualización del tiempo de acceso.  
-  * usuarios o gupos relacionados  
-    * uid=0: Propietario del montaje, quien es el usuario *root*.  
-    * gid=1000: Grupo base de Android quien es usualmente *system* o *media\_rw*, según contexto.  
-    * user\_id=0: Usuario principal del sistema Android.  
-    * group\_id=0: Grupo primario del usuario root.
+* **mount_options**
+    * modos de acceso
+        * ro: read only
+        * rw: read and write
+    * etiquetas de seguridad
+        * seclabel: Habilita y aplica etiquetas SELinux al sistema de archivos.
+        * nodev: Evita que se usen archivos de dispositivo en esa partición.
+        * nosuid: Bloquea binarios con [set-UID/set-GID](https://www.cbtnuggets.com/blog/technology/system-admin/linux-file-permissions-understanding-setuid-setgid-and-the-sticky-bit) para evitar escalación.
+        * noexec: Impide ejecutar archivos desde esa partición.
+        * hidepid=invisible: Oculta procesos de otros usuarios en * /proc *.
+        * user_xattr: Permite atributos extendidos definidos por el usuario.
+        * acl: Permite listas de control de acceso más detalladas que *rwx*.
+        * inlinecrypt: Usa cifrado en línea soportado por hardware/FS (Android).
+        * usrquota: Habilita cuotas por usuario.
+        * grpquota: Habilita cuotas por grupo.
+    * marcas de tiempo
+        * lazytime: Aplaza la escritura de timestamps al almacenamiento para mejorar el rendimiento.
+        * relatime: Actualiza tiempos de acceso solo si es necesario.
+        * noatime: Desactiva la actualización del tiempo de acceso.
+    * usuarios o grupos relacionados
+        * uid=0: Propietario del montaje (root).
+        * gid=1000: Grupo base de Android (system o media_rw).
+        * user_id=0: Usuario principal del sistema Android.
+        * group_id=0: Grupo primario del usuario root.
 
-* **is\_system\_partition**: Valor booleano que responde si la partición es partición /system o /sys  
-* **is\_read\_write**: Valor booleano que responde si la particion tiene modo de acceso de lectura y escritura.
+* **is_system_partition**: Valor booleano que indica si la partición es /system o /sys.
+* **is_read_write**: Valor booleano que indica si la partición tiene acceso de lectura y escritura.
+
 
 **¿Por qué es importante?**
 
@@ -553,27 +555,27 @@ Este módulo se encarga extraer los binarios del archivo base para después pode
 
 * path: Ruta al binario de rooting encontrado.  
 * binary\_name: Nombre del binario, pueden ser los siguientes:  
-  * su  
-  * busybox  
-  * supersu  
-  * Superuser.apk  
-  * KingoUser.apk  
-  * SuperSu.apk  
-  * magisk  
-  * magiskhide  
-  * magiskinit  
-  * magiskpolicy  
+    * su  
+    * busybox  
+    * supersu  
+    * Superuser.apk  
+    * KingoUser.apk  
+    * SuperSu.apk  
+    * magisk  
+    * magiskhide  
+    * magiskinit  
+    * magiskpolicy  
 * desciption: Descripcion del binario de rooting, pueden ser los siguientes:  
-  * su: SuperUser binary  
-  * busybox: BusyBox utilities  
-  * supersu: SuperSU root management  
-  * Superuser.apk: Superuser app  
-  * KingoUser.apk: KingRoot app  
-  * SuperSu.apk: SuperSU app  
-  * magisk: Magisk root framework  
-  * magiskhide: Magisk hide utility  
-  * magiskinit: Magisk init binary  
-  * magiskpolicy: Magisk policy binary
+    * su: SuperUser binary  
+    * busybox: BusyBox utilities  
+    * supersu: SuperSU root management  
+    * Superuser.apk: Superuser app  
+    * KingoUser.apk: KingRoot app  
+    * SuperSu.apk: SuperSU app  
+    * magisk: Magisk root framework  
+    * magiskhide: Magisk hide utility  
+    * magiskinit: Magisk init binary  
+    * magiskpolicy: Magisk policy binary
 
 **¿Por qué es importante?**
 
@@ -695,21 +697,21 @@ La información de este archivo se presenta de la siguiente manera:
 * **date**: Marca de tiempo en formato Unix del momento de recepción.  
 * **date\_sent**: Marca de tiempo en formato Unix de cuándo el mensaje fue enviado. Si el valor es 0, significa que el mensaje fue recibido.  
 * **status**: Código de estado del mensaje:  
-  * \-1: Desconocido o sin información  
-  * 0: Completo  
-  * 64: Pendiente de envío  
-  * 128: Borrador  
+    * \-1: Desconocido o sin información  
+    * 0: Completo  
+    * 64: Pendiente de envío  
+    * 128: Borrador  
 * **type**:Ttipo de mensaje   
-  * 1: Recibido  
-  * 2: Enviado  
-  * 3: Borrador  
-  * 4: Saliente  
+    * 1: Recibido  
+    * 2: Enviado  
+    * 3: Borrador  
+    * 4: Saliente  
 * **recipients**: Lista de destinatarios del mensaje.  
 * **read**: Indicador de si el mensaje fue leído (1) o no leído (0).  
 * **isodate**: Fecha en formato ISO, para facilitar la comprensión.  
 * **direction**: Dirección del mensaje (si fue enviado o recibido).  
-  * sent: Enviado  
-  * received: Recibido  
+    * sent: Enviado  
+    * received: Recibido  
 * **links**: Lista de enlaces identificados dentro del cuerpo del mensaje.
 
 **¿Por qué es importante?**
