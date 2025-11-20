@@ -17,8 +17,6 @@ author:
 
 # Diccionario de archivos generados por la herramienta MVT-androidqf
 
-# Introducción 
-
 El presente documento contiene información sobre los archivos generados por la MVT a través del componente [mvt-check-androidqf.](https://github.com/mvt-project/mvt/tree/main/src/mvt/android/modules/androidqf) El objetivo de este diccionario, es que la persona analista tenga la facilidad de buscar información específica y conocer el formato en que la información del análisis forense es presentada.
 
 Este recurso forma **parte de un repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el [marco de referencia de documentación técnica Diataxis](https://diataxis.fr/).
@@ -80,9 +78,9 @@ Asi mismo , también listamos los módulos ejecutado por ***check-backup***, los
 - [Información sobre registros y eventos del sistema](#información-sobre-registros-y-eventos-del-sistema)  
 - [sms.json](#sms.json)
 
-# Detalles de la adquisición {#detalles-de-la-adquisición}
+## Detalles de la adquisición {#detalles-de-la-adquisición}
 
-## info.json {#info.json}
+### info.json {#info.json}
 
 **Información contenida**
 
@@ -122,7 +120,7 @@ Esta información permite establecer una referencia del archivo analizado y la h
 }
 ```
 
-## command.log {#command.log}
+### command.log {#command.log}
 
 **Información contenida**
 
@@ -168,7 +166,7 @@ Este archivo sigue un formato línea por línea con la siguiente estructura.
 
 * [Introduction to STIX](https://oasis-open.github.io/cti-documentation/stix/intro.html)
 
-## timeline.csv {#timeline.csv}
+### timeline.csv {#timeline.csv}
 
 **Información contenida**  
 Este archivo se encuentra en formato *csv* y almacena una línea de tiempo de la actividad del dispositivo. Esta actividad se obtiene de la ejecución de los módulos de análisis de MVT y se ordena por tiempo.
@@ -195,9 +193,9 @@ Este archivo sigue un formato línea por línea con la siguiente estructura.
 "2025-01-01 00:00:00","Packages","package_install","com.example.newapp (system: False, third party: True)"
 ```
 
-# Configuración del dispositivo {#configuración-del-dispositivo}
+## Configuración del dispositivo {#configuración-del-dispositivo}
 
-## aqf\_getprop.json {#aqf_getprop.json}
+### aqf\_getprop.json {#aqf_getprop.json}
 
 La información de este archivo es generada mediante el módulo [aqf\_getprop](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/androidqf/aqf_getprop.py) y el artefacto [getprop](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/getprop.py).
 
@@ -250,7 +248,7 @@ Las propiedades brindan información importante sobre el hardware y el software 
 ]
 ```
 
-## aqf_settings.json {#aqf_settings.json}
+### aqf_settings.json {#aqf_settings.json}
 
 La información de este archivo se genera mediante el módulo [aqf\_settings](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/androidqf/aqf_settings.py) y el artefacto [settings](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/settings.py).
 
@@ -328,7 +326,7 @@ Permite identificar configuraciones anómalas que podrían comprometer la seguri
 * [Lista completa de preferencias del sistema \- Settings Secure](https://developer.android.com/reference/android/provider/Settings.Secure?hl=es-419)  
 * [Lista completa de preferencias del sistema \- Settings Global](https://developer.android.com/reference/android/provider/Settings.Global?hl=es-419)
 
-## mounts.json {#mounts.json}
+### mounts.json {#mounts.json}
 
 La información de este archivo se genera mediante el módulo [mounts](https://github.com/mvt-project/androidqf/blob/main/modules/mounts.go) y el artefacto [mounts](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/artifacts/mounts.py) 
 
@@ -482,9 +480,9 @@ Los puntos de montaje permiten identificar las **áreas de almacenamiento montad
 * [APEX file format](https://source.android.com/docs/core/ota/apex)  
 * [SIstema de ficheros Android](https://keepcoding.io/blog/sistema-de-ficheros-android/) 
 
-# Procesos y aplicaciones {#procesos-y-aplicaciones}
+## Procesos y aplicaciones {#procesos-y-aplicaciones}
 
-## aqf_packages.json {#aqf_packages.json}
+### aqf_packages.json {#aqf_packages.json}
 
 La información de este archivo se genera mediante el módulo módulo [aqf\_packages](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/androidqf/aqf_packages.py).
 
@@ -543,7 +541,7 @@ El contenido de este archivo incluye información que permite identificar aplica
     }
 ```
 
-## root\_binaries.py {#root_binaries.py}
+### root\_binaries.py {#root_binaries.py}
 
 La información de este archivo se genera mediante el módulo [root\_binaries](https://github.com/mvt-project/androidqf/blob/main/modules/root_binaries.go)
 
@@ -606,9 +604,9 @@ Este archivo detecta herramientas de rooting, lo cual puede representar un indic
     }
 ```
 
-# Archivos respaldados {#archivos-respaldados}
+## Archivos respaldados {#archivos-respaldados}
 
-## aqf_files.json {#aqf_files.json}
+### aqf_files.json {#aqf_files.json}
 
 La información de este archivo se genera mediante el módulo [files](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/androidqf/files.py).  
 
@@ -678,9 +676,9 @@ Este archivo tiene relevancia para identificar archivos de interés en una inves
     }
 ```
 
-# Información sobre registros y eventos del sistema {#información-sobre-registros-y-eventos-del-sistema}
+## Información sobre registros y eventos del sistema {#información-sobre-registros-y-eventos-del-sistema}
 
-## sms.json {#sms.json}
+### sms.json {#sms.json}
 
 La información de este archivo se genera mediante el módulo de backup [sms](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/backup/sms.py) y el backup helper [helpers](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/modules/backup/helpers.py) y el parser [backup](https://github.com/mvt-project/mvt/blob/main/src/mvt/android/parsers/backup.py).
 
