@@ -8,10 +8,7 @@ last_updated: 2025-08-27
 some_url:
 created: 2025-08-27
 comments: true
-author:
-    name: José Martínez
-    url: https://socialtic.org/quienes-somos/
-    description: SocialTIC
+name: jose
 
 ---
 
