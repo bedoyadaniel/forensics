@@ -1,0 +1,77 @@
+name: auto-translate-create-pr
+
+# Action to automatically translate commited files using a custom script and teh create-pull-request action
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "docs/**"
+
+permissions:
+  contents: write      # required to create commits/branches
+  pull-requests: write # required to create PRs
+
+jobs:
+  translate:
+    # Prevent the job from running when the actor is the actions bot to avoid loops
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install deepl
+
+      - name: Run translation script
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+        run: |
+          # run the script - will write translated files to disk
+          python scripts/translate.py
+
+      - name: Check for repository changes
+        run: |
+          # Ensure git is configured so commands work in Actions runner
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Show git status for debugging
+          echo "git status --porcelain output:"
+          git status --porcelain
+
+          # If there are no changes, exit early (success)
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes detected after running translation script. Exiting workflow."
+            exit 0
+          fi
+
+          # Otherwise print files for commit so logs show what will be included
+          echo "Detected changes; the following files will be included in the PR:"
+          git status --porcelain | sed -e 's/^[ MARC]*/  /'
+
+      - name: Create pull request for translation changes
+        uses: peter-evans/create-pull-request@v5
+        with:
+          # the token will be provided by github actions
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # commit message used for the branch commit
+          commit-message: updating with automated translations
+          # branch name — using timestamp/sha avoids collisions
+          branch: automated/translations-${{ github.run_number }}-${{ github.sha }}
+          title: "Automated translations — ${{ github.ref_name }}@${{ github.sha }}"
+          body: |
+            This pull request contains automated translations created by the translation-action workflow.
+            Please review the translations and remove the `translation-review-pending` flag if approved.
+          labels: automated,translations
+          draft: true
