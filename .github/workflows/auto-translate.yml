@@ -38,7 +38,7 @@ jobs:
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
         run: |
           # run the script - will write translated files to disk
-          python translation-action/translate.py
+          python scripts/translate.py
 
       - name: Check for repository changes
         run: |
