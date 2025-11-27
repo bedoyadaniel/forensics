@@ -32,6 +32,7 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
     [:octicons-arrow-right-24: Inicia aquí](home/getting-started/)
 
 Prueba de pull-request en el repo. 
+Agregando una nueva línea para prueba de traducción con pull request. 
 
 </div>
 
