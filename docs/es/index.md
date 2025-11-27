@@ -10,6 +10,7 @@ some_url:
 icon: material/home
 hide:
     - footer
+auto-translate: true
 ---
 
 
@@ -30,6 +31,7 @@ Este es un repositorio de **documentación técnica** que tiene como objetivo es
 
     [:octicons-arrow-right-24: Inicia aquí](home/getting-started/)
 
+Prueba de pull-request en el repo. 
 
 </div>
 
