@@ -10,6 +10,7 @@ some_url:
 icon: material/home
 hide: 
     - footer
+translation-review-pending: true
 ---
 
 
@@ -32,6 +33,7 @@ Digital forensics makes possible the **discovery and examination of digital data
 
 
 </div>
+Adding a new line for translation test with pull request.
 
 ## Published contents
 
@@ -73,6 +75,5 @@ To organize the contents, we use [the technical documentation framework Diátaxi
     [:octicons-arrow-right-24:   Index of references](references/)
 
 </div>
-
 
 
