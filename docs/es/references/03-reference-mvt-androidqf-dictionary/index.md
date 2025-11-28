@@ -22,7 +22,7 @@ Este recurso en particular se enmarca dentro de la categoría de [referencias](h
 
 MVT hace referencia a *Mobile Verification Toolkit*. Esta es una herramienta desarrollada, lanzada y mantenida por el [Laboratorio de Seguridad de Amnistía Internacional](https://securitylab.amnesty.org/es/) perteneciente al [MVT Project](https://github.com/mvt-project/).  La intención de esta herramienta es en esencia, facilitar el análisis forense consensuado de dispositivos Android e iOS con el propósito de identificar rastros de compromiso. 
 
-Este recurso se actualizó por última vez el 18 de noviembre de 2025 y para la recopilación de la información se tomó como base el *commit* *339a1d0712c4cc051e880b8a777d2b8b6295e57b.*
+Este recurso se actualizó por última vez el 18 de noviembre de 2025 y para la recopilación de la información se tomó como base el [*commit 339a1d0712c4cc051e880b8a777d2b8b6295e57b*](https://github.com/mvt-project/mvt/commit/339a1d0712c4cc051e880b8a777d2b8b6295e57b). 
 
 La información generada por *mvt-androidqf* se puede agrupar en 5 categorías principales:
 
@@ -48,7 +48,7 @@ A su vez cada una de las categorías contiene archivos específicos generados po
 - [Archivos respaldados](#archivos-respaldados)
     - [aqf_files.json](#aqf_files.json)
 
-Durante la ejecución del comando ***mvt-android check-andoridqf**,* MVT también ejecuta módulos que corresponden a  ***mvt-android check-bugreport*** y ***mvt-android check-backup,*** esto siempre y cuando exista una carpeta bugreport.zip y un archivo backup.ab dentro de la carpeta de entrada de una extracción con androidqf.
+Durante la ejecución del comando ***mvt-android check-andoridqf**,* MVT también ejecuta módulos que corresponden a  ***mvt-android check-bugreport*** y ***mvt-android check-backup,*** esto siempre y cuando exista un archivo bugreport.zip y un archivo backup.ab dentro de la carpeta de entrada de una extracción con androidqf.
 
 En el material de referencia complementario [sobre archivos generados por la herramienta mvt al analizar un bugreport](../02-reference-mvt-bugreport-dictionary/index.md) se describe la salida del comando check-bugreport y los archivos resultantes. A continuación se muestra el **las referencias específicas a los módulos ejecutados por el comando check-androidqf para analizar el bugreport:**
 
@@ -81,7 +81,7 @@ Asi mismo , también listamos los módulos ejecutado por ***check-backup***, los
 
 **Información contenida**
 
-Este archivo se encuentra en formato *json* y contiene información relacionada con el análisis realizado a una carpeta de salida de una extracción de información forense realizada con AndroidQF. Contiene la siguiente información:
+Este archivo se encuentra en formato *json* y contiene información relacionada con el análisis realizado a una extracción completada mediante AndroidQF. Contiene la siguiente información:
 
 * Ruta del archivo analizado.  
 * Versión utilizada de MVT.  
@@ -672,8 +672,6 @@ Este archivo tiene relevancia para identificar archivos de interés en una inves
         "md5": ""
     }
 ```
-
-## Información sobre registros y eventos del sistema {#información-sobre-registros-y-eventos-del-sistema}
 
 ### sms.json {#sms.json}
 
