@@ -97,6 +97,32 @@ _KEY_RE = re.compile(r"^([a-zA-Z0-9_\-]+)\s*:\s*(.+)$")
 
 # ======= Methods and functions  ===============
 
+
+# -------------------------
+# Helper: parser for mardown metadata, returns type, header and body of metadata 
+# -------------------------
+
+def split_front_matter(text: str):
+    if not text:
+        return None, "", text
+    s = text.lstrip("\ufeff")
+    if s.startswith("---"):
+        parts = s.split("---", 2)
+        if len(parts) >= 3:
+            header = parts[1]
+            body = parts[2].lstrip("\r\n")
+            return "yaml", header, body
+        return None, "", text
+    if s.startswith("+++"):
+        parts = s.split("+++", 2)
+        if len(parts) >= 3:
+            header = parts[1]
+            body = parts[2].lstrip("\r\n")
+            return "toml", header, body
+        return None, "", text
+    return None, "", text
+
+
 # -------------------------
 # Helper: CLI argument parsing
 # -------------------------
@@ -290,22 +316,55 @@ def patch_translation_file(source_path: Path, target_path: Path, added_lines):
     src_lang = detect_language(source_path)
     tgt_lang = detect_language(target_path)
 
-    # If the target file doesn’t exist, translate everything
+
+    # If the target file doesn’t exist, translate everything but copy front-matter verbatim
     if not target_path.exists():
         print(f" {target_path} missing. Translating full file.")
-        full_translation = translate_text(
-            source_path.read_text(encoding="utf-8"),
-            src_lang,
-            tgt_lang,
-        )
 
-        # do not auto-enable auto-translate on target – respect repo policy.
-        # mark the target as review pending so it will be ignored as a source until reviewed.
-        full_translation = update_front_matter(full_translation, "translation-review-pending", True)
+        src_text = source_path.read_text(encoding="utf-8")
+        fm_type, header, body = split_front_matter(src_text)  # returns fm_type: "yaml"/"toml"/None
+
+        # Determine what to translate: prefer body if front-matter exists, otherwise the whole text
+        if fm_type is not None:
+            text_to_translate = body
+        else:
+            text_to_translate = src_text
+
+        # Translate only the body text (or the full text if there was no front-matter)
+        translated_body = translate_text(text_to_translate, src_lang, tgt_lang)
+
+        # Build the resulting front-matter: copy header verbatim, but append translation-review-pending if missing
+        if fm_type == "toml":
+            # TOML header delimiter + header content is in `header`
+            header_lines = [
+                ln for ln in header.splitlines()
+                if not re.match(r"\s*auto[-_]?translate\s*[:=]", ln, re.IGNORECASE)
+            ]
+            # check presence (accept key forms: translation-review-pending or translation_review_pending)
+            if not any(re.search(r"translation[-_]?review[-_]?pending\s*=", ln, re.IGNORECASE) for ln in header_lines):
+                header_lines.append('translation-review-pending = true')
+            new_header = "\n".join(header_lines).rstrip() + "\n"
+            final_text = f"+++\n{new_header}+++\n\n{translated_body.lstrip()}"
+        elif fm_type == "yaml":
+            header_lines = [
+                ln for ln in (header.splitlines() if header else [])
+                if not re.match(r"\s*auto[-_]?translate\s*[:=]", ln, re.IGNORECASE)
+            ]
+            if not any(re.search(r"translation[-_]?review[-_]?pending\s*:", ln, re.IGNORECASE) for ln in header_lines):
+                header_lines.append('translation-review-pending: true')
+            new_header = "\n".join(header_lines).rstrip() + "\n"
+            final_text = f"---\n{new_header}---\n\n{translated_body.lstrip()}"
+        else:
+            # No front matter in source — create basic YAML front-matter with review flag
+            new_header = "translation-review-pending: true\n"
+            final_text = f"---\n{new_header}---\n\n{translated_body.lstrip()}"
+
+        # Write target
         target_path.parent.mkdir(parents=True, exist_ok=True)
-        target_path.write_text(full_translation, encoding="utf-8")
-        print(f"Created {target_path} (translation-review-pending: true)")
+        target_path.write_text(final_text, encoding="utf-8")
+        print(f"Created {target_path} (front-matter copied; translation-review-pending set).")
         return
+
 
     # If there are no new lines, nothing to patch
     if not added_lines:
@@ -357,51 +416,82 @@ def main():
             print(f"Source file not found: {src_path}")
             return
 
-        # --- Source language (MANDATORY) ---
+        # source language mandatory in CLI mode
         src_lang = getattr(args, "source_lang", None)
         if not src_lang:
             raise ValueError("CLI mode requires -s / --source-lang")
 
-        # --- Target languages (MANDATORY) ---
+        # targets required
         raw_targets = getattr(args, "targets", None)
         if not raw_targets:
             raise ValueError("CLI mode requires -t / --targets")
-
-        # normalize for deepl
-        if isinstance(raw_targets, (list, tuple)):
-            requested_targets = raw_targets
-        else:
-            requested_targets = [raw_targets]
-
-        target_langs = [t for t in requested_targets if t in ALL_LANGS]
+        requested = raw_targets if isinstance(raw_targets, (list, tuple)) else [raw_targets]
+        target_langs = [t for t in requested if t in ALL_LANGS]
         if not target_langs:
             raise ValueError("No valid target languages provided")
 
-
-        # --- Output directory (optional) ---
+        # output dir (optional)
         output_dir_arg = getattr(args, "output_dir", None)
         output_dir = Path(output_dir_arg).expanduser() if output_dir_arg else None
         if output_dir:
             output_dir.mkdir(parents=True, exist_ok=True)
 
-
-        # --- Read file and translate ---
+        # read source file once
         src_text = src_path.read_text(encoding="utf-8")
+
+        # split front-matter (robust helper)
+        fm_type, header, body = split_front_matter(src_text)
+
+        # decide text to translate: the body if front-matter exists, else whole file
+        text_to_translate = body if fm_type is not None else src_text
+
+        # gate: optionally require auto-translate true in front-matter (if you keep gating)
+        fm_dict = read_front_matter(src_text) if 'read_front_matter' in globals() else {}
+        if fm_dict and not fm_dict.get("auto-translate", False):
+            print(f"Skipping {src_path} — auto-translate not enabled in front matter.")
+            return
+        if fm_dict and fm_dict.get("translation-review-pending", False):
+            print(f"Skipping {src_path} — translation-review-pending is true.")
+            return
+
         print(f"CLI MODE: Translating {src_path} ({src_lang}) → {target_langs}")
 
         for lang in target_langs:
             tgt_path = build_cli_target_path(src_path, lang, output_dir)
-            translated = translate_text(src_text, src_lang, lang)
 
-            # mark review-pending if helper exists
-            if "update_front_matter" in globals():
-                translated = update_front_matter(translated, "translation-review-pending", True)
+            # translate only the body
+            translated_body = translate_text(text_to_translate, src_lang, lang)
 
+            # build header for target: copy header verbatim if present, ensure review flag is present
+            if fm_type == "toml":
+                header_lines = [
+                    ln for ln in (header.splitlines() if header else [])
+                    if not re.match(r"\s*auto[-_]?translate\s*[:=]", ln, re.IGNORECASE)
+                ]
+                if not any(re.search(r"translation[-_]?review[-_]?pending\s*=", ln, re.IGNORECASE) for ln in header_lines):
+                    header_lines.append('translation-review-pending = true')
+                new_header = "\n".join(header_lines).rstrip() + "\n"
+                final_text = f"+++\n{new_header}+++\n\n{translated_body.lstrip()}"
+            elif fm_type == "yaml":
+                header_lines = [
+                    ln for ln in (header.splitlines() if header else [])
+                    if not re.match(r"\s*auto[-_]?translate\s*[:=]", ln, re.IGNORECASE)
+                ]
+                if not any(re.search(r"translation[-_]?review[-_]?pending\s*:", ln, re.IGNORECASE) for ln in header_lines):
+                    header_lines.append('translation-review-pending: true')
+                new_header = "\n".join(header_lines).rstrip() + "\n"
+                final_text = f"---\n{new_header}---\n\n{translated_body.lstrip()}"
+            else:
+                # no front-matter -> create YAML block with review flag
+                final_text = f"---\ntranslation-review-pending: true\n---\n\n{translated_body.lstrip()}"
+
+            # write target
             tgt_path.parent.mkdir(parents=True, exist_ok=True)
-            tgt_path.write_text(translated, encoding="utf-8")
+            tgt_path.write_text(final_text, encoding="utf-8")
             print(f"Written translation: {tgt_path}")
 
-        return  # IMPORTANT — stop here; do not run git-diff branch when args are provided
+        return  # stop; do not fall through to git-diff branch
+
 
     # -------------------------
     # No CLI args: run repo / git diff mode
