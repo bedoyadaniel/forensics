@@ -12,10 +12,14 @@ author:
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
 
+translation-review-pending: true
 ---
 
+At SocialTIC we understand the importance of maintaining **resources that are accessible**, **easy to read** and that can have an impact on **populations with different technical capabilities and in multiple regions of the world**. Due to our expertise and geographic location, our resources will often be **available first in Spanish,** and then translated into the other available languages.
 # Additional translation and localization efforts
+To facilitate this translation process, a script was developed that uses the *deepl* API to generate automatic translations. This script is [described in detail in the corresponding documentation](../../../../scripts/translate-readme.md). which integrates directly to the repository to generate draft versions. This automatic script requires manual revisions, so if you are interested in **collaborating with the translation of resources from Spanish to English**, or vice versa, please write to [**seguridad@socialtic.org**](mailto:seguridad@socialtic.org).
 
+While this automatic translation script makes it easy to localize resources, there are some important considerations before starting a translation:
 At SocialTIC, we understand the importance of **maintaining resources that are accessible**, easy to read, and capable of **having an impact on communities with different technical capacities and from multiple regions around the world**. Due to our expertise and geographical location, our resources will often be **available first in Spanish**, and the necessary resources will be allocated afterward to translate them into English. If you are interested in **collaborating on translations** from Spanish to English—or vice versa—please contact us at: **seguridad@socialtic.org**.
 
 If you are interested in translating the repository's content into a **new language**, we kindly ask that you **notify us** by opening a new issue or by contacting us directly at seguridad@socialtic.org. While we strongly agree on the importance of localization, there are a **few key considerations before starting a translation**:
