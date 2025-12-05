@@ -19,7 +19,7 @@ author:
 
 At SocialTIC we understand the importance of maintaining **resources that are accessible**, **easy to read** and that can have an impact on **populations with different technical capabilities and in multiple regions of the world**. Due to our expertise and geographic location, our resources will often be **available first in Spanish,** and then translated into the other available languages.
 
-To facilitate this translation process, a script was developed that uses the *deepl* API to generate automatic translations that are integrated through pull requests. This script is [described in detail in the corresponding documentation](../../../../scripts/translate-readme.md). This automatic script requires manual revisions, so if you are interested in **collaborating with the translation of resources from Spanish to English**, or vice versa, please write to [**seguridad@socialtic.org**](mailto:seguridad@socialtic.org).
+To facilitate this translation process, a script was developed that uses the *deepl* API to generate automatic translations that are integrated through pull requests. This script is [described in detail in the corresponding documentation](https://github.com/socialtic/forensics/blob/main/scripts/translate-readme.md). This automatic script requires manual revisions, so if you are interested in **collaborating with the translation of resources from Spanish to English**, or vice versa, please write to [**seguridad@socialtic.org**](mailto:seguridad@socialtic.org).
 
 While this automatic translation script makes it easy to localize resources, there are some important considerations before starting a translation:
 
