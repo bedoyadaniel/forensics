@@ -119,7 +119,7 @@ Esta acción automática, además de ejecutar el script, utiliza la acción ```p
 
 En el modo con parámetros, el script funciona de la siguiente manera: 
 
-
+```
 translate.py [-h] [-f FILE] [-s SOURCE_LANG] [-t TARGETS [TARGETS ...]] [-o OUTPUT_DIR]
 
 Translate docs (diff mode or single-file CLI).
@@ -134,7 +134,7 @@ options:
   -o OUTPUT_DIR, --output-dir OUTPUT_DIR
                         Optional output directory for CLI mode.
 
-
+```
 Por ejemplo, 
 
 ## Ejemplos y comportamiento esperado
