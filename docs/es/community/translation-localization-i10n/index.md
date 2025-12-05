@@ -10,13 +10,13 @@ author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
-auto-translate: true
+auto-translate: false
 ---
 
 
 Desde SocialTIC comprendemos la importancia de mantener **recursos accesibles**, de **fácil lectura** y que puedan generar un impacto en **poblaciones con diferentes capacidades técnicas y en múltiples regiones del mundo**. Debido a nuestra experticia y ubicación geográfica, nuestros recursos frecuentemente estarán **disponibles primero en idioma español,**  y de forma posterior se traducirán a los demás idiomas disponibles. 
 
-Para facilitar este proceso de traducción, se desarrolló un script que utiliza la API de *deepl* para generar traducciones automáticas. Este script se [describe a detalle en la documentación correspondiente](../../../../scripts/translate-readme.md).   que se integra directamente al repositorio para generar versiones en borrador. Este script automático requiere de revisiones manuales, por lo que si tienes interés en **colaborar con la traducción de recursos del español al inglés**, o viceversa, por favor escríbenos a [**seguridad@socialtic.org**](mailto:seguridad@socialtic.org). 
+Para facilitar este proceso de traducción, se desarrolló un script que utiliza la API de *deepl* para generar traducciones automáticas e integrarlas a través de pull requests. Este script se [describe a detalle en la documentación correspondiente](https://github.com/socialtic/forensics/blob/main/scripts/translate-readme.md). Este script automático requiere de revisiones manuales, por lo que si tienes interés en **colaborar con la traducción de recursos del español al inglés**, o viceversa, por favor escríbenos a [**seguridad@socialtic.org**](mailto:seguridad@socialtic.org). 
 
 Si bien este script de traducción automática facilita la localización de recursos, existen algunas consideraciones importantes antes de iniciar una traducción: 
 
