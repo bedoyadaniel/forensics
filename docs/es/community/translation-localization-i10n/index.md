@@ -10,13 +10,15 @@ author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
-
+auto-translate: false
 ---
 
 
-Desde SocialTIC comprendemos la importancia de mantener **recursos accesibles**, de **fácil lectura** y que puedan generar un impacto en **poblaciones con diferentes capacidades técnicas y en múltiples regiones del mundo**. Debido a nuestra experticia y ubicación geográfica, nuestros recursos frecuentemente estarán **disponibles primero en idioma español,**  y de forma posterior se destinarán los recursos necesarios para la **traducción al idioma inglés**.  Si tienes interés en **colaborar con la traducción de recursos del español al inglés**, o viceversa, por favor escríbenos a [**seguridad@socialtic.org**](mailto:seguridad@socialtic.org). 
+Desde SocialTIC comprendemos la importancia de mantener **recursos accesibles**, de **fácil lectura** y que puedan generar un impacto en **poblaciones con diferentes capacidades técnicas y en múltiples regiones del mundo**. Debido a nuestra experticia y ubicación geográfica, nuestros recursos frecuentemente estarán **disponibles primero en idioma español,**  y de forma posterior se traducirán a los demás idiomas disponibles. 
 
-Si tienes interés en traducir los contenidos del repositorio a un **nuevo idioma**, te solicitamos **informarnos a través de un nuevo *issue* o directamente a través de seguridad@socialtic.org**. Si bien concordamos en la importancia de localizar recursos, existen algunas consideraciones importantes antes de iniciar una traducción: 
+Para facilitar este proceso de traducción, se desarrolló un script que utiliza la API de *deepl* para generar traducciones automáticas e integrarlas a través de pull requests. Este script se [describe a detalle en la documentación correspondiente](https://github.com/socialtic/forensics/blob/main/scripts/translate-readme.md). Este script automático requiere de revisiones manuales, por lo que si tienes interés en **colaborar con la traducción de recursos del español al inglés**, o viceversa, por favor escríbenos a [**seguridad@socialtic.org**](mailto:seguridad@socialtic.org). 
+
+Si bien este script de traducción automática facilita la localización de recursos, existen algunas consideraciones importantes antes de iniciar una traducción: 
 
 * Capacidad y sostenibilidad: La traducción y localización de contenidos es un **trabajo arduo,** y desde **SocialTIC agradecemos cualquier esfuerzo** que impulse el análisis forense consensuado en poblaciones vulnerables, especialmente de la mayoría global. Sin embargo, antes de iniciar una traducción, recomendamos **evaluar la sostenibilidad del esfuerzo**  en el mediano-largo plazo.  
 * Revisión de los contenidos: En nuestra experiencia, es ideal que además de la traducción inicial, **una segunda persona realice una revisión secundaria**. Si tienes problemas para identificar una segunda contraparte para revisar una traducción, puedes informarnos para apoyar en la coordinación.   
