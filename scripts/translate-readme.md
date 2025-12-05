@@ -32,7 +32,7 @@ traducción automática. Si auto-translate se encuentra en false, o no se espec�
     * No se remueven o reemplazan líneas. Si el commit incluye la eliminación de contenido, el script no toma ninguna acción.   
 * Todas las traducciones y modificaciones a los archivos se envían como pull requests para revisión
 
-En el caso de este repositorio, se configura también una acción automática en la carpeta de [Workflows])(../.github/workflows/) para ejecutar el script cada vez que se hace un commit: 
+En el caso de este repositorio, se configura también una acción automática en la carpeta de [Workflows](../.github/workflows/) para ejecutar el script cada vez que se hace un commit: 
 
 ```
 on:
