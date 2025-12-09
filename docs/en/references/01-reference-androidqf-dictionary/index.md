@@ -10,6 +10,7 @@ created: 2025-06-16
 comments: true
 name: jose
 
+translation-review-pending: true
 ---
 
 # AndroidQF output file dictionary
