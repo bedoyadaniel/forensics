@@ -4,15 +4,17 @@ summary: Adquisición y extracción de dispositivos Android mediante AndroidQF
 keywords: android, adquisicion, extraccion, androidqf
 authors: 
 tags: [androidqf, extraction, acquisition, adquisicion, extraccion]
-last_updated: 2025-08-01
+last_updated: 2025-12-09
 some_url:
 created: 2025-08-01
 comments: true
 name: jose
-
+auto-translate: true
 ---
 
-# Guia: ¿Cómo realizar una extracción mediante AndroidQF?
+# Guia: ¿Cómo realizar una adquisición y extracción mediante AndroidQF?
+
+Este documento forma parte de un **repositorio de documentación técnica** que tiene como objetivo establecer una base de conocimientos probados, flexibles y accesibles para **impulsar el análisis forense consentido en beneficio de la sociedad civil**. Para organizar los contenidos, se utiliza el marco de referencia de documentación [técnica Diataxis](../../references/00-glossary/index.md#diátaxis).
 
 Este recurso se enmarca dentro de la categoría de [Guia, how-to](../), y contiene las instrucciones para realizar una extracción forense con la herramienta [AndroidQF](../../references/00-glossary/index.md#androidqf).
 
@@ -28,13 +30,39 @@ Su utilidad en contextos de sociedad civil radica en su **[portabilidad](../../r
 
 Esta guía es complementaria se complementa con otros materiales, como el [diccionario de archivos generados por AndroidQF](../../references/01-reference-androidqf-dictionary/), sus formatos y recomendaciones de uso o el [explainer sobre forense basada en logs para dispositivos Android](../../explainers/03-explainer-log-forensics-android/).
 
-## ¿Qué necesito para realizar una extracción con AndroidQF?
+## Prerrequisitos para realizar la extracción forense 
 
 Para poder realizar una extracción con AndroidQF es **necesario**:
 
 * El **dispositivo Android a ser analizado**: Activar el **[modo desarrollador](../../references/00-glossary/index.md#modo-de-desarrollador)** y **[activar la depuración por USB](../../references/00-glossary/index.md#adb)**. De ser necesario, consulta nuestras [guías sobre habilitar opciones de desarrollador](../02-how-to-enable-developer-options/) o [la guía sobre cómo habilitar ADB](../03-how-to-enable-adb/). 
 * **Computadora Windows, Linux o Mac**: Se utilizará para realizar la extracción. Es necesario conocer cuál es [chip integrado del equipo](https://servernet.com.ar/como-saber-si-mi-procesador-es-amd-o-arm/) 
 * Tener un **cable para transferencia de archivos** telefono-computadora. 
+
+### Cifrado de extracciones
+
+Este procedimiento permite habilitar el cifrado automático de las extracciones generadas por AndroidQF usando una llave pública *AGE*. Se recomienda cuando la extracción se realiza de forma remota, por lo que se debe enviar o compartir información a través de medios virtuaeles, por lo que existe riesgo de exposición o se sigue alguna política de privacidad.
+
+Para ello sigue los siguientes pasos:
+
+* Si eres quien descifra información, debes crear una llave pública y una llave privada siguiendo la [documentación oficial](https://github.com/FiloSottile/age).  
+* Si cifras a nombre d eun aorganizació u otr apersona analista, pide a la persona su llave pública [*AGE*](https://github.com/FiloSottile/age) **.**  
+* En el mismo directorio donde se encuentra el binario de AndroidQF, crea un archivo llamado: *key.txt*  
+* Abre *key.txt*, pega la llave pública completa en una sola línea y guarda los cambios.
+
+Para descifrar el *.zip*, lo único que tienes que hacer es lo siguiente:
+
+* Crea un archivo *.txt* llamado **private.key** en el directorio donde se encuentra el binario de andoridqf y abrelo y pega la llave privada  la cual empieza con: *AGE-SECRET-KEY-...*  
+    
+* Ejecuta el siguiente comando para poder descifrar información:
+
+```shell
+$ age --decrypt -i ~/path/to/privatekey.txt -o <UUID>.zip <UUID>.zip.age
+```
+
+!!! note "Verifica el par de llaves"
+        
+    Asegúrate de que la llave privada sea el par de la llave pública.  
+
 
 ## Pasos para obtener un extracción forense con AndroidQF
 
@@ -99,6 +127,8 @@ A continuación se presentan los pasos detallados para realizar la extracción f
     /// caption
     **Imagen 1**. Captura de pantalla de dispositivo móvil Android Samsung solicitando permiso de acceso a datos.
     ///
+
+* Verifica que el archivo key.txt esté en la misma carpeta del binario andoridqf si es que deseas cifrar la extracción.
 
 
 ### :material-numeric-4-box: Ejecutar AndroidQF 
@@ -238,6 +268,9 @@ Los próximos pasos se aplicarán de la **misma manera** en los 3 sistemas opera
 ### :material-numeric-6-box: Verificar la extracción
 
 Una vez finalizada la ejecución de AndroidQF, es importante **validar que la adquisición se completó correctamente**. Para ello, realiza los siguientes pasos:
+
+* Si recibiste una extracción cifrada, es necesario descifrar esta información primero, puedes consultar la sección sobre [cifrado de extracciones](#cifrado-de-extracciones).
+
 
 * Abre el archivo command.log con un editor de texto y **busca las palabras warning o error**. Si aparece revisa si corresponden a fallos críticos o eventos no relevantes.
 
