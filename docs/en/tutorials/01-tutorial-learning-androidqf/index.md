@@ -460,17 +460,19 @@ When you are ready to execute the AndroidQF binary, **turn on and unlock the mob
 
 First, in case you use [encryption](#encryption-of-extractions-optional), make sure that the encryption key is located in the corresponding folder next to the AndoridQF binary.
 
+!!! note "Note on the example"
+
+	For this tutorial, the command that identifies the device by serial number and outputs a folder with date and identifier will be discussed. The detailed version will be omitted for readability.
+
 In addition, no matter which operating system you use on your computer, it is first necessary to identify the parameters of the AndroidQF run command according to your analysis needs. For this example we use the following command:
 
 ```shell
 ./androidqf -s numero-serial -o /ruta/de/salida/"$(date +%Y-%m-%d)"-complemento # (1)!
 
 ```
+
 1. We use the **-s** parameter to specify the serial number and **-o** to indicate the output path. We also use the **date** command to automatically include the date in the folder name.
 
-!!! note "Note on the example".
-
-    For this tutorial, the command that identifies the device by serial number and outputs a folder with date and identifier will be discussed. The detailed version will be omitted for readability.
 
 === "Running on Linux/MacOS"
 
@@ -655,30 +657,30 @@ Below is a **cheatsheet** with the equivalent *adb* commands that allow you to u
 
 This table serves as a quick reference to understand what information each module gets, how it could be manually verified and what is the base adb command that allows to observe equivalent data in a consensus forensic analysis, if you want to go deeper into the construction and structure of each module, you can refer to the [AndroidQF generated file dictionary](../../references/01-reference-androidqf-dictionary/index.md).
 
-| Module | adb command | Function | Function
+| Module | adb command | Function |
 | ----- | ----- | :---: |
-| **Device information and configuration** | **Device information and configuration
-| **getprop** | `adb shell getprop` | | Display system/device properties |
+| **Device information and configuration** |  |  |
+| **getprop** | `adb shell getprop` | Display system/device properties |
 | **selinux** | `adb shell getenforce` | Returns the status of SELinux |
-| **settings** | <pre><code> adb shell cmd settings list system</code><br><code>adb shell cmd settings list secure</code><br><code>adb shell cmd settings list global</code></pre> | Extracts system, network, security and accessibility settings. |
+| **settings** | <pre><code>adb shell cmd settings list system</code><br><code>adb shell cmd settings list secure</code><br><code>adb shell cmd settings list global</code></pre> | Extracts system, network, security and accessibility settings. |
 | **env** | `adb shell env` | List active environment variables and system paths. |
-| **mounts** | <pre><code>adb shell "mount"</code><br><br><code>adb shell "cat /proc/mounts"</code></pre> | Displays active mount points and file system types. |
-| **Device reports** | **Device reports
-| **logcat** | <pre><code>adb shell logcat -d -b all "&#42;:V"</code><br><br><code>adb shell logcat -L -b all "&#42;:V"</code></pre> | Captures the current and last reboot logs. |
-| **dumpsys** | `adb shell dumpsys ` | Displays diagnostic information about all active services. |
+| **mounts** | <pre><code>adb shell "mount"</code><br><code>adb shell "cat /proc/mounts"</code></pre> | Displays active mount points and file system types. |
+| **Device reports** |  |  |
+| **logcat** | <pre><code>adb shell logcat -d -b all "&#42;:V"</code><br><code>adb shell logcat -L -b all "&#42;:V"</code></pre> | Captures the current and last reboot logs. |
+| **dumpsys** | `adb shell dumpsys` | Displays diagnostic information about all active services. |
 | **bugreport** | `adb bugreport bugreport.zip` | Generates a complete system report with configurations and logs. |
-| **logs** | <pre><code>adb shell "ls -R /data/anr/"</code><br><code>adb shell "ls -R /data/log/"</code><br><code>adb shell "ls -R /sdcard/log/"</code><br><code>adb pull /data/system/uiderrors.txt</code><br><br><code>adb pull /proc/kmsg</code><br><code><br><code>adb pull /proc/last_kmsg</code><br><code><br><code>adb pull /sys/fs/pstore/console-ramoops</code><br><code>adb pull /data/anr/</code><br><code>adb pull /data/log/</code><br><code>adb pull /sdcard/log/</code></code></pre> | List and download system log files and errors. |
-| **Supported information** | **Supported information
-| **backup only SMS** | <pre><code>adb backup</code><br><br><code>com.Android.providers.telephony</code></code></pre> | Create SMS backup copies |
+| **logs** | <pre><code>adb shell "ls -R /data/anr/"</code><br><code>adb shell "ls -R /data/log/"</code><br><code>adb shell "ls -R /sdcard/log/"</code><br><code>adb pull /data/system/uiderrors.txt</code><br><code>adb pull /proc/kmsg</code><br><code>adb pull /proc/last_kmsg</code><br><code>adb pull /sys/fs/pstore/console-ramoops</code><br><code>adb pull /data/anr/</code><br><code>adb pull /data/log/</code><br><code>adb pull /sdcard/log/</code></pre> | List and download system log files and errors. |
+| **Supported information** |  |  |
+| **backup only SMS** | <pre><code>adb backup</code><br><code>com.Android.providers.telephony</code></pre> | Create SMS backup copies |
 | **backup all** | `adb backup -all` | Create backups of the entire system. |
-printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><br><code>adb shell "find /system_ext/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code><br><code>adb shell "find /vendor/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code><code>adb shell "find /cust/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code><code>adb shell "find /product/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><br><code>adb shell "find /apex/ -printf '%T@ %m %s %u %u %g %p\n' 2>/dev/null"</code><br><code><br><code>adb shell "find /data/local/tmp/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code><br><code>adb shell "find /data/media/0/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code><br><code>adb shell "find /data/misc/radio/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><br><code>adb shell "find /data/vendor/secradio/ -printf '%T@ %m %s %u %u %g %p\n' 2>/dev/null"</code><br><code><br><code>adb shell "find /data/log/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><br><code>adb shell "find /tmp/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code><br><code>adb shell "find / -maxdepth 1 -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><br><code>adb shell "find /data/data/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code></pre> | Displays system files and metadata. |
-| **tmp** | <pre><code>adb shell ls -R /data/local/tmp/</code><br><br><code>adb pull /data/local/tmp/ &lt;path-local&gt;</code></pre> | List and extract files from the device's temporary directory. |
-| **Processes and applications** | | |
-| **packages list** | `adb shell pm list packages -f` | Lists installed applications and allows to extract their APKs. |
+| **files** | <pre><code>adb shell "find /sdcard/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /system/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /system_ext/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /vendor/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /cust/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /product/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /apex/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /data/local/tmp/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /data/media/0/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /data/misc/radio/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /data/vendor/secradio/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /data/log/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /tmp/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find / -maxdepth 1 -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code><br><code>adb shell "find /data/data/ -printf '%T@ %m %s %u %g %p\n' 2>/dev/null"</code></pre> | Displays system files and metadata. |
+| **tmp** | <pre><code>adb shell ls -R /data/local/tmp/</code><br><code>adb pull /data/local/tmp/ &lt;path-local&gt;</code></pre> | List and extract files from the device's temporary directory. |
+| **Processes and applications** |  |  |
+| **packages list** | `adb shell pm list packages -f` | Lists installed applications and allows you to extract their APKs. |
 | **packages download** | `adb pull <path_apk> <path_local>` | Extract APKs. |
 | **processes** | `adb shell ps -A` | List the processes running on the device. |
 | **services** | `adb shell service list` | Displays active services |
-| **root\_binaries** | <pre><code>adb shell "which -a su"</code><br><code>adb shell "which -a busybox"</code><br><code><br><code>adb shell "which -a supersu"</code><br><code>adb shell "which -a Superuser.apk"</code><br><code>adb shell "which -a KingoUser.apk"</code><br><code>adb shell "which -a SuperSu.apk"</code><br><br><code>adb shell "which -a magisk"</code><br><code>adb shell "which -a magiskhide"</code><br><code><br><code>adb shell "which -a magiskinit"</code><br><code>adb shell "which -a magiskpolicy"</code></pre> | Look for traces of rooting or binaries with elevated permissions. |
+| **root_binaries** | <pre><code>adb shell "which -a su"</code><br><code>adb shell "which -a busybox"</code><br><code>adb shell "which -a supersu"</code><br><code>adb shell "which -a Superuser.apk"</code><br><code>adb shell "which -a KingoUser.apk"</code><br><code>adb shell "which -a SuperSu.apk"</code><br><code>adb shell "which -a magisk"</code><br><code>adb shell "which -a magiskhide"</code><br><code>adb shell "which -a magiskinit"</code><br><code>adb shell "which -a magiskpolicy"</code></pre> | Look for traces of rooting or binaries with elevated permissions. |
 
 ## Verifying the extraction
 
