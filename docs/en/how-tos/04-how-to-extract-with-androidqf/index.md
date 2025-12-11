@@ -15,7 +15,7 @@ authors:
 
 # How-to guide: How to perform an acquisition and extraction using AndroidQF?
 
-This document is part of a **technical documentation repository** that aims to establish a proven, flexible and accessible knowledge base to **promote consensual forensic analysis for the benefit of civil society**. To organize the contents, the [technical Diataxis] documentation reference framework(../.../references/00-glossary/index.md#ditaxis) is used.
+This document is part of a **technical documentation repository** that aims to establish a proven, flexible and accessible knowledge base to **promote consensual forensic analysis for the benefit of civil society**. To organize the contents, we use the technical documentation framework  [Diataxis](../.../references/00-glossary/index.md#ditaxis).
 
 This resource falls within the category [how-to guides](../), provides instructions on how to perform a forensic extraction using the [AndroidQF](../../references/00-glossary/index.md#androidqf) tool.
 
@@ -62,13 +62,10 @@ To decrypt the *.zip*, all you have to do is the following:
 $ age --decrypt -i ~/path/to/privatekey.txt -o <UUID>.zip <UUID>.zip.age
 ```
 
-!!! note "Check the key pair".
+!!! note "Check the key pair"
 
     Make sure that the private key is the public key pair.## Steps to perform a forensic extraction with AndroidQF
     
-
-
-
 ### :material-numeric-1-box: Download the AndroidQF binary
 
 Below are the detailed steps to perform the forensic extraction:
