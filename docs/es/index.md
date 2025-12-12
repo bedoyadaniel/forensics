@@ -10,7 +10,7 @@ some_url:
 icon: material/home
 hide:
     - footer
-auto-translate: true
+auto-translate: false
 ---
 
 
