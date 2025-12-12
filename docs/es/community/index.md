@@ -11,7 +11,7 @@ author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
-
+auto-translate: true
 ---
 
 # Comunidad de práctica forense para la defensa de los derechos humanos
