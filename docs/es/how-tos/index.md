@@ -8,8 +8,6 @@ tags: [indice, guides]
 last_updated: 2025-07-22
 some_url:
 icon: material/wrench-cog
-auto-translate: true
-
 ---
 
 # Guías How-To

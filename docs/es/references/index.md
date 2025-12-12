@@ -8,8 +8,6 @@ tags: [indice, intro]
 last_updated: 2025-07-21
 some_url:
 icon: material/ruler
-auto-translate: true
-
 ---
 
 
