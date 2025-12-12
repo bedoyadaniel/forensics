@@ -9,7 +9,8 @@ some_url:
 created: 2025-08-18
 comments: true
 name: jose
-auto-translate: false
+auto-translate: true
+
 ---
 
 
