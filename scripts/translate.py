@@ -55,7 +55,7 @@ from typing import List
 
 # Keys and variables. Remove language if you do not want to automatically translate
 DEEPL_API_KEY = os.getenv("DEEPL_API_KEY")
-ALL_LANGS = ["en", "es"]
+ALL_LANGS = ["pt", "es"]
 ROOT_DIR = Path("docs")
 
 # DeepL API language codes mapping
@@ -249,10 +249,12 @@ def get_changed_markdown_files() -> list[Path]:
 # Detect the language of the files being changed
 # -------------------------
 def detect_language(file_path: Path) -> str:
+    print(f"DEBUG file: {file_path}")
     parts = file_path.parts
     try:
         lang_index = parts.index("docs") + 1
         lang = parts[lang_index]
+        print(f"DEBUG lang: {lang}")
         if lang not in ALL_LANGS:
             raise ValueError(f"Language not defined for automatic translations: {lang}")
         return lang
@@ -263,7 +265,6 @@ def detect_language(file_path: Path) -> str:
 # Return a list (line_number, text added) for each new line based on the git diff
 # -------------------------
 def get_added_lines_with_context(file_path: Path):
-    
     diff = subprocess.run(
         ["git", "diff", "-U0", "HEAD~1", "HEAD", "--", str(file_path)],
         capture_output=True,
