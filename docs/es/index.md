@@ -11,6 +11,7 @@ icon: material/home
 hide:
     - footer
 auto-translate: true
+
 ---
 
 
