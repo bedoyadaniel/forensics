@@ -13,7 +13,6 @@ author:
     name: Daniel
     url: https://socialtic.org/quienes-somos/
     description: SocialTIC
-auto-translate: true
 
 ---
 

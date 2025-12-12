@@ -55,7 +55,7 @@ from typing import List
 
 # Keys and variables. Remove language if you do not want to automatically translate
 DEEPL_API_KEY = os.getenv("DEEPL_API_KEY")
-ALL_LANGS = ["es", "t"]
+ALL_LANGS = ["en", "es"]
 ROOT_DIR = Path("docs")
 
 # DeepL API language codes mapping
