@@ -8,6 +8,8 @@ tags: [indice, explainer]
 last_updated: 2025-07-22
 some_url:
 icon: material/telescope
+auto-translate: true
+
 ---
 
 # Explainers 
