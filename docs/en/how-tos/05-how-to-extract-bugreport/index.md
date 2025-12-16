@@ -15,7 +15,7 @@ author:
 
 ---
 
-# Guía: How to extract a bugreport from an Android device?
+# How to extract a bugreport from an Android device?
 
 
 This resource falls under the **[how-to guides](../)** and details the steps required to generate a bugreport, both using the ADB debugging console and through the device’s graphical user interface (GUI). It is an introductory material, complementary to other resources such as the [explainer on log-based forensics for Android devices](../../explainers/03-explainer-log-forensics-android/) and the guide on [how to enable ADB](../../how-tos/03-how-to-enable-adb/).
