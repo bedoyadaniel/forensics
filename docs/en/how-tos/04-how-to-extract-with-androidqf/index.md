@@ -275,7 +275,7 @@ Once complete,  it is important to **verify that the acquisition was completed s
 
 
 * If you have received an encrypted extraction, it is necessary to decrypt this information first, you can refer to the section on [extraction encryption](#encryption-of-an-extraction).
-* Open the file ```command.log``` and search for warning or error messages. If you find matches, verify the errors and warning messages and ssess whether they are critical failures. 
+* Open the file ```command.log``` and search for warning or error messages. If you find matches, verify the errors and warning messages and assess whether they are critical failures. 
 
 
 === "Linux / MacOS"
