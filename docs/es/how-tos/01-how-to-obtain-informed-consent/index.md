@@ -73,7 +73,7 @@ Para generar una carta de consentimiento a partir del borrador propuesto, siga l
 
 1- **Descargue** el [borrador de carta de consentimiento informado](../../assets/01-how-to/borrador-carta-de-consentimiento-para-analisis-forense-odt.odt). El formato utiliza campos de formulario, de forma tal que al convertir en PDF pueda ser completado de forma sencilla.
 
-![captura de carta de consentimiento](../../assets/test-svg.svg)
+![captura de carta de consentimiento](../../../assets/test-svg.svg)
 
 En los siguientes enlaces puedes **descargar el borrador de carta de consentimiento** en diferentes formatos:
 
