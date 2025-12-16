@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="162.36724"
+     inkscape:cy="562.04045"
+     inkscape:window-width="960"
+     inkscape:window-height="547"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <a
+       id="a257"
+       xlink:href="https://forensics.socialtic.org">
+      <circle
+         style="fill:#ff0000;fill-rule:evenodd;stroke-width:0.264583;image-rendering:auto"
+         id="path37"
+         cx="74.042732"
+         cy="80.150948"
+         r="29.443401" />
+    </a>
+    <a
+       id="a260"
+       xlink:href="https://forensics.socialtic.org/en">
+      <circle
+         style="fill:#008000;fill-rule:evenodd;stroke-width:0.264583"
+         id="path37-3"
+         cx="76.005562"
+         cy="156.14186"
+         r="29.443401" />
+    </a>
+    <a
+       id="a263"
+       xlink:href="https://google.com">
+      <circle
+         style="fill:#ffff00;fill-rule:evenodd;stroke-width:0.264583"
+         id="path37-0"
+         cx="79.31015"
+         cy="232.14743"
+         r="29.443401" />
+    </a>
+  </g>
+</svg>
