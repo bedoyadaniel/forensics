@@ -97,6 +97,7 @@ extra:
   announcement: 'Esta página aún no ha sido traducida al Español, por lo que te mostramos la versión en Inglés.'  # Banner de no disponible en ES  
 
 plugins:
+  - inline-svg #permite renderizar svg con links
   - search  #habilita barra de búsqueda
   - offline #facilita consulta y navegación del sitio offline
   - privacy: #plug-in para cargar recursos localmente, reducir tracking
