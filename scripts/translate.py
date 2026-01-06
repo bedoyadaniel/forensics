@@ -446,15 +446,6 @@ def main():
         # decide text to translate: the body if front-matter exists, else whole file
         text_to_translate = body if fm_type is not None else src_text
 
-        # gate: optionally require auto-translate true in front-matter (if you keep gating)
-        fm_dict = read_front_matter(src_text) if 'read_front_matter' in globals() else {}
-        if fm_dict and not fm_dict.get("auto-translate", False):
-            print(f"Skipping {src_path} — auto-translate not enabled in front matter.")
-            return
-        if fm_dict and fm_dict.get("translation-review-pending", False):
-            print(f"Skipping {src_path} — translation-review-pending is true.")
-            return
-
         print(f"CLI MODE: Translating {src_path} ({src_lang}) → {target_langs}")
 
         for lang in target_langs:
