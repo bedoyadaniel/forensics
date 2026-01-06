@@ -48,6 +48,8 @@ import deepl
 import re
 import argparse
 from typing import List
+import concurrent.futures
+import threading, sys
 
 
 
@@ -55,8 +57,13 @@ from typing import List
 
 # Keys and variables. Remove language if you do not want to automatically translate
 DEEPL_API_KEY = os.getenv("DEEPL_API_KEY")
-ALL_LANGS = ["pt", "es"]
+ALL_LANGS = ["en", "es", "pt"]
 ROOT_DIR = Path("docs")
+MAX_CHARS_PER_RUN = 200_000       # hard safety cap ~40-80 pages to translate per run max
+MAX_CHARS_PER_REQUEST = 5_000     # soft cap for tanslation per request
+_run_char_count = 0
+DEFAULT_TRANSLATION_TIMEOUT = 10  # Stop if a 5000 chunk takes longer than 10s to translate
+
 
 # DeepL API language codes mapping
 LANG_MAP = {
@@ -97,6 +104,43 @@ _KEY_RE = re.compile(r"^([a-zA-Z0-9_\-]+)\s*:\s*(.+)$")
 
 # ======= Methods and functions  ===============
 
+
+# -------------------------
+# Helper: Watchdog to kill the process in case it reaches a defined time. This is to preventing haning and consuming quota.   
+# -------------------------
+
+def start_watchdog(seconds=300):
+    def kill():
+        print("ERROR: Translation watchdog triggered — aborting.")
+        sys.exit(1)
+    t = threading.Timer(seconds, kill)
+    t.daemon = True
+    t.start()
+    return t
+
+# -------------------------
+# Helper: get deepl API quota  
+# -------------------------
+def get_deepl_character_quota(translator):
+    usage = translator.get_usage()
+
+    # Text translation quota (what translate_text uses)
+    detail = getattr(usage, "_character", None)
+
+    if detail is None:
+        raise RuntimeError(
+            f"DeepL usage object does not expose character quota: {vars(usage)}"
+        )
+
+    used = getattr(detail, "count", None)
+    limit = getattr(detail, "limit", None)
+
+    if used is None or limit is None:
+        raise RuntimeError(
+            f"Unable to read DeepL character quota: {vars(detail)}"
+        )
+
+    return used, limit
 
 # -------------------------
 # Helper: parser for mardown metadata, returns type, header and body of metadata 
@@ -291,22 +335,112 @@ def get_added_lines_with_context(file_path: Path):
 
     return added_lines
 
+
+# -------------------------
+# Helper: split in chunks of a determined size to avoid consuming api quota
+# -------------------------
+def chunk_text(text: str, size: int):
+    for i in range(0, len(text), size):
+        yield text[i:i + size]
+
+# -------------------------
+# Helper: Count characters in CLI mode
+# -------------------------
+def estimate_cli_chars(src_text: str) -> int:
+    fm_type, _, body = split_front_matter(src_text)
+    text = body if fm_type is not None else src_text
+    return len(text)
+
+
+# -------------------------
+# Helper: Count characters in git diff mode
+# -------------------------
+def estimate_diff_chars(added_lines) -> int:
+    total = 0
+    for _, line in added_lines:
+        stripped = line.strip()
+        if (
+            not stripped
+            or stripped.startswith("---")
+            or stripped.startswith("+++")
+            or stripped.startswith("```")
+            or stripped.lower().startswith("<!--")
+            or any(stripped.startswith(k) for k in METADATA_KEYS)
+        ):
+            continue
+        total += len(line)
+    return total
+
+# -------------------------
+# Helper: Translate text of arbitrary size by chunking safely.
+# -------------------------
+def translate_large_text(text: str, src_lang: str, tgt_lang: str) -> str:
+    if len(text) <= MAX_CHARS_PER_REQUEST:
+        return translate_text(text, src_lang, tgt_lang)
+
+    translated_chunks = []
+    for chunk in chunk_text(text, MAX_CHARS_PER_REQUEST):
+        translated_chunks.append(
+            translate_text(chunk, src_lang, tgt_lang)
+        )
+
+    return "".join(translated_chunks)
+
+
 # -------------------------
 # Use deepl API to make the necessary translations 
 # -------------------------
 def translate_text(text: str, src_lang: str, target_lang: str) -> str:
     
+    global _run_char_count
+    char_count = len(text)
+
+    # Hard per-request limit
+    if char_count > MAX_CHARS_PER_REQUEST:
+        raise RuntimeError(
+            f"Single translation chunk too large: {char_count} chars "
+            f"(limit: {MAX_CHARS_PER_REQUEST})"
+        )
+
+    # Hard per-run limit
+    if _run_char_count + char_count > MAX_CHARS_PER_RUN:
+        raise RuntimeError(
+            f"Translation budget exceeded: "
+            f"{_run_char_count + char_count} > {MAX_CHARS_PER_RUN} chars"
+        )
+
+    _run_char_count += char_count
+
+    print(
+        f"[DeepL] Translating {char_count} chars "
+        f"(run total: {_run_char_count}/{MAX_CHARS_PER_RUN}) "
+        f"{src_lang} → {target_lang}"
+    )
+
+
+    
     tgt_code = LANG_MAP.get(target_lang, target_lang).upper()
     src_code = src_lang.upper()
 
-    result = translator.translate_text(
-        text,
-        source_lang=src_code,
-        target_lang=tgt_code,
-        outline_detection=False,
-        non_splitting_tags=["code", "pre"],
-    )
-    return result.text
+    def _call():
+        return translator.translate_text(
+            text,
+            source_lang=src_code,
+            target_lang=tgt_code,
+            outline_detection=False,
+            non_splitting_tags=["code", "pre"],
+        ).text
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as ex:
+        future = ex.submit(_call)
+        try:
+            return future.result(timeout=DEFAULT_TRANSLATION_TIMEOUT)
+        except concurrent.futures.TimeoutError:
+            raise RuntimeError(
+                f"DeepL translation timed out after {timeout}s "
+                f"(src={src_lang}, tgt={target_lang}, chars={char_count})"
+            )
+
 
 
 # -------------------------
@@ -332,7 +466,11 @@ def patch_translation_file(source_path: Path, target_path: Path, added_lines):
             text_to_translate = src_text
 
         # Translate only the body text (or the full text if there was no front-matter)
-        translated_body = translate_text(text_to_translate, src_lang, tgt_lang)
+        try:
+            translated_body = translate_large_text(text_to_translate, src_lang, tgt_lang)
+        except concurrent.futures.TimeoutError:
+            print("ERROR: DeepL translation timed out")
+            sys.exit(1)
 
         # Build the resulting front-matter: copy header verbatim, but append translation-review-pending if missing
         if fm_type == "toml":
@@ -405,142 +543,200 @@ def patch_translation_file(source_path: Path, target_path: Path, added_lines):
 # ============================ MAIN ===============================
 
 def main():
-    args = parse_cli_args()
 
-    # -------------------------
-    # CLI MODE (only when -f provided)
-    # -------------------------
+    watchdog = start_watchdog(300)  # 5 minutes hard cap for the run
+ 
+    used, limit = get_deepl_character_quota(translator)
+    remaining = limit - used
 
-    if args.file:
-        src_path = Path(args.file)
-        if not src_path.exists():
-            print(f"Source file not found: {src_path}")
+    print(f"DeepL character quota before run: {used}/{limit} (remaining: {remaining})")
+
+
+
+    try:
+
+        args = parse_cli_args()
+
+        # -------------------------
+        # CLI MODE (only when -f provided)
+        # -------------------------
+
+        if args.file:
+            src_path = Path(args.file)
+            if not src_path.exists():
+                print(f"Source file not found: {src_path}")
+                return
+
+            # source language mandatory in CLI mode
+            src_lang = getattr(args, "source_lang", None)
+            if not src_lang:
+                raise ValueError("CLI mode requires -s / --source-lang")
+
+            # targets required
+            raw_targets = getattr(args, "targets", None)
+            if not raw_targets:
+                raise ValueError("CLI mode requires -t / --targets")
+            requested = raw_targets if isinstance(raw_targets, (list, tuple)) else [raw_targets]
+            target_langs = [t for t in requested if t in ALL_LANGS]
+            if not target_langs:
+                raise ValueError("No valid target languages provided")
+
+            # output dir (optional)
+            output_dir_arg = getattr(args, "output_dir", None)
+            output_dir = Path(output_dir_arg).expanduser() if output_dir_arg else None
+            if output_dir:
+                output_dir.mkdir(parents=True, exist_ok=True)
+
+            # read source file once
+            src_text = src_path.read_text(encoding="utf-8")
+
+            # estimate characters to translate
+            estimated = estimate_cli_chars(src_text)
+            print(f"Estimated characters to translate: {estimated}")
+
+            # split front-matter (robust helper)
+            fm_type, header, body = split_front_matter(src_text)
+
+            # decide text to translate: the body if front-matter exists, else whole file
+            text_to_translate = body if fm_type is not None else src_text
+
+            # abort if not enough characters to tranlsate 
+            used, limit = get_deepl_character_quota(translator)
+            remaining = limit - used
+
+            SAFETY_BUFFER = 1000
+
+            if estimated + SAFETY_BUFFER > remaining: #raise error if file is larger than available quota
+                raise RuntimeError(
+                    f"Insufficient DeepL quota:\n"
+                    f"  Needed (est.): {estimated}\n"
+                    f"  Remaining:    {remaining}\n"
+                    f"  Buffer:       {SAFETY_BUFFER}"
+    )
+
+            print(f"CLI MODE: Translating {src_path} ({src_lang}) → {target_langs}")
+
+            for lang in target_langs:
+                tgt_path = build_cli_target_path(src_path, lang, output_dir)
+
+                # translate only the body
+                translated_body = translate_large_text(text_to_translate, src_lang, lang)
+
+                # build header for target: copy header verbatim if present, ensure review flag is present
+                if fm_type == "toml":
+                    header_lines = [
+                        ln for ln in (header.splitlines() if header else [])
+                        if not re.match(r"\s*auto[-_]?translate\s*[:=]", ln, re.IGNORECASE)
+                    ]
+                    if not any(re.search(r"translation[-_]?review[-_]?pending\s*=", ln, re.IGNORECASE) for ln in header_lines):
+                        header_lines.append('translation-review-pending = true')
+                    new_header = "\n".join(header_lines).rstrip() + "\n"
+                    final_text = f"+++\n{new_header}+++\n\n{translated_body.lstrip()}"
+                elif fm_type == "yaml":
+                    header_lines = [
+                        ln for ln in (header.splitlines() if header else [])
+                        if not re.match(r"\s*auto[-_]?translate\s*[:=]", ln, re.IGNORECASE)
+                    ]
+                    if not any(re.search(r"translation[-_]?review[-_]?pending\s*:", ln, re.IGNORECASE) for ln in header_lines):
+                        header_lines.append('translation-review-pending: true')
+                    new_header = "\n".join(header_lines).rstrip() + "\n"
+                    final_text = f"---\n{new_header}---\n\n{translated_body.lstrip()}"
+                else:
+                    # no front-matter -> create YAML block with review flag
+                    final_text = f"---\ntranslation-review-pending: true\n---\n\n{translated_body.lstrip()}"
+
+                # write target
+                tgt_path.parent.mkdir(parents=True, exist_ok=True)
+                tgt_path.write_text(final_text, encoding="utf-8")
+                print(f"Written translation: {tgt_path}")
+
+            return  # stop; do not fall through to git-diff branch
+
+
+        # -------------------------
+        # No CLI args: run repo / git diff mode
+        # -------------------------
+        changed_files = get_changed_markdown_files()
+        if not changed_files:
+            print("No changed markdown files detected.")
             return
 
-        # source language mandatory in CLI mode
-        src_lang = getattr(args, "source_lang", None)
-        if not src_lang:
-            raise ValueError("CLI mode requires -s / --source-lang")
+        # Filter out files that should not be processed as sources.
+        file_diffs = {}
+        for file_path in changed_files:
+            # read file start to get front matter
+            try:
+                start = file_path.read_text(encoding="utf-8")
+            except Exception:
+                start = ""
+            fm = read_front_matter(start)
+            auto_translate = bool(fm.get("auto-translate", False))
+            review_pending = bool(fm.get("translation-review-pending", False))
 
-        # targets required
-        raw_targets = getattr(args, "targets", None)
-        if not raw_targets:
-            raise ValueError("CLI mode requires -t / --targets")
-        requested = raw_targets if isinstance(raw_targets, (list, tuple)) else [raw_targets]
-        target_langs = [t for t in requested if t in ALL_LANGS]
-        if not target_langs:
-            raise ValueError("No valid target languages provided")
+            # skip the file unless auto-translate explicitly true and review_pending is false
+            if not auto_translate:
+                print(f"Skipping {file_path} — auto-translate is not enabled (or missing).")
+                continue
+            if review_pending:
+                print(f"Skipping {file_path} — translation-review-pending is true.")
+                continue
 
-        # output dir (optional)
-        output_dir_arg = getattr(args, "output_dir", None)
-        output_dir = Path(output_dir_arg).expanduser() if output_dir_arg else None
-        if output_dir:
-            output_dir.mkdir(parents=True, exist_ok=True)
+            # now compute diff for files we intend to process
+            added = get_added_lines_with_context(file_path)
+            file_diffs[file_path] = added
 
-        # read source file once
-        src_text = src_path.read_text(encoding="utf-8")
+            # Dry-run estimation (git diff mode)
+            total_estimated = 0
 
-        # split front-matter (robust helper)
-        fm_type, header, body = split_front_matter(src_text)
+            for file_path, added_lines in file_diffs.items():
+                est = estimate_diff_chars(added_lines)
+                total_estimated += est
 
-        # decide text to translate: the body if front-matter exists, else whole file
-        text_to_translate = body if fm_type is not None else src_text
+            print(f"Estimated characters to translate (git diff): {total_estimated}")
 
-        print(f"CLI MODE: Translating {src_path} ({src_lang}) → {target_langs}")
+            used, limit = get_deepl_character_quota(translator)
+            remaining = limit - used
 
-        for lang in target_langs:
-            tgt_path = build_cli_target_path(src_path, lang, output_dir)
+            SAFETY_BUFFER = 1000
 
-            # translate only the body
-            translated_body = translate_text(text_to_translate, src_lang, lang)
+            if total_estimated + SAFETY_BUFFER > remaining:
+                raise RuntimeError(
+                    f"Insufficient DeepL quota:\n"
+                    f"  Needed (est.): {total_estimated}\n"
+                    f"  Remaining:    {remaining}\n"
+                    f"  Buffer:       {SAFETY_BUFFER}"
+                )
 
-            # build header for target: copy header verbatim if present, ensure review flag is present
-            if fm_type == "toml":
-                header_lines = [
-                    ln for ln in (header.splitlines() if header else [])
-                    if not re.match(r"\s*auto[-_]?translate\s*[:=]", ln, re.IGNORECASE)
-                ]
-                if not any(re.search(r"translation[-_]?review[-_]?pending\s*=", ln, re.IGNORECASE) for ln in header_lines):
-                    header_lines.append('translation-review-pending = true')
-                new_header = "\n".join(header_lines).rstrip() + "\n"
-                final_text = f"+++\n{new_header}+++\n\n{translated_body.lstrip()}"
-            elif fm_type == "yaml":
-                header_lines = [
-                    ln for ln in (header.splitlines() if header else [])
-                    if not re.match(r"\s*auto[-_]?translate\s*[:=]", ln, re.IGNORECASE)
-                ]
-                if not any(re.search(r"translation[-_]?review[-_]?pending\s*:", ln, re.IGNORECASE) for ln in header_lines):
-                    header_lines.append('translation-review-pending: true')
-                new_header = "\n".join(header_lines).rstrip() + "\n"
-                final_text = f"---\n{new_header}---\n\n{translated_body.lstrip()}"
-            else:
-                # no front-matter -> create YAML block with review flag
-                final_text = f"---\ntranslation-review-pending: true\n---\n\n{translated_body.lstrip()}"
+        # If *no* file has additions, exit early
+        if not any(file_diffs.values()):
+            print("Nothing to translate - Exiting.")
+            return
 
-            # write target
-            tgt_path.parent.mkdir(parents=True, exist_ok=True)
-            tgt_path.write_text(final_text, encoding="utf-8")
-            print(f"Written translation: {tgt_path}")
+        # Process files with additions
+        for file_path, added_lines in file_diffs.items():
+            src_lang = detect_language(file_path)
+            target_langs = [l for l in ALL_LANGS if l != src_lang]
 
-        return  # stop; do not fall through to git-diff branch
+            print(f"\nDetected changed content in file: {file_path}")
+            print(f"Translating from source language: {src_lang}")
 
+            if not added_lines:
+                print(f"No additions detected in {file_path} — skipping.")
+                continue
 
-    # -------------------------
-    # No CLI args: run repo / git diff mode
-    # -------------------------
-    changed_files = get_changed_markdown_files()
-    if not changed_files:
-        print("No changed markdown files detected.")
-        return
-
-    # Filter out files that should not be processed as sources.
-    file_diffs = {}
-    for file_path in changed_files:
-        # read file start to get front matter
-        try:
-            start = file_path.read_text(encoding="utf-8")
-        except Exception:
-            start = ""
-        fm = read_front_matter(start)
-        auto_translate = bool(fm.get("auto-translate", False))
-        review_pending = bool(fm.get("translation-review-pending", False))
-
-        # skip the file unless auto-translate explicitly true and review_pending is false
-        if not auto_translate:
-            print(f"Skipping {file_path} — auto-translate is not enabled (or missing).")
-            continue
-        if review_pending:
-            print(f"Skipping {file_path} — translation-review-pending is true.")
-            continue
-
-        # now compute diff for files we intend to process
-        added = get_added_lines_with_context(file_path)
-        file_diffs[file_path] = added
-
-    # If *no* file has additions, exit early
-    if not any(file_diffs.values()):
-        print("Nothing to translate - Exiting.")
-        return
-
-    # Process files with additions
-    for file_path, added_lines in file_diffs.items():
-        src_lang = detect_language(file_path)
-        target_langs = [l for l in ALL_LANGS if l != src_lang]
-
-        print(f"\nDetected changed content in file: {file_path}")
-        print(f"Translating from source language: {src_lang}")
-
-        if not added_lines:
-            print(f"No additions detected in {file_path} — skipping.")
-            continue
-
-        for lang in target_langs:
-            rel_path = file_path.relative_to(ROOT_DIR / src_lang)
-            target_path = ROOT_DIR / lang / rel_path
-            patch_translation_file(file_path, target_path, added_lines)
-
+            for lang in target_langs:
+                rel_path = file_path.relative_to(ROOT_DIR / src_lang)
+                target_path = ROOT_DIR / lang / rel_path
+                patch_translation_file(file_path, target_path, added_lines)
+    
+    finally:
+        watchdog.cancel()
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"FATAL: {e}")
+        sys.exit(1)
 
