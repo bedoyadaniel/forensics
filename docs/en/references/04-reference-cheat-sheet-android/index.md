@@ -21,6 +21,6 @@ This resource in particular fits into the **reference** category and contains a 
 
 You can find the cheat sheet right below, or you can also [downalod as a PDF from this link.](../../assets/04-reference/cheat-sheet-forensics-english.pdf) 
 
-![Cheat Sheet para forense en android parte 1](../../assets/04-reference/cheat-sheet-forensics-english-1.svg "Parte 1"){ loading=lazy }
+![Cheat Sheet para forense en android parte 1](../../assets/04-reference/cheat-sheet-forensics-english-1.svg)
 
-![Cheat Sheet para forense en android parte 2](../../assets/04-reference/cheat-sheet-forensics-english-2.svg "Parte 2"){ loading=lazy }
+![Cheat Sheet para forense en android parte 2](../../assets/04-reference/cheat-sheet-forensics-english-2.svg)
