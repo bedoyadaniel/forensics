@@ -28,4 +28,9 @@ A continuación te presentamos la hoja resumen, que puedes también descargar en
         style="width:100%; height:auto;">
 </object>
 
-![Cheat Sheet para forense en android parte 2](../../assets/04-reference/cheat-sheet-forensics-español-2.svg)
+
+<object type="image/svg+xml"
+        data="../../assets/04-reference/cheat-sheet-forensics-español-2.svg"
+        style="width:100%; height:auto;">
+</object>
+
