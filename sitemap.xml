@@ -217,6 +217,14 @@
         <xhtml:link rel="alternate" hreflang="pt" href="https://forensics.socialtic.org/pt/references/03-reference-mvt-androidqf-dictionary/index.html"/>
     </url>
     <url>
+        <loc>https://forensics.socialtic.org/references/04-reference-cheat-sheet-android/index.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://forensics.socialtic.org/references/04-reference-cheat-sheet-android/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://forensics.socialtic.org/en/references/04-reference-cheat-sheet-android/index.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://forensics.socialtic.org/pt/references/04-reference-cheat-sheet-android/index.html"/>
+    </url>
+    <url>
         <loc>https://forensics.socialtic.org/tutorials/index.html</loc>
         <lastmod>2026-01-16</lastmod>
         <changefreq>daily</changefreq>
@@ -449,6 +457,14 @@
         <xhtml:link rel="alternate" hreflang="pt" href="https://forensics.socialtic.org/pt/references/03-reference-mvt-androidqf-dictionary/index.html"/>
     </url>
     <url>
+        <loc>https://forensics.socialtic.org/en/references/04-reference-cheat-sheet-android/index.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://forensics.socialtic.org/en/references/04-reference-cheat-sheet-android/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://forensics.socialtic.org/references/04-reference-cheat-sheet-android/index.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://forensics.socialtic.org/pt/references/04-reference-cheat-sheet-android/index.html"/>
+    </url>
+    <url>
         <loc>https://forensics.socialtic.org/en/tutorials/index.html</loc>
         <lastmod>2026-01-16</lastmod>
         <changefreq>daily</changefreq>
@@ -679,6 +695,14 @@
         <xhtml:link rel="alternate" hreflang="pt" href="https://forensics.socialtic.org/pt/references/03-reference-mvt-androidqf-dictionary/index.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://forensics.socialtic.org/en/references/03-reference-mvt-androidqf-dictionary/index.html"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://forensics.socialtic.org/references/03-reference-mvt-androidqf-dictionary/index.html"/>
+    </url>
+    <url>
+        <loc>https://forensics.socialtic.org/pt/references/04-reference-cheat-sheet-android/index.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://forensics.socialtic.org/pt/references/04-reference-cheat-sheet-android/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://forensics.socialtic.org/en/references/04-reference-cheat-sheet-android/index.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://forensics.socialtic.org/references/04-reference-cheat-sheet-android/index.html"/>
     </url>
     <url>
         <loc>https://forensics.socialtic.org/pt/tutorials/index.html</loc>
