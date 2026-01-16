@@ -23,6 +23,9 @@ Este recurso en particular se enmarca dentro de la categoría de **referencias**
 A continuación te presentamos la hoja resumen, que puedes también descargar en formato [PDF desde este enlace](../../assets/04-reference/cheat-sheet-forensics-español.pdf). 
 
 
-![Cheat Sheet para forense en android parte 1](../../assets/04-reference/cheat-sheet-forensics-español-1.svg)
+<object type="image/svg+xml"
+        data="../../assets/04-reference/cheat-sheet-forensics-español-1.svg"
+        style="width:100%; height:auto;">
+</object>
 
 ![Cheat Sheet para forense en android parte 2](../../assets/04-reference/cheat-sheet-forensics-español-2.svg)
